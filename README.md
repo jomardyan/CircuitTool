@@ -1,31 +1,92 @@
 # CircuitTool
 
-A C# class library for electronics and circuit calculations, including:
+A comprehensive C# library for electrical engineering and electronics calculations. CircuitTool simplifies circuit analysis, power calculations, and unit conversions for electrical engineers and electronics enthusiasts.
 
-- Voltage Drop Calculator
-- Resistor Calculator
-- Ohm's Law Calculator
-- Power Calculator
-- Energy Calculator
-- Unit Conversions (Amps, kW, kVA, VA, Volts, Watts, Joules, eV, kWh, etc.)
-- Electricity Bill Calculator
-- Energy Consumption Calculator
-- Voltage Divider Calculator
-- Power Factor Calculator
-- Watts-Volts-Amps-Ohms Calculator
+## Features
 
-## Usage
+- **Ohm's Law Calculations**: Calculate voltage, current, and resistance
+- **Resistor Network Analysis**: Series and parallel resistor calculations
+- **Voltage Analysis**: Voltage drop and voltage divider calculations
+- **Power Calculations**: Various methods to calculate electrical power
+- **Energy Calculations**: Convert between energy units, calculate energy costs
+- **Unit Conversions**: Comprehensive electrical unit conversion utilities
+- **Specialized Calculators**: Power factor, electricity bill, and energy consumption calculators
 
-Add a reference to this library in your C# project and use the static methods in the provided classes.
+## Getting Started
 
-Example:
+### Prerequisites
+
+- .NET 8.0 SDK or later
+
+### Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/jomardyan/CircuitTool.git
+cd CircuitTool
+```
+
+Build the library:
+```bash
+dotnet build
+```
+
+Run the tests:
+```bash
+dotnet test
+```
+
+## Usage Examples
+
+### Ohm's Law Calculations
+
 ```csharp
 using CircuitTool;
 
-var voltageDrop = VoltageCalculator.VoltageDrop(10, 2); // 20V
-var resistance = ResistorCalculator.Resistance(12, 2); // 6 Ohms
-var power = PowerCalculator.Power(230, 5); // 1150W
+// Calculate voltage using Ohm's Law (V = I × R)
+double voltage = OhmsLawCalculator.Voltage(2.0, 5.0);  // 2A through 5Ω = 10V
+
+// Calculate current using Ohm's Law (I = V / R)
+double current = OhmsLawCalculator.Current(10.0, 5.0);  // 10V across 5Ω = 2A
+
+// Calculate resistance using Ohm's Law (R = V / I)
+double resistance = OhmsLawCalculator.Resistance(10.0, 2.0);  // 10V with 2A = 5Ω
 ```
+
+### Resistor Network Analysis
+
+```csharp
+using CircuitTool;
+
+// Calculate total resistance of resistors in series
+double seriesResistance = ResistorCalculator.Series(10.0, 20.0, 30.0);  // = 60Ω
+
+// Calculate total resistance of resistors in parallel
+double parallelResistance = ResistorCalculator.Parallel(10.0, 10.0);  // = 5Ω
+```
+
+### Voltage and Power Calculations
+
+```csharp
+using CircuitTool;
+
+// Calculate voltage drop across a resistor
+double voltageDrop = VoltageCalculator.VoltageDrop(10, 2); // 20V
+
+// Use a voltage divider
+double outputVoltage = VoltageCalculator.VoltageDivider(9, 2, 1); // 3V
+
+// Calculate power from voltage and current
+double power = PowerCalculator.Power(230, 5); // 1150W
+```
+
+## Documentation
+
+See [DOCUMENTATION.md](DOCUMENTATION.md) for detailed API documentation.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
