@@ -1,0 +1,10 @@
+/workspaces/CircuitTool/bin/Debug/net8.0/CircuitTool.deps.json
+/workspaces/CircuitTool/bin/Debug/net8.0/CircuitTool.dll
+/workspaces/CircuitTool/bin/Debug/net8.0/CircuitTool.pdb
+/workspaces/CircuitTool/obj/Debug/net8.0/CircuitTool.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CircuitTool/obj/Debug/net8.0/CircuitTool.csproj.CoreCompileInputs.cache
+/workspaces/CircuitTool/obj/Debug/net8.0/CircuitTool.sourcelink.json
+/workspaces/CircuitTool/obj/Debug/net8.0/CircuitTool.dll
+/workspaces/CircuitTool/obj/Debug/net8.0/refint/CircuitTool.dll
+/workspaces/CircuitTool/obj/Debug/net8.0/CircuitTool.pdb
+/workspaces/CircuitTool/obj/Debug/net8.0/ref/CircuitTool.dll
