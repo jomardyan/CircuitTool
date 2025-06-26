@@ -1,5 +1,28 @@
-[![Build and Publish NuGet Package](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml)  [![.NET Build and Test](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
-# CircuitTool
+<div align="center">
+
+[![Build and Publish NuGet Package](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml)
+[![.NET Build and Test](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
+[![NuGet Version](https://img.shields.io/nuget/v/CircuitTool?style=flat-square&logo=nuget&color=blue)](https://www.nuget.org/packages/CircuitTool)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/CircuitTool?style=flat-square&logo=nuget&color=brightgreen)](https://www.nuget.org/packages/CircuitTool)
+
+[![GitHub Release](https://img.shields.io/github/v/release/jomardyan/CircuitTool?style=flat-square&logo=github&color=success)](https://github.com/jomardyan/CircuitTool/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/jomardyan/CircuitTool?style=flat-square&logo=github&color=yellow)](https://github.com/jomardyan/CircuitTool/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/jomardyan/CircuitTool?style=flat-square&logo=github&color=lightgrey)](https://github.com/jomardyan/CircuitTool/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/jomardyan/CircuitTool?style=flat-square&logo=github&color=red)](https://github.com/jomardyan/CircuitTool/issues)
+
+[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-2.0%2B-blue?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-6.0%2B%20%7C%208.0%2B-purple?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
+[![.NET Standard](https://img.shields.io/badge/.NET%20Standard-2.0%20%7C%202.1-orange?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
+[![Language](https://img.shields.io/github/languages/top/jomardyan/CircuitTool?style=flat-square&logo=csharp&color=purple)](https://github.com/jomardyan/CircuitTool)
+[![Code Size](https://img.shields.io/github/languages/code-size/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool)
+[![Repo Size](https://img.shields.io/github/repo-size/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool)
+[![Last Commit](https://img.shields.io/github/last-commit/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool/commits/main)
+
+</div>
+
+# 🔌 CircuitTool
 
 A comprehensive C# library for electrical engineering and electronics calculations. CircuitTool simplifies circuit analysis, power calculations, and unit conversions for electrical engineers, electronics enthusiasts, and makers working with Arduino, ESP32, and other microcontrollers.
 
@@ -461,7 +484,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
-### Version 1.0.12 (Current)
+### Version 1.0.13 (Current)
+- **Enhanced Build Configuration**: Improved deterministic build settings for better CI/CD integration
+- **Continuous Integration Support**: Added CI-specific build optimizations with environment detection
+- **Source Embedding Enhancements**: Better source code embedding for debugging and troubleshooting
+- **PathMap Optimization**: Updated source path mapping for consistent debugging experience
+- **Build Reproducibility**: Enhanced deterministic builds across all supported target frameworks
+- **Version Management**: Synchronized assembly and package versions for consistency
+
+### Version 1.0.12
 - **New Advanced Calculators**: Added comprehensive physics calculators for electrical engineering
   - **CapacitorCalculator**: Capacitive reactance, energy storage, time constants, series/parallel combinations, charging/discharging curves
   - **InductorCalculator**: Inductive reactance, energy storage, time constants, current buildup/decay, resonance frequency
