@@ -11,11 +11,26 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
+    
+    <!-- Enable XML documentation generation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    
+    <!-- Enable debug symbols for all configurations -->
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    
+    <!-- Suppress XML documentation warnings for missing docs -->
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <!-- Conditional properties for older frameworks that don't support portable PDBs -->
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net20' OR '$(TargetFramework)' == 'net35'">
+    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>CircuitTool</PackageId>
-    <Version>1.0.9</Version>
+    <Version>1.0.11</Version>
     <Authors>Jomardyan</Authors>
     <Description>A comprehensive C# library for electrical engineering and electronics calculations. Compatible with .NET Framework 2.0+, .NET 6.0+, and .NET Standard 2.0+.</Description>
     <PackageTags>ElectricalEngineering Electronics Calculations Arduino ESP32 LED Microcontroller</PackageTags>
@@ -25,6 +40,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>See https://github.com/jomardyan/CircuitTool/releases for release notes.</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
     <Copyright>Copyright (c) 2025 Jomardyan</Copyright>
   </PropertyGroup>
 
@@ -38,6 +54,10 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>

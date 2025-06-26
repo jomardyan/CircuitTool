@@ -19,7 +19,9 @@ This repository uses GitHub Actions to automatically build, test, and publish th
   - Manual dispatch with options
 - **Purpose**: Builds, validates, and publishes NuGet packages
 - **Features**:
-  - Package validation
+  - XML documentation generation for all target frameworks
+  - Debug symbols (PDB files) included in packages
+  - Package icon included
   - Dual publishing (GitHub Packages + NuGet.org)
   - Environment protection for production releases
 
