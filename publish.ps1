@@ -105,14 +105,24 @@ function Publish-ToGitHub {
         }
     }
     
+    # Remove existing GitHub source if it exists (to avoid duplicate warning)
+    try {
+        dotnet nuget remove source github 2>$null
+    } catch {
+        # Ignore error if source doesn't exist
+    }
+    
     # Add GitHub Packages source
     dotnet nuget add source --username "jomardyan" --password $Token --store-password-in-clear-text --name github "https://nuget.pkg.github.com/jomardyan/index.json"
+    
+    # Set API key for GitHub Packages source
+    dotnet nuget setapikey $Token --source github
     
     # Push to GitHub Packages
     $packages = Get-ChildItem -Path "./packages/*.nupkg"
     foreach ($package in $packages) {
         Write-ColorOutput "Publishing $($package.Name)..." $Yellow
-        dotnet nuget push $package.FullName --source "github" --skip-duplicate
+        dotnet nuget push $package.FullName --source "github" --api-key $Token --skip-duplicate
         if ($LASTEXITCODE -ne 0) {
             Write-ColorOutput "✗ Failed to publish $($package.Name) to GitHub Packages" $Red
             return $false
