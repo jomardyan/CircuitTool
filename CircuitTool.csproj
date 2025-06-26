@@ -41,7 +41,7 @@
 
   <PropertyGroup>
     <PackageId>CircuitTool</PackageId>
-    <Version>1.0.12</Version>
+    <Version>1.0.13</Version>
     <Authors>Jomardyan</Authors>
     <Description>A comprehensive C# library for electrical engineering and electronics calculations. Compatible with .NET Framework 2.0+, .NET 6.0+, and .NET Standard 2.0+.</Description>
     <PackageTags>ElectricalEngineering Electronics Calculations Arduino ESP32 LED Microcontroller</PackageTags>
