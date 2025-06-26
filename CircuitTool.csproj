@@ -4,19 +4,20 @@
     <RootNamespace>CircuitTool</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net20;net35;net40;net45;net462;net6.0;net8.0;netstandard2.0;netstandard2.1</TargetFrameworks>
     <Deterministic>true</Deterministic>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>CircuitTool</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
     <Authors>Jomardyan</Authors>
-    <Description>A comprehensive C# library for electrical engineering and electronics calculations.</Description>
+    <Description>A comprehensive C# library for electrical engineering and electronics calculations. Compatible with .NET Framework 2.0+, .NET 6.0+, and .NET Standard 2.0+.</Description>
     <PackageTags>ElectricalEngineering Electronics Calculations</PackageTags>
     <RepositoryUrl>https://github.com/jomardyan/CircuitTool</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
