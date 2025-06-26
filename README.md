@@ -1,4 +1,4 @@
-[![Build and Publish NuGet Package](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml)
+[![Build and Publish NuGet Package](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml)  [![.NET Build and Test](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
 # CircuitTool
 
 A comprehensive C# library for electrical engineering and electronics calculations. CircuitTool simplifies circuit analysis, power calculations, and unit conversions for electrical engineers, electronics enthusiasts, and makers working with Arduino, ESP32, and other microcontrollers.
