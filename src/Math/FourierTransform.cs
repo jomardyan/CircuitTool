@@ -27,6 +27,11 @@ namespace CircuitTool.Mathematics
         /// <returns>Frequency domain representation</returns>
         public static Complex[] DFT(Complex[] signal)
         {
+            if (signal == null)
+                throw new ArgumentNullException(nameof(signal));
+            if (signal.Length == 0)
+                throw new ArgumentException("Signal array cannot be empty", nameof(signal));
+                
             int N = signal.Length;
             var result = new Complex[N];
             
@@ -77,6 +82,11 @@ namespace CircuitTool.Mathematics
         /// <returns>Complex frequency domain representation</returns>
         public static Complex[] DFT(double[] signal)
         {
+            if (signal == null)
+                throw new ArgumentNullException(nameof(signal));
+            if (signal.Length == 0)
+                throw new ArgumentException("Signal array cannot be empty", nameof(signal));
+                
             var complexSignal = new Complex[signal.Length];
             for (int i = 0; i < signal.Length; i++)
             {
