@@ -50,14 +50,33 @@ CircuitTool supports a wide range of .NET frameworks for maximum compatibility:
 
 This ensures the library works with both legacy and modern .NET applications.
 
-### Installation via NuGet
+### Installation via NuGet.org
 
-To install CircuitTool via NuGet, use the following command:
+To install CircuitTool from NuGet.org, use the following command:
 ```bash
 dotnet add package CircuitTool
 ```
 
 Or using the Package Manager Console:
+```bash
+Install-Package CircuitTool
+```
+
+### Installation via GitHub Packages
+
+To install CircuitTool from GitHub Packages:
+
+1. **Add GitHub Packages as a package source** (one-time setup):
+```bash
+dotnet nuget add source --username YOUR_GITHUB_USERNAME --password YOUR_GITHUB_TOKEN --store-password-in-clear-text --name github "https://nuget.pkg.github.com/jomardyan/index.json"
+```
+
+2. **Install the package**:
+```bash
+dotnet add package CircuitTool --source github
+```
+
+**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission. See [GitHub Packages documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry) for details.
 ```bash
 Install-Package CircuitTool
 ```
@@ -223,6 +242,49 @@ double milliamps = UnitConverter.AmperesToMilliamps(0.5);  // 0.5A = 500mA
 double kilovolts = UnitConverter.VoltsToKilovolts(5000);  // 5000V = 5kV
 double megaohms = UnitConverter.OhmsToMegaohms(2000000);  // 2MΩ = 2000000Ω
 ```
+
+## Package Distribution
+
+CircuitTool is available on multiple package registries:
+
+### NuGet.org
+- **Package URL**: https://www.nuget.org/packages/CircuitTool
+- **Installation**: `dotnet add package CircuitTool`
+
+### GitHub Packages
+- **Package URL**: https://github.com/jomardyan/CircuitTool/packages
+- **Registry URL**: https://nuget.pkg.github.com/jomardyan/index.json
+- **Installation**: Requires GitHub authentication (see installation section above)
+
+### Publishing
+
+For maintainers, use the provided scripts to publish new versions:
+
+**PowerShell (Windows):**
+```powershell
+# Publish to GitHub Packages
+.\publish.ps1 -GitHub
+
+# Publish to NuGet.org
+.\publish.ps1 -NuGet
+
+# Publish to both
+.\publish.ps1 -All
+```
+
+**Bash (Linux/macOS):**
+```bash
+# Publish to GitHub Packages
+./publish.sh --github
+
+# Publish to NuGet.org
+./publish.sh --nuget
+
+# Publish to both
+./publish.sh --all
+```
+
+See `GITHUB_PACKAGES.md` for detailed publishing instructions.
 
 ## Contributing
 

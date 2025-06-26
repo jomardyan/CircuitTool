@@ -15,6 +15,7 @@
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
+          "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +30,8 @@
           "netstandard2.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/jomardyan/index.json": {}
         },
         "frameworks": {
           "net6.0": {
