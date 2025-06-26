@@ -280,7 +280,7 @@ double power = voltageDrop * {ledCurrent};
             Console.WriteLine();
             
             double r1 = 100, r2 = 200, r3 = 300;
-            double totalSeries = ResistorCalculator.Series(r1, r2, r3);
+            double totalSeries = Calculators.ComponentCalculator.SeriesResistance(r1, r2, r3);
             Console.WriteLine($"Series: {r1}Ω + {r2}Ω + {r3}Ω = {totalSeries}Ω");
             Console.WriteLine();
             
@@ -290,7 +290,7 @@ double power = voltageDrop * {ledCurrent};
             Console.WriteLine("Voltage is the same across all components");
             Console.WriteLine();
             
-            double totalParallel = ResistorCalculator.Parallel(r1, r2, r3);
+            double totalParallel = Calculators.ComponentCalculator.ParallelResistance(r1, r2, r3);
             Console.WriteLine($"Parallel: {r1}Ω || {r2}Ω || {r3}Ω = {totalParallel:F1}Ω");
             Console.WriteLine();
             
