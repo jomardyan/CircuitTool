@@ -22,109 +22,24 @@
 
 </div>
 
+
 # 🔌 CircuitTool
 
-A comprehensive C# library for electrical engineering and electronics calculations. CircuitTool simplifies circuit analysis, power calculations, and unit conversions for electrical engineers, electronics enthusiasts, and makers working with Arduino, ESP32, and other microcontrollers.
+A modern C# library for electrical engineering and electronics calculations. CircuitTool provides utilities for circuit analysis, power calculations, unit conversions, and more.
 
-## Features
+## Quick Install
 
-### Core Electrical Calculations
-- **Ohm's Law Calculations**: Calculate voltage, current, and resistance
-- **Resistor Network Analysis**: Series and parallel resistor calculations
-- **Voltage Analysis**: Voltage drop and voltage divider calculations
-- **Power Calculations**: Various methods to calculate electrical power
-- **Energy Calculations**: Convert between energy units, calculate energy costs
-- **Unit Conversions**: Comprehensive electrical unit conversion utilities
-- **Specialized Calculators**: Power factor, electricity bill, and energy consumption calculators
-
-### Advanced Circuit Analysis
-- **Capacitor Calculations**: Capacitance, reactance, energy storage, time constants, series/parallel combinations
-- **Inductor Calculations**: Inductive reactance, energy storage, time constants, current buildup/decay, resonance
-- **Transformer Analysis**: Voltage/current/turns ratios, efficiency, power loss, regulation calculations
-- **AC Circuit Analysis**: Impedance, phase angles, power factor, RMS/peak/average values, form/crest factors
-- **Filter Calculations**: RC/RL low-pass/high-pass filters, cutoff frequencies, gain, phase response
-
-### LED and Lighting Calculations
-- **LED Resistor Calculator**: Calculate required resistor values for LED circuits
-- **LED Power Consumption**: Calculate power usage for LED projects
-- **LED Brightness Control**: PWM duty cycle to brightness ratio calculations
-- **Series LED Calculations**: Multi-LED circuit calculations
-
-### Microcontroller Tools
-- **Arduino Tools**: ADC conversions, servo control, current consumption calculations
-- **ESP32 Tools**: ADC conversions, WiFi power management, battery life estimation
-- **Touch Sensor Calculations**: ESP32 touch threshold calculations
-
-### Beginner-Friendly Calculators
-- **Battery Life Calculator**: Estimate battery runtime for projects
-- **Wire Gauge Calculator**: Determine appropriate wire gauge for current loads
-- **RC Circuit Tools**: Time constants, oscillator frequencies
-- **Inductor Design**: Basic inductor turn calculations
-- **Decibel Conversions**: Power and voltage ratio to dB conversions
-- **Transformer Calculations**: Turns ratio calculations
-
-## Getting Started
-
-### Prerequisites
-
-- .NET Framework 2.0 or later
-- .NET 6.0 or later
-- .NET Standard 2.0 or later
-
-### Framework Compatibility
-
-CircuitTool supports a wide range of .NET frameworks for maximum compatibility:
-
-- **.NET Framework**: 2.0, 3.5, 4.0, 4.5, 4.6.2
-- **.NET Core/.NET**: 6.0, 8.0
-- **.NET Standard**: 2.0, 2.1
-
-This ensures the library works with both legacy and modern .NET applications.
-
-### Installation via NuGet.org
-
-To install CircuitTool from NuGet.org, use the following command:
 ```bash
 dotnet add package CircuitTool
 ```
 
-Or using the Package Manager Console:
-```bash
-Install-Package CircuitTool
-```
+## Documentation
 
-### Installation via GitHub Packages
+See the full documentation and usage examples in [DOCUMENTATION.md](DOCUMENTATION.md).
 
-To install CircuitTool from GitHub Packages:
+## License
 
-1. **Add GitHub Packages as a package source** (one-time setup):
-```bash
-dotnet nuget add source --username YOUR_GITHUB_USERNAME --password YOUR_GITHUB_TOKEN --store-password-in-clear-text --name github "https://nuget.pkg.github.com/jomardyan/index.json"
-```
-
-2. **Install the package**:
-```bash
-dotnet add package CircuitTool --source github
-```
-
-**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission.
-
-## Usage Examples
-
-### Ohm's Law Calculations
-
-```csharp
-using CircuitTool;
-
-// Calculate voltage using Ohm's Law (V = I × R)
-double voltage = OhmsLawCalculator.Voltage(2.0, 5.0);  // 2A through 5Ω = 10V
-
-// Calculate current using Ohm's Law (I = V / R)
-double current = OhmsLawCalculator.Current(10.0, 5.0);  // 10V across 5Ω = 2A
-
-// Calculate resistance using Ohm's Law (R = V / I)
-double resistance = OhmsLawCalculator.Resistance(10.0, 2.0);  // 10V, 2A = 5Ω
-```
+MIT License. See LICENSE for details.
 
 ### LED Circuit Calculations
 
