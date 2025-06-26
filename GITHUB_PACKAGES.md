@@ -18,6 +18,8 @@ This document explains how to publish CircuitTool to GitHub Packages.
    - `read:packages` - Download packages from GitHub Package Registry
    - `repo` - Full control of private repositories (if needed)
 
+**📖 For detailed step-by-step instructions with screenshots, see [GITHUB_TOKEN_GUIDE.md](GITHUB_TOKEN_GUIDE.md)**
+
 ### 2. Configure NuGet for GitHub Packages
 
 Add GitHub Packages as a package source:

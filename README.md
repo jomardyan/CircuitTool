@@ -76,7 +76,7 @@ dotnet nuget add source --username YOUR_GITHUB_USERNAME --password YOUR_GITHUB_T
 dotnet add package CircuitTool --source github
 ```
 
-**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission. See [GitHub Packages documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry) for details.
+**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission. See [GITHUB_TOKEN_GUIDE.md](GITHUB_TOKEN_GUIDE.md) for detailed instructions on creating a token.
 ```bash
 Install-Package CircuitTool
 ```
