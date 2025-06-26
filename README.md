@@ -484,85 +484,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
-### Version 1.0.13 (Current)
-- **Enhanced Build Configuration**: Improved deterministic build settings for better CI/CD integration
-- **Continuous Integration Support**: Added CI-specific build optimizations with environment detection
-- **Source Embedding Enhancements**: Better source code embedding for debugging and troubleshooting
-- **PathMap Optimization**: Updated source path mapping for consistent debugging experience
-- **Build Reproducibility**: Enhanced deterministic builds across all supported target frameworks
-- **Version Management**: Synchronized assembly and package versions for consistency
 
-### Version 1.0.12
-- **New Advanced Calculators**: Added comprehensive physics calculators for electrical engineering
-  - **CapacitorCalculator**: Capacitive reactance, energy storage, time constants, series/parallel combinations, charging/discharging curves
-  - **InductorCalculator**: Inductive reactance, energy storage, time constants, current buildup/decay, resonance frequency
-  - **TransformerCalculator**: Voltage/current/turns ratios, efficiency, power loss, regulation, apparent power calculations
-  - **ACCircuitCalculator**: Impedance, phase angles, power factor, RMS/peak/average conversions, form/crest factors, Q factor, bandwidth
-  - **FilterCalculator**: RC/RL low-pass/high-pass filters, cutoff frequencies, gain, phase response, magnitude response
-- **Test Framework Standardization**: Migrated all unit tests from MSTest to NUnit.Framework for consistency
-- **Complete Test Coverage**: Added comprehensive unit tests for all previously untested calculators and new calculators
-- **Bug Fixes**: Fixed logic issues in test expectations and duplicate variable declarations
-- **Enhanced Documentation**: Updated README.md with detailed usage examples for all new calculators
+### Version 2.0.0 (Current)
+- **Modern C# Features**: Records for calculation results, pattern matching, init-only and required properties
+- **API Redesign**: More consistent naming, better separation of concerns, immutable calculation objects
+- **Dependency Injection Support**: Service-based architecture, configurable calculation engines, plugin system
+- **Integration Enhancements**: Extension methods for popular UI frameworks, scientific computing integration, plugin system
+- **Web API Version**: REST API, GraphQL support, real-time calculation updates
+- **Mobile Support**: Xamarin/MAUI optimizations, touch-friendly APIs, offline calculation support
+- **Performance & Quality**: SIMD/vectorized calculations, improved static analysis, enhanced documentation
 
-### Version 1.0.11
-- **Documentation Improvements**: Enhanced README.md structure for better end-user experience
-- **Workflow Organization**: Moved development and publishing documentation to WORKFLOWS.md
-- **Package Quality**: Continued improvements to NuGet package structure and metadata
-- **User Experience**: Simplified installation instructions and focused documentation
+---
 
-### Version 1.0.10
-- **Documentation Restructure**: Separated end-user documentation from developer/maintainer documentation
-- **Changelog Enhancement**: Added comprehensive version history with detailed feature descriptions
-- **Package Distribution**: Improved package distribution documentation and user guidance
 
-### Version 1.0.9
-- **Enhanced Documentation**: Added comprehensive XML documentation for all public methods and classes
-- **Debug Symbols**: Included portable debug symbols (.pdb files) for better debugging experience
-- **Package Icon**: Added custom circuit-themed package icon for better package identification
-- **Automated Publishing**: Implemented GitHub Actions for automatic publishing to NuGet.org and GitHub Packages
-- **Multi-Framework Compatibility**: Maintained support for all target frameworks with proper debug symbol generation
-- **Package Quality**: Improved NuGet package quality with proper metadata, symbols, and documentation
+---
 
-### Version 1.0.8
-- **GitHub Actions Integration**: Added automated build, test, and publishing workflows
-- **Package Validation**: Implemented automated package validation and quality checks
-- **Cross-Platform Testing**: Added testing on Ubuntu, Windows, and macOS environments
-- **Environment Protection**: Added production environment protection for secure publishing
-
-### Version 1.0.7
-- **Source Linking**: Enhanced source linking for better debugging experience
-- **Symbol Packages**: Added symbol packages (.snupkg) for NuGet.org publishing
-- **Repository Integration**: Improved repository URL configuration and source embedding
-
-### Version 1.0.6
-- **Package Metadata**: Enhanced NuGet package metadata with proper tags and descriptions
-- **License Integration**: Added MIT license file to NuGet package
-- **README Integration**: Included README.md in NuGet package for better documentation
-
-### Version 1.0.5
-- **Multi-Framework Support**: Added compatibility with .NET Framework 2.0, 3.5, 4.0, 4.5, 4.6.2, .NET 6.0, 8.0, and .NET Standard 2.0, 2.1
-- **Legacy Compatibility**: Refactored code to remove C# 8.0+ features for broader compatibility
-- **Conditional Compilation**: Added framework-specific compilation directives
-
-### Version 1.0.4
-- Added LED circuit calculators
-- Added Arduino and ESP32 tools
-- Added beginner-friendly calculators
-- Improved NuGet package metadata
-- Added comprehensive unit tests
-- Enhanced documentation
-
-### Version 1.0.3
-- Improved source linking and symbols
-- Better NuGet package structure
-
-### Version 1.0.2
-- Added advanced circuit analysis methods
-- Improved README documentation
-
-### Version 1.0.1
-- Initial NuGet package release
-- Core electrical calculations
+_Previous changelog entries omitted for brevity. See https://github.com/jomardyan/CircuitTool/releases for full history._
 
 ## Support
 
