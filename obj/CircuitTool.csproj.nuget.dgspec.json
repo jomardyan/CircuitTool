@@ -5,7 +5,7 @@
   },
   "projects": {
     "/workspaces/CircuitTool/CircuitTool.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "/workspaces/CircuitTool/CircuitTool.csproj",
         "projectName": "CircuitTool",
@@ -42,6 +42,13 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
