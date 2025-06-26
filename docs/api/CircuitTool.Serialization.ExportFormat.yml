@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Serialization.ExportFormat
+  commentId: T:CircuitTool.Serialization.ExportFormat
+  id: ExportFormat
+  parent: CircuitTool.Serialization
+  children:
+  - CircuitTool.Serialization.ExportFormat.Json
+  - CircuitTool.Serialization.ExportFormat.Xml
+  langs:
+  - csharp
+  - vb
+  name: ExportFormat
+  nameWithType: ExportFormat
+  fullName: CircuitTool.Serialization.ExportFormat
+  type: Enum
+  source:
+    remote:
+      path: src/Serialization/CircuitSerialization.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportFormat
+    path: src/Serialization/CircuitSerialization.cs
+    startLine: 275
+  namespace: CircuitTool.Serialization
+  summary: Export/Import format options
+  example: []
+  syntax:
+    content: public enum ExportFormat
+    content.vb: Public Enum ExportFormat
+- uid: CircuitTool.Serialization.ExportFormat.Json
+  commentId: F:CircuitTool.Serialization.ExportFormat.Json
+  id: Json
+  parent: CircuitTool.Serialization.ExportFormat
+  langs:
+  - csharp
+  - vb
+  name: Json
+  nameWithType: ExportFormat.Json
+  fullName: CircuitTool.Serialization.ExportFormat.Json
+  type: Field
+  source:
+    remote:
+      path: src/Serialization/CircuitSerialization.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Json
+    path: src/Serialization/CircuitSerialization.cs
+    startLine: 277
+  namespace: CircuitTool.Serialization
+  syntax:
+    content: Json = 0
+    return:
+      type: CircuitTool.Serialization.ExportFormat
+- uid: CircuitTool.Serialization.ExportFormat.Xml
+  commentId: F:CircuitTool.Serialization.ExportFormat.Xml
+  id: Xml
+  parent: CircuitTool.Serialization.ExportFormat
+  langs:
+  - csharp
+  - vb
+  name: Xml
+  nameWithType: ExportFormat.Xml
+  fullName: CircuitTool.Serialization.ExportFormat.Xml
+  type: Field
+  source:
+    remote:
+      path: src/Serialization/CircuitSerialization.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Xml
+    path: src/Serialization/CircuitSerialization.cs
+    startLine: 278
+  namespace: CircuitTool.Serialization
+  syntax:
+    content: Xml = 1
+    return:
+      type: CircuitTool.Serialization.ExportFormat
+references:
+- uid: CircuitTool.Serialization
+  commentId: N:CircuitTool.Serialization
+  href: CircuitTool.html
+  name: CircuitTool.Serialization
+  nameWithType: CircuitTool.Serialization
+  fullName: CircuitTool.Serialization
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Serialization
+    name: Serialization
+    href: CircuitTool.Serialization.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Serialization
+    name: Serialization
+    href: CircuitTool.Serialization.html
+- uid: CircuitTool.Serialization.ExportFormat
+  commentId: T:CircuitTool.Serialization.ExportFormat
+  parent: CircuitTool.Serialization
+  href: CircuitTool.Serialization.ExportFormat.html
+  name: ExportFormat
+  nameWithType: ExportFormat
+  fullName: CircuitTool.Serialization.ExportFormat

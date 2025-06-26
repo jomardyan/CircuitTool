@@ -1,0 +1,1663 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.Power
+  commentId: T:CircuitTool.Units.Power
+  id: Power
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.Power.#ctor(System.Double,CircuitTool.Units.PowerUnit)
+  - CircuitTool.Units.Power.CompareTo(CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.ConvertTo(CircuitTool.Units.PowerUnit)
+  - CircuitTool.Units.Power.Equals(CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.Equals(System.Object)
+  - CircuitTool.Units.Power.GetHashCode
+  - CircuitTool.Units.Power.Gigawatts
+  - CircuitTool.Units.Power.Kilowatts
+  - CircuitTool.Units.Power.Megawatts
+  - CircuitTool.Units.Power.Microwatts
+  - CircuitTool.Units.Power.Milliwatts
+  - CircuitTool.Units.Power.Nanowatts
+  - CircuitTool.Units.Power.ToString
+  - CircuitTool.Units.Power.ToString(CircuitTool.Units.PowerUnit)
+  - CircuitTool.Units.Power.Watts
+  - CircuitTool.Units.Power.op_Addition(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_Division(CircuitTool.Units.Power,System.Double)
+  - CircuitTool.Units.Power.op_Equality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_GreaterThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_GreaterThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_Inequality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_LessThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_LessThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_Multiply(CircuitTool.Units.Power,System.Double)
+  - CircuitTool.Units.Power.op_Multiply(System.Double,CircuitTool.Units.Power)
+  - CircuitTool.Units.Power.op_Subtraction(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  langs:
+  - csharp
+  - vb
+  name: Power
+  nameWithType: Power
+  fullName: CircuitTool.Units.Power
+  type: Struct
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Power
+    path: src/Units/PowerUnit.cs
+    startLine: 29
+  namespace: CircuitTool.Units
+  summary: Represents a strongly-typed power measurement with automatic unit conversion
+  example: []
+  syntax:
+    content: 'public readonly struct Power : IEquatable<Power>, IComparable<Power>'
+    content.vb: Public Structure Power Implements IEquatable(Of Power), IComparable(Of Power)
+  implements:
+  - System.IEquatable{CircuitTool.Units.Power}
+  - System.IComparable{CircuitTool.Units.Power}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Units.Power.#ctor(System.Double,CircuitTool.Units.PowerUnit)
+  commentId: M:CircuitTool.Units.Power.#ctor(System.Double,CircuitTool.Units.PowerUnit)
+  id: '#ctor(System.Double,CircuitTool.Units.PowerUnit)'
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Power(double, PowerUnit)
+  nameWithType: Power.Power(double, PowerUnit)
+  fullName: CircuitTool.Units.Power.Power(double, CircuitTool.Units.PowerUnit)
+  type: Constructor
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Units/PowerUnit.cs
+    startLine: 38
+  namespace: CircuitTool.Units
+  summary: Creates a new power measurement
+  example: []
+  syntax:
+    content: public Power(double value, PowerUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value in the specified unit
+    - id: unit
+      type: CircuitTool.Units.PowerUnit
+      description: The unit of measurement
+    content.vb: Public Sub New(value As Double, unit As PowerUnit)
+  overload: CircuitTool.Units.Power.#ctor*
+  nameWithType.vb: Power.New(Double, PowerUnit)
+  fullName.vb: CircuitTool.Units.Power.New(Double, CircuitTool.Units.PowerUnit)
+  name.vb: New(Double, PowerUnit)
+- uid: CircuitTool.Units.Power.Watts
+  commentId: P:CircuitTool.Units.Power.Watts
+  id: Watts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Watts
+  nameWithType: Power.Watts
+  fullName: CircuitTool.Units.Power.Watts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Watts
+    path: src/Units/PowerUnit.cs
+    startLine: 46
+  namespace: CircuitTool.Units
+  summary: Gets the power value in watts
+  example: []
+  syntax:
+    content: public double Watts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Watts As Double
+  overload: CircuitTool.Units.Power.Watts*
+- uid: CircuitTool.Units.Power.Milliwatts
+  commentId: P:CircuitTool.Units.Power.Milliwatts
+  id: Milliwatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Milliwatts
+  nameWithType: Power.Milliwatts
+  fullName: CircuitTool.Units.Power.Milliwatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Milliwatts
+    path: src/Units/PowerUnit.cs
+    startLine: 51
+  namespace: CircuitTool.Units
+  summary: Gets the power value in milliwatts
+  example: []
+  syntax:
+    content: public double Milliwatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Milliwatts As Double
+  overload: CircuitTool.Units.Power.Milliwatts*
+- uid: CircuitTool.Units.Power.Kilowatts
+  commentId: P:CircuitTool.Units.Power.Kilowatts
+  id: Kilowatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Kilowatts
+  nameWithType: Power.Kilowatts
+  fullName: CircuitTool.Units.Power.Kilowatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilowatts
+    path: src/Units/PowerUnit.cs
+    startLine: 56
+  namespace: CircuitTool.Units
+  summary: Gets the power value in kilowatts
+  example: []
+  syntax:
+    content: public double Kilowatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Kilowatts As Double
+  overload: CircuitTool.Units.Power.Kilowatts*
+- uid: CircuitTool.Units.Power.Megawatts
+  commentId: P:CircuitTool.Units.Power.Megawatts
+  id: Megawatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Megawatts
+  nameWithType: Power.Megawatts
+  fullName: CircuitTool.Units.Power.Megawatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megawatts
+    path: src/Units/PowerUnit.cs
+    startLine: 61
+  namespace: CircuitTool.Units
+  summary: Gets the power value in megawatts
+  example: []
+  syntax:
+    content: public double Megawatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Megawatts As Double
+  overload: CircuitTool.Units.Power.Megawatts*
+- uid: CircuitTool.Units.Power.Gigawatts
+  commentId: P:CircuitTool.Units.Power.Gigawatts
+  id: Gigawatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Gigawatts
+  nameWithType: Power.Gigawatts
+  fullName: CircuitTool.Units.Power.Gigawatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gigawatts
+    path: src/Units/PowerUnit.cs
+    startLine: 66
+  namespace: CircuitTool.Units
+  summary: Gets the power value in gigawatts
+  example: []
+  syntax:
+    content: public double Gigawatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Gigawatts As Double
+  overload: CircuitTool.Units.Power.Gigawatts*
+- uid: CircuitTool.Units.Power.Microwatts
+  commentId: P:CircuitTool.Units.Power.Microwatts
+  id: Microwatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Microwatts
+  nameWithType: Power.Microwatts
+  fullName: CircuitTool.Units.Power.Microwatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microwatts
+    path: src/Units/PowerUnit.cs
+    startLine: 71
+  namespace: CircuitTool.Units
+  summary: Gets the power value in microwatts
+  example: []
+  syntax:
+    content: public double Microwatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Microwatts As Double
+  overload: CircuitTool.Units.Power.Microwatts*
+- uid: CircuitTool.Units.Power.Nanowatts
+  commentId: P:CircuitTool.Units.Power.Nanowatts
+  id: Nanowatts
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Nanowatts
+  nameWithType: Power.Nanowatts
+  fullName: CircuitTool.Units.Power.Nanowatts
+  type: Property
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanowatts
+    path: src/Units/PowerUnit.cs
+    startLine: 76
+  namespace: CircuitTool.Units
+  summary: Gets the power value in nanowatts
+  example: []
+  syntax:
+    content: public double Nanowatts { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Nanowatts As Double
+  overload: CircuitTool.Units.Power.Nanowatts*
+- uid: CircuitTool.Units.Power.ConvertTo(CircuitTool.Units.PowerUnit)
+  commentId: M:CircuitTool.Units.Power.ConvertTo(CircuitTool.Units.PowerUnit)
+  id: ConvertTo(CircuitTool.Units.PowerUnit)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: ConvertTo(PowerUnit)
+  nameWithType: Power.ConvertTo(PowerUnit)
+  fullName: CircuitTool.Units.Power.ConvertTo(CircuitTool.Units.PowerUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConvertTo
+    path: src/Units/PowerUnit.cs
+    startLine: 93
+  namespace: CircuitTool.Units
+  syntax:
+    content: public double ConvertTo(PowerUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.PowerUnit
+    return:
+      type: System.Double
+    content.vb: Public Function ConvertTo(unit As PowerUnit) As Double
+  overload: CircuitTool.Units.Power.ConvertTo*
+- uid: CircuitTool.Units.Power.op_Addition(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_Addition(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_Addition(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator +(Power, Power)
+  nameWithType: Power.operator +(Power, Power)
+  fullName: CircuitTool.Units.Power.operator +(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Addition
+    path: src/Units/PowerUnit.cs
+    startLine: 108
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Power operator +(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: CircuitTool.Units.Power
+    content.vb: Public Shared Operator +(left As Power, right As Power) As Power
+  overload: CircuitTool.Units.Power.op_Addition*
+  nameWithType.vb: Power.+(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.+(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: +(Power, Power)
+- uid: CircuitTool.Units.Power.op_Subtraction(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_Subtraction(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_Subtraction(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator -(Power, Power)
+  nameWithType: Power.operator -(Power, Power)
+  fullName: CircuitTool.Units.Power.operator -(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Subtraction
+    path: src/Units/PowerUnit.cs
+    startLine: 109
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Power operator -(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: CircuitTool.Units.Power
+    content.vb: Public Shared Operator -(left As Power, right As Power) As Power
+  overload: CircuitTool.Units.Power.op_Subtraction*
+  nameWithType.vb: Power.-(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.-(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: -(Power, Power)
+- uid: CircuitTool.Units.Power.op_Multiply(CircuitTool.Units.Power,System.Double)
+  commentId: M:CircuitTool.Units.Power.op_Multiply(CircuitTool.Units.Power,System.Double)
+  id: op_Multiply(CircuitTool.Units.Power,System.Double)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator *(Power, double)
+  nameWithType: Power.operator *(Power, double)
+  fullName: CircuitTool.Units.Power.operator *(CircuitTool.Units.Power, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/PowerUnit.cs
+    startLine: 110
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Power operator *(Power power, double scalar)
+    parameters:
+    - id: power
+      type: CircuitTool.Units.Power
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Power
+    content.vb: Public Shared Operator *(power As Power, scalar As Double) As Power
+  overload: CircuitTool.Units.Power.op_Multiply*
+  nameWithType.vb: Power.*(Power, Double)
+  fullName.vb: CircuitTool.Units.Power.*(CircuitTool.Units.Power, Double)
+  name.vb: '*(Power, Double)'
+- uid: CircuitTool.Units.Power.op_Multiply(System.Double,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_Multiply(System.Double,CircuitTool.Units.Power)
+  id: op_Multiply(System.Double,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, Power)
+  nameWithType: Power.operator *(double, Power)
+  fullName: CircuitTool.Units.Power.operator *(double, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/PowerUnit.cs
+    startLine: 111
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Power operator *(double scalar, Power power)
+    parameters:
+    - id: scalar
+      type: System.Double
+    - id: power
+      type: CircuitTool.Units.Power
+    return:
+      type: CircuitTool.Units.Power
+    content.vb: Public Shared Operator *(scalar As Double, power As Power) As Power
+  overload: CircuitTool.Units.Power.op_Multiply*
+  nameWithType.vb: Power.*(Double, Power)
+  fullName.vb: CircuitTool.Units.Power.*(Double, CircuitTool.Units.Power)
+  name.vb: '*(Double, Power)'
+- uid: CircuitTool.Units.Power.op_Division(CircuitTool.Units.Power,System.Double)
+  commentId: M:CircuitTool.Units.Power.op_Division(CircuitTool.Units.Power,System.Double)
+  id: op_Division(CircuitTool.Units.Power,System.Double)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator /(Power, double)
+  nameWithType: Power.operator /(Power, double)
+  fullName: CircuitTool.Units.Power.operator /(CircuitTool.Units.Power, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Division
+    path: src/Units/PowerUnit.cs
+    startLine: 112
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Power operator /(Power power, double scalar)
+    parameters:
+    - id: power
+      type: CircuitTool.Units.Power
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Power
+    content.vb: Public Shared Operator /(power As Power, scalar As Double) As Power
+  overload: CircuitTool.Units.Power.op_Division*
+  nameWithType.vb: Power./(Power, Double)
+  fullName.vb: CircuitTool.Units.Power./(CircuitTool.Units.Power, Double)
+  name.vb: /(Power, Double)
+- uid: CircuitTool.Units.Power.op_Equality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_Equality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_Equality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Power, Power)
+  nameWithType: Power.operator ==(Power, Power)
+  fullName: CircuitTool.Units.Power.operator ==(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Equality
+    path: src/Units/PowerUnit.cs
+    startLine: 114
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator ==(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_Equality*
+  nameWithType.vb: Power.=(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: =(Power, Power)
+- uid: CircuitTool.Units.Power.op_Inequality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_Inequality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_Inequality(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Power, Power)
+  nameWithType: Power.operator !=(Power, Power)
+  fullName: CircuitTool.Units.Power.operator !=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Inequality
+    path: src/Units/PowerUnit.cs
+    startLine: 115
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator !=(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_Inequality*
+  nameWithType.vb: Power.<>(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.<>(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: <>(Power, Power)
+- uid: CircuitTool.Units.Power.op_LessThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_LessThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_LessThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator <(Power, Power)
+  nameWithType: Power.operator <(Power, Power)
+  fullName: CircuitTool.Units.Power.operator <(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThan
+    path: src/Units/PowerUnit.cs
+    startLine: 116
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_LessThan*
+  nameWithType.vb: Power.<(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.<(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: <(Power, Power)
+- uid: CircuitTool.Units.Power.op_GreaterThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_GreaterThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_GreaterThan(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator >(Power, Power)
+  nameWithType: Power.operator >(Power, Power)
+  fullName: CircuitTool.Units.Power.operator >(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThan
+    path: src/Units/PowerUnit.cs
+    startLine: 117
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_GreaterThan*
+  nameWithType.vb: Power.>(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.>(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: '>(Power, Power)'
+- uid: CircuitTool.Units.Power.op_LessThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_LessThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_LessThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Power, Power)
+  nameWithType: Power.operator <=(Power, Power)
+  fullName: CircuitTool.Units.Power.operator <=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThanOrEqual
+    path: src/Units/PowerUnit.cs
+    startLine: 118
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <=(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_LessThanOrEqual*
+  nameWithType.vb: Power.<=(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.<=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: <=(Power, Power)
+- uid: CircuitTool.Units.Power.op_GreaterThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.op_GreaterThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  id: op_GreaterThanOrEqual(CircuitTool.Units.Power,CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Power, Power)
+  nameWithType: Power.operator >=(Power, Power)
+  fullName: CircuitTool.Units.Power.operator >=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThanOrEqual
+    path: src/Units/PowerUnit.cs
+    startLine: 119
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >=(Power left, Power right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Power
+    - id: right
+      type: CircuitTool.Units.Power
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Power, right As Power) As Boolean
+  overload: CircuitTool.Units.Power.op_GreaterThanOrEqual*
+  nameWithType.vb: Power.>=(Power, Power)
+  fullName.vb: CircuitTool.Units.Power.>=(CircuitTool.Units.Power, CircuitTool.Units.Power)
+  name.vb: '>=(Power, Power)'
+- uid: CircuitTool.Units.Power.Equals(CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.Equals(CircuitTool.Units.Power)
+  id: Equals(CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Equals(Power)
+  nameWithType: Power.Equals(Power)
+  fullName: CircuitTool.Units.Power.Equals(CircuitTool.Units.Power)
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/PowerUnit.cs
+    startLine: 121
+  namespace: CircuitTool.Units
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Power other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Power
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Power) As Boolean
+  overload: CircuitTool.Units.Power.Equals*
+  implements:
+  - System.IEquatable{CircuitTool.Units.Power}.Equals(CircuitTool.Units.Power)
+- uid: CircuitTool.Units.Power.Equals(System.Object)
+  commentId: M:CircuitTool.Units.Power.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Power.Equals(object?)
+  fullName: CircuitTool.Units.Power.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/PowerUnit.cs
+    startLine: 122
+  namespace: CircuitTool.Units
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: CircuitTool.Units.Power.Equals*
+  nameWithType.vb: Power.Equals(Object)
+  fullName.vb: CircuitTool.Units.Power.Equals(Object)
+  name.vb: Equals(Object)
+- uid: CircuitTool.Units.Power.GetHashCode
+  commentId: M:CircuitTool.Units.Power.GetHashCode
+  id: GetHashCode
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Power.GetHashCode()
+  fullName: CircuitTool.Units.Power.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetHashCode
+    path: src/Units/PowerUnit.cs
+    startLine: 123
+  namespace: CircuitTool.Units
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: CircuitTool.Units.Power.GetHashCode*
+- uid: CircuitTool.Units.Power.CompareTo(CircuitTool.Units.Power)
+  commentId: M:CircuitTool.Units.Power.CompareTo(CircuitTool.Units.Power)
+  id: CompareTo(CircuitTool.Units.Power)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Power)
+  nameWithType: Power.CompareTo(Power)
+  fullName: CircuitTool.Units.Power.CompareTo(CircuitTool.Units.Power)
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CompareTo
+    path: src/Units/PowerUnit.cs
+    startLine: 124
+  namespace: CircuitTool.Units
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(Power other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Power
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As Power) As Integer
+  overload: CircuitTool.Units.Power.CompareTo*
+  implements:
+  - System.IComparable{CircuitTool.Units.Power}.CompareTo(CircuitTool.Units.Power)
+- uid: CircuitTool.Units.Power.ToString
+  commentId: M:CircuitTool.Units.Power.ToString
+  id: ToString
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Power.ToString()
+  fullName: CircuitTool.Units.Power.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/PowerUnit.cs
+    startLine: 126
+  namespace: CircuitTool.Units
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Units.Power.ToString*
+- uid: CircuitTool.Units.Power.ToString(CircuitTool.Units.PowerUnit)
+  commentId: M:CircuitTool.Units.Power.ToString(CircuitTool.Units.PowerUnit)
+  id: ToString(CircuitTool.Units.PowerUnit)
+  parent: CircuitTool.Units.Power
+  langs:
+  - csharp
+  - vb
+  name: ToString(PowerUnit)
+  nameWithType: Power.ToString(PowerUnit)
+  fullName: CircuitTool.Units.Power.ToString(CircuitTool.Units.PowerUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/PowerUnit.cs
+    startLine: 127
+  namespace: CircuitTool.Units
+  syntax:
+    content: public string ToString(PowerUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.PowerUnit
+    return:
+      type: System.String
+    content.vb: Public Function ToString(unit As PowerUnit) As String
+  overload: CircuitTool.Units.Power.ToString*
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: System.IEquatable{CircuitTool.Units.Power}
+  commentId: T:System.IEquatable{CircuitTool.Units.Power}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Power>
+  nameWithType: IEquatable<Power>
+  fullName: System.IEquatable<CircuitTool.Units.Power>
+  nameWithType.vb: IEquatable(Of Power)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Power)
+  name.vb: IEquatable(Of Power)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+- uid: System.IComparable{CircuitTool.Units.Power}
+  commentId: T:System.IComparable{CircuitTool.Units.Power}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Power>
+  nameWithType: IComparable<Power>
+  fullName: System.IComparable<CircuitTool.Units.Power>
+  nameWithType.vb: IComparable(Of Power)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Power)
+  name.vb: IComparable(Of Power)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.Units.Power.#ctor*
+  commentId: Overload:CircuitTool.Units.Power.#ctor
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power__ctor_System_Double_CircuitTool_Units_PowerUnit_
+  name: Power
+  nameWithType: Power.Power
+  fullName: CircuitTool.Units.Power.Power
+  nameWithType.vb: Power.New
+  fullName.vb: CircuitTool.Units.Power.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Units.PowerUnit
+  commentId: T:CircuitTool.Units.PowerUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.PowerUnit.html
+  name: PowerUnit
+  nameWithType: PowerUnit
+  fullName: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.Power.Watts*
+  commentId: Overload:CircuitTool.Units.Power.Watts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Watts
+  name: Watts
+  nameWithType: Power.Watts
+  fullName: CircuitTool.Units.Power.Watts
+- uid: CircuitTool.Units.Power.Milliwatts*
+  commentId: Overload:CircuitTool.Units.Power.Milliwatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Milliwatts
+  name: Milliwatts
+  nameWithType: Power.Milliwatts
+  fullName: CircuitTool.Units.Power.Milliwatts
+- uid: CircuitTool.Units.Power.Kilowatts*
+  commentId: Overload:CircuitTool.Units.Power.Kilowatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Kilowatts
+  name: Kilowatts
+  nameWithType: Power.Kilowatts
+  fullName: CircuitTool.Units.Power.Kilowatts
+- uid: CircuitTool.Units.Power.Megawatts*
+  commentId: Overload:CircuitTool.Units.Power.Megawatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Megawatts
+  name: Megawatts
+  nameWithType: Power.Megawatts
+  fullName: CircuitTool.Units.Power.Megawatts
+- uid: CircuitTool.Units.Power.Gigawatts*
+  commentId: Overload:CircuitTool.Units.Power.Gigawatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Gigawatts
+  name: Gigawatts
+  nameWithType: Power.Gigawatts
+  fullName: CircuitTool.Units.Power.Gigawatts
+- uid: CircuitTool.Units.Power.Microwatts*
+  commentId: Overload:CircuitTool.Units.Power.Microwatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Microwatts
+  name: Microwatts
+  nameWithType: Power.Microwatts
+  fullName: CircuitTool.Units.Power.Microwatts
+- uid: CircuitTool.Units.Power.Nanowatts*
+  commentId: Overload:CircuitTool.Units.Power.Nanowatts
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Nanowatts
+  name: Nanowatts
+  nameWithType: Power.Nanowatts
+  fullName: CircuitTool.Units.Power.Nanowatts
+- uid: CircuitTool.Units.Power.ConvertTo*
+  commentId: Overload:CircuitTool.Units.Power.ConvertTo
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_ConvertTo_CircuitTool_Units_PowerUnit_
+  name: ConvertTo
+  nameWithType: Power.ConvertTo
+  fullName: CircuitTool.Units.Power.ConvertTo
+- uid: CircuitTool.Units.Power.op_Addition*
+  commentId: Overload:CircuitTool.Units.Power.op_Addition
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Addition_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator +
+  nameWithType: Power.operator +
+  fullName: CircuitTool.Units.Power.operator +
+  nameWithType.vb: Power.+
+  fullName.vb: CircuitTool.Units.Power.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Addition*
+    name: +
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Addition_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power
+  commentId: T:CircuitTool.Units.Power
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.Power.html
+  name: Power
+  nameWithType: Power
+  fullName: CircuitTool.Units.Power
+- uid: CircuitTool.Units.Power.op_Subtraction*
+  commentId: Overload:CircuitTool.Units.Power.op_Subtraction
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Subtraction_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator -
+  nameWithType: Power.operator -
+  fullName: CircuitTool.Units.Power.operator -
+  nameWithType.vb: Power.-
+  fullName.vb: CircuitTool.Units.Power.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Subtraction*
+    name: '-'
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Subtraction_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.op_Multiply*
+  commentId: Overload:CircuitTool.Units.Power.op_Multiply
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Multiply_CircuitTool_Units_Power_System_Double_
+  name: operator *
+  nameWithType: Power.operator *
+  fullName: CircuitTool.Units.Power.operator *
+  nameWithType.vb: Power.*
+  fullName.vb: CircuitTool.Units.Power.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Multiply*
+    name: '*'
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Multiply_CircuitTool_Units_Power_System_Double_
+- uid: CircuitTool.Units.Power.op_Division*
+  commentId: Overload:CircuitTool.Units.Power.op_Division
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Division_CircuitTool_Units_Power_System_Double_
+  name: operator /
+  nameWithType: Power.operator /
+  fullName: CircuitTool.Units.Power.operator /
+  nameWithType.vb: Power./
+  fullName.vb: CircuitTool.Units.Power./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Division*
+    name: /
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Division_CircuitTool_Units_Power_System_Double_
+- uid: CircuitTool.Units.Power.op_Equality*
+  commentId: Overload:CircuitTool.Units.Power.op_Equality
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Equality_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator ==
+  nameWithType: Power.operator ==
+  fullName: CircuitTool.Units.Power.operator ==
+  nameWithType.vb: Power.=
+  fullName.vb: CircuitTool.Units.Power.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Equality*
+    name: ==
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Equality_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Units.Power.op_Inequality*
+  commentId: Overload:CircuitTool.Units.Power.op_Inequality
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Inequality_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator !=
+  nameWithType: Power.operator !=
+  fullName: CircuitTool.Units.Power.operator !=
+  nameWithType.vb: Power.<>
+  fullName.vb: CircuitTool.Units.Power.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_Inequality*
+    name: '!='
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_Inequality_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.op_LessThan*
+  commentId: Overload:CircuitTool.Units.Power.op_LessThan
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_LessThan_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator <
+  nameWithType: Power.operator <
+  fullName: CircuitTool.Units.Power.operator <
+  nameWithType.vb: Power.<
+  fullName.vb: CircuitTool.Units.Power.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_LessThan*
+    name: <
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_LessThan_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.op_GreaterThan*
+  commentId: Overload:CircuitTool.Units.Power.op_GreaterThan
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_GreaterThan_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator >
+  nameWithType: Power.operator >
+  fullName: CircuitTool.Units.Power.operator >
+  nameWithType.vb: Power.>
+  fullName.vb: CircuitTool.Units.Power.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_GreaterThan*
+    name: '>'
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_GreaterThan_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.op_LessThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Power.op_LessThanOrEqual
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_LessThanOrEqual_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator <=
+  nameWithType: Power.operator <=
+  fullName: CircuitTool.Units.Power.operator <=
+  nameWithType.vb: Power.<=
+  fullName.vb: CircuitTool.Units.Power.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_LessThanOrEqual*
+    name: <=
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_LessThanOrEqual_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.op_GreaterThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Power.op_GreaterThanOrEqual
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_GreaterThanOrEqual_CircuitTool_Units_Power_CircuitTool_Units_Power_
+  name: operator >=
+  nameWithType: Power.operator >=
+  fullName: CircuitTool.Units.Power.operator >=
+  nameWithType.vb: Power.>=
+  fullName.vb: CircuitTool.Units.Power.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Power.op_GreaterThanOrEqual*
+    name: '>='
+    href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_op_GreaterThanOrEqual_CircuitTool_Units_Power_CircuitTool_Units_Power_
+- uid: CircuitTool.Units.Power.Equals*
+  commentId: Overload:CircuitTool.Units.Power.Equals
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_Equals_CircuitTool_Units_Power_
+  name: Equals
+  nameWithType: Power.Equals
+  fullName: CircuitTool.Units.Power.Equals
+- uid: System.IEquatable{CircuitTool.Units.Power}.Equals(CircuitTool.Units.Power)
+  commentId: M:System.IEquatable{CircuitTool.Units.Power}.Equals(CircuitTool.Units.Power)
+  parent: System.IEquatable{CircuitTool.Units.Power}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Power)
+  nameWithType: IEquatable<Power>.Equals(Power)
+  fullName: System.IEquatable<CircuitTool.Units.Power>.Equals(CircuitTool.Units.Power)
+  nameWithType.vb: IEquatable(Of Power).Equals(Power)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Power).Equals(CircuitTool.Units.Power)
+  spec.csharp:
+  - uid: System.IEquatable{CircuitTool.Units.Power}.Equals(CircuitTool.Units.Power)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{CircuitTool.Units.Power}.Equals(CircuitTool.Units.Power)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Power.GetHashCode*
+  commentId: Overload:CircuitTool.Units.Power.GetHashCode
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_GetHashCode
+  name: GetHashCode
+  nameWithType: Power.GetHashCode
+  fullName: CircuitTool.Units.Power.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Units.Power.CompareTo*
+  commentId: Overload:CircuitTool.Units.Power.CompareTo
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_CompareTo_CircuitTool_Units_Power_
+  name: CompareTo
+  nameWithType: Power.CompareTo
+  fullName: CircuitTool.Units.Power.CompareTo
+- uid: System.IComparable{CircuitTool.Units.Power}.CompareTo(CircuitTool.Units.Power)
+  commentId: M:System.IComparable{CircuitTool.Units.Power}.CompareTo(CircuitTool.Units.Power)
+  parent: System.IComparable{CircuitTool.Units.Power}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Power)
+  nameWithType: IComparable<Power>.CompareTo(Power)
+  fullName: System.IComparable<CircuitTool.Units.Power>.CompareTo(CircuitTool.Units.Power)
+  nameWithType.vb: IComparable(Of Power).CompareTo(Power)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Power).CompareTo(CircuitTool.Units.Power)
+  spec.csharp:
+  - uid: System.IComparable{CircuitTool.Units.Power}.CompareTo(CircuitTool.Units.Power)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{CircuitTool.Units.Power}.CompareTo(CircuitTool.Units.Power)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Power
+    name: Power
+    href: CircuitTool.Units.Power.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Power.ToString*
+  commentId: Overload:CircuitTool.Units.Power.ToString
+  href: CircuitTool.Units.Power.html#CircuitTool_Units_Power_ToString
+  name: ToString
+  nameWithType: Power.ToString
+  fullName: CircuitTool.Units.Power.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

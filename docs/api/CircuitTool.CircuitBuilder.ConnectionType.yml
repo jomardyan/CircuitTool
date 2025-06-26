@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CircuitBuilder.ConnectionType
+  commentId: T:CircuitTool.CircuitBuilder.ConnectionType
+  id: ConnectionType
+  parent: CircuitTool.CircuitBuilder
+  children:
+  - CircuitTool.CircuitBuilder.ConnectionType.Parallel
+  - CircuitTool.CircuitBuilder.ConnectionType.Series
+  langs:
+  - csharp
+  - vb
+  name: ConnectionType
+  nameWithType: ConnectionType
+  fullName: CircuitTool.CircuitBuilder.ConnectionType
+  type: Enum
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConnectionType
+    path: src/CircuitBuilder.cs
+    startLine: 96
+  namespace: CircuitTool.CircuitBuilder
+  summary: Represents how components are connected
+  example: []
+  syntax:
+    content: public enum ConnectionType
+    content.vb: Public Enum ConnectionType
+- uid: CircuitTool.CircuitBuilder.ConnectionType.Series
+  commentId: F:CircuitTool.CircuitBuilder.ConnectionType.Series
+  id: Series
+  parent: CircuitTool.CircuitBuilder.ConnectionType
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: ConnectionType.Series
+  fullName: CircuitTool.CircuitBuilder.ConnectionType.Series
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Series
+    path: src/CircuitBuilder.cs
+    startLine: 98
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: Series = 0
+    return:
+      type: CircuitTool.CircuitBuilder.ConnectionType
+- uid: CircuitTool.CircuitBuilder.ConnectionType.Parallel
+  commentId: F:CircuitTool.CircuitBuilder.ConnectionType.Parallel
+  id: Parallel
+  parent: CircuitTool.CircuitBuilder.ConnectionType
+  langs:
+  - csharp
+  - vb
+  name: Parallel
+  nameWithType: ConnectionType.Parallel
+  fullName: CircuitTool.CircuitBuilder.ConnectionType.Parallel
+  type: Field
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Parallel
+    path: src/CircuitBuilder.cs
+    startLine: 99
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: Parallel = 1
+    return:
+      type: CircuitTool.CircuitBuilder.ConnectionType
+references:
+- uid: CircuitTool.CircuitBuilder
+  commentId: N:CircuitTool.CircuitBuilder
+  href: CircuitTool.html
+  name: CircuitTool.CircuitBuilder
+  nameWithType: CircuitTool.CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+- uid: CircuitTool.CircuitBuilder.ConnectionType
+  commentId: T:CircuitTool.CircuitBuilder.ConnectionType
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.ConnectionType.html
+  name: ConnectionType
+  nameWithType: ConnectionType
+  fullName: CircuitTool.CircuitBuilder.ConnectionType

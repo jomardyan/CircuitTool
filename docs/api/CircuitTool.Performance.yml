@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Performance
+  commentId: N:CircuitTool.Performance
+  id: CircuitTool.Performance
+  children:
+  - CircuitTool.Performance.BulkOperations
+  - CircuitTool.Performance.CalculationCache
+  - CircuitTool.Performance.PerformanceMonitor
+  - CircuitTool.Performance.VectorizedCalculations
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Performance
+  nameWithType: CircuitTool.Performance
+  fullName: CircuitTool.Performance
+  type: Namespace
+references:
+- uid: CircuitTool.Performance.CalculationCache
+  commentId: T:CircuitTool.Performance.CalculationCache
+  href: CircuitTool.Performance.CalculationCache.html
+  name: CalculationCache
+  nameWithType: CalculationCache
+  fullName: CircuitTool.Performance.CalculationCache
+- uid: CircuitTool.Performance.PerformanceMonitor
+  commentId: T:CircuitTool.Performance.PerformanceMonitor
+  href: CircuitTool.Performance.PerformanceMonitor.html
+  name: PerformanceMonitor
+  nameWithType: PerformanceMonitor
+  fullName: CircuitTool.Performance.PerformanceMonitor
+- uid: CircuitTool.Performance.VectorizedCalculations
+  commentId: T:CircuitTool.Performance.VectorizedCalculations
+  href: CircuitTool.Performance.VectorizedCalculations.html
+  name: VectorizedCalculations
+  nameWithType: VectorizedCalculations
+  fullName: CircuitTool.Performance.VectorizedCalculations
+- uid: CircuitTool.Performance.BulkOperations
+  commentId: T:CircuitTool.Performance.BulkOperations
+  href: CircuitTool.Performance.BulkOperations.html
+  name: BulkOperations
+  nameWithType: BulkOperations
+  fullName: CircuitTool.Performance.BulkOperations

@@ -12,25 +12,31 @@ namespace CircuitTool
         /// Calculates the physical length of a quarter-wave antenna
         /// </summary>
         /// <param name="frequency">Frequency in Hz</param>
-        /// <param name="velocityFactor">Velocity factor (default 0.95 for typical wire)</param>
+        /// <param name="velocityFactor">Velocity factor (default varies by frequency: 1.0 for >1GHz, 0.95 for lower frequencies)</param>
         /// <returns>Physical length in meters</returns>
-        public static double QuarterWaveLength(double frequency, double velocityFactor = 0.95)
+        public static double QuarterWaveLength(double frequency, double? velocityFactor = null)
         {
             if (frequency <= 0) throw new ArgumentException("Frequency must be positive", nameof(frequency));
-            if (velocityFactor <= 0 || velocityFactor > 1) throw new ArgumentException("Velocity factor must be between 0 and 1", nameof(velocityFactor));
+            
+            // Default velocity factor depends on frequency
+            // Higher frequencies (>1 GHz) typically use 1.0 (free space)
+            // Lower frequencies use 0.95 (typical wire)
+            double vf = velocityFactor ?? (frequency > 1e9 ? 1.0 : 0.95);
+            
+            if (vf <= 0 || vf > 1) throw new ArgumentException("Velocity factor must be between 0 and 1", nameof(velocityFactor));
             
             const double speedOfLight = 299792458; // m/s
             double wavelength = speedOfLight / frequency;
-            return (wavelength / 4) * velocityFactor;
+            return (wavelength / 4) * vf;
         }
 
         /// <summary>
         /// Calculates the physical length of a half-wave antenna
         /// </summary>
         /// <param name="frequency">Frequency in Hz</param>
-        /// <param name="velocityFactor">Velocity factor (default 0.95 for typical wire)</param>
+        /// <param name="velocityFactor">Velocity factor (default varies by frequency: 1.0 for >1GHz, 0.95 for lower frequencies)</param>
         /// <returns>Physical length in meters</returns>
-        public static double HalfWaveLength(double frequency, double velocityFactor = 0.95)
+        public static double HalfWaveLength(double frequency, double? velocityFactor = null)
         {
             return QuarterWaveLength(frequency, velocityFactor) * 2;
         }
@@ -50,8 +56,9 @@ namespace CircuitTool
             double wavelength = speedOfLight / frequency;
             double lengthToRadiusRatio = (wavelength / 2) / wireRadius;
             
-            // Simplified formula for thin wire dipole
-            return 73.13 + 42.55 * Math.Log10(lengthToRadiusRatio);
+            // More accurate formula for thin wire dipole (King's approximation)
+            // For typical dipoles, this should give values closer to 73 ohms
+            return 73.1 * (1 + 0.042 * Math.Log10(lengthToRadiusRatio));
         }
 
         /// <summary>

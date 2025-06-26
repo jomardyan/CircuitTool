@@ -1,0 +1,421 @@
+### YamlMime:TableOfContent
+items:
+- uid: CircuitTool
+  name: CircuitTool
+  type: Namespace
+  items:
+  - uid: CircuitTool.ACCircuitCalculator
+    name: ACCircuitCalculator
+    type: Class
+  - uid: CircuitTool.ACCurrent
+    name: ACCurrent
+    type: Struct
+  - uid: CircuitTool.ACVoltage
+    name: ACVoltage
+    type: Struct
+  - uid: CircuitTool.Admittance
+    name: Admittance
+    type: Struct
+  - uid: CircuitTool.AntennaCalculator
+    name: AntennaCalculator
+    type: Class
+  - uid: CircuitTool.ArduinoTools
+    name: ArduinoTools
+    type: Class
+  - uid: CircuitTool.BeginnerCalculators
+    name: BeginnerCalculators
+    type: Class
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    type: Class
+  - uid: CircuitTool.CircuitCalculations
+    name: CircuitCalculations
+    type: Class
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    type: Class
+  - uid: CircuitTool.ComPortTools.SerialConfig
+    name: ComPortTools.SerialConfig
+    type: Class
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: ComPortTools.SerialHandshake
+    type: Enum
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: ComPortTools.SerialParity
+    type: Enum
+  - uid: CircuitTool.ComPortTools.SerialPortInfo
+    name: ComPortTools.SerialPortInfo
+    type: Class
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: ComPortTools.SerialStopBits
+    type: Enum
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    type: Class
+  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+    name: CommunicationProtocolTools.I2CConfig
+    type: Class
+  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+    name: CommunicationProtocolTools.SPIConfig
+    type: Class
+  - uid: CircuitTool.CommunicationProtocolTools.SPIMode
+    name: CommunicationProtocolTools.SPIMode
+    type: Enum
+  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+    name: CommunicationProtocolTools.UARTConfig
+    type: Class
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    type: Class
+  - uid: CircuitTool.DocumentationExamples.ACAnalysis
+    name: DocumentationExamples.ACAnalysis
+    type: Class
+  - uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
+    name: DocumentationExamples.BasicOhmsLaw
+    type: Class
+  - uid: CircuitTool.DocumentationExamples.CircuitBuilding
+    name: DocumentationExamples.CircuitBuilding
+    type: Class
+  - uid: CircuitTool.DocumentationExamples.EnergyCalculations
+    name: DocumentationExamples.EnergyCalculations
+    type: Class
+  - uid: CircuitTool.EMCCalculator
+    name: EMCCalculator
+    type: Class
+  - uid: CircuitTool.ESP32Tools
+    name: ESP32Tools
+    type: Class
+  - uid: CircuitTool.ElectricityBillCalculator
+    name: ElectricityBillCalculator
+    type: Class
+  - uid: CircuitTool.EnergyCalculator
+    name: EnergyCalculator
+    type: Class
+  - uid: CircuitTool.EnergyConsumptionCalculator
+    name: EnergyConsumptionCalculator
+    type: Class
+  - uid: CircuitTool.FilterCalculator
+    name: FilterCalculator
+    type: Class
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    type: Class
+  - uid: CircuitTool.HardwareDebuggingTools.DebugResult
+    name: HardwareDebuggingTools.DebugResult
+    type: Class
+  - uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
+    name: HardwareDebuggingTools.HardwareConfig
+    type: Class
+  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+    name: HardwareDebuggingTools.ProblemCategory
+    type: Enum
+  - uid: CircuitTool.Impedance
+    name: Impedance
+    type: Struct
+  - uid: CircuitTool.InductorCalculator
+    name: InductorCalculator
+    type: Class
+  - uid: CircuitTool.InteractiveTutorials
+    name: InteractiveTutorials
+    type: Class
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    type: Class
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    type: Class
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorControlCalculator.MotorType
+    type: Enum
+  - uid: CircuitTool.OhmsLawCalculator
+    name: OhmsLawCalculator
+    type: Class
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    type: Class
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBDesignCalculator.PCBStackup
+    type: Enum
+  - uid: CircuitTool.PhysicsCircuitCalculators
+    name: PhysicsCircuitCalculators
+    type: Class
+  - uid: CircuitTool.PowerCalculator
+    name: PowerCalculator
+    type: Class
+  - uid: CircuitTool.PowerFactorCalculator
+    name: PowerFactorCalculator
+    type: Class
+  - uid: CircuitTool.PowerSupplyCalculator
+    name: PowerSupplyCalculator
+    type: Class
+  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+    name: PowerSupplyCalculator.PSUTopology
+    type: Enum
+  - uid: CircuitTool.RaspberryPiModel
+    name: RaspberryPiModel
+    type: Enum
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    type: Class
+  - uid: CircuitTool.RaspberryPiTools.GPIOPin
+    name: RaspberryPiTools.GPIOPin
+    type: Enum
+  - uid: CircuitTool.RaspberryPiTools.PWMConfig
+    name: RaspberryPiTools.PWMConfig
+    type: Struct
+  - uid: CircuitTool.ResistorCalculator
+    name: ResistorCalculator
+    type: Class
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    type: Class
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorInterfaceCalculator.SensorType
+    type: Enum
+  - uid: CircuitTool.SignalIntegrityCalculator
+    name: SignalIntegrityCalculator
+    type: Class
+  - uid: CircuitTool.ThermalCalculator
+    name: ThermalCalculator
+    type: Class
+  - uid: CircuitTool.TransformerCalculator
+    name: TransformerCalculator
+    type: Class
+  - uid: CircuitTool.UnitConverter
+    name: UnitConverter
+    type: Class
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    type: Class
+  - uid: CircuitTool.UseCaseTemplates.FilterDesign
+    name: UseCaseTemplates.FilterDesign
+    type: Class
+  - uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
+    name: UseCaseTemplates.LEDResistorCalculator
+    type: Class
+  - uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
+    name: UseCaseTemplates.VoltageDividerDesign
+    type: Class
+  - uid: CircuitTool.VoltageCalculator
+    name: VoltageCalculator
+    type: Class
+  - uid: CircuitTool.VoltageDividerCalculator
+    name: VoltageDividerCalculator
+    type: Class
+  - uid: CircuitTool.VoltageDropCalculator
+    name: VoltageDropCalculator
+    type: Class
+  - uid: CircuitTool.WattsVoltsAmpsOhmsCalculator
+    name: WattsVoltsAmpsOhmsCalculator
+    type: Class
+  - uid: CircuitTool.WiFiMode
+    name: WiFiMode
+    type: Enum
+- uid: CircuitTool.Analysis
+  name: CircuitTool.Analysis
+  type: Namespace
+  items:
+  - uid: CircuitTool.Analysis.DesignCenteringResult
+    name: DesignCenteringResult
+    type: Struct
+  - uid: CircuitTool.Analysis.SensitivityResult
+    name: SensitivityResult
+    type: Struct
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    type: Class
+  - uid: CircuitTool.Analysis.StandardTolerances.Capacitor
+    name: StandardTolerances.Capacitor
+    type: Class
+  - uid: CircuitTool.Analysis.StandardTolerances.Inductor
+    name: StandardTolerances.Inductor
+    type: Class
+  - uid: CircuitTool.Analysis.StandardTolerances.Resistor
+    name: StandardTolerances.Resistor
+    type: Class
+  - uid: CircuitTool.Analysis.StatisticalResult
+    name: StatisticalResult
+    type: Struct
+  - uid: CircuitTool.Analysis.ToleranceAnalysis
+    name: ToleranceAnalysis
+    type: Class
+  - uid: CircuitTool.Analysis.WorstCaseResult
+    name: WorstCaseResult
+    type: Struct
+- uid: CircuitTool.Async
+  name: CircuitTool.Async
+  type: Namespace
+  items:
+  - uid: CircuitTool.Async.AsyncCalculations
+    name: AsyncCalculations
+    type: Class
+  - uid: CircuitTool.Async.FrequencyResponse
+    name: FrequencyResponse
+    type: Struct
+  - uid: CircuitTool.Async.HarmonicAnalysis
+    name: HarmonicAnalysis
+    type: Struct
+  - uid: CircuitTool.Async.MonteCarloResult
+    name: MonteCarloResult
+    type: Struct
+  - uid: CircuitTool.Async.ThermalResult
+    name: ThermalResult
+    type: Struct
+- uid: CircuitTool.Calculators
+  name: CircuitTool.Calculators
+  type: Namespace
+  items:
+  - uid: CircuitTool.Calculators.ComponentCalculator
+    name: ComponentCalculator
+    type: Class
+- uid: CircuitTool.CircuitBuilder
+  name: CircuitTool.CircuitBuilder
+  type: Namespace
+  items:
+  - uid: CircuitTool.CircuitBuilder.Capacitor
+    name: Capacitor
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.Circuit
+    name: Circuit
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.CircuitBuilder
+    name: CircuitBuilder
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.CircuitResponse
+    name: CircuitResponse
+    type: Struct
+  - uid: CircuitTool.CircuitBuilder.ComplexPower
+    name: ComplexPower
+    type: Struct
+  - uid: CircuitTool.CircuitBuilder.Component
+    name: Component
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.ComponentConnection
+    name: ComponentConnection
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.ConnectionType
+    name: ConnectionType
+    type: Enum
+  - uid: CircuitTool.CircuitBuilder.Inductor
+    name: Inductor
+    type: Class
+  - uid: CircuitTool.CircuitBuilder.Resistor
+    name: Resistor
+    type: Class
+- uid: CircuitTool.Mathematics
+  name: CircuitTool.Mathematics
+  type: Namespace
+  items:
+  - uid: CircuitTool.Mathematics.FourierTransform
+    name: FourierTransform
+    type: Class
+  - uid: CircuitTool.Mathematics.MatrixOperations
+    name: MatrixOperations
+    type: Class
+  - uid: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+    name: MatrixOperations.ComplexMatrix
+    type: Class
+  - uid: CircuitTool.Mathematics.WindowType
+    name: WindowType
+    type: Enum
+- uid: CircuitTool.Performance
+  name: CircuitTool.Performance
+  type: Namespace
+  items:
+  - uid: CircuitTool.Performance.BulkOperations
+    name: BulkOperations
+    type: Class
+  - uid: CircuitTool.Performance.CalculationCache
+    name: CalculationCache
+    type: Class
+  - uid: CircuitTool.Performance.PerformanceMonitor
+    name: PerformanceMonitor
+    type: Class
+  - uid: CircuitTool.Performance.VectorizedCalculations
+    name: VectorizedCalculations
+    type: Class
+- uid: CircuitTool.PowerAnalysis
+  name: CircuitTool.PowerAnalysis
+  type: Namespace
+  items:
+  - uid: CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
+    name: AdvancedPowerAnalysis
+    type: Class
+  - uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+    name: BalancedThreePhasePower
+    type: Struct
+  - uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+    name: HarmonicPowerAnalysis
+    type: Struct
+  - uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+    name: PowerQualityAnalysis
+    type: Struct
+  - uid: CircuitTool.PowerAnalysis.SequenceComponents
+    name: SequenceComponents
+    type: Struct
+  - uid: CircuitTool.PowerAnalysis.ThreePhasePower
+    name: ThreePhasePower
+    type: Struct
+- uid: CircuitTool.Serialization
+  name: CircuitTool.Serialization
+  type: Namespace
+  items:
+  - uid: CircuitTool.Serialization.CircuitImportExport
+    name: CircuitImportExport
+    type: Class
+  - uid: CircuitTool.Serialization.CircuitSerialization
+    name: CircuitSerialization
+    type: Class
+  - uid: CircuitTool.Serialization.ExportFormat
+    name: ExportFormat
+    type: Enum
+- uid: CircuitTool.Units
+  name: CircuitTool.Units
+  type: Namespace
+  items:
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    type: Struct
+  - uid: CircuitTool.Units.CapacitanceUnit
+    name: CapacitanceUnit
+    type: Enum
+  - uid: CircuitTool.Units.Current
+    name: Current
+    type: Struct
+  - uid: CircuitTool.Units.CurrentUnit
+    name: CurrentUnit
+    type: Enum
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    type: Struct
+  - uid: CircuitTool.Units.FrequencyUnit
+    name: FrequencyUnit
+    type: Enum
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    type: Struct
+  - uid: CircuitTool.Units.InductanceUnit
+    name: InductanceUnit
+    type: Enum
+  - uid: CircuitTool.Units.Power
+    name: Power
+    type: Struct
+  - uid: CircuitTool.Units.PowerUnit
+    name: PowerUnit
+    type: Enum
+  - uid: CircuitTool.Units.Resistance
+    name: Resistance
+    type: Struct
+  - uid: CircuitTool.Units.ResistanceUnit
+    name: ResistanceUnit
+    type: Enum
+  - uid: CircuitTool.Units.TypedOhmsLawCalculator
+    name: TypedOhmsLawCalculator
+    type: Class
+  - uid: CircuitTool.Units.Voltage
+    name: Voltage
+    type: Struct
+  - uid: CircuitTool.Units.VoltageUnit
+    name: VoltageUnit
+    type: Enum
+memberLayout: SamePage

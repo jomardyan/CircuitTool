@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.PowerUnit
+  commentId: T:CircuitTool.Units.PowerUnit
+  id: PowerUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.PowerUnit.Gigawatts
+  - CircuitTool.Units.PowerUnit.Kilowatts
+  - CircuitTool.Units.PowerUnit.Megawatts
+  - CircuitTool.Units.PowerUnit.Microwatts
+  - CircuitTool.Units.PowerUnit.Milliwatts
+  - CircuitTool.Units.PowerUnit.Nanowatts
+  - CircuitTool.Units.PowerUnit.Watts
+  langs:
+  - csharp
+  - vb
+  name: PowerUnit
+  nameWithType: PowerUnit
+  fullName: CircuitTool.Units.PowerUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerUnit
+    path: src/Units/PowerUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents power measurement units
+  example: []
+  syntax:
+    content: public enum PowerUnit
+    content.vb: Public Enum PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Nanowatts
+  commentId: F:CircuitTool.Units.PowerUnit.Nanowatts
+  id: Nanowatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Nanowatts
+  nameWithType: PowerUnit.Nanowatts
+  fullName: CircuitTool.Units.PowerUnit.Nanowatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanowatts
+    path: src/Units/PowerUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Nanowatts (nW)
+  example: []
+  syntax:
+    content: Nanowatts = 0
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Microwatts
+  commentId: F:CircuitTool.Units.PowerUnit.Microwatts
+  id: Microwatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Microwatts
+  nameWithType: PowerUnit.Microwatts
+  fullName: CircuitTool.Units.PowerUnit.Microwatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microwatts
+    path: src/Units/PowerUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Microwatts (μW)
+  example: []
+  syntax:
+    content: Microwatts = 1
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Milliwatts
+  commentId: F:CircuitTool.Units.PowerUnit.Milliwatts
+  id: Milliwatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Milliwatts
+  nameWithType: PowerUnit.Milliwatts
+  fullName: CircuitTool.Units.PowerUnit.Milliwatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Milliwatts
+    path: src/Units/PowerUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Milliwatts (mW)
+  example: []
+  syntax:
+    content: Milliwatts = 2
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Watts
+  commentId: F:CircuitTool.Units.PowerUnit.Watts
+  id: Watts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Watts
+  nameWithType: PowerUnit.Watts
+  fullName: CircuitTool.Units.PowerUnit.Watts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Watts
+    path: src/Units/PowerUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Watts (W)
+  example: []
+  syntax:
+    content: Watts = 3
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Kilowatts
+  commentId: F:CircuitTool.Units.PowerUnit.Kilowatts
+  id: Kilowatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Kilowatts
+  nameWithType: PowerUnit.Kilowatts
+  fullName: CircuitTool.Units.PowerUnit.Kilowatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilowatts
+    path: src/Units/PowerUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Kilowatts (kW)
+  example: []
+  syntax:
+    content: Kilowatts = 4
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Megawatts
+  commentId: F:CircuitTool.Units.PowerUnit.Megawatts
+  id: Megawatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Megawatts
+  nameWithType: PowerUnit.Megawatts
+  fullName: CircuitTool.Units.PowerUnit.Megawatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megawatts
+    path: src/Units/PowerUnit.cs
+    startLine: 21
+  namespace: CircuitTool.Units
+  summary: Megawatts (MW)
+  example: []
+  syntax:
+    content: Megawatts = 5
+    return:
+      type: CircuitTool.Units.PowerUnit
+- uid: CircuitTool.Units.PowerUnit.Gigawatts
+  commentId: F:CircuitTool.Units.PowerUnit.Gigawatts
+  id: Gigawatts
+  parent: CircuitTool.Units.PowerUnit
+  langs:
+  - csharp
+  - vb
+  name: Gigawatts
+  nameWithType: PowerUnit.Gigawatts
+  fullName: CircuitTool.Units.PowerUnit.Gigawatts
+  type: Field
+  source:
+    remote:
+      path: src/Units/PowerUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gigawatts
+    path: src/Units/PowerUnit.cs
+    startLine: 23
+  namespace: CircuitTool.Units
+  summary: Gigawatts (GW)
+  example: []
+  syntax:
+    content: Gigawatts = 6
+    return:
+      type: CircuitTool.Units.PowerUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.PowerUnit
+  commentId: T:CircuitTool.Units.PowerUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.PowerUnit.html
+  name: PowerUnit
+  nameWithType: PowerUnit
+  fullName: CircuitTool.Units.PowerUnit

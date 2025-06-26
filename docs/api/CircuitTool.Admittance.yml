@@ -1,0 +1,1044 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Admittance
+  commentId: T:CircuitTool.Admittance
+  id: Admittance
+  parent: CircuitTool
+  children:
+  - CircuitTool.Admittance.#ctor(System.Numerics.Complex)
+  - CircuitTool.Admittance.Complex
+  - CircuitTool.Admittance.Conductance
+  - CircuitTool.Admittance.Equals(CircuitTool.Admittance)
+  - CircuitTool.Admittance.Equals(System.Object)
+  - CircuitTool.Admittance.GetHashCode
+  - CircuitTool.Admittance.Impedance
+  - CircuitTool.Admittance.Magnitude
+  - CircuitTool.Admittance.Susceptance
+  - CircuitTool.Admittance.ToString
+  - CircuitTool.Admittance.op_Addition(CircuitTool.Admittance,CircuitTool.Admittance)
+  - CircuitTool.Admittance.op_Equality(CircuitTool.Admittance,CircuitTool.Admittance)
+  - CircuitTool.Admittance.op_Inequality(CircuitTool.Admittance,CircuitTool.Admittance)
+  - CircuitTool.Admittance.op_Subtraction(CircuitTool.Admittance,CircuitTool.Admittance)
+  langs:
+  - csharp
+  - vb
+  name: Admittance
+  nameWithType: Admittance
+  fullName: CircuitTool.Admittance
+  type: Struct
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Admittance
+    path: src/ACTypes.cs
+    startLine: 297
+  namespace: CircuitTool
+  summary: Represents complex admittance for AC circuit analysis
+  example: []
+  syntax:
+    content: 'public readonly struct Admittance : IEquatable<Admittance>'
+    content.vb: Public Structure Admittance Implements IEquatable(Of Admittance)
+  implements:
+  - System.IEquatable{CircuitTool.Admittance}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Admittance.#ctor(System.Numerics.Complex)
+  commentId: M:CircuitTool.Admittance.#ctor(System.Numerics.Complex)
+  id: '#ctor(System.Numerics.Complex)'
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Admittance(Complex)
+  nameWithType: Admittance.Admittance(Complex)
+  fullName: CircuitTool.Admittance.Admittance(System.Numerics.Complex)
+  type: Constructor
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/ACTypes.cs
+    startLine: 305
+  namespace: CircuitTool
+  summary: Creates a new admittance from a complex number
+  example: []
+  syntax:
+    content: public Admittance(Complex complex)
+    parameters:
+    - id: complex
+      type: System.Numerics.Complex
+      description: Complex representation
+    content.vb: Public Sub New(complex As Complex)
+  overload: CircuitTool.Admittance.#ctor*
+  nameWithType.vb: Admittance.New(Complex)
+  fullName.vb: CircuitTool.Admittance.New(System.Numerics.Complex)
+  name.vb: New(Complex)
+- uid: CircuitTool.Admittance.Magnitude
+  commentId: P:CircuitTool.Admittance.Magnitude
+  id: Magnitude
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: Admittance.Magnitude
+  fullName: CircuitTool.Admittance.Magnitude
+  type: Property
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Magnitude
+    path: src/ACTypes.cs
+    startLine: 313
+  namespace: CircuitTool
+  summary: Gets the magnitude in siemens
+  example: []
+  syntax:
+    content: public double Magnitude { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Magnitude As Double
+  overload: CircuitTool.Admittance.Magnitude*
+- uid: CircuitTool.Admittance.Conductance
+  commentId: P:CircuitTool.Admittance.Conductance
+  id: Conductance
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Conductance
+  nameWithType: Admittance.Conductance
+  fullName: CircuitTool.Admittance.Conductance
+  type: Property
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Conductance
+    path: src/ACTypes.cs
+    startLine: 318
+  namespace: CircuitTool
+  summary: Gets the conductance component in siemens
+  example: []
+  syntax:
+    content: public double Conductance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Conductance As Double
+  overload: CircuitTool.Admittance.Conductance*
+- uid: CircuitTool.Admittance.Susceptance
+  commentId: P:CircuitTool.Admittance.Susceptance
+  id: Susceptance
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Susceptance
+  nameWithType: Admittance.Susceptance
+  fullName: CircuitTool.Admittance.Susceptance
+  type: Property
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Susceptance
+    path: src/ACTypes.cs
+    startLine: 323
+  namespace: CircuitTool
+  summary: Gets the susceptance component in siemens
+  example: []
+  syntax:
+    content: public double Susceptance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Susceptance As Double
+  overload: CircuitTool.Admittance.Susceptance*
+- uid: CircuitTool.Admittance.Complex
+  commentId: P:CircuitTool.Admittance.Complex
+  id: Complex
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Complex
+  nameWithType: Admittance.Complex
+  fullName: CircuitTool.Admittance.Complex
+  type: Property
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Complex
+    path: src/ACTypes.cs
+    startLine: 328
+  namespace: CircuitTool
+  summary: Gets the complex number representation
+  example: []
+  syntax:
+    content: public Complex Complex { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex
+    content.vb: Public ReadOnly Property Complex As Complex
+  overload: CircuitTool.Admittance.Complex*
+- uid: CircuitTool.Admittance.Impedance
+  commentId: P:CircuitTool.Admittance.Impedance
+  id: Impedance
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Impedance
+  nameWithType: Admittance.Impedance
+  fullName: CircuitTool.Admittance.Impedance
+  type: Property
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Impedance
+    path: src/ACTypes.cs
+    startLine: 333
+  namespace: CircuitTool
+  summary: Gets the impedance (1/Y)
+  example: []
+  syntax:
+    content: public Impedance Impedance { get; }
+    parameters: []
+    return:
+      type: CircuitTool.Impedance
+    content.vb: Public ReadOnly Property Impedance As Impedance
+  overload: CircuitTool.Admittance.Impedance*
+- uid: CircuitTool.Admittance.op_Addition(CircuitTool.Admittance,CircuitTool.Admittance)
+  commentId: M:CircuitTool.Admittance.op_Addition(CircuitTool.Admittance,CircuitTool.Admittance)
+  id: op_Addition(CircuitTool.Admittance,CircuitTool.Admittance)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: operator +(Admittance, Admittance)
+  nameWithType: Admittance.operator +(Admittance, Admittance)
+  fullName: CircuitTool.Admittance.operator +(CircuitTool.Admittance, CircuitTool.Admittance)
+  type: Operator
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Addition
+    path: src/ACTypes.cs
+    startLine: 335
+  namespace: CircuitTool
+  syntax:
+    content: public static Admittance operator +(Admittance left, Admittance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Admittance
+    - id: right
+      type: CircuitTool.Admittance
+    return:
+      type: CircuitTool.Admittance
+    content.vb: Public Shared Operator +(left As Admittance, right As Admittance) As Admittance
+  overload: CircuitTool.Admittance.op_Addition*
+  nameWithType.vb: Admittance.+(Admittance, Admittance)
+  fullName.vb: CircuitTool.Admittance.+(CircuitTool.Admittance, CircuitTool.Admittance)
+  name.vb: +(Admittance, Admittance)
+- uid: CircuitTool.Admittance.op_Subtraction(CircuitTool.Admittance,CircuitTool.Admittance)
+  commentId: M:CircuitTool.Admittance.op_Subtraction(CircuitTool.Admittance,CircuitTool.Admittance)
+  id: op_Subtraction(CircuitTool.Admittance,CircuitTool.Admittance)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: operator -(Admittance, Admittance)
+  nameWithType: Admittance.operator -(Admittance, Admittance)
+  fullName: CircuitTool.Admittance.operator -(CircuitTool.Admittance, CircuitTool.Admittance)
+  type: Operator
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Subtraction
+    path: src/ACTypes.cs
+    startLine: 336
+  namespace: CircuitTool
+  syntax:
+    content: public static Admittance operator -(Admittance left, Admittance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Admittance
+    - id: right
+      type: CircuitTool.Admittance
+    return:
+      type: CircuitTool.Admittance
+    content.vb: Public Shared Operator -(left As Admittance, right As Admittance) As Admittance
+  overload: CircuitTool.Admittance.op_Subtraction*
+  nameWithType.vb: Admittance.-(Admittance, Admittance)
+  fullName.vb: CircuitTool.Admittance.-(CircuitTool.Admittance, CircuitTool.Admittance)
+  name.vb: -(Admittance, Admittance)
+- uid: CircuitTool.Admittance.op_Equality(CircuitTool.Admittance,CircuitTool.Admittance)
+  commentId: M:CircuitTool.Admittance.op_Equality(CircuitTool.Admittance,CircuitTool.Admittance)
+  id: op_Equality(CircuitTool.Admittance,CircuitTool.Admittance)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Admittance, Admittance)
+  nameWithType: Admittance.operator ==(Admittance, Admittance)
+  fullName: CircuitTool.Admittance.operator ==(CircuitTool.Admittance, CircuitTool.Admittance)
+  type: Operator
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Equality
+    path: src/ACTypes.cs
+    startLine: 338
+  namespace: CircuitTool
+  syntax:
+    content: public static bool operator ==(Admittance left, Admittance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Admittance
+    - id: right
+      type: CircuitTool.Admittance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Admittance, right As Admittance) As Boolean
+  overload: CircuitTool.Admittance.op_Equality*
+  nameWithType.vb: Admittance.=(Admittance, Admittance)
+  fullName.vb: CircuitTool.Admittance.=(CircuitTool.Admittance, CircuitTool.Admittance)
+  name.vb: =(Admittance, Admittance)
+- uid: CircuitTool.Admittance.op_Inequality(CircuitTool.Admittance,CircuitTool.Admittance)
+  commentId: M:CircuitTool.Admittance.op_Inequality(CircuitTool.Admittance,CircuitTool.Admittance)
+  id: op_Inequality(CircuitTool.Admittance,CircuitTool.Admittance)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Admittance, Admittance)
+  nameWithType: Admittance.operator !=(Admittance, Admittance)
+  fullName: CircuitTool.Admittance.operator !=(CircuitTool.Admittance, CircuitTool.Admittance)
+  type: Operator
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Inequality
+    path: src/ACTypes.cs
+    startLine: 339
+  namespace: CircuitTool
+  syntax:
+    content: public static bool operator !=(Admittance left, Admittance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Admittance
+    - id: right
+      type: CircuitTool.Admittance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Admittance, right As Admittance) As Boolean
+  overload: CircuitTool.Admittance.op_Inequality*
+  nameWithType.vb: Admittance.<>(Admittance, Admittance)
+  fullName.vb: CircuitTool.Admittance.<>(CircuitTool.Admittance, CircuitTool.Admittance)
+  name.vb: <>(Admittance, Admittance)
+- uid: CircuitTool.Admittance.Equals(CircuitTool.Admittance)
+  commentId: M:CircuitTool.Admittance.Equals(CircuitTool.Admittance)
+  id: Equals(CircuitTool.Admittance)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Equals(Admittance)
+  nameWithType: Admittance.Equals(Admittance)
+  fullName: CircuitTool.Admittance.Equals(CircuitTool.Admittance)
+  type: Method
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/ACTypes.cs
+    startLine: 341
+  namespace: CircuitTool
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Admittance other)
+    parameters:
+    - id: other
+      type: CircuitTool.Admittance
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Admittance) As Boolean
+  overload: CircuitTool.Admittance.Equals*
+  implements:
+  - System.IEquatable{CircuitTool.Admittance}.Equals(CircuitTool.Admittance)
+- uid: CircuitTool.Admittance.Equals(System.Object)
+  commentId: M:CircuitTool.Admittance.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Admittance.Equals(object?)
+  fullName: CircuitTool.Admittance.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/ACTypes.cs
+    startLine: 342
+  namespace: CircuitTool
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: CircuitTool.Admittance.Equals*
+  nameWithType.vb: Admittance.Equals(Object)
+  fullName.vb: CircuitTool.Admittance.Equals(Object)
+  name.vb: Equals(Object)
+- uid: CircuitTool.Admittance.GetHashCode
+  commentId: M:CircuitTool.Admittance.GetHashCode
+  id: GetHashCode
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Admittance.GetHashCode()
+  fullName: CircuitTool.Admittance.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetHashCode
+    path: src/ACTypes.cs
+    startLine: 343
+  namespace: CircuitTool
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: CircuitTool.Admittance.GetHashCode*
+- uid: CircuitTool.Admittance.ToString
+  commentId: M:CircuitTool.Admittance.ToString
+  id: ToString
+  parent: CircuitTool.Admittance
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Admittance.ToString()
+  fullName: CircuitTool.Admittance.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/ACTypes.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/ACTypes.cs
+    startLine: 345
+  namespace: CircuitTool
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Admittance.ToString*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.IEquatable{CircuitTool.Admittance}
+  commentId: T:System.IEquatable{CircuitTool.Admittance}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Admittance>
+  nameWithType: IEquatable<Admittance>
+  fullName: System.IEquatable<CircuitTool.Admittance>
+  nameWithType.vb: IEquatable(Of Admittance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Admittance)
+  name.vb: IEquatable(Of Admittance)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: CircuitTool.Admittance
+    name: Admittance
+    href: CircuitTool.Admittance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Admittance
+    name: Admittance
+    href: CircuitTool.Admittance.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.Admittance.#ctor*
+  commentId: Overload:CircuitTool.Admittance.#ctor
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance__ctor_System_Numerics_Complex_
+  name: Admittance
+  nameWithType: Admittance.Admittance
+  fullName: CircuitTool.Admittance.Admittance
+  nameWithType.vb: Admittance.New
+  fullName.vb: CircuitTool.Admittance.New
+  name.vb: New
+- uid: System.Numerics.Complex
+  commentId: T:System.Numerics.Complex
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  name: Complex
+  nameWithType: Complex
+  fullName: System.Numerics.Complex
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: CircuitTool.Admittance.Magnitude*
+  commentId: Overload:CircuitTool.Admittance.Magnitude
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Magnitude
+  name: Magnitude
+  nameWithType: Admittance.Magnitude
+  fullName: CircuitTool.Admittance.Magnitude
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Admittance.Conductance*
+  commentId: Overload:CircuitTool.Admittance.Conductance
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Conductance
+  name: Conductance
+  nameWithType: Admittance.Conductance
+  fullName: CircuitTool.Admittance.Conductance
+- uid: CircuitTool.Admittance.Susceptance*
+  commentId: Overload:CircuitTool.Admittance.Susceptance
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Susceptance
+  name: Susceptance
+  nameWithType: Admittance.Susceptance
+  fullName: CircuitTool.Admittance.Susceptance
+- uid: CircuitTool.Admittance.Complex*
+  commentId: Overload:CircuitTool.Admittance.Complex
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Complex
+  name: Complex
+  nameWithType: Admittance.Complex
+  fullName: CircuitTool.Admittance.Complex
+- uid: CircuitTool.Admittance.Impedance*
+  commentId: Overload:CircuitTool.Admittance.Impedance
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Impedance
+  name: Impedance
+  nameWithType: Admittance.Impedance
+  fullName: CircuitTool.Admittance.Impedance
+- uid: CircuitTool.Impedance
+  commentId: T:CircuitTool.Impedance
+  parent: CircuitTool
+  href: CircuitTool.Impedance.html
+  name: Impedance
+  nameWithType: Impedance
+  fullName: CircuitTool.Impedance
+- uid: CircuitTool.Admittance.op_Addition*
+  commentId: Overload:CircuitTool.Admittance.op_Addition
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Addition_CircuitTool_Admittance_CircuitTool_Admittance_
+  name: operator +
+  nameWithType: Admittance.operator +
+  fullName: CircuitTool.Admittance.operator +
+  nameWithType.vb: Admittance.+
+  fullName.vb: CircuitTool.Admittance.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Admittance.op_Addition*
+    name: +
+    href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Addition_CircuitTool_Admittance_CircuitTool_Admittance_
+- uid: CircuitTool.Admittance
+  commentId: T:CircuitTool.Admittance
+  parent: CircuitTool
+  href: CircuitTool.Admittance.html
+  name: Admittance
+  nameWithType: Admittance
+  fullName: CircuitTool.Admittance
+- uid: CircuitTool.Admittance.op_Subtraction*
+  commentId: Overload:CircuitTool.Admittance.op_Subtraction
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Subtraction_CircuitTool_Admittance_CircuitTool_Admittance_
+  name: operator -
+  nameWithType: Admittance.operator -
+  fullName: CircuitTool.Admittance.operator -
+  nameWithType.vb: Admittance.-
+  fullName.vb: CircuitTool.Admittance.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Admittance.op_Subtraction*
+    name: '-'
+    href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Subtraction_CircuitTool_Admittance_CircuitTool_Admittance_
+- uid: CircuitTool.Admittance.op_Equality*
+  commentId: Overload:CircuitTool.Admittance.op_Equality
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Equality_CircuitTool_Admittance_CircuitTool_Admittance_
+  name: operator ==
+  nameWithType: Admittance.operator ==
+  fullName: CircuitTool.Admittance.operator ==
+  nameWithType.vb: Admittance.=
+  fullName.vb: CircuitTool.Admittance.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Admittance.op_Equality*
+    name: ==
+    href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Equality_CircuitTool_Admittance_CircuitTool_Admittance_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Admittance.op_Inequality*
+  commentId: Overload:CircuitTool.Admittance.op_Inequality
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Inequality_CircuitTool_Admittance_CircuitTool_Admittance_
+  name: operator !=
+  nameWithType: Admittance.operator !=
+  fullName: CircuitTool.Admittance.operator !=
+  nameWithType.vb: Admittance.<>
+  fullName.vb: CircuitTool.Admittance.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Admittance.op_Inequality*
+    name: '!='
+    href: CircuitTool.Admittance.html#CircuitTool_Admittance_op_Inequality_CircuitTool_Admittance_CircuitTool_Admittance_
+- uid: CircuitTool.Admittance.Equals*
+  commentId: Overload:CircuitTool.Admittance.Equals
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_Equals_CircuitTool_Admittance_
+  name: Equals
+  nameWithType: Admittance.Equals
+  fullName: CircuitTool.Admittance.Equals
+- uid: System.IEquatable{CircuitTool.Admittance}.Equals(CircuitTool.Admittance)
+  commentId: M:System.IEquatable{CircuitTool.Admittance}.Equals(CircuitTool.Admittance)
+  parent: System.IEquatable{CircuitTool.Admittance}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Admittance)
+  nameWithType: IEquatable<Admittance>.Equals(Admittance)
+  fullName: System.IEquatable<CircuitTool.Admittance>.Equals(CircuitTool.Admittance)
+  nameWithType.vb: IEquatable(Of Admittance).Equals(Admittance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Admittance).Equals(CircuitTool.Admittance)
+  spec.csharp:
+  - uid: System.IEquatable{CircuitTool.Admittance}.Equals(CircuitTool.Admittance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Admittance
+    name: Admittance
+    href: CircuitTool.Admittance.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{CircuitTool.Admittance}.Equals(CircuitTool.Admittance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Admittance
+    name: Admittance
+    href: CircuitTool.Admittance.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: CircuitTool.Admittance.GetHashCode*
+  commentId: Overload:CircuitTool.Admittance.GetHashCode
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_GetHashCode
+  name: GetHashCode
+  nameWithType: Admittance.GetHashCode
+  fullName: CircuitTool.Admittance.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Admittance.ToString*
+  commentId: Overload:CircuitTool.Admittance.ToString
+  href: CircuitTool.Admittance.html#CircuitTool_Admittance_ToString
+  name: ToString
+  nameWithType: Admittance.ToString
+  fullName: CircuitTool.Admittance.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

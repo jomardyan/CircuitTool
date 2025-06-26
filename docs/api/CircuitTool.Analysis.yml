@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Analysis
+  commentId: N:CircuitTool.Analysis
+  id: CircuitTool.Analysis
+  children:
+  - CircuitTool.Analysis.DesignCenteringResult
+  - CircuitTool.Analysis.SensitivityResult
+  - CircuitTool.Analysis.StandardTolerances
+  - CircuitTool.Analysis.StandardTolerances.Capacitor
+  - CircuitTool.Analysis.StandardTolerances.Inductor
+  - CircuitTool.Analysis.StandardTolerances.Resistor
+  - CircuitTool.Analysis.StatisticalResult
+  - CircuitTool.Analysis.ToleranceAnalysis
+  - CircuitTool.Analysis.WorstCaseResult
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Analysis
+  nameWithType: CircuitTool.Analysis
+  fullName: CircuitTool.Analysis
+  type: Namespace
+references:
+- uid: CircuitTool.Analysis.ToleranceAnalysis
+  commentId: T:CircuitTool.Analysis.ToleranceAnalysis
+  href: CircuitTool.Analysis.ToleranceAnalysis.html
+  name: ToleranceAnalysis
+  nameWithType: ToleranceAnalysis
+  fullName: CircuitTool.Analysis.ToleranceAnalysis
+- uid: CircuitTool.Analysis.WorstCaseResult
+  commentId: T:CircuitTool.Analysis.WorstCaseResult
+  parent: CircuitTool.Analysis
+  href: CircuitTool.Analysis.WorstCaseResult.html
+  name: WorstCaseResult
+  nameWithType: WorstCaseResult
+  fullName: CircuitTool.Analysis.WorstCaseResult
+- uid: CircuitTool.Analysis.SensitivityResult
+  commentId: T:CircuitTool.Analysis.SensitivityResult
+  parent: CircuitTool.Analysis
+  href: CircuitTool.Analysis.SensitivityResult.html
+  name: SensitivityResult
+  nameWithType: SensitivityResult
+  fullName: CircuitTool.Analysis.SensitivityResult
+- uid: CircuitTool.Analysis.StatisticalResult
+  commentId: T:CircuitTool.Analysis.StatisticalResult
+  parent: CircuitTool.Analysis
+  href: CircuitTool.Analysis.StatisticalResult.html
+  name: StatisticalResult
+  nameWithType: StatisticalResult
+  fullName: CircuitTool.Analysis.StatisticalResult
+- uid: CircuitTool.Analysis.DesignCenteringResult
+  commentId: T:CircuitTool.Analysis.DesignCenteringResult
+  parent: CircuitTool.Analysis
+  href: CircuitTool.Analysis.DesignCenteringResult.html
+  name: DesignCenteringResult
+  nameWithType: DesignCenteringResult
+  fullName: CircuitTool.Analysis.DesignCenteringResult
+- uid: CircuitTool.Analysis.StandardTolerances
+  commentId: T:CircuitTool.Analysis.StandardTolerances
+  href: CircuitTool.Analysis.StandardTolerances.html
+  name: StandardTolerances
+  nameWithType: StandardTolerances
+  fullName: CircuitTool.Analysis.StandardTolerances
+- uid: CircuitTool.Analysis.StandardTolerances.Resistor
+  commentId: T:CircuitTool.Analysis.StandardTolerances.Resistor
+  href: CircuitTool.Analysis.StandardTolerances.html
+  name: StandardTolerances.Resistor
+  nameWithType: StandardTolerances.Resistor
+  fullName: CircuitTool.Analysis.StandardTolerances.Resistor
+  spec.csharp:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Resistor
+    name: Resistor
+    href: CircuitTool.Analysis.StandardTolerances.Resistor.html
+  spec.vb:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Resistor
+    name: Resistor
+    href: CircuitTool.Analysis.StandardTolerances.Resistor.html
+- uid: CircuitTool.Analysis.StandardTolerances.Capacitor
+  commentId: T:CircuitTool.Analysis.StandardTolerances.Capacitor
+  href: CircuitTool.Analysis.StandardTolerances.html
+  name: StandardTolerances.Capacitor
+  nameWithType: StandardTolerances.Capacitor
+  fullName: CircuitTool.Analysis.StandardTolerances.Capacitor
+  spec.csharp:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Capacitor
+    name: Capacitor
+    href: CircuitTool.Analysis.StandardTolerances.Capacitor.html
+  spec.vb:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Capacitor
+    name: Capacitor
+    href: CircuitTool.Analysis.StandardTolerances.Capacitor.html
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor
+  commentId: T:CircuitTool.Analysis.StandardTolerances.Inductor
+  href: CircuitTool.Analysis.StandardTolerances.html
+  name: StandardTolerances.Inductor
+  nameWithType: StandardTolerances.Inductor
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor
+  spec.csharp:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Inductor
+    name: Inductor
+    href: CircuitTool.Analysis.StandardTolerances.Inductor.html
+  spec.vb:
+  - uid: CircuitTool.Analysis.StandardTolerances
+    name: StandardTolerances
+    href: CircuitTool.Analysis.StandardTolerances.html
+  - name: .
+  - uid: CircuitTool.Analysis.StandardTolerances.Inductor
+    name: Inductor
+    href: CircuitTool.Analysis.StandardTolerances.Inductor.html
+- uid: CircuitTool.Analysis
+  commentId: N:CircuitTool.Analysis
+  href: CircuitTool.html
+  name: CircuitTool.Analysis
+  nameWithType: CircuitTool.Analysis
+  fullName: CircuitTool.Analysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html

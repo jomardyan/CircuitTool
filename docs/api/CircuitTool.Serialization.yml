@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Serialization
+  commentId: N:CircuitTool.Serialization
+  id: CircuitTool.Serialization
+  children:
+  - CircuitTool.Serialization.CircuitImportExport
+  - CircuitTool.Serialization.CircuitSerialization
+  - CircuitTool.Serialization.ExportFormat
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Serialization
+  nameWithType: CircuitTool.Serialization
+  fullName: CircuitTool.Serialization
+  type: Namespace
+references:
+- uid: CircuitTool.Serialization.CircuitSerialization
+  commentId: T:CircuitTool.Serialization.CircuitSerialization
+  href: CircuitTool.Serialization.CircuitSerialization.html
+  name: CircuitSerialization
+  nameWithType: CircuitSerialization
+  fullName: CircuitTool.Serialization.CircuitSerialization
+- uid: CircuitTool.Serialization.CircuitImportExport
+  commentId: T:CircuitTool.Serialization.CircuitImportExport
+  href: CircuitTool.Serialization.CircuitImportExport.html
+  name: CircuitImportExport
+  nameWithType: CircuitImportExport
+  fullName: CircuitTool.Serialization.CircuitImportExport
+- uid: CircuitTool.Serialization.ExportFormat
+  commentId: T:CircuitTool.Serialization.ExportFormat
+  parent: CircuitTool.Serialization
+  href: CircuitTool.Serialization.ExportFormat.html
+  name: ExportFormat
+  nameWithType: ExportFormat
+  fullName: CircuitTool.Serialization.ExportFormat
+- uid: CircuitTool.Serialization
+  commentId: N:CircuitTool.Serialization
+  href: CircuitTool.html
+  name: CircuitTool.Serialization
+  nameWithType: CircuitTool.Serialization
+  fullName: CircuitTool.Serialization
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Serialization
+    name: Serialization
+    href: CircuitTool.Serialization.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Serialization
+    name: Serialization
+    href: CircuitTool.Serialization.html

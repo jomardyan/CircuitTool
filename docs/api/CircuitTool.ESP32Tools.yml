@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ESP32Tools
+  commentId: T:CircuitTool.ESP32Tools
+  id: ESP32Tools
+  parent: CircuitTool
+  children:
+  - CircuitTool.ESP32Tools.AnalogToVoltage(System.Int32,System.Double)
+  - CircuitTool.ESP32Tools.CalculateBatteryLife(System.Double,System.Double,System.Double)
+  - CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption(System.Int32,CircuitTool.WiFiMode,System.Boolean,System.Double)
+  - CircuitTool.ESP32Tools.CalculateTouchThreshold(System.Int32,System.Double)
+  - CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption(CircuitTool.WiFiMode)
+  - CircuitTool.ESP32Tools.VoltageToAnalog(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: ESP32Tools
+  nameWithType: ESP32Tools
+  fullName: CircuitTool.ESP32Tools
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ESP32Tools
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 7
+  namespace: CircuitTool
+  summary: Provides ESP32-specific calculations and utilities
+  example: []
+  syntax:
+    content: public static class ESP32Tools
+    content.vb: Public Module ESP32Tools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.ESP32Tools.AnalogToVoltage(System.Int32,System.Double)
+  commentId: M:CircuitTool.ESP32Tools.AnalogToVoltage(System.Int32,System.Double)
+  id: AnalogToVoltage(System.Int32,System.Double)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: AnalogToVoltage(int, double)
+  nameWithType: ESP32Tools.AnalogToVoltage(int, double)
+  fullName: CircuitTool.ESP32Tools.AnalogToVoltage(int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalogToVoltage
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Converts analog reading to voltage for ESP32 (12-bit ADC, 3.3V reference)
+  example: []
+  syntax:
+    content: public static double AnalogToVoltage(int analogReading, double referenceVoltage = 3.3)
+    parameters:
+    - id: analogReading
+      type: System.Int32
+      description: Analog reading value (0-4095)
+    - id: referenceVoltage
+      type: System.Double
+      description: Reference voltage (default 3.3V for ESP32)
+    return:
+      type: System.Double
+      description: Voltage value
+    content.vb: Public Shared Function AnalogToVoltage(analogReading As Integer, referenceVoltage As Double = 3.3) As Double
+  overload: CircuitTool.ESP32Tools.AnalogToVoltage*
+  nameWithType.vb: ESP32Tools.AnalogToVoltage(Integer, Double)
+  fullName.vb: CircuitTool.ESP32Tools.AnalogToVoltage(Integer, Double)
+  name.vb: AnalogToVoltage(Integer, Double)
+- uid: CircuitTool.ESP32Tools.VoltageToAnalog(System.Double,System.Double)
+  commentId: M:CircuitTool.ESP32Tools.VoltageToAnalog(System.Double,System.Double)
+  id: VoltageToAnalog(System.Double,System.Double)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: VoltageToAnalog(double, double)
+  nameWithType: ESP32Tools.VoltageToAnalog(double, double)
+  fullName: CircuitTool.ESP32Tools.VoltageToAnalog(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageToAnalog
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 29
+  namespace: CircuitTool
+  summary: Converts voltage to analog reading for ESP32
+  example: []
+  syntax:
+    content: public static int VoltageToAnalog(double voltage, double referenceVoltage = 3.3)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Voltage value
+    - id: referenceVoltage
+      type: System.Double
+      description: Reference voltage (default 3.3V for ESP32)
+    return:
+      type: System.Int32
+      description: Analog reading value (0-4095)
+    content.vb: Public Shared Function VoltageToAnalog(voltage As Double, referenceVoltage As Double = 3.3) As Integer
+  overload: CircuitTool.ESP32Tools.VoltageToAnalog*
+  nameWithType.vb: ESP32Tools.VoltageToAnalog(Double, Double)
+  fullName.vb: CircuitTool.ESP32Tools.VoltageToAnalog(Double, Double)
+  name.vb: VoltageToAnalog(Double, Double)
+- uid: CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption(CircuitTool.WiFiMode)
+  commentId: M:CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption(CircuitTool.WiFiMode)
+  id: CalculateWiFiPowerConsumption(CircuitTool.WiFiMode)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: CalculateWiFiPowerConsumption(WiFiMode)
+  nameWithType: ESP32Tools.CalculateWiFiPowerConsumption(WiFiMode)
+  fullName: CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption(CircuitTool.WiFiMode)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateWiFiPowerConsumption
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 42
+  namespace: CircuitTool
+  summary: Calculates WiFi power consumption based on operation mode
+  example: []
+  syntax:
+    content: public static double CalculateWiFiPowerConsumption(WiFiMode mode)
+    parameters:
+    - id: mode
+      type: CircuitTool.WiFiMode
+      description: WiFi operation mode
+    return:
+      type: System.Double
+      description: Current consumption in mA
+    content.vb: Public Shared Function CalculateWiFiPowerConsumption(mode As WiFiMode) As Double
+  overload: CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption*
+- uid: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption(System.Int32,CircuitTool.WiFiMode,System.Boolean,System.Double)
+  commentId: M:CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption(System.Int32,CircuitTool.WiFiMode,System.Boolean,System.Double)
+  id: CalculateTotalCurrentConsumption(System.Int32,CircuitTool.WiFiMode,System.Boolean,System.Double)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: CalculateTotalCurrentConsumption(int, WiFiMode, bool, double)
+  nameWithType: ESP32Tools.CalculateTotalCurrentConsumption(int, WiFiMode, bool, double)
+  fullName: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption(int, CircuitTool.WiFiMode, bool, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateTotalCurrentConsumption
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 69
+  namespace: CircuitTool
+  summary: Calculates total ESP32 current consumption
+  example: []
+  syntax:
+    content: public static double CalculateTotalCurrentConsumption(int cpuFrequency, WiFiMode wifiMode, bool bluetoothActive = false, double additionalCurrent = 0)
+    parameters:
+    - id: cpuFrequency
+      type: System.Int32
+      description: CPU frequency in MHz
+    - id: wifiMode
+      type: CircuitTool.WiFiMode
+      description: WiFi operation mode
+    - id: bluetoothActive
+      type: System.Boolean
+      description: Whether Bluetooth is active
+    - id: additionalCurrent
+      type: System.Double
+      description: Additional current from external components (mA)
+    return:
+      type: System.Double
+      description: Total current consumption in mA
+    content.vb: Public Shared Function CalculateTotalCurrentConsumption(cpuFrequency As Integer, wifiMode As WiFiMode, bluetoothActive As Boolean = False, additionalCurrent As Double = 0) As Double
+  overload: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption*
+  nameWithType.vb: ESP32Tools.CalculateTotalCurrentConsumption(Integer, WiFiMode, Boolean, Double)
+  fullName.vb: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption(Integer, CircuitTool.WiFiMode, Boolean, Double)
+  name.vb: CalculateTotalCurrentConsumption(Integer, WiFiMode, Boolean, Double)
+- uid: CircuitTool.ESP32Tools.CalculateBatteryLife(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.ESP32Tools.CalculateBatteryLife(System.Double,System.Double,System.Double)
+  id: CalculateBatteryLife(System.Double,System.Double,System.Double)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: CalculateBatteryLife(double, double, double)
+  nameWithType: ESP32Tools.CalculateBatteryLife(double, double, double)
+  fullName: CircuitTool.ESP32Tools.CalculateBatteryLife(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateBatteryLife
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 85
+  namespace: CircuitTool
+  summary: Calculates battery life for ESP32 projects
+  example: []
+  syntax:
+    content: public static double CalculateBatteryLife(double batteryCapacity, double averageCurrent, double efficiency = 0.8)
+    parameters:
+    - id: batteryCapacity
+      type: System.Double
+      description: Battery capacity in mAh
+    - id: averageCurrent
+      type: System.Double
+      description: Average current consumption in mA
+    - id: efficiency
+      type: System.Double
+      description: Battery efficiency factor (0.7-0.9)
+    return:
+      type: System.Double
+      description: Battery life in hours
+    content.vb: Public Shared Function CalculateBatteryLife(batteryCapacity As Double, averageCurrent As Double, efficiency As Double = 0.8) As Double
+  overload: CircuitTool.ESP32Tools.CalculateBatteryLife*
+  nameWithType.vb: ESP32Tools.CalculateBatteryLife(Double, Double, Double)
+  fullName.vb: CircuitTool.ESP32Tools.CalculateBatteryLife(Double, Double, Double)
+  name.vb: CalculateBatteryLife(Double, Double, Double)
+- uid: CircuitTool.ESP32Tools.CalculateTouchThreshold(System.Int32,System.Double)
+  commentId: M:CircuitTool.ESP32Tools.CalculateTouchThreshold(System.Int32,System.Double)
+  id: CalculateTouchThreshold(System.Int32,System.Double)
+  parent: CircuitTool.ESP32Tools
+  langs:
+  - csharp
+  - vb
+  name: CalculateTouchThreshold(int, double)
+  nameWithType: ESP32Tools.CalculateTouchThreshold(int, double)
+  fullName: CircuitTool.ESP32Tools.CalculateTouchThreshold(int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateTouchThreshold
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 99
+  namespace: CircuitTool
+  summary: Calculates ESP32 touch sensor threshold
+  example: []
+  syntax:
+    content: public static int CalculateTouchThreshold(int baselineReading, double sensitivity = 0.3)
+    parameters:
+    - id: baselineReading
+      type: System.Int32
+      description: Baseline touch reading
+    - id: sensitivity
+      type: System.Double
+      description: Sensitivity factor (0.1-0.9, higher = more sensitive)
+    return:
+      type: System.Int32
+      description: Touch threshold value
+    content.vb: Public Shared Function CalculateTouchThreshold(baselineReading As Integer, sensitivity As Double = 0.3) As Integer
+  overload: CircuitTool.ESP32Tools.CalculateTouchThreshold*
+  nameWithType.vb: ESP32Tools.CalculateTouchThreshold(Integer, Double)
+  fullName.vb: CircuitTool.ESP32Tools.CalculateTouchThreshold(Integer, Double)
+  name.vb: CalculateTouchThreshold(Integer, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.ESP32Tools.AnalogToVoltage*
+  commentId: Overload:CircuitTool.ESP32Tools.AnalogToVoltage
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_AnalogToVoltage_System_Int32_System_Double_
+  name: AnalogToVoltage
+  nameWithType: ESP32Tools.AnalogToVoltage
+  fullName: CircuitTool.ESP32Tools.AnalogToVoltage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.ESP32Tools.VoltageToAnalog*
+  commentId: Overload:CircuitTool.ESP32Tools.VoltageToAnalog
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_VoltageToAnalog_System_Double_System_Double_
+  name: VoltageToAnalog
+  nameWithType: ESP32Tools.VoltageToAnalog
+  fullName: CircuitTool.ESP32Tools.VoltageToAnalog
+- uid: CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption*
+  commentId: Overload:CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_CalculateWiFiPowerConsumption_CircuitTool_WiFiMode_
+  name: CalculateWiFiPowerConsumption
+  nameWithType: ESP32Tools.CalculateWiFiPowerConsumption
+  fullName: CircuitTool.ESP32Tools.CalculateWiFiPowerConsumption
+- uid: CircuitTool.WiFiMode
+  commentId: T:CircuitTool.WiFiMode
+  parent: CircuitTool
+  href: CircuitTool.WiFiMode.html
+  name: WiFiMode
+  nameWithType: WiFiMode
+  fullName: CircuitTool.WiFiMode
+- uid: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption*
+  commentId: Overload:CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_CalculateTotalCurrentConsumption_System_Int32_CircuitTool_WiFiMode_System_Boolean_System_Double_
+  name: CalculateTotalCurrentConsumption
+  nameWithType: ESP32Tools.CalculateTotalCurrentConsumption
+  fullName: CircuitTool.ESP32Tools.CalculateTotalCurrentConsumption
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.ESP32Tools.CalculateBatteryLife*
+  commentId: Overload:CircuitTool.ESP32Tools.CalculateBatteryLife
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_CalculateBatteryLife_System_Double_System_Double_System_Double_
+  name: CalculateBatteryLife
+  nameWithType: ESP32Tools.CalculateBatteryLife
+  fullName: CircuitTool.ESP32Tools.CalculateBatteryLife
+- uid: CircuitTool.ESP32Tools.CalculateTouchThreshold*
+  commentId: Overload:CircuitTool.ESP32Tools.CalculateTouchThreshold
+  href: CircuitTool.ESP32Tools.html#CircuitTool_ESP32Tools_CalculateTouchThreshold_System_Int32_System_Double_
+  name: CalculateTouchThreshold
+  nameWithType: ESP32Tools.CalculateTouchThreshold
+  fullName: CircuitTool.ESP32Tools.CalculateTouchThreshold

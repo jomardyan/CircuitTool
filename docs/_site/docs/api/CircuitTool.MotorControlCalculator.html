@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MotorControlCalculator | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MotorControlCalculator | CircuitTool Documentation ">
+    
+    <meta name="description" content="Provides specialized calculations for DC motor control and analysis">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CircuitTool.MotorControlCalculator">
+
+
+
+  <h1 id="CircuitTool_MotorControlCalculator" data-uid="CircuitTool.MotorControlCalculator" class="text-break">Class MotorControlCalculator</h1>
+  <div class="markdown level0 summary"><p>Provides specialized calculations for DC motor control and analysis</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">MotorControlCalculator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="CircuitTool_MotorControlCalculator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MotorControlCalculator</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateCurrentLimit_CircuitTool_MotorControlCalculator_MotorType_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L128">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateCurrentLimit_" data-uid="CircuitTool.MotorControlCalculator.CalculateCurrentLimit*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateCurrentLimit_CircuitTool_MotorControlCalculator_MotorType_System_Double_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType,System.Double,System.Double,System.Double)">CalculateCurrentLimit(MotorType, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates current limit for motor protection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateCurrentLimit(MotorControlCalculator.MotorType motorType, double ratedCurrent, double thermalTimeConstant = 300, double operationTime = 60)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.MotorControlCalculator.html">MotorControlCalculator</a>.<a class="xref" href="CircuitTool.MotorControlCalculator.MotorType.html">MotorType</a></td>
+        <td><span class="parametername">motorType</span></td>
+        <td><p>Type of motor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">ratedCurrent</span></td>
+        <td><p>Motor rated current</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">thermalTimeConstant</span></td>
+        <td><p>Motor thermal time constant in seconds</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">operationTime</span></td>
+        <td><p>Expected operation time in seconds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Safe current limit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateEncoderResolution_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateEncoderResolution(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L71">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateEncoderResolution_" data-uid="CircuitTool.MotorControlCalculator.CalculateEncoderResolution*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateEncoderResolution_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateEncoderResolution(System.Double,System.Double)">CalculateEncoderResolution(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates encoder resolution requirements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateEncoderResolution(double desiredAccuracy, double gearRatio = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">desiredAccuracy</span></td>
+        <td><p>Desired position accuracy in degrees</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">gearRatio</span></td>
+        <td><p>Gear reduction ratio</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Required encoder pulses per revolution</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateHBridgeCurrent_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L31">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateHBridgeCurrent_" data-uid="CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateHBridgeCurrent_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(System.Double,System.Double,System.Double,System.Double)">CalculateHBridgeCurrent(double, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates H-bridge current requirements for DC motor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateHBridgeCurrent(double motorVoltage, double motorCurrent, double stallCurrent, double safetyFactor = 1.8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorVoltage</span></td>
+        <td><p>Motor rated voltage</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorCurrent</span></td>
+        <td><p>Motor rated current</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">stallCurrent</span></td>
+        <td><p>Motor stall current</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">safetyFactor</span></td>
+        <td><p>Safety factor (typically 1.5-2.0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Required H-bridge current rating</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateMotorDriverThermal_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L45">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateMotorDriverThermal_" data-uid="CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateMotorDriverThermal_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(System.Double,System.Double,System.Double,System.Double)">CalculateMotorDriverThermal(double, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates motor driver heat sink requirements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateMotorDriverThermal(double motorCurrent, double driverRdsOn, double ambientTemp = 25, double maxJunctionTemp = 150)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorCurrent</span></td>
+        <td><p>Motor current in amperes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">driverRdsOn</span></td>
+        <td><p>Driver MOSFET RDS(on) in ohms</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">ambientTemp</span></td>
+        <td><p>Ambient temperature in °C</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">maxJunctionTemp</span></td>
+        <td><p>Maximum junction temperature in °C</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Required thermal resistance in °C/W</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculatePIDGains_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculatePIDGains(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L84">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculatePIDGains_" data-uid="CircuitTool.MotorControlCalculator.CalculatePIDGains*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculatePIDGains_System_Double_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculatePIDGains(System.Double,System.Double,System.Double)">CalculatePIDGains(double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates PID controller gains for motor position control</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double Kp, double Ki, double Kd) CalculatePIDGains(double motorInertia, double motorTorqueConstant, double desiredBandwidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorInertia</span></td>
+        <td><p>Motor + load inertia in kg⋅m²</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorTorqueConstant</span></td>
+        <td><p>Motor torque constant in Nm/A</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">desiredBandwidth</span></td>
+        <td><p>Desired closed-loop bandwidth in Hz</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.minresistance">minResistance</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.maxresistance">maxResistance</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.recommendedresistance">recommendedResistance</a>)</td>
+        <td><p>PID gains (Kp, Ki, Kd)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateRampTime_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateRampTime(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L102">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateRampTime_" data-uid="CircuitTool.MotorControlCalculator.CalculateRampTime*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateRampTime_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateRampTime(System.Double,System.Double)">CalculateRampTime(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates motor acceleration/deceleration ramp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRampTime(double targetSpeed, double acceleration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">targetSpeed</span></td>
+        <td><p>Target speed in RPM</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">acceleration</span></td>
+        <td><p>Acceleration in RPM/s</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Ramp time in seconds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateRegenerativePower_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateRegenerativePower(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L114">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateRegenerativePower_" data-uid="CircuitTool.MotorControlCalculator.CalculateRegenerativePower*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateRegenerativePower_System_Double_System_Double_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateRegenerativePower(System.Double,System.Double,System.Double)">CalculateRegenerativePower(double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates regenerative braking power</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRegenerativePower(double motorSpeed, double motorTorque, double efficiency = 0.85)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorSpeed</span></td>
+        <td><p>Motor speed in RPM</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">motorTorque</span></td>
+        <td><p>Braking torque in Nm</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">efficiency</span></td>
+        <td><p>Motor efficiency (0-1)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Regenerated power in watts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_CalculateStepperResolution_System_Int32_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.CalculateStepperResolution(System.Int32%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L59">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_CalculateStepperResolution_" data-uid="CircuitTool.MotorControlCalculator.CalculateStepperResolution*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_CalculateStepperResolution_System_Int32_System_Int32_System_Double_" data-uid="CircuitTool.MotorControlCalculator.CalculateStepperResolution(System.Int32,System.Int32,System.Double)">CalculateStepperResolution(int, int, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates stepper motor step resolution</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateStepperResolution(int stepsPerRevolution, int microsteps = 1, double gearRatio = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stepsPerRevolution</span></td>
+        <td><p>Motor steps per revolution</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">microsteps</span></td>
+        <td><p>Microstepping factor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">gearRatio</span></td>
+        <td><p>Gear reduction ratio (1 = no gears)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Angular resolution in degrees per step</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator_GenerateControlCode_CircuitTool_MotorControlCalculator_MotorType_System_String_.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L151">View Source</a>
+  </span>
+  <a id="CircuitTool_MotorControlCalculator_GenerateControlCode_" data-uid="CircuitTool.MotorControlCalculator.GenerateControlCode*"></a>
+  <h4 id="CircuitTool_MotorControlCalculator_GenerateControlCode_CircuitTool_MotorControlCalculator_MotorType_System_String_" data-uid="CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType,System.String)">GenerateControlCode(MotorType, string)</h4>
+  <div class="markdown level1 summary"><p>Generates motor control code template</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateControlCode(MotorControlCalculator.MotorType motorType, string controlInterface = &quot;PWM&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.MotorControlCalculator.html">MotorControlCalculator</a>.<a class="xref" href="CircuitTool.MotorControlCalculator.MotorType.html">MotorType</a></td>
+        <td><span class="parametername">motorType</span></td>
+        <td><p>Type of motor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">controlInterface</span></td>
+        <td><p>Control interface (PWM, SPI, etc.)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Code template string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_MotorControlCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.MotorControlCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/MotorControlCalculator.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

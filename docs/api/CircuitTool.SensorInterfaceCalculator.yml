@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.SensorInterfaceCalculator
+  commentId: T:CircuitTool.SensorInterfaceCalculator
+  id: SensorInterfaceCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double,System.Double,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double[],System.Double[])
+  - CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double,System.Double,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)
+  - CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double,System.Double,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: SensorInterfaceCalculator
+  nameWithType: SensorInterfaceCalculator
+  fullName: CircuitTool.SensorInterfaceCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SensorInterfaceCalculator
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 9
+  namespace: CircuitTool
+  summary: Provides calculations and utilities for sensor interfacing and signal conditioning
+  example: []
+  syntax:
+    content: public static class SensorInterfaceCalculator
+    content.vb: Public Module SensorInterfaceCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateResistiveSensorDivider(double, double, double, double)
+  nameWithType: SensorInterfaceCalculator.CalculateResistiveSensorDivider(double, double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateResistiveSensorDivider
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 34
+  namespace: CircuitTool
+  summary: Calculates voltage divider for resistive sensor conditioning
+  example: []
+  syntax:
+    content: public static (double referenceResistor, double biasVoltage) CalculateResistiveSensorDivider(double sensorResistanceMin, double sensorResistanceMax, double supplyVoltage, double targetVoltageRange = 2.5)
+    parameters:
+    - id: sensorResistanceMin
+      type: System.Double
+      description: Minimum sensor resistance
+    - id: sensorResistanceMax
+      type: System.Double
+      description: Maximum sensor resistance
+    - id: supplyVoltage
+      type: System.Double
+      description: Supply voltage
+    - id: targetVoltageRange
+      type: System.Double
+      description: Desired output voltage range
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: Reference resistor value and bias voltage
+    content.vb: Public Shared Function CalculateResistiveSensorDivider(sensorResistanceMin As Double, sensorResistanceMax As Double, supplyVoltage As Double, targetVoltageRange As Double = 2.5) As (referenceResistor As Double, biasVoltage As Double)
+  overload: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider*
+  nameWithType.vb: SensorInterfaceCalculator.CalculateResistiveSensorDivider(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(Double, Double, Double, Double)
+  name.vb: CalculateResistiveSensorDivider(Double, Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)
+  id: ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: ThermistorTemperature(double, double, double, double)
+  nameWithType: SensorInterfaceCalculator.ThermistorTemperature(double, double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermistorTemperature
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 55
+  namespace: CircuitTool
+  summary: Calculates thermistor temperature from resistance using Steinhart-Hart equation
+  example: []
+  syntax:
+    content: public static double ThermistorTemperature(double resistance, double a = 0.001009249522, double b = 0.0002378405444, double c = 2.019202697E-07)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Thermistor resistance in ohms
+    - id: a
+      type: System.Double
+      description: Steinhart-Hart coefficient A
+    - id: b
+      type: System.Double
+      description: Steinhart-Hart coefficient B
+    - id: c
+      type: System.Double
+      description: Steinhart-Hart coefficient C
+    return:
+      type: System.Double
+      description: Temperature in Celsius
+    content.vb: Public Shared Function ThermistorTemperature(resistance As Double, a As Double = 0.001009249522, b As Double = 0.0002378405444, c As Double = 2.019202697E-07) As Double
+  overload: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature*
+  nameWithType.vb: SensorInterfaceCalculator.ThermistorTemperature(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(Double, Double, Double, Double)
+  name.vb: ThermistorTemperature(Double, Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double,System.Double,System.Double)
+  id: RTDTemperature(System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: RTDTemperature(double, double, double)
+  nameWithType: SensorInterfaceCalculator.RTDTemperature(double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.RTDTemperature(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RTDTemperature
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 69
+  namespace: CircuitTool
+  summary: Calculates RTD temperature from resistance
+  example: []
+  syntax:
+    content: public static double RTDTemperature(double resistance, double r0 = 100, double alpha = 0.00385)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: RTD resistance in ohms
+    - id: r0
+      type: System.Double
+      description: RTD resistance at 0°C (typically 100Ω for PT100)
+    - id: alpha
+      type: System.Double
+      description: Temperature coefficient (0.00385 for PT100)
+    return:
+      type: System.Double
+      description: Temperature in Celsius
+    content.vb: Public Shared Function RTDTemperature(resistance As Double, r0 As Double = 100, alpha As Double = 0.00385) As Double
+  overload: CircuitTool.SensorInterfaceCalculator.RTDTemperature*
+  nameWithType.vb: SensorInterfaceCalculator.RTDTemperature(Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.RTDTemperature(Double, Double, Double)
+  name.vb: RTDTemperature(Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)
+  id: CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateAmplifierGain(double, double, double, int, double)
+  nameWithType: SensorInterfaceCalculator.CalculateAmplifierGain(double, double, double, int, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(double, double, double, int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateAmplifierGain
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 83
+  namespace: CircuitTool
+  summary: Calculates amplifier gain for sensor signal conditioning
+  example: []
+  syntax:
+    content: public static double CalculateAmplifierGain(double sensorSignalMin, double sensorSignalMax, double adcReferenceVoltage, int adcResolution, double utilizationFactor = 0.8)
+    parameters:
+    - id: sensorSignalMin
+      type: System.Double
+      description: Minimum sensor signal voltage
+    - id: sensorSignalMax
+      type: System.Double
+      description: Maximum sensor signal voltage
+    - id: adcReferenceVoltage
+      type: System.Double
+      description: ADC reference voltage
+    - id: adcResolution
+      type: System.Int32
+      description: ADC resolution in bits
+    - id: utilizationFactor
+      type: System.Double
+      description: Desired ADC range utilization (0-1)
+    return:
+      type: System.Double
+      description: Required amplifier gain
+    content.vb: Public Shared Function CalculateAmplifierGain(sensorSignalMin As Double, sensorSignalMax As Double, adcReferenceVoltage As Double, adcResolution As Integer, utilizationFactor As Double = 0.8) As Double
+  overload: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain*
+  nameWithType.vb: SensorInterfaceCalculator.CalculateAmplifierGain(Double, Double, Double, Integer, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(Double, Double, Double, Integer, Double)
+  name.vb: CalculateAmplifierGain(Double, Double, Double, Integer, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double,System.Double,System.Double)
+  id: CalculateSensorFilter(System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateSensorFilter(double, double, double)
+  nameWithType: SensorInterfaceCalculator.CalculateSensorFilter(double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateSensorFilter
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 98
+  namespace: CircuitTool
+  summary: Calculates low-pass filter for sensor noise reduction
+  example: []
+  syntax:
+    content: public static (double resistance, double capacitance) CalculateSensorFilter(double signalFrequency, double noiseFrequency, double attenuationDb = 40)
+    parameters:
+    - id: signalFrequency
+      type: System.Double
+      description: Maximum signal frequency of interest
+    - id: noiseFrequency
+      type: System.Double
+      description: Noise frequency to attenuate
+    - id: attenuationDb
+      type: System.Double
+      description: Desired attenuation in dB
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: Filter resistance and capacitance values
+    content.vb: Public Shared Function CalculateSensorFilter(signalFrequency As Double, noiseFrequency As Double, attenuationDb As Double = 40) As (resistance As Double, capacitance As Double)
+  overload: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter*
+  nameWithType.vb: SensorInterfaceCalculator.CalculateSensorFilter(Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(Double, Double, Double)
+  name.vb: CalculateSensorFilter(Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)
+  id: StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: StrainGaugeBridgeOutput(double, double, double, double)
+  nameWithType: SensorInterfaceCalculator.StrainGaugeBridgeOutput(double, double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StrainGaugeBridgeOutput
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 127
+  namespace: CircuitTool
+  summary: Calculates Wheatstone bridge output for strain gauge
+  example: []
+  syntax:
+    content: public static double StrainGaugeBridgeOutput(double strain, double gaugeFactor = 2, double bridgeVoltage = 5, double nominalResistance = 350)
+    parameters:
+    - id: strain
+      type: System.Double
+      description: Applied strain (µε)
+    - id: gaugeFactor
+      type: System.Double
+      description: Strain gauge factor (typically 2.0)
+    - id: bridgeVoltage
+      type: System.Double
+      description: Bridge excitation voltage
+    - id: nominalResistance
+      type: System.Double
+      description: Gauge nominal resistance
+    return:
+      type: System.Double
+      description: Bridge output voltage
+    content.vb: Public Shared Function StrainGaugeBridgeOutput(strain As Double, gaugeFactor As Double = 2, bridgeVoltage As Double = 5, nominalResistance As Double = 350) As Double
+  overload: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput*
+  nameWithType.vb: SensorInterfaceCalculator.StrainGaugeBridgeOutput(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(Double, Double, Double, Double)
+  name.vb: StrainGaugeBridgeOutput(Double, Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double,System.Double,System.Double)
+  id: CalculateADCResolution(System.Double,System.Double,System.Double)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateADCResolution(double, double, double)
+  nameWithType: SensorInterfaceCalculator.CalculateADCResolution(double, double, double)
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateADCResolution
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 142
+  namespace: CircuitTool
+  summary: Calculates ADC resolution requirements for sensor measurement
+  example: []
+  syntax:
+    content: public static int CalculateADCResolution(double sensorRange, double requiredAccuracy, double noiseBits = 2)
+    parameters:
+    - id: sensorRange
+      type: System.Double
+      description: Full-scale sensor output range
+    - id: requiredAccuracy
+      type: System.Double
+      description: Required measurement accuracy
+    - id: noiseBits
+      type: System.Double
+      description: Effective noise in LSBs (typically 1-3)
+    return:
+      type: System.Int32
+      description: Required ADC resolution in bits
+    content.vb: Public Shared Function CalculateADCResolution(sensorRange As Double, requiredAccuracy As Double, noiseBits As Double = 2) As Integer
+  overload: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution*
+  nameWithType.vb: SensorInterfaceCalculator.CalculateADCResolution(Double, Double, Double)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(Double, Double, Double)
+  name.vb: CalculateADCResolution(Double, Double, Double)
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double[],System.Double[])
+  commentId: M:CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double[],System.Double[])
+  id: CalculateLinearCalibration(System.Double[],System.Double[])
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateLinearCalibration(double[], double[])
+  nameWithType: SensorInterfaceCalculator.CalculateLinearCalibration(double[], double[])
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(double[], double[])
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateLinearCalibration
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 155
+  namespace: CircuitTool
+  summary: Calculates sensor calibration coefficients (linear)
+  example: []
+  syntax:
+    content: public static (double slope, double offset) CalculateLinearCalibration(double[] rawValues, double[] referenceValues)
+    parameters:
+    - id: rawValues
+      type: System.Double[]
+      description: Array of raw sensor readings
+    - id: referenceValues
+      type: System.Double[]
+      description: Array of reference values
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: Calibration slope and offset
+    content.vb: Public Shared Function CalculateLinearCalibration(rawValues As Double(), referenceValues As Double()) As (slope As Double, offset As Double)
+  overload: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration*
+  nameWithType.vb: SensorInterfaceCalculator.CalculateLinearCalibration(Double(), Double())
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(Double(), Double())
+  name.vb: CalculateLinearCalibration(Double(), Double())
+- uid: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)
+  commentId: M:CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)
+  id: GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)
+  parent: CircuitTool.SensorInterfaceCalculator
+  langs:
+  - csharp
+  - vb
+  name: GenerateSensorCode(SensorType, string)
+  nameWithType: SensorInterfaceCalculator.GenerateSensorCode(SensorInterfaceCalculator.SensorType, string)
+  fullName: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType, string)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateSensorCode
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 183
+  namespace: CircuitTool
+  summary: Generates sensor interface code template
+  example: []
+  syntax:
+    content: public static string GenerateSensorCode(SensorInterfaceCalculator.SensorType sensorType, string interface_ = "Analog")
+    parameters:
+    - id: sensorType
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+      description: Type of sensor
+    - id: interface_
+      type: System.String
+      description: Interface type (Analog, I2C, SPI)
+    return:
+      type: System.String
+      description: Code template
+    content.vb: Public Shared Function GenerateSensorCode(sensorType As SensorInterfaceCalculator.SensorType, interface_ As String = "Analog") As String
+  overload: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode*
+  nameWithType.vb: SensorInterfaceCalculator.GenerateSensorCode(SensorInterfaceCalculator.SensorType, String)
+  fullName.vb: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType, String)
+  name.vb: GenerateSensorCode(SensorType, String)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_CalculateResistiveSensorDivider_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateResistiveSensorDivider
+  nameWithType: SensorInterfaceCalculator.CalculateResistiveSensorDivider
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double referenceResistor, double biasVoltage)
+  nameWithType: (double referenceResistor, double biasVoltage)
+  fullName: (double referenceResistor, double biasVoltage)
+  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
+  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
+  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.ThermistorTemperature
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_ThermistorTemperature_System_Double_System_Double_System_Double_System_Double_
+  name: ThermistorTemperature
+  nameWithType: SensorInterfaceCalculator.ThermistorTemperature
+  fullName: CircuitTool.SensorInterfaceCalculator.ThermistorTemperature
+- uid: CircuitTool.SensorInterfaceCalculator.RTDTemperature*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.RTDTemperature
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_RTDTemperature_System_Double_System_Double_System_Double_
+  name: RTDTemperature
+  nameWithType: SensorInterfaceCalculator.RTDTemperature
+  fullName: CircuitTool.SensorInterfaceCalculator.RTDTemperature
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_CalculateAmplifierGain_System_Double_System_Double_System_Double_System_Int32_System_Double_
+  name: CalculateAmplifierGain
+  nameWithType: SensorInterfaceCalculator.CalculateAmplifierGain
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_CalculateSensorFilter_System_Double_System_Double_System_Double_
+  name: CalculateSensorFilter
+  nameWithType: SensorInterfaceCalculator.CalculateSensorFilter
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter
+- uid: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_StrainGaugeBridgeOutput_System_Double_System_Double_System_Double_System_Double_
+  name: StrainGaugeBridgeOutput
+  nameWithType: SensorInterfaceCalculator.StrainGaugeBridgeOutput
+  fullName: CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.CalculateADCResolution
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_CalculateADCResolution_System_Double_System_Double_System_Double_
+  name: CalculateADCResolution
+  nameWithType: SensorInterfaceCalculator.CalculateADCResolution
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateADCResolution
+- uid: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_CalculateLinearCalibration_System_Double___System_Double___
+  name: CalculateLinearCalibration
+  nameWithType: SensorInterfaceCalculator.CalculateLinearCalibration
+  fullName: CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode*
+  commentId: Overload:CircuitTool.SensorInterfaceCalculator.GenerateSensorCode
+  href: CircuitTool.SensorInterfaceCalculator.html#CircuitTool_SensorInterfaceCalculator_GenerateSensorCode_CircuitTool_SensorInterfaceCalculator_SensorType_System_String_
+  name: GenerateSensorCode
+  nameWithType: SensorInterfaceCalculator.GenerateSensorCode
+  fullName: CircuitTool.SensorInterfaceCalculator.GenerateSensorCode
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType
+  commentId: T:CircuitTool.SensorInterfaceCalculator.SensorType
+  parent: CircuitTool
+  href: CircuitTool.SensorInterfaceCalculator.html
+  name: SensorInterfaceCalculator.SensorType
+  nameWithType: SensorInterfaceCalculator.SensorType
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType
+  spec.csharp:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
+  spec.vb:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.InductanceUnit
+  commentId: T:CircuitTool.Units.InductanceUnit
+  id: InductanceUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.InductanceUnit.Henries
+  - CircuitTool.Units.InductanceUnit.Kilohenries
+  - CircuitTool.Units.InductanceUnit.Microhenries
+  - CircuitTool.Units.InductanceUnit.Millihenries
+  - CircuitTool.Units.InductanceUnit.Nanohenries
+  langs:
+  - csharp
+  - vb
+  name: InductanceUnit
+  nameWithType: InductanceUnit
+  fullName: CircuitTool.Units.InductanceUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductanceUnit
+    path: src/Units/InductanceUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents inductance measurement units
+  example: []
+  syntax:
+    content: public enum InductanceUnit
+    content.vb: Public Enum InductanceUnit
+- uid: CircuitTool.Units.InductanceUnit.Nanohenries
+  commentId: F:CircuitTool.Units.InductanceUnit.Nanohenries
+  id: Nanohenries
+  parent: CircuitTool.Units.InductanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Nanohenries
+  nameWithType: InductanceUnit.Nanohenries
+  fullName: CircuitTool.Units.InductanceUnit.Nanohenries
+  type: Field
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanohenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Nanohenries (nH)
+  example: []
+  syntax:
+    content: Nanohenries = 0
+    return:
+      type: CircuitTool.Units.InductanceUnit
+- uid: CircuitTool.Units.InductanceUnit.Microhenries
+  commentId: F:CircuitTool.Units.InductanceUnit.Microhenries
+  id: Microhenries
+  parent: CircuitTool.Units.InductanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Microhenries
+  nameWithType: InductanceUnit.Microhenries
+  fullName: CircuitTool.Units.InductanceUnit.Microhenries
+  type: Field
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microhenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Microhenries (μH)
+  example: []
+  syntax:
+    content: Microhenries = 1
+    return:
+      type: CircuitTool.Units.InductanceUnit
+- uid: CircuitTool.Units.InductanceUnit.Millihenries
+  commentId: F:CircuitTool.Units.InductanceUnit.Millihenries
+  id: Millihenries
+  parent: CircuitTool.Units.InductanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Millihenries
+  nameWithType: InductanceUnit.Millihenries
+  fullName: CircuitTool.Units.InductanceUnit.Millihenries
+  type: Field
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Millihenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Millihenries (mH)
+  example: []
+  syntax:
+    content: Millihenries = 2
+    return:
+      type: CircuitTool.Units.InductanceUnit
+- uid: CircuitTool.Units.InductanceUnit.Henries
+  commentId: F:CircuitTool.Units.InductanceUnit.Henries
+  id: Henries
+  parent: CircuitTool.Units.InductanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Henries
+  nameWithType: InductanceUnit.Henries
+  fullName: CircuitTool.Units.InductanceUnit.Henries
+  type: Field
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Henries
+    path: src/Units/InductanceUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Henries (H)
+  example: []
+  syntax:
+    content: Henries = 3
+    return:
+      type: CircuitTool.Units.InductanceUnit
+- uid: CircuitTool.Units.InductanceUnit.Kilohenries
+  commentId: F:CircuitTool.Units.InductanceUnit.Kilohenries
+  id: Kilohenries
+  parent: CircuitTool.Units.InductanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Kilohenries
+  nameWithType: InductanceUnit.Kilohenries
+  fullName: CircuitTool.Units.InductanceUnit.Kilohenries
+  type: Field
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilohenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Kilohenries (kH)
+  example: []
+  syntax:
+    content: Kilohenries = 4
+    return:
+      type: CircuitTool.Units.InductanceUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.InductanceUnit
+  commentId: T:CircuitTool.Units.InductanceUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.InductanceUnit.html
+  name: InductanceUnit
+  nameWithType: InductanceUnit
+  fullName: CircuitTool.Units.InductanceUnit

@@ -1,0 +1,662 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CapacitorCalculator
+  commentId: T:CircuitTool.CapacitorCalculator
+  id: CapacitorCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)
+  - CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)
+  - CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)
+  - CircuitTool.CapacitorCalculator.EnergyStored(System.Double,System.Double)
+  - CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double[])
+  - CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double[])
+  - CircuitTool.CapacitorCalculator.TimeConstant(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: CapacitorCalculator
+  nameWithType: CapacitorCalculator
+  fullName: CircuitTool.CapacitorCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitorCalculator
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 19
+  namespace: CircuitTool
+  summary: Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms
+
+    double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J
+
+    double tau = CapacitorCalculator.TimeConstant(1000, 0.000001); // 0.001 s
+
+    double cSeries = CapacitorCalculator.SeriesCapacitance(new[] {0.000001, 0.000002});
+
+    double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.000002});
+
+    double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);
+
+    double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);</code></pre>
+  example: []
+  syntax:
+    content: public static class CapacitorCalculator
+    content.vb: Public Module CapacitorCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)
+  id: CapacitiveReactance(System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: CapacitiveReactance(double, double)
+  nameWithType: CapacitorCalculator.CapacitiveReactance(double, double)
+  fullName: CircuitTool.CapacitorCalculator.CapacitiveReactance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitiveReactance
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 30
+  namespace: CircuitTool
+  summary: Calculates capacitive reactance using the formula Xc = 1 / (2πfC).
+  example:
+  - double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms
+  syntax:
+    content: public static double CapacitiveReactance(double frequency, double capacitance)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Capacitive reactance in ohms (Ω).
+    content.vb: Public Shared Function CapacitiveReactance(frequency As Double, capacitance As Double) As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitiveReactance*
+  nameWithType.vb: CapacitorCalculator.CapacitiveReactance(Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.CapacitiveReactance(Double, Double)
+  name.vb: CapacitiveReactance(Double, Double)
+- uid: CircuitTool.CapacitorCalculator.EnergyStored(System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.EnergyStored(System.Double,System.Double)
+  id: EnergyStored(System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored(double, double)
+  nameWithType: CapacitorCalculator.EnergyStored(double, double)
+  fullName: CircuitTool.CapacitorCalculator.EnergyStored(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 46
+  namespace: CircuitTool
+  summary: Calculates the energy stored in a capacitor using the formula E = 0.5 × C × V².
+  example:
+  - double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J
+  syntax:
+    content: public static double EnergyStored(double capacitance, double voltage)
+    parameters:
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    - id: voltage
+      type: System.Double
+      description: Voltage across the capacitor in volts (V).
+    return:
+      type: System.Double
+      description: Energy stored in joules (J).
+    content.vb: Public Shared Function EnergyStored(capacitance As Double, voltage As Double) As Double
+  overload: CircuitTool.CapacitorCalculator.EnergyStored*
+  nameWithType.vb: CapacitorCalculator.EnergyStored(Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.EnergyStored(Double, Double)
+  name.vb: EnergyStored(Double, Double)
+- uid: CircuitTool.CapacitorCalculator.TimeConstant(System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.TimeConstant(System.Double,System.Double)
+  id: TimeConstant(System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: TimeConstant(double, double)
+  nameWithType: CapacitorCalculator.TimeConstant(double, double)
+  fullName: CircuitTool.CapacitorCalculator.TimeConstant(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TimeConstant
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 62
+  namespace: CircuitTool
+  summary: Calculates the time constant for an RC circuit using the formula τ = R × C.
+  example:
+  - double tau = CapacitorCalculator.TimeConstant(1000, 0.000001); // 0.001 s
+  syntax:
+    content: public static double TimeConstant(double resistance, double capacitance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Time constant in seconds (s).
+    content.vb: Public Shared Function TimeConstant(resistance As Double, capacitance As Double) As Double
+  overload: CircuitTool.CapacitorCalculator.TimeConstant*
+  nameWithType.vb: CapacitorCalculator.TimeConstant(Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.TimeConstant(Double, Double)
+  name.vb: TimeConstant(Double, Double)
+- uid: CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double[])
+  commentId: M:CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double[])
+  id: SeriesCapacitance(System.Double[])
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: SeriesCapacitance(double[])
+  nameWithType: CapacitorCalculator.SeriesCapacitance(double[])
+  fullName: CircuitTool.CapacitorCalculator.SeriesCapacitance(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesCapacitance
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 77
+  namespace: CircuitTool
+  summary: Calculates total capacitance for capacitors in series using the formula 1/Ctotal = 1/C1 + 1/C2 + ...
+  example:
+  - double cSeries = CapacitorCalculator.SeriesCapacitance(new[] {0.000001, 0.000002});
+  syntax:
+    content: public static double SeriesCapacitance(double[] capacitances)
+    parameters:
+    - id: capacitances
+      type: System.Double[]
+      description: Array of capacitance values in farads (F).
+    return:
+      type: System.Double
+      description: Total capacitance in farads (F).
+    content.vb: Public Shared Function SeriesCapacitance(capacitances As Double()) As Double
+  overload: CircuitTool.CapacitorCalculator.SeriesCapacitance*
+  nameWithType.vb: CapacitorCalculator.SeriesCapacitance(Double())
+  fullName.vb: CircuitTool.CapacitorCalculator.SeriesCapacitance(Double())
+  name.vb: SeriesCapacitance(Double())
+- uid: CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double[])
+  commentId: M:CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double[])
+  id: ParallelCapacitance(System.Double[])
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: ParallelCapacitance(double[])
+  nameWithType: CapacitorCalculator.ParallelCapacitance(double[])
+  fullName: CircuitTool.CapacitorCalculator.ParallelCapacitance(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelCapacitance
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 99
+  namespace: CircuitTool
+  summary: Calculates total capacitance for capacitors in parallel using the formula Ctotal = C1 + C2 + ...
+  example:
+  - double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.000002});
+  syntax:
+    content: public static double ParallelCapacitance(double[] capacitances)
+    parameters:
+    - id: capacitances
+      type: System.Double[]
+      description: Array of capacitance values in farads (F).
+    return:
+      type: System.Double
+      description: Total capacitance in farads (F).
+    content.vb: Public Shared Function ParallelCapacitance(capacitances As Double()) As Double
+  overload: CircuitTool.CapacitorCalculator.ParallelCapacitance*
+  nameWithType.vb: CapacitorCalculator.ParallelCapacitance(Double())
+  fullName.vb: CircuitTool.CapacitorCalculator.ParallelCapacitance(Double())
+  name.vb: ParallelCapacitance(Double())
+- uid: CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)
+  id: ChargingVoltage(System.Double,System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: ChargingVoltage(double, double, double)
+  nameWithType: CapacitorCalculator.ChargingVoltage(double, double, double)
+  fullName: CircuitTool.CapacitorCalculator.ChargingVoltage(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ChargingVoltage
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 123
+  namespace: CircuitTool
+  summary: Calculates the charging voltage of a capacitor at time t using V(t) = Vsource × (1 - e^(-t/τ)).
+  example:
+  - double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);
+  syntax:
+    content: public static double ChargingVoltage(double sourceVoltage, double timeConstant, double time)
+    parameters:
+    - id: sourceVoltage
+      type: System.Double
+      description: Source voltage in volts (V).
+    - id: timeConstant
+      type: System.Double
+      description: Time constant τ in seconds (s).
+    - id: time
+      type: System.Double
+      description: Time in seconds (s).
+    return:
+      type: System.Double
+      description: Capacitor voltage at time t in volts (V).
+    content.vb: Public Shared Function ChargingVoltage(sourceVoltage As Double, timeConstant As Double, time As Double) As Double
+  overload: CircuitTool.CapacitorCalculator.ChargingVoltage*
+  nameWithType.vb: CapacitorCalculator.ChargingVoltage(Double, Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.ChargingVoltage(Double, Double, Double)
+  name.vb: ChargingVoltage(Double, Double, Double)
+- uid: CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)
+  id: DischargingVoltage(System.Double,System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: DischargingVoltage(double, double, double)
+  nameWithType: CapacitorCalculator.DischargingVoltage(double, double, double)
+  fullName: CircuitTool.CapacitorCalculator.DischargingVoltage(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DischargingVoltage
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 142
+  namespace: CircuitTool
+  summary: Calculates the discharging voltage of a capacitor at time t using V(t) = Vinitial × e^(-t/τ).
+  example:
+  - double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);
+  syntax:
+    content: public static double DischargingVoltage(double initialVoltage, double timeConstant, double time)
+    parameters:
+    - id: initialVoltage
+      type: System.Double
+      description: Initial voltage in volts (V).
+    - id: timeConstant
+      type: System.Double
+      description: Time constant τ in seconds (s).
+    - id: time
+      type: System.Double
+      description: Time in seconds (s).
+    return:
+      type: System.Double
+      description: Capacitor voltage at time t in volts (V).
+    content.vb: Public Shared Function DischargingVoltage(initialVoltage As Double, timeConstant As Double, time As Double) As Double
+  overload: CircuitTool.CapacitorCalculator.DischargingVoltage*
+  nameWithType.vb: CapacitorCalculator.DischargingVoltage(Double, Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.DischargingVoltage(Double, Double, Double)
+  name.vb: DischargingVoltage(Double, Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CapacitorCalculator.CapacitiveReactance*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitiveReactance
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double_
+  name: CapacitiveReactance
+  nameWithType: CapacitorCalculator.CapacitiveReactance
+  fullName: CircuitTool.CapacitorCalculator.CapacitiveReactance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CapacitorCalculator.EnergyStored*
+  commentId: Overload:CircuitTool.CapacitorCalculator.EnergyStored
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double_
+  name: EnergyStored
+  nameWithType: CapacitorCalculator.EnergyStored
+  fullName: CircuitTool.CapacitorCalculator.EnergyStored
+- uid: CircuitTool.CapacitorCalculator.TimeConstant*
+  commentId: Overload:CircuitTool.CapacitorCalculator.TimeConstant
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double_
+  name: TimeConstant
+  nameWithType: CapacitorCalculator.TimeConstant
+  fullName: CircuitTool.CapacitorCalculator.TimeConstant
+- uid: CircuitTool.CapacitorCalculator.SeriesCapacitance*
+  commentId: Overload:CircuitTool.CapacitorCalculator.SeriesCapacitance
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double___
+  name: SeriesCapacitance
+  nameWithType: CapacitorCalculator.SeriesCapacitance
+  fullName: CircuitTool.CapacitorCalculator.SeriesCapacitance
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: CircuitTool.CapacitorCalculator.ParallelCapacitance*
+  commentId: Overload:CircuitTool.CapacitorCalculator.ParallelCapacitance
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double___
+  name: ParallelCapacitance
+  nameWithType: CapacitorCalculator.ParallelCapacitance
+  fullName: CircuitTool.CapacitorCalculator.ParallelCapacitance
+- uid: CircuitTool.CapacitorCalculator.ChargingVoltage*
+  commentId: Overload:CircuitTool.CapacitorCalculator.ChargingVoltage
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double_
+  name: ChargingVoltage
+  nameWithType: CapacitorCalculator.ChargingVoltage
+  fullName: CircuitTool.CapacitorCalculator.ChargingVoltage
+- uid: CircuitTool.CapacitorCalculator.DischargingVoltage*
+  commentId: Overload:CircuitTool.CapacitorCalculator.DischargingVoltage
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double_
+  name: DischargingVoltage
+  nameWithType: CapacitorCalculator.DischargingVoltage
+  fullName: CircuitTool.CapacitorCalculator.DischargingVoltage

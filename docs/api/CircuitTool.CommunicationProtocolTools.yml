@@ -1,0 +1,927 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CommunicationProtocolTools
+  commentId: T:CircuitTool.CommunicationProtocolTools
+  id: CommunicationProtocolTools
+  parent: CircuitTool
+  children:
+  - CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  - CircuitTool.CommunicationProtocolTools.CalculateI2CTiming(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  - CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency(CircuitTool.CommunicationProtocolTools.SPIConfig)
+  - CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig,System.Double)
+  - CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode(System.Int32,System.Int32)
+  - CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig,CircuitTool.CommunicationProtocolTools.SPIConfig,CircuitTool.CommunicationProtocolTools.UARTConfig)
+  - CircuitTool.CommunicationProtocolTools.GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CommunicationProtocolTools
+  nameWithType: CommunicationProtocolTools
+  fullName: CircuitTool.CommunicationProtocolTools
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CommunicationProtocolTools
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 11
+  namespace: CircuitTool
+  summary: Provides tools and calculators for various hardware communication protocols
+  example: []
+  syntax:
+    content: public static class CommunicationProtocolTools
+    content.vb: Public Module CommunicationProtocolTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  commentId: M:CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  id: CalculateI2CPullUpResistors(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateI2CPullUpResistors(I2CConfig)
+  nameWithType: CommunicationProtocolTools.CalculateI2CPullUpResistors(CommunicationProtocolTools.I2CConfig)
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateI2CPullUpResistors
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 66
+  namespace: CircuitTool
+  summary: Calculates optimal I2C pull-up resistor values
+  example: []
+  syntax:
+    content: public static (double minResistance, double maxResistance, double recommendedResistance) CalculateI2CPullUpResistors(CommunicationProtocolTools.I2CConfig config)
+    parameters:
+    - id: config
+      type: CircuitTool.CommunicationProtocolTools.I2CConfig
+      description: I2C configuration
+    return:
+      type: System.ValueTuple{System.Double,System.Double,System.Double}
+      description: Recommended pull-up resistance range
+    content.vb: Public Shared Function CalculateI2CPullUpResistors(config As CommunicationProtocolTools.I2CConfig) As (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  overload: CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors*
+- uid: CircuitTool.CommunicationProtocolTools.CalculateI2CTiming(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  commentId: M:CircuitTool.CommunicationProtocolTools.CalculateI2CTiming(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  id: CalculateI2CTiming(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateI2CTiming(I2CConfig)
+  nameWithType: CommunicationProtocolTools.CalculateI2CTiming(CommunicationProtocolTools.I2CConfig)
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateI2CTiming(CircuitTool.CommunicationProtocolTools.I2CConfig)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateI2CTiming
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 98
+  namespace: CircuitTool
+  summary: Calculates I2C bus timing parameters
+  example: []
+  syntax:
+    content: public static (double setupTime, double holdTime, double riseTime, double fallTime) CalculateI2CTiming(CommunicationProtocolTools.I2CConfig config)
+    parameters:
+    - id: config
+      type: CircuitTool.CommunicationProtocolTools.I2CConfig
+      description: I2C configuration
+    return:
+      type: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}
+      description: Timing parameters in nanoseconds
+    content.vb: Public Shared Function CalculateI2CTiming(config As CommunicationProtocolTools.I2CConfig) As (setupTime As Double, holdTime As Double, riseTime As Double, fallTime As Double)
+  overload: CircuitTool.CommunicationProtocolTools.CalculateI2CTiming*
+- uid: CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency(CircuitTool.CommunicationProtocolTools.SPIConfig)
+  commentId: M:CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency(CircuitTool.CommunicationProtocolTools.SPIConfig)
+  id: CalculateMaxSPIFrequency(CircuitTool.CommunicationProtocolTools.SPIConfig)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateMaxSPIFrequency(SPIConfig)
+  nameWithType: CommunicationProtocolTools.CalculateMaxSPIFrequency(CommunicationProtocolTools.SPIConfig)
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency(CircuitTool.CommunicationProtocolTools.SPIConfig)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateMaxSPIFrequency
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 142
+  namespace: CircuitTool
+  summary: Calculates maximum SPI clock frequency based on cable length and capacitance
+  example: []
+  syntax:
+    content: public static double CalculateMaxSPIFrequency(CommunicationProtocolTools.SPIConfig config)
+    parameters:
+    - id: config
+      type: CircuitTool.CommunicationProtocolTools.SPIConfig
+      description: SPI configuration
+    return:
+      type: System.Double
+      description: Maximum recommended clock frequency
+    content.vb: Public Shared Function CalculateMaxSPIFrequency(config As CommunicationProtocolTools.SPIConfig) As Double
+  overload: CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency*
+- uid: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig,System.Double)
+  commentId: M:CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig,System.Double)
+  id: CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig,System.Double)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateUARTBitErrorRate(UARTConfig, double)
+  nameWithType: CommunicationProtocolTools.CalculateUARTBitErrorRate(CommunicationProtocolTools.UARTConfig, double)
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateUARTBitErrorRate
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 166
+  namespace: CircuitTool
+  summary: Calculates UART bit error rate based on clock accuracy
+  example: []
+  syntax:
+    content: public static double CalculateUARTBitErrorRate(CommunicationProtocolTools.UARTConfig config, double clockAccuracyPpm = 100)
+    parameters:
+    - id: config
+      type: CircuitTool.CommunicationProtocolTools.UARTConfig
+      description: UART configuration
+    - id: clockAccuracyPpm
+      type: System.Double
+      description: Clock accuracy in parts per million
+    return:
+      type: System.Double
+      description: Estimated bit error rate
+    content.vb: Public Shared Function CalculateUARTBitErrorRate(config As CommunicationProtocolTools.UARTConfig, clockAccuracyPpm As Double = 100) As Double
+  overload: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate*
+  nameWithType.vb: CommunicationProtocolTools.CalculateUARTBitErrorRate(CommunicationProtocolTools.UARTConfig, Double)
+  fullName.vb: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate(CircuitTool.CommunicationProtocolTools.UARTConfig, Double)
+  name.vb: CalculateUARTBitErrorRate(UARTConfig, Double)
+- uid: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode(System.Int32,System.Int32)
+  commentId: M:CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode(System.Int32,System.Int32)
+  id: GenerateI2CScannerCode(System.Int32,System.Int32)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: GenerateI2CScannerCode(int, int)
+  nameWithType: CommunicationProtocolTools.GenerateI2CScannerCode(int, int)
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateI2CScannerCode
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 190
+  namespace: CircuitTool
+  summary: Generates I2C device scanning code for Arduino
+  example: []
+  syntax:
+    content: public static string GenerateI2CScannerCode(int startAddress = 8, int endAddress = 119)
+    parameters:
+    - id: startAddress
+      type: System.Int32
+      description: Start address for scanning (default 8)
+    - id: endAddress
+      type: System.Int32
+      description: End address for scanning (default 119)
+    return:
+      type: System.String
+      description: Arduino I2C scanner code
+    content.vb: Public Shared Function GenerateI2CScannerCode(startAddress As Integer = 8, endAddress As Integer = 119) As String
+  overload: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode*
+  nameWithType.vb: CommunicationProtocolTools.GenerateI2CScannerCode(Integer, Integer)
+  fullName.vb: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode(Integer, Integer)
+  name.vb: GenerateI2CScannerCode(Integer, Integer)
+- uid: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig,System.Int32)
+  commentId: M:CircuitTool.CommunicationProtocolTools.GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig,System.Int32)
+  id: GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig,System.Int32)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: GenerateSPITestCode(SPIConfig, int)
+  nameWithType: CommunicationProtocolTools.GenerateSPITestCode(CommunicationProtocolTools.SPIConfig, int)
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig, int)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateSPITestCode
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 289
+  namespace: CircuitTool
+  summary: Generates SPI communication test code for Arduino
+  example: []
+  syntax:
+    content: public static string GenerateSPITestCode(CommunicationProtocolTools.SPIConfig config, int chipSelectPin = 10)
+    parameters:
+    - id: config
+      type: CircuitTool.CommunicationProtocolTools.SPIConfig
+      description: SPI configuration
+    - id: chipSelectPin
+      type: System.Int32
+      description: Chip select pin number
+    return:
+      type: System.String
+      description: Arduino SPI test code
+    content.vb: Public Shared Function GenerateSPITestCode(config As CommunicationProtocolTools.SPIConfig, chipSelectPin As Integer = 10) As String
+  overload: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode*
+  nameWithType.vb: CommunicationProtocolTools.GenerateSPITestCode(CommunicationProtocolTools.SPIConfig, Integer)
+  fullName.vb: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode(CircuitTool.CommunicationProtocolTools.SPIConfig, Integer)
+  name.vb: GenerateSPITestCode(SPIConfig, Integer)
+- uid: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig,CircuitTool.CommunicationProtocolTools.SPIConfig,CircuitTool.CommunicationProtocolTools.UARTConfig)
+  commentId: M:CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig,CircuitTool.CommunicationProtocolTools.SPIConfig,CircuitTool.CommunicationProtocolTools.UARTConfig)
+  id: GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig,CircuitTool.CommunicationProtocolTools.SPIConfig,CircuitTool.CommunicationProtocolTools.UARTConfig)
+  parent: CircuitTool.CommunicationProtocolTools
+  langs:
+  - csharp
+  - vb
+  name: GenerateProtocolComparison(I2CConfig?, SPIConfig?, UARTConfig?)
+  nameWithType: CommunicationProtocolTools.GenerateProtocolComparison(CommunicationProtocolTools.I2CConfig?, CommunicationProtocolTools.SPIConfig?, CommunicationProtocolTools.UARTConfig?)
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig?, CircuitTool.CommunicationProtocolTools.SPIConfig?, CircuitTool.CommunicationProtocolTools.UARTConfig?)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateProtocolComparison
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 388
+  namespace: CircuitTool
+  summary: Generates protocol comparison report
+  example: []
+  syntax:
+    content: public static string GenerateProtocolComparison(CommunicationProtocolTools.I2CConfig? i2cConfig = null, CommunicationProtocolTools.SPIConfig? spiConfig = null, CommunicationProtocolTools.UARTConfig? uartConfig = null)
+    parameters:
+    - id: i2cConfig
+      type: CircuitTool.CommunicationProtocolTools.I2CConfig
+      description: I2C configuration
+    - id: spiConfig
+      type: CircuitTool.CommunicationProtocolTools.SPIConfig
+      description: SPI configuration
+    - id: uartConfig
+      type: CircuitTool.CommunicationProtocolTools.UARTConfig
+      description: UART configuration
+    return:
+      type: System.String
+      description: Comparison report
+    content.vb: Public Shared Function GenerateProtocolComparison(i2cConfig As CommunicationProtocolTools.I2CConfig = Nothing, spiConfig As CommunicationProtocolTools.SPIConfig = Nothing, uartConfig As CommunicationProtocolTools.UARTConfig = Nothing) As String
+  overload: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison*
+  nameWithType.vb: CommunicationProtocolTools.GenerateProtocolComparison(CommunicationProtocolTools.I2CConfig, CommunicationProtocolTools.SPIConfig, CommunicationProtocolTools.UARTConfig)
+  fullName.vb: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison(CircuitTool.CommunicationProtocolTools.I2CConfig, CircuitTool.CommunicationProtocolTools.SPIConfig, CircuitTool.CommunicationProtocolTools.UARTConfig)
+  name.vb: GenerateProtocolComparison(I2CConfig, SPIConfig, UARTConfig)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_CalculateI2CPullUpResistors_CircuitTool_CommunicationProtocolTools_I2CConfig_
+  name: CalculateI2CPullUpResistors
+  nameWithType: CommunicationProtocolTools.CalculateI2CPullUpResistors
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateI2CPullUpResistors
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.I2CConfig
+  parent: CircuitTool
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.I2CConfig
+  nameWithType: CommunicationProtocolTools.I2CConfig
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig
+  spec.csharp:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+    name: I2CConfig
+    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
+  spec.vb:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+    name: I2CConfig
+    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
+- uid: System.ValueTuple{System.Double,System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double minResistance, double maxResistance, double recommendedResistance)
+  nameWithType: (double minResistance, double maxResistance, double recommendedResistance)
+  fullName: (double minResistance, double maxResistance, double recommendedResistance)
+  nameWithType.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  fullName.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  name.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.minResistance
+    name: minResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.minresistance
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.maxResistance
+    name: maxResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.maxresistance
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.recommendedResistance
+    name: recommendedResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.recommendedresistance
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.minResistance
+    name: minResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.minresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.maxResistance
+    name: maxResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.maxresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.recommendedResistance
+    name: recommendedResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.recommendedresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: CircuitTool.CommunicationProtocolTools.CalculateI2CTiming*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.CalculateI2CTiming
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_CalculateI2CTiming_CircuitTool_CommunicationProtocolTools_I2CConfig_
+  name: CalculateI2CTiming
+  nameWithType: CommunicationProtocolTools.CalculateI2CTiming
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateI2CTiming
+- uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double,System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`4
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double setupTime, double holdTime, double riseTime, double fallTime)
+  nameWithType: (double setupTime, double holdTime, double riseTime, double fallTime)
+  fullName: (double setupTime, double holdTime, double riseTime, double fallTime)
+  nameWithType.vb: (setupTime As Double, holdTime As Double, riseTime As Double, fallTime As Double)
+  fullName.vb: (setupTime As Double, holdTime As Double, riseTime As Double, fallTime As Double)
+  name.vb: (setupTime As Double, holdTime As Double, riseTime As Double, fallTime As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.setupTime
+    name: setupTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.setuptime
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.holdTime
+    name: holdTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.holdtime
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.riseTime
+    name: riseTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.risetime
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.fallTime
+    name: fallTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.falltime
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.setupTime
+    name: setupTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.setuptime
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.holdTime
+    name: holdTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.holdtime
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.riseTime
+    name: riseTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.risetime
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double}.fallTime
+    name: fallTime
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.falltime
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`4
+  commentId: T:System.ValueTuple`4
+  name: (T1, T2, T3, T4)
+  nameWithType: (T1, T2, T3, T4)
+  fullName: (T1, T2, T3, T4)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_CalculateMaxSPIFrequency_CircuitTool_CommunicationProtocolTools_SPIConfig_
+  name: CalculateMaxSPIFrequency
+  nameWithType: CommunicationProtocolTools.CalculateMaxSPIFrequency
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateMaxSPIFrequency
+- uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.SPIConfig
+  parent: CircuitTool
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.SPIConfig
+  nameWithType: CommunicationProtocolTools.SPIConfig
+  fullName: CircuitTool.CommunicationProtocolTools.SPIConfig
+  spec.csharp:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+    name: SPIConfig
+    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
+  spec.vb:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+    name: SPIConfig
+    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_CalculateUARTBitErrorRate_CircuitTool_CommunicationProtocolTools_UARTConfig_System_Double_
+  name: CalculateUARTBitErrorRate
+  nameWithType: CommunicationProtocolTools.CalculateUARTBitErrorRate
+  fullName: CircuitTool.CommunicationProtocolTools.CalculateUARTBitErrorRate
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.UARTConfig
+  parent: CircuitTool
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.UARTConfig
+  nameWithType: CommunicationProtocolTools.UARTConfig
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig
+  spec.csharp:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+    name: UARTConfig
+    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
+  spec.vb:
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
+  - name: .
+  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+    name: UARTConfig
+    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
+- uid: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_GenerateI2CScannerCode_System_Int32_System_Int32_
+  name: GenerateI2CScannerCode
+  nameWithType: CommunicationProtocolTools.GenerateI2CScannerCode
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateI2CScannerCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.GenerateSPITestCode
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_GenerateSPITestCode_CircuitTool_CommunicationProtocolTools_SPIConfig_System_Int32_
+  name: GenerateSPITestCode
+  nameWithType: CommunicationProtocolTools.GenerateSPITestCode
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateSPITestCode
+- uid: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison
+  href: CircuitTool.CommunicationProtocolTools.html#CircuitTool_CommunicationProtocolTools_GenerateProtocolComparison_CircuitTool_CommunicationProtocolTools_I2CConfig_CircuitTool_CommunicationProtocolTools_SPIConfig_CircuitTool_CommunicationProtocolTools_UARTConfig_
+  name: GenerateProtocolComparison
+  nameWithType: CommunicationProtocolTools.GenerateProtocolComparison
+  fullName: CircuitTool.CommunicationProtocolTools.GenerateProtocolComparison

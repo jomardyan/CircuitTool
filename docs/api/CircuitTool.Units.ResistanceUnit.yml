@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.ResistanceUnit
+  commentId: T:CircuitTool.Units.ResistanceUnit
+  id: ResistanceUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.ResistanceUnit.Gigaohms
+  - CircuitTool.Units.ResistanceUnit.Kiloohms
+  - CircuitTool.Units.ResistanceUnit.Megaohms
+  - CircuitTool.Units.ResistanceUnit.Milliohms
+  - CircuitTool.Units.ResistanceUnit.Ohms
+  langs:
+  - csharp
+  - vb
+  name: ResistanceUnit
+  nameWithType: ResistanceUnit
+  fullName: CircuitTool.Units.ResistanceUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResistanceUnit
+    path: src/Units/ResistanceUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents resistance measurement units
+  example: []
+  syntax:
+    content: public enum ResistanceUnit
+    content.vb: Public Enum ResistanceUnit
+- uid: CircuitTool.Units.ResistanceUnit.Milliohms
+  commentId: F:CircuitTool.Units.ResistanceUnit.Milliohms
+  id: Milliohms
+  parent: CircuitTool.Units.ResistanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Milliohms
+  nameWithType: ResistanceUnit.Milliohms
+  fullName: CircuitTool.Units.ResistanceUnit.Milliohms
+  type: Field
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Milliohms
+    path: src/Units/ResistanceUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Milliohms (mΩ)
+  example: []
+  syntax:
+    content: Milliohms = 0
+    return:
+      type: CircuitTool.Units.ResistanceUnit
+- uid: CircuitTool.Units.ResistanceUnit.Ohms
+  commentId: F:CircuitTool.Units.ResistanceUnit.Ohms
+  id: Ohms
+  parent: CircuitTool.Units.ResistanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Ohms
+  nameWithType: ResistanceUnit.Ohms
+  fullName: CircuitTool.Units.ResistanceUnit.Ohms
+  type: Field
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Ohms
+    path: src/Units/ResistanceUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Ohms (Ω)
+  example: []
+  syntax:
+    content: Ohms = 1
+    return:
+      type: CircuitTool.Units.ResistanceUnit
+- uid: CircuitTool.Units.ResistanceUnit.Kiloohms
+  commentId: F:CircuitTool.Units.ResistanceUnit.Kiloohms
+  id: Kiloohms
+  parent: CircuitTool.Units.ResistanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Kiloohms
+  nameWithType: ResistanceUnit.Kiloohms
+  fullName: CircuitTool.Units.ResistanceUnit.Kiloohms
+  type: Field
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kiloohms
+    path: src/Units/ResistanceUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Kiloohms (kΩ)
+  example: []
+  syntax:
+    content: Kiloohms = 2
+    return:
+      type: CircuitTool.Units.ResistanceUnit
+- uid: CircuitTool.Units.ResistanceUnit.Megaohms
+  commentId: F:CircuitTool.Units.ResistanceUnit.Megaohms
+  id: Megaohms
+  parent: CircuitTool.Units.ResistanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Megaohms
+  nameWithType: ResistanceUnit.Megaohms
+  fullName: CircuitTool.Units.ResistanceUnit.Megaohms
+  type: Field
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megaohms
+    path: src/Units/ResistanceUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Megaohms (MΩ)
+  example: []
+  syntax:
+    content: Megaohms = 3
+    return:
+      type: CircuitTool.Units.ResistanceUnit
+- uid: CircuitTool.Units.ResistanceUnit.Gigaohms
+  commentId: F:CircuitTool.Units.ResistanceUnit.Gigaohms
+  id: Gigaohms
+  parent: CircuitTool.Units.ResistanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Gigaohms
+  nameWithType: ResistanceUnit.Gigaohms
+  fullName: CircuitTool.Units.ResistanceUnit.Gigaohms
+  type: Field
+  source:
+    remote:
+      path: src/Units/ResistanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gigaohms
+    path: src/Units/ResistanceUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Gigaohms (GΩ)
+  example: []
+  syntax:
+    content: Gigaohms = 4
+    return:
+      type: CircuitTool.Units.ResistanceUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.ResistanceUnit
+  commentId: T:CircuitTool.Units.ResistanceUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.ResistanceUnit.html
+  name: ResistanceUnit
+  nameWithType: ResistanceUnit
+  fullName: CircuitTool.Units.ResistanceUnit

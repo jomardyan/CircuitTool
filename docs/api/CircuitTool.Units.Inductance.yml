@@ -1,0 +1,1591 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.Inductance
+  commentId: T:CircuitTool.Units.Inductance
+  id: Inductance
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.Inductance.#ctor(System.Double,CircuitTool.Units.InductanceUnit)
+  - CircuitTool.Units.Inductance.CompareTo(CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.ConvertTo(CircuitTool.Units.InductanceUnit)
+  - CircuitTool.Units.Inductance.Equals(CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.Equals(System.Object)
+  - CircuitTool.Units.Inductance.GetHashCode
+  - CircuitTool.Units.Inductance.Henries
+  - CircuitTool.Units.Inductance.Kilohenries
+  - CircuitTool.Units.Inductance.Microhenries
+  - CircuitTool.Units.Inductance.Millihenries
+  - CircuitTool.Units.Inductance.Nanohenries
+  - CircuitTool.Units.Inductance.ToString
+  - CircuitTool.Units.Inductance.ToString(CircuitTool.Units.InductanceUnit)
+  - CircuitTool.Units.Inductance.op_Addition(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_Division(CircuitTool.Units.Inductance,System.Double)
+  - CircuitTool.Units.Inductance.op_Equality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_GreaterThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_GreaterThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_Inequality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_LessThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_LessThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_Multiply(CircuitTool.Units.Inductance,System.Double)
+  - CircuitTool.Units.Inductance.op_Multiply(System.Double,CircuitTool.Units.Inductance)
+  - CircuitTool.Units.Inductance.op_Subtraction(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  langs:
+  - csharp
+  - vb
+  name: Inductance
+  nameWithType: Inductance
+  fullName: CircuitTool.Units.Inductance
+  type: Struct
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Inductance
+    path: src/Units/InductanceUnit.cs
+    startLine: 25
+  namespace: CircuitTool.Units
+  summary: Represents a strongly-typed inductance measurement with automatic unit conversion
+  example: []
+  syntax:
+    content: 'public readonly struct Inductance : IEquatable<Inductance>, IComparable<Inductance>'
+    content.vb: Public Structure Inductance Implements IEquatable(Of Inductance), IComparable(Of Inductance)
+  implements:
+  - System.IEquatable{CircuitTool.Units.Inductance}
+  - System.IComparable{CircuitTool.Units.Inductance}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Units.Inductance.#ctor(System.Double,CircuitTool.Units.InductanceUnit)
+  commentId: M:CircuitTool.Units.Inductance.#ctor(System.Double,CircuitTool.Units.InductanceUnit)
+  id: '#ctor(System.Double,CircuitTool.Units.InductanceUnit)'
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Inductance(double, InductanceUnit)
+  nameWithType: Inductance.Inductance(double, InductanceUnit)
+  fullName: CircuitTool.Units.Inductance.Inductance(double, CircuitTool.Units.InductanceUnit)
+  type: Constructor
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Units/InductanceUnit.cs
+    startLine: 34
+  namespace: CircuitTool.Units
+  summary: Creates a new inductance measurement
+  example: []
+  syntax:
+    content: public Inductance(double value, InductanceUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value in the specified unit
+    - id: unit
+      type: CircuitTool.Units.InductanceUnit
+      description: The unit of measurement
+    content.vb: Public Sub New(value As Double, unit As InductanceUnit)
+  overload: CircuitTool.Units.Inductance.#ctor*
+  nameWithType.vb: Inductance.New(Double, InductanceUnit)
+  fullName.vb: CircuitTool.Units.Inductance.New(Double, CircuitTool.Units.InductanceUnit)
+  name.vb: New(Double, InductanceUnit)
+- uid: CircuitTool.Units.Inductance.Henries
+  commentId: P:CircuitTool.Units.Inductance.Henries
+  id: Henries
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Henries
+  nameWithType: Inductance.Henries
+  fullName: CircuitTool.Units.Inductance.Henries
+  type: Property
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Henries
+    path: src/Units/InductanceUnit.cs
+    startLine: 42
+  namespace: CircuitTool.Units
+  summary: Gets the inductance value in henries
+  example: []
+  syntax:
+    content: public double Henries { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Henries As Double
+  overload: CircuitTool.Units.Inductance.Henries*
+- uid: CircuitTool.Units.Inductance.Nanohenries
+  commentId: P:CircuitTool.Units.Inductance.Nanohenries
+  id: Nanohenries
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Nanohenries
+  nameWithType: Inductance.Nanohenries
+  fullName: CircuitTool.Units.Inductance.Nanohenries
+  type: Property
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanohenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 47
+  namespace: CircuitTool.Units
+  summary: Gets the inductance value in nanohenries
+  example: []
+  syntax:
+    content: public double Nanohenries { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Nanohenries As Double
+  overload: CircuitTool.Units.Inductance.Nanohenries*
+- uid: CircuitTool.Units.Inductance.Microhenries
+  commentId: P:CircuitTool.Units.Inductance.Microhenries
+  id: Microhenries
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Microhenries
+  nameWithType: Inductance.Microhenries
+  fullName: CircuitTool.Units.Inductance.Microhenries
+  type: Property
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microhenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 52
+  namespace: CircuitTool.Units
+  summary: Gets the inductance value in microhenries
+  example: []
+  syntax:
+    content: public double Microhenries { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Microhenries As Double
+  overload: CircuitTool.Units.Inductance.Microhenries*
+- uid: CircuitTool.Units.Inductance.Millihenries
+  commentId: P:CircuitTool.Units.Inductance.Millihenries
+  id: Millihenries
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Millihenries
+  nameWithType: Inductance.Millihenries
+  fullName: CircuitTool.Units.Inductance.Millihenries
+  type: Property
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Millihenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 57
+  namespace: CircuitTool.Units
+  summary: Gets the inductance value in millihenries
+  example: []
+  syntax:
+    content: public double Millihenries { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Millihenries As Double
+  overload: CircuitTool.Units.Inductance.Millihenries*
+- uid: CircuitTool.Units.Inductance.Kilohenries
+  commentId: P:CircuitTool.Units.Inductance.Kilohenries
+  id: Kilohenries
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Kilohenries
+  nameWithType: Inductance.Kilohenries
+  fullName: CircuitTool.Units.Inductance.Kilohenries
+  type: Property
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilohenries
+    path: src/Units/InductanceUnit.cs
+    startLine: 62
+  namespace: CircuitTool.Units
+  summary: Gets the inductance value in kilohenries
+  example: []
+  syntax:
+    content: public double Kilohenries { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Kilohenries As Double
+  overload: CircuitTool.Units.Inductance.Kilohenries*
+- uid: CircuitTool.Units.Inductance.ConvertTo(CircuitTool.Units.InductanceUnit)
+  commentId: M:CircuitTool.Units.Inductance.ConvertTo(CircuitTool.Units.InductanceUnit)
+  id: ConvertTo(CircuitTool.Units.InductanceUnit)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: ConvertTo(InductanceUnit)
+  nameWithType: Inductance.ConvertTo(InductanceUnit)
+  fullName: CircuitTool.Units.Inductance.ConvertTo(CircuitTool.Units.InductanceUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConvertTo
+    path: src/Units/InductanceUnit.cs
+    startLine: 77
+  namespace: CircuitTool.Units
+  syntax:
+    content: public double ConvertTo(InductanceUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.InductanceUnit
+    return:
+      type: System.Double
+    content.vb: Public Function ConvertTo(unit As InductanceUnit) As Double
+  overload: CircuitTool.Units.Inductance.ConvertTo*
+- uid: CircuitTool.Units.Inductance.op_Addition(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_Addition(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_Addition(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator +(Inductance, Inductance)
+  nameWithType: Inductance.operator +(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator +(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Addition
+    path: src/Units/InductanceUnit.cs
+    startLine: 90
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Inductance operator +(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: CircuitTool.Units.Inductance
+    content.vb: Public Shared Operator +(left As Inductance, right As Inductance) As Inductance
+  overload: CircuitTool.Units.Inductance.op_Addition*
+  nameWithType.vb: Inductance.+(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.+(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: +(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_Subtraction(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_Subtraction(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_Subtraction(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator -(Inductance, Inductance)
+  nameWithType: Inductance.operator -(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator -(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Subtraction
+    path: src/Units/InductanceUnit.cs
+    startLine: 91
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Inductance operator -(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: CircuitTool.Units.Inductance
+    content.vb: Public Shared Operator -(left As Inductance, right As Inductance) As Inductance
+  overload: CircuitTool.Units.Inductance.op_Subtraction*
+  nameWithType.vb: Inductance.-(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.-(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: -(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_Multiply(CircuitTool.Units.Inductance,System.Double)
+  commentId: M:CircuitTool.Units.Inductance.op_Multiply(CircuitTool.Units.Inductance,System.Double)
+  id: op_Multiply(CircuitTool.Units.Inductance,System.Double)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator *(Inductance, double)
+  nameWithType: Inductance.operator *(Inductance, double)
+  fullName: CircuitTool.Units.Inductance.operator *(CircuitTool.Units.Inductance, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/InductanceUnit.cs
+    startLine: 92
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Inductance operator *(Inductance inductance, double scalar)
+    parameters:
+    - id: inductance
+      type: CircuitTool.Units.Inductance
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Inductance
+    content.vb: Public Shared Operator *(inductance As Inductance, scalar As Double) As Inductance
+  overload: CircuitTool.Units.Inductance.op_Multiply*
+  nameWithType.vb: Inductance.*(Inductance, Double)
+  fullName.vb: CircuitTool.Units.Inductance.*(CircuitTool.Units.Inductance, Double)
+  name.vb: '*(Inductance, Double)'
+- uid: CircuitTool.Units.Inductance.op_Multiply(System.Double,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_Multiply(System.Double,CircuitTool.Units.Inductance)
+  id: op_Multiply(System.Double,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, Inductance)
+  nameWithType: Inductance.operator *(double, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator *(double, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/InductanceUnit.cs
+    startLine: 93
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Inductance operator *(double scalar, Inductance inductance)
+    parameters:
+    - id: scalar
+      type: System.Double
+    - id: inductance
+      type: CircuitTool.Units.Inductance
+    return:
+      type: CircuitTool.Units.Inductance
+    content.vb: Public Shared Operator *(scalar As Double, inductance As Inductance) As Inductance
+  overload: CircuitTool.Units.Inductance.op_Multiply*
+  nameWithType.vb: Inductance.*(Double, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.*(Double, CircuitTool.Units.Inductance)
+  name.vb: '*(Double, Inductance)'
+- uid: CircuitTool.Units.Inductance.op_Division(CircuitTool.Units.Inductance,System.Double)
+  commentId: M:CircuitTool.Units.Inductance.op_Division(CircuitTool.Units.Inductance,System.Double)
+  id: op_Division(CircuitTool.Units.Inductance,System.Double)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator /(Inductance, double)
+  nameWithType: Inductance.operator /(Inductance, double)
+  fullName: CircuitTool.Units.Inductance.operator /(CircuitTool.Units.Inductance, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Division
+    path: src/Units/InductanceUnit.cs
+    startLine: 94
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Inductance operator /(Inductance inductance, double scalar)
+    parameters:
+    - id: inductance
+      type: CircuitTool.Units.Inductance
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Inductance
+    content.vb: Public Shared Operator /(inductance As Inductance, scalar As Double) As Inductance
+  overload: CircuitTool.Units.Inductance.op_Division*
+  nameWithType.vb: Inductance./(Inductance, Double)
+  fullName.vb: CircuitTool.Units.Inductance./(CircuitTool.Units.Inductance, Double)
+  name.vb: /(Inductance, Double)
+- uid: CircuitTool.Units.Inductance.op_Equality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_Equality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_Equality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Inductance, Inductance)
+  nameWithType: Inductance.operator ==(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator ==(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Equality
+    path: src/Units/InductanceUnit.cs
+    startLine: 96
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator ==(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_Equality*
+  nameWithType.vb: Inductance.=(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: =(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_Inequality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_Inequality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_Inequality(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Inductance, Inductance)
+  nameWithType: Inductance.operator !=(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator !=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Inequality
+    path: src/Units/InductanceUnit.cs
+    startLine: 97
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator !=(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_Inequality*
+  nameWithType.vb: Inductance.<>(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.<>(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: <>(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_LessThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_LessThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_LessThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator <(Inductance, Inductance)
+  nameWithType: Inductance.operator <(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator <(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThan
+    path: src/Units/InductanceUnit.cs
+    startLine: 98
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_LessThan*
+  nameWithType.vb: Inductance.<(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.<(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: <(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_GreaterThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_GreaterThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_GreaterThan(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator >(Inductance, Inductance)
+  nameWithType: Inductance.operator >(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator >(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThan
+    path: src/Units/InductanceUnit.cs
+    startLine: 99
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_GreaterThan*
+  nameWithType.vb: Inductance.>(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.>(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: '>(Inductance, Inductance)'
+- uid: CircuitTool.Units.Inductance.op_LessThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_LessThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_LessThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Inductance, Inductance)
+  nameWithType: Inductance.operator <=(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator <=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThanOrEqual
+    path: src/Units/InductanceUnit.cs
+    startLine: 100
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <=(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_LessThanOrEqual*
+  nameWithType.vb: Inductance.<=(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.<=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: <=(Inductance, Inductance)
+- uid: CircuitTool.Units.Inductance.op_GreaterThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.op_GreaterThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  id: op_GreaterThanOrEqual(CircuitTool.Units.Inductance,CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Inductance, Inductance)
+  nameWithType: Inductance.operator >=(Inductance, Inductance)
+  fullName: CircuitTool.Units.Inductance.operator >=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThanOrEqual
+    path: src/Units/InductanceUnit.cs
+    startLine: 101
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >=(Inductance left, Inductance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Inductance
+    - id: right
+      type: CircuitTool.Units.Inductance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Inductance, right As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.op_GreaterThanOrEqual*
+  nameWithType.vb: Inductance.>=(Inductance, Inductance)
+  fullName.vb: CircuitTool.Units.Inductance.>=(CircuitTool.Units.Inductance, CircuitTool.Units.Inductance)
+  name.vb: '>=(Inductance, Inductance)'
+- uid: CircuitTool.Units.Inductance.Equals(CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.Equals(CircuitTool.Units.Inductance)
+  id: Equals(CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Equals(Inductance)
+  nameWithType: Inductance.Equals(Inductance)
+  fullName: CircuitTool.Units.Inductance.Equals(CircuitTool.Units.Inductance)
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/InductanceUnit.cs
+    startLine: 103
+  namespace: CircuitTool.Units
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Inductance other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Inductance
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Inductance) As Boolean
+  overload: CircuitTool.Units.Inductance.Equals*
+  implements:
+  - System.IEquatable{CircuitTool.Units.Inductance}.Equals(CircuitTool.Units.Inductance)
+- uid: CircuitTool.Units.Inductance.Equals(System.Object)
+  commentId: M:CircuitTool.Units.Inductance.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Inductance.Equals(object?)
+  fullName: CircuitTool.Units.Inductance.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/InductanceUnit.cs
+    startLine: 104
+  namespace: CircuitTool.Units
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: CircuitTool.Units.Inductance.Equals*
+  nameWithType.vb: Inductance.Equals(Object)
+  fullName.vb: CircuitTool.Units.Inductance.Equals(Object)
+  name.vb: Equals(Object)
+- uid: CircuitTool.Units.Inductance.GetHashCode
+  commentId: M:CircuitTool.Units.Inductance.GetHashCode
+  id: GetHashCode
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Inductance.GetHashCode()
+  fullName: CircuitTool.Units.Inductance.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetHashCode
+    path: src/Units/InductanceUnit.cs
+    startLine: 105
+  namespace: CircuitTool.Units
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: CircuitTool.Units.Inductance.GetHashCode*
+- uid: CircuitTool.Units.Inductance.CompareTo(CircuitTool.Units.Inductance)
+  commentId: M:CircuitTool.Units.Inductance.CompareTo(CircuitTool.Units.Inductance)
+  id: CompareTo(CircuitTool.Units.Inductance)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Inductance)
+  nameWithType: Inductance.CompareTo(Inductance)
+  fullName: CircuitTool.Units.Inductance.CompareTo(CircuitTool.Units.Inductance)
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CompareTo
+    path: src/Units/InductanceUnit.cs
+    startLine: 106
+  namespace: CircuitTool.Units
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(Inductance other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Inductance
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As Inductance) As Integer
+  overload: CircuitTool.Units.Inductance.CompareTo*
+  implements:
+  - System.IComparable{CircuitTool.Units.Inductance}.CompareTo(CircuitTool.Units.Inductance)
+- uid: CircuitTool.Units.Inductance.ToString
+  commentId: M:CircuitTool.Units.Inductance.ToString
+  id: ToString
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Inductance.ToString()
+  fullName: CircuitTool.Units.Inductance.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/InductanceUnit.cs
+    startLine: 108
+  namespace: CircuitTool.Units
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Units.Inductance.ToString*
+- uid: CircuitTool.Units.Inductance.ToString(CircuitTool.Units.InductanceUnit)
+  commentId: M:CircuitTool.Units.Inductance.ToString(CircuitTool.Units.InductanceUnit)
+  id: ToString(CircuitTool.Units.InductanceUnit)
+  parent: CircuitTool.Units.Inductance
+  langs:
+  - csharp
+  - vb
+  name: ToString(InductanceUnit)
+  nameWithType: Inductance.ToString(InductanceUnit)
+  fullName: CircuitTool.Units.Inductance.ToString(CircuitTool.Units.InductanceUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/InductanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/InductanceUnit.cs
+    startLine: 109
+  namespace: CircuitTool.Units
+  syntax:
+    content: public string ToString(InductanceUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.InductanceUnit
+    return:
+      type: System.String
+    content.vb: Public Function ToString(unit As InductanceUnit) As String
+  overload: CircuitTool.Units.Inductance.ToString*
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: System.IEquatable{CircuitTool.Units.Inductance}
+  commentId: T:System.IEquatable{CircuitTool.Units.Inductance}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Inductance>
+  nameWithType: IEquatable<Inductance>
+  fullName: System.IEquatable<CircuitTool.Units.Inductance>
+  nameWithType.vb: IEquatable(Of Inductance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Inductance)
+  name.vb: IEquatable(Of Inductance)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+- uid: System.IComparable{CircuitTool.Units.Inductance}
+  commentId: T:System.IComparable{CircuitTool.Units.Inductance}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Inductance>
+  nameWithType: IComparable<Inductance>
+  fullName: System.IComparable<CircuitTool.Units.Inductance>
+  nameWithType.vb: IComparable(Of Inductance)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Inductance)
+  name.vb: IComparable(Of Inductance)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.Units.Inductance.#ctor*
+  commentId: Overload:CircuitTool.Units.Inductance.#ctor
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance__ctor_System_Double_CircuitTool_Units_InductanceUnit_
+  name: Inductance
+  nameWithType: Inductance.Inductance
+  fullName: CircuitTool.Units.Inductance.Inductance
+  nameWithType.vb: Inductance.New
+  fullName.vb: CircuitTool.Units.Inductance.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Units.InductanceUnit
+  commentId: T:CircuitTool.Units.InductanceUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.InductanceUnit.html
+  name: InductanceUnit
+  nameWithType: InductanceUnit
+  fullName: CircuitTool.Units.InductanceUnit
+- uid: CircuitTool.Units.Inductance.Henries*
+  commentId: Overload:CircuitTool.Units.Inductance.Henries
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Henries
+  name: Henries
+  nameWithType: Inductance.Henries
+  fullName: CircuitTool.Units.Inductance.Henries
+- uid: CircuitTool.Units.Inductance.Nanohenries*
+  commentId: Overload:CircuitTool.Units.Inductance.Nanohenries
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Nanohenries
+  name: Nanohenries
+  nameWithType: Inductance.Nanohenries
+  fullName: CircuitTool.Units.Inductance.Nanohenries
+- uid: CircuitTool.Units.Inductance.Microhenries*
+  commentId: Overload:CircuitTool.Units.Inductance.Microhenries
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Microhenries
+  name: Microhenries
+  nameWithType: Inductance.Microhenries
+  fullName: CircuitTool.Units.Inductance.Microhenries
+- uid: CircuitTool.Units.Inductance.Millihenries*
+  commentId: Overload:CircuitTool.Units.Inductance.Millihenries
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Millihenries
+  name: Millihenries
+  nameWithType: Inductance.Millihenries
+  fullName: CircuitTool.Units.Inductance.Millihenries
+- uid: CircuitTool.Units.Inductance.Kilohenries*
+  commentId: Overload:CircuitTool.Units.Inductance.Kilohenries
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Kilohenries
+  name: Kilohenries
+  nameWithType: Inductance.Kilohenries
+  fullName: CircuitTool.Units.Inductance.Kilohenries
+- uid: CircuitTool.Units.Inductance.ConvertTo*
+  commentId: Overload:CircuitTool.Units.Inductance.ConvertTo
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_ConvertTo_CircuitTool_Units_InductanceUnit_
+  name: ConvertTo
+  nameWithType: Inductance.ConvertTo
+  fullName: CircuitTool.Units.Inductance.ConvertTo
+- uid: CircuitTool.Units.Inductance.op_Addition*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Addition
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Addition_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator +
+  nameWithType: Inductance.operator +
+  fullName: CircuitTool.Units.Inductance.operator +
+  nameWithType.vb: Inductance.+
+  fullName.vb: CircuitTool.Units.Inductance.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Addition*
+    name: +
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Addition_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance
+  commentId: T:CircuitTool.Units.Inductance
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.Inductance.html
+  name: Inductance
+  nameWithType: Inductance
+  fullName: CircuitTool.Units.Inductance
+- uid: CircuitTool.Units.Inductance.op_Subtraction*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Subtraction
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Subtraction_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator -
+  nameWithType: Inductance.operator -
+  fullName: CircuitTool.Units.Inductance.operator -
+  nameWithType.vb: Inductance.-
+  fullName.vb: CircuitTool.Units.Inductance.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Subtraction*
+    name: '-'
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Subtraction_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.op_Multiply*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Multiply
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Multiply_CircuitTool_Units_Inductance_System_Double_
+  name: operator *
+  nameWithType: Inductance.operator *
+  fullName: CircuitTool.Units.Inductance.operator *
+  nameWithType.vb: Inductance.*
+  fullName.vb: CircuitTool.Units.Inductance.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Multiply*
+    name: '*'
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Multiply_CircuitTool_Units_Inductance_System_Double_
+- uid: CircuitTool.Units.Inductance.op_Division*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Division
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Division_CircuitTool_Units_Inductance_System_Double_
+  name: operator /
+  nameWithType: Inductance.operator /
+  fullName: CircuitTool.Units.Inductance.operator /
+  nameWithType.vb: Inductance./
+  fullName.vb: CircuitTool.Units.Inductance./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Division*
+    name: /
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Division_CircuitTool_Units_Inductance_System_Double_
+- uid: CircuitTool.Units.Inductance.op_Equality*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Equality
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Equality_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator ==
+  nameWithType: Inductance.operator ==
+  fullName: CircuitTool.Units.Inductance.operator ==
+  nameWithType.vb: Inductance.=
+  fullName.vb: CircuitTool.Units.Inductance.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Equality*
+    name: ==
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Equality_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Units.Inductance.op_Inequality*
+  commentId: Overload:CircuitTool.Units.Inductance.op_Inequality
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Inequality_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator !=
+  nameWithType: Inductance.operator !=
+  fullName: CircuitTool.Units.Inductance.operator !=
+  nameWithType.vb: Inductance.<>
+  fullName.vb: CircuitTool.Units.Inductance.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_Inequality*
+    name: '!='
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_Inequality_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.op_LessThan*
+  commentId: Overload:CircuitTool.Units.Inductance.op_LessThan
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_LessThan_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator <
+  nameWithType: Inductance.operator <
+  fullName: CircuitTool.Units.Inductance.operator <
+  nameWithType.vb: Inductance.<
+  fullName.vb: CircuitTool.Units.Inductance.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_LessThan*
+    name: <
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_LessThan_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.op_GreaterThan*
+  commentId: Overload:CircuitTool.Units.Inductance.op_GreaterThan
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_GreaterThan_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator >
+  nameWithType: Inductance.operator >
+  fullName: CircuitTool.Units.Inductance.operator >
+  nameWithType.vb: Inductance.>
+  fullName.vb: CircuitTool.Units.Inductance.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_GreaterThan*
+    name: '>'
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_GreaterThan_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.op_LessThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Inductance.op_LessThanOrEqual
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_LessThanOrEqual_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator <=
+  nameWithType: Inductance.operator <=
+  fullName: CircuitTool.Units.Inductance.operator <=
+  nameWithType.vb: Inductance.<=
+  fullName.vb: CircuitTool.Units.Inductance.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_LessThanOrEqual*
+    name: <=
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_LessThanOrEqual_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.op_GreaterThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Inductance.op_GreaterThanOrEqual
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_GreaterThanOrEqual_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+  name: operator >=
+  nameWithType: Inductance.operator >=
+  fullName: CircuitTool.Units.Inductance.operator >=
+  nameWithType.vb: Inductance.>=
+  fullName.vb: CircuitTool.Units.Inductance.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Inductance.op_GreaterThanOrEqual*
+    name: '>='
+    href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_op_GreaterThanOrEqual_CircuitTool_Units_Inductance_CircuitTool_Units_Inductance_
+- uid: CircuitTool.Units.Inductance.Equals*
+  commentId: Overload:CircuitTool.Units.Inductance.Equals
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_Equals_CircuitTool_Units_Inductance_
+  name: Equals
+  nameWithType: Inductance.Equals
+  fullName: CircuitTool.Units.Inductance.Equals
+- uid: System.IEquatable{CircuitTool.Units.Inductance}.Equals(CircuitTool.Units.Inductance)
+  commentId: M:System.IEquatable{CircuitTool.Units.Inductance}.Equals(CircuitTool.Units.Inductance)
+  parent: System.IEquatable{CircuitTool.Units.Inductance}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Inductance)
+  nameWithType: IEquatable<Inductance>.Equals(Inductance)
+  fullName: System.IEquatable<CircuitTool.Units.Inductance>.Equals(CircuitTool.Units.Inductance)
+  nameWithType.vb: IEquatable(Of Inductance).Equals(Inductance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Inductance).Equals(CircuitTool.Units.Inductance)
+  spec.csharp:
+  - uid: System.IEquatable{CircuitTool.Units.Inductance}.Equals(CircuitTool.Units.Inductance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{CircuitTool.Units.Inductance}.Equals(CircuitTool.Units.Inductance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Inductance.GetHashCode*
+  commentId: Overload:CircuitTool.Units.Inductance.GetHashCode
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_GetHashCode
+  name: GetHashCode
+  nameWithType: Inductance.GetHashCode
+  fullName: CircuitTool.Units.Inductance.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Units.Inductance.CompareTo*
+  commentId: Overload:CircuitTool.Units.Inductance.CompareTo
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_CompareTo_CircuitTool_Units_Inductance_
+  name: CompareTo
+  nameWithType: Inductance.CompareTo
+  fullName: CircuitTool.Units.Inductance.CompareTo
+- uid: System.IComparable{CircuitTool.Units.Inductance}.CompareTo(CircuitTool.Units.Inductance)
+  commentId: M:System.IComparable{CircuitTool.Units.Inductance}.CompareTo(CircuitTool.Units.Inductance)
+  parent: System.IComparable{CircuitTool.Units.Inductance}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Inductance)
+  nameWithType: IComparable<Inductance>.CompareTo(Inductance)
+  fullName: System.IComparable<CircuitTool.Units.Inductance>.CompareTo(CircuitTool.Units.Inductance)
+  nameWithType.vb: IComparable(Of Inductance).CompareTo(Inductance)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Inductance).CompareTo(CircuitTool.Units.Inductance)
+  spec.csharp:
+  - uid: System.IComparable{CircuitTool.Units.Inductance}.CompareTo(CircuitTool.Units.Inductance)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{CircuitTool.Units.Inductance}.CompareTo(CircuitTool.Units.Inductance)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Inductance
+    name: Inductance
+    href: CircuitTool.Units.Inductance.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Inductance.ToString*
+  commentId: Overload:CircuitTool.Units.Inductance.ToString
+  href: CircuitTool.Units.Inductance.html#CircuitTool_Units_Inductance_ToString
+  name: ToString
+  nameWithType: Inductance.ToString
+  fullName: CircuitTool.Units.Inductance.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

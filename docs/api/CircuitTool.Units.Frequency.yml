@@ -1,0 +1,1663 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.Frequency
+  commentId: T:CircuitTool.Units.Frequency
+  id: Frequency
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.Frequency.#ctor(System.Double,CircuitTool.Units.FrequencyUnit)
+  - CircuitTool.Units.Frequency.AngularFrequency
+  - CircuitTool.Units.Frequency.CompareTo(CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.ConvertTo(CircuitTool.Units.FrequencyUnit)
+  - CircuitTool.Units.Frequency.Equals(CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.Equals(System.Object)
+  - CircuitTool.Units.Frequency.GetHashCode
+  - CircuitTool.Units.Frequency.Gigahertz
+  - CircuitTool.Units.Frequency.Hertz
+  - CircuitTool.Units.Frequency.Kilohertz
+  - CircuitTool.Units.Frequency.Megahertz
+  - CircuitTool.Units.Frequency.Period
+  - CircuitTool.Units.Frequency.Terahertz
+  - CircuitTool.Units.Frequency.ToString
+  - CircuitTool.Units.Frequency.ToString(CircuitTool.Units.FrequencyUnit)
+  - CircuitTool.Units.Frequency.op_Addition(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_Division(CircuitTool.Units.Frequency,System.Double)
+  - CircuitTool.Units.Frequency.op_Equality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_GreaterThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_GreaterThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_Inequality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_LessThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_LessThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_Multiply(CircuitTool.Units.Frequency,System.Double)
+  - CircuitTool.Units.Frequency.op_Multiply(System.Double,CircuitTool.Units.Frequency)
+  - CircuitTool.Units.Frequency.op_Subtraction(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: Frequency
+  fullName: CircuitTool.Units.Frequency
+  type: Struct
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Frequency
+    path: src/Units/FrequencyUnit.cs
+    startLine: 25
+  namespace: CircuitTool.Units
+  summary: Represents a strongly-typed frequency measurement with automatic unit conversion
+  example: []
+  syntax:
+    content: 'public readonly struct Frequency : IEquatable<Frequency>, IComparable<Frequency>'
+    content.vb: Public Structure Frequency Implements IEquatable(Of Frequency), IComparable(Of Frequency)
+  implements:
+  - System.IEquatable{CircuitTool.Units.Frequency}
+  - System.IComparable{CircuitTool.Units.Frequency}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Units.Frequency.#ctor(System.Double,CircuitTool.Units.FrequencyUnit)
+  commentId: M:CircuitTool.Units.Frequency.#ctor(System.Double,CircuitTool.Units.FrequencyUnit)
+  id: '#ctor(System.Double,CircuitTool.Units.FrequencyUnit)'
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Frequency(double, FrequencyUnit)
+  nameWithType: Frequency.Frequency(double, FrequencyUnit)
+  fullName: CircuitTool.Units.Frequency.Frequency(double, CircuitTool.Units.FrequencyUnit)
+  type: Constructor
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Units/FrequencyUnit.cs
+    startLine: 34
+  namespace: CircuitTool.Units
+  summary: Creates a new frequency measurement
+  example: []
+  syntax:
+    content: public Frequency(double value, FrequencyUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value in the specified unit
+    - id: unit
+      type: CircuitTool.Units.FrequencyUnit
+      description: The unit of measurement
+    content.vb: Public Sub New(value As Double, unit As FrequencyUnit)
+  overload: CircuitTool.Units.Frequency.#ctor*
+  nameWithType.vb: Frequency.New(Double, FrequencyUnit)
+  fullName.vb: CircuitTool.Units.Frequency.New(Double, CircuitTool.Units.FrequencyUnit)
+  name.vb: New(Double, FrequencyUnit)
+- uid: CircuitTool.Units.Frequency.Hertz
+  commentId: P:CircuitTool.Units.Frequency.Hertz
+  id: Hertz
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Hertz
+  nameWithType: Frequency.Hertz
+  fullName: CircuitTool.Units.Frequency.Hertz
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Hertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 42
+  namespace: CircuitTool.Units
+  summary: Gets the frequency value in hertz
+  example: []
+  syntax:
+    content: public double Hertz { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Hertz As Double
+  overload: CircuitTool.Units.Frequency.Hertz*
+- uid: CircuitTool.Units.Frequency.Kilohertz
+  commentId: P:CircuitTool.Units.Frequency.Kilohertz
+  id: Kilohertz
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Kilohertz
+  nameWithType: Frequency.Kilohertz
+  fullName: CircuitTool.Units.Frequency.Kilohertz
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilohertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 47
+  namespace: CircuitTool.Units
+  summary: Gets the frequency value in kilohertz
+  example: []
+  syntax:
+    content: public double Kilohertz { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Kilohertz As Double
+  overload: CircuitTool.Units.Frequency.Kilohertz*
+- uid: CircuitTool.Units.Frequency.Megahertz
+  commentId: P:CircuitTool.Units.Frequency.Megahertz
+  id: Megahertz
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Megahertz
+  nameWithType: Frequency.Megahertz
+  fullName: CircuitTool.Units.Frequency.Megahertz
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 52
+  namespace: CircuitTool.Units
+  summary: Gets the frequency value in megahertz
+  example: []
+  syntax:
+    content: public double Megahertz { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Megahertz As Double
+  overload: CircuitTool.Units.Frequency.Megahertz*
+- uid: CircuitTool.Units.Frequency.Gigahertz
+  commentId: P:CircuitTool.Units.Frequency.Gigahertz
+  id: Gigahertz
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Gigahertz
+  nameWithType: Frequency.Gigahertz
+  fullName: CircuitTool.Units.Frequency.Gigahertz
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gigahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 57
+  namespace: CircuitTool.Units
+  summary: Gets the frequency value in gigahertz
+  example: []
+  syntax:
+    content: public double Gigahertz { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Gigahertz As Double
+  overload: CircuitTool.Units.Frequency.Gigahertz*
+- uid: CircuitTool.Units.Frequency.Terahertz
+  commentId: P:CircuitTool.Units.Frequency.Terahertz
+  id: Terahertz
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Terahertz
+  nameWithType: Frequency.Terahertz
+  fullName: CircuitTool.Units.Frequency.Terahertz
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Terahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 62
+  namespace: CircuitTool.Units
+  summary: Gets the frequency value in terahertz
+  example: []
+  syntax:
+    content: public double Terahertz { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Terahertz As Double
+  overload: CircuitTool.Units.Frequency.Terahertz*
+- uid: CircuitTool.Units.Frequency.AngularFrequency
+  commentId: P:CircuitTool.Units.Frequency.AngularFrequency
+  id: AngularFrequency
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: AngularFrequency
+  nameWithType: Frequency.AngularFrequency
+  fullName: CircuitTool.Units.Frequency.AngularFrequency
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AngularFrequency
+    path: src/Units/FrequencyUnit.cs
+    startLine: 67
+  namespace: CircuitTool.Units
+  summary: Gets the angular frequency (ω = 2πf) in radians per second
+  example: []
+  syntax:
+    content: public double AngularFrequency { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property AngularFrequency As Double
+  overload: CircuitTool.Units.Frequency.AngularFrequency*
+- uid: CircuitTool.Units.Frequency.Period
+  commentId: P:CircuitTool.Units.Frequency.Period
+  id: Period
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: Frequency.Period
+  fullName: CircuitTool.Units.Frequency.Period
+  type: Property
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Period
+    path: src/Units/FrequencyUnit.cs
+    startLine: 72
+  namespace: CircuitTool.Units
+  summary: Gets the period (T = 1/f) in seconds
+  example: []
+  syntax:
+    content: public double Period { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Period As Double
+  overload: CircuitTool.Units.Frequency.Period*
+- uid: CircuitTool.Units.Frequency.ConvertTo(CircuitTool.Units.FrequencyUnit)
+  commentId: M:CircuitTool.Units.Frequency.ConvertTo(CircuitTool.Units.FrequencyUnit)
+  id: ConvertTo(CircuitTool.Units.FrequencyUnit)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: ConvertTo(FrequencyUnit)
+  nameWithType: Frequency.ConvertTo(FrequencyUnit)
+  fullName: CircuitTool.Units.Frequency.ConvertTo(CircuitTool.Units.FrequencyUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConvertTo
+    path: src/Units/FrequencyUnit.cs
+    startLine: 87
+  namespace: CircuitTool.Units
+  syntax:
+    content: public double ConvertTo(FrequencyUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.FrequencyUnit
+    return:
+      type: System.Double
+    content.vb: Public Function ConvertTo(unit As FrequencyUnit) As Double
+  overload: CircuitTool.Units.Frequency.ConvertTo*
+- uid: CircuitTool.Units.Frequency.op_Addition(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_Addition(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_Addition(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator +(Frequency, Frequency)
+  nameWithType: Frequency.operator +(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator +(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Addition
+    path: src/Units/FrequencyUnit.cs
+    startLine: 100
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Frequency operator +(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: CircuitTool.Units.Frequency
+    content.vb: Public Shared Operator +(left As Frequency, right As Frequency) As Frequency
+  overload: CircuitTool.Units.Frequency.op_Addition*
+  nameWithType.vb: Frequency.+(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.+(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: +(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_Subtraction(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_Subtraction(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_Subtraction(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator -(Frequency, Frequency)
+  nameWithType: Frequency.operator -(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator -(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Subtraction
+    path: src/Units/FrequencyUnit.cs
+    startLine: 101
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Frequency operator -(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: CircuitTool.Units.Frequency
+    content.vb: Public Shared Operator -(left As Frequency, right As Frequency) As Frequency
+  overload: CircuitTool.Units.Frequency.op_Subtraction*
+  nameWithType.vb: Frequency.-(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.-(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: -(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_Multiply(CircuitTool.Units.Frequency,System.Double)
+  commentId: M:CircuitTool.Units.Frequency.op_Multiply(CircuitTool.Units.Frequency,System.Double)
+  id: op_Multiply(CircuitTool.Units.Frequency,System.Double)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator *(Frequency, double)
+  nameWithType: Frequency.operator *(Frequency, double)
+  fullName: CircuitTool.Units.Frequency.operator *(CircuitTool.Units.Frequency, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/FrequencyUnit.cs
+    startLine: 102
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Frequency operator *(Frequency frequency, double scalar)
+    parameters:
+    - id: frequency
+      type: CircuitTool.Units.Frequency
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Frequency
+    content.vb: Public Shared Operator *(frequency As Frequency, scalar As Double) As Frequency
+  overload: CircuitTool.Units.Frequency.op_Multiply*
+  nameWithType.vb: Frequency.*(Frequency, Double)
+  fullName.vb: CircuitTool.Units.Frequency.*(CircuitTool.Units.Frequency, Double)
+  name.vb: '*(Frequency, Double)'
+- uid: CircuitTool.Units.Frequency.op_Multiply(System.Double,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_Multiply(System.Double,CircuitTool.Units.Frequency)
+  id: op_Multiply(System.Double,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, Frequency)
+  nameWithType: Frequency.operator *(double, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator *(double, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/FrequencyUnit.cs
+    startLine: 103
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Frequency operator *(double scalar, Frequency frequency)
+    parameters:
+    - id: scalar
+      type: System.Double
+    - id: frequency
+      type: CircuitTool.Units.Frequency
+    return:
+      type: CircuitTool.Units.Frequency
+    content.vb: Public Shared Operator *(scalar As Double, frequency As Frequency) As Frequency
+  overload: CircuitTool.Units.Frequency.op_Multiply*
+  nameWithType.vb: Frequency.*(Double, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.*(Double, CircuitTool.Units.Frequency)
+  name.vb: '*(Double, Frequency)'
+- uid: CircuitTool.Units.Frequency.op_Division(CircuitTool.Units.Frequency,System.Double)
+  commentId: M:CircuitTool.Units.Frequency.op_Division(CircuitTool.Units.Frequency,System.Double)
+  id: op_Division(CircuitTool.Units.Frequency,System.Double)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator /(Frequency, double)
+  nameWithType: Frequency.operator /(Frequency, double)
+  fullName: CircuitTool.Units.Frequency.operator /(CircuitTool.Units.Frequency, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Division
+    path: src/Units/FrequencyUnit.cs
+    startLine: 104
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Frequency operator /(Frequency frequency, double scalar)
+    parameters:
+    - id: frequency
+      type: CircuitTool.Units.Frequency
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Frequency
+    content.vb: Public Shared Operator /(frequency As Frequency, scalar As Double) As Frequency
+  overload: CircuitTool.Units.Frequency.op_Division*
+  nameWithType.vb: Frequency./(Frequency, Double)
+  fullName.vb: CircuitTool.Units.Frequency./(CircuitTool.Units.Frequency, Double)
+  name.vb: /(Frequency, Double)
+- uid: CircuitTool.Units.Frequency.op_Equality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_Equality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_Equality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Frequency, Frequency)
+  nameWithType: Frequency.operator ==(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator ==(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Equality
+    path: src/Units/FrequencyUnit.cs
+    startLine: 106
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator ==(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_Equality*
+  nameWithType.vb: Frequency.=(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: =(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_Inequality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_Inequality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_Inequality(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Frequency, Frequency)
+  nameWithType: Frequency.operator !=(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator !=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Inequality
+    path: src/Units/FrequencyUnit.cs
+    startLine: 107
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator !=(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_Inequality*
+  nameWithType.vb: Frequency.<>(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.<>(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: <>(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_LessThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_LessThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_LessThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator <(Frequency, Frequency)
+  nameWithType: Frequency.operator <(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator <(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThan
+    path: src/Units/FrequencyUnit.cs
+    startLine: 108
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_LessThan*
+  nameWithType.vb: Frequency.<(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.<(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: <(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_GreaterThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_GreaterThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_GreaterThan(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator >(Frequency, Frequency)
+  nameWithType: Frequency.operator >(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator >(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThan
+    path: src/Units/FrequencyUnit.cs
+    startLine: 109
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_GreaterThan*
+  nameWithType.vb: Frequency.>(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.>(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: '>(Frequency, Frequency)'
+- uid: CircuitTool.Units.Frequency.op_LessThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_LessThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_LessThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Frequency, Frequency)
+  nameWithType: Frequency.operator <=(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator <=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThanOrEqual
+    path: src/Units/FrequencyUnit.cs
+    startLine: 110
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <=(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_LessThanOrEqual*
+  nameWithType.vb: Frequency.<=(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.<=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: <=(Frequency, Frequency)
+- uid: CircuitTool.Units.Frequency.op_GreaterThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.op_GreaterThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  id: op_GreaterThanOrEqual(CircuitTool.Units.Frequency,CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Frequency, Frequency)
+  nameWithType: Frequency.operator >=(Frequency, Frequency)
+  fullName: CircuitTool.Units.Frequency.operator >=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThanOrEqual
+    path: src/Units/FrequencyUnit.cs
+    startLine: 111
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >=(Frequency left, Frequency right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Frequency
+    - id: right
+      type: CircuitTool.Units.Frequency
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Frequency, right As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.op_GreaterThanOrEqual*
+  nameWithType.vb: Frequency.>=(Frequency, Frequency)
+  fullName.vb: CircuitTool.Units.Frequency.>=(CircuitTool.Units.Frequency, CircuitTool.Units.Frequency)
+  name.vb: '>=(Frequency, Frequency)'
+- uid: CircuitTool.Units.Frequency.Equals(CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.Equals(CircuitTool.Units.Frequency)
+  id: Equals(CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Equals(Frequency)
+  nameWithType: Frequency.Equals(Frequency)
+  fullName: CircuitTool.Units.Frequency.Equals(CircuitTool.Units.Frequency)
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/FrequencyUnit.cs
+    startLine: 113
+  namespace: CircuitTool.Units
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Frequency other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Frequency
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Frequency) As Boolean
+  overload: CircuitTool.Units.Frequency.Equals*
+  implements:
+  - System.IEquatable{CircuitTool.Units.Frequency}.Equals(CircuitTool.Units.Frequency)
+- uid: CircuitTool.Units.Frequency.Equals(System.Object)
+  commentId: M:CircuitTool.Units.Frequency.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Frequency.Equals(object?)
+  fullName: CircuitTool.Units.Frequency.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/FrequencyUnit.cs
+    startLine: 114
+  namespace: CircuitTool.Units
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: CircuitTool.Units.Frequency.Equals*
+  nameWithType.vb: Frequency.Equals(Object)
+  fullName.vb: CircuitTool.Units.Frequency.Equals(Object)
+  name.vb: Equals(Object)
+- uid: CircuitTool.Units.Frequency.GetHashCode
+  commentId: M:CircuitTool.Units.Frequency.GetHashCode
+  id: GetHashCode
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Frequency.GetHashCode()
+  fullName: CircuitTool.Units.Frequency.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetHashCode
+    path: src/Units/FrequencyUnit.cs
+    startLine: 115
+  namespace: CircuitTool.Units
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: CircuitTool.Units.Frequency.GetHashCode*
+- uid: CircuitTool.Units.Frequency.CompareTo(CircuitTool.Units.Frequency)
+  commentId: M:CircuitTool.Units.Frequency.CompareTo(CircuitTool.Units.Frequency)
+  id: CompareTo(CircuitTool.Units.Frequency)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Frequency)
+  nameWithType: Frequency.CompareTo(Frequency)
+  fullName: CircuitTool.Units.Frequency.CompareTo(CircuitTool.Units.Frequency)
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CompareTo
+    path: src/Units/FrequencyUnit.cs
+    startLine: 116
+  namespace: CircuitTool.Units
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(Frequency other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Frequency
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As Frequency) As Integer
+  overload: CircuitTool.Units.Frequency.CompareTo*
+  implements:
+  - System.IComparable{CircuitTool.Units.Frequency}.CompareTo(CircuitTool.Units.Frequency)
+- uid: CircuitTool.Units.Frequency.ToString
+  commentId: M:CircuitTool.Units.Frequency.ToString
+  id: ToString
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Frequency.ToString()
+  fullName: CircuitTool.Units.Frequency.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/FrequencyUnit.cs
+    startLine: 118
+  namespace: CircuitTool.Units
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Units.Frequency.ToString*
+- uid: CircuitTool.Units.Frequency.ToString(CircuitTool.Units.FrequencyUnit)
+  commentId: M:CircuitTool.Units.Frequency.ToString(CircuitTool.Units.FrequencyUnit)
+  id: ToString(CircuitTool.Units.FrequencyUnit)
+  parent: CircuitTool.Units.Frequency
+  langs:
+  - csharp
+  - vb
+  name: ToString(FrequencyUnit)
+  nameWithType: Frequency.ToString(FrequencyUnit)
+  fullName: CircuitTool.Units.Frequency.ToString(CircuitTool.Units.FrequencyUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/FrequencyUnit.cs
+    startLine: 119
+  namespace: CircuitTool.Units
+  syntax:
+    content: public string ToString(FrequencyUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.FrequencyUnit
+    return:
+      type: System.String
+    content.vb: Public Function ToString(unit As FrequencyUnit) As String
+  overload: CircuitTool.Units.Frequency.ToString*
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: System.IEquatable{CircuitTool.Units.Frequency}
+  commentId: T:System.IEquatable{CircuitTool.Units.Frequency}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Frequency>
+  nameWithType: IEquatable<Frequency>
+  fullName: System.IEquatable<CircuitTool.Units.Frequency>
+  nameWithType.vb: IEquatable(Of Frequency)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Frequency)
+  name.vb: IEquatable(Of Frequency)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+- uid: System.IComparable{CircuitTool.Units.Frequency}
+  commentId: T:System.IComparable{CircuitTool.Units.Frequency}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Frequency>
+  nameWithType: IComparable<Frequency>
+  fullName: System.IComparable<CircuitTool.Units.Frequency>
+  nameWithType.vb: IComparable(Of Frequency)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Frequency)
+  name.vb: IComparable(Of Frequency)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.Units.Frequency.#ctor*
+  commentId: Overload:CircuitTool.Units.Frequency.#ctor
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency__ctor_System_Double_CircuitTool_Units_FrequencyUnit_
+  name: Frequency
+  nameWithType: Frequency.Frequency
+  fullName: CircuitTool.Units.Frequency.Frequency
+  nameWithType.vb: Frequency.New
+  fullName.vb: CircuitTool.Units.Frequency.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Units.FrequencyUnit
+  commentId: T:CircuitTool.Units.FrequencyUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.FrequencyUnit.html
+  name: FrequencyUnit
+  nameWithType: FrequencyUnit
+  fullName: CircuitTool.Units.FrequencyUnit
+- uid: CircuitTool.Units.Frequency.Hertz*
+  commentId: Overload:CircuitTool.Units.Frequency.Hertz
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Hertz
+  name: Hertz
+  nameWithType: Frequency.Hertz
+  fullName: CircuitTool.Units.Frequency.Hertz
+- uid: CircuitTool.Units.Frequency.Kilohertz*
+  commentId: Overload:CircuitTool.Units.Frequency.Kilohertz
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Kilohertz
+  name: Kilohertz
+  nameWithType: Frequency.Kilohertz
+  fullName: CircuitTool.Units.Frequency.Kilohertz
+- uid: CircuitTool.Units.Frequency.Megahertz*
+  commentId: Overload:CircuitTool.Units.Frequency.Megahertz
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Megahertz
+  name: Megahertz
+  nameWithType: Frequency.Megahertz
+  fullName: CircuitTool.Units.Frequency.Megahertz
+- uid: CircuitTool.Units.Frequency.Gigahertz*
+  commentId: Overload:CircuitTool.Units.Frequency.Gigahertz
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Gigahertz
+  name: Gigahertz
+  nameWithType: Frequency.Gigahertz
+  fullName: CircuitTool.Units.Frequency.Gigahertz
+- uid: CircuitTool.Units.Frequency.Terahertz*
+  commentId: Overload:CircuitTool.Units.Frequency.Terahertz
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Terahertz
+  name: Terahertz
+  nameWithType: Frequency.Terahertz
+  fullName: CircuitTool.Units.Frequency.Terahertz
+- uid: CircuitTool.Units.Frequency.AngularFrequency*
+  commentId: Overload:CircuitTool.Units.Frequency.AngularFrequency
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_AngularFrequency
+  name: AngularFrequency
+  nameWithType: Frequency.AngularFrequency
+  fullName: CircuitTool.Units.Frequency.AngularFrequency
+- uid: CircuitTool.Units.Frequency.Period*
+  commentId: Overload:CircuitTool.Units.Frequency.Period
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Period
+  name: Period
+  nameWithType: Frequency.Period
+  fullName: CircuitTool.Units.Frequency.Period
+- uid: CircuitTool.Units.Frequency.ConvertTo*
+  commentId: Overload:CircuitTool.Units.Frequency.ConvertTo
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_ConvertTo_CircuitTool_Units_FrequencyUnit_
+  name: ConvertTo
+  nameWithType: Frequency.ConvertTo
+  fullName: CircuitTool.Units.Frequency.ConvertTo
+- uid: CircuitTool.Units.Frequency.op_Addition*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Addition
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Addition_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator +
+  nameWithType: Frequency.operator +
+  fullName: CircuitTool.Units.Frequency.operator +
+  nameWithType.vb: Frequency.+
+  fullName.vb: CircuitTool.Units.Frequency.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Addition*
+    name: +
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Addition_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency
+  commentId: T:CircuitTool.Units.Frequency
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.Frequency.html
+  name: Frequency
+  nameWithType: Frequency
+  fullName: CircuitTool.Units.Frequency
+- uid: CircuitTool.Units.Frequency.op_Subtraction*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Subtraction
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Subtraction_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator -
+  nameWithType: Frequency.operator -
+  fullName: CircuitTool.Units.Frequency.operator -
+  nameWithType.vb: Frequency.-
+  fullName.vb: CircuitTool.Units.Frequency.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Subtraction*
+    name: '-'
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Subtraction_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.op_Multiply*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Multiply
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Multiply_CircuitTool_Units_Frequency_System_Double_
+  name: operator *
+  nameWithType: Frequency.operator *
+  fullName: CircuitTool.Units.Frequency.operator *
+  nameWithType.vb: Frequency.*
+  fullName.vb: CircuitTool.Units.Frequency.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Multiply*
+    name: '*'
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Multiply_CircuitTool_Units_Frequency_System_Double_
+- uid: CircuitTool.Units.Frequency.op_Division*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Division
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Division_CircuitTool_Units_Frequency_System_Double_
+  name: operator /
+  nameWithType: Frequency.operator /
+  fullName: CircuitTool.Units.Frequency.operator /
+  nameWithType.vb: Frequency./
+  fullName.vb: CircuitTool.Units.Frequency./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Division*
+    name: /
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Division_CircuitTool_Units_Frequency_System_Double_
+- uid: CircuitTool.Units.Frequency.op_Equality*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Equality
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Equality_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator ==
+  nameWithType: Frequency.operator ==
+  fullName: CircuitTool.Units.Frequency.operator ==
+  nameWithType.vb: Frequency.=
+  fullName.vb: CircuitTool.Units.Frequency.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Equality*
+    name: ==
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Equality_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Units.Frequency.op_Inequality*
+  commentId: Overload:CircuitTool.Units.Frequency.op_Inequality
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Inequality_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator !=
+  nameWithType: Frequency.operator !=
+  fullName: CircuitTool.Units.Frequency.operator !=
+  nameWithType.vb: Frequency.<>
+  fullName.vb: CircuitTool.Units.Frequency.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_Inequality*
+    name: '!='
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_Inequality_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.op_LessThan*
+  commentId: Overload:CircuitTool.Units.Frequency.op_LessThan
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_LessThan_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator <
+  nameWithType: Frequency.operator <
+  fullName: CircuitTool.Units.Frequency.operator <
+  nameWithType.vb: Frequency.<
+  fullName.vb: CircuitTool.Units.Frequency.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_LessThan*
+    name: <
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_LessThan_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.op_GreaterThan*
+  commentId: Overload:CircuitTool.Units.Frequency.op_GreaterThan
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_GreaterThan_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator >
+  nameWithType: Frequency.operator >
+  fullName: CircuitTool.Units.Frequency.operator >
+  nameWithType.vb: Frequency.>
+  fullName.vb: CircuitTool.Units.Frequency.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_GreaterThan*
+    name: '>'
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_GreaterThan_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.op_LessThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Frequency.op_LessThanOrEqual
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_LessThanOrEqual_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator <=
+  nameWithType: Frequency.operator <=
+  fullName: CircuitTool.Units.Frequency.operator <=
+  nameWithType.vb: Frequency.<=
+  fullName.vb: CircuitTool.Units.Frequency.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_LessThanOrEqual*
+    name: <=
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_LessThanOrEqual_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.op_GreaterThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Frequency.op_GreaterThanOrEqual
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_GreaterThanOrEqual_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+  name: operator >=
+  nameWithType: Frequency.operator >=
+  fullName: CircuitTool.Units.Frequency.operator >=
+  nameWithType.vb: Frequency.>=
+  fullName.vb: CircuitTool.Units.Frequency.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Frequency.op_GreaterThanOrEqual*
+    name: '>='
+    href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_op_GreaterThanOrEqual_CircuitTool_Units_Frequency_CircuitTool_Units_Frequency_
+- uid: CircuitTool.Units.Frequency.Equals*
+  commentId: Overload:CircuitTool.Units.Frequency.Equals
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_Equals_CircuitTool_Units_Frequency_
+  name: Equals
+  nameWithType: Frequency.Equals
+  fullName: CircuitTool.Units.Frequency.Equals
+- uid: System.IEquatable{CircuitTool.Units.Frequency}.Equals(CircuitTool.Units.Frequency)
+  commentId: M:System.IEquatable{CircuitTool.Units.Frequency}.Equals(CircuitTool.Units.Frequency)
+  parent: System.IEquatable{CircuitTool.Units.Frequency}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Frequency)
+  nameWithType: IEquatable<Frequency>.Equals(Frequency)
+  fullName: System.IEquatable<CircuitTool.Units.Frequency>.Equals(CircuitTool.Units.Frequency)
+  nameWithType.vb: IEquatable(Of Frequency).Equals(Frequency)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Frequency).Equals(CircuitTool.Units.Frequency)
+  spec.csharp:
+  - uid: System.IEquatable{CircuitTool.Units.Frequency}.Equals(CircuitTool.Units.Frequency)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{CircuitTool.Units.Frequency}.Equals(CircuitTool.Units.Frequency)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Frequency.GetHashCode*
+  commentId: Overload:CircuitTool.Units.Frequency.GetHashCode
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_GetHashCode
+  name: GetHashCode
+  nameWithType: Frequency.GetHashCode
+  fullName: CircuitTool.Units.Frequency.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Units.Frequency.CompareTo*
+  commentId: Overload:CircuitTool.Units.Frequency.CompareTo
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_CompareTo_CircuitTool_Units_Frequency_
+  name: CompareTo
+  nameWithType: Frequency.CompareTo
+  fullName: CircuitTool.Units.Frequency.CompareTo
+- uid: System.IComparable{CircuitTool.Units.Frequency}.CompareTo(CircuitTool.Units.Frequency)
+  commentId: M:System.IComparable{CircuitTool.Units.Frequency}.CompareTo(CircuitTool.Units.Frequency)
+  parent: System.IComparable{CircuitTool.Units.Frequency}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Frequency)
+  nameWithType: IComparable<Frequency>.CompareTo(Frequency)
+  fullName: System.IComparable<CircuitTool.Units.Frequency>.CompareTo(CircuitTool.Units.Frequency)
+  nameWithType.vb: IComparable(Of Frequency).CompareTo(Frequency)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Frequency).CompareTo(CircuitTool.Units.Frequency)
+  spec.csharp:
+  - uid: System.IComparable{CircuitTool.Units.Frequency}.CompareTo(CircuitTool.Units.Frequency)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{CircuitTool.Units.Frequency}.CompareTo(CircuitTool.Units.Frequency)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Frequency
+    name: Frequency
+    href: CircuitTool.Units.Frequency.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Frequency.ToString*
+  commentId: Overload:CircuitTool.Units.Frequency.ToString
+  href: CircuitTool.Units.Frequency.html#CircuitTool_Units_Frequency_ToString
+  name: ToString
+  nameWithType: Frequency.ToString
+  fullName: CircuitTool.Units.Frequency.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

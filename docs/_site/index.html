@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>CircuitTool Documentation | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="CircuitTool Documentation | CircuitTool Documentation ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="circuittool-documentation">CircuitTool Documentation</h1>
+
+<p>Welcome to the <strong>CircuitTool</strong> documentation! CircuitTool is a comprehensive C# library for electrical engineering and electronics calculations, designed for embedded systems development and hardware design.</p>
+<h2 id="quick-start">Quick Start</h2>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Basic Ohm's Law calculation
+double voltage = OhmsLawCalculator.CalculateVoltage(current: 2.0, resistance: 100.0);
+Console.WriteLine($&quot;Voltage: {voltage}V&quot;); // Output: 200V
+
+// LED current limiting resistor
+var ledResult = LEDCalculator.CalculateCurrentLimitingResistor(
+    supplyVoltage: 5.0, 
+    ledVoltage: 2.1, 
+    ledCurrent: 0.02);
+Console.WriteLine($&quot;Resistor needed: {ledResult.resistance}Ω&quot;);
+
+// Arduino GPIO configuration
+string gpioCode = ArduinoTools.GenerateGPIOCode(pin: 13, mode: &quot;OUTPUT&quot;);
+</code></pre>
+<h2 id="features">Features</h2>
+<h3 id="-core-calculations">🧮 Core Calculations</h3>
+<ul>
+<li><strong>Ohm's Law</strong> - Voltage, current, resistance calculations</li>
+<li><strong>Power Calculations</strong> - Power dissipation and efficiency</li>
+<li><strong>AC Circuit Analysis</strong> - Impedance, phase, frequency response</li>
+<li><strong>Component Calculations</strong> - Resistors, capacitors, inductors</li>
+</ul>
+<h3 id="-hardware-support">🔧 Hardware Support</h3>
+<ul>
+<li><strong>Arduino Tools</strong> - GPIO, PWM, and peripheral calculations</li>
+<li><strong>ESP32 Tools</strong> - WiFi, Bluetooth, and ESP32-specific features</li>
+<li><strong>Raspberry Pi Tools</strong> - GPIO current limits and hardware interface</li>
+<li><strong>COM Port Tools</strong> - Serial communication and device detection</li>
+</ul>
+<h3 id="-advanced-analysis">📊 Advanced Analysis</h3>
+<ul>
+<li><strong>Signal Integrity</strong> - Signal quality and timing analysis</li>
+<li><strong>Thermal Calculations</strong> - Heat dissipation and thermal management</li>
+<li><strong>EMC Analysis</strong> - Electromagnetic compatibility calculations</li>
+<li><strong>Power Analysis</strong> - Complex power system analysis</li>
+</ul>
+<h3 id="-performance-features">⚡ Performance Features</h3>
+<ul>
+<li><strong>Vectorized Calculations</strong> - SIMD-optimized operations</li>
+<li><strong>Async Support</strong> - Asynchronous calculation processing</li>
+<li><strong>Caching System</strong> - Result caching for improved performance</li>
+<li><strong>Bulk Operations</strong> - Efficient batch processing</li>
+</ul>
+<h2 id="supported-platforms">Supported Platforms</h2>
+<ul>
+<li><strong>.NET Framework 4.5+</strong></li>
+<li><strong>.NET Framework 4.6.2+</strong></li>
+<li><strong>.NET 6.0+</strong></li>
+<li><strong>.NET 8.0+</strong></li>
+<li><strong>.NET Standard 2.0+</strong></li>
+<li><strong>.NET Standard 2.1+</strong></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<pre><code class="lang-bash">dotnet add package CircuitTool
+</code></pre>
+<p>Or via Package Manager Console:</p>
+<pre><code class="lang-powershell">Install-Package CircuitTool
+</code></pre>
+<h2 id="module-overview">Module Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Classes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Calculators</strong></td>
+<td>23</td>
+<td>Core electrical and electronics calculations</td>
+</tr>
+<tr>
+<td><strong>Hardware</strong></td>
+<td>10</td>
+<td>Platform-specific tools and communication protocols</td>
+</tr>
+<tr>
+<td><strong>Analysis</strong></td>
+<td>5</td>
+<td>Advanced analysis and simulation tools</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>6</td>
+<td>Performance optimization and monitoring</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>4</td>
+<td>Examples and educational resources</td>
+</tr>
+<tr>
+<td><strong>Math</strong></td>
+<td>2</td>
+<td>Advanced mathematical operations</td>
+</tr>
+<tr>
+<td><strong>Serialization</strong></td>
+<td>1</td>
+<td>Data import/export functionality</td>
+</tr>
+<tr>
+<td><strong>Units</strong></td>
+<td>3</td>
+<td>Unit conversion and management</td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-help">Getting Help</h2>
+<ul>
+<li>📖 <strong>API Reference</strong> - Browse the complete API documentation</li>
+<li>💡 <strong>Examples</strong> - Check out practical examples and tutorials</li>
+<li>🐛 <strong>Issues</strong> - Report bugs or request features on <a href="https://github.com/jomardyan/CircuitTool/issues">GitHub</a></li>
+<li>💬 <strong>Discussions</strong> - Join the community discussions</li>
+</ul>
+<h2 id="license">License</h2>
+<p>CircuitTool is licensed under the <a href="https://github.com/jomardyan/CircuitTool/blob/main/LICENSE">MIT License</a>, making it free for both commercial and non-commercial use.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

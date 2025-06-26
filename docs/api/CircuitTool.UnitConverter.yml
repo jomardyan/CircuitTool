@@ -1,0 +1,1685 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.UnitConverter
+  commentId: T:CircuitTool.UnitConverter
+  id: UnitConverter
+  parent: CircuitTool
+  children:
+  - CircuitTool.UnitConverter.AmpsToKVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.AmpsToKW(System.Double,System.Double,System.Double)
+  - CircuitTool.UnitConverter.AmpsToVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.AmpsToVolts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.AmpsToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.EVToVolts(System.Double)
+  - CircuitTool.UnitConverter.JoulesToVolts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.JoulesToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KVAToAmps(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KVAToKW(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KVAToVA(System.Double)
+  - CircuitTool.UnitConverter.KVAToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWToAmps(System.Double,System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWToKVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWToKWh(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWToVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWToVolts(System.Double,System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWhToKW(System.Double,System.Double)
+  - CircuitTool.UnitConverter.KWhToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VAToAmps(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VAToKVA(System.Double)
+  - CircuitTool.UnitConverter.VAToKW(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VAToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VoltsToAmps(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VoltsToEV(System.Double)
+  - CircuitTool.UnitConverter.VoltsToJoules(System.Double,System.Double)
+  - CircuitTool.UnitConverter.VoltsToKW(System.Double,System.Double,System.Double)
+  - CircuitTool.UnitConverter.VoltsToWatts(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToAmps(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToJoules(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToKVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToKWh(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToVA(System.Double,System.Double)
+  - CircuitTool.UnitConverter.WattsToVolts(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: UnitConverter
+  nameWithType: UnitConverter
+  fullName: CircuitTool.UnitConverter
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UnitConverter
+    path: src/Calculators/UnitConverter.cs
+    startLine: 4
+  namespace: CircuitTool
+  syntax:
+    content: public static class UnitConverter
+    content.vb: Public Module UnitConverter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.UnitConverter.AmpsToKW(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.AmpsToKW(System.Double,System.Double,System.Double)
+  id: AmpsToKW(System.Double,System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AmpsToKW(double, double, double)
+  nameWithType: UnitConverter.AmpsToKW(double, double, double)
+  fullName: CircuitTool.UnitConverter.AmpsToKW(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AmpsToKW
+    path: src/Calculators/UnitConverter.cs
+    startLine: 7
+  namespace: CircuitTool
+  syntax:
+    content: public static double AmpsToKW(double amps, double volts, double powerFactor = 1)
+    parameters:
+    - id: amps
+      type: System.Double
+    - id: volts
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function AmpsToKW(amps As Double, volts As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.AmpsToKW*
+  nameWithType.vb: UnitConverter.AmpsToKW(Double, Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.AmpsToKW(Double, Double, Double)
+  name.vb: AmpsToKW(Double, Double, Double)
+- uid: CircuitTool.UnitConverter.AmpsToKVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.AmpsToKVA(System.Double,System.Double)
+  id: AmpsToKVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AmpsToKVA(double, double)
+  nameWithType: UnitConverter.AmpsToKVA(double, double)
+  fullName: CircuitTool.UnitConverter.AmpsToKVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AmpsToKVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 9
+  namespace: CircuitTool
+  syntax:
+    content: public static double AmpsToKVA(double amps, double volts)
+    parameters:
+    - id: amps
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function AmpsToKVA(amps As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.AmpsToKVA*
+  nameWithType.vb: UnitConverter.AmpsToKVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.AmpsToKVA(Double, Double)
+  name.vb: AmpsToKVA(Double, Double)
+- uid: CircuitTool.UnitConverter.AmpsToVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.AmpsToVA(System.Double,System.Double)
+  id: AmpsToVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AmpsToVA(double, double)
+  nameWithType: UnitConverter.AmpsToVA(double, double)
+  fullName: CircuitTool.UnitConverter.AmpsToVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AmpsToVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 11
+  namespace: CircuitTool
+  syntax:
+    content: public static double AmpsToVA(double amps, double volts)
+    parameters:
+    - id: amps
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function AmpsToVA(amps As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.AmpsToVA*
+  nameWithType.vb: UnitConverter.AmpsToVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.AmpsToVA(Double, Double)
+  name.vb: AmpsToVA(Double, Double)
+- uid: CircuitTool.UnitConverter.AmpsToVolts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.AmpsToVolts(System.Double,System.Double)
+  id: AmpsToVolts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AmpsToVolts(double, double)
+  nameWithType: UnitConverter.AmpsToVolts(double, double)
+  fullName: CircuitTool.UnitConverter.AmpsToVolts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AmpsToVolts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 13
+  namespace: CircuitTool
+  syntax:
+    content: public static double AmpsToVolts(double watts, double amps)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: amps
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function AmpsToVolts(watts As Double, amps As Double) As Double
+  overload: CircuitTool.UnitConverter.AmpsToVolts*
+  nameWithType.vb: UnitConverter.AmpsToVolts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.AmpsToVolts(Double, Double)
+  name.vb: AmpsToVolts(Double, Double)
+- uid: CircuitTool.UnitConverter.AmpsToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.AmpsToWatts(System.Double,System.Double)
+  id: AmpsToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AmpsToWatts(double, double)
+  nameWithType: UnitConverter.AmpsToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.AmpsToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AmpsToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 15
+  namespace: CircuitTool
+  syntax:
+    content: public static double AmpsToWatts(double amps, double volts)
+    parameters:
+    - id: amps
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function AmpsToWatts(amps As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.AmpsToWatts*
+  nameWithType.vb: UnitConverter.AmpsToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.AmpsToWatts(Double, Double)
+  name.vb: AmpsToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.KVAToAmps(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KVAToAmps(System.Double,System.Double)
+  id: KVAToAmps(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KVAToAmps(double, double)
+  nameWithType: UnitConverter.KVAToAmps(double, double)
+  fullName: CircuitTool.UnitConverter.KVAToAmps(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KVAToAmps
+    path: src/Calculators/UnitConverter.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: public static double KVAToAmps(double kVA, double volts)
+    parameters:
+    - id: kVA
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KVAToAmps(kVA As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.KVAToAmps*
+  nameWithType.vb: UnitConverter.KVAToAmps(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KVAToAmps(Double, Double)
+  name.vb: KVAToAmps(Double, Double)
+- uid: CircuitTool.UnitConverter.KVAToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KVAToWatts(System.Double,System.Double)
+  id: KVAToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KVAToWatts(double, double)
+  nameWithType: UnitConverter.KVAToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.KVAToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KVAToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: public static double KVAToWatts(double kVA, double powerFactor = 1)
+    parameters:
+    - id: kVA
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KVAToWatts(kVA As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KVAToWatts*
+  nameWithType.vb: UnitConverter.KVAToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KVAToWatts(Double, Double)
+  name.vb: KVAToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.KVAToKW(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KVAToKW(System.Double,System.Double)
+  id: KVAToKW(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KVAToKW(double, double)
+  nameWithType: UnitConverter.KVAToKW(double, double)
+  fullName: CircuitTool.UnitConverter.KVAToKW(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KVAToKW
+    path: src/Calculators/UnitConverter.cs
+    startLine: 21
+  namespace: CircuitTool
+  syntax:
+    content: public static double KVAToKW(double kVA, double powerFactor = 1)
+    parameters:
+    - id: kVA
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KVAToKW(kVA As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KVAToKW*
+  nameWithType.vb: UnitConverter.KVAToKW(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KVAToKW(Double, Double)
+  name.vb: KVAToKW(Double, Double)
+- uid: CircuitTool.UnitConverter.KVAToVA(System.Double)
+  commentId: M:CircuitTool.UnitConverter.KVAToVA(System.Double)
+  id: KVAToVA(System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KVAToVA(double)
+  nameWithType: UnitConverter.KVAToVA(double)
+  fullName: CircuitTool.UnitConverter.KVAToVA(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KVAToVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 23
+  namespace: CircuitTool
+  syntax:
+    content: public static double KVAToVA(double kVA)
+    parameters:
+    - id: kVA
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KVAToVA(kVA As Double) As Double
+  overload: CircuitTool.UnitConverter.KVAToVA*
+  nameWithType.vb: UnitConverter.KVAToVA(Double)
+  fullName.vb: CircuitTool.UnitConverter.KVAToVA(Double)
+  name.vb: KVAToVA(Double)
+- uid: CircuitTool.UnitConverter.KWToAmps(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWToAmps(System.Double,System.Double,System.Double)
+  id: KWToAmps(System.Double,System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWToAmps(double, double, double)
+  nameWithType: UnitConverter.KWToAmps(double, double, double)
+  fullName: CircuitTool.UnitConverter.KWToAmps(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWToAmps
+    path: src/Calculators/UnitConverter.cs
+    startLine: 25
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWToAmps(double kW, double volts, double powerFactor = 1)
+    parameters:
+    - id: kW
+      type: System.Double
+    - id: volts
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWToAmps(kW As Double, volts As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KWToAmps*
+  nameWithType.vb: UnitConverter.KWToAmps(Double, Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWToAmps(Double, Double, Double)
+  name.vb: KWToAmps(Double, Double, Double)
+- uid: CircuitTool.UnitConverter.KWToVolts(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWToVolts(System.Double,System.Double,System.Double)
+  id: KWToVolts(System.Double,System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWToVolts(double, double, double)
+  nameWithType: UnitConverter.KWToVolts(double, double, double)
+  fullName: CircuitTool.UnitConverter.KWToVolts(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWToVolts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 27
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWToVolts(double kW, double amps, double powerFactor = 1)
+    parameters:
+    - id: kW
+      type: System.Double
+    - id: amps
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWToVolts(kW As Double, amps As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KWToVolts*
+  nameWithType.vb: UnitConverter.KWToVolts(Double, Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWToVolts(Double, Double, Double)
+  name.vb: KWToVolts(Double, Double, Double)
+- uid: CircuitTool.UnitConverter.KWToKWh(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWToKWh(System.Double,System.Double)
+  id: KWToKWh(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWToKWh(double, double)
+  nameWithType: UnitConverter.KWToKWh(double, double)
+  fullName: CircuitTool.UnitConverter.KWToKWh(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWToKWh
+    path: src/Calculators/UnitConverter.cs
+    startLine: 29
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWToKWh(double kW, double hours)
+    parameters:
+    - id: kW
+      type: System.Double
+    - id: hours
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWToKWh(kW As Double, hours As Double) As Double
+  overload: CircuitTool.UnitConverter.KWToKWh*
+  nameWithType.vb: UnitConverter.KWToKWh(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWToKWh(Double, Double)
+  name.vb: KWToKWh(Double, Double)
+- uid: CircuitTool.UnitConverter.KWToVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWToVA(System.Double,System.Double)
+  id: KWToVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWToVA(double, double)
+  nameWithType: UnitConverter.KWToVA(double, double)
+  fullName: CircuitTool.UnitConverter.KWToVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWToVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 31
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWToVA(double kW, double powerFactor = 1)
+    parameters:
+    - id: kW
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWToVA(kW As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KWToVA*
+  nameWithType.vb: UnitConverter.KWToVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWToVA(Double, Double)
+  name.vb: KWToVA(Double, Double)
+- uid: CircuitTool.UnitConverter.KWToKVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWToKVA(System.Double,System.Double)
+  id: KWToKVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWToKVA(double, double)
+  nameWithType: UnitConverter.KWToKVA(double, double)
+  fullName: CircuitTool.UnitConverter.KWToKVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWToKVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 33
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWToKVA(double kW, double powerFactor = 1)
+    parameters:
+    - id: kW
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWToKVA(kW As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.KWToKVA*
+  nameWithType.vb: UnitConverter.KWToKVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWToKVA(Double, Double)
+  name.vb: KWToKVA(Double, Double)
+- uid: CircuitTool.UnitConverter.KWhToKW(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWhToKW(System.Double,System.Double)
+  id: KWhToKW(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWhToKW(double, double)
+  nameWithType: UnitConverter.KWhToKW(double, double)
+  fullName: CircuitTool.UnitConverter.KWhToKW(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWhToKW
+    path: src/Calculators/UnitConverter.cs
+    startLine: 35
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWhToKW(double kWh, double hours)
+    parameters:
+    - id: kWh
+      type: System.Double
+    - id: hours
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWhToKW(kWh As Double, hours As Double) As Double
+  overload: CircuitTool.UnitConverter.KWhToKW*
+  nameWithType.vb: UnitConverter.KWhToKW(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWhToKW(Double, Double)
+  name.vb: KWhToKW(Double, Double)
+- uid: CircuitTool.UnitConverter.KWhToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.KWhToWatts(System.Double,System.Double)
+  id: KWhToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: KWhToWatts(double, double)
+  nameWithType: UnitConverter.KWhToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.KWhToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: KWhToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 37
+  namespace: CircuitTool
+  syntax:
+    content: public static double KWhToWatts(double kWh, double hours)
+    parameters:
+    - id: kWh
+      type: System.Double
+    - id: hours
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function KWhToWatts(kWh As Double, hours As Double) As Double
+  overload: CircuitTool.UnitConverter.KWhToWatts*
+  nameWithType.vb: UnitConverter.KWhToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.KWhToWatts(Double, Double)
+  name.vb: KWhToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.VAToAmps(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VAToAmps(System.Double,System.Double)
+  id: VAToAmps(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VAToAmps(double, double)
+  nameWithType: UnitConverter.VAToAmps(double, double)
+  fullName: CircuitTool.UnitConverter.VAToAmps(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VAToAmps
+    path: src/Calculators/UnitConverter.cs
+    startLine: 39
+  namespace: CircuitTool
+  syntax:
+    content: public static double VAToAmps(double va, double volts)
+    parameters:
+    - id: va
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VAToAmps(va As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.VAToAmps*
+  nameWithType.vb: UnitConverter.VAToAmps(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VAToAmps(Double, Double)
+  name.vb: VAToAmps(Double, Double)
+- uid: CircuitTool.UnitConverter.VAToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VAToWatts(System.Double,System.Double)
+  id: VAToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VAToWatts(double, double)
+  nameWithType: UnitConverter.VAToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.VAToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VAToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 41
+  namespace: CircuitTool
+  syntax:
+    content: public static double VAToWatts(double va, double powerFactor = 1)
+    parameters:
+    - id: va
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VAToWatts(va As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.VAToWatts*
+  nameWithType.vb: UnitConverter.VAToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VAToWatts(Double, Double)
+  name.vb: VAToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.VAToKW(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VAToKW(System.Double,System.Double)
+  id: VAToKW(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VAToKW(double, double)
+  nameWithType: UnitConverter.VAToKW(double, double)
+  fullName: CircuitTool.UnitConverter.VAToKW(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VAToKW
+    path: src/Calculators/UnitConverter.cs
+    startLine: 43
+  namespace: CircuitTool
+  syntax:
+    content: public static double VAToKW(double va, double powerFactor = 1)
+    parameters:
+    - id: va
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VAToKW(va As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.VAToKW*
+  nameWithType.vb: UnitConverter.VAToKW(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VAToKW(Double, Double)
+  name.vb: VAToKW(Double, Double)
+- uid: CircuitTool.UnitConverter.VAToKVA(System.Double)
+  commentId: M:CircuitTool.UnitConverter.VAToKVA(System.Double)
+  id: VAToKVA(System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VAToKVA(double)
+  nameWithType: UnitConverter.VAToKVA(double)
+  fullName: CircuitTool.UnitConverter.VAToKVA(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VAToKVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 45
+  namespace: CircuitTool
+  syntax:
+    content: public static double VAToKVA(double va)
+    parameters:
+    - id: va
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VAToKVA(va As Double) As Double
+  overload: CircuitTool.UnitConverter.VAToKVA*
+  nameWithType.vb: UnitConverter.VAToKVA(Double)
+  fullName.vb: CircuitTool.UnitConverter.VAToKVA(Double)
+  name.vb: VAToKVA(Double)
+- uid: CircuitTool.UnitConverter.VoltsToAmps(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VoltsToAmps(System.Double,System.Double)
+  id: VoltsToAmps(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VoltsToAmps(double, double)
+  nameWithType: UnitConverter.VoltsToAmps(double, double)
+  fullName: CircuitTool.UnitConverter.VoltsToAmps(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltsToAmps
+    path: src/Calculators/UnitConverter.cs
+    startLine: 47
+  namespace: CircuitTool
+  syntax:
+    content: public static double VoltsToAmps(double watts, double volts)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VoltsToAmps(watts As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.VoltsToAmps*
+  nameWithType.vb: UnitConverter.VoltsToAmps(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VoltsToAmps(Double, Double)
+  name.vb: VoltsToAmps(Double, Double)
+- uid: CircuitTool.UnitConverter.VoltsToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VoltsToWatts(System.Double,System.Double)
+  id: VoltsToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VoltsToWatts(double, double)
+  nameWithType: UnitConverter.VoltsToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.VoltsToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltsToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 49
+  namespace: CircuitTool
+  syntax:
+    content: public static double VoltsToWatts(double volts, double amps)
+    parameters:
+    - id: volts
+      type: System.Double
+    - id: amps
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VoltsToWatts(volts As Double, amps As Double) As Double
+  overload: CircuitTool.UnitConverter.VoltsToWatts*
+  nameWithType.vb: UnitConverter.VoltsToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VoltsToWatts(Double, Double)
+  name.vb: VoltsToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.VoltsToKW(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VoltsToKW(System.Double,System.Double,System.Double)
+  id: VoltsToKW(System.Double,System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VoltsToKW(double, double, double)
+  nameWithType: UnitConverter.VoltsToKW(double, double, double)
+  fullName: CircuitTool.UnitConverter.VoltsToKW(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltsToKW
+    path: src/Calculators/UnitConverter.cs
+    startLine: 51
+  namespace: CircuitTool
+  syntax:
+    content: public static double VoltsToKW(double volts, double amps, double powerFactor = 1)
+    parameters:
+    - id: volts
+      type: System.Double
+    - id: amps
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VoltsToKW(volts As Double, amps As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.VoltsToKW*
+  nameWithType.vb: UnitConverter.VoltsToKW(Double, Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VoltsToKW(Double, Double, Double)
+  name.vb: VoltsToKW(Double, Double, Double)
+- uid: CircuitTool.UnitConverter.VoltsToJoules(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.VoltsToJoules(System.Double,System.Double)
+  id: VoltsToJoules(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VoltsToJoules(double, double)
+  nameWithType: UnitConverter.VoltsToJoules(double, double)
+  fullName: CircuitTool.UnitConverter.VoltsToJoules(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltsToJoules
+    path: src/Calculators/UnitConverter.cs
+    startLine: 53
+  namespace: CircuitTool
+  syntax:
+    content: public static double VoltsToJoules(double volts, double coulombs)
+    parameters:
+    - id: volts
+      type: System.Double
+    - id: coulombs
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VoltsToJoules(volts As Double, coulombs As Double) As Double
+  overload: CircuitTool.UnitConverter.VoltsToJoules*
+  nameWithType.vb: UnitConverter.VoltsToJoules(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.VoltsToJoules(Double, Double)
+  name.vb: VoltsToJoules(Double, Double)
+- uid: CircuitTool.UnitConverter.VoltsToEV(System.Double)
+  commentId: M:CircuitTool.UnitConverter.VoltsToEV(System.Double)
+  id: VoltsToEV(System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: VoltsToEV(double)
+  nameWithType: UnitConverter.VoltsToEV(double)
+  fullName: CircuitTool.UnitConverter.VoltsToEV(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltsToEV
+    path: src/Calculators/UnitConverter.cs
+    startLine: 55
+  namespace: CircuitTool
+  syntax:
+    content: public static double VoltsToEV(double volts)
+    parameters:
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function VoltsToEV(volts As Double) As Double
+  overload: CircuitTool.UnitConverter.VoltsToEV*
+  nameWithType.vb: UnitConverter.VoltsToEV(Double)
+  fullName.vb: CircuitTool.UnitConverter.VoltsToEV(Double)
+  name.vb: VoltsToEV(Double)
+- uid: CircuitTool.UnitConverter.WattsToAmps(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToAmps(System.Double,System.Double)
+  id: WattsToAmps(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToAmps(double, double)
+  nameWithType: UnitConverter.WattsToAmps(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToAmps(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToAmps
+    path: src/Calculators/UnitConverter.cs
+    startLine: 57
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToAmps(double watts, double volts)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: volts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToAmps(watts As Double, volts As Double) As Double
+  overload: CircuitTool.UnitConverter.WattsToAmps*
+  nameWithType.vb: UnitConverter.WattsToAmps(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToAmps(Double, Double)
+  name.vb: WattsToAmps(Double, Double)
+- uid: CircuitTool.UnitConverter.WattsToJoules(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToJoules(System.Double,System.Double)
+  id: WattsToJoules(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToJoules(double, double)
+  nameWithType: UnitConverter.WattsToJoules(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToJoules(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToJoules
+    path: src/Calculators/UnitConverter.cs
+    startLine: 59
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToJoules(double watts, double seconds)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: seconds
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToJoules(watts As Double, seconds As Double) As Double
+  overload: CircuitTool.UnitConverter.WattsToJoules*
+  nameWithType.vb: UnitConverter.WattsToJoules(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToJoules(Double, Double)
+  name.vb: WattsToJoules(Double, Double)
+- uid: CircuitTool.UnitConverter.WattsToKWh(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToKWh(System.Double,System.Double)
+  id: WattsToKWh(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToKWh(double, double)
+  nameWithType: UnitConverter.WattsToKWh(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToKWh(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToKWh
+    path: src/Calculators/UnitConverter.cs
+    startLine: 61
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToKWh(double watts, double hours)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: hours
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToKWh(watts As Double, hours As Double) As Double
+  overload: CircuitTool.UnitConverter.WattsToKWh*
+  nameWithType.vb: UnitConverter.WattsToKWh(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToKWh(Double, Double)
+  name.vb: WattsToKWh(Double, Double)
+- uid: CircuitTool.UnitConverter.WattsToVolts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToVolts(System.Double,System.Double)
+  id: WattsToVolts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToVolts(double, double)
+  nameWithType: UnitConverter.WattsToVolts(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToVolts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToVolts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 63
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToVolts(double watts, double amps)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: amps
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToVolts(watts As Double, amps As Double) As Double
+  overload: CircuitTool.UnitConverter.WattsToVolts*
+  nameWithType.vb: UnitConverter.WattsToVolts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToVolts(Double, Double)
+  name.vb: WattsToVolts(Double, Double)
+- uid: CircuitTool.UnitConverter.WattsToVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToVA(System.Double,System.Double)
+  id: WattsToVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToVA(double, double)
+  nameWithType: UnitConverter.WattsToVA(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 65
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToVA(double watts, double powerFactor = 1)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToVA(watts As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.WattsToVA*
+  nameWithType.vb: UnitConverter.WattsToVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToVA(Double, Double)
+  name.vb: WattsToVA(Double, Double)
+- uid: CircuitTool.UnitConverter.WattsToKVA(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.WattsToKVA(System.Double,System.Double)
+  id: WattsToKVA(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: WattsToKVA(double, double)
+  nameWithType: UnitConverter.WattsToKVA(double, double)
+  fullName: CircuitTool.UnitConverter.WattsToKVA(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WattsToKVA
+    path: src/Calculators/UnitConverter.cs
+    startLine: 67
+  namespace: CircuitTool
+  syntax:
+    content: public static double WattsToKVA(double watts, double powerFactor = 1)
+    parameters:
+    - id: watts
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function WattsToKVA(watts As Double, powerFactor As Double = 1) As Double
+  overload: CircuitTool.UnitConverter.WattsToKVA*
+  nameWithType.vb: UnitConverter.WattsToKVA(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.WattsToKVA(Double, Double)
+  name.vb: WattsToKVA(Double, Double)
+- uid: CircuitTool.UnitConverter.EVToVolts(System.Double)
+  commentId: M:CircuitTool.UnitConverter.EVToVolts(System.Double)
+  id: EVToVolts(System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: EVToVolts(double)
+  nameWithType: UnitConverter.EVToVolts(double)
+  fullName: CircuitTool.UnitConverter.EVToVolts(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EVToVolts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 69
+  namespace: CircuitTool
+  syntax:
+    content: public static double EVToVolts(double eV)
+    parameters:
+    - id: eV
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function EVToVolts(eV As Double) As Double
+  overload: CircuitTool.UnitConverter.EVToVolts*
+  nameWithType.vb: UnitConverter.EVToVolts(Double)
+  fullName.vb: CircuitTool.UnitConverter.EVToVolts(Double)
+  name.vb: EVToVolts(Double)
+- uid: CircuitTool.UnitConverter.JoulesToWatts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.JoulesToWatts(System.Double,System.Double)
+  id: JoulesToWatts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: JoulesToWatts(double, double)
+  nameWithType: UnitConverter.JoulesToWatts(double, double)
+  fullName: CircuitTool.UnitConverter.JoulesToWatts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: JoulesToWatts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 71
+  namespace: CircuitTool
+  syntax:
+    content: public static double JoulesToWatts(double joules, double seconds)
+    parameters:
+    - id: joules
+      type: System.Double
+    - id: seconds
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function JoulesToWatts(joules As Double, seconds As Double) As Double
+  overload: CircuitTool.UnitConverter.JoulesToWatts*
+  nameWithType.vb: UnitConverter.JoulesToWatts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.JoulesToWatts(Double, Double)
+  name.vb: JoulesToWatts(Double, Double)
+- uid: CircuitTool.UnitConverter.JoulesToVolts(System.Double,System.Double)
+  commentId: M:CircuitTool.UnitConverter.JoulesToVolts(System.Double,System.Double)
+  id: JoulesToVolts(System.Double,System.Double)
+  parent: CircuitTool.UnitConverter
+  langs:
+  - csharp
+  - vb
+  name: JoulesToVolts(double, double)
+  nameWithType: UnitConverter.JoulesToVolts(double, double)
+  fullName: CircuitTool.UnitConverter.JoulesToVolts(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/UnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: JoulesToVolts
+    path: src/Calculators/UnitConverter.cs
+    startLine: 73
+  namespace: CircuitTool
+  syntax:
+    content: public static double JoulesToVolts(double joules, double coulombs)
+    parameters:
+    - id: joules
+      type: System.Double
+    - id: coulombs
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function JoulesToVolts(joules As Double, coulombs As Double) As Double
+  overload: CircuitTool.UnitConverter.JoulesToVolts*
+  nameWithType.vb: UnitConverter.JoulesToVolts(Double, Double)
+  fullName.vb: CircuitTool.UnitConverter.JoulesToVolts(Double, Double)
+  name.vb: JoulesToVolts(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.UnitConverter.AmpsToKW*
+  commentId: Overload:CircuitTool.UnitConverter.AmpsToKW
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_AmpsToKW_System_Double_System_Double_System_Double_
+  name: AmpsToKW
+  nameWithType: UnitConverter.AmpsToKW
+  fullName: CircuitTool.UnitConverter.AmpsToKW
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.UnitConverter.AmpsToKVA*
+  commentId: Overload:CircuitTool.UnitConverter.AmpsToKVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_AmpsToKVA_System_Double_System_Double_
+  name: AmpsToKVA
+  nameWithType: UnitConverter.AmpsToKVA
+  fullName: CircuitTool.UnitConverter.AmpsToKVA
+- uid: CircuitTool.UnitConverter.AmpsToVA*
+  commentId: Overload:CircuitTool.UnitConverter.AmpsToVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_AmpsToVA_System_Double_System_Double_
+  name: AmpsToVA
+  nameWithType: UnitConverter.AmpsToVA
+  fullName: CircuitTool.UnitConverter.AmpsToVA
+- uid: CircuitTool.UnitConverter.AmpsToVolts*
+  commentId: Overload:CircuitTool.UnitConverter.AmpsToVolts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_AmpsToVolts_System_Double_System_Double_
+  name: AmpsToVolts
+  nameWithType: UnitConverter.AmpsToVolts
+  fullName: CircuitTool.UnitConverter.AmpsToVolts
+- uid: CircuitTool.UnitConverter.AmpsToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.AmpsToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_AmpsToWatts_System_Double_System_Double_
+  name: AmpsToWatts
+  nameWithType: UnitConverter.AmpsToWatts
+  fullName: CircuitTool.UnitConverter.AmpsToWatts
+- uid: CircuitTool.UnitConverter.KVAToAmps*
+  commentId: Overload:CircuitTool.UnitConverter.KVAToAmps
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KVAToAmps_System_Double_System_Double_
+  name: KVAToAmps
+  nameWithType: UnitConverter.KVAToAmps
+  fullName: CircuitTool.UnitConverter.KVAToAmps
+- uid: CircuitTool.UnitConverter.KVAToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.KVAToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KVAToWatts_System_Double_System_Double_
+  name: KVAToWatts
+  nameWithType: UnitConverter.KVAToWatts
+  fullName: CircuitTool.UnitConverter.KVAToWatts
+- uid: CircuitTool.UnitConverter.KVAToKW*
+  commentId: Overload:CircuitTool.UnitConverter.KVAToKW
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KVAToKW_System_Double_System_Double_
+  name: KVAToKW
+  nameWithType: UnitConverter.KVAToKW
+  fullName: CircuitTool.UnitConverter.KVAToKW
+- uid: CircuitTool.UnitConverter.KVAToVA*
+  commentId: Overload:CircuitTool.UnitConverter.KVAToVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KVAToVA_System_Double_
+  name: KVAToVA
+  nameWithType: UnitConverter.KVAToVA
+  fullName: CircuitTool.UnitConverter.KVAToVA
+- uid: CircuitTool.UnitConverter.KWToAmps*
+  commentId: Overload:CircuitTool.UnitConverter.KWToAmps
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWToAmps_System_Double_System_Double_System_Double_
+  name: KWToAmps
+  nameWithType: UnitConverter.KWToAmps
+  fullName: CircuitTool.UnitConverter.KWToAmps
+- uid: CircuitTool.UnitConverter.KWToVolts*
+  commentId: Overload:CircuitTool.UnitConverter.KWToVolts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWToVolts_System_Double_System_Double_System_Double_
+  name: KWToVolts
+  nameWithType: UnitConverter.KWToVolts
+  fullName: CircuitTool.UnitConverter.KWToVolts
+- uid: CircuitTool.UnitConverter.KWToKWh*
+  commentId: Overload:CircuitTool.UnitConverter.KWToKWh
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWToKWh_System_Double_System_Double_
+  name: KWToKWh
+  nameWithType: UnitConverter.KWToKWh
+  fullName: CircuitTool.UnitConverter.KWToKWh
+- uid: CircuitTool.UnitConverter.KWToVA*
+  commentId: Overload:CircuitTool.UnitConverter.KWToVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWToVA_System_Double_System_Double_
+  name: KWToVA
+  nameWithType: UnitConverter.KWToVA
+  fullName: CircuitTool.UnitConverter.KWToVA
+- uid: CircuitTool.UnitConverter.KWToKVA*
+  commentId: Overload:CircuitTool.UnitConverter.KWToKVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWToKVA_System_Double_System_Double_
+  name: KWToKVA
+  nameWithType: UnitConverter.KWToKVA
+  fullName: CircuitTool.UnitConverter.KWToKVA
+- uid: CircuitTool.UnitConverter.KWhToKW*
+  commentId: Overload:CircuitTool.UnitConverter.KWhToKW
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWhToKW_System_Double_System_Double_
+  name: KWhToKW
+  nameWithType: UnitConverter.KWhToKW
+  fullName: CircuitTool.UnitConverter.KWhToKW
+- uid: CircuitTool.UnitConverter.KWhToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.KWhToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_KWhToWatts_System_Double_System_Double_
+  name: KWhToWatts
+  nameWithType: UnitConverter.KWhToWatts
+  fullName: CircuitTool.UnitConverter.KWhToWatts
+- uid: CircuitTool.UnitConverter.VAToAmps*
+  commentId: Overload:CircuitTool.UnitConverter.VAToAmps
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VAToAmps_System_Double_System_Double_
+  name: VAToAmps
+  nameWithType: UnitConverter.VAToAmps
+  fullName: CircuitTool.UnitConverter.VAToAmps
+- uid: CircuitTool.UnitConverter.VAToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.VAToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VAToWatts_System_Double_System_Double_
+  name: VAToWatts
+  nameWithType: UnitConverter.VAToWatts
+  fullName: CircuitTool.UnitConverter.VAToWatts
+- uid: CircuitTool.UnitConverter.VAToKW*
+  commentId: Overload:CircuitTool.UnitConverter.VAToKW
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VAToKW_System_Double_System_Double_
+  name: VAToKW
+  nameWithType: UnitConverter.VAToKW
+  fullName: CircuitTool.UnitConverter.VAToKW
+- uid: CircuitTool.UnitConverter.VAToKVA*
+  commentId: Overload:CircuitTool.UnitConverter.VAToKVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VAToKVA_System_Double_
+  name: VAToKVA
+  nameWithType: UnitConverter.VAToKVA
+  fullName: CircuitTool.UnitConverter.VAToKVA
+- uid: CircuitTool.UnitConverter.VoltsToAmps*
+  commentId: Overload:CircuitTool.UnitConverter.VoltsToAmps
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VoltsToAmps_System_Double_System_Double_
+  name: VoltsToAmps
+  nameWithType: UnitConverter.VoltsToAmps
+  fullName: CircuitTool.UnitConverter.VoltsToAmps
+- uid: CircuitTool.UnitConverter.VoltsToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.VoltsToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VoltsToWatts_System_Double_System_Double_
+  name: VoltsToWatts
+  nameWithType: UnitConverter.VoltsToWatts
+  fullName: CircuitTool.UnitConverter.VoltsToWatts
+- uid: CircuitTool.UnitConverter.VoltsToKW*
+  commentId: Overload:CircuitTool.UnitConverter.VoltsToKW
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VoltsToKW_System_Double_System_Double_System_Double_
+  name: VoltsToKW
+  nameWithType: UnitConverter.VoltsToKW
+  fullName: CircuitTool.UnitConverter.VoltsToKW
+- uid: CircuitTool.UnitConverter.VoltsToJoules*
+  commentId: Overload:CircuitTool.UnitConverter.VoltsToJoules
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VoltsToJoules_System_Double_System_Double_
+  name: VoltsToJoules
+  nameWithType: UnitConverter.VoltsToJoules
+  fullName: CircuitTool.UnitConverter.VoltsToJoules
+- uid: CircuitTool.UnitConverter.VoltsToEV*
+  commentId: Overload:CircuitTool.UnitConverter.VoltsToEV
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_VoltsToEV_System_Double_
+  name: VoltsToEV
+  nameWithType: UnitConverter.VoltsToEV
+  fullName: CircuitTool.UnitConverter.VoltsToEV
+- uid: CircuitTool.UnitConverter.WattsToAmps*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToAmps
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToAmps_System_Double_System_Double_
+  name: WattsToAmps
+  nameWithType: UnitConverter.WattsToAmps
+  fullName: CircuitTool.UnitConverter.WattsToAmps
+- uid: CircuitTool.UnitConverter.WattsToJoules*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToJoules
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToJoules_System_Double_System_Double_
+  name: WattsToJoules
+  nameWithType: UnitConverter.WattsToJoules
+  fullName: CircuitTool.UnitConverter.WattsToJoules
+- uid: CircuitTool.UnitConverter.WattsToKWh*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToKWh
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToKWh_System_Double_System_Double_
+  name: WattsToKWh
+  nameWithType: UnitConverter.WattsToKWh
+  fullName: CircuitTool.UnitConverter.WattsToKWh
+- uid: CircuitTool.UnitConverter.WattsToVolts*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToVolts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToVolts_System_Double_System_Double_
+  name: WattsToVolts
+  nameWithType: UnitConverter.WattsToVolts
+  fullName: CircuitTool.UnitConverter.WattsToVolts
+- uid: CircuitTool.UnitConverter.WattsToVA*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToVA_System_Double_System_Double_
+  name: WattsToVA
+  nameWithType: UnitConverter.WattsToVA
+  fullName: CircuitTool.UnitConverter.WattsToVA
+- uid: CircuitTool.UnitConverter.WattsToKVA*
+  commentId: Overload:CircuitTool.UnitConverter.WattsToKVA
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_WattsToKVA_System_Double_System_Double_
+  name: WattsToKVA
+  nameWithType: UnitConverter.WattsToKVA
+  fullName: CircuitTool.UnitConverter.WattsToKVA
+- uid: CircuitTool.UnitConverter.EVToVolts*
+  commentId: Overload:CircuitTool.UnitConverter.EVToVolts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_EVToVolts_System_Double_
+  name: EVToVolts
+  nameWithType: UnitConverter.EVToVolts
+  fullName: CircuitTool.UnitConverter.EVToVolts
+- uid: CircuitTool.UnitConverter.JoulesToWatts*
+  commentId: Overload:CircuitTool.UnitConverter.JoulesToWatts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_JoulesToWatts_System_Double_System_Double_
+  name: JoulesToWatts
+  nameWithType: UnitConverter.JoulesToWatts
+  fullName: CircuitTool.UnitConverter.JoulesToWatts
+- uid: CircuitTool.UnitConverter.JoulesToVolts*
+  commentId: Overload:CircuitTool.UnitConverter.JoulesToVolts
+  href: CircuitTool.UnitConverter.html#CircuitTool_UnitConverter_JoulesToVolts_System_Double_System_Double_
+  name: JoulesToVolts
+  nameWithType: UnitConverter.JoulesToVolts
+  fullName: CircuitTool.UnitConverter.JoulesToVolts

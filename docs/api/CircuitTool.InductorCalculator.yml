@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.InductorCalculator
+  commentId: T:CircuitTool.InductorCalculator
+  id: InductorCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.InductorCalculator.CurrentBuildup(System.Double,System.Double,System.Double)
+  - CircuitTool.InductorCalculator.CurrentDecay(System.Double,System.Double,System.Double)
+  - CircuitTool.InductorCalculator.EnergyStored(System.Double,System.Double)
+  - CircuitTool.InductorCalculator.InductiveReactance(System.Double,System.Double)
+  - CircuitTool.InductorCalculator.ParallelInductance(System.Double[])
+  - CircuitTool.InductorCalculator.ResonantFrequency(System.Double,System.Double)
+  - CircuitTool.InductorCalculator.SeriesInductance(System.Double[])
+  - CircuitTool.InductorCalculator.TimeConstant(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: InductorCalculator
+  nameWithType: InductorCalculator
+  fullName: CircuitTool.InductorCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductorCalculator
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 7
+  namespace: CircuitTool
+  summary: Provides calculations for inductor circuits and characteristics.
+  example: []
+  syntax:
+    content: public static class InductorCalculator
+    content.vb: Public Module InductorCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.InductorCalculator.InductiveReactance(System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.InductiveReactance(System.Double,System.Double)
+  id: InductiveReactance(System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: InductiveReactance(double, double)
+  nameWithType: InductorCalculator.InductiveReactance(double, double)
+  fullName: CircuitTool.InductorCalculator.InductiveReactance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductiveReactance
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Calculates inductive reactance using the formula XL = 2πfL.
+  example: []
+  syntax:
+    content: public static double InductiveReactance(double frequency, double inductance)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    return:
+      type: System.Double
+      description: Inductive reactance in ohms (Ω).
+    content.vb: Public Shared Function InductiveReactance(frequency As Double, inductance As Double) As Double
+  overload: CircuitTool.InductorCalculator.InductiveReactance*
+  nameWithType.vb: InductorCalculator.InductiveReactance(Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.InductiveReactance(Double, Double)
+  name.vb: InductiveReactance(Double, Double)
+- uid: CircuitTool.InductorCalculator.EnergyStored(System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.EnergyStored(System.Double,System.Double)
+  id: EnergyStored(System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored(double, double)
+  nameWithType: InductorCalculator.EnergyStored(double, double)
+  fullName: CircuitTool.InductorCalculator.EnergyStored(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 29
+  namespace: CircuitTool
+  summary: Calculates the energy stored in an inductor using the formula E = 0.5 × L × I².
+  example: []
+  syntax:
+    content: public static double EnergyStored(double inductance, double current)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: current
+      type: System.Double
+      description: Current through the inductor in amperes (A).
+    return:
+      type: System.Double
+      description: Energy stored in joules (J).
+    content.vb: Public Shared Function EnergyStored(inductance As Double, current As Double) As Double
+  overload: CircuitTool.InductorCalculator.EnergyStored*
+  nameWithType.vb: InductorCalculator.EnergyStored(Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.EnergyStored(Double, Double)
+  name.vb: EnergyStored(Double, Double)
+- uid: CircuitTool.InductorCalculator.TimeConstant(System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.TimeConstant(System.Double,System.Double)
+  id: TimeConstant(System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: TimeConstant(double, double)
+  nameWithType: InductorCalculator.TimeConstant(double, double)
+  fullName: CircuitTool.InductorCalculator.TimeConstant(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TimeConstant
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 43
+  namespace: CircuitTool
+  summary: Calculates the time constant for an RL circuit using the formula τ = L / R.
+  example: []
+  syntax:
+    content: public static double TimeConstant(double inductance, double resistance)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    return:
+      type: System.Double
+      description: Time constant in seconds (s).
+    content.vb: Public Shared Function TimeConstant(inductance As Double, resistance As Double) As Double
+  overload: CircuitTool.InductorCalculator.TimeConstant*
+  nameWithType.vb: InductorCalculator.TimeConstant(Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.TimeConstant(Double, Double)
+  name.vb: TimeConstant(Double, Double)
+- uid: CircuitTool.InductorCalculator.SeriesInductance(System.Double[])
+  commentId: M:CircuitTool.InductorCalculator.SeriesInductance(System.Double[])
+  id: SeriesInductance(System.Double[])
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: SeriesInductance(double[])
+  nameWithType: InductorCalculator.SeriesInductance(double[])
+  fullName: CircuitTool.InductorCalculator.SeriesInductance(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesInductance
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 56
+  namespace: CircuitTool
+  summary: Calculates total inductance for inductors in series using the formula Ltotal = L1 + L2 + ...
+  example: []
+  syntax:
+    content: public static double SeriesInductance(double[] inductances)
+    parameters:
+    - id: inductances
+      type: System.Double[]
+      description: Array of inductance values in henries (H).
+    return:
+      type: System.Double
+      description: Total inductance in henries (H).
+    content.vb: Public Shared Function SeriesInductance(inductances As Double()) As Double
+  overload: CircuitTool.InductorCalculator.SeriesInductance*
+  nameWithType.vb: InductorCalculator.SeriesInductance(Double())
+  fullName.vb: CircuitTool.InductorCalculator.SeriesInductance(Double())
+  name.vb: SeriesInductance(Double())
+- uid: CircuitTool.InductorCalculator.ParallelInductance(System.Double[])
+  commentId: M:CircuitTool.InductorCalculator.ParallelInductance(System.Double[])
+  id: ParallelInductance(System.Double[])
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: ParallelInductance(double[])
+  nameWithType: InductorCalculator.ParallelInductance(double[])
+  fullName: CircuitTool.InductorCalculator.ParallelInductance(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelInductance
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 76
+  namespace: CircuitTool
+  summary: Calculates total inductance for inductors in parallel using the formula 1/Ltotal = 1/L1 + 1/L2 + ...
+  example: []
+  syntax:
+    content: public static double ParallelInductance(double[] inductances)
+    parameters:
+    - id: inductances
+      type: System.Double[]
+      description: Array of inductance values in henries (H).
+    return:
+      type: System.Double
+      description: Total inductance in henries (H).
+    content.vb: Public Shared Function ParallelInductance(inductances As Double()) As Double
+  overload: CircuitTool.InductorCalculator.ParallelInductance*
+  nameWithType.vb: InductorCalculator.ParallelInductance(Double())
+  fullName.vb: CircuitTool.InductorCalculator.ParallelInductance(Double())
+  name.vb: ParallelInductance(Double())
+- uid: CircuitTool.InductorCalculator.CurrentBuildup(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.CurrentBuildup(System.Double,System.Double,System.Double)
+  id: CurrentBuildup(System.Double,System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: CurrentBuildup(double, double, double)
+  nameWithType: InductorCalculator.CurrentBuildup(double, double, double)
+  fullName: CircuitTool.InductorCalculator.CurrentBuildup(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentBuildup
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 98
+  namespace: CircuitTool
+  summary: Calculates the current buildup in an inductor at time t using I(t) = Ifinal × (1 - e^(-t/τ)).
+  example: []
+  syntax:
+    content: public static double CurrentBuildup(double finalCurrent, double timeConstant, double time)
+    parameters:
+    - id: finalCurrent
+      type: System.Double
+      description: Final steady-state current in amperes (A).
+    - id: timeConstant
+      type: System.Double
+      description: Time constant τ in seconds (s).
+    - id: time
+      type: System.Double
+      description: Time in seconds (s).
+    return:
+      type: System.Double
+      description: Inductor current at time t in amperes (A).
+    content.vb: Public Shared Function CurrentBuildup(finalCurrent As Double, timeConstant As Double, time As Double) As Double
+  overload: CircuitTool.InductorCalculator.CurrentBuildup*
+  nameWithType.vb: InductorCalculator.CurrentBuildup(Double, Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.CurrentBuildup(Double, Double, Double)
+  name.vb: CurrentBuildup(Double, Double, Double)
+- uid: CircuitTool.InductorCalculator.CurrentDecay(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.CurrentDecay(System.Double,System.Double,System.Double)
+  id: CurrentDecay(System.Double,System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: CurrentDecay(double, double, double)
+  nameWithType: InductorCalculator.CurrentDecay(double, double, double)
+  fullName: CircuitTool.InductorCalculator.CurrentDecay(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentDecay
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 115
+  namespace: CircuitTool
+  summary: Calculates the current decay in an inductor at time t using I(t) = Iinitial × e^(-t/τ).
+  example: []
+  syntax:
+    content: public static double CurrentDecay(double initialCurrent, double timeConstant, double time)
+    parameters:
+    - id: initialCurrent
+      type: System.Double
+      description: Initial current in amperes (A).
+    - id: timeConstant
+      type: System.Double
+      description: Time constant τ in seconds (s).
+    - id: time
+      type: System.Double
+      description: Time in seconds (s).
+    return:
+      type: System.Double
+      description: Inductor current at time t in amperes (A).
+    content.vb: Public Shared Function CurrentDecay(initialCurrent As Double, timeConstant As Double, time As Double) As Double
+  overload: CircuitTool.InductorCalculator.CurrentDecay*
+  nameWithType.vb: InductorCalculator.CurrentDecay(Double, Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.CurrentDecay(Double, Double, Double)
+  name.vb: CurrentDecay(Double, Double, Double)
+- uid: CircuitTool.InductorCalculator.ResonantFrequency(System.Double,System.Double)
+  commentId: M:CircuitTool.InductorCalculator.ResonantFrequency(System.Double,System.Double)
+  id: ResonantFrequency(System.Double,System.Double)
+  parent: CircuitTool.InductorCalculator
+  langs:
+  - csharp
+  - vb
+  name: ResonantFrequency(double, double)
+  nameWithType: InductorCalculator.ResonantFrequency(double, double)
+  fullName: CircuitTool.InductorCalculator.ResonantFrequency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/InductorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResonantFrequency
+    path: src/Calculators/InductorCalculator.cs
+    startLine: 131
+  namespace: CircuitTool
+  summary: Calculates the resonant frequency of an LC circuit using f = 1 / (2π√(LC)).
+  example: []
+  syntax:
+    content: public static double ResonantFrequency(double inductance, double capacitance)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Resonant frequency in hertz (Hz).
+    content.vb: Public Shared Function ResonantFrequency(inductance As Double, capacitance As Double) As Double
+  overload: CircuitTool.InductorCalculator.ResonantFrequency*
+  nameWithType.vb: InductorCalculator.ResonantFrequency(Double, Double)
+  fullName.vb: CircuitTool.InductorCalculator.ResonantFrequency(Double, Double)
+  name.vb: ResonantFrequency(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.InductorCalculator.InductiveReactance*
+  commentId: Overload:CircuitTool.InductorCalculator.InductiveReactance
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_InductiveReactance_System_Double_System_Double_
+  name: InductiveReactance
+  nameWithType: InductorCalculator.InductiveReactance
+  fullName: CircuitTool.InductorCalculator.InductiveReactance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.InductorCalculator.EnergyStored*
+  commentId: Overload:CircuitTool.InductorCalculator.EnergyStored
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_EnergyStored_System_Double_System_Double_
+  name: EnergyStored
+  nameWithType: InductorCalculator.EnergyStored
+  fullName: CircuitTool.InductorCalculator.EnergyStored
+- uid: CircuitTool.InductorCalculator.TimeConstant*
+  commentId: Overload:CircuitTool.InductorCalculator.TimeConstant
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_TimeConstant_System_Double_System_Double_
+  name: TimeConstant
+  nameWithType: InductorCalculator.TimeConstant
+  fullName: CircuitTool.InductorCalculator.TimeConstant
+- uid: CircuitTool.InductorCalculator.SeriesInductance*
+  commentId: Overload:CircuitTool.InductorCalculator.SeriesInductance
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_SeriesInductance_System_Double___
+  name: SeriesInductance
+  nameWithType: InductorCalculator.SeriesInductance
+  fullName: CircuitTool.InductorCalculator.SeriesInductance
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: CircuitTool.InductorCalculator.ParallelInductance*
+  commentId: Overload:CircuitTool.InductorCalculator.ParallelInductance
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_ParallelInductance_System_Double___
+  name: ParallelInductance
+  nameWithType: InductorCalculator.ParallelInductance
+  fullName: CircuitTool.InductorCalculator.ParallelInductance
+- uid: CircuitTool.InductorCalculator.CurrentBuildup*
+  commentId: Overload:CircuitTool.InductorCalculator.CurrentBuildup
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_CurrentBuildup_System_Double_System_Double_System_Double_
+  name: CurrentBuildup
+  nameWithType: InductorCalculator.CurrentBuildup
+  fullName: CircuitTool.InductorCalculator.CurrentBuildup
+- uid: CircuitTool.InductorCalculator.CurrentDecay*
+  commentId: Overload:CircuitTool.InductorCalculator.CurrentDecay
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_CurrentDecay_System_Double_System_Double_System_Double_
+  name: CurrentDecay
+  nameWithType: InductorCalculator.CurrentDecay
+  fullName: CircuitTool.InductorCalculator.CurrentDecay
+- uid: CircuitTool.InductorCalculator.ResonantFrequency*
+  commentId: Overload:CircuitTool.InductorCalculator.ResonantFrequency
+  href: CircuitTool.InductorCalculator.html#CircuitTool_InductorCalculator_ResonantFrequency_System_Double_System_Double_
+  name: ResonantFrequency
+  nameWithType: InductorCalculator.ResonantFrequency
+  fullName: CircuitTool.InductorCalculator.ResonantFrequency

@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  commentId: T:CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  id: PowerQualityAnalysis
+  parent: CircuitTool.PowerAnalysis
+  children:
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+  langs:
+  - csharp
+  - vb
+  name: PowerQualityAnalysis
+  nameWithType: PowerQualityAnalysis
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerQualityAnalysis
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 454
+  namespace: CircuitTool.PowerAnalysis
+  summary: Power quality analysis results
+  example: []
+  syntax:
+    content: public readonly struct PowerQualityAnalysis
+    content.vb: Public Structure PowerQualityAnalysis
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+  id: VoltageRMS
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageRMS
+  nameWithType: PowerQualityAnalysis.VoltageRMS
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRMS
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 456
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageRMS { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageRMS As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+  id: CurrentRMS
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: CurrentRMS
+  nameWithType: PowerQualityAnalysis.CurrentRMS
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentRMS
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 457
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double CurrentRMS { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property CurrentRMS As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+  id: VoltageRegulation
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageRegulation
+  nameWithType: PowerQualityAnalysis.VoltageRegulation
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRegulation
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 458
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageRegulation { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageRegulation As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+  id: VoltageCrestFactor
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageCrestFactor
+  nameWithType: PowerQualityAnalysis.VoltageCrestFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageCrestFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 459
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageCrestFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageCrestFactor As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+  id: CurrentCrestFactor
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: CurrentCrestFactor
+  nameWithType: PowerQualityAnalysis.CurrentCrestFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentCrestFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 460
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double CurrentCrestFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property CurrentCrestFactor As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+  id: VoltageFormFactor
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageFormFactor
+  nameWithType: PowerQualityAnalysis.VoltageFormFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageFormFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 461
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageFormFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageFormFactor As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+  id: PowerFactor
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor
+  nameWithType: PowerQualityAnalysis.PowerFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 462
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double PowerFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property PowerFactor As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+  id: FrequencyDeviation
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDeviation
+  nameWithType: PowerQualityAnalysis.FrequencyDeviation
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FrequencyDeviation
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 463
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double FrequencyDeviation { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property FrequencyDeviation As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+  id: VoltageUnbalance
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageUnbalance
+  nameWithType: PowerQualityAnalysis.VoltageUnbalance
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageUnbalance
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 464
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageUnbalance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageUnbalance As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: PowerQualityAnalysis(double, double, double, double, double, double, double, double, double)
+  nameWithType: PowerQualityAnalysis.PowerQualityAnalysis(double, double, double, double, double, double, double, double, double)
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerQualityAnalysis(double, double, double, double, double, double, double, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 466
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public PowerQualityAnalysis(double voltageRMS, double currentRMS, double voltageRegulation, double voltageCrestFactor, double currentCrestFactor, double voltageFormFactor, double powerFactor, double frequencyDeviation, double voltageUnbalance)
+    parameters:
+    - id: voltageRMS
+      type: System.Double
+    - id: currentRMS
+      type: System.Double
+    - id: voltageRegulation
+      type: System.Double
+    - id: voltageCrestFactor
+      type: System.Double
+    - id: currentCrestFactor
+      type: System.Double
+    - id: voltageFormFactor
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    - id: frequencyDeviation
+      type: System.Double
+    - id: voltageUnbalance
+      type: System.Double
+    content.vb: Public Sub New(voltageRMS As Double, currentRMS As Double, voltageRegulation As Double, voltageCrestFactor As Double, currentCrestFactor As Double, voltageFormFactor As Double, powerFactor As Double, frequencyDeviation As Double, voltageUnbalance As Double)
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor*
+  nameWithType.vb: PowerQualityAnalysis.New(Double, Double, Double, Double, Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerAnalysis.PowerQualityAnalysis.New(Double, Double, Double, Double, Double, Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double, Double, Double, Double, Double, Double)
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+  id: VoltageRegulationPercent
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageRegulationPercent
+  nameWithType: PowerQualityAnalysis.VoltageRegulationPercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRegulationPercent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 481
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageRegulationPercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageRegulationPercent As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+  id: FrequencyDeviationPercent
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDeviationPercent
+  nameWithType: PowerQualityAnalysis.FrequencyDeviationPercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FrequencyDeviationPercent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 482
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double FrequencyDeviationPercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property FrequencyDeviationPercent As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+  commentId: P:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+  id: VoltageUnbalancePercent
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageUnbalancePercent
+  nameWithType: PowerQualityAnalysis.VoltageUnbalancePercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageUnbalancePercent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 483
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageUnbalancePercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageUnbalancePercent As Double
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent*
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString
+  commentId: M:CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString
+  id: ToString
+  parent: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PowerQualityAnalysis.ToString()
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 485
+  namespace: CircuitTool.PowerAnalysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString*
+references:
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  href: CircuitTool.html
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageRMS
+  name: VoltageRMS
+  nameWithType: PowerQualityAnalysis.VoltageRMS
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRMS
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_CurrentRMS
+  name: CurrentRMS
+  nameWithType: PowerQualityAnalysis.CurrentRMS
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentRMS
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageRegulation
+  name: VoltageRegulation
+  nameWithType: PowerQualityAnalysis.VoltageRegulation
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulation
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageCrestFactor
+  name: VoltageCrestFactor
+  nameWithType: PowerQualityAnalysis.VoltageCrestFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageCrestFactor
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_CurrentCrestFactor
+  name: CurrentCrestFactor
+  nameWithType: PowerQualityAnalysis.CurrentCrestFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.CurrentCrestFactor
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageFormFactor
+  name: VoltageFormFactor
+  nameWithType: PowerQualityAnalysis.VoltageFormFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageFormFactor
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_PowerFactor
+  name: PowerFactor
+  nameWithType: PowerQualityAnalysis.PowerFactor
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerFactor
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_FrequencyDeviation
+  name: FrequencyDeviation
+  nameWithType: PowerQualityAnalysis.FrequencyDeviation
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviation
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageUnbalance
+  name: VoltageUnbalance
+  nameWithType: PowerQualityAnalysis.VoltageUnbalance
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalance
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.#ctor
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: PowerQualityAnalysis
+  nameWithType: PowerQualityAnalysis.PowerQualityAnalysis
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.PowerQualityAnalysis
+  nameWithType.vb: PowerQualityAnalysis.New
+  fullName.vb: CircuitTool.PowerAnalysis.PowerQualityAnalysis.New
+  name.vb: New
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageRegulationPercent
+  name: VoltageRegulationPercent
+  nameWithType: PowerQualityAnalysis.VoltageRegulationPercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageRegulationPercent
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_FrequencyDeviationPercent
+  name: FrequencyDeviationPercent
+  nameWithType: PowerQualityAnalysis.FrequencyDeviationPercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.FrequencyDeviationPercent
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_VoltageUnbalancePercent
+  name: VoltageUnbalancePercent
+  nameWithType: PowerQualityAnalysis.VoltageUnbalancePercent
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.VoltageUnbalancePercent
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString*
+  commentId: Overload:CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html#CircuitTool_PowerAnalysis_PowerQualityAnalysis_ToString
+  name: ToString
+  nameWithType: PowerQualityAnalysis.ToString
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

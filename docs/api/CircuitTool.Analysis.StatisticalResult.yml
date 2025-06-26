@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Analysis.StatisticalResult
+  commentId: T:CircuitTool.Analysis.StatisticalResult
+  id: StatisticalResult
+  parent: CircuitTool.Analysis
+  children:
+  - CircuitTool.Analysis.StatisticalResult.#ctor(System.Double,System.Double,System.Double)
+  - CircuitTool.Analysis.StatisticalResult.NominalValue
+  - CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+  - CircuitTool.Analysis.StatisticalResult.StandardDeviation
+  - CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+  - CircuitTool.Analysis.StatisticalResult.ToString
+  - CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+  - CircuitTool.Analysis.StatisticalResult.TolerancePercent
+  langs:
+  - csharp
+  - vb
+  name: StatisticalResult
+  nameWithType: StatisticalResult
+  fullName: CircuitTool.Analysis.StatisticalResult
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StatisticalResult
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 275
+  namespace: CircuitTool.Analysis
+  summary: Results from statistical analysis
+  example: []
+  syntax:
+    content: public readonly struct StatisticalResult
+    content.vb: Public Structure StatisticalResult
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Analysis.StatisticalResult.NominalValue
+  commentId: P:CircuitTool.Analysis.StatisticalResult.NominalValue
+  id: NominalValue
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: NominalValue
+  nameWithType: StatisticalResult.NominalValue
+  fullName: CircuitTool.Analysis.StatisticalResult.NominalValue
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NominalValue
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 277
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double NominalValue { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NominalValue As Double
+  overload: CircuitTool.Analysis.StatisticalResult.NominalValue*
+- uid: CircuitTool.Analysis.StatisticalResult.StandardDeviation
+  commentId: P:CircuitTool.Analysis.StatisticalResult.StandardDeviation
+  id: StandardDeviation
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: StandardDeviation
+  nameWithType: StatisticalResult.StandardDeviation
+  fullName: CircuitTool.Analysis.StatisticalResult.StandardDeviation
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StandardDeviation
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 278
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double StandardDeviation { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property StandardDeviation As Double
+  overload: CircuitTool.Analysis.StatisticalResult.StandardDeviation*
+- uid: CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+  commentId: P:CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+  id: ToleranceEstimate
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: ToleranceEstimate
+  nameWithType: StatisticalResult.ToleranceEstimate
+  fullName: CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToleranceEstimate
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 279
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double ToleranceEstimate { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ToleranceEstimate As Double
+  overload: CircuitTool.Analysis.StatisticalResult.ToleranceEstimate*
+- uid: CircuitTool.Analysis.StatisticalResult.TolerancePercent
+  commentId: P:CircuitTool.Analysis.StatisticalResult.TolerancePercent
+  id: TolerancePercent
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: TolerancePercent
+  nameWithType: StatisticalResult.TolerancePercent
+  fullName: CircuitTool.Analysis.StatisticalResult.TolerancePercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TolerancePercent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 280
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double TolerancePercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property TolerancePercent As Double
+  overload: CircuitTool.Analysis.StatisticalResult.TolerancePercent*
+- uid: CircuitTool.Analysis.StatisticalResult.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Analysis.StatisticalResult.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: StatisticalResult(double, double, double)
+  nameWithType: StatisticalResult.StatisticalResult(double, double, double)
+  fullName: CircuitTool.Analysis.StatisticalResult.StatisticalResult(double, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 282
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public StatisticalResult(double nominalValue, double standardDeviation, double toleranceEstimate)
+    parameters:
+    - id: nominalValue
+      type: System.Double
+    - id: standardDeviation
+      type: System.Double
+    - id: toleranceEstimate
+      type: System.Double
+    content.vb: Public Sub New(nominalValue As Double, standardDeviation As Double, toleranceEstimate As Double)
+  overload: CircuitTool.Analysis.StatisticalResult.#ctor*
+  nameWithType.vb: StatisticalResult.New(Double, Double, Double)
+  fullName.vb: CircuitTool.Analysis.StatisticalResult.New(Double, Double, Double)
+  name.vb: New(Double, Double, Double)
+- uid: CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+  commentId: P:CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+  id: ThreeSigmaBounds
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: ThreeSigmaBounds
+  nameWithType: StatisticalResult.ThreeSigmaBounds
+  fullName: CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThreeSigmaBounds
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 292
+  namespace: CircuitTool.Analysis
+  summary: Gets the 3-sigma bounds (99.7% confidence)
+  example: []
+  syntax:
+    content: public (double lower, double upper) ThreeSigmaBounds { get; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+    content.vb: Public ReadOnly Property ThreeSigmaBounds As (lower As Double, upper As Double)
+  overload: CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds*
+- uid: CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+  commentId: P:CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+  id: SixSigmaBounds
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: SixSigmaBounds
+  nameWithType: StatisticalResult.SixSigmaBounds
+  fullName: CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SixSigmaBounds
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 298
+  namespace: CircuitTool.Analysis
+  summary: Gets the 6-sigma bounds (99.9999% confidence)
+  example: []
+  syntax:
+    content: public (double lower, double upper) SixSigmaBounds { get; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+    content.vb: Public ReadOnly Property SixSigmaBounds As (lower As Double, upper As Double)
+  overload: CircuitTool.Analysis.StatisticalResult.SixSigmaBounds*
+- uid: CircuitTool.Analysis.StatisticalResult.ToString
+  commentId: M:CircuitTool.Analysis.StatisticalResult.ToString
+  id: ToString
+  parent: CircuitTool.Analysis.StatisticalResult
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StatisticalResult.ToString()
+  fullName: CircuitTool.Analysis.StatisticalResult.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 301
+  namespace: CircuitTool.Analysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Analysis.StatisticalResult.ToString*
+references:
+- uid: CircuitTool.Analysis
+  commentId: N:CircuitTool.Analysis
+  href: CircuitTool.html
+  name: CircuitTool.Analysis
+  nameWithType: CircuitTool.Analysis
+  fullName: CircuitTool.Analysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Analysis.StatisticalResult.NominalValue*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.NominalValue
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_NominalValue
+  name: NominalValue
+  nameWithType: StatisticalResult.NominalValue
+  fullName: CircuitTool.Analysis.StatisticalResult.NominalValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Analysis.StatisticalResult.StandardDeviation*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.StandardDeviation
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_StandardDeviation
+  name: StandardDeviation
+  nameWithType: StatisticalResult.StandardDeviation
+  fullName: CircuitTool.Analysis.StatisticalResult.StandardDeviation
+- uid: CircuitTool.Analysis.StatisticalResult.ToleranceEstimate*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_ToleranceEstimate
+  name: ToleranceEstimate
+  nameWithType: StatisticalResult.ToleranceEstimate
+  fullName: CircuitTool.Analysis.StatisticalResult.ToleranceEstimate
+- uid: CircuitTool.Analysis.StatisticalResult.TolerancePercent*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.TolerancePercent
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_TolerancePercent
+  name: TolerancePercent
+  nameWithType: StatisticalResult.TolerancePercent
+  fullName: CircuitTool.Analysis.StatisticalResult.TolerancePercent
+- uid: CircuitTool.Analysis.StatisticalResult.#ctor*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.#ctor
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult__ctor_System_Double_System_Double_System_Double_
+  name: StatisticalResult
+  nameWithType: StatisticalResult.StatisticalResult
+  fullName: CircuitTool.Analysis.StatisticalResult.StatisticalResult
+  nameWithType.vb: StatisticalResult.New
+  fullName.vb: CircuitTool.Analysis.StatisticalResult.New
+  name.vb: New
+- uid: CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_ThreeSigmaBounds
+  name: ThreeSigmaBounds
+  nameWithType: StatisticalResult.ThreeSigmaBounds
+  fullName: CircuitTool.Analysis.StatisticalResult.ThreeSigmaBounds
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double referenceResistor, double biasVoltage)
+  nameWithType: (double referenceResistor, double biasVoltage)
+  fullName: (double referenceResistor, double biasVoltage)
+  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
+  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
+  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: CircuitTool.Analysis.StatisticalResult.SixSigmaBounds*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_SixSigmaBounds
+  name: SixSigmaBounds
+  nameWithType: StatisticalResult.SixSigmaBounds
+  fullName: CircuitTool.Analysis.StatisticalResult.SixSigmaBounds
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Analysis.StatisticalResult.ToString*
+  commentId: Overload:CircuitTool.Analysis.StatisticalResult.ToString
+  href: CircuitTool.Analysis.StatisticalResult.html#CircuitTool_Analysis_StatisticalResult_ToString
+  name: ToString
+  nameWithType: StatisticalResult.ToString
+  fullName: CircuitTool.Analysis.StatisticalResult.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FilterCalculator | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FilterCalculator | CircuitTool Documentation ">
+    
+    <meta name="description" content="Provides calculations for electronic filter design and analysis.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CircuitTool.FilterCalculator">
+
+
+
+  <h1 id="CircuitTool_FilterCalculator" data-uid="CircuitTool.FilterCalculator" class="text-break">Class FilterCalculator</h1>
+  <div class="markdown level0 summary"><p>Provides calculations for electronic filter design and analysis.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">FilterCalculator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="CircuitTool_FilterCalculator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FilterCalculator</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_GainInDecibels_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.GainInDecibels(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L72">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_GainInDecibels_" data-uid="CircuitTool.FilterCalculator.GainInDecibels*"></a>
+  <h4 id="CircuitTool_FilterCalculator_GainInDecibels_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.GainInDecibels(System.Double,System.Double)">GainInDecibels(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the gain of a filter in decibels using Gain(dB) = 20 × log10(Vout/Vin).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GainInDecibels(double outputVoltage, double inputVoltage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">outputVoltage</span></td>
+        <td><p>Output voltage in volts (V).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">inputVoltage</span></td>
+        <td><p>Input voltage in volts (V).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Gain in decibels (dB).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCHighPassCutoffFrequency_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCHighPassCutoffFrequency(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L30">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCHighPassCutoffFrequency_" data-uid="CircuitTool.FilterCalculator.RCHighPassCutoffFrequency*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCHighPassCutoffFrequency_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCHighPassCutoffFrequency(System.Double,System.Double)">RCHighPassCutoffFrequency(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cutoff frequency of an RC high-pass filter using fc = 1 / (2πRC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCHighPassCutoffFrequency(double resistance, double capacitance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">capacitance</span></td>
+        <td><p>Capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCHighPassMagnitudeResponse_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCHighPassMagnitudeResponse(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L133">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCHighPassMagnitudeResponse_" data-uid="CircuitTool.FilterCalculator.RCHighPassMagnitudeResponse*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCHighPassMagnitudeResponse_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCHighPassMagnitudeResponse(System.Double,System.Double)">RCHighPassMagnitudeResponse(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the magnitude response of an RC high-pass filter using |H(f)| = (f/fc) / √(1 + (f/fc)²).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCHighPassMagnitudeResponse(double frequency, double cutoffFrequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cutoffFrequency</span></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Magnitude response (unitless, between 0 and 1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCHighPassPhaseShift_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCHighPassPhaseShift(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L104">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCHighPassPhaseShift_" data-uid="CircuitTool.FilterCalculator.RCHighPassPhaseShift*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCHighPassPhaseShift_System_Double_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCHighPassPhaseShift(System.Double,System.Double,System.Double)">RCHighPassPhaseShift(double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the phase shift of an RC high-pass filter using φ = arctan(1/(2πfRC)).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCHighPassPhaseShift(double frequency, double resistance, double capacitance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">capacitance</span></td>
+        <td><p>Capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Phase shift in degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCLowPassCutoffFrequency_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCLowPassCutoffFrequency(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L16">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCLowPassCutoffFrequency_" data-uid="CircuitTool.FilterCalculator.RCLowPassCutoffFrequency*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCLowPassCutoffFrequency_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCLowPassCutoffFrequency(System.Double,System.Double)">RCLowPassCutoffFrequency(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cutoff frequency of an RC low-pass filter using fc = 1 / (2πRC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCLowPassCutoffFrequency(double resistance, double capacitance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">capacitance</span></td>
+        <td><p>Capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCLowPassMagnitudeResponse_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCLowPassMagnitudeResponse(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L118">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCLowPassMagnitudeResponse_" data-uid="CircuitTool.FilterCalculator.RCLowPassMagnitudeResponse*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCLowPassMagnitudeResponse_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCLowPassMagnitudeResponse(System.Double,System.Double)">RCLowPassMagnitudeResponse(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the magnitude response of an RC low-pass filter using |H(f)| = 1 / √(1 + (f/fc)²).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCLowPassMagnitudeResponse(double frequency, double cutoffFrequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cutoffFrequency</span></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Magnitude response (unitless, between 0 and 1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RCLowPassPhaseShift_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RCLowPassPhaseShift(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L89">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RCLowPassPhaseShift_" data-uid="CircuitTool.FilterCalculator.RCLowPassPhaseShift*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RCLowPassPhaseShift_System_Double_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RCLowPassPhaseShift(System.Double,System.Double,System.Double)">RCLowPassPhaseShift(double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the phase shift of an RC low-pass filter using φ = -arctan(2πfRC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RCLowPassPhaseShift(double frequency, double resistance, double capacitance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">capacitance</span></td>
+        <td><p>Capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Phase shift in degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RLHighPassCutoffFrequency_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RLHighPassCutoffFrequency(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L58">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RLHighPassCutoffFrequency_" data-uid="CircuitTool.FilterCalculator.RLHighPassCutoffFrequency*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RLHighPassCutoffFrequency_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RLHighPassCutoffFrequency(System.Double,System.Double)">RLHighPassCutoffFrequency(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cutoff frequency of an RL high-pass filter using fc = R / (2πL).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RLHighPassCutoffFrequency(double resistance, double inductance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">inductance</span></td>
+        <td><p>Inductance in henries (H).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RLLowPassCutoffFrequency_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RLLowPassCutoffFrequency(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L44">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RLLowPassCutoffFrequency_" data-uid="CircuitTool.FilterCalculator.RLLowPassCutoffFrequency*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RLLowPassCutoffFrequency_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RLLowPassCutoffFrequency(System.Double,System.Double)">RLLowPassCutoffFrequency(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the cutoff frequency of an RL low-pass filter using fc = R / (2πL).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RLLowPassCutoffFrequency(double resistance, double inductance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">inductance</span></td>
+        <td><p>Inductance in henries (H).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RequiredCapacitanceForCutoff_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RequiredCapacitanceForCutoff(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L148">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RequiredCapacitanceForCutoff_" data-uid="CircuitTool.FilterCalculator.RequiredCapacitanceForCutoff*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RequiredCapacitanceForCutoff_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RequiredCapacitanceForCutoff(System.Double,System.Double)">RequiredCapacitanceForCutoff(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the required capacitance for a desired RC filter cutoff frequency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RequiredCapacitanceForCutoff(double cutoffFrequency, double resistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cutoffFrequency</span></td>
+        <td><p>Desired cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">resistance</span></td>
+        <td><p>Resistance in ohms (Ω).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Required capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator_RequiredResistanceForCutoff_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator.RequiredResistanceForCutoff(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L162">View Source</a>
+  </span>
+  <a id="CircuitTool_FilterCalculator_RequiredResistanceForCutoff_" data-uid="CircuitTool.FilterCalculator.RequiredResistanceForCutoff*"></a>
+  <h4 id="CircuitTool_FilterCalculator_RequiredResistanceForCutoff_System_Double_System_Double_" data-uid="CircuitTool.FilterCalculator.RequiredResistanceForCutoff(System.Double,System.Double)">RequiredResistanceForCutoff(double, double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the required resistance for a desired RC filter cutoff frequency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RequiredResistanceForCutoff(double cutoffFrequency, double capacitance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cutoffFrequency</span></td>
+        <td><p>Desired cutoff frequency in hertz (Hz).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">capacitance</span></td>
+        <td><p>Capacitance in farads (F).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Required resistance in ohms (Ω).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_FilterCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.FilterCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/FilterCalculator.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

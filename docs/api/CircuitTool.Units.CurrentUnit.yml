@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.CurrentUnit
+  commentId: T:CircuitTool.Units.CurrentUnit
+  id: CurrentUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.CurrentUnit.Amperes
+  - CircuitTool.Units.CurrentUnit.Kiloamperes
+  - CircuitTool.Units.CurrentUnit.Microamperes
+  - CircuitTool.Units.CurrentUnit.Milliamperes
+  - CircuitTool.Units.CurrentUnit.Nanoamperes
+  langs:
+  - csharp
+  - vb
+  name: CurrentUnit
+  nameWithType: CurrentUnit
+  fullName: CircuitTool.Units.CurrentUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentUnit
+    path: src/Units/CurrentUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents current measurement units
+  example: []
+  syntax:
+    content: public enum CurrentUnit
+    content.vb: Public Enum CurrentUnit
+- uid: CircuitTool.Units.CurrentUnit.Nanoamperes
+  commentId: F:CircuitTool.Units.CurrentUnit.Nanoamperes
+  id: Nanoamperes
+  parent: CircuitTool.Units.CurrentUnit
+  langs:
+  - csharp
+  - vb
+  name: Nanoamperes
+  nameWithType: CurrentUnit.Nanoamperes
+  fullName: CircuitTool.Units.CurrentUnit.Nanoamperes
+  type: Field
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanoamperes
+    path: src/Units/CurrentUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Nanoamperes (nA)
+  example: []
+  syntax:
+    content: Nanoamperes = 0
+    return:
+      type: CircuitTool.Units.CurrentUnit
+- uid: CircuitTool.Units.CurrentUnit.Microamperes
+  commentId: F:CircuitTool.Units.CurrentUnit.Microamperes
+  id: Microamperes
+  parent: CircuitTool.Units.CurrentUnit
+  langs:
+  - csharp
+  - vb
+  name: Microamperes
+  nameWithType: CurrentUnit.Microamperes
+  fullName: CircuitTool.Units.CurrentUnit.Microamperes
+  type: Field
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microamperes
+    path: src/Units/CurrentUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Microamperes (μA)
+  example: []
+  syntax:
+    content: Microamperes = 1
+    return:
+      type: CircuitTool.Units.CurrentUnit
+- uid: CircuitTool.Units.CurrentUnit.Milliamperes
+  commentId: F:CircuitTool.Units.CurrentUnit.Milliamperes
+  id: Milliamperes
+  parent: CircuitTool.Units.CurrentUnit
+  langs:
+  - csharp
+  - vb
+  name: Milliamperes
+  nameWithType: CurrentUnit.Milliamperes
+  fullName: CircuitTool.Units.CurrentUnit.Milliamperes
+  type: Field
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Milliamperes
+    path: src/Units/CurrentUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Milliamperes (mA)
+  example: []
+  syntax:
+    content: Milliamperes = 2
+    return:
+      type: CircuitTool.Units.CurrentUnit
+- uid: CircuitTool.Units.CurrentUnit.Amperes
+  commentId: F:CircuitTool.Units.CurrentUnit.Amperes
+  id: Amperes
+  parent: CircuitTool.Units.CurrentUnit
+  langs:
+  - csharp
+  - vb
+  name: Amperes
+  nameWithType: CurrentUnit.Amperes
+  fullName: CircuitTool.Units.CurrentUnit.Amperes
+  type: Field
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Amperes
+    path: src/Units/CurrentUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Amperes (A)
+  example: []
+  syntax:
+    content: Amperes = 3
+    return:
+      type: CircuitTool.Units.CurrentUnit
+- uid: CircuitTool.Units.CurrentUnit.Kiloamperes
+  commentId: F:CircuitTool.Units.CurrentUnit.Kiloamperes
+  id: Kiloamperes
+  parent: CircuitTool.Units.CurrentUnit
+  langs:
+  - csharp
+  - vb
+  name: Kiloamperes
+  nameWithType: CurrentUnit.Kiloamperes
+  fullName: CircuitTool.Units.CurrentUnit.Kiloamperes
+  type: Field
+  source:
+    remote:
+      path: src/Units/CurrentUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kiloamperes
+    path: src/Units/CurrentUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Kiloamperes (kA)
+  example: []
+  syntax:
+    content: Kiloamperes = 4
+    return:
+      type: CircuitTool.Units.CurrentUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.CurrentUnit
+  commentId: T:CircuitTool.Units.CurrentUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.CurrentUnit.html
+  name: CurrentUnit
+  nameWithType: CurrentUnit
+  fullName: CircuitTool.Units.CurrentUnit

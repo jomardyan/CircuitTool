@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting Started with CircuitTool | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting Started with CircuitTool | CircuitTool Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started-with-circuittool">Getting Started with CircuitTool</h1>
+
+<p>This tutorial will guide you through the basics of using CircuitTool for electrical engineering calculations.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>.NET Framework 4.5+ or .NET 6.0+</li>
+<li>Basic understanding of electrical engineering concepts</li>
+<li>Visual Studio, VS Code, or any .NET-compatible IDE</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="via-nuget-package-manager-recommended">Via NuGet Package Manager (Recommended)</h3>
+<ol>
+<li><p><strong>Using Package Manager Console:</strong></p>
+<pre><code class="lang-powershell">Install-Package CircuitTool
+</code></pre>
+</li>
+<li><p><strong>Using .NET CLI:</strong></p>
+<pre><code class="lang-bash">dotnet add package CircuitTool
+</code></pre>
+</li>
+<li><p><strong>Using PackageReference in .csproj:</strong></p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;CircuitTool&quot; Version=&quot;2.0.0&quot; /&gt;
+</code></pre>
+</li>
+</ol>
+<h2 id="basic-usage-examples">Basic Usage Examples</h2>
+<h3 id="1-ohms-law-calculations">1. Ohm's Law Calculations</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate voltage when current and resistance are known
+double voltage = OhmsLawCalculator.CalculateVoltage(current: 2.5, resistance: 100.0);
+Console.WriteLine($&quot;Voltage: {voltage}V&quot;); // Output: 250V
+
+// Calculate current when voltage and resistance are known
+double current = OhmsLawCalculator.CalculateCurrent(voltage: 12.0, resistance: 1000.0);
+Console.WriteLine($&quot;Current: {current}A&quot;); // Output: 0.012A
+
+// Calculate resistance when voltage and current are known
+double resistance = OhmsLawCalculator.CalculateResistance(voltage: 5.0, current: 0.1);
+Console.WriteLine($&quot;Resistance: {resistance}Ω&quot;); // Output: 50Ω
+</code></pre>
+<h3 id="2-power-calculations">2. Power Calculations</h3>
+<pre><code class="lang-csharp">// Power using voltage and current
+double power1 = PowerCalculator.CalculatePower(voltage: 12.0, current: 2.0);
+Console.WriteLine($&quot;Power: {power1}W&quot;); // Output: 24W
+
+// Power using voltage and resistance
+double power2 = PowerCalculator.CalculatePowerFromVoltageResistance(voltage: 12.0, resistance: 6.0);
+Console.WriteLine($&quot;Power: {power2}W&quot;); // Output: 24W
+
+// Power using current and resistance
+double power3 = PowerCalculator.CalculatePowerFromCurrentResistance(current: 2.0, resistance: 6.0);
+Console.WriteLine($&quot;Power: {power3}W&quot;); // Output: 24W
+</code></pre>
+<h3 id="3-led-calculations">3. LED Calculations</h3>
+<pre><code class="lang-csharp">// Calculate current limiting resistor for LED
+var ledResult = LEDCalculator.CalculateCurrentLimitingResistor(
+    supplyVoltage: 5.0,      // 5V supply
+    ledVoltage: 2.1,         // Red LED forward voltage
+    ledCurrent: 0.02         // 20mA desired current
+);
+
+Console.WriteLine($&quot;Required resistor: {ledResult.resistance}Ω&quot;);
+Console.WriteLine($&quot;Power dissipation: {ledResult.powerDissipation}W&quot;);
+Console.WriteLine($&quot;Nearest standard value: {ledResult.nearestStandardResistor}Ω&quot;);
+</code></pre>
+<h3 id="4-resistor-networks">4. Resistor Networks</h3>
+<pre><code class="lang-csharp">// Series resistance calculation
+double[] seriesResistors = { 100, 220, 330, 470 };
+double totalSeries = ResistorCalculator.CalculateSeriesResistance(seriesResistors);
+Console.WriteLine($&quot;Total series resistance: {totalSeries}Ω&quot;); // Output: 1120Ω
+
+// Parallel resistance calculation
+double[] parallelResistors = { 1000, 1000, 1000 };
+double totalParallel = ResistorCalculator.CalculateParallelResistance(parallelResistors);
+Console.WriteLine($&quot;Total parallel resistance: {totalParallel:F2}Ω&quot;); // Output: 333.33Ω
+</code></pre>
+<h3 id="5-unit-conversions">5. Unit Conversions</h3>
+<pre><code class="lang-csharp">// Convert between different units
+double milliAmps = UnitConverter.ConvertCurrent(2.5, &quot;A&quot;, &quot;mA&quot;);
+Console.WriteLine($&quot;2.5A = {milliAmps}mA&quot;); // Output: 2500mA
+
+double kiloOhms = UnitConverter.ConvertResistance(4700, &quot;Ω&quot;, &quot;kΩ&quot;);
+Console.WriteLine($&quot;4700Ω = {kiloOhms}kΩ&quot;); // Output: 4.7kΩ
+
+double milliVolts = UnitConverter.ConvertVoltage(3.3, &quot;V&quot;, &quot;mV&quot;);
+Console.WriteLine($&quot;3.3V = {milliVolts}mV&quot;); // Output: 3300mV
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="hardware-tutorial.md">Hardware Integration Tutorial</a></strong> - Learn to use Arduino and ESP32 tools</li>
+<li><strong><a href="advanced-tutorial.md">Advanced Calculations</a></strong> - AC circuits, filters, and transformers</li>
+<li><strong><a href="communication-tutorial.md">Communication Protocols</a></strong> - I2C, SPI, UART tools</li>
+<li><strong><a href="../api/index.md">API Reference</a></strong> - Complete documentation of all classes and methods</li>
+</ul>
+<h2 id="common-patterns">Common Patterns</h2>
+<h3 id="error-handling">Error Handling</h3>
+<pre><code class="lang-csharp">try
+{
+    double result = OhmsLawCalculator.CalculateVoltage(current: 0, resistance: 100);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($&quot;Invalid input: {ex.Message}&quot;);
+}
+</code></pre>
+<h3 id="batch-calculations">Batch Calculations</h3>
+<pre><code class="lang-csharp">// Calculate multiple LED resistors at once
+var ledConfigs = new[]
+{
+    new { Supply = 5.0, LedV = 2.1, Current = 0.02 },
+    new { Supply = 12.0, LedV = 3.3, Current = 0.03 },
+    new { Supply = 3.3, LedV = 1.8, Current = 0.01 }
+};
+
+foreach (var config in ledConfigs)
+{
+    var result = LEDCalculator.CalculateCurrentLimitingResistor(
+        config.Supply, config.LedV, config.Current);
+    Console.WriteLine($&quot;Supply: {config.Supply}V, LED: {config.LedV}V, &quot; +
+                     $&quot;Current: {config.Current}A → Resistor: {result.resistance}Ω&quot;);
+}
+</code></pre>
+<h2 id="performance-tips">Performance Tips</h2>
+<ol>
+<li><p><strong>Use caching for repeated calculations:</strong></p>
+<pre><code class="lang-csharp">// The library automatically caches common calculations
+var calc1 = OhmsLawCalculator.CalculateVoltage(2.0, 100.0);
+var calc2 = OhmsLawCalculator.CalculateVoltage(2.0, 100.0); // Retrieved from cache
+</code></pre>
+</li>
+<li><p><strong>Use bulk operations for large datasets:</strong></p>
+<pre><code class="lang-csharp">// For processing many values efficiently
+var resistanceValues = new double[] { 100, 220, 330, 470, 680, 1000 };
+var results = BulkOperations.CalculateMultipleOhmsLaw(current: 0.01, resistanceValues);
+</code></pre>
+</li>
+<li><p><strong>Use async methods for long-running calculations:</strong></p>
+<pre><code class="lang-csharp">var result = await AsyncCalculations.CalculateComplexCircuitAsync(circuitData);
+</code></pre>
+</li>
+</ol>
+<p>Ready to dive deeper? Check out our <a href="hardware-tutorial.md">Hardware Integration Tutorial</a> next!</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/tutorials/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

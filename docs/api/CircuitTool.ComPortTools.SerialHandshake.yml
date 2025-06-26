@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ComPortTools.SerialHandshake
+  commentId: T:CircuitTool.ComPortTools.SerialHandshake
+  id: ComPortTools.SerialHandshake
+  parent: CircuitTool
+  children:
+  - CircuitTool.ComPortTools.SerialHandshake.None
+  - CircuitTool.ComPortTools.SerialHandshake.RequestToSend
+  - CircuitTool.ComPortTools.SerialHandshake.RequestToSendXOnXOff
+  - CircuitTool.ComPortTools.SerialHandshake.XOnXOff
+  langs:
+  - csharp
+  - vb
+  name: ComPortTools.SerialHandshake
+  nameWithType: ComPortTools.SerialHandshake
+  fullName: CircuitTool.ComPortTools.SerialHandshake
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SerialHandshake
+    path: src/Hardware/ComPortTools.cs
+    startLine: 104
+  namespace: CircuitTool
+  summary: Serial port handshake options (compatibility for older frameworks)
+  example: []
+  syntax:
+    content: public enum ComPortTools.SerialHandshake
+    content.vb: Public Enum ComPortTools.SerialHandshake
+- uid: CircuitTool.ComPortTools.SerialHandshake.None
+  commentId: F:CircuitTool.ComPortTools.SerialHandshake.None
+  id: None
+  parent: CircuitTool.ComPortTools.SerialHandshake
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ComPortTools.SerialHandshake.None
+  fullName: CircuitTool.ComPortTools.SerialHandshake.None
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Hardware/ComPortTools.cs
+    startLine: 106
+  namespace: CircuitTool
+  syntax:
+    content: None = 0
+    return:
+      type: CircuitTool.ComPortTools.SerialHandshake
+- uid: CircuitTool.ComPortTools.SerialHandshake.XOnXOff
+  commentId: F:CircuitTool.ComPortTools.SerialHandshake.XOnXOff
+  id: XOnXOff
+  parent: CircuitTool.ComPortTools.SerialHandshake
+  langs:
+  - csharp
+  - vb
+  name: XOnXOff
+  nameWithType: ComPortTools.SerialHandshake.XOnXOff
+  fullName: CircuitTool.ComPortTools.SerialHandshake.XOnXOff
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: XOnXOff
+    path: src/Hardware/ComPortTools.cs
+    startLine: 107
+  namespace: CircuitTool
+  syntax:
+    content: XOnXOff = 1
+    return:
+      type: CircuitTool.ComPortTools.SerialHandshake
+- uid: CircuitTool.ComPortTools.SerialHandshake.RequestToSend
+  commentId: F:CircuitTool.ComPortTools.SerialHandshake.RequestToSend
+  id: RequestToSend
+  parent: CircuitTool.ComPortTools.SerialHandshake
+  langs:
+  - csharp
+  - vb
+  name: RequestToSend
+  nameWithType: ComPortTools.SerialHandshake.RequestToSend
+  fullName: CircuitTool.ComPortTools.SerialHandshake.RequestToSend
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RequestToSend
+    path: src/Hardware/ComPortTools.cs
+    startLine: 108
+  namespace: CircuitTool
+  syntax:
+    content: RequestToSend = 2
+    return:
+      type: CircuitTool.ComPortTools.SerialHandshake
+- uid: CircuitTool.ComPortTools.SerialHandshake.RequestToSendXOnXOff
+  commentId: F:CircuitTool.ComPortTools.SerialHandshake.RequestToSendXOnXOff
+  id: RequestToSendXOnXOff
+  parent: CircuitTool.ComPortTools.SerialHandshake
+  langs:
+  - csharp
+  - vb
+  name: RequestToSendXOnXOff
+  nameWithType: ComPortTools.SerialHandshake.RequestToSendXOnXOff
+  fullName: CircuitTool.ComPortTools.SerialHandshake.RequestToSendXOnXOff
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RequestToSendXOnXOff
+    path: src/Hardware/ComPortTools.cs
+    startLine: 109
+  namespace: CircuitTool
+  syntax:
+    content: RequestToSendXOnXOff = 3
+    return:
+      type: CircuitTool.ComPortTools.SerialHandshake
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.ComPortTools.SerialHandshake
+  commentId: T:CircuitTool.ComPortTools.SerialHandshake
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialHandshake
+  nameWithType: ComPortTools.SerialHandshake
+  fullName: CircuitTool.ComPortTools.SerialHandshake
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html

@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Async
+  commentId: N:CircuitTool.Async
+  id: CircuitTool.Async
+  children:
+  - CircuitTool.Async.AsyncCalculations
+  - CircuitTool.Async.FrequencyResponse
+  - CircuitTool.Async.HarmonicAnalysis
+  - CircuitTool.Async.MonteCarloResult
+  - CircuitTool.Async.ThermalResult
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Async
+  nameWithType: CircuitTool.Async
+  fullName: CircuitTool.Async
+  type: Namespace
+references:
+- uid: CircuitTool.Async.AsyncCalculations
+  commentId: T:CircuitTool.Async.AsyncCalculations
+  href: CircuitTool.Async.AsyncCalculations.html
+  name: AsyncCalculations
+  nameWithType: AsyncCalculations
+  fullName: CircuitTool.Async.AsyncCalculations
+- uid: CircuitTool.Async.MonteCarloResult
+  commentId: T:CircuitTool.Async.MonteCarloResult
+  href: CircuitTool.Async.MonteCarloResult.html
+  name: MonteCarloResult
+  nameWithType: MonteCarloResult
+  fullName: CircuitTool.Async.MonteCarloResult
+- uid: CircuitTool.Async.FrequencyResponse
+  commentId: T:CircuitTool.Async.FrequencyResponse
+  parent: CircuitTool.Async
+  href: CircuitTool.Async.FrequencyResponse.html
+  name: FrequencyResponse
+  nameWithType: FrequencyResponse
+  fullName: CircuitTool.Async.FrequencyResponse
+- uid: CircuitTool.Async.HarmonicAnalysis
+  commentId: T:CircuitTool.Async.HarmonicAnalysis
+  href: CircuitTool.Async.HarmonicAnalysis.html
+  name: HarmonicAnalysis
+  nameWithType: HarmonicAnalysis
+  fullName: CircuitTool.Async.HarmonicAnalysis
+- uid: CircuitTool.Async.ThermalResult
+  commentId: T:CircuitTool.Async.ThermalResult
+  href: CircuitTool.Async.ThermalResult.html
+  name: ThermalResult
+  nameWithType: ThermalResult
+  fullName: CircuitTool.Async.ThermalResult
+- uid: CircuitTool.Async
+  commentId: N:CircuitTool.Async
+  href: CircuitTool.html
+  name: CircuitTool.Async
+  nameWithType: CircuitTool.Async
+  fullName: CircuitTool.Async
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html

@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  id: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ComponentCalculator
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  type: Namespace
+references:
+- uid: CircuitTool.Calculators.ComponentCalculator
+  commentId: T:CircuitTool.Calculators.ComponentCalculator
+  href: CircuitTool.Calculators.ComponentCalculator.html
+  name: ComponentCalculator
+  nameWithType: ComponentCalculator
+  fullName: CircuitTool.Calculators.ComponentCalculator

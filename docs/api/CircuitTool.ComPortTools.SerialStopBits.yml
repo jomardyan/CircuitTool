@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ComPortTools.SerialStopBits
+  commentId: T:CircuitTool.ComPortTools.SerialStopBits
+  id: ComPortTools.SerialStopBits
+  parent: CircuitTool
+  children:
+  - CircuitTool.ComPortTools.SerialStopBits.None
+  - CircuitTool.ComPortTools.SerialStopBits.One
+  - CircuitTool.ComPortTools.SerialStopBits.OnePointFive
+  - CircuitTool.ComPortTools.SerialStopBits.Two
+  langs:
+  - csharp
+  - vb
+  name: ComPortTools.SerialStopBits
+  nameWithType: ComPortTools.SerialStopBits
+  fullName: CircuitTool.ComPortTools.SerialStopBits
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SerialStopBits
+    path: src/Hardware/ComPortTools.cs
+    startLine: 93
+  namespace: CircuitTool
+  summary: Serial port stop bits options (compatibility for older frameworks)
+  example: []
+  syntax:
+    content: public enum ComPortTools.SerialStopBits
+    content.vb: Public Enum ComPortTools.SerialStopBits
+- uid: CircuitTool.ComPortTools.SerialStopBits.None
+  commentId: F:CircuitTool.ComPortTools.SerialStopBits.None
+  id: None
+  parent: CircuitTool.ComPortTools.SerialStopBits
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ComPortTools.SerialStopBits.None
+  fullName: CircuitTool.ComPortTools.SerialStopBits.None
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Hardware/ComPortTools.cs
+    startLine: 95
+  namespace: CircuitTool
+  syntax:
+    content: None = 0
+    return:
+      type: CircuitTool.ComPortTools.SerialStopBits
+- uid: CircuitTool.ComPortTools.SerialStopBits.One
+  commentId: F:CircuitTool.ComPortTools.SerialStopBits.One
+  id: One
+  parent: CircuitTool.ComPortTools.SerialStopBits
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: ComPortTools.SerialStopBits.One
+  fullName: CircuitTool.ComPortTools.SerialStopBits.One
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: One
+    path: src/Hardware/ComPortTools.cs
+    startLine: 96
+  namespace: CircuitTool
+  syntax:
+    content: One = 1
+    return:
+      type: CircuitTool.ComPortTools.SerialStopBits
+- uid: CircuitTool.ComPortTools.SerialStopBits.Two
+  commentId: F:CircuitTool.ComPortTools.SerialStopBits.Two
+  id: Two
+  parent: CircuitTool.ComPortTools.SerialStopBits
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: ComPortTools.SerialStopBits.Two
+  fullName: CircuitTool.ComPortTools.SerialStopBits.Two
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Two
+    path: src/Hardware/ComPortTools.cs
+    startLine: 97
+  namespace: CircuitTool
+  syntax:
+    content: Two = 2
+    return:
+      type: CircuitTool.ComPortTools.SerialStopBits
+- uid: CircuitTool.ComPortTools.SerialStopBits.OnePointFive
+  commentId: F:CircuitTool.ComPortTools.SerialStopBits.OnePointFive
+  id: OnePointFive
+  parent: CircuitTool.ComPortTools.SerialStopBits
+  langs:
+  - csharp
+  - vb
+  name: OnePointFive
+  nameWithType: ComPortTools.SerialStopBits.OnePointFive
+  fullName: CircuitTool.ComPortTools.SerialStopBits.OnePointFive
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: OnePointFive
+    path: src/Hardware/ComPortTools.cs
+    startLine: 98
+  namespace: CircuitTool
+  syntax:
+    content: OnePointFive = 3
+    return:
+      type: CircuitTool.ComPortTools.SerialStopBits
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.ComPortTools.SerialStopBits
+  commentId: T:CircuitTool.ComPortTools.SerialStopBits
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialStopBits
+  nameWithType: ComPortTools.SerialStopBits
+  fullName: CircuitTool.ComPortTools.SerialStopBits
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html

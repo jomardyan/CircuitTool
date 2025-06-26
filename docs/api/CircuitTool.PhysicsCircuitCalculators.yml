@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PhysicsCircuitCalculators
+  commentId: T:CircuitTool.PhysicsCircuitCalculators
+  id: PhysicsCircuitCalculators
+  parent: CircuitTool
+  children:
+  - CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor(System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.InductiveReactance(System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.PowerFactor(System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.QFactor(System.Double,System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.RMS(System.Double[])
+  - CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC(System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance(System.Double,System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance(System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: PhysicsCircuitCalculators
+  nameWithType: PhysicsCircuitCalculators
+  fullName: CircuitTool.PhysicsCircuitCalculators
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhysicsCircuitCalculators
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 19
+  namespace: CircuitTool
+  summary: Provides additional calculators for electrical engineering and physics, including impedance, resonance, Q factor, and more.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double xl = PhysicsCircuitCalculators.InductiveReactance(1000, 0.01); // 62.83 Ohms
+
+    double zrlc = PhysicsCircuitCalculators.SeriesRLCImpedance(100, 0.01, 0.000001, 1000); // 100.0 Ohms
+
+    double fres = PhysicsCircuitCalculators.ResonantFrequencyLC(0.01, 0.000001); // 1591.55 Hz
+
+    double q = PhysicsCircuitCalculators.QFactor(1000, 0.01, 100); // 0.628
+
+    double energyL = PhysicsCircuitCalculators.EnergyStoredInductor(0.01, 2); // 0.02 J
+
+    double pf = PhysicsCircuitCalculators.PowerFactor(100, 80); // 0.8
+
+    double rms = PhysicsCircuitCalculators.RMS(new[] {1.0, 2.0, 3.0}); // 2.16</code></pre>
+  example: []
+  syntax:
+    content: public static class PhysicsCircuitCalculators
+    content.vb: Public Module PhysicsCircuitCalculators
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.PhysicsCircuitCalculators.InductiveReactance(System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.InductiveReactance(System.Double,System.Double)
+  id: InductiveReactance(System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: InductiveReactance(double, double)
+  nameWithType: PhysicsCircuitCalculators.InductiveReactance(double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.InductiveReactance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductiveReactance
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 27
+  namespace: CircuitTool
+  summary: Calculates inductive reactance (Xl = 2πfL).
+  example: []
+  syntax:
+    content: public static double InductiveReactance(double frequency, double inductance)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    return:
+      type: System.Double
+      description: Inductive reactance in ohms (Ω).
+    content.vb: Public Shared Function InductiveReactance(frequency As Double, inductance As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.InductiveReactance*
+  nameWithType.vb: PhysicsCircuitCalculators.InductiveReactance(Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.InductiveReactance(Double, Double)
+  name.vb: InductiveReactance(Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance(System.Double,System.Double,System.Double)
+  id: SeriesRLImpedance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: SeriesRLImpedance(double, double, double)
+  nameWithType: PhysicsCircuitCalculators.SeriesRLImpedance(double, double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesRLImpedance
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 41
+  namespace: CircuitTool
+  summary: Calculates impedance of a series RL circuit (Z = sqrt(R^2 + (Xl)^2)).
+  example: []
+  syntax:
+    content: public static double SeriesRLImpedance(double resistance, double inductance, double frequency)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    return:
+      type: System.Double
+      description: Impedance in ohms (Ω).
+    content.vb: Public Shared Function SeriesRLImpedance(resistance As Double, inductance As Double, frequency As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance*
+  nameWithType.vb: PhysicsCircuitCalculators.SeriesRLImpedance(Double, Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance(Double, Double, Double)
+  name.vb: SeriesRLImpedance(Double, Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance(System.Double,System.Double,System.Double)
+  id: SeriesRCImpedance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: SeriesRCImpedance(double, double, double)
+  nameWithType: PhysicsCircuitCalculators.SeriesRCImpedance(double, double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesRCImpedance
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 54
+  namespace: CircuitTool
+  summary: Calculates impedance of a series RC circuit (Z = sqrt(R^2 + (Xc)^2)).
+  example: []
+  syntax:
+    content: public static double SeriesRCImpedance(double resistance, double capacitance, double frequency)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    return:
+      type: System.Double
+      description: Impedance in ohms (Ω).
+    content.vb: Public Shared Function SeriesRCImpedance(resistance As Double, capacitance As Double, frequency As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance*
+  nameWithType.vb: PhysicsCircuitCalculators.SeriesRCImpedance(Double, Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance(Double, Double, Double)
+  name.vb: SeriesRCImpedance(Double, Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance(System.Double,System.Double,System.Double,System.Double)
+  id: SeriesRLCImpedance(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: SeriesRLCImpedance(double, double, double, double)
+  nameWithType: PhysicsCircuitCalculators.SeriesRLCImpedance(double, double, double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesRLCImpedance
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 68
+  namespace: CircuitTool
+  summary: Calculates impedance of a series RLC circuit (Z = sqrt(R^2 + (Xl - Xc)^2)).
+  example: []
+  syntax:
+    content: public static double SeriesRLCImpedance(double resistance, double inductance, double capacitance, double frequency)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    return:
+      type: System.Double
+      description: Impedance in ohms (Ω).
+    content.vb: Public Shared Function SeriesRLCImpedance(resistance As Double, inductance As Double, capacitance As Double, frequency As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance*
+  nameWithType.vb: PhysicsCircuitCalculators.SeriesRLCImpedance(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance(Double, Double, Double, Double)
+  name.vb: SeriesRLCImpedance(Double, Double, Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC(System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC(System.Double,System.Double)
+  id: ResonantFrequencyLC(System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: ResonantFrequencyLC(double, double)
+  nameWithType: PhysicsCircuitCalculators.ResonantFrequencyLC(double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResonantFrequencyLC
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 81
+  namespace: CircuitTool
+  summary: Calculates resonant frequency for an LC circuit (f = 1 / (2π√(LC))).
+  example: []
+  syntax:
+    content: public static double ResonantFrequencyLC(double inductance, double capacitance)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Resonant frequency in hertz (Hz).
+    content.vb: Public Shared Function ResonantFrequencyLC(inductance As Double, capacitance As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC*
+  nameWithType.vb: PhysicsCircuitCalculators.ResonantFrequencyLC(Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC(Double, Double)
+  name.vb: ResonantFrequencyLC(Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.QFactor(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.QFactor(System.Double,System.Double,System.Double)
+  id: QFactor(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: QFactor(double, double, double)
+  nameWithType: PhysicsCircuitCalculators.QFactor(double, double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.QFactor(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QFactor
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 95
+  namespace: CircuitTool
+  summary: Calculates Q factor for a series RLC circuit (Q = 1/R * sqrt(L/C)).
+  example: []
+  syntax:
+    content: public static double QFactor(double resistance, double inductance, double capacitance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Q factor (dimensionless).
+    content.vb: Public Shared Function QFactor(resistance As Double, inductance As Double, capacitance As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.QFactor*
+  nameWithType.vb: PhysicsCircuitCalculators.QFactor(Double, Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.QFactor(Double, Double, Double)
+  name.vb: QFactor(Double, Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor(System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor(System.Double,System.Double)
+  id: EnergyStoredInductor(System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: EnergyStoredInductor(double, double)
+  nameWithType: PhysicsCircuitCalculators.EnergyStoredInductor(double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStoredInductor
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 108
+  namespace: CircuitTool
+  summary: Calculates the energy stored in an inductor (E = 0.5 × L × I²).
+  example: []
+  syntax:
+    content: public static double EnergyStoredInductor(double inductance, double current)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance in henries (H).
+    - id: current
+      type: System.Double
+      description: Current in amperes (A).
+    return:
+      type: System.Double
+      description: Energy in joules (J).
+    content.vb: Public Shared Function EnergyStoredInductor(inductance As Double, current As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor*
+  nameWithType.vb: PhysicsCircuitCalculators.EnergyStoredInductor(Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor(Double, Double)
+  name.vb: EnergyStoredInductor(Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.PowerFactor(System.Double,System.Double)
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.PowerFactor(System.Double,System.Double)
+  id: PowerFactor(System.Double,System.Double)
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor(double, double)
+  nameWithType: PhysicsCircuitCalculators.PowerFactor(double, double)
+  fullName: CircuitTool.PhysicsCircuitCalculators.PowerFactor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 121
+  namespace: CircuitTool
+  summary: Calculates the power factor (PF = real power / apparent power).
+  example: []
+  syntax:
+    content: public static double PowerFactor(double realPower, double apparentPower)
+    parameters:
+    - id: realPower
+      type: System.Double
+      description: Real power in watts (W).
+    - id: apparentPower
+      type: System.Double
+      description: Apparent power in volt-amperes (VA).
+    return:
+      type: System.Double
+      description: Power factor (0 to 1).
+    content.vb: Public Shared Function PowerFactor(realPower As Double, apparentPower As Double) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.PowerFactor*
+  nameWithType.vb: PhysicsCircuitCalculators.PowerFactor(Double, Double)
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.PowerFactor(Double, Double)
+  name.vb: PowerFactor(Double, Double)
+- uid: CircuitTool.PhysicsCircuitCalculators.RMS(System.Double[])
+  commentId: M:CircuitTool.PhysicsCircuitCalculators.RMS(System.Double[])
+  id: RMS(System.Double[])
+  parent: CircuitTool.PhysicsCircuitCalculators
+  langs:
+  - csharp
+  - vb
+  name: RMS(double[])
+  nameWithType: PhysicsCircuitCalculators.RMS(double[])
+  fullName: CircuitTool.PhysicsCircuitCalculators.RMS(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/PhysicsCircuitCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RMS
+    path: src/Calculators/PhysicsCircuitCalculators.cs
+    startLine: 133
+  namespace: CircuitTool
+  summary: Calculates the root mean square (RMS) value of a set of values.
+  example: []
+  syntax:
+    content: public static double RMS(double[] values)
+    parameters:
+    - id: values
+      type: System.Double[]
+      description: Array of values.
+    return:
+      type: System.Double
+      description: RMS value.
+    content.vb: Public Shared Function RMS(values As Double()) As Double
+  overload: CircuitTool.PhysicsCircuitCalculators.RMS*
+  nameWithType.vb: PhysicsCircuitCalculators.RMS(Double())
+  fullName.vb: CircuitTool.PhysicsCircuitCalculators.RMS(Double())
+  name.vb: RMS(Double())
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PhysicsCircuitCalculators.InductiveReactance*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.InductiveReactance
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_InductiveReactance_System_Double_System_Double_
+  name: InductiveReactance
+  nameWithType: PhysicsCircuitCalculators.InductiveReactance
+  fullName: CircuitTool.PhysicsCircuitCalculators.InductiveReactance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_SeriesRLImpedance_System_Double_System_Double_System_Double_
+  name: SeriesRLImpedance
+  nameWithType: PhysicsCircuitCalculators.SeriesRLImpedance
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRLImpedance
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_SeriesRCImpedance_System_Double_System_Double_System_Double_
+  name: SeriesRCImpedance
+  nameWithType: PhysicsCircuitCalculators.SeriesRCImpedance
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRCImpedance
+- uid: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_SeriesRLCImpedance_System_Double_System_Double_System_Double_System_Double_
+  name: SeriesRLCImpedance
+  nameWithType: PhysicsCircuitCalculators.SeriesRLCImpedance
+  fullName: CircuitTool.PhysicsCircuitCalculators.SeriesRLCImpedance
+- uid: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_ResonantFrequencyLC_System_Double_System_Double_
+  name: ResonantFrequencyLC
+  nameWithType: PhysicsCircuitCalculators.ResonantFrequencyLC
+  fullName: CircuitTool.PhysicsCircuitCalculators.ResonantFrequencyLC
+- uid: CircuitTool.PhysicsCircuitCalculators.QFactor*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.QFactor
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_QFactor_System_Double_System_Double_System_Double_
+  name: QFactor
+  nameWithType: PhysicsCircuitCalculators.QFactor
+  fullName: CircuitTool.PhysicsCircuitCalculators.QFactor
+- uid: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_EnergyStoredInductor_System_Double_System_Double_
+  name: EnergyStoredInductor
+  nameWithType: PhysicsCircuitCalculators.EnergyStoredInductor
+  fullName: CircuitTool.PhysicsCircuitCalculators.EnergyStoredInductor
+- uid: CircuitTool.PhysicsCircuitCalculators.PowerFactor*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.PowerFactor
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_PowerFactor_System_Double_System_Double_
+  name: PowerFactor
+  nameWithType: PhysicsCircuitCalculators.PowerFactor
+  fullName: CircuitTool.PhysicsCircuitCalculators.PowerFactor
+- uid: CircuitTool.PhysicsCircuitCalculators.RMS*
+  commentId: Overload:CircuitTool.PhysicsCircuitCalculators.RMS
+  href: CircuitTool.PhysicsCircuitCalculators.html#CircuitTool_PhysicsCircuitCalculators_RMS_System_Double___
+  name: RMS
+  nameWithType: PhysicsCircuitCalculators.RMS
+  fullName: CircuitTool.PhysicsCircuitCalculators.RMS
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )

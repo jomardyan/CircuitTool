@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  commentId: T:CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  id: BalancedThreePhasePower
+  parent: CircuitTool.PowerAnalysis
+  children:
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString
+  langs:
+  - csharp
+  - vb
+  name: BalancedThreePhasePower
+  nameWithType: BalancedThreePhasePower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BalancedThreePhasePower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 358
+  namespace: CircuitTool.PowerAnalysis
+  summary: Balanced three-phase power results
+  example: []
+  syntax:
+    content: public readonly struct BalancedThreePhasePower
+    content.vb: Public Structure BalancedThreePhasePower
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+  id: RealPower
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: RealPower
+  nameWithType: BalancedThreePhasePower.RealPower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RealPower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 360
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double RealPower { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property RealPower As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+  id: ReactivePower
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: ReactivePower
+  nameWithType: BalancedThreePhasePower.ReactivePower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ReactivePower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 361
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double ReactivePower { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ReactivePower As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+  id: ApparentPower
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: ApparentPower
+  nameWithType: BalancedThreePhasePower.ApparentPower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ApparentPower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 362
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double ApparentPower { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ApparentPower As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+  id: LineToLineVoltage
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: LineToLineVoltage
+  nameWithType: BalancedThreePhasePower.LineToLineVoltage
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LineToLineVoltage
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 363
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double LineToLineVoltage { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property LineToLineVoltage As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+  id: PhaseVoltage
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: PhaseVoltage
+  nameWithType: BalancedThreePhasePower.PhaseVoltage
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseVoltage
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 364
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double PhaseVoltage { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property PhaseVoltage As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+  id: LineCurrent
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: LineCurrent
+  nameWithType: BalancedThreePhasePower.LineCurrent
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LineCurrent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 365
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double LineCurrent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property LineCurrent As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+  id: PhaseCurrent
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: PhaseCurrent
+  nameWithType: BalancedThreePhasePower.PhaseCurrent
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseCurrent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 366
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double PhaseCurrent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property PhaseCurrent As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+  id: PowerFactor
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor
+  nameWithType: BalancedThreePhasePower.PowerFactor
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 367
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double PowerFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property PowerFactor As Double
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+  id: IsLeading
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: IsLeading
+  nameWithType: BalancedThreePhasePower.IsLeading
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: IsLeading
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 368
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public bool IsLeading { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsLeading As Boolean
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  commentId: M:CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)'
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: BalancedThreePhasePower(double, double, double, double, double, double, double, double, bool)
+  nameWithType: BalancedThreePhasePower.BalancedThreePhasePower(double, double, double, double, double, double, double, double, bool)
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.BalancedThreePhasePower(double, double, double, double, double, double, double, double, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 370
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public BalancedThreePhasePower(double realPower, double reactivePower, double apparentPower, double lineToLineVoltage, double phaseVoltage, double lineCurrent, double phaseCurrent, double powerFactor, bool isLeading)
+    parameters:
+    - id: realPower
+      type: System.Double
+    - id: reactivePower
+      type: System.Double
+    - id: apparentPower
+      type: System.Double
+    - id: lineToLineVoltage
+      type: System.Double
+    - id: phaseVoltage
+      type: System.Double
+    - id: lineCurrent
+      type: System.Double
+    - id: phaseCurrent
+      type: System.Double
+    - id: powerFactor
+      type: System.Double
+    - id: isLeading
+      type: System.Boolean
+    content.vb: Public Sub New(realPower As Double, reactivePower As Double, apparentPower As Double, lineToLineVoltage As Double, phaseVoltage As Double, lineCurrent As Double, phaseCurrent As Double, powerFactor As Double, isLeading As Boolean)
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor*
+  nameWithType.vb: BalancedThreePhasePower.New(Double, Double, Double, Double, Double, Double, Double, Double, Boolean)
+  fullName.vb: CircuitTool.PowerAnalysis.BalancedThreePhasePower.New(Double, Double, Double, Double, Double, Double, Double, Double, Boolean)
+  name.vb: New(Double, Double, Double, Double, Double, Double, Double, Double, Boolean)
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+  commentId: P:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+  id: PowerFactorType
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: PowerFactorType
+  nameWithType: BalancedThreePhasePower.PowerFactorType
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactorType
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 386
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public string PowerFactorType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PowerFactorType As String
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType*
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString
+  commentId: M:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString
+  id: ToString
+  parent: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: BalancedThreePhasePower.ToString()
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 388
+  namespace: CircuitTool.PowerAnalysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString*
+references:
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  href: CircuitTool.html
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_RealPower
+  name: RealPower
+  nameWithType: BalancedThreePhasePower.RealPower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.RealPower
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_ReactivePower
+  name: ReactivePower
+  nameWithType: BalancedThreePhasePower.ReactivePower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ReactivePower
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_ApparentPower
+  name: ApparentPower
+  nameWithType: BalancedThreePhasePower.ApparentPower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ApparentPower
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_LineToLineVoltage
+  name: LineToLineVoltage
+  nameWithType: BalancedThreePhasePower.LineToLineVoltage
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineToLineVoltage
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_PhaseVoltage
+  name: PhaseVoltage
+  nameWithType: BalancedThreePhasePower.PhaseVoltage
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseVoltage
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_LineCurrent
+  name: LineCurrent
+  nameWithType: BalancedThreePhasePower.LineCurrent
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.LineCurrent
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_PhaseCurrent
+  name: PhaseCurrent
+  nameWithType: BalancedThreePhasePower.PhaseCurrent
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PhaseCurrent
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_PowerFactor
+  name: PowerFactor
+  nameWithType: BalancedThreePhasePower.PowerFactor
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactor
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_IsLeading
+  name: IsLeading
+  nameWithType: BalancedThreePhasePower.IsLeading
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.IsLeading
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.#ctor
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Boolean_
+  name: BalancedThreePhasePower
+  nameWithType: BalancedThreePhasePower.BalancedThreePhasePower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.BalancedThreePhasePower
+  nameWithType.vb: BalancedThreePhasePower.New
+  fullName.vb: CircuitTool.PowerAnalysis.BalancedThreePhasePower.New
+  name.vb: New
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_PowerFactorType
+  name: PowerFactorType
+  nameWithType: BalancedThreePhasePower.PowerFactorType
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.PowerFactorType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString*
+  commentId: Overload:CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html#CircuitTool_PowerAnalysis_BalancedThreePhasePower_ToString
+  name: ToString
+  nameWithType: BalancedThreePhasePower.ToString
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower.ToString

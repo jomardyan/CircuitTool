@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>CircuitTool Examples | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="CircuitTool Examples | CircuitTool Documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="circuittool-examples">CircuitTool Examples</h1>
+
+<p>This section contains practical examples and real-world use cases for CircuitTool.</p>
+<h2 id="quick-examples">Quick Examples</h2>
+<h3 id="led-strip-current-calculation">LED Strip Current Calculation</h3>
+<p>Calculate the total current required for an LED strip:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// LED strip specifications
+int numberOfLEDs = 60;           // 60 LEDs per meter
+double ledCurrent = 0.02;        // 20mA per LED
+double supplyVoltage = 12.0;     // 12V power supply
+double ledVoltage = 3.2;         // Forward voltage per LED
+
+// Calculate total current
+double totalCurrent = numberOfLEDs * ledCurrent;
+Console.WriteLine($&quot;Total LED current: {totalCurrent}A&quot;);
+
+// Calculate power consumption
+double totalPower = supplyVoltage * totalCurrent;
+Console.WriteLine($&quot;Total power consumption: {totalPower}W&quot;);
+
+// Calculate current limiting resistor if needed
+if (supplyVoltage &gt; ledVoltage)
+{
+    var resistorResult = LEDCalculator.CalculateCurrentLimitingResistor(
+        supplyVoltage, ledVoltage, ledCurrent);
+    Console.WriteLine($&quot;Current limiting resistor: {resistorResult.resistance}Ω&quot;);
+}
+</code></pre>
+<h3 id="arduino-project-temperature-sensor">Arduino Project: Temperature Sensor</h3>
+<p>Design a temperature monitoring system with Arduino:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Generate Arduino code for temperature sensor
+string tempSensorCode = ArduinoTools.GenerateAnalogSensorCode(
+    sensorPin: 0,
+    sensorName: &quot;LM35&quot;,
+    conversionFormula: &quot;voltage * 100&quot;, // LM35: 10mV/°C
+    units: &quot;°C&quot;
+);
+
+// Calculate pull-up resistor for I2C temperature sensor
+var i2cConfig = new CommunicationProtocolTools.I2CConfig
+{
+    ClockFrequency = 100000,  // 100kHz
+    SupplyVoltage = 3.3,      // 3.3V system
+    NumberOfDevices = 2       // Temperature sensor + RTC
+};
+
+var (minR, maxR, recommendedR) = CommunicationProtocolTools.CalculateI2CPullUpResistors(i2cConfig);
+Console.WriteLine($&quot;I2C pull-up resistor: {recommendedR}Ω&quot;);
+
+// Generate I2C scanner code
+string scannerCode = CommunicationProtocolTools.GenerateI2CScannerCode();
+</code></pre>
+<h3 id="power-supply-design">Power Supply Design</h3>
+<p>Design a linear power supply:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Input specifications
+double inputVoltage = 15.0;      // 15V input
+double outputVoltage = 5.0;      // 5V output
+double outputCurrent = 2.0;      // 2A output current
+
+// Calculate linear regulator requirements
+var (powerDissipation, efficiency) = PowerSupplyCalculator.CalculateLinearRegulator(
+    inputVoltage, outputVoltage, outputCurrent);
+
+Console.WriteLine($&quot;Power dissipation: {powerDissipation}W&quot;);
+Console.WriteLine($&quot;Efficiency: {efficiency * 100:F1}%&quot;);
+
+// Calculate heat sink requirements
+double thermalResistance = ThermalCalculator.CalculateHeatSinkRequirements(
+    powerDissipation: powerDissipation,
+    ambientTemp: 25.0,
+    maxJunctionTemp: 85.0,
+    junctionToCase: 2.0  // Thermal resistance junction-to-case
+);
+
+Console.WriteLine($&quot;Required heat sink thermal resistance: {thermalResistance:F2} °C/W&quot;);
+
+// Calculate filter capacitor
+double filterCap = PowerSupplyCalculator.CalculateBuckCapacitor(
+    outputCurrent: outputCurrent,
+    switchingFrequency: 100000,  // 100kHz (for ripple estimation)
+    voltageRipple: 0.05          // 50mV ripple
+);
+
+Console.WriteLine($&quot;Output filter capacitor: {filterCap * 1e6:F0}µF&quot;);
+</code></pre>
+<h3 id="motor-control-system">Motor Control System</h3>
+<p>Design a DC motor control circuit:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Motor specifications
+double motorVoltage = 12.0;      // 12V motor
+double motorCurrent = 5.0;       // 5A stall current
+double pwmFrequency = 20000;     // 20kHz PWM
+
+// Calculate H-bridge requirements
+var hBridgeReq = MotorControlCalculator.CalculateHBridgeRequirements(
+    motorVoltage, motorCurrent, pwmFrequency, safetyFactor: 1.5);
+
+Console.WriteLine($&quot;MOSFET voltage rating: {hBridgeReq.mosfetVoltageRating}V&quot;);
+Console.WriteLine($&quot;MOSFET current rating: {hBridgeReq.mosfetCurrentRating}A&quot;);
+Console.WriteLine($&quot;Gate drive requirements: {hBridgeReq.gateDriverRequirements}&quot;);
+
+// Generate Arduino motor control code
+string motorCode = MotorControlCalculator.GenerateArduinoMotorCode(
+    enablePin: 9,
+    directionPin1: 7,
+    directionPin2: 8,
+    pwmFrequency: 1000
+);
+
+// Calculate thermal requirements
+var thermalAnalysis = MotorControlCalculator.CalculateThermalRequirements(
+    motorCurrent, pwmFrequency, ambientTemp: 25.0);
+
+Console.WriteLine($&quot;Heat sink required: {thermalAnalysis.heatSinkRequired}&quot;);
+Console.WriteLine($&quot;Estimated temperature rise: {thermalAnalysis.temperatureRise:F1}°C&quot;);
+</code></pre>
+<h3 id="signal-integrity-analysis">Signal Integrity Analysis</h3>
+<p>Analyze high-speed digital signals:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// PCB trace specifications
+double traceWidth = 0.1;         // 0.1mm trace width
+double traceLength = 50.0;       // 50mm trace length
+double frequency = 100e6;        // 100MHz signal
+
+// Calculate trace impedance
+double impedance = PCBDesignCalculator.CalculateTraceImpedance(
+    traceWidth: traceWidth,
+    traceThickness: 0.035,       // 35µm copper
+    dielectricHeight: 0.2,       // 0.2mm dielectric
+    dielectricConstant: 4.5      // FR4 εr
+);
+
+Console.WriteLine($&quot;Trace impedance: {impedance:F1}Ω&quot;);
+
+// Calculate maximum frequency for clean signals
+double maxFrequency = SignalIntegrityCalculator.CalculateMaximumFrequency(
+    traceLength: traceLength,
+    riseTime: 1e-9              // 1ns rise time
+);
+
+Console.WriteLine($&quot;Maximum recommended frequency: {maxFrequency / 1e6:F1}MHz&quot;);
+
+// EMC considerations
+var emcAnalysis = EMCCalculator.AnalyzeEMCCompliance(
+    frequency: frequency,
+    traceLength: traceLength,
+    current: 0.1               // 100mA switching current
+);
+
+Console.WriteLine($&quot;EMI risk level: {emcAnalysis.riskLevel}&quot;);
+Console.WriteLine($&quot;Recommended mitigation: {emcAnalysis.recommendations}&quot;);
+</code></pre>
+<h3 id="communication-protocol-optimization">Communication Protocol Optimization</h3>
+<p>Optimize I2C, SPI, and UART settings:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// I2C Bus Analysis
+var i2cConfig = new CommunicationProtocolTools.I2CConfig
+{
+    ClockFrequency = 400000,     // Fast mode I2C
+    SupplyVoltage = 3.3,
+    BusCapacitance = 200e-12,    // 200pF bus capacitance
+    NumberOfDevices = 4
+};
+
+// Calculate optimal pull-up resistors
+var (minRes, maxRes, optimalRes) = CommunicationProtocolTools.CalculateI2CPullUpResistors(i2cConfig);
+Console.WriteLine($&quot;Optimal I2C pull-up: {optimalRes}Ω&quot;);
+
+// SPI Frequency Optimization
+var spiConfig = new CommunicationProtocolTools.SPIConfig
+{
+    ClockFrequency = 10000000,   // 10MHz desired
+    CableLength = 0.1,           // 10cm cable
+    Mode = CommunicationProtocolTools.SPIMode.Mode0
+};
+
+double maxSpiFreq = CommunicationProtocolTools.CalculateMaxSPIFrequency(spiConfig);
+Console.WriteLine($&quot;Maximum safe SPI frequency: {maxSpiFreq / 1e6:F1}MHz&quot;);
+
+// UART Error Rate Analysis
+var uartConfig = new CommunicationProtocolTools.UARTConfig
+{
+    BaudRate = 115200,
+    DataBits = 8,
+    StopBits = 1,
+    Parity = &quot;None&quot;
+};
+
+double bitErrorRate = CommunicationProtocolTools.CalculateUARTBitErrorRate(
+    uartConfig, clockAccuracyPpm: 100);
+Console.WriteLine($&quot;Estimated bit error rate: {bitErrorRate:P4}&quot;);
+</code></pre>
+<h3 id="hardware-debugging">Hardware Debugging</h3>
+<p>Diagnose hardware problems automatically:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Hardware configuration
+var hwConfig = new HardwareDebuggingTools.HardwareConfig
+{
+    SupplyVoltage = 3.25,        // Slightly low voltage
+    OperatingFrequency = 16e6,   // 16MHz crystal
+    AmbientTemperature = 35.0,   // Elevated temperature
+    HasCrystal = true,
+    HasBrownoutDetection = true
+};
+
+// Reported symptoms
+var symptoms = new List&lt;string&gt;
+{
+    &quot;Random resets&quot;,
+    &quot;I2C communication errors&quot;,
+    &quot;Timing issues with UART&quot;
+};
+
+// Run comprehensive diagnostics
+var diagnosticResults = HardwareDebuggingTools.PerformDiagnostics(hwConfig, symptoms);
+
+foreach (var result in diagnosticResults)
+{
+    Console.WriteLine($&quot;Test: {result.TestName}&quot;);
+    Console.WriteLine($&quot;Status: {(result.Passed ? &quot;PASS&quot; : &quot;FAIL&quot;)}&quot;);
+    Console.WriteLine($&quot;Details: {result.Details}&quot;);
+    Console.WriteLine($&quot;Recommendation: {result.Recommendation}&quot;);
+    Console.WriteLine();
+}
+
+// Generate troubleshooting guide
+string troubleshootingGuide = HardwareDebuggingTools.GenerateTroubleshootingGuide(symptoms);
+Console.WriteLine(troubleshootingGuide);
+
+// Generate Arduino diagnostic sketch
+string diagnosticSketch = HardwareDebuggingTools.GenerateArduinoDiagnosticSketch(
+    new List&lt;string&gt; { &quot;power&quot;, &quot;timing&quot;, &quot;memory&quot;, &quot;pins&quot; });
+</code></pre>
+<h2 id="complete-project-examples">Complete Project Examples</h2>
+<h3 id="smart-home-sensor-node">Smart Home Sensor Node</h3>
+<p>A complete IoT sensor node project:</p>
+<pre><code class="lang-csharp">// 1. Power budget analysis
+double sensorCurrent = 0.001;    // 1mA sensor
+double mcuActiveCurrent = 0.020; // 20mA MCU active
+double mcuSleepCurrent = 0.0001; // 0.1mA MCU sleep
+double dutyCycle = 0.01;         // 1% duty cycle
+
+double averageCurrent = (mcuActiveCurrent * dutyCycle) + 
+                       (mcuSleepCurrent * (1 - dutyCycle)) + 
+                       sensorCurrent;
+
+// 2. Battery life calculation
+double batteryCapacity = 2000;   // 2000mAh battery
+double batteryLife = batteryCapacity / averageCurrent;
+Console.WriteLine($&quot;Estimated battery life: {batteryLife:F0} hours&quot;);
+
+// 3. Communication setup
+string espCode = ESP32Tools.GenerateWiFiCode(&quot;MyNetwork&quot;, &quot;password&quot;);
+string sensorCode = ArduinoTools.GenerateAnalogSensorCode(0, &quot;BME280&quot;, &quot;readBME280()&quot;, &quot;°C/RH%&quot;);
+
+// 4. Power supply design
+var powerResult = PowerSupplyCalculator.CalculateLinearRegulator(
+    inputVoltage: 3.7,   // Li-ion battery
+    outputVoltage: 3.3,  // ESP32 supply
+    outputCurrent: averageCurrent
+);
+</code></pre>
+<h3 id="rf-circuit-design">RF Circuit Design</h3>
+<p>Design and analyze RF circuits:</p>
+<pre><code class="lang-csharp">// Antenna calculations
+double frequency = 2.4e9;        // 2.4GHz WiFi
+var antennaResult = AntennaCalculator.CalculateDipoleAntenna(frequency);
+
+Console.WriteLine($&quot;Dipole length: {antennaResult.totalLength * 1000:F1}mm&quot;);
+Console.WriteLine($&quot;Each element: {antennaResult.elementLength * 1000:F1}mm&quot;);
+
+// Transmission line analysis
+double characteristicImpedance = 50.0;
+double lineLength = 0.1;         // 10cm
+var transmissionLine = AntennaCalculator.CalculateTransmissionLine(
+    frequency, characteristicImpedance, lineLength);
+
+Console.WriteLine($&quot;Electrical length: {transmissionLine.electricalLength:F1}°&quot;);
+Console.WriteLine($&quot;Propagation delay: {transmissionLine.propagationDelay * 1e9:F2}ns&quot;);
+</code></pre>
+<p>These examples demonstrate the versatility and power of CircuitTool across different domains of electrical engineering and embedded systems development.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/examples/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

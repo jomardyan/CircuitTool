@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>CircuitTool Documentation | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="CircuitTool Documentation | CircuitTool Documentation ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>double power = LEDCalculator.CalculateLEDPower(12.0, 0.02);
+double batteryLife = BeginnerCalculators.BatteryLifeCalculator(2000, arduinoCurrent);
+double batteryHours = ESP32Tools.CalculateBatteryLife(3000, totalCurrent);
+double seriesR = CircuitCalculations.CalculateTotalResistance(resistors, true);
+double parallelR = CircuitCalculations.CalculateTotalResistance(resistors, false);</p>
+<h1 id="circuittool-documentation">CircuitTool Documentation</h1>
+<p>CircuitTool is a comprehensive C# library for electrical engineering and electronics calculations. It provides a wide range of calculators and utilities for circuit analysis, power calculations, unit conversions, and more. This documentation covers the main features, usage examples, and API references for the library.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#core-calculators">Core Calculators</a></li>
+<li><a href="#advanced-calculators">Advanced Calculators</a></li>
+<li><a href="#microcontroller-tools">Microcontroller Tools</a></li>
+<li><a href="#beginner-calculators">Beginner Calculators</a></li>
+<li><a href="#unit-conversion">Unit Conversion</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installation">Installation</h3>
+<p>Install via NuGet:</p>
+<pre><code class="lang-bash">dotnet add package CircuitTool
+</code></pre>
+<p>Or via Package Manager Console:</p>
+<pre><code class="lang-bash">Install-Package CircuitTool
+</code></pre>
+<h3 id="supported-frameworks">Supported Frameworks</h3>
+<ul>
+<li>.NET Framework 2.0+</li>
+<li>.NET 6.0+</li>
+<li>.NET Standard 2.0+</li>
+</ul>
+<hr>
+<h2 id="core-calculators">Core Calculators</h2>
+<ul>
+<li><strong>OhmsLawCalculator</strong>: Voltage, current, resistance calculations</li>
+<li><strong>ResistorCalculator</strong>: Series/parallel resistor networks</li>
+<li><strong>VoltageCalculator</strong>: Voltage drop, divider, and analysis</li>
+<li><strong>PowerCalculator</strong>: Power, energy, and cost calculations</li>
+<li><strong>CapacitorCalculator</strong>: Capacitance, reactance, energy, time constants</li>
+<li><strong>InductorCalculator</strong>: Inductance, reactance, energy, resonance</li>
+<li><strong>TransformerCalculator</strong>: Voltage/current/turns ratios, efficiency</li>
+<li><strong>LEDCalculator</strong>: LED resistor, power, brightness calculations</li>
+</ul>
+<hr>
+<h2 id="advanced-calculators">Advanced Calculators</h2>
+<ul>
+<li><strong>ACCircuitCalculator</strong>: Impedance, phase, RMS/peak/average, Q factor</li>
+<li><strong>FilterCalculator</strong>: RC/RL filter design, cutoff, gain, phase</li>
+<li><strong>ToleranceAnalysis</strong>: Component tolerance, Monte Carlo, worst-case</li>
+<li><strong>PerformanceOptimizations</strong>: SIMD, caching, vectorized calculations</li>
+</ul>
+<hr>
+<h2 id="microcontroller-tools">Microcontroller Tools</h2>
+<ul>
+<li><strong>ArduinoTools</strong>: ADC conversions, servo, current calculations</li>
+<li><strong>ESP32Tools</strong>: ADC, WiFi power, battery life, touch sensor</li>
+</ul>
+<hr>
+<h2 id="beginner-calculators">Beginner Calculators</h2>
+<ul>
+<li><strong>BeginnerCalculators</strong>: Battery life, wire gauge, RC time, dB conversions</li>
+</ul>
+<hr>
+<h2 id="unit-conversion">Unit Conversion</h2>
+<ul>
+<li><strong>UnitConverter</strong>: Amps, volts, ohms, watts, prefixes, etc.</li>
+</ul>
+<hr>
+<h2 id="api-reference">API Reference</h2>
+<p>See XML documentation in source code for detailed API usage and parameters. Example usage:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+double voltage = OhmsLawCalculator.Voltage(2.0, 5.0); // 10V
+</code></pre>
+<hr>
+<h2 id="contributing">Contributing</h2>
+<ul>
+<li>Follow C# coding standards</li>
+<li>Add XML docs for public APIs</li>
+<li>Include unit tests for new features</li>
+</ul>
+<hr>
+<h2 id="license">License</h2>
+<p>MIT License. See LICENSE file for details.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/DOCUMENTATION.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

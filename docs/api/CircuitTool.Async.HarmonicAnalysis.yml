@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Async.HarmonicAnalysis
+  commentId: T:CircuitTool.Async.HarmonicAnalysis
+  id: HarmonicAnalysis
+  parent: CircuitTool.Async
+  children:
+  - CircuitTool.Async.HarmonicAnalysis.#ctor(System.Double,System.Double[],System.Numerics.Complex[])
+  - CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+  - CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+  - CircuitTool.Async.HarmonicAnalysis.Magnitudes
+  - CircuitTool.Async.HarmonicAnalysis.Responses
+  - CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion
+  langs:
+  - csharp
+  - vb
+  name: HarmonicAnalysis
+  nameWithType: HarmonicAnalysis
+  fullName: CircuitTool.Async.HarmonicAnalysis
+  type: Struct
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: HarmonicAnalysis
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 251
+  namespace: CircuitTool.Async
+  summary: Results from harmonic analysis
+  example: []
+  syntax:
+    content: public readonly struct HarmonicAnalysis
+    content.vb: Public Structure HarmonicAnalysis
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Async.HarmonicAnalysis.#ctor(System.Double,System.Double[],System.Numerics.Complex[])
+  commentId: M:CircuitTool.Async.HarmonicAnalysis.#ctor(System.Double,System.Double[],System.Numerics.Complex[])
+  id: '#ctor(System.Double,System.Double[],System.Numerics.Complex[])'
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: HarmonicAnalysis(double, double[], Complex[])
+  nameWithType: HarmonicAnalysis.HarmonicAnalysis(double, double[], Complex[])
+  fullName: CircuitTool.Async.HarmonicAnalysis.HarmonicAnalysis(double, double[], System.Numerics.Complex[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 253
+  namespace: CircuitTool.Async
+  syntax:
+    content: public HarmonicAnalysis(double fundamentalFrequency, double[] harmonicFrequencies, Complex[] responses)
+    parameters:
+    - id: fundamentalFrequency
+      type: System.Double
+    - id: harmonicFrequencies
+      type: System.Double[]
+    - id: responses
+      type: System.Numerics.Complex[]
+    content.vb: Public Sub New(fundamentalFrequency As Double, harmonicFrequencies As Double(), responses As Complex())
+  overload: CircuitTool.Async.HarmonicAnalysis.#ctor*
+  nameWithType.vb: HarmonicAnalysis.New(Double, Double(), Complex())
+  fullName.vb: CircuitTool.Async.HarmonicAnalysis.New(Double, Double(), System.Numerics.Complex())
+  name.vb: New(Double, Double(), Complex())
+- uid: CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+  commentId: P:CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+  id: FundamentalFrequency
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: FundamentalFrequency
+  nameWithType: HarmonicAnalysis.FundamentalFrequency
+  fullName: CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FundamentalFrequency
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 260
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double FundamentalFrequency { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property FundamentalFrequency As Double
+  overload: CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency*
+- uid: CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+  commentId: P:CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+  id: HarmonicFrequencies
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: HarmonicFrequencies
+  nameWithType: HarmonicAnalysis.HarmonicFrequencies
+  fullName: CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: HarmonicFrequencies
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 261
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] HarmonicFrequencies { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property HarmonicFrequencies As Double()
+  overload: CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies*
+- uid: CircuitTool.Async.HarmonicAnalysis.Responses
+  commentId: P:CircuitTool.Async.HarmonicAnalysis.Responses
+  id: Responses
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: Responses
+  nameWithType: HarmonicAnalysis.Responses
+  fullName: CircuitTool.Async.HarmonicAnalysis.Responses
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Responses
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 262
+  namespace: CircuitTool.Async
+  syntax:
+    content: public Complex[] Responses { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex[]
+    content.vb: Public ReadOnly Property Responses As Complex()
+  overload: CircuitTool.Async.HarmonicAnalysis.Responses*
+- uid: CircuitTool.Async.HarmonicAnalysis.Magnitudes
+  commentId: P:CircuitTool.Async.HarmonicAnalysis.Magnitudes
+  id: Magnitudes
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: Magnitudes
+  nameWithType: HarmonicAnalysis.Magnitudes
+  fullName: CircuitTool.Async.HarmonicAnalysis.Magnitudes
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Magnitudes
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 264
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] Magnitudes { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property Magnitudes As Double()
+  overload: CircuitTool.Async.HarmonicAnalysis.Magnitudes*
+- uid: CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion
+  commentId: P:CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion
+  id: TotalHarmonicDistortion
+  parent: CircuitTool.Async.HarmonicAnalysis
+  langs:
+  - csharp
+  - vb
+  name: TotalHarmonicDistortion
+  nameWithType: HarmonicAnalysis.TotalHarmonicDistortion
+  fullName: CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TotalHarmonicDistortion
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 265
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double TotalHarmonicDistortion { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property TotalHarmonicDistortion As Double
+  overload: CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion*
+references:
+- uid: CircuitTool.Async
+  commentId: N:CircuitTool.Async
+  href: CircuitTool.html
+  name: CircuitTool.Async
+  nameWithType: CircuitTool.Async
+  fullName: CircuitTool.Async
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Async.HarmonicAnalysis.#ctor*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.#ctor
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis__ctor_System_Double_System_Double___System_Numerics_Complex___
+  name: HarmonicAnalysis
+  nameWithType: HarmonicAnalysis.HarmonicAnalysis
+  fullName: CircuitTool.Async.HarmonicAnalysis.HarmonicAnalysis
+  nameWithType.vb: HarmonicAnalysis.New
+  fullName.vb: CircuitTool.Async.HarmonicAnalysis.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: System.Numerics.Complex[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  name: Complex[]
+  nameWithType: Complex[]
+  fullName: System.Numerics.Complex[]
+  nameWithType.vb: Complex()
+  fullName.vb: System.Numerics.Complex()
+  name.vb: Complex()
+  spec.csharp:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: (
+  - name: )
+- uid: CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis_FundamentalFrequency
+  name: FundamentalFrequency
+  nameWithType: HarmonicAnalysis.FundamentalFrequency
+  fullName: CircuitTool.Async.HarmonicAnalysis.FundamentalFrequency
+- uid: CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis_HarmonicFrequencies
+  name: HarmonicFrequencies
+  nameWithType: HarmonicAnalysis.HarmonicFrequencies
+  fullName: CircuitTool.Async.HarmonicAnalysis.HarmonicFrequencies
+- uid: CircuitTool.Async.HarmonicAnalysis.Responses*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.Responses
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis_Responses
+  name: Responses
+  nameWithType: HarmonicAnalysis.Responses
+  fullName: CircuitTool.Async.HarmonicAnalysis.Responses
+- uid: CircuitTool.Async.HarmonicAnalysis.Magnitudes*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.Magnitudes
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis_Magnitudes
+  name: Magnitudes
+  nameWithType: HarmonicAnalysis.Magnitudes
+  fullName: CircuitTool.Async.HarmonicAnalysis.Magnitudes
+- uid: CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion*
+  commentId: Overload:CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion
+  href: CircuitTool.Async.HarmonicAnalysis.html#CircuitTool_Async_HarmonicAnalysis_TotalHarmonicDistortion
+  name: TotalHarmonicDistortion
+  nameWithType: HarmonicAnalysis.TotalHarmonicDistortion
+  fullName: CircuitTool.Async.HarmonicAnalysis.TotalHarmonicDistortion

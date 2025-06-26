@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  commentId: T:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  id: HarmonicPowerAnalysis
+  parent: CircuitTool.PowerAnalysis
+  children:
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor(System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex[],System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+  langs:
+  - csharp
+  - vb
+  name: HarmonicPowerAnalysis
+  nameWithType: HarmonicPowerAnalysis
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: HarmonicPowerAnalysis
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 417
+  namespace: CircuitTool.PowerAnalysis
+  summary: Harmonic power analysis results
+  example: []
+  syntax:
+    content: public readonly struct HarmonicPowerAnalysis
+    content.vb: Public Structure HarmonicPowerAnalysis
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+  id: FundamentalPower
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: FundamentalPower
+  nameWithType: HarmonicPowerAnalysis.FundamentalPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FundamentalPower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 419
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public Complex FundamentalPower { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex
+    content.vb: Public ReadOnly Property FundamentalPower As Complex
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+  id: TotalHarmonicPower
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: TotalHarmonicPower
+  nameWithType: HarmonicPowerAnalysis.TotalHarmonicPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TotalHarmonicPower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 420
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public Complex TotalHarmonicPower { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex
+    content.vb: Public ReadOnly Property TotalHarmonicPower As Complex
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+  id: DistortionPower
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: DistortionPower
+  nameWithType: HarmonicPowerAnalysis.DistortionPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DistortionPower
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 421
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public Complex DistortionPower { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex
+    content.vb: Public ReadOnly Property DistortionPower As Complex
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+  id: HarmonicPowers
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: HarmonicPowers
+  nameWithType: HarmonicPowerAnalysis.HarmonicPowers
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: HarmonicPowers
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 422
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public Complex[] HarmonicPowers { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex[]
+    content.vb: Public ReadOnly Property HarmonicPowers As Complex()
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+  id: VoltageTHD
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageTHD
+  nameWithType: HarmonicPowerAnalysis.VoltageTHD
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageTHD
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 423
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageTHD { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageTHD As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+  id: CurrentTHD
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: CurrentTHD
+  nameWithType: HarmonicPowerAnalysis.CurrentTHD
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentTHD
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 424
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double CurrentTHD { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property CurrentTHD As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+  id: TruePowerFactor
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: TruePowerFactor
+  nameWithType: HarmonicPowerAnalysis.TruePowerFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TruePowerFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 425
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double TruePowerFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property TruePowerFactor As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+  id: DisplacementPowerFactor
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: DisplacementPowerFactor
+  nameWithType: HarmonicPowerAnalysis.DisplacementPowerFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DisplacementPowerFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 426
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double DisplacementPowerFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property DisplacementPowerFactor As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+  id: DistortionFactor
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: DistortionFactor
+  nameWithType: HarmonicPowerAnalysis.DistortionFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DistortionFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 427
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double DistortionFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property DistortionFactor As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor(System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex[],System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor(System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex[],System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex,System.Numerics.Complex[],System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: HarmonicPowerAnalysis(Complex, Complex, Complex, Complex[], double, double, double, double, double)
+  nameWithType: HarmonicPowerAnalysis.HarmonicPowerAnalysis(Complex, Complex, Complex, Complex[], double, double, double, double, double)
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowerAnalysis(System.Numerics.Complex, System.Numerics.Complex, System.Numerics.Complex, System.Numerics.Complex[], double, double, double, double, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 429
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public HarmonicPowerAnalysis(Complex fundamentalPower, Complex totalHarmonicPower, Complex distortionPower, Complex[] harmonicPowers, double voltageTHD, double currentTHD, double truePowerFactor, double displacementPowerFactor, double distortionFactor)
+    parameters:
+    - id: fundamentalPower
+      type: System.Numerics.Complex
+    - id: totalHarmonicPower
+      type: System.Numerics.Complex
+    - id: distortionPower
+      type: System.Numerics.Complex
+    - id: harmonicPowers
+      type: System.Numerics.Complex[]
+    - id: voltageTHD
+      type: System.Double
+    - id: currentTHD
+      type: System.Double
+    - id: truePowerFactor
+      type: System.Double
+    - id: displacementPowerFactor
+      type: System.Double
+    - id: distortionFactor
+      type: System.Double
+    content.vb: Public Sub New(fundamentalPower As Complex, totalHarmonicPower As Complex, distortionPower As Complex, harmonicPowers As Complex(), voltageTHD As Double, currentTHD As Double, truePowerFactor As Double, displacementPowerFactor As Double, distortionFactor As Double)
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor*
+  nameWithType.vb: HarmonicPowerAnalysis.New(Complex, Complex, Complex, Complex(), Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.New(System.Numerics.Complex, System.Numerics.Complex, System.Numerics.Complex, System.Numerics.Complex(), Double, Double, Double, Double, Double)
+  name.vb: New(Complex, Complex, Complex, Complex(), Double, Double, Double, Double, Double)
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+  id: VoltageTHDPercent
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: VoltageTHDPercent
+  nameWithType: HarmonicPowerAnalysis.VoltageTHDPercent
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageTHDPercent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 444
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double VoltageTHDPercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoltageTHDPercent As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+  commentId: P:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+  id: CurrentTHDPercent
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: CurrentTHDPercent
+  nameWithType: HarmonicPowerAnalysis.CurrentTHDPercent
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentTHDPercent
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 445
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double CurrentTHDPercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property CurrentTHDPercent As Double
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent*
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString
+  commentId: M:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString
+  id: ToString
+  parent: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: HarmonicPowerAnalysis.ToString()
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 447
+  namespace: CircuitTool.PowerAnalysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString*
+references:
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  href: CircuitTool.html
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_FundamentalPower
+  name: FundamentalPower
+  nameWithType: HarmonicPowerAnalysis.FundamentalPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.FundamentalPower
+- uid: System.Numerics.Complex
+  commentId: T:System.Numerics.Complex
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  name: Complex
+  nameWithType: Complex
+  fullName: System.Numerics.Complex
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_TotalHarmonicPower
+  name: TotalHarmonicPower
+  nameWithType: HarmonicPowerAnalysis.TotalHarmonicPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TotalHarmonicPower
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_DistortionPower
+  name: DistortionPower
+  nameWithType: HarmonicPowerAnalysis.DistortionPower
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionPower
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_HarmonicPowers
+  name: HarmonicPowers
+  nameWithType: HarmonicPowerAnalysis.HarmonicPowers
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowers
+- uid: System.Numerics.Complex[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  name: Complex[]
+  nameWithType: Complex[]
+  fullName: System.Numerics.Complex[]
+  nameWithType.vb: Complex()
+  fullName.vb: System.Numerics.Complex()
+  name.vb: Complex()
+  spec.csharp:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: (
+  - name: )
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_VoltageTHD
+  name: VoltageTHD
+  nameWithType: HarmonicPowerAnalysis.VoltageTHD
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHD
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_CurrentTHD
+  name: CurrentTHD
+  nameWithType: HarmonicPowerAnalysis.CurrentTHD
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHD
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_TruePowerFactor
+  name: TruePowerFactor
+  nameWithType: HarmonicPowerAnalysis.TruePowerFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.TruePowerFactor
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_DisplacementPowerFactor
+  name: DisplacementPowerFactor
+  nameWithType: HarmonicPowerAnalysis.DisplacementPowerFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DisplacementPowerFactor
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_DistortionFactor
+  name: DistortionFactor
+  nameWithType: HarmonicPowerAnalysis.DistortionFactor
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.DistortionFactor
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.#ctor
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis__ctor_System_Numerics_Complex_System_Numerics_Complex_System_Numerics_Complex_System_Numerics_Complex___System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: HarmonicPowerAnalysis
+  nameWithType: HarmonicPowerAnalysis.HarmonicPowerAnalysis
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.HarmonicPowerAnalysis
+  nameWithType.vb: HarmonicPowerAnalysis.New
+  fullName.vb: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.New
+  name.vb: New
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_VoltageTHDPercent
+  name: VoltageTHDPercent
+  nameWithType: HarmonicPowerAnalysis.VoltageTHDPercent
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.VoltageTHDPercent
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_CurrentTHDPercent
+  name: CurrentTHDPercent
+  nameWithType: HarmonicPowerAnalysis.CurrentTHDPercent
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.CurrentTHDPercent
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString*
+  commentId: Overload:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html#CircuitTool_PowerAnalysis_HarmonicPowerAnalysis_ToString
+  name: ToString
+  nameWithType: HarmonicPowerAnalysis.ToString
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

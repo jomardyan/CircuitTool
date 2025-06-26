@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Analysis.DesignCenteringResult
+  commentId: T:CircuitTool.Analysis.DesignCenteringResult
+  id: DesignCenteringResult
+  parent: CircuitTool.Analysis
+  children:
+  - CircuitTool.Analysis.DesignCenteringResult.#ctor(System.Double[],System.Double,System.Int32)
+  - CircuitTool.Analysis.DesignCenteringResult.Iterations
+  - CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+  - CircuitTool.Analysis.DesignCenteringResult.ToString
+  - CircuitTool.Analysis.DesignCenteringResult.Yield
+  - CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+  langs:
+  - csharp
+  - vb
+  name: DesignCenteringResult
+  nameWithType: DesignCenteringResult
+  fullName: CircuitTool.Analysis.DesignCenteringResult
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DesignCenteringResult
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 308
+  namespace: CircuitTool.Analysis
+  summary: Results from design centering optimization
+  example: []
+  syntax:
+    content: public readonly struct DesignCenteringResult
+    content.vb: Public Structure DesignCenteringResult
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+  commentId: P:CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+  id: OptimizedValues
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: OptimizedValues
+  nameWithType: DesignCenteringResult.OptimizedValues
+  fullName: CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: OptimizedValues
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 310
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double[] OptimizedValues { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property OptimizedValues As Double()
+  overload: CircuitTool.Analysis.DesignCenteringResult.OptimizedValues*
+- uid: CircuitTool.Analysis.DesignCenteringResult.Yield
+  commentId: P:CircuitTool.Analysis.DesignCenteringResult.Yield
+  id: Yield
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: Yield
+  nameWithType: DesignCenteringResult.Yield
+  fullName: CircuitTool.Analysis.DesignCenteringResult.Yield
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Yield
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 311
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double Yield { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Yield As Double
+  overload: CircuitTool.Analysis.DesignCenteringResult.Yield*
+- uid: CircuitTool.Analysis.DesignCenteringResult.Iterations
+  commentId: P:CircuitTool.Analysis.DesignCenteringResult.Iterations
+  id: Iterations
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: Iterations
+  nameWithType: DesignCenteringResult.Iterations
+  fullName: CircuitTool.Analysis.DesignCenteringResult.Iterations
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Iterations
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 312
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public int Iterations { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Iterations As Integer
+  overload: CircuitTool.Analysis.DesignCenteringResult.Iterations*
+- uid: CircuitTool.Analysis.DesignCenteringResult.#ctor(System.Double[],System.Double,System.Int32)
+  commentId: M:CircuitTool.Analysis.DesignCenteringResult.#ctor(System.Double[],System.Double,System.Int32)
+  id: '#ctor(System.Double[],System.Double,System.Int32)'
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: DesignCenteringResult(double[], double, int)
+  nameWithType: DesignCenteringResult.DesignCenteringResult(double[], double, int)
+  fullName: CircuitTool.Analysis.DesignCenteringResult.DesignCenteringResult(double[], double, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 314
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public DesignCenteringResult(double[] optimizedValues, double yield, int iterations)
+    parameters:
+    - id: optimizedValues
+      type: System.Double[]
+    - id: yield
+      type: System.Double
+    - id: iterations
+      type: System.Int32
+    content.vb: Public Sub New(optimizedValues As Double(), yield As Double, iterations As Integer)
+  overload: CircuitTool.Analysis.DesignCenteringResult.#ctor*
+  nameWithType.vb: DesignCenteringResult.New(Double(), Double, Integer)
+  fullName.vb: CircuitTool.Analysis.DesignCenteringResult.New(Double(), Double, Integer)
+  name.vb: New(Double(), Double, Integer)
+- uid: CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+  commentId: P:CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+  id: YieldPercent
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: YieldPercent
+  nameWithType: DesignCenteringResult.YieldPercent
+  fullName: CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: YieldPercent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 321
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public double YieldPercent { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property YieldPercent As Double
+  overload: CircuitTool.Analysis.DesignCenteringResult.YieldPercent*
+- uid: CircuitTool.Analysis.DesignCenteringResult.ToString
+  commentId: M:CircuitTool.Analysis.DesignCenteringResult.ToString
+  id: ToString
+  parent: CircuitTool.Analysis.DesignCenteringResult
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DesignCenteringResult.ToString()
+  fullName: CircuitTool.Analysis.DesignCenteringResult.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 323
+  namespace: CircuitTool.Analysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Analysis.DesignCenteringResult.ToString*
+references:
+- uid: CircuitTool.Analysis
+  commentId: N:CircuitTool.Analysis
+  href: CircuitTool.html
+  name: CircuitTool.Analysis
+  nameWithType: CircuitTool.Analysis
+  fullName: CircuitTool.Analysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Analysis.DesignCenteringResult.OptimizedValues*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult_OptimizedValues
+  name: OptimizedValues
+  nameWithType: DesignCenteringResult.OptimizedValues
+  fullName: CircuitTool.Analysis.DesignCenteringResult.OptimizedValues
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: CircuitTool.Analysis.DesignCenteringResult.Yield*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.Yield
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult_Yield
+  name: Yield
+  nameWithType: DesignCenteringResult.Yield
+  fullName: CircuitTool.Analysis.DesignCenteringResult.Yield
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Analysis.DesignCenteringResult.Iterations*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.Iterations
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult_Iterations
+  name: Iterations
+  nameWithType: DesignCenteringResult.Iterations
+  fullName: CircuitTool.Analysis.DesignCenteringResult.Iterations
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Analysis.DesignCenteringResult.#ctor*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.#ctor
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult__ctor_System_Double___System_Double_System_Int32_
+  name: DesignCenteringResult
+  nameWithType: DesignCenteringResult.DesignCenteringResult
+  fullName: CircuitTool.Analysis.DesignCenteringResult.DesignCenteringResult
+  nameWithType.vb: DesignCenteringResult.New
+  fullName.vb: CircuitTool.Analysis.DesignCenteringResult.New
+  name.vb: New
+- uid: CircuitTool.Analysis.DesignCenteringResult.YieldPercent*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult_YieldPercent
+  name: YieldPercent
+  nameWithType: DesignCenteringResult.YieldPercent
+  fullName: CircuitTool.Analysis.DesignCenteringResult.YieldPercent
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Analysis.DesignCenteringResult.ToString*
+  commentId: Overload:CircuitTool.Analysis.DesignCenteringResult.ToString
+  href: CircuitTool.Analysis.DesignCenteringResult.html#CircuitTool_Analysis_DesignCenteringResult_ToString
+  name: ToString
+  nameWithType: DesignCenteringResult.ToString
+  fullName: CircuitTool.Analysis.DesignCenteringResult.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

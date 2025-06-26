@@ -1,0 +1,554 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CircuitBuilder.Inductor
+  commentId: T:CircuitTool.CircuitBuilder.Inductor
+  id: Inductor
+  parent: CircuitTool.CircuitBuilder
+  children:
+  - CircuitTool.CircuitBuilder.Inductor.#ctor(System.String,System.Double,System.String)
+  - CircuitTool.CircuitBuilder.Inductor.GetImpedance(System.Double)
+  - CircuitTool.CircuitBuilder.Inductor.Inductance
+  - CircuitTool.CircuitBuilder.Inductor.ToString
+  langs:
+  - csharp
+  - vb
+  name: Inductor
+  nameWithType: Inductor
+  fullName: CircuitTool.CircuitBuilder.Inductor
+  type: Class
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Inductor
+    path: src/CircuitBuilder.cs
+    startLine: 77
+  namespace: CircuitTool.CircuitBuilder
+  summary: Represents an inductor component
+  example: []
+  syntax:
+    content: 'public class Inductor : Component'
+    content.vb: Public Class Inductor Inherits Component
+  inheritance:
+  - System.Object
+  - CircuitTool.CircuitBuilder.Component
+  inheritedMembers:
+  - CircuitTool.CircuitBuilder.Component.Id
+  - CircuitTool.CircuitBuilder.Component.Name
+  - CircuitTool.CircuitBuilder.Component.Tolerance
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.CircuitBuilder.Inductor.Inductance
+  commentId: P:CircuitTool.CircuitBuilder.Inductor.Inductance
+  id: Inductance
+  parent: CircuitTool.CircuitBuilder.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Inductance
+  nameWithType: Inductor.Inductance
+  fullName: CircuitTool.CircuitBuilder.Inductor.Inductance
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Inductance
+    path: src/CircuitBuilder.cs
+    startLine: 79
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public double Inductance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Inductance As Double
+  overload: CircuitTool.CircuitBuilder.Inductor.Inductance*
+- uid: CircuitTool.CircuitBuilder.Inductor.#ctor(System.String,System.Double,System.String)
+  commentId: M:CircuitTool.CircuitBuilder.Inductor.#ctor(System.String,System.Double,System.String)
+  id: '#ctor(System.String,System.Double,System.String)'
+  parent: CircuitTool.CircuitBuilder.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Inductor(string, double, string)
+  nameWithType: Inductor.Inductor(string, double, string)
+  fullName: CircuitTool.CircuitBuilder.Inductor.Inductor(string, double, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/CircuitBuilder.cs
+    startLine: 81
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public Inductor(string id, double inductance, string name = "")
+    parameters:
+    - id: id
+      type: System.String
+    - id: inductance
+      type: System.Double
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(id As String, inductance As Double, name As String = "")
+  overload: CircuitTool.CircuitBuilder.Inductor.#ctor*
+  nameWithType.vb: Inductor.New(String, Double, String)
+  fullName.vb: CircuitTool.CircuitBuilder.Inductor.New(String, Double, String)
+  name.vb: New(String, Double, String)
+- uid: CircuitTool.CircuitBuilder.Inductor.GetImpedance(System.Double)
+  commentId: M:CircuitTool.CircuitBuilder.Inductor.GetImpedance(System.Double)
+  id: GetImpedance(System.Double)
+  parent: CircuitTool.CircuitBuilder.Inductor
+  langs:
+  - csharp
+  - vb
+  name: GetImpedance(double)
+  nameWithType: Inductor.GetImpedance(double)
+  fullName: CircuitTool.CircuitBuilder.Inductor.GetImpedance(double)
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetImpedance
+    path: src/CircuitBuilder.cs
+    startLine: 88
+  namespace: CircuitTool.CircuitBuilder
+  summary: Gets the impedance of this component at the specified frequency
+  example: []
+  syntax:
+    content: public override Impedance GetImpedance(double frequency)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz
+    return:
+      type: CircuitTool.Impedance
+      description: Complex impedance
+    content.vb: Public Overrides Function GetImpedance(frequency As Double) As Impedance
+  overridden: CircuitTool.CircuitBuilder.Component.GetImpedance(System.Double)
+  overload: CircuitTool.CircuitBuilder.Inductor.GetImpedance*
+  nameWithType.vb: Inductor.GetImpedance(Double)
+  fullName.vb: CircuitTool.CircuitBuilder.Inductor.GetImpedance(Double)
+  name.vb: GetImpedance(Double)
+- uid: CircuitTool.CircuitBuilder.Inductor.ToString
+  commentId: M:CircuitTool.CircuitBuilder.Inductor.ToString
+  id: ToString
+  parent: CircuitTool.CircuitBuilder.Inductor
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Inductor.ToString()
+  fullName: CircuitTool.CircuitBuilder.Inductor.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/CircuitBuilder.cs
+    startLine: 90
+  namespace: CircuitTool.CircuitBuilder
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: CircuitTool.CircuitBuilder.Inductor.ToString*
+references:
+- uid: CircuitTool.CircuitBuilder
+  commentId: N:CircuitTool.CircuitBuilder
+  href: CircuitTool.html
+  name: CircuitTool.CircuitBuilder
+  nameWithType: CircuitTool.CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.CircuitBuilder.Component
+  commentId: T:CircuitTool.CircuitBuilder.Component
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.Component.html
+  name: Component
+  nameWithType: Component
+  fullName: CircuitTool.CircuitBuilder.Component
+- uid: CircuitTool.CircuitBuilder.Component.Id
+  commentId: P:CircuitTool.CircuitBuilder.Component.Id
+  parent: CircuitTool.CircuitBuilder.Component
+  href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_Id
+  name: Id
+  nameWithType: Component.Id
+  fullName: CircuitTool.CircuitBuilder.Component.Id
+- uid: CircuitTool.CircuitBuilder.Component.Name
+  commentId: P:CircuitTool.CircuitBuilder.Component.Name
+  parent: CircuitTool.CircuitBuilder.Component
+  href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_Name
+  name: Name
+  nameWithType: Component.Name
+  fullName: CircuitTool.CircuitBuilder.Component.Name
+- uid: CircuitTool.CircuitBuilder.Component.Tolerance
+  commentId: P:CircuitTool.CircuitBuilder.Component.Tolerance
+  parent: CircuitTool.CircuitBuilder.Component
+  href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_Tolerance
+  name: Tolerance
+  nameWithType: Component.Tolerance
+  fullName: CircuitTool.CircuitBuilder.Component.Tolerance
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CircuitBuilder.Inductor.Inductance*
+  commentId: Overload:CircuitTool.CircuitBuilder.Inductor.Inductance
+  href: CircuitTool.CircuitBuilder.Inductor.html#CircuitTool_CircuitBuilder_Inductor_Inductance
+  name: Inductance
+  nameWithType: Inductor.Inductance
+  fullName: CircuitTool.CircuitBuilder.Inductor.Inductance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CircuitBuilder.Inductor.#ctor*
+  commentId: Overload:CircuitTool.CircuitBuilder.Inductor.#ctor
+  href: CircuitTool.CircuitBuilder.Inductor.html#CircuitTool_CircuitBuilder_Inductor__ctor_System_String_System_Double_System_String_
+  name: Inductor
+  nameWithType: Inductor.Inductor
+  fullName: CircuitTool.CircuitBuilder.Inductor.Inductor
+  nameWithType.vb: Inductor.New
+  fullName.vb: CircuitTool.CircuitBuilder.Inductor.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.CircuitBuilder.Component.GetImpedance(System.Double)
+  commentId: M:CircuitTool.CircuitBuilder.Component.GetImpedance(System.Double)
+  parent: CircuitTool.CircuitBuilder.Component
+  isExternal: true
+  href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_GetImpedance_System_Double_
+  name: GetImpedance(double)
+  nameWithType: Component.GetImpedance(double)
+  fullName: CircuitTool.CircuitBuilder.Component.GetImpedance(double)
+  nameWithType.vb: Component.GetImpedance(Double)
+  fullName.vb: CircuitTool.CircuitBuilder.Component.GetImpedance(Double)
+  name.vb: GetImpedance(Double)
+  spec.csharp:
+  - uid: CircuitTool.CircuitBuilder.Component.GetImpedance(System.Double)
+    name: GetImpedance
+    href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_GetImpedance_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: CircuitTool.CircuitBuilder.Component.GetImpedance(System.Double)
+    name: GetImpedance
+    href: CircuitTool.CircuitBuilder.Component.html#CircuitTool_CircuitBuilder_Component_GetImpedance_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: CircuitTool.CircuitBuilder.Inductor.GetImpedance*
+  commentId: Overload:CircuitTool.CircuitBuilder.Inductor.GetImpedance
+  href: CircuitTool.CircuitBuilder.Inductor.html#CircuitTool_CircuitBuilder_Inductor_GetImpedance_System_Double_
+  name: GetImpedance
+  nameWithType: Inductor.GetImpedance
+  fullName: CircuitTool.CircuitBuilder.Inductor.GetImpedance
+- uid: CircuitTool.Impedance
+  commentId: T:CircuitTool.Impedance
+  parent: CircuitTool
+  href: CircuitTool.Impedance.html
+  name: Impedance
+  nameWithType: Impedance
+  fullName: CircuitTool.Impedance
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.CircuitBuilder.Inductor.ToString*
+  commentId: Overload:CircuitTool.CircuitBuilder.Inductor.ToString
+  href: CircuitTool.CircuitBuilder.Inductor.html#CircuitTool_CircuitBuilder_Inductor_ToString
+  name: ToString
+  nameWithType: Inductor.ToString
+  fullName: CircuitTool.CircuitBuilder.Inductor.ToString

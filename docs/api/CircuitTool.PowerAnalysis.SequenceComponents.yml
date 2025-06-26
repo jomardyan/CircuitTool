@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerAnalysis.SequenceComponents
+  commentId: T:CircuitTool.PowerAnalysis.SequenceComponents
+  id: SequenceComponents
+  parent: CircuitTool.PowerAnalysis
+  children:
+  - CircuitTool.PowerAnalysis.SequenceComponents.#ctor(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage)
+  - CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+  - CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+  - CircuitTool.PowerAnalysis.SequenceComponents.ToString
+  - CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+  - CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+  langs:
+  - csharp
+  - vb
+  name: SequenceComponents
+  nameWithType: SequenceComponents
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents
+  type: Struct
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SequenceComponents
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 395
+  namespace: CircuitTool.PowerAnalysis
+  summary: Sequence components for three-phase analysis
+  example: []
+  syntax:
+    content: public readonly struct SequenceComponents
+    content.vb: Public Structure SequenceComponents
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+  commentId: P:CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+  id: PositiveSequence
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: PositiveSequence
+  nameWithType: SequenceComponents.PositiveSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PositiveSequence
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 397
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public ACVoltage PositiveSequence { get; }
+    parameters: []
+    return:
+      type: CircuitTool.ACVoltage
+    content.vb: Public ReadOnly Property PositiveSequence As ACVoltage
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence*
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+  commentId: P:CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+  id: NegativeSequence
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: NegativeSequence
+  nameWithType: SequenceComponents.NegativeSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NegativeSequence
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 398
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public ACVoltage NegativeSequence { get; }
+    parameters: []
+    return:
+      type: CircuitTool.ACVoltage
+    content.vb: Public ReadOnly Property NegativeSequence As ACVoltage
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence*
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+  commentId: P:CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+  id: ZeroSequence
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: ZeroSequence
+  nameWithType: SequenceComponents.ZeroSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ZeroSequence
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 399
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public ACVoltage ZeroSequence { get; }
+    parameters: []
+    return:
+      type: CircuitTool.ACVoltage
+    content.vb: Public ReadOnly Property ZeroSequence As ACVoltage
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence*
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.#ctor(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage)
+  commentId: M:CircuitTool.PowerAnalysis.SequenceComponents.#ctor(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage)
+  id: '#ctor(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage)'
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: SequenceComponents(ACVoltage, ACVoltage, ACVoltage)
+  nameWithType: SequenceComponents.SequenceComponents(ACVoltage, ACVoltage, ACVoltage)
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.SequenceComponents(CircuitTool.ACVoltage, CircuitTool.ACVoltage, CircuitTool.ACVoltage)
+  type: Constructor
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 401
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public SequenceComponents(ACVoltage positiveSequence, ACVoltage negativeSequence, ACVoltage zeroSequence)
+    parameters:
+    - id: positiveSequence
+      type: CircuitTool.ACVoltage
+    - id: negativeSequence
+      type: CircuitTool.ACVoltage
+    - id: zeroSequence
+      type: CircuitTool.ACVoltage
+    content.vb: Public Sub New(positiveSequence As ACVoltage, negativeSequence As ACVoltage, zeroSequence As ACVoltage)
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.#ctor*
+  nameWithType.vb: SequenceComponents.New(ACVoltage, ACVoltage, ACVoltage)
+  fullName.vb: CircuitTool.PowerAnalysis.SequenceComponents.New(CircuitTool.ACVoltage, CircuitTool.ACVoltage, CircuitTool.ACVoltage)
+  name.vb: New(ACVoltage, ACVoltage, ACVoltage)
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+  commentId: P:CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+  id: UnbalanceFactor
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: UnbalanceFactor
+  nameWithType: SequenceComponents.UnbalanceFactor
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+  type: Property
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UnbalanceFactor
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 408
+  namespace: CircuitTool.PowerAnalysis
+  syntax:
+    content: public double UnbalanceFactor { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property UnbalanceFactor As Double
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor*
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.ToString
+  commentId: M:CircuitTool.PowerAnalysis.SequenceComponents.ToString
+  id: ToString
+  parent: CircuitTool.PowerAnalysis.SequenceComponents
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SequenceComponents.ToString()
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Analysis/AdvancedPowerAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Analysis/AdvancedPowerAnalysis.cs
+    startLine: 410
+  namespace: CircuitTool.PowerAnalysis
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.PowerAnalysis.SequenceComponents.ToString*
+references:
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  href: CircuitTool.html
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents_PositiveSequence
+  name: PositiveSequence
+  nameWithType: SequenceComponents.PositiveSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.PositiveSequence
+- uid: CircuitTool.ACVoltage
+  commentId: T:CircuitTool.ACVoltage
+  parent: CircuitTool
+  href: CircuitTool.ACVoltage.html
+  name: ACVoltage
+  nameWithType: ACVoltage
+  fullName: CircuitTool.ACVoltage
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents_NegativeSequence
+  name: NegativeSequence
+  nameWithType: SequenceComponents.NegativeSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.NegativeSequence
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents_ZeroSequence
+  name: ZeroSequence
+  nameWithType: SequenceComponents.ZeroSequence
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.ZeroSequence
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.#ctor*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.#ctor
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents__ctor_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACVoltage_
+  name: SequenceComponents
+  nameWithType: SequenceComponents.SequenceComponents
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.SequenceComponents
+  nameWithType.vb: SequenceComponents.New
+  fullName.vb: CircuitTool.PowerAnalysis.SequenceComponents.New
+  name.vb: New
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents_UnbalanceFactor
+  name: UnbalanceFactor
+  nameWithType: SequenceComponents.UnbalanceFactor
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.UnbalanceFactor
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.PowerAnalysis.SequenceComponents.ToString*
+  commentId: Overload:CircuitTool.PowerAnalysis.SequenceComponents.ToString
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html#CircuitTool_PowerAnalysis_SequenceComponents_ToString
+  name: ToString
+  nameWithType: SequenceComponents.ToString
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

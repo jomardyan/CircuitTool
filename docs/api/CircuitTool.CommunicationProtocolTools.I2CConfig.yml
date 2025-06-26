@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.I2CConfig
+  id: CommunicationProtocolTools.I2CConfig
+  parent: CircuitTool
+  children:
+  - CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+  - CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+  - CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  - CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+  - CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  langs:
+  - csharp
+  - vb
+  name: CommunicationProtocolTools.I2CConfig
+  nameWithType: CommunicationProtocolTools.I2CConfig
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: I2CConfig
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  summary: I2C communication parameters
+  example: []
+  syntax:
+    content: public class CommunicationProtocolTools.I2CConfig
+    content.vb: Public Class CommunicationProtocolTools.I2CConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+  commentId: P:CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+  id: ClockFrequency
+  parent: CircuitTool.CommunicationProtocolTools.I2CConfig
+  langs:
+  - csharp
+  - vb
+  name: ClockFrequency
+  nameWithType: CommunicationProtocolTools.I2CConfig.ClockFrequency
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ClockFrequency
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: public int ClockFrequency { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ClockFrequency As Integer
+  overload: CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency*
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+  commentId: P:CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+  id: PullUpResistance
+  parent: CircuitTool.CommunicationProtocolTools.I2CConfig
+  langs:
+  - csharp
+  - vb
+  name: PullUpResistance
+  nameWithType: CommunicationProtocolTools.I2CConfig.PullUpResistance
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PullUpResistance
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: public double PullUpResistance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property PullUpResistance As Double
+  overload: CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance*
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  commentId: P:CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  id: SupplyVoltage
+  parent: CircuitTool.CommunicationProtocolTools.I2CConfig
+  langs:
+  - csharp
+  - vb
+  name: SupplyVoltage
+  nameWithType: CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SupplyVoltage
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 20
+  namespace: CircuitTool
+  syntax:
+    content: public double SupplyVoltage { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property SupplyVoltage As Double
+  overload: CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage*
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+  commentId: P:CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+  id: BusCapacitance
+  parent: CircuitTool.CommunicationProtocolTools.I2CConfig
+  langs:
+  - csharp
+  - vb
+  name: BusCapacitance
+  nameWithType: CommunicationProtocolTools.I2CConfig.BusCapacitance
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BusCapacitance
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 21
+  namespace: CircuitTool
+  syntax:
+    content: public double BusCapacitance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property BusCapacitance As Double
+  overload: CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance*
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  commentId: P:CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  id: NumberOfDevices
+  parent: CircuitTool.CommunicationProtocolTools.I2CConfig
+  langs:
+  - csharp
+  - vb
+  name: NumberOfDevices
+  nameWithType: CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NumberOfDevices
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 22
+  namespace: CircuitTool
+  syntax:
+    content: public int NumberOfDevices { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumberOfDevices As Integer
+  overload: CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+  href: CircuitTool.CommunicationProtocolTools.I2CConfig.html#CircuitTool_CommunicationProtocolTools_I2CConfig_ClockFrequency
+  name: ClockFrequency
+  nameWithType: CommunicationProtocolTools.I2CConfig.ClockFrequency
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.ClockFrequency
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+  href: CircuitTool.CommunicationProtocolTools.I2CConfig.html#CircuitTool_CommunicationProtocolTools_I2CConfig_PullUpResistance
+  name: PullUpResistance
+  nameWithType: CommunicationProtocolTools.I2CConfig.PullUpResistance
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.PullUpResistance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  href: CircuitTool.CommunicationProtocolTools.I2CConfig.html#CircuitTool_CommunicationProtocolTools_I2CConfig_SupplyVoltage
+  name: SupplyVoltage
+  nameWithType: CommunicationProtocolTools.I2CConfig.SupplyVoltage
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.SupplyVoltage
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+  href: CircuitTool.CommunicationProtocolTools.I2CConfig.html#CircuitTool_CommunicationProtocolTools_I2CConfig_BusCapacitance
+  name: BusCapacitance
+  nameWithType: CommunicationProtocolTools.I2CConfig.BusCapacitance
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.BusCapacitance
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  href: CircuitTool.CommunicationProtocolTools.I2CConfig.html#CircuitTool_CommunicationProtocolTools_I2CConfig_NumberOfDevices
+  name: NumberOfDevices
+  nameWithType: CommunicationProtocolTools.I2CConfig.NumberOfDevices
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig.NumberOfDevices

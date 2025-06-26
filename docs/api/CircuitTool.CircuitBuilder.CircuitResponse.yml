@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CircuitBuilder.CircuitResponse
+  commentId: T:CircuitTool.CircuitBuilder.CircuitResponse
+  id: CircuitResponse
+  parent: CircuitTool.CircuitBuilder
+  children:
+  - CircuitTool.CircuitBuilder.CircuitResponse.#ctor(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.Impedance,CircuitTool.CircuitBuilder.ComplexPower,System.Double)
+  - CircuitTool.CircuitBuilder.CircuitResponse.Current
+  - CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+  - CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+  - CircuitTool.CircuitBuilder.CircuitResponse.Power
+  - CircuitTool.CircuitBuilder.CircuitResponse.ToString
+  - CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+  langs:
+  - csharp
+  - vb
+  name: CircuitResponse
+  nameWithType: CircuitResponse
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse
+  type: Struct
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CircuitResponse
+    path: src/CircuitBuilder.cs
+    startLine: 388
+  namespace: CircuitTool.CircuitBuilder
+  summary: Represents the response of a circuit to an input signal
+  example: []
+  syntax:
+    content: public readonly struct CircuitResponse
+    content.vb: Public Structure CircuitResponse
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+  commentId: P:CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+  id: InputVoltage
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: InputVoltage
+  nameWithType: CircuitResponse.InputVoltage
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InputVoltage
+    path: src/CircuitBuilder.cs
+    startLine: 390
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public ACVoltage InputVoltage { get; }
+    parameters: []
+    return:
+      type: CircuitTool.ACVoltage
+    content.vb: Public ReadOnly Property InputVoltage As ACVoltage
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage*
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Current
+  commentId: P:CircuitTool.CircuitBuilder.CircuitResponse.Current
+  id: Current
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: CircuitResponse.Current
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Current
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Current
+    path: src/CircuitBuilder.cs
+    startLine: 391
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public ACCurrent Current { get; }
+    parameters: []
+    return:
+      type: CircuitTool.ACCurrent
+    content.vb: Public ReadOnly Property Current As ACCurrent
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.Current*
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+  commentId: P:CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+  id: TotalImpedance
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: TotalImpedance
+  nameWithType: CircuitResponse.TotalImpedance
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TotalImpedance
+    path: src/CircuitBuilder.cs
+    startLine: 392
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public Impedance TotalImpedance { get; }
+    parameters: []
+    return:
+      type: CircuitTool.Impedance
+    content.vb: Public ReadOnly Property TotalImpedance As Impedance
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance*
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Power
+  commentId: P:CircuitTool.CircuitBuilder.CircuitResponse.Power
+  id: Power
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: Power
+  nameWithType: CircuitResponse.Power
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Power
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Power
+    path: src/CircuitBuilder.cs
+    startLine: 393
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public ComplexPower Power { get; }
+    parameters: []
+    return:
+      type: CircuitTool.CircuitBuilder.ComplexPower
+    content.vb: Public ReadOnly Property Power As ComplexPower
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.Power*
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+  commentId: P:CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+  id: Frequency
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: CircuitResponse.Frequency
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+  type: Property
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Frequency
+    path: src/CircuitBuilder.cs
+    startLine: 394
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public double Frequency { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Frequency As Double
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.Frequency*
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.#ctor(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.Impedance,CircuitTool.CircuitBuilder.ComplexPower,System.Double)
+  commentId: M:CircuitTool.CircuitBuilder.CircuitResponse.#ctor(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.Impedance,CircuitTool.CircuitBuilder.ComplexPower,System.Double)
+  id: '#ctor(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.Impedance,CircuitTool.CircuitBuilder.ComplexPower,System.Double)'
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: CircuitResponse(ACVoltage, ACCurrent, Impedance, ComplexPower, double)
+  nameWithType: CircuitResponse.CircuitResponse(ACVoltage, ACCurrent, Impedance, ComplexPower, double)
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.CircuitResponse(CircuitTool.ACVoltage, CircuitTool.ACCurrent, CircuitTool.Impedance, CircuitTool.CircuitBuilder.ComplexPower, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/CircuitBuilder.cs
+    startLine: 396
+  namespace: CircuitTool.CircuitBuilder
+  syntax:
+    content: public CircuitResponse(ACVoltage inputVoltage, ACCurrent current, Impedance totalImpedance, ComplexPower power, double frequency)
+    parameters:
+    - id: inputVoltage
+      type: CircuitTool.ACVoltage
+    - id: current
+      type: CircuitTool.ACCurrent
+    - id: totalImpedance
+      type: CircuitTool.Impedance
+    - id: power
+      type: CircuitTool.CircuitBuilder.ComplexPower
+    - id: frequency
+      type: System.Double
+    content.vb: Public Sub New(inputVoltage As ACVoltage, current As ACCurrent, totalImpedance As Impedance, power As ComplexPower, frequency As Double)
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.#ctor*
+  nameWithType.vb: CircuitResponse.New(ACVoltage, ACCurrent, Impedance, ComplexPower, Double)
+  fullName.vb: CircuitTool.CircuitBuilder.CircuitResponse.New(CircuitTool.ACVoltage, CircuitTool.ACCurrent, CircuitTool.Impedance, CircuitTool.CircuitBuilder.ComplexPower, Double)
+  name.vb: New(ACVoltage, ACCurrent, Impedance, ComplexPower, Double)
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.ToString
+  commentId: M:CircuitTool.CircuitBuilder.CircuitResponse.ToString
+  id: ToString
+  parent: CircuitTool.CircuitBuilder.CircuitResponse
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CircuitResponse.ToString()
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/CircuitBuilder.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/CircuitBuilder.cs
+    startLine: 406
+  namespace: CircuitTool.CircuitBuilder
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.CircuitBuilder.CircuitResponse.ToString*
+references:
+- uid: CircuitTool.CircuitBuilder
+  commentId: N:CircuitTool.CircuitBuilder
+  href: CircuitTool.html
+  name: CircuitTool.CircuitBuilder
+  nameWithType: CircuitTool.CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_InputVoltage
+  name: InputVoltage
+  nameWithType: CircuitResponse.InputVoltage
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.InputVoltage
+- uid: CircuitTool.ACVoltage
+  commentId: T:CircuitTool.ACVoltage
+  parent: CircuitTool
+  href: CircuitTool.ACVoltage.html
+  name: ACVoltage
+  nameWithType: ACVoltage
+  fullName: CircuitTool.ACVoltage
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Current*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.Current
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_Current
+  name: Current
+  nameWithType: CircuitResponse.Current
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Current
+- uid: CircuitTool.ACCurrent
+  commentId: T:CircuitTool.ACCurrent
+  parent: CircuitTool
+  href: CircuitTool.ACCurrent.html
+  name: ACCurrent
+  nameWithType: ACCurrent
+  fullName: CircuitTool.ACCurrent
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_TotalImpedance
+  name: TotalImpedance
+  nameWithType: CircuitResponse.TotalImpedance
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.TotalImpedance
+- uid: CircuitTool.Impedance
+  commentId: T:CircuitTool.Impedance
+  parent: CircuitTool
+  href: CircuitTool.Impedance.html
+  name: Impedance
+  nameWithType: Impedance
+  fullName: CircuitTool.Impedance
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Power*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.Power
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_Power
+  name: Power
+  nameWithType: CircuitResponse.Power
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Power
+- uid: CircuitTool.CircuitBuilder.ComplexPower
+  commentId: T:CircuitTool.CircuitBuilder.ComplexPower
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.ComplexPower.html
+  name: ComplexPower
+  nameWithType: ComplexPower
+  fullName: CircuitTool.CircuitBuilder.ComplexPower
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.Frequency*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_Frequency
+  name: Frequency
+  nameWithType: CircuitResponse.Frequency
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.Frequency
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.#ctor*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.#ctor
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse__ctor_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_Impedance_CircuitTool_CircuitBuilder_ComplexPower_System_Double_
+  name: CircuitResponse
+  nameWithType: CircuitResponse.CircuitResponse
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.CircuitResponse
+  nameWithType.vb: CircuitResponse.New
+  fullName.vb: CircuitTool.CircuitBuilder.CircuitResponse.New
+  name.vb: New
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.CircuitBuilder.CircuitResponse.ToString*
+  commentId: Overload:CircuitTool.CircuitBuilder.CircuitResponse.ToString
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html#CircuitTool_CircuitBuilder_CircuitResponse_ToString
+  name: ToString
+  nameWithType: CircuitResponse.ToString
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

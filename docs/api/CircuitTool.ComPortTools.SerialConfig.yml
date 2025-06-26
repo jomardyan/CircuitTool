@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ComPortTools.SerialConfig
+  commentId: T:CircuitTool.ComPortTools.SerialConfig
+  id: ComPortTools.SerialConfig
+  parent: CircuitTool
+  children:
+  - CircuitTool.ComPortTools.SerialConfig.BaudRate
+  - CircuitTool.ComPortTools.SerialConfig.DataBits
+  - CircuitTool.ComPortTools.SerialConfig.Handshake
+  - CircuitTool.ComPortTools.SerialConfig.Parity
+  - CircuitTool.ComPortTools.SerialConfig.PortName
+  - CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+  - CircuitTool.ComPortTools.SerialConfig.StopBits
+  - CircuitTool.ComPortTools.SerialConfig.WriteTimeout
+  langs:
+  - csharp
+  - vb
+  name: ComPortTools.SerialConfig
+  nameWithType: ComPortTools.SerialConfig
+  fullName: CircuitTool.ComPortTools.SerialConfig
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SerialConfig
+    path: src/Hardware/ComPortTools.cs
+    startLine: 116
+  namespace: CircuitTool
+  summary: Serial port configuration
+  example: []
+  syntax:
+    content: public class ComPortTools.SerialConfig
+    content.vb: Public Class ComPortTools.SerialConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.ComPortTools.SerialConfig.PortName
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.PortName
+  id: PortName
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: PortName
+  nameWithType: ComPortTools.SerialConfig.PortName
+  fullName: CircuitTool.ComPortTools.SerialConfig.PortName
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PortName
+    path: src/Hardware/ComPortTools.cs
+    startLine: 118
+  namespace: CircuitTool
+  syntax:
+    content: public string PortName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PortName As String
+  overload: CircuitTool.ComPortTools.SerialConfig.PortName*
+- uid: CircuitTool.ComPortTools.SerialConfig.BaudRate
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.BaudRate
+  id: BaudRate
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: BaudRate
+  nameWithType: ComPortTools.SerialConfig.BaudRate
+  fullName: CircuitTool.ComPortTools.SerialConfig.BaudRate
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BaudRate
+    path: src/Hardware/ComPortTools.cs
+    startLine: 119
+  namespace: CircuitTool
+  syntax:
+    content: public int BaudRate { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BaudRate As Integer
+  overload: CircuitTool.ComPortTools.SerialConfig.BaudRate*
+- uid: CircuitTool.ComPortTools.SerialConfig.Parity
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.Parity
+  id: Parity
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: Parity
+  nameWithType: ComPortTools.SerialConfig.Parity
+  fullName: CircuitTool.ComPortTools.SerialConfig.Parity
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Parity
+    path: src/Hardware/ComPortTools.cs
+    startLine: 120
+  namespace: CircuitTool
+  syntax:
+    content: public ComPortTools.SerialParity Parity { get; set; }
+    parameters: []
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+    content.vb: Public Property Parity As ComPortTools.SerialParity
+  overload: CircuitTool.ComPortTools.SerialConfig.Parity*
+- uid: CircuitTool.ComPortTools.SerialConfig.DataBits
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.DataBits
+  id: DataBits
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: DataBits
+  nameWithType: ComPortTools.SerialConfig.DataBits
+  fullName: CircuitTool.ComPortTools.SerialConfig.DataBits
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DataBits
+    path: src/Hardware/ComPortTools.cs
+    startLine: 121
+  namespace: CircuitTool
+  syntax:
+    content: public int DataBits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataBits As Integer
+  overload: CircuitTool.ComPortTools.SerialConfig.DataBits*
+- uid: CircuitTool.ComPortTools.SerialConfig.StopBits
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.StopBits
+  id: StopBits
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: StopBits
+  nameWithType: ComPortTools.SerialConfig.StopBits
+  fullName: CircuitTool.ComPortTools.SerialConfig.StopBits
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StopBits
+    path: src/Hardware/ComPortTools.cs
+    startLine: 122
+  namespace: CircuitTool
+  syntax:
+    content: public ComPortTools.SerialStopBits StopBits { get; set; }
+    parameters: []
+    return:
+      type: CircuitTool.ComPortTools.SerialStopBits
+    content.vb: Public Property StopBits As ComPortTools.SerialStopBits
+  overload: CircuitTool.ComPortTools.SerialConfig.StopBits*
+- uid: CircuitTool.ComPortTools.SerialConfig.Handshake
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.Handshake
+  id: Handshake
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: Handshake
+  nameWithType: ComPortTools.SerialConfig.Handshake
+  fullName: CircuitTool.ComPortTools.SerialConfig.Handshake
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Handshake
+    path: src/Hardware/ComPortTools.cs
+    startLine: 123
+  namespace: CircuitTool
+  syntax:
+    content: public ComPortTools.SerialHandshake Handshake { get; set; }
+    parameters: []
+    return:
+      type: CircuitTool.ComPortTools.SerialHandshake
+    content.vb: Public Property Handshake As ComPortTools.SerialHandshake
+  overload: CircuitTool.ComPortTools.SerialConfig.Handshake*
+- uid: CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+  id: ReadTimeout
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: ReadTimeout
+  nameWithType: ComPortTools.SerialConfig.ReadTimeout
+  fullName: CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ReadTimeout
+    path: src/Hardware/ComPortTools.cs
+    startLine: 124
+  namespace: CircuitTool
+  syntax:
+    content: public int ReadTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReadTimeout As Integer
+  overload: CircuitTool.ComPortTools.SerialConfig.ReadTimeout*
+- uid: CircuitTool.ComPortTools.SerialConfig.WriteTimeout
+  commentId: P:CircuitTool.ComPortTools.SerialConfig.WriteTimeout
+  id: WriteTimeout
+  parent: CircuitTool.ComPortTools.SerialConfig
+  langs:
+  - csharp
+  - vb
+  name: WriteTimeout
+  nameWithType: ComPortTools.SerialConfig.WriteTimeout
+  fullName: CircuitTool.ComPortTools.SerialConfig.WriteTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WriteTimeout
+    path: src/Hardware/ComPortTools.cs
+    startLine: 125
+  namespace: CircuitTool
+  syntax:
+    content: public int WriteTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WriteTimeout As Integer
+  overload: CircuitTool.ComPortTools.SerialConfig.WriteTimeout*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.ComPortTools.SerialConfig.PortName*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.PortName
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_PortName
+  name: PortName
+  nameWithType: ComPortTools.SerialConfig.PortName
+  fullName: CircuitTool.ComPortTools.SerialConfig.PortName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.ComPortTools.SerialConfig.BaudRate*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.BaudRate
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_BaudRate
+  name: BaudRate
+  nameWithType: ComPortTools.SerialConfig.BaudRate
+  fullName: CircuitTool.ComPortTools.SerialConfig.BaudRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.ComPortTools.SerialConfig.Parity*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.Parity
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_Parity
+  name: Parity
+  nameWithType: ComPortTools.SerialConfig.Parity
+  fullName: CircuitTool.ComPortTools.SerialConfig.Parity
+- uid: CircuitTool.ComPortTools.SerialParity
+  commentId: T:CircuitTool.ComPortTools.SerialParity
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialParity
+  nameWithType: ComPortTools.SerialParity
+  fullName: CircuitTool.ComPortTools.SerialParity
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
+- uid: CircuitTool.ComPortTools.SerialConfig.DataBits*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.DataBits
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_DataBits
+  name: DataBits
+  nameWithType: ComPortTools.SerialConfig.DataBits
+  fullName: CircuitTool.ComPortTools.SerialConfig.DataBits
+- uid: CircuitTool.ComPortTools.SerialConfig.StopBits*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.StopBits
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_StopBits
+  name: StopBits
+  nameWithType: ComPortTools.SerialConfig.StopBits
+  fullName: CircuitTool.ComPortTools.SerialConfig.StopBits
+- uid: CircuitTool.ComPortTools.SerialStopBits
+  commentId: T:CircuitTool.ComPortTools.SerialStopBits
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialStopBits
+  nameWithType: ComPortTools.SerialStopBits
+  fullName: CircuitTool.ComPortTools.SerialStopBits
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html
+- uid: CircuitTool.ComPortTools.SerialConfig.Handshake*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.Handshake
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_Handshake
+  name: Handshake
+  nameWithType: ComPortTools.SerialConfig.Handshake
+  fullName: CircuitTool.ComPortTools.SerialConfig.Handshake
+- uid: CircuitTool.ComPortTools.SerialHandshake
+  commentId: T:CircuitTool.ComPortTools.SerialHandshake
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialHandshake
+  nameWithType: ComPortTools.SerialHandshake
+  fullName: CircuitTool.ComPortTools.SerialHandshake
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html
+- uid: CircuitTool.ComPortTools.SerialConfig.ReadTimeout*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_ReadTimeout
+  name: ReadTimeout
+  nameWithType: ComPortTools.SerialConfig.ReadTimeout
+  fullName: CircuitTool.ComPortTools.SerialConfig.ReadTimeout
+- uid: CircuitTool.ComPortTools.SerialConfig.WriteTimeout*
+  commentId: Overload:CircuitTool.ComPortTools.SerialConfig.WriteTimeout
+  href: CircuitTool.ComPortTools.SerialConfig.html#CircuitTool_ComPortTools_SerialConfig_WriteTimeout
+  name: WriteTimeout
+  nameWithType: ComPortTools.SerialConfig.WriteTimeout
+  fullName: CircuitTool.ComPortTools.SerialConfig.WriteTimeout

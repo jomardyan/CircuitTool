@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.VoltageUnit
+  commentId: T:CircuitTool.Units.VoltageUnit
+  id: VoltageUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.VoltageUnit.Kilovolts
+  - CircuitTool.Units.VoltageUnit.Megavolts
+  - CircuitTool.Units.VoltageUnit.Microvolts
+  - CircuitTool.Units.VoltageUnit.Millivolts
+  - CircuitTool.Units.VoltageUnit.Nanovolts
+  - CircuitTool.Units.VoltageUnit.Volts
+  langs:
+  - csharp
+  - vb
+  name: VoltageUnit
+  nameWithType: VoltageUnit
+  fullName: CircuitTool.Units.VoltageUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageUnit
+    path: src/Units/VoltageUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents voltage measurement units
+  example: []
+  syntax:
+    content: public enum VoltageUnit
+    content.vb: Public Enum VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Nanovolts
+  commentId: F:CircuitTool.Units.VoltageUnit.Nanovolts
+  id: Nanovolts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Nanovolts
+  nameWithType: VoltageUnit.Nanovolts
+  fullName: CircuitTool.Units.VoltageUnit.Nanovolts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanovolts
+    path: src/Units/VoltageUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Nanovolts (nV)
+  example: []
+  syntax:
+    content: Nanovolts = 0
+    return:
+      type: CircuitTool.Units.VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Microvolts
+  commentId: F:CircuitTool.Units.VoltageUnit.Microvolts
+  id: Microvolts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Microvolts
+  nameWithType: VoltageUnit.Microvolts
+  fullName: CircuitTool.Units.VoltageUnit.Microvolts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microvolts
+    path: src/Units/VoltageUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Microvolts (μV)
+  example: []
+  syntax:
+    content: Microvolts = 1
+    return:
+      type: CircuitTool.Units.VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Millivolts
+  commentId: F:CircuitTool.Units.VoltageUnit.Millivolts
+  id: Millivolts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Millivolts
+  nameWithType: VoltageUnit.Millivolts
+  fullName: CircuitTool.Units.VoltageUnit.Millivolts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Millivolts
+    path: src/Units/VoltageUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Millivolts (mV)
+  example: []
+  syntax:
+    content: Millivolts = 2
+    return:
+      type: CircuitTool.Units.VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Volts
+  commentId: F:CircuitTool.Units.VoltageUnit.Volts
+  id: Volts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Volts
+  nameWithType: VoltageUnit.Volts
+  fullName: CircuitTool.Units.VoltageUnit.Volts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Volts
+    path: src/Units/VoltageUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Volts (V)
+  example: []
+  syntax:
+    content: Volts = 3
+    return:
+      type: CircuitTool.Units.VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Kilovolts
+  commentId: F:CircuitTool.Units.VoltageUnit.Kilovolts
+  id: Kilovolts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Kilovolts
+  nameWithType: VoltageUnit.Kilovolts
+  fullName: CircuitTool.Units.VoltageUnit.Kilovolts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilovolts
+    path: src/Units/VoltageUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Kilovolts (kV)
+  example: []
+  syntax:
+    content: Kilovolts = 4
+    return:
+      type: CircuitTool.Units.VoltageUnit
+- uid: CircuitTool.Units.VoltageUnit.Megavolts
+  commentId: F:CircuitTool.Units.VoltageUnit.Megavolts
+  id: Megavolts
+  parent: CircuitTool.Units.VoltageUnit
+  langs:
+  - csharp
+  - vb
+  name: Megavolts
+  nameWithType: VoltageUnit.Megavolts
+  fullName: CircuitTool.Units.VoltageUnit.Megavolts
+  type: Field
+  source:
+    remote:
+      path: src/Units/VoltageUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megavolts
+    path: src/Units/VoltageUnit.cs
+    startLine: 21
+  namespace: CircuitTool.Units
+  summary: Megavolts (MV)
+  example: []
+  syntax:
+    content: Megavolts = 5
+    return:
+      type: CircuitTool.Units.VoltageUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.VoltageUnit
+  commentId: T:CircuitTool.Units.VoltageUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.VoltageUnit.html
+  name: VoltageUnit
+  nameWithType: VoltageUnit
+  fullName: CircuitTool.Units.VoltageUnit

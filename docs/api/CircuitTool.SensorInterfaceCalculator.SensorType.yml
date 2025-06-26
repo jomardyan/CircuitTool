@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType
+  commentId: T:CircuitTool.SensorInterfaceCalculator.SensorType
+  id: SensorInterfaceCalculator.SensorType
+  parent: CircuitTool
+  children:
+  - CircuitTool.SensorInterfaceCalculator.SensorType.Accelerometer
+  - CircuitTool.SensorInterfaceCalculator.SensorType.Gyroscope
+  - CircuitTool.SensorInterfaceCalculator.SensorType.HallEffect
+  - CircuitTool.SensorInterfaceCalculator.SensorType.Photoresistor
+  - CircuitTool.SensorInterfaceCalculator.SensorType.RTD
+  - CircuitTool.SensorInterfaceCalculator.SensorType.StrainGauge
+  - CircuitTool.SensorInterfaceCalculator.SensorType.Thermistor
+  - CircuitTool.SensorInterfaceCalculator.SensorType.Thermocouple
+  langs:
+  - csharp
+  - vb
+  name: SensorInterfaceCalculator.SensorType
+  nameWithType: SensorInterfaceCalculator.SensorType
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SensorType
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 14
+  namespace: CircuitTool
+  summary: Common sensor types and their characteristics
+  example: []
+  syntax:
+    content: public enum SensorInterfaceCalculator.SensorType
+    content.vb: Public Enum SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.Thermistor
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.Thermistor
+  id: Thermistor
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: Thermistor
+  nameWithType: SensorInterfaceCalculator.SensorType.Thermistor
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.Thermistor
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Thermistor
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: Thermistor = 0
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.RTD
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.RTD
+  id: RTD
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: RTD
+  nameWithType: SensorInterfaceCalculator.SensorType.RTD
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.RTD
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RTD
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: RTD = 1
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.Thermocouple
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.Thermocouple
+  id: Thermocouple
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: Thermocouple
+  nameWithType: SensorInterfaceCalculator.SensorType.Thermocouple
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.Thermocouple
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Thermocouple
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: Thermocouple = 2
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.StrainGauge
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.StrainGauge
+  id: StrainGauge
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: StrainGauge
+  nameWithType: SensorInterfaceCalculator.SensorType.StrainGauge
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.StrainGauge
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StrainGauge
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: StrainGauge = 3
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.Photoresistor
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.Photoresistor
+  id: Photoresistor
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: Photoresistor
+  nameWithType: SensorInterfaceCalculator.SensorType.Photoresistor
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.Photoresistor
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Photoresistor
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 20
+  namespace: CircuitTool
+  syntax:
+    content: Photoresistor = 4
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.HallEffect
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.HallEffect
+  id: HallEffect
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: HallEffect
+  nameWithType: SensorInterfaceCalculator.SensorType.HallEffect
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.HallEffect
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: HallEffect
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 21
+  namespace: CircuitTool
+  syntax:
+    content: HallEffect = 5
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.Accelerometer
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.Accelerometer
+  id: Accelerometer
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: Accelerometer
+  nameWithType: SensorInterfaceCalculator.SensorType.Accelerometer
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.Accelerometer
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Accelerometer
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 22
+  namespace: CircuitTool
+  syntax:
+    content: Accelerometer = 6
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType.Gyroscope
+  commentId: F:CircuitTool.SensorInterfaceCalculator.SensorType.Gyroscope
+  id: Gyroscope
+  parent: CircuitTool.SensorInterfaceCalculator.SensorType
+  langs:
+  - csharp
+  - vb
+  name: Gyroscope
+  nameWithType: SensorInterfaceCalculator.SensorType.Gyroscope
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType.Gyroscope
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/SensorInterfaceCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gyroscope
+    path: src/Hardware/SensorInterfaceCalculator.cs
+    startLine: 23
+  namespace: CircuitTool
+  syntax:
+    content: Gyroscope = 7
+    return:
+      type: CircuitTool.SensorInterfaceCalculator.SensorType
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType
+  commentId: T:CircuitTool.SensorInterfaceCalculator.SensorType
+  parent: CircuitTool
+  href: CircuitTool.SensorInterfaceCalculator.html
+  name: SensorInterfaceCalculator.SensorType
+  nameWithType: SensorInterfaceCalculator.SensorType
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType
+  spec.csharp:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
+  spec.vb:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html

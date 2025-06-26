@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CircuitBuilder
+  commentId: N:CircuitTool.CircuitBuilder
+  id: CircuitTool.CircuitBuilder
+  children:
+  - CircuitTool.CircuitBuilder.Capacitor
+  - CircuitTool.CircuitBuilder.Circuit
+  - CircuitTool.CircuitBuilder.CircuitBuilder
+  - CircuitTool.CircuitBuilder.CircuitResponse
+  - CircuitTool.CircuitBuilder.ComplexPower
+  - CircuitTool.CircuitBuilder.Component
+  - CircuitTool.CircuitBuilder.ComponentConnection
+  - CircuitTool.CircuitBuilder.ConnectionType
+  - CircuitTool.CircuitBuilder.Inductor
+  - CircuitTool.CircuitBuilder.Resistor
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.CircuitBuilder
+  nameWithType: CircuitTool.CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder
+  type: Namespace
+references:
+- uid: CircuitTool.CircuitBuilder.Component
+  commentId: T:CircuitTool.CircuitBuilder.Component
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.Component.html
+  name: Component
+  nameWithType: Component
+  fullName: CircuitTool.CircuitBuilder.Component
+- uid: CircuitTool.CircuitBuilder.Resistor
+  commentId: T:CircuitTool.CircuitBuilder.Resistor
+  href: CircuitTool.CircuitBuilder.Resistor.html
+  name: Resistor
+  nameWithType: Resistor
+  fullName: CircuitTool.CircuitBuilder.Resistor
+- uid: CircuitTool.CircuitBuilder.Capacitor
+  commentId: T:CircuitTool.CircuitBuilder.Capacitor
+  href: CircuitTool.CircuitBuilder.Capacitor.html
+  name: Capacitor
+  nameWithType: Capacitor
+  fullName: CircuitTool.CircuitBuilder.Capacitor
+- uid: CircuitTool.CircuitBuilder.Inductor
+  commentId: T:CircuitTool.CircuitBuilder.Inductor
+  href: CircuitTool.CircuitBuilder.Inductor.html
+  name: Inductor
+  nameWithType: Inductor
+  fullName: CircuitTool.CircuitBuilder.Inductor
+- uid: CircuitTool.CircuitBuilder.ConnectionType
+  commentId: T:CircuitTool.CircuitBuilder.ConnectionType
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.ConnectionType.html
+  name: ConnectionType
+  nameWithType: ConnectionType
+  fullName: CircuitTool.CircuitBuilder.ConnectionType
+- uid: CircuitTool.CircuitBuilder.ComponentConnection
+  commentId: T:CircuitTool.CircuitBuilder.ComponentConnection
+  href: CircuitTool.CircuitBuilder.ComponentConnection.html
+  name: ComponentConnection
+  nameWithType: ComponentConnection
+  fullName: CircuitTool.CircuitBuilder.ComponentConnection
+- uid: CircuitTool.CircuitBuilder.CircuitBuilder
+  commentId: T:CircuitTool.CircuitBuilder.CircuitBuilder
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.CircuitBuilder.html
+  name: CircuitBuilder
+  nameWithType: CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder.CircuitBuilder
+- uid: CircuitTool.CircuitBuilder.Circuit
+  commentId: T:CircuitTool.CircuitBuilder.Circuit
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.Circuit.html
+  name: Circuit
+  nameWithType: Circuit
+  fullName: CircuitTool.CircuitBuilder.Circuit
+- uid: CircuitTool.CircuitBuilder.CircuitResponse
+  commentId: T:CircuitTool.CircuitBuilder.CircuitResponse
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.CircuitResponse.html
+  name: CircuitResponse
+  nameWithType: CircuitResponse
+  fullName: CircuitTool.CircuitBuilder.CircuitResponse
+- uid: CircuitTool.CircuitBuilder.ComplexPower
+  commentId: T:CircuitTool.CircuitBuilder.ComplexPower
+  parent: CircuitTool.CircuitBuilder
+  href: CircuitTool.CircuitBuilder.ComplexPower.html
+  name: ComplexPower
+  nameWithType: ComplexPower
+  fullName: CircuitTool.CircuitBuilder.ComplexPower
+- uid: CircuitTool.CircuitBuilder
+  commentId: N:CircuitTool.CircuitBuilder
+  href: CircuitTool.html
+  name: CircuitTool.CircuitBuilder
+  nameWithType: CircuitTool.CircuitBuilder
+  fullName: CircuitTool.CircuitBuilder
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.CircuitBuilder
+    name: CircuitBuilder
+    href: CircuitTool.CircuitBuilder.html

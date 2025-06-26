@@ -1,0 +1,793 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ACCircuitCalculator
+  commentId: T:CircuitTool.ACCircuitCalculator
+  id: ACCircuitCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.ACCircuitCalculator.Bandwidth(System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.CrestFactor(System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.FormFactor(System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.ImpedanceMagnitude(System.Double,System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.PeakToAverage(System.Double)
+  - CircuitTool.ACCircuitCalculator.PeakToPeakToPeak(System.Double)
+  - CircuitTool.ACCircuitCalculator.PeakToRMS(System.Double)
+  - CircuitTool.ACCircuitCalculator.PhaseAngle(System.Double,System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.PowerFactor(System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.QualityFactor(System.Double,System.Double)
+  - CircuitTool.ACCircuitCalculator.RMSToPeak(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: ACCircuitCalculator
+  nameWithType: ACCircuitCalculator
+  fullName: CircuitTool.ACCircuitCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ACCircuitCalculator
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 7
+  namespace: CircuitTool
+  summary: Provides calculations for AC circuit analysis and characteristics.
+  example: []
+  syntax:
+    content: public static class ACCircuitCalculator
+    content.vb: Public Module ACCircuitCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.ImpedanceMagnitude(System.Double,System.Double,System.Double)
+  id: ImpedanceMagnitude(System.Double,System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: ImpedanceMagnitude(double, double, double)
+  nameWithType: ACCircuitCalculator.ImpedanceMagnitude(double, double, double)
+  fullName: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImpedanceMagnitude
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  summary: Calculates the impedance magnitude of an RLC circuit using Z = √(R² + (XL - XC)²).
+  example: []
+  syntax:
+    content: public static double ImpedanceMagnitude(double resistance, double inductiveReactance, double capacitiveReactance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: inductiveReactance
+      type: System.Double
+      description: Inductive reactance in ohms (Ω).
+    - id: capacitiveReactance
+      type: System.Double
+      description: Capacitive reactance in ohms (Ω).
+    return:
+      type: System.Double
+      description: Impedance magnitude in ohms (Ω).
+    content.vb: Public Shared Function ImpedanceMagnitude(resistance As Double, inductiveReactance As Double, capacitiveReactance As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude*
+  nameWithType.vb: ACCircuitCalculator.ImpedanceMagnitude(Double, Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude(Double, Double, Double)
+  name.vb: ImpedanceMagnitude(Double, Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.PhaseAngle(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.PhaseAngle(System.Double,System.Double,System.Double)
+  id: PhaseAngle(System.Double,System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: PhaseAngle(double, double, double)
+  nameWithType: ACCircuitCalculator.PhaseAngle(double, double, double)
+  fullName: CircuitTool.ACCircuitCalculator.PhaseAngle(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseAngle
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 32
+  namespace: CircuitTool
+  summary: Calculates the phase angle of an RLC circuit using φ = arctan((XL - XC) / R).
+  example: []
+  syntax:
+    content: public static double PhaseAngle(double resistance, double inductiveReactance, double capacitiveReactance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: inductiveReactance
+      type: System.Double
+      description: Inductive reactance in ohms (Ω).
+    - id: capacitiveReactance
+      type: System.Double
+      description: Capacitive reactance in ohms (Ω).
+    return:
+      type: System.Double
+      description: Phase angle in degrees.
+    content.vb: Public Shared Function PhaseAngle(resistance As Double, inductiveReactance As Double, capacitiveReactance As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.PhaseAngle*
+  nameWithType.vb: ACCircuitCalculator.PhaseAngle(Double, Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.PhaseAngle(Double, Double, Double)
+  name.vb: PhaseAngle(Double, Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.PowerFactor(System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.PowerFactor(System.Double,System.Double)
+  id: PowerFactor(System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor(double, double)
+  nameWithType: ACCircuitCalculator.PowerFactor(double, double)
+  fullName: CircuitTool.ACCircuitCalculator.PowerFactor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 51
+  namespace: CircuitTool
+  summary: Calculates the power factor using cos(φ) = R / Z.
+  example: []
+  syntax:
+    content: public static double PowerFactor(double resistance, double impedanceMagnitude)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: impedanceMagnitude
+      type: System.Double
+      description: Impedance magnitude in ohms (Ω).
+    return:
+      type: System.Double
+      description: Power factor (unitless, between 0 and 1).
+    content.vb: Public Shared Function PowerFactor(resistance As Double, impedanceMagnitude As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.PowerFactor*
+  nameWithType.vb: ACCircuitCalculator.PowerFactor(Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.PowerFactor(Double, Double)
+  name.vb: PowerFactor(Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.PeakToRMS(System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.PeakToRMS(System.Double)
+  id: PeakToRMS(System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: PeakToRMS(double)
+  nameWithType: ACCircuitCalculator.PeakToRMS(double)
+  fullName: CircuitTool.ACCircuitCalculator.PeakToRMS(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToRMS
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 66
+  namespace: CircuitTool
+  summary: Calculates the RMS value from peak value (RMS = Peak / √2).
+  example: []
+  syntax:
+    content: public static double PeakToRMS(double peakValue)
+    parameters:
+    - id: peakValue
+      type: System.Double
+      description: Peak value.
+    return:
+      type: System.Double
+      description: RMS value.
+    content.vb: Public Shared Function PeakToRMS(peakValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.PeakToRMS*
+  nameWithType.vb: ACCircuitCalculator.PeakToRMS(Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.PeakToRMS(Double)
+  name.vb: PeakToRMS(Double)
+- uid: CircuitTool.ACCircuitCalculator.RMSToPeak(System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.RMSToPeak(System.Double)
+  id: RMSToPeak(System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: RMSToPeak(double)
+  nameWithType: ACCircuitCalculator.RMSToPeak(double)
+  fullName: CircuitTool.ACCircuitCalculator.RMSToPeak(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RMSToPeak
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 76
+  namespace: CircuitTool
+  summary: Calculates the peak value from RMS value (Peak = RMS × √2).
+  example: []
+  syntax:
+    content: public static double RMSToPeak(double rmsValue)
+    parameters:
+    - id: rmsValue
+      type: System.Double
+      description: RMS value.
+    return:
+      type: System.Double
+      description: Peak value.
+    content.vb: Public Shared Function RMSToPeak(rmsValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.RMSToPeak*
+  nameWithType.vb: ACCircuitCalculator.RMSToPeak(Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.RMSToPeak(Double)
+  name.vb: RMSToPeak(Double)
+- uid: CircuitTool.ACCircuitCalculator.PeakToAverage(System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.PeakToAverage(System.Double)
+  id: PeakToAverage(System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: PeakToAverage(double)
+  nameWithType: ACCircuitCalculator.PeakToAverage(double)
+  fullName: CircuitTool.ACCircuitCalculator.PeakToAverage(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToAverage
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 86
+  namespace: CircuitTool
+  summary: Calculates the average value of a sinusoidal waveform (Average = 2 × Peak / π).
+  example: []
+  syntax:
+    content: public static double PeakToAverage(double peakValue)
+    parameters:
+    - id: peakValue
+      type: System.Double
+      description: Peak value.
+    return:
+      type: System.Double
+      description: Average value.
+    content.vb: Public Shared Function PeakToAverage(peakValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.PeakToAverage*
+  nameWithType.vb: ACCircuitCalculator.PeakToAverage(Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.PeakToAverage(Double)
+  name.vb: PeakToAverage(Double)
+- uid: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak(System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.PeakToPeakToPeak(System.Double)
+  id: PeakToPeakToPeak(System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: PeakToPeakToPeak(double)
+  nameWithType: ACCircuitCalculator.PeakToPeakToPeak(double)
+  fullName: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToPeakToPeak
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 96
+  namespace: CircuitTool
+  summary: Calculates the peak-to-peak value from peak value (Peak-to-Peak = 2 × Peak).
+  example: []
+  syntax:
+    content: public static double PeakToPeakToPeak(double peakValue)
+    parameters:
+    - id: peakValue
+      type: System.Double
+      description: Peak value.
+    return:
+      type: System.Double
+      description: Peak-to-peak value.
+    content.vb: Public Shared Function PeakToPeakToPeak(peakValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak*
+  nameWithType.vb: ACCircuitCalculator.PeakToPeakToPeak(Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak(Double)
+  name.vb: PeakToPeakToPeak(Double)
+- uid: CircuitTool.ACCircuitCalculator.FormFactor(System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.FormFactor(System.Double,System.Double)
+  id: FormFactor(System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: FormFactor(double, double)
+  nameWithType: ACCircuitCalculator.FormFactor(double, double)
+  fullName: CircuitTool.ACCircuitCalculator.FormFactor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FormFactor
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 107
+  namespace: CircuitTool
+  summary: Calculates the form factor of a waveform (Form Factor = RMS / Average).
+  example: []
+  syntax:
+    content: public static double FormFactor(double rmsValue, double averageValue)
+    parameters:
+    - id: rmsValue
+      type: System.Double
+      description: RMS value.
+    - id: averageValue
+      type: System.Double
+      description: Average value.
+    return:
+      type: System.Double
+      description: Form factor (unitless).
+    content.vb: Public Shared Function FormFactor(rmsValue As Double, averageValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.FormFactor*
+  nameWithType.vb: ACCircuitCalculator.FormFactor(Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.FormFactor(Double, Double)
+  name.vb: FormFactor(Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.CrestFactor(System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.CrestFactor(System.Double,System.Double)
+  id: CrestFactor(System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: CrestFactor(double, double)
+  nameWithType: ACCircuitCalculator.CrestFactor(double, double)
+  fullName: CircuitTool.ACCircuitCalculator.CrestFactor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CrestFactor
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 121
+  namespace: CircuitTool
+  summary: Calculates the crest factor of a waveform (Crest Factor = Peak / RMS).
+  example: []
+  syntax:
+    content: public static double CrestFactor(double peakValue, double rmsValue)
+    parameters:
+    - id: peakValue
+      type: System.Double
+      description: Peak value.
+    - id: rmsValue
+      type: System.Double
+      description: RMS value.
+    return:
+      type: System.Double
+      description: Crest factor (unitless).
+    content.vb: Public Shared Function CrestFactor(peakValue As Double, rmsValue As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.CrestFactor*
+  nameWithType.vb: ACCircuitCalculator.CrestFactor(Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.CrestFactor(Double, Double)
+  name.vb: CrestFactor(Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.QualityFactor(System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.QualityFactor(System.Double,System.Double)
+  id: QualityFactor(System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: QualityFactor(double, double)
+  nameWithType: ACCircuitCalculator.QualityFactor(double, double)
+  fullName: CircuitTool.ACCircuitCalculator.QualityFactor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QualityFactor
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 135
+  namespace: CircuitTool
+  summary: Calculates the quality factor (Q) of a resonant circuit using Q = XL / R.
+  example: []
+  syntax:
+    content: public static double QualityFactor(double inductiveReactance, double resistance)
+    parameters:
+    - id: inductiveReactance
+      type: System.Double
+      description: Inductive reactance in ohms (Ω).
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    return:
+      type: System.Double
+      description: Quality factor (unitless).
+    content.vb: Public Shared Function QualityFactor(inductiveReactance As Double, resistance As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.QualityFactor*
+  nameWithType.vb: ACCircuitCalculator.QualityFactor(Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.QualityFactor(Double, Double)
+  name.vb: QualityFactor(Double, Double)
+- uid: CircuitTool.ACCircuitCalculator.Bandwidth(System.Double,System.Double)
+  commentId: M:CircuitTool.ACCircuitCalculator.Bandwidth(System.Double,System.Double)
+  id: Bandwidth(System.Double,System.Double)
+  parent: CircuitTool.ACCircuitCalculator
+  langs:
+  - csharp
+  - vb
+  name: Bandwidth(double, double)
+  nameWithType: ACCircuitCalculator.Bandwidth(double, double)
+  fullName: CircuitTool.ACCircuitCalculator.Bandwidth(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ACCircuitCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Bandwidth
+    path: src/Calculators/ACCircuitCalculator.cs
+    startLine: 151
+  namespace: CircuitTool
+  summary: Calculates the bandwidth of a resonant circuit using BW = f0 / Q.
+  example: []
+  syntax:
+    content: public static double Bandwidth(double resonantFrequency, double qualityFactor)
+    parameters:
+    - id: resonantFrequency
+      type: System.Double
+      description: Resonant frequency in hertz (Hz).
+    - id: qualityFactor
+      type: System.Double
+      description: Quality factor (unitless).
+    return:
+      type: System.Double
+      description: Bandwidth in hertz (Hz).
+    content.vb: Public Shared Function Bandwidth(resonantFrequency As Double, qualityFactor As Double) As Double
+  overload: CircuitTool.ACCircuitCalculator.Bandwidth*
+  nameWithType.vb: ACCircuitCalculator.Bandwidth(Double, Double)
+  fullName.vb: CircuitTool.ACCircuitCalculator.Bandwidth(Double, Double)
+  name.vb: Bandwidth(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.ImpedanceMagnitude
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_ImpedanceMagnitude_System_Double_System_Double_System_Double_
+  name: ImpedanceMagnitude
+  nameWithType: ACCircuitCalculator.ImpedanceMagnitude
+  fullName: CircuitTool.ACCircuitCalculator.ImpedanceMagnitude
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.ACCircuitCalculator.PhaseAngle*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.PhaseAngle
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_PhaseAngle_System_Double_System_Double_System_Double_
+  name: PhaseAngle
+  nameWithType: ACCircuitCalculator.PhaseAngle
+  fullName: CircuitTool.ACCircuitCalculator.PhaseAngle
+- uid: CircuitTool.ACCircuitCalculator.PowerFactor*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.PowerFactor
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_PowerFactor_System_Double_System_Double_
+  name: PowerFactor
+  nameWithType: ACCircuitCalculator.PowerFactor
+  fullName: CircuitTool.ACCircuitCalculator.PowerFactor
+- uid: CircuitTool.ACCircuitCalculator.PeakToRMS*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.PeakToRMS
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_PeakToRMS_System_Double_
+  name: PeakToRMS
+  nameWithType: ACCircuitCalculator.PeakToRMS
+  fullName: CircuitTool.ACCircuitCalculator.PeakToRMS
+- uid: CircuitTool.ACCircuitCalculator.RMSToPeak*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.RMSToPeak
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_RMSToPeak_System_Double_
+  name: RMSToPeak
+  nameWithType: ACCircuitCalculator.RMSToPeak
+  fullName: CircuitTool.ACCircuitCalculator.RMSToPeak
+- uid: CircuitTool.ACCircuitCalculator.PeakToAverage*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.PeakToAverage
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_PeakToAverage_System_Double_
+  name: PeakToAverage
+  nameWithType: ACCircuitCalculator.PeakToAverage
+  fullName: CircuitTool.ACCircuitCalculator.PeakToAverage
+- uid: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.PeakToPeakToPeak
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_PeakToPeakToPeak_System_Double_
+  name: PeakToPeakToPeak
+  nameWithType: ACCircuitCalculator.PeakToPeakToPeak
+  fullName: CircuitTool.ACCircuitCalculator.PeakToPeakToPeak
+- uid: CircuitTool.ACCircuitCalculator.FormFactor*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.FormFactor
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_FormFactor_System_Double_System_Double_
+  name: FormFactor
+  nameWithType: ACCircuitCalculator.FormFactor
+  fullName: CircuitTool.ACCircuitCalculator.FormFactor
+- uid: CircuitTool.ACCircuitCalculator.CrestFactor*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.CrestFactor
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_CrestFactor_System_Double_System_Double_
+  name: CrestFactor
+  nameWithType: ACCircuitCalculator.CrestFactor
+  fullName: CircuitTool.ACCircuitCalculator.CrestFactor
+- uid: CircuitTool.ACCircuitCalculator.QualityFactor*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.QualityFactor
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_QualityFactor_System_Double_System_Double_
+  name: QualityFactor
+  nameWithType: ACCircuitCalculator.QualityFactor
+  fullName: CircuitTool.ACCircuitCalculator.QualityFactor
+- uid: CircuitTool.ACCircuitCalculator.Bandwidth*
+  commentId: Overload:CircuitTool.ACCircuitCalculator.Bandwidth
+  href: CircuitTool.ACCircuitCalculator.html#CircuitTool_ACCircuitCalculator_Bandwidth_System_Double_System_Double_
+  name: Bandwidth
+  nameWithType: ACCircuitCalculator.Bandwidth
+  fullName: CircuitTool.ACCircuitCalculator.Bandwidth

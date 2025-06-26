@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+  commentId: T:CircuitTool.PowerSupplyCalculator.PSUTopology
+  id: PowerSupplyCalculator.PSUTopology
+  parent: CircuitTool
+  children:
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.Boost
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.Buck
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.BuckBoost
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.Flyback
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.Forward
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.Linear
+  - CircuitTool.PowerSupplyCalculator.PSUTopology.SEPIC
+  langs:
+  - csharp
+  - vb
+  name: PowerSupplyCalculator.PSUTopology
+  nameWithType: PowerSupplyCalculator.PSUTopology
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PSUTopology
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 14
+  namespace: CircuitTool
+  summary: Power supply topology types
+  example: []
+  syntax:
+    content: public enum PowerSupplyCalculator.PSUTopology
+    content.vb: Public Enum PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.Linear
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.Linear
+  id: Linear
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: PowerSupplyCalculator.PSUTopology.Linear
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.Linear
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Linear
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: Linear = 0
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.Buck
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.Buck
+  id: Buck
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: Buck
+  nameWithType: PowerSupplyCalculator.PSUTopology.Buck
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.Buck
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Buck
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: Buck = 1
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.Boost
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.Boost
+  id: Boost
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: Boost
+  nameWithType: PowerSupplyCalculator.PSUTopology.Boost
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.Boost
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Boost
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: Boost = 2
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.BuckBoost
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.BuckBoost
+  id: BuckBoost
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: BuckBoost
+  nameWithType: PowerSupplyCalculator.PSUTopology.BuckBoost
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.BuckBoost
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BuckBoost
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: BuckBoost = 3
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.Flyback
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.Flyback
+  id: Flyback
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: Flyback
+  nameWithType: PowerSupplyCalculator.PSUTopology.Flyback
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.Flyback
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Flyback
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 20
+  namespace: CircuitTool
+  syntax:
+    content: Flyback = 4
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.Forward
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.Forward
+  id: Forward
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: Forward
+  nameWithType: PowerSupplyCalculator.PSUTopology.Forward
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.Forward
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Forward
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 21
+  namespace: CircuitTool
+  syntax:
+    content: Forward = 5
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology.SEPIC
+  commentId: F:CircuitTool.PowerSupplyCalculator.PSUTopology.SEPIC
+  id: SEPIC
+  parent: CircuitTool.PowerSupplyCalculator.PSUTopology
+  langs:
+  - csharp
+  - vb
+  name: SEPIC
+  nameWithType: PowerSupplyCalculator.PSUTopology.SEPIC
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology.SEPIC
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PowerSupplyCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SEPIC
+    path: src/Hardware/PowerSupplyCalculator.cs
+    startLine: 22
+  namespace: CircuitTool
+  syntax:
+    content: SEPIC = 6
+    return:
+      type: CircuitTool.PowerSupplyCalculator.PSUTopology
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+  commentId: T:CircuitTool.PowerSupplyCalculator.PSUTopology
+  parent: CircuitTool
+  href: CircuitTool.PowerSupplyCalculator.html
+  name: PowerSupplyCalculator.PSUTopology
+  nameWithType: PowerSupplyCalculator.PSUTopology
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology
+  spec.csharp:
+  - uid: CircuitTool.PowerSupplyCalculator
+    name: PowerSupplyCalculator
+    href: CircuitTool.PowerSupplyCalculator.html
+  - name: .
+  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+    name: PSUTopology
+    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html
+  spec.vb:
+  - uid: CircuitTool.PowerSupplyCalculator
+    name: PowerSupplyCalculator
+    href: CircuitTool.PowerSupplyCalculator.html
+  - name: .
+  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+    name: PSUTopology
+    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html

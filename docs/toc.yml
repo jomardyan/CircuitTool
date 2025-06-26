@@ -1,0 +1,12 @@
+- name: Home
+  href: index.md
+- name: API Reference
+  href: api/
+- name: Tutorials
+  href: tutorials/
+- name: Examples
+  href: examples/
+- name: Hardware Guides
+  href: hardware/
+- name: GitHub
+  href: https://github.com/jomardyan/CircuitTool

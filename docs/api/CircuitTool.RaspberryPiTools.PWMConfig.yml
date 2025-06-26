@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.RaspberryPiTools.PWMConfig
+  commentId: T:CircuitTool.RaspberryPiTools.PWMConfig
+  id: RaspberryPiTools.PWMConfig
+  parent: CircuitTool
+  children:
+  - CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+  - CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+  - CircuitTool.RaspberryPiTools.PWMConfig.Voltage
+  langs:
+  - csharp
+  - vb
+  name: RaspberryPiTools.PWMConfig
+  nameWithType: RaspberryPiTools.PWMConfig
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig
+  type: Struct
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PWMConfig
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 25
+  namespace: CircuitTool
+  summary: PWM configuration settings
+  example: []
+  syntax:
+    content: public struct RaspberryPiTools.PWMConfig
+    content.vb: Public Structure RaspberryPiTools.PWMConfig
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+  commentId: P:CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+  id: Frequency
+  parent: CircuitTool.RaspberryPiTools.PWMConfig
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: RaspberryPiTools.PWMConfig.Frequency
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Frequency
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 27
+  namespace: CircuitTool
+  syntax:
+    content: public double Frequency { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Frequency As Double
+  overload: CircuitTool.RaspberryPiTools.PWMConfig.Frequency*
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+  commentId: P:CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+  id: DutyCycle
+  parent: CircuitTool.RaspberryPiTools.PWMConfig
+  langs:
+  - csharp
+  - vb
+  name: DutyCycle
+  nameWithType: RaspberryPiTools.PWMConfig.DutyCycle
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DutyCycle
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 28
+  namespace: CircuitTool
+  syntax:
+    content: public double DutyCycle { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DutyCycle As Double
+  overload: CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle*
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.Voltage
+  commentId: P:CircuitTool.RaspberryPiTools.PWMConfig.Voltage
+  id: Voltage
+  parent: CircuitTool.RaspberryPiTools.PWMConfig
+  langs:
+  - csharp
+  - vb
+  name: Voltage
+  nameWithType: RaspberryPiTools.PWMConfig.Voltage
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.Voltage
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Voltage
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 29
+  namespace: CircuitTool
+  syntax:
+    content: public double Voltage { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Voltage As Double
+  overload: CircuitTool.RaspberryPiTools.PWMConfig.Voltage*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.Frequency*
+  commentId: Overload:CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+  href: CircuitTool.RaspberryPiTools.PWMConfig.html#CircuitTool_RaspberryPiTools_PWMConfig_Frequency
+  name: Frequency
+  nameWithType: RaspberryPiTools.PWMConfig.Frequency
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.Frequency
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle*
+  commentId: Overload:CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+  href: CircuitTool.RaspberryPiTools.PWMConfig.html#CircuitTool_RaspberryPiTools_PWMConfig_DutyCycle
+  name: DutyCycle
+  nameWithType: RaspberryPiTools.PWMConfig.DutyCycle
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.DutyCycle
+- uid: CircuitTool.RaspberryPiTools.PWMConfig.Voltage*
+  commentId: Overload:CircuitTool.RaspberryPiTools.PWMConfig.Voltage
+  href: CircuitTool.RaspberryPiTools.PWMConfig.html#CircuitTool_RaspberryPiTools_PWMConfig_Voltage
+  name: Voltage
+  nameWithType: RaspberryPiTools.PWMConfig.Voltage
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig.Voltage

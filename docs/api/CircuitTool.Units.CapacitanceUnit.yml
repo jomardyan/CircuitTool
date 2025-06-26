@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.CapacitanceUnit
+  commentId: T:CircuitTool.Units.CapacitanceUnit
+  id: CapacitanceUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.CapacitanceUnit.Farads
+  - CircuitTool.Units.CapacitanceUnit.Kilofarads
+  - CircuitTool.Units.CapacitanceUnit.Microfarads
+  - CircuitTool.Units.CapacitanceUnit.Millifarads
+  - CircuitTool.Units.CapacitanceUnit.Nanofarads
+  - CircuitTool.Units.CapacitanceUnit.Picofarads
+  langs:
+  - csharp
+  - vb
+  name: CapacitanceUnit
+  nameWithType: CapacitanceUnit
+  fullName: CircuitTool.Units.CapacitanceUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitanceUnit
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents capacitance measurement units
+  example: []
+  syntax:
+    content: public enum CapacitanceUnit
+    content.vb: Public Enum CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Picofarads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Picofarads
+  id: Picofarads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Picofarads
+  nameWithType: CapacitanceUnit.Picofarads
+  fullName: CircuitTool.Units.CapacitanceUnit.Picofarads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Picofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Picofarads (pF)
+  example: []
+  syntax:
+    content: Picofarads = 0
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Nanofarads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Nanofarads
+  id: Nanofarads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Nanofarads
+  nameWithType: CapacitanceUnit.Nanofarads
+  fullName: CircuitTool.Units.CapacitanceUnit.Nanofarads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Nanofarads (nF)
+  example: []
+  syntax:
+    content: Nanofarads = 1
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Microfarads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Microfarads
+  id: Microfarads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Microfarads
+  nameWithType: CapacitanceUnit.Microfarads
+  fullName: CircuitTool.Units.CapacitanceUnit.Microfarads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microfarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Microfarads (μF)
+  example: []
+  syntax:
+    content: Microfarads = 2
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Millifarads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Millifarads
+  id: Millifarads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Millifarads
+  nameWithType: CapacitanceUnit.Millifarads
+  fullName: CircuitTool.Units.CapacitanceUnit.Millifarads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Millifarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Millifarads (mF)
+  example: []
+  syntax:
+    content: Millifarads = 3
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Farads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Farads
+  id: Farads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Farads
+  nameWithType: CapacitanceUnit.Farads
+  fullName: CircuitTool.Units.CapacitanceUnit.Farads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Farads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Farads (F)
+  example: []
+  syntax:
+    content: Farads = 4
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.CapacitanceUnit.Kilofarads
+  commentId: F:CircuitTool.Units.CapacitanceUnit.Kilofarads
+  id: Kilofarads
+  parent: CircuitTool.Units.CapacitanceUnit
+  langs:
+  - csharp
+  - vb
+  name: Kilofarads
+  nameWithType: CapacitanceUnit.Kilofarads
+  fullName: CircuitTool.Units.CapacitanceUnit.Kilofarads
+  type: Field
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 21
+  namespace: CircuitTool.Units
+  summary: Kilofarads (kF)
+  example: []
+  syntax:
+    content: Kilofarads = 5
+    return:
+      type: CircuitTool.Units.CapacitanceUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.CapacitanceUnit
+  commentId: T:CircuitTool.Units.CapacitanceUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.CapacitanceUnit.html
+  name: CapacitanceUnit
+  nameWithType: CapacitanceUnit
+  fullName: CircuitTool.Units.CapacitanceUnit

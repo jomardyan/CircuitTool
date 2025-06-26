@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor
+  commentId: T:CircuitTool.Analysis.StandardTolerances.Inductor
+  id: StandardTolerances.Inductor
+  parent: CircuitTool.Analysis
+  children:
+  - CircuitTool.Analysis.StandardTolerances.Inductor.Precision_1Percent
+  - CircuitTool.Analysis.StandardTolerances.Inductor.Standard_10Percent
+  - CircuitTool.Analysis.StandardTolerances.Inductor.Standard_20Percent
+  - CircuitTool.Analysis.StandardTolerances.Inductor.Standard_5Percent
+  langs:
+  - csharp
+  - vb
+  name: StandardTolerances.Inductor
+  nameWithType: StandardTolerances.Inductor
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor
+  type: Class
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Inductor
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 360
+  namespace: CircuitTool.Analysis
+  summary: Standard inductor tolerances
+  example: []
+  syntax:
+    content: public static class StandardTolerances.Inductor
+    content.vb: Public Module StandardTolerances.Inductor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor.Precision_1Percent
+  commentId: F:CircuitTool.Analysis.StandardTolerances.Inductor.Precision_1Percent
+  id: Precision_1Percent
+  parent: CircuitTool.Analysis.StandardTolerances.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Precision_1Percent
+  nameWithType: StandardTolerances.Inductor.Precision_1Percent
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor.Precision_1Percent
+  type: Field
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Precision_1Percent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 362
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public const double Precision_1Percent = 0.01
+    return:
+      type: System.Double
+    content.vb: Public Const Precision_1Percent As Double = 0.01
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_5Percent
+  commentId: F:CircuitTool.Analysis.StandardTolerances.Inductor.Standard_5Percent
+  id: Standard_5Percent
+  parent: CircuitTool.Analysis.StandardTolerances.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Standard_5Percent
+  nameWithType: StandardTolerances.Inductor.Standard_5Percent
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_5Percent
+  type: Field
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Standard_5Percent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 363
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public const double Standard_5Percent = 0.05
+    return:
+      type: System.Double
+    content.vb: Public Const Standard_5Percent As Double = 0.05
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_10Percent
+  commentId: F:CircuitTool.Analysis.StandardTolerances.Inductor.Standard_10Percent
+  id: Standard_10Percent
+  parent: CircuitTool.Analysis.StandardTolerances.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Standard_10Percent
+  nameWithType: StandardTolerances.Inductor.Standard_10Percent
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_10Percent
+  type: Field
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Standard_10Percent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 364
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public const double Standard_10Percent = 0.1
+    return:
+      type: System.Double
+    content.vb: Public Const Standard_10Percent As Double = 0.1
+- uid: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_20Percent
+  commentId: F:CircuitTool.Analysis.StandardTolerances.Inductor.Standard_20Percent
+  id: Standard_20Percent
+  parent: CircuitTool.Analysis.StandardTolerances.Inductor
+  langs:
+  - csharp
+  - vb
+  name: Standard_20Percent
+  nameWithType: StandardTolerances.Inductor.Standard_20Percent
+  fullName: CircuitTool.Analysis.StandardTolerances.Inductor.Standard_20Percent
+  type: Field
+  source:
+    remote:
+      path: src/Analysis/ToleranceAnalysis.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Standard_20Percent
+    path: src/Analysis/ToleranceAnalysis.cs
+    startLine: 365
+  namespace: CircuitTool.Analysis
+  syntax:
+    content: public const double Standard_20Percent = 0.2
+    return:
+      type: System.Double
+    content.vb: Public Const Standard_20Percent As Double = 0.2
+references:
+- uid: CircuitTool.Analysis
+  commentId: N:CircuitTool.Analysis
+  href: CircuitTool.html
+  name: CircuitTool.Analysis
+  nameWithType: CircuitTool.Analysis
+  fullName: CircuitTool.Analysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Analysis
+    name: Analysis
+    href: CircuitTool.Analysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

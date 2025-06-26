@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.BeginnerCalculators
+  commentId: T:CircuitTool.BeginnerCalculators
+  id: BeginnerCalculators
+  parent: CircuitTool
+  children:
+  - CircuitTool.BeginnerCalculators.BatteryLifeCalculator(System.Double,System.Double)
+  - CircuitTool.BeginnerCalculators.InductorTurnsCalculator(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.BeginnerCalculators.PowerRatioToDecibels(System.Double)
+  - CircuitTool.BeginnerCalculators.RCOscillatorFrequency(System.Double,System.Double)
+  - CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor(System.Double,System.Double)
+  - CircuitTool.BeginnerCalculators.TransformerTurnsRatio(System.Double,System.Double)
+  - CircuitTool.BeginnerCalculators.VoltageRatioToDecibels(System.Double)
+  - CircuitTool.BeginnerCalculators.WireGaugeCalculator(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: BeginnerCalculators
+  nameWithType: BeginnerCalculators
+  fullName: CircuitTool.BeginnerCalculators
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BeginnerCalculators
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 8
+  namespace: CircuitTool
+  summary: Popular calculators for electronics beginners
+  example: []
+  syntax:
+    content: public static class BeginnerCalculators
+    content.vb: Public Module BeginnerCalculators
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.BeginnerCalculators.BatteryLifeCalculator(System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.BatteryLifeCalculator(System.Double,System.Double)
+  id: BatteryLifeCalculator(System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: BatteryLifeCalculator(double, double)
+  nameWithType: BeginnerCalculators.BatteryLifeCalculator(double, double)
+  fullName: CircuitTool.BeginnerCalculators.BatteryLifeCalculator(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BatteryLifeCalculator
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 16
+  namespace: CircuitTool
+  summary: Calculates battery life for simple circuits
+  example: []
+  syntax:
+    content: public static double BatteryLifeCalculator(double batteryCapacity, double loadCurrent)
+    parameters:
+    - id: batteryCapacity
+      type: System.Double
+      description: Battery capacity in mAh
+    - id: loadCurrent
+      type: System.Double
+      description: Load current in mA
+    return:
+      type: System.Double
+      description: Battery life in hours
+    content.vb: Public Shared Function BatteryLifeCalculator(batteryCapacity As Double, loadCurrent As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.BatteryLifeCalculator*
+  nameWithType.vb: BeginnerCalculators.BatteryLifeCalculator(Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.BatteryLifeCalculator(Double, Double)
+  name.vb: BatteryLifeCalculator(Double, Double)
+- uid: CircuitTool.BeginnerCalculators.WireGaugeCalculator(System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.WireGaugeCalculator(System.Double,System.Double)
+  id: WireGaugeCalculator(System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: WireGaugeCalculator(double, double)
+  nameWithType: BeginnerCalculators.WireGaugeCalculator(double, double)
+  fullName: CircuitTool.BeginnerCalculators.WireGaugeCalculator(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WireGaugeCalculator
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 29
+  namespace: CircuitTool
+  summary: Calculates wire gauge (AWG) needed for a given current
+  example: []
+  syntax:
+    content: public static int WireGaugeCalculator(double current, double safetyFactor = 1.5)
+    parameters:
+    - id: current
+      type: System.Double
+      description: Current in Amperes
+    - id: safetyFactor
+      type: System.Double
+      description: Safety factor (default 1.5)
+    return:
+      type: System.Int32
+      description: Recommended AWG wire gauge
+    content.vb: Public Shared Function WireGaugeCalculator(current As Double, safetyFactor As Double = 1.5) As Integer
+  overload: CircuitTool.BeginnerCalculators.WireGaugeCalculator*
+  nameWithType.vb: BeginnerCalculators.WireGaugeCalculator(Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.WireGaugeCalculator(Double, Double)
+  name.vb: WireGaugeCalculator(Double, Double)
+- uid: CircuitTool.BeginnerCalculators.InductorTurnsCalculator(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.InductorTurnsCalculator(System.Double,System.Double,System.Double,System.Double)
+  id: InductorTurnsCalculator(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: InductorTurnsCalculator(double, double, double, double)
+  nameWithType: BeginnerCalculators.InductorTurnsCalculator(double, double, double, double)
+  fullName: CircuitTool.BeginnerCalculators.InductorTurnsCalculator(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductorTurnsCalculator
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 61
+  namespace: CircuitTool
+  summary: Calculates the number of turns for a basic inductor
+  example: []
+  syntax:
+    content: public static int InductorTurnsCalculator(double inductance, double coreDiameter, double coreLength, double permeability = 1)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Desired inductance in microhenries (µH)
+    - id: coreDiameter
+      type: System.Double
+      description: Core diameter in mm
+    - id: coreLength
+      type: System.Double
+      description: Core length in mm
+    - id: permeability
+      type: System.Double
+      description: Core permeability (default 1 for air core)
+    return:
+      type: System.Int32
+      description: Number of turns needed
+    content.vb: Public Shared Function InductorTurnsCalculator(inductance As Double, coreDiameter As Double, coreLength As Double, permeability As Double = 1) As Integer
+  overload: CircuitTool.BeginnerCalculators.InductorTurnsCalculator*
+  nameWithType.vb: BeginnerCalculators.InductorTurnsCalculator(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.InductorTurnsCalculator(Double, Double, Double, Double)
+  name.vb: InductorTurnsCalculator(Double, Double, Double, Double)
+- uid: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor(System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor(System.Double,System.Double)
+  id: RCTimeConstantCapacitor(System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: RCTimeConstantCapacitor(double, double)
+  nameWithType: BeginnerCalculators.RCTimeConstantCapacitor(double, double)
+  fullName: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RCTimeConstantCapacitor
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 77
+  namespace: CircuitTool
+  summary: Calculates capacitor value for RC time constant
+  example: []
+  syntax:
+    content: public static double RCTimeConstantCapacitor(double resistance, double timeConstant)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in Ohms
+    - id: timeConstant
+      type: System.Double
+      description: Desired time constant in seconds
+    return:
+      type: System.Double
+      description: Capacitor value in Farads
+    content.vb: Public Shared Function RCTimeConstantCapacitor(resistance As Double, timeConstant As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor*
+  nameWithType.vb: BeginnerCalculators.RCTimeConstantCapacitor(Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor(Double, Double)
+  name.vb: RCTimeConstantCapacitor(Double, Double)
+- uid: CircuitTool.BeginnerCalculators.RCOscillatorFrequency(System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.RCOscillatorFrequency(System.Double,System.Double)
+  id: RCOscillatorFrequency(System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: RCOscillatorFrequency(double, double)
+  nameWithType: BeginnerCalculators.RCOscillatorFrequency(double, double)
+  fullName: CircuitTool.BeginnerCalculators.RCOscillatorFrequency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RCOscillatorFrequency
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 90
+  namespace: CircuitTool
+  summary: Calculates frequency for RC oscillator circuit
+  example: []
+  syntax:
+    content: public static double RCOscillatorFrequency(double resistance, double capacitance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in Ohms
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in Farads
+    return:
+      type: System.Double
+      description: Oscillation frequency in Hz
+    content.vb: Public Shared Function RCOscillatorFrequency(resistance As Double, capacitance As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.RCOscillatorFrequency*
+  nameWithType.vb: BeginnerCalculators.RCOscillatorFrequency(Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.RCOscillatorFrequency(Double, Double)
+  name.vb: RCOscillatorFrequency(Double, Double)
+- uid: CircuitTool.BeginnerCalculators.PowerRatioToDecibels(System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.PowerRatioToDecibels(System.Double)
+  id: PowerRatioToDecibels(System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: PowerRatioToDecibels(double)
+  nameWithType: BeginnerCalculators.PowerRatioToDecibels(double)
+  fullName: CircuitTool.BeginnerCalculators.PowerRatioToDecibels(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerRatioToDecibels
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 103
+  namespace: CircuitTool
+  summary: Calculates decibel (dB) from power ratio
+  example: []
+  syntax:
+    content: public static double PowerRatioToDecibels(double powerRatio)
+    parameters:
+    - id: powerRatio
+      type: System.Double
+      description: Power ratio (Pout/Pin)
+    return:
+      type: System.Double
+      description: Decibel value
+    content.vb: Public Shared Function PowerRatioToDecibels(powerRatio As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.PowerRatioToDecibels*
+  nameWithType.vb: BeginnerCalculators.PowerRatioToDecibels(Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.PowerRatioToDecibels(Double)
+  name.vb: PowerRatioToDecibels(Double)
+- uid: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels(System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.VoltageRatioToDecibels(System.Double)
+  id: VoltageRatioToDecibels(System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: VoltageRatioToDecibels(double)
+  nameWithType: BeginnerCalculators.VoltageRatioToDecibels(double)
+  fullName: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRatioToDecibels
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 115
+  namespace: CircuitTool
+  summary: Calculates decibel (dB) from voltage ratio
+  example: []
+  syntax:
+    content: public static double VoltageRatioToDecibels(double voltageRatio)
+    parameters:
+    - id: voltageRatio
+      type: System.Double
+      description: Voltage ratio (Vout/Vin)
+    return:
+      type: System.Double
+      description: Decibel value
+    content.vb: Public Shared Function VoltageRatioToDecibels(voltageRatio As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels*
+  nameWithType.vb: BeginnerCalculators.VoltageRatioToDecibels(Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels(Double)
+  name.vb: VoltageRatioToDecibels(Double)
+- uid: CircuitTool.BeginnerCalculators.TransformerTurnsRatio(System.Double,System.Double)
+  commentId: M:CircuitTool.BeginnerCalculators.TransformerTurnsRatio(System.Double,System.Double)
+  id: TransformerTurnsRatio(System.Double,System.Double)
+  parent: CircuitTool.BeginnerCalculators
+  langs:
+  - csharp
+  - vb
+  name: TransformerTurnsRatio(double, double)
+  nameWithType: BeginnerCalculators.TransformerTurnsRatio(double, double)
+  fullName: CircuitTool.BeginnerCalculators.TransformerTurnsRatio(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/BeginnerCalculators.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TransformerTurnsRatio
+    path: src/Calculators/BeginnerCalculators.cs
+    startLine: 128
+  namespace: CircuitTool
+  summary: Calculates transformer turns ratio
+  example: []
+  syntax:
+    content: public static double TransformerTurnsRatio(double primaryVoltage, double secondaryVoltage)
+    parameters:
+    - id: primaryVoltage
+      type: System.Double
+      description: Primary voltage
+    - id: secondaryVoltage
+      type: System.Double
+      description: Secondary voltage
+    return:
+      type: System.Double
+      description: Turns ratio (Ns/Np)
+    content.vb: Public Shared Function TransformerTurnsRatio(primaryVoltage As Double, secondaryVoltage As Double) As Double
+  overload: CircuitTool.BeginnerCalculators.TransformerTurnsRatio*
+  nameWithType.vb: BeginnerCalculators.TransformerTurnsRatio(Double, Double)
+  fullName.vb: CircuitTool.BeginnerCalculators.TransformerTurnsRatio(Double, Double)
+  name.vb: TransformerTurnsRatio(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.BeginnerCalculators.BatteryLifeCalculator*
+  commentId: Overload:CircuitTool.BeginnerCalculators.BatteryLifeCalculator
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_BatteryLifeCalculator_System_Double_System_Double_
+  name: BatteryLifeCalculator
+  nameWithType: BeginnerCalculators.BatteryLifeCalculator
+  fullName: CircuitTool.BeginnerCalculators.BatteryLifeCalculator
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.BeginnerCalculators.WireGaugeCalculator*
+  commentId: Overload:CircuitTool.BeginnerCalculators.WireGaugeCalculator
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_WireGaugeCalculator_System_Double_System_Double_
+  name: WireGaugeCalculator
+  nameWithType: BeginnerCalculators.WireGaugeCalculator
+  fullName: CircuitTool.BeginnerCalculators.WireGaugeCalculator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.BeginnerCalculators.InductorTurnsCalculator*
+  commentId: Overload:CircuitTool.BeginnerCalculators.InductorTurnsCalculator
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_InductorTurnsCalculator_System_Double_System_Double_System_Double_System_Double_
+  name: InductorTurnsCalculator
+  nameWithType: BeginnerCalculators.InductorTurnsCalculator
+  fullName: CircuitTool.BeginnerCalculators.InductorTurnsCalculator
+- uid: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor*
+  commentId: Overload:CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_RCTimeConstantCapacitor_System_Double_System_Double_
+  name: RCTimeConstantCapacitor
+  nameWithType: BeginnerCalculators.RCTimeConstantCapacitor
+  fullName: CircuitTool.BeginnerCalculators.RCTimeConstantCapacitor
+- uid: CircuitTool.BeginnerCalculators.RCOscillatorFrequency*
+  commentId: Overload:CircuitTool.BeginnerCalculators.RCOscillatorFrequency
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_RCOscillatorFrequency_System_Double_System_Double_
+  name: RCOscillatorFrequency
+  nameWithType: BeginnerCalculators.RCOscillatorFrequency
+  fullName: CircuitTool.BeginnerCalculators.RCOscillatorFrequency
+- uid: CircuitTool.BeginnerCalculators.PowerRatioToDecibels*
+  commentId: Overload:CircuitTool.BeginnerCalculators.PowerRatioToDecibels
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_PowerRatioToDecibels_System_Double_
+  name: PowerRatioToDecibels
+  nameWithType: BeginnerCalculators.PowerRatioToDecibels
+  fullName: CircuitTool.BeginnerCalculators.PowerRatioToDecibels
+- uid: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels*
+  commentId: Overload:CircuitTool.BeginnerCalculators.VoltageRatioToDecibels
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_VoltageRatioToDecibels_System_Double_
+  name: VoltageRatioToDecibels
+  nameWithType: BeginnerCalculators.VoltageRatioToDecibels
+  fullName: CircuitTool.BeginnerCalculators.VoltageRatioToDecibels
+- uid: CircuitTool.BeginnerCalculators.TransformerTurnsRatio*
+  commentId: Overload:CircuitTool.BeginnerCalculators.TransformerTurnsRatio
+  href: CircuitTool.BeginnerCalculators.html#CircuitTool_BeginnerCalculators_TransformerTurnsRatio_System_Double_System_Double_
+  name: TransformerTurnsRatio
+  nameWithType: BeginnerCalculators.TransformerTurnsRatio
+  fullName: CircuitTool.BeginnerCalculators.TransformerTurnsRatio

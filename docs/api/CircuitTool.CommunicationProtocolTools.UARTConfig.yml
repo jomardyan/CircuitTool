@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.UARTConfig
+  id: CommunicationProtocolTools.UARTConfig
+  parent: CircuitTool
+  children:
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+  - CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+  langs:
+  - csharp
+  - vb
+  name: CommunicationProtocolTools.UARTConfig
+  nameWithType: CommunicationProtocolTools.UARTConfig
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UARTConfig
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 51
+  namespace: CircuitTool
+  summary: UART communication parameters
+  example: []
+  syntax:
+    content: public class CommunicationProtocolTools.UARTConfig
+    content.vb: Public Class CommunicationProtocolTools.UARTConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+  id: BaudRate
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: BaudRate
+  nameWithType: CommunicationProtocolTools.UARTConfig.BaudRate
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BaudRate
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 53
+  namespace: CircuitTool
+  syntax:
+    content: public int BaudRate { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BaudRate As Integer
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate*
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+  id: DataBits
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: DataBits
+  nameWithType: CommunicationProtocolTools.UARTConfig.DataBits
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DataBits
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 54
+  namespace: CircuitTool
+  syntax:
+    content: public int DataBits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataBits As Integer
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits*
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+  id: StopBits
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: StopBits
+  nameWithType: CommunicationProtocolTools.UARTConfig.StopBits
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StopBits
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 55
+  namespace: CircuitTool
+  syntax:
+    content: public int StopBits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StopBits As Integer
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits*
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+  id: Parity
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: Parity
+  nameWithType: CommunicationProtocolTools.UARTConfig.Parity
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Parity
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 56
+  namespace: CircuitTool
+  syntax:
+    content: public string Parity { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Parity As String
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.Parity*
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+  id: UseFlowControl
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: UseFlowControl
+  nameWithType: CommunicationProtocolTools.UARTConfig.UseFlowControl
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UseFlowControl
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 57
+  namespace: CircuitTool
+  syntax:
+    content: public bool UseFlowControl { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseFlowControl As Boolean
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl*
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+  commentId: P:CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+  id: CableLength
+  parent: CircuitTool.CommunicationProtocolTools.UARTConfig
+  langs:
+  - csharp
+  - vb
+  name: CableLength
+  nameWithType: CommunicationProtocolTools.UARTConfig.CableLength
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+  type: Property
+  source:
+    remote:
+      path: src/Hardware/CommunicationProtocolTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CableLength
+    path: src/Hardware/CommunicationProtocolTools.cs
+    startLine: 58
+  namespace: CircuitTool
+  syntax:
+    content: public double CableLength { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property CableLength As Double
+  overload: CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_BaudRate
+  name: BaudRate
+  nameWithType: CommunicationProtocolTools.UARTConfig.BaudRate
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.BaudRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_DataBits
+  name: DataBits
+  nameWithType: CommunicationProtocolTools.UARTConfig.DataBits
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.DataBits
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_StopBits
+  name: StopBits
+  nameWithType: CommunicationProtocolTools.UARTConfig.StopBits
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.StopBits
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.Parity*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_Parity
+  name: Parity
+  nameWithType: CommunicationProtocolTools.UARTConfig.Parity
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.Parity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_UseFlowControl
+  name: UseFlowControl
+  nameWithType: CommunicationProtocolTools.UARTConfig.UseFlowControl
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.UseFlowControl
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength*
+  commentId: Overload:CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+  href: CircuitTool.CommunicationProtocolTools.UARTConfig.html#CircuitTool_CommunicationProtocolTools_UARTConfig_CableLength
+  name: CableLength
+  nameWithType: CommunicationProtocolTools.UARTConfig.CableLength
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig.CableLength
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

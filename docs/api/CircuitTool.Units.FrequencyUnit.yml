@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.FrequencyUnit
+  commentId: T:CircuitTool.Units.FrequencyUnit
+  id: FrequencyUnit
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.FrequencyUnit.Gigahertz
+  - CircuitTool.Units.FrequencyUnit.Hertz
+  - CircuitTool.Units.FrequencyUnit.Kilohertz
+  - CircuitTool.Units.FrequencyUnit.Megahertz
+  - CircuitTool.Units.FrequencyUnit.Terahertz
+  langs:
+  - csharp
+  - vb
+  name: FrequencyUnit
+  nameWithType: FrequencyUnit
+  fullName: CircuitTool.Units.FrequencyUnit
+  type: Enum
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FrequencyUnit
+    path: src/Units/FrequencyUnit.cs
+    startLine: 8
+  namespace: CircuitTool.Units
+  summary: Represents frequency measurement units
+  example: []
+  syntax:
+    content: public enum FrequencyUnit
+    content.vb: Public Enum FrequencyUnit
+- uid: CircuitTool.Units.FrequencyUnit.Hertz
+  commentId: F:CircuitTool.Units.FrequencyUnit.Hertz
+  id: Hertz
+  parent: CircuitTool.Units.FrequencyUnit
+  langs:
+  - csharp
+  - vb
+  name: Hertz
+  nameWithType: FrequencyUnit.Hertz
+  fullName: CircuitTool.Units.FrequencyUnit.Hertz
+  type: Field
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Hertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 11
+  namespace: CircuitTool.Units
+  summary: Hertz (Hz)
+  example: []
+  syntax:
+    content: Hertz = 0
+    return:
+      type: CircuitTool.Units.FrequencyUnit
+- uid: CircuitTool.Units.FrequencyUnit.Kilohertz
+  commentId: F:CircuitTool.Units.FrequencyUnit.Kilohertz
+  id: Kilohertz
+  parent: CircuitTool.Units.FrequencyUnit
+  langs:
+  - csharp
+  - vb
+  name: Kilohertz
+  nameWithType: FrequencyUnit.Kilohertz
+  fullName: CircuitTool.Units.FrequencyUnit.Kilohertz
+  type: Field
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilohertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 13
+  namespace: CircuitTool.Units
+  summary: Kilohertz (kHz)
+  example: []
+  syntax:
+    content: Kilohertz = 1
+    return:
+      type: CircuitTool.Units.FrequencyUnit
+- uid: CircuitTool.Units.FrequencyUnit.Megahertz
+  commentId: F:CircuitTool.Units.FrequencyUnit.Megahertz
+  id: Megahertz
+  parent: CircuitTool.Units.FrequencyUnit
+  langs:
+  - csharp
+  - vb
+  name: Megahertz
+  nameWithType: FrequencyUnit.Megahertz
+  fullName: CircuitTool.Units.FrequencyUnit.Megahertz
+  type: Field
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Megahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 15
+  namespace: CircuitTool.Units
+  summary: Megahertz (MHz)
+  example: []
+  syntax:
+    content: Megahertz = 2
+    return:
+      type: CircuitTool.Units.FrequencyUnit
+- uid: CircuitTool.Units.FrequencyUnit.Gigahertz
+  commentId: F:CircuitTool.Units.FrequencyUnit.Gigahertz
+  id: Gigahertz
+  parent: CircuitTool.Units.FrequencyUnit
+  langs:
+  - csharp
+  - vb
+  name: Gigahertz
+  nameWithType: FrequencyUnit.Gigahertz
+  fullName: CircuitTool.Units.FrequencyUnit.Gigahertz
+  type: Field
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gigahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 17
+  namespace: CircuitTool.Units
+  summary: Gigahertz (GHz)
+  example: []
+  syntax:
+    content: Gigahertz = 3
+    return:
+      type: CircuitTool.Units.FrequencyUnit
+- uid: CircuitTool.Units.FrequencyUnit.Terahertz
+  commentId: F:CircuitTool.Units.FrequencyUnit.Terahertz
+  id: Terahertz
+  parent: CircuitTool.Units.FrequencyUnit
+  langs:
+  - csharp
+  - vb
+  name: Terahertz
+  nameWithType: FrequencyUnit.Terahertz
+  fullName: CircuitTool.Units.FrequencyUnit.Terahertz
+  type: Field
+  source:
+    remote:
+      path: src/Units/FrequencyUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Terahertz
+    path: src/Units/FrequencyUnit.cs
+    startLine: 19
+  namespace: CircuitTool.Units
+  summary: Terahertz (THz)
+  example: []
+  syntax:
+    content: Terahertz = 4
+    return:
+      type: CircuitTool.Units.FrequencyUnit
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: CircuitTool.Units.FrequencyUnit
+  commentId: T:CircuitTool.Units.FrequencyUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.FrequencyUnit.html
+  name: FrequencyUnit
+  nameWithType: FrequencyUnit
+  fullName: CircuitTool.Units.FrequencyUnit

@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.MotorControlCalculator.MotorType
+  commentId: T:CircuitTool.MotorControlCalculator.MotorType
+  id: MotorControlCalculator.MotorType
+  parent: CircuitTool
+  children:
+  - CircuitTool.MotorControlCalculator.MotorType.BrushedDC
+  - CircuitTool.MotorControlCalculator.MotorType.BrushlessDC
+  - CircuitTool.MotorControlCalculator.MotorType.ServoMotor
+  - CircuitTool.MotorControlCalculator.MotorType.StepperMotor
+  langs:
+  - csharp
+  - vb
+  name: MotorControlCalculator.MotorType
+  nameWithType: MotorControlCalculator.MotorType
+  fullName: CircuitTool.MotorControlCalculator.MotorType
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MotorType
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 14
+  namespace: CircuitTool
+  summary: Motor types for different calculation methods
+  example: []
+  syntax:
+    content: public enum MotorControlCalculator.MotorType
+    content.vb: Public Enum MotorControlCalculator.MotorType
+- uid: CircuitTool.MotorControlCalculator.MotorType.BrushedDC
+  commentId: F:CircuitTool.MotorControlCalculator.MotorType.BrushedDC
+  id: BrushedDC
+  parent: CircuitTool.MotorControlCalculator.MotorType
+  langs:
+  - csharp
+  - vb
+  name: BrushedDC
+  nameWithType: MotorControlCalculator.MotorType.BrushedDC
+  fullName: CircuitTool.MotorControlCalculator.MotorType.BrushedDC
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BrushedDC
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: BrushedDC = 0
+    return:
+      type: CircuitTool.MotorControlCalculator.MotorType
+- uid: CircuitTool.MotorControlCalculator.MotorType.BrushlessDC
+  commentId: F:CircuitTool.MotorControlCalculator.MotorType.BrushlessDC
+  id: BrushlessDC
+  parent: CircuitTool.MotorControlCalculator.MotorType
+  langs:
+  - csharp
+  - vb
+  name: BrushlessDC
+  nameWithType: MotorControlCalculator.MotorType.BrushlessDC
+  fullName: CircuitTool.MotorControlCalculator.MotorType.BrushlessDC
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BrushlessDC
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: BrushlessDC = 1
+    return:
+      type: CircuitTool.MotorControlCalculator.MotorType
+- uid: CircuitTool.MotorControlCalculator.MotorType.StepperMotor
+  commentId: F:CircuitTool.MotorControlCalculator.MotorType.StepperMotor
+  id: StepperMotor
+  parent: CircuitTool.MotorControlCalculator.MotorType
+  langs:
+  - csharp
+  - vb
+  name: StepperMotor
+  nameWithType: MotorControlCalculator.MotorType.StepperMotor
+  fullName: CircuitTool.MotorControlCalculator.MotorType.StepperMotor
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StepperMotor
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: StepperMotor = 2
+    return:
+      type: CircuitTool.MotorControlCalculator.MotorType
+- uid: CircuitTool.MotorControlCalculator.MotorType.ServoMotor
+  commentId: F:CircuitTool.MotorControlCalculator.MotorType.ServoMotor
+  id: ServoMotor
+  parent: CircuitTool.MotorControlCalculator.MotorType
+  langs:
+  - csharp
+  - vb
+  name: ServoMotor
+  nameWithType: MotorControlCalculator.MotorType.ServoMotor
+  fullName: CircuitTool.MotorControlCalculator.MotorType.ServoMotor
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ServoMotor
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: ServoMotor = 3
+    return:
+      type: CircuitTool.MotorControlCalculator.MotorType
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.MotorControlCalculator.MotorType
+  commentId: T:CircuitTool.MotorControlCalculator.MotorType
+  parent: CircuitTool
+  href: CircuitTool.MotorControlCalculator.html
+  name: MotorControlCalculator.MotorType
+  nameWithType: MotorControlCalculator.MotorType
+  fullName: CircuitTool.MotorControlCalculator.MotorType
+  spec.csharp:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html
+  spec.vb:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html

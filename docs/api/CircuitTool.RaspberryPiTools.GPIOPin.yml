@@ -1,0 +1,708 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.RaspberryPiTools.GPIOPin
+  commentId: T:CircuitTool.RaspberryPiTools.GPIOPin
+  id: RaspberryPiTools.GPIOPin
+  parent: CircuitTool
+  children:
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO10
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO11
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO12
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO13
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO14
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO15
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO16
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO17
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO18
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO19
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO2
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO20
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO21
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO22
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO23
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO24
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO25
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO26
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO27
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO3
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO4
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO5
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO6
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO7
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO8
+  - CircuitTool.RaspberryPiTools.GPIOPin.GPIO9
+  langs:
+  - csharp
+  - vb
+  name: RaspberryPiTools.GPIOPin
+  nameWithType: RaspberryPiTools.GPIOPin
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIOPin
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 14
+  namespace: CircuitTool
+  summary: GPIO pin mapping for different Raspberry Pi models
+  example: []
+  syntax:
+    content: public enum RaspberryPiTools.GPIOPin
+    content.vb: Public Enum RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO2
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO2
+  id: GPIO2
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO2
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO2
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO2
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO2
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO2 = 2
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO3
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO3
+  id: GPIO3
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO3
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO3
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO3
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO3
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO3 = 3
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO4
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO4
+  id: GPIO4
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO4
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO4
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO4
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO4
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO4 = 4
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO5
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO5
+  id: GPIO5
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO5
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO5
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO5
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO5
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO5 = 5
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO6
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO6
+  id: GPIO6
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO6
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO6
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO6
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO6
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO6 = 6
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO7
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO7
+  id: GPIO7
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO7
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO7
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO7
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO7
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO7 = 7
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO8
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO8
+  id: GPIO8
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO8
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO8
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO8
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO8
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO8 = 8
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO9
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO9
+  id: GPIO9
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO9
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO9
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO9
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO9
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: GPIO9 = 9
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO10
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO10
+  id: GPIO10
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO10
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO10
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO10
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO10
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO10 = 10
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO11
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO11
+  id: GPIO11
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO11
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO11
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO11
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO11
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO11 = 11
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO12
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO12
+  id: GPIO12
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO12
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO12
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO12
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO12
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO12 = 12
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO13
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO13
+  id: GPIO13
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO13
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO13
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO13
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO13
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO13 = 13
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO14
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO14
+  id: GPIO14
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO14
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO14
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO14
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO14
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO14 = 14
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO15
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO15
+  id: GPIO15
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO15
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO15
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO15
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO15
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO15 = 15
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO16
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO16
+  id: GPIO16
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO16
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO16
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO16
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO16
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: GPIO16 = 16
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO17
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO17
+  id: GPIO17
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO17
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO17
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO17
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO17
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO17 = 17
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO18
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO18
+  id: GPIO18
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO18
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO18
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO18
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO18
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO18 = 18
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO19
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO19
+  id: GPIO19
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO19
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO19
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO19
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO19
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO19 = 19
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO20
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO20
+  id: GPIO20
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO20
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO20
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO20
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO20
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO20 = 20
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO21
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO21
+  id: GPIO21
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO21
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO21
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO21
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO21
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO21 = 21
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO22
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO22
+  id: GPIO22
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO22
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO22
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO22
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO22
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO22 = 22
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO23
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO23
+  id: GPIO23
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO23
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO23
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO23
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO23
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: GPIO23 = 23
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO24
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO24
+  id: GPIO24
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO24
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO24
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO24
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO24
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: GPIO24 = 24
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO25
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO25
+  id: GPIO25
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO25
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO25
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO25
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO25
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: GPIO25 = 25
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO26
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO26
+  id: GPIO26
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO26
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO26
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO26
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO26
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: GPIO26 = 26
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+- uid: CircuitTool.RaspberryPiTools.GPIOPin.GPIO27
+  commentId: F:CircuitTool.RaspberryPiTools.GPIOPin.GPIO27
+  id: GPIO27
+  parent: CircuitTool.RaspberryPiTools.GPIOPin
+  langs:
+  - csharp
+  - vb
+  name: GPIO27
+  nameWithType: RaspberryPiTools.GPIOPin.GPIO27
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin.GPIO27
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GPIO27
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: GPIO27 = 27
+    return:
+      type: CircuitTool.RaspberryPiTools.GPIOPin
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.RaspberryPiTools.GPIOPin
+  commentId: T:CircuitTool.RaspberryPiTools.GPIOPin
+  parent: CircuitTool
+  href: CircuitTool.RaspberryPiTools.html
+  name: RaspberryPiTools.GPIOPin
+  nameWithType: RaspberryPiTools.GPIOPin
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin
+  spec.csharp:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.GPIOPin
+    name: GPIOPin
+    href: CircuitTool.RaspberryPiTools.GPIOPin.html
+  spec.vb:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.GPIOPin
+    name: GPIOPin
+    href: CircuitTool.RaspberryPiTools.GPIOPin.html

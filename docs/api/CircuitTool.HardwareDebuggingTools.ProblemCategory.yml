@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  commentId: T:CircuitTool.HardwareDebuggingTools.ProblemCategory
+  id: HardwareDebuggingTools.ProblemCategory
+  parent: CircuitTool
+  children:
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Communication
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Mechanical
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Power
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Signal
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Software
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Thermal
+  - CircuitTool.HardwareDebuggingTools.ProblemCategory.Timing
+  langs:
+  - csharp
+  - vb
+  name: HardwareDebuggingTools.ProblemCategory
+  nameWithType: HardwareDebuggingTools.ProblemCategory
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ProblemCategory
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 16
+  namespace: CircuitTool
+  summary: Common hardware problem categories
+  example: []
+  syntax:
+    content: public enum HardwareDebuggingTools.ProblemCategory
+    content.vb: Public Enum HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Power
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Power
+  id: Power
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Power
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Power
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Power
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Power
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: Power = 0
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Communication
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Communication
+  id: Communication
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Communication
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Communication
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Communication
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Communication
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: Communication = 1
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Timing
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Timing
+  id: Timing
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Timing
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Timing
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Timing
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Timing
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 20
+  namespace: CircuitTool
+  syntax:
+    content: Timing = 2
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Signal
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Signal
+  id: Signal
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Signal
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Signal
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Signal
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Signal
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 21
+  namespace: CircuitTool
+  syntax:
+    content: Signal = 3
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Thermal
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Thermal
+  id: Thermal
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Thermal
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Thermal
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Thermal
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Thermal
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 22
+  namespace: CircuitTool
+  syntax:
+    content: Thermal = 4
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Mechanical
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Mechanical
+  id: Mechanical
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Mechanical
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Mechanical
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Mechanical
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Mechanical
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 23
+  namespace: CircuitTool
+  syntax:
+    content: Mechanical = 5
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory.Software
+  commentId: F:CircuitTool.HardwareDebuggingTools.ProblemCategory.Software
+  id: Software
+  parent: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  langs:
+  - csharp
+  - vb
+  name: Software
+  nameWithType: HardwareDebuggingTools.ProblemCategory.Software
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory.Software
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/HardwareDebuggingTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Software
+    path: src/Hardware/HardwareDebuggingTools.cs
+    startLine: 24
+  namespace: CircuitTool
+  syntax:
+    content: Software = 6
+    return:
+      type: CircuitTool.HardwareDebuggingTools.ProblemCategory
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  commentId: T:CircuitTool.HardwareDebuggingTools.ProblemCategory
+  parent: CircuitTool
+  href: CircuitTool.HardwareDebuggingTools.html
+  name: HardwareDebuggingTools.ProblemCategory
+  nameWithType: HardwareDebuggingTools.ProblemCategory
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  spec.csharp:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+    name: ProblemCategory
+    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html
+  spec.vb:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+    name: ProblemCategory
+    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html

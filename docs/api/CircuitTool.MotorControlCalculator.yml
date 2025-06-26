@@ -1,0 +1,883 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.MotorControlCalculator
+  commentId: T:CircuitTool.MotorControlCalculator
+  id: MotorControlCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType,System.Double,System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateEncoderResolution(System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculatePIDGains(System.Double,System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateRampTime(System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateRegenerativePower(System.Double,System.Double,System.Double)
+  - CircuitTool.MotorControlCalculator.CalculateStepperResolution(System.Int32,System.Int32,System.Double)
+  - CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MotorControlCalculator
+  nameWithType: MotorControlCalculator
+  fullName: CircuitTool.MotorControlCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MotorControlCalculator
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 9
+  namespace: CircuitTool
+  summary: Provides specialized calculations for DC motor control and analysis
+  example: []
+  syntax:
+    content: public static class MotorControlCalculator
+    content.vb: Public Module MotorControlCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateHBridgeCurrent(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateHBridgeCurrent(double, double, double, double)
+  nameWithType: MotorControlCalculator.CalculateHBridgeCurrent(double, double, double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateHBridgeCurrent
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 30
+  namespace: CircuitTool
+  summary: Calculates H-bridge current requirements for DC motor
+  example: []
+  syntax:
+    content: public static double CalculateHBridgeCurrent(double motorVoltage, double motorCurrent, double stallCurrent, double safetyFactor = 1.8)
+    parameters:
+    - id: motorVoltage
+      type: System.Double
+      description: Motor rated voltage
+    - id: motorCurrent
+      type: System.Double
+      description: Motor rated current
+    - id: stallCurrent
+      type: System.Double
+      description: Motor stall current
+    - id: safetyFactor
+      type: System.Double
+      description: Safety factor (typically 1.5-2.0)
+    return:
+      type: System.Double
+      description: Required H-bridge current rating
+    content.vb: Public Shared Function CalculateHBridgeCurrent(motorVoltage As Double, motorCurrent As Double, stallCurrent As Double, safetyFactor As Double = 1.8) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent*
+  nameWithType.vb: MotorControlCalculator.CalculateHBridgeCurrent(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent(Double, Double, Double, Double)
+  name.vb: CalculateHBridgeCurrent(Double, Double, Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateMotorDriverThermal(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateMotorDriverThermal(double, double, double, double)
+  nameWithType: MotorControlCalculator.CalculateMotorDriverThermal(double, double, double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateMotorDriverThermal
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 44
+  namespace: CircuitTool
+  summary: Calculates motor driver heat sink requirements
+  example: []
+  syntax:
+    content: public static double CalculateMotorDriverThermal(double motorCurrent, double driverRdsOn, double ambientTemp = 25, double maxJunctionTemp = 150)
+    parameters:
+    - id: motorCurrent
+      type: System.Double
+      description: Motor current in amperes
+    - id: driverRdsOn
+      type: System.Double
+      description: Driver MOSFET RDS(on) in ohms
+    - id: ambientTemp
+      type: System.Double
+      description: Ambient temperature in °C
+    - id: maxJunctionTemp
+      type: System.Double
+      description: Maximum junction temperature in °C
+    return:
+      type: System.Double
+      description: Required thermal resistance in °C/W
+    content.vb: Public Shared Function CalculateMotorDriverThermal(motorCurrent As Double, driverRdsOn As Double, ambientTemp As Double = 25, maxJunctionTemp As Double = 150) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal*
+  nameWithType.vb: MotorControlCalculator.CalculateMotorDriverThermal(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal(Double, Double, Double, Double)
+  name.vb: CalculateMotorDriverThermal(Double, Double, Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateStepperResolution(System.Int32,System.Int32,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateStepperResolution(System.Int32,System.Int32,System.Double)
+  id: CalculateStepperResolution(System.Int32,System.Int32,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateStepperResolution(int, int, double)
+  nameWithType: MotorControlCalculator.CalculateStepperResolution(int, int, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateStepperResolution(int, int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateStepperResolution
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 58
+  namespace: CircuitTool
+  summary: Calculates stepper motor step resolution
+  example: []
+  syntax:
+    content: public static double CalculateStepperResolution(int stepsPerRevolution, int microsteps = 1, double gearRatio = 1)
+    parameters:
+    - id: stepsPerRevolution
+      type: System.Int32
+      description: Motor steps per revolution
+    - id: microsteps
+      type: System.Int32
+      description: Microstepping factor
+    - id: gearRatio
+      type: System.Double
+      description: Gear reduction ratio (1 = no gears)
+    return:
+      type: System.Double
+      description: Angular resolution in degrees per step
+    content.vb: Public Shared Function CalculateStepperResolution(stepsPerRevolution As Integer, microsteps As Integer = 1, gearRatio As Double = 1) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateStepperResolution*
+  nameWithType.vb: MotorControlCalculator.CalculateStepperResolution(Integer, Integer, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateStepperResolution(Integer, Integer, Double)
+  name.vb: CalculateStepperResolution(Integer, Integer, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateEncoderResolution(System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateEncoderResolution(System.Double,System.Double)
+  id: CalculateEncoderResolution(System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateEncoderResolution(double, double)
+  nameWithType: MotorControlCalculator.CalculateEncoderResolution(double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateEncoderResolution(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateEncoderResolution
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 70
+  namespace: CircuitTool
+  summary: Calculates encoder resolution requirements
+  example: []
+  syntax:
+    content: public static int CalculateEncoderResolution(double desiredAccuracy, double gearRatio = 1)
+    parameters:
+    - id: desiredAccuracy
+      type: System.Double
+      description: Desired position accuracy in degrees
+    - id: gearRatio
+      type: System.Double
+      description: Gear reduction ratio
+    return:
+      type: System.Int32
+      description: Required encoder pulses per revolution
+    content.vb: Public Shared Function CalculateEncoderResolution(desiredAccuracy As Double, gearRatio As Double = 1) As Integer
+  overload: CircuitTool.MotorControlCalculator.CalculateEncoderResolution*
+  nameWithType.vb: MotorControlCalculator.CalculateEncoderResolution(Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateEncoderResolution(Double, Double)
+  name.vb: CalculateEncoderResolution(Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculatePIDGains(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculatePIDGains(System.Double,System.Double,System.Double)
+  id: CalculatePIDGains(System.Double,System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculatePIDGains(double, double, double)
+  nameWithType: MotorControlCalculator.CalculatePIDGains(double, double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculatePIDGains(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculatePIDGains
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 83
+  namespace: CircuitTool
+  summary: Calculates PID controller gains for motor position control
+  example: []
+  syntax:
+    content: public static (double Kp, double Ki, double Kd) CalculatePIDGains(double motorInertia, double motorTorqueConstant, double desiredBandwidth)
+    parameters:
+    - id: motorInertia
+      type: System.Double
+      description: Motor + load inertia in kg⋅m²
+    - id: motorTorqueConstant
+      type: System.Double
+      description: Motor torque constant in Nm/A
+    - id: desiredBandwidth
+      type: System.Double
+      description: Desired closed-loop bandwidth in Hz
+    return:
+      type: System.ValueTuple{System.Double,System.Double,System.Double}
+      description: PID gains (Kp, Ki, Kd)
+    content.vb: Public Shared Function CalculatePIDGains(motorInertia As Double, motorTorqueConstant As Double, desiredBandwidth As Double) As (Kp As Double, Ki As Double, Kd As Double)
+  overload: CircuitTool.MotorControlCalculator.CalculatePIDGains*
+  nameWithType.vb: MotorControlCalculator.CalculatePIDGains(Double, Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculatePIDGains(Double, Double, Double)
+  name.vb: CalculatePIDGains(Double, Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateRampTime(System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateRampTime(System.Double,System.Double)
+  id: CalculateRampTime(System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateRampTime(double, double)
+  nameWithType: MotorControlCalculator.CalculateRampTime(double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateRampTime(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateRampTime
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 101
+  namespace: CircuitTool
+  summary: Calculates motor acceleration/deceleration ramp
+  example: []
+  syntax:
+    content: public static double CalculateRampTime(double targetSpeed, double acceleration)
+    parameters:
+    - id: targetSpeed
+      type: System.Double
+      description: Target speed in RPM
+    - id: acceleration
+      type: System.Double
+      description: Acceleration in RPM/s
+    return:
+      type: System.Double
+      description: Ramp time in seconds
+    content.vb: Public Shared Function CalculateRampTime(targetSpeed As Double, acceleration As Double) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateRampTime*
+  nameWithType.vb: MotorControlCalculator.CalculateRampTime(Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateRampTime(Double, Double)
+  name.vb: CalculateRampTime(Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateRegenerativePower(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateRegenerativePower(System.Double,System.Double,System.Double)
+  id: CalculateRegenerativePower(System.Double,System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateRegenerativePower(double, double, double)
+  nameWithType: MotorControlCalculator.CalculateRegenerativePower(double, double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateRegenerativePower(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateRegenerativePower
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 113
+  namespace: CircuitTool
+  summary: Calculates regenerative braking power
+  example: []
+  syntax:
+    content: public static double CalculateRegenerativePower(double motorSpeed, double motorTorque, double efficiency = 0.85)
+    parameters:
+    - id: motorSpeed
+      type: System.Double
+      description: Motor speed in RPM
+    - id: motorTorque
+      type: System.Double
+      description: Braking torque in Nm
+    - id: efficiency
+      type: System.Double
+      description: Motor efficiency (0-1)
+    return:
+      type: System.Double
+      description: Regenerated power in watts
+    content.vb: Public Shared Function CalculateRegenerativePower(motorSpeed As Double, motorTorque As Double, efficiency As Double = 0.85) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateRegenerativePower*
+  nameWithType.vb: MotorControlCalculator.CalculateRegenerativePower(Double, Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateRegenerativePower(Double, Double, Double)
+  name.vb: CalculateRegenerativePower(Double, Double, Double)
+- uid: CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType,System.Double,System.Double,System.Double)
+  id: CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType,System.Double,System.Double,System.Double)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateCurrentLimit(MotorType, double, double, double)
+  nameWithType: MotorControlCalculator.CalculateCurrentLimit(MotorControlCalculator.MotorType, double, double, double)
+  fullName: CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateCurrentLimit
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 127
+  namespace: CircuitTool
+  summary: Calculates current limit for motor protection
+  example: []
+  syntax:
+    content: public static double CalculateCurrentLimit(MotorControlCalculator.MotorType motorType, double ratedCurrent, double thermalTimeConstant = 300, double operationTime = 60)
+    parameters:
+    - id: motorType
+      type: CircuitTool.MotorControlCalculator.MotorType
+      description: Type of motor
+    - id: ratedCurrent
+      type: System.Double
+      description: Motor rated current
+    - id: thermalTimeConstant
+      type: System.Double
+      description: Motor thermal time constant in seconds
+    - id: operationTime
+      type: System.Double
+      description: Expected operation time in seconds
+    return:
+      type: System.Double
+      description: Safe current limit
+    content.vb: Public Shared Function CalculateCurrentLimit(motorType As MotorControlCalculator.MotorType, ratedCurrent As Double, thermalTimeConstant As Double = 300, operationTime As Double = 60) As Double
+  overload: CircuitTool.MotorControlCalculator.CalculateCurrentLimit*
+  nameWithType.vb: MotorControlCalculator.CalculateCurrentLimit(MotorControlCalculator.MotorType, Double, Double, Double)
+  fullName.vb: CircuitTool.MotorControlCalculator.CalculateCurrentLimit(CircuitTool.MotorControlCalculator.MotorType, Double, Double, Double)
+  name.vb: CalculateCurrentLimit(MotorType, Double, Double, Double)
+- uid: CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType,System.String)
+  commentId: M:CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType,System.String)
+  id: GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType,System.String)
+  parent: CircuitTool.MotorControlCalculator
+  langs:
+  - csharp
+  - vb
+  name: GenerateControlCode(MotorType, string)
+  nameWithType: MotorControlCalculator.GenerateControlCode(MotorControlCalculator.MotorType, string)
+  fullName: CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType, string)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/MotorControlCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateControlCode
+    path: src/Hardware/MotorControlCalculator.cs
+    startLine: 150
+  namespace: CircuitTool
+  summary: Generates motor control code template
+  example: []
+  syntax:
+    content: public static string GenerateControlCode(MotorControlCalculator.MotorType motorType, string controlInterface = "PWM")
+    parameters:
+    - id: motorType
+      type: CircuitTool.MotorControlCalculator.MotorType
+      description: Type of motor
+    - id: controlInterface
+      type: System.String
+      description: Control interface (PWM, SPI, etc.)
+    return:
+      type: System.String
+      description: Code template string
+    content.vb: Public Shared Function GenerateControlCode(motorType As MotorControlCalculator.MotorType, controlInterface As String = "PWM") As String
+  overload: CircuitTool.MotorControlCalculator.GenerateControlCode*
+  nameWithType.vb: MotorControlCalculator.GenerateControlCode(MotorControlCalculator.MotorType, String)
+  fullName.vb: CircuitTool.MotorControlCalculator.GenerateControlCode(CircuitTool.MotorControlCalculator.MotorType, String)
+  name.vb: GenerateControlCode(MotorType, String)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateHBridgeCurrent_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateHBridgeCurrent
+  nameWithType: MotorControlCalculator.CalculateHBridgeCurrent
+  fullName: CircuitTool.MotorControlCalculator.CalculateHBridgeCurrent
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateMotorDriverThermal_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateMotorDriverThermal
+  nameWithType: MotorControlCalculator.CalculateMotorDriverThermal
+  fullName: CircuitTool.MotorControlCalculator.CalculateMotorDriverThermal
+- uid: CircuitTool.MotorControlCalculator.CalculateStepperResolution*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateStepperResolution
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateStepperResolution_System_Int32_System_Int32_System_Double_
+  name: CalculateStepperResolution
+  nameWithType: MotorControlCalculator.CalculateStepperResolution
+  fullName: CircuitTool.MotorControlCalculator.CalculateStepperResolution
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.MotorControlCalculator.CalculateEncoderResolution*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateEncoderResolution
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateEncoderResolution_System_Double_System_Double_
+  name: CalculateEncoderResolution
+  nameWithType: MotorControlCalculator.CalculateEncoderResolution
+  fullName: CircuitTool.MotorControlCalculator.CalculateEncoderResolution
+- uid: CircuitTool.MotorControlCalculator.CalculatePIDGains*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculatePIDGains
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculatePIDGains_System_Double_System_Double_System_Double_
+  name: CalculatePIDGains
+  nameWithType: MotorControlCalculator.CalculatePIDGains
+  fullName: CircuitTool.MotorControlCalculator.CalculatePIDGains
+- uid: System.ValueTuple{System.Double,System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double minResistance, double maxResistance, double recommendedResistance)
+  nameWithType: (double minResistance, double maxResistance, double recommendedResistance)
+  fullName: (double minResistance, double maxResistance, double recommendedResistance)
+  nameWithType.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  fullName.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  name.vb: (minResistance As Double, maxResistance As Double, recommendedResistance As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.minResistance
+    name: minResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.minresistance
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.maxResistance
+    name: maxResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.maxresistance
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.recommendedResistance
+    name: recommendedResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.recommendedresistance
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.minResistance
+    name: minResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.minresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.maxResistance
+    name: maxResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.maxresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double}.recommendedResistance
+    name: recommendedResistance
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double-.recommendedresistance
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: CircuitTool.MotorControlCalculator.CalculateRampTime*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateRampTime
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateRampTime_System_Double_System_Double_
+  name: CalculateRampTime
+  nameWithType: MotorControlCalculator.CalculateRampTime
+  fullName: CircuitTool.MotorControlCalculator.CalculateRampTime
+- uid: CircuitTool.MotorControlCalculator.CalculateRegenerativePower*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateRegenerativePower
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateRegenerativePower_System_Double_System_Double_System_Double_
+  name: CalculateRegenerativePower
+  nameWithType: MotorControlCalculator.CalculateRegenerativePower
+  fullName: CircuitTool.MotorControlCalculator.CalculateRegenerativePower
+- uid: CircuitTool.MotorControlCalculator.CalculateCurrentLimit*
+  commentId: Overload:CircuitTool.MotorControlCalculator.CalculateCurrentLimit
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_CalculateCurrentLimit_CircuitTool_MotorControlCalculator_MotorType_System_Double_System_Double_System_Double_
+  name: CalculateCurrentLimit
+  nameWithType: MotorControlCalculator.CalculateCurrentLimit
+  fullName: CircuitTool.MotorControlCalculator.CalculateCurrentLimit
+- uid: CircuitTool.MotorControlCalculator.MotorType
+  commentId: T:CircuitTool.MotorControlCalculator.MotorType
+  parent: CircuitTool
+  href: CircuitTool.MotorControlCalculator.html
+  name: MotorControlCalculator.MotorType
+  nameWithType: MotorControlCalculator.MotorType
+  fullName: CircuitTool.MotorControlCalculator.MotorType
+  spec.csharp:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html
+  spec.vb:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html
+- uid: CircuitTool.MotorControlCalculator.GenerateControlCode*
+  commentId: Overload:CircuitTool.MotorControlCalculator.GenerateControlCode
+  href: CircuitTool.MotorControlCalculator.html#CircuitTool_MotorControlCalculator_GenerateControlCode_CircuitTool_MotorControlCalculator_MotorType_System_String_
+  name: GenerateControlCode
+  nameWithType: MotorControlCalculator.GenerateControlCode
+  fullName: CircuitTool.MotorControlCalculator.GenerateControlCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

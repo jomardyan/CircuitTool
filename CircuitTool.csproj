@@ -83,4 +83,83 @@
     <PackageReference Include="Microsoft.Bcl.Async" Version="1.0.168" Condition="'$(TargetFramework)' == 'net45'" />
   </ItemGroup>
 
+  <!-- Documentation Generation Targets -->
+  <PropertyGroup>
+    <GenerateDocumentation Condition="'$(GenerateDocumentation)' == ''">false</GenerateDocumentation>
+    <DocFXProjectFile Condition="'$(DocFXProjectFile)' == ''">docfx.json</DocFXProjectFile>
+    <DocumentationOutputPath Condition="'$(DocumentationOutputPath)' == ''">docs/_site</DocumentationOutputPath>
+  </PropertyGroup>
+
+  <!-- Check if DocFX is available -->
+  <Target Name="CheckDocFX" Condition="'$(GenerateDocumentation)' == 'true'">
+    <Exec Command="docfx --version" 
+          ContinueOnError="true" 
+          IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="DocFXExitCode" />
+    </Exec>
+    
+    <PropertyGroup>
+      <DocFXAvailable Condition="'$(DocFXExitCode)' == '0'">true</DocFXAvailable>
+      <DocFXAvailable Condition="'$(DocFXExitCode)' != '0'">false</DocFXAvailable>
+    </PropertyGroup>
+    
+    <Message Text="DocFX Status: $(DocFXAvailable)" Importance="high" />
+    
+    <!-- Install DocFX if not available -->
+    <Exec Command="dotnet tool install -g docfx" 
+          Condition="'$(DocFXAvailable)' == 'false'"
+          ContinueOnError="true"
+          IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="DocFXInstallExitCode" />
+    </Exec>
+    
+    <Message Text="DocFX installation attempted" 
+             Condition="'$(DocFXAvailable)' == 'false' and '$(DocFXInstallExitCode)' != '0'" 
+             Importance="high" />
+  </Target>
+
+  <!-- Generate API metadata -->
+  <Target Name="GenerateDocumentationMetadata" 
+          DependsOnTargets="CheckDocFX" 
+          Condition="'$(GenerateDocumentation)' == 'true' and Exists('$(DocFXProjectFile)')">
+    
+    <Message Text="Generating API documentation metadata..." Importance="high" />
+    
+    <Exec Command="docfx metadata $(DocFXProjectFile)" 
+          ContinueOnError="true"
+          IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="DocFXMetadataExitCode" />
+    </Exec>
+    
+    <Message Text="API metadata generation completed (Exit Code: $(DocFXMetadataExitCode))" Importance="high" />
+  </Target>
+
+  <!-- Build documentation site -->
+  <Target Name="BuildDocumentation" 
+          DependsOnTargets="GenerateDocumentationMetadata" 
+          Condition="'$(GenerateDocumentation)' == 'true' and Exists('$(DocFXProjectFile)')">
+    
+    <Message Text="Building documentation website..." Importance="high" />
+    
+    <Exec Command="docfx build $(DocFXProjectFile)" 
+          ContinueOnError="true"
+          IgnoreExitCode="true">
+      <Output TaskParameter="ExitCode" PropertyName="DocFXBuildExitCode" />
+    </Exec>
+    
+    <Message Text="Documentation build completed (Exit Code: $(DocFXBuildExitCode))" Importance="high" />
+    <Message Text="Documentation available at: $(DocumentationOutputPath)" 
+             Condition="'$(DocFXBuildExitCode)' == '0'" 
+             Importance="high" />
+  </Target>
+
+  <!-- Hook documentation generation after build -->
+  <Target Name="GenerateDocumentationAfterBuild" 
+          AfterTargets="Build" 
+          DependsOnTargets="BuildDocumentation" 
+          Condition="'$(GenerateDocumentation)' == 'true'">
+    
+    <Message Text="Documentation generation process completed" Importance="high" />
+  </Target>
+
 </Project>

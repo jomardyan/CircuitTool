@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Async.FrequencyResponse
+  commentId: T:CircuitTool.Async.FrequencyResponse
+  id: FrequencyResponse
+  parent: CircuitTool.Async
+  children:
+  - CircuitTool.Async.FrequencyResponse.#ctor(System.Double[],System.Numerics.Complex[])
+  - CircuitTool.Async.FrequencyResponse.Frequencies
+  - CircuitTool.Async.FrequencyResponse.GetMagnitudePeak
+  - CircuitTool.Async.FrequencyResponse.Magnitudes
+  - CircuitTool.Async.FrequencyResponse.Phases
+  - CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+  - CircuitTool.Async.FrequencyResponse.Responses
+  langs:
+  - csharp
+  - vb
+  name: FrequencyResponse
+  nameWithType: FrequencyResponse
+  fullName: CircuitTool.Async.FrequencyResponse
+  type: Struct
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FrequencyResponse
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 212
+  namespace: CircuitTool.Async
+  summary: Results from frequency response analysis
+  example: []
+  syntax:
+    content: public readonly struct FrequencyResponse
+    content.vb: Public Structure FrequencyResponse
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Async.FrequencyResponse.#ctor(System.Double[],System.Numerics.Complex[])
+  commentId: M:CircuitTool.Async.FrequencyResponse.#ctor(System.Double[],System.Numerics.Complex[])
+  id: '#ctor(System.Double[],System.Numerics.Complex[])'
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: FrequencyResponse(double[], Complex[])
+  nameWithType: FrequencyResponse.FrequencyResponse(double[], Complex[])
+  fullName: CircuitTool.Async.FrequencyResponse.FrequencyResponse(double[], System.Numerics.Complex[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 214
+  namespace: CircuitTool.Async
+  syntax:
+    content: public FrequencyResponse(double[] frequencies, Complex[] responses)
+    parameters:
+    - id: frequencies
+      type: System.Double[]
+    - id: responses
+      type: System.Numerics.Complex[]
+    content.vb: Public Sub New(frequencies As Double(), responses As Complex())
+  overload: CircuitTool.Async.FrequencyResponse.#ctor*
+  nameWithType.vb: FrequencyResponse.New(Double(), Complex())
+  fullName.vb: CircuitTool.Async.FrequencyResponse.New(Double(), System.Numerics.Complex())
+  name.vb: New(Double(), Complex())
+- uid: CircuitTool.Async.FrequencyResponse.Frequencies
+  commentId: P:CircuitTool.Async.FrequencyResponse.Frequencies
+  id: Frequencies
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: Frequencies
+  nameWithType: FrequencyResponse.Frequencies
+  fullName: CircuitTool.Async.FrequencyResponse.Frequencies
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Frequencies
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 223
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] Frequencies { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property Frequencies As Double()
+  overload: CircuitTool.Async.FrequencyResponse.Frequencies*
+- uid: CircuitTool.Async.FrequencyResponse.Responses
+  commentId: P:CircuitTool.Async.FrequencyResponse.Responses
+  id: Responses
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: Responses
+  nameWithType: FrequencyResponse.Responses
+  fullName: CircuitTool.Async.FrequencyResponse.Responses
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Responses
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 224
+  namespace: CircuitTool.Async
+  syntax:
+    content: public Complex[] Responses { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Complex[]
+    content.vb: Public ReadOnly Property Responses As Complex()
+  overload: CircuitTool.Async.FrequencyResponse.Responses*
+- uid: CircuitTool.Async.FrequencyResponse.Magnitudes
+  commentId: P:CircuitTool.Async.FrequencyResponse.Magnitudes
+  id: Magnitudes
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: Magnitudes
+  nameWithType: FrequencyResponse.Magnitudes
+  fullName: CircuitTool.Async.FrequencyResponse.Magnitudes
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Magnitudes
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 226
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] Magnitudes { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property Magnitudes As Double()
+  overload: CircuitTool.Async.FrequencyResponse.Magnitudes*
+- uid: CircuitTool.Async.FrequencyResponse.Phases
+  commentId: P:CircuitTool.Async.FrequencyResponse.Phases
+  id: Phases
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: Phases
+  nameWithType: FrequencyResponse.Phases
+  fullName: CircuitTool.Async.FrequencyResponse.Phases
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Phases
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 227
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] Phases { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property Phases As Double()
+  overload: CircuitTool.Async.FrequencyResponse.Phases*
+- uid: CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+  commentId: P:CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+  id: PhasesInDegrees
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: PhasesInDegrees
+  nameWithType: FrequencyResponse.PhasesInDegrees
+  fullName: CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+  type: Property
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhasesInDegrees
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 228
+  namespace: CircuitTool.Async
+  syntax:
+    content: public double[] PhasesInDegrees { get; }
+    parameters: []
+    return:
+      type: System.Double[]
+    content.vb: Public ReadOnly Property PhasesInDegrees As Double()
+  overload: CircuitTool.Async.FrequencyResponse.PhasesInDegrees*
+- uid: CircuitTool.Async.FrequencyResponse.GetMagnitudePeak
+  commentId: M:CircuitTool.Async.FrequencyResponse.GetMagnitudePeak
+  id: GetMagnitudePeak
+  parent: CircuitTool.Async.FrequencyResponse
+  langs:
+  - csharp
+  - vb
+  name: GetMagnitudePeak()
+  nameWithType: FrequencyResponse.GetMagnitudePeak()
+  fullName: CircuitTool.Async.FrequencyResponse.GetMagnitudePeak()
+  type: Method
+  source:
+    remote:
+      path: src/Performance/AsyncCalculations.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetMagnitudePeak
+    path: src/Performance/AsyncCalculations.cs
+    startLine: 230
+  namespace: CircuitTool.Async
+  syntax:
+    content: public (double frequency, double magnitude) GetMagnitudePeak()
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+    content.vb: Public Function GetMagnitudePeak() As (frequency As Double, magnitude As Double)
+  overload: CircuitTool.Async.FrequencyResponse.GetMagnitudePeak*
+references:
+- uid: CircuitTool.Async
+  commentId: N:CircuitTool.Async
+  href: CircuitTool.html
+  name: CircuitTool.Async
+  nameWithType: CircuitTool.Async
+  fullName: CircuitTool.Async
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Async
+    name: Async
+    href: CircuitTool.Async.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Async.FrequencyResponse.#ctor*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.#ctor
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse__ctor_System_Double___System_Numerics_Complex___
+  name: FrequencyResponse
+  nameWithType: FrequencyResponse.FrequencyResponse
+  fullName: CircuitTool.Async.FrequencyResponse.FrequencyResponse
+  nameWithType.vb: FrequencyResponse.New
+  fullName.vb: CircuitTool.Async.FrequencyResponse.New
+  name.vb: New
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: System.Numerics.Complex[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  name: Complex[]
+  nameWithType: Complex[]
+  fullName: System.Numerics.Complex[]
+  nameWithType.vb: Complex()
+  fullName.vb: System.Numerics.Complex()
+  name.vb: Complex()
+  spec.csharp:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Numerics.Complex
+    name: Complex
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.complex
+  - name: (
+  - name: )
+- uid: CircuitTool.Async.FrequencyResponse.Frequencies*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.Frequencies
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_Frequencies
+  name: Frequencies
+  nameWithType: FrequencyResponse.Frequencies
+  fullName: CircuitTool.Async.FrequencyResponse.Frequencies
+- uid: CircuitTool.Async.FrequencyResponse.Responses*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.Responses
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_Responses
+  name: Responses
+  nameWithType: FrequencyResponse.Responses
+  fullName: CircuitTool.Async.FrequencyResponse.Responses
+- uid: CircuitTool.Async.FrequencyResponse.Magnitudes*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.Magnitudes
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_Magnitudes
+  name: Magnitudes
+  nameWithType: FrequencyResponse.Magnitudes
+  fullName: CircuitTool.Async.FrequencyResponse.Magnitudes
+- uid: CircuitTool.Async.FrequencyResponse.Phases*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.Phases
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_Phases
+  name: Phases
+  nameWithType: FrequencyResponse.Phases
+  fullName: CircuitTool.Async.FrequencyResponse.Phases
+- uid: CircuitTool.Async.FrequencyResponse.PhasesInDegrees*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_PhasesInDegrees
+  name: PhasesInDegrees
+  nameWithType: FrequencyResponse.PhasesInDegrees
+  fullName: CircuitTool.Async.FrequencyResponse.PhasesInDegrees
+- uid: CircuitTool.Async.FrequencyResponse.GetMagnitudePeak*
+  commentId: Overload:CircuitTool.Async.FrequencyResponse.GetMagnitudePeak
+  href: CircuitTool.Async.FrequencyResponse.html#CircuitTool_Async_FrequencyResponse_GetMagnitudePeak
+  name: GetMagnitudePeak
+  nameWithType: FrequencyResponse.GetMagnitudePeak
+  fullName: CircuitTool.Async.FrequencyResponse.GetMagnitudePeak
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double referenceResistor, double biasVoltage)
+  nameWithType: (double referenceResistor, double biasVoltage)
+  fullName: (double referenceResistor, double biasVoltage)
+  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
+  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
+  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

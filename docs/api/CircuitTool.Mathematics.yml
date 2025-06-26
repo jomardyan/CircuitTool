@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Mathematics
+  commentId: N:CircuitTool.Mathematics
+  id: CircuitTool.Mathematics
+  children:
+  - CircuitTool.Mathematics.FourierTransform
+  - CircuitTool.Mathematics.MatrixOperations
+  - CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+  - CircuitTool.Mathematics.WindowType
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Mathematics
+  nameWithType: CircuitTool.Mathematics
+  fullName: CircuitTool.Mathematics
+  type: Namespace
+references:
+- uid: CircuitTool.Mathematics.MatrixOperations
+  commentId: T:CircuitTool.Mathematics.MatrixOperations
+  href: CircuitTool.Mathematics.MatrixOperations.html
+  name: MatrixOperations
+  nameWithType: MatrixOperations
+  fullName: CircuitTool.Mathematics.MatrixOperations
+- uid: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+  commentId: T:CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+  parent: CircuitTool.Mathematics
+  href: CircuitTool.Mathematics.MatrixOperations.html
+  name: MatrixOperations.ComplexMatrix
+  nameWithType: MatrixOperations.ComplexMatrix
+  fullName: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+  spec.csharp:
+  - uid: CircuitTool.Mathematics.MatrixOperations
+    name: MatrixOperations
+    href: CircuitTool.Mathematics.MatrixOperations.html
+  - name: .
+  - uid: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+    name: ComplexMatrix
+    href: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html
+  spec.vb:
+  - uid: CircuitTool.Mathematics.MatrixOperations
+    name: MatrixOperations
+    href: CircuitTool.Mathematics.MatrixOperations.html
+  - name: .
+  - uid: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
+    name: ComplexMatrix
+    href: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html
+- uid: CircuitTool.Mathematics.WindowType
+  commentId: T:CircuitTool.Mathematics.WindowType
+  parent: CircuitTool.Mathematics
+  href: CircuitTool.Mathematics.WindowType.html
+  name: WindowType
+  nameWithType: WindowType
+  fullName: CircuitTool.Mathematics.WindowType
+- uid: CircuitTool.Mathematics.FourierTransform
+  commentId: T:CircuitTool.Mathematics.FourierTransform
+  href: CircuitTool.Mathematics.FourierTransform.html
+  name: FourierTransform
+  nameWithType: FourierTransform
+  fullName: CircuitTool.Mathematics.FourierTransform
+- uid: CircuitTool.Mathematics
+  commentId: N:CircuitTool.Mathematics
+  href: CircuitTool.html
+  name: CircuitTool.Mathematics
+  nameWithType: CircuitTool.Mathematics
+  fullName: CircuitTool.Mathematics
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Mathematics
+    name: Mathematics
+    href: CircuitTool.Mathematics.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Mathematics
+    name: Mathematics
+    href: CircuitTool.Mathematics.html

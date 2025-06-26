@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  id: CircuitTool.PowerAnalysis
+  children:
+  - CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
+  - CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  - CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  - CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  - CircuitTool.PowerAnalysis.SequenceComponents
+  - CircuitTool.PowerAnalysis.ThreePhasePower
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  type: Namespace
+references:
+- uid: CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
+  commentId: T:CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
+  href: CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.html
+  name: AdvancedPowerAnalysis
+  nameWithType: AdvancedPowerAnalysis
+  fullName: CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
+- uid: CircuitTool.PowerAnalysis.ThreePhasePower
+  commentId: T:CircuitTool.PowerAnalysis.ThreePhasePower
+  parent: CircuitTool.PowerAnalysis
+  href: CircuitTool.PowerAnalysis.ThreePhasePower.html
+  name: ThreePhasePower
+  nameWithType: ThreePhasePower
+  fullName: CircuitTool.PowerAnalysis.ThreePhasePower
+- uid: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  commentId: T:CircuitTool.PowerAnalysis.BalancedThreePhasePower
+  parent: CircuitTool.PowerAnalysis
+  href: CircuitTool.PowerAnalysis.BalancedThreePhasePower.html
+  name: BalancedThreePhasePower
+  nameWithType: BalancedThreePhasePower
+  fullName: CircuitTool.PowerAnalysis.BalancedThreePhasePower
+- uid: CircuitTool.PowerAnalysis.SequenceComponents
+  commentId: T:CircuitTool.PowerAnalysis.SequenceComponents
+  parent: CircuitTool.PowerAnalysis
+  href: CircuitTool.PowerAnalysis.SequenceComponents.html
+  name: SequenceComponents
+  nameWithType: SequenceComponents
+  fullName: CircuitTool.PowerAnalysis.SequenceComponents
+- uid: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  commentId: T:CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+  parent: CircuitTool.PowerAnalysis
+  href: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html
+  name: HarmonicPowerAnalysis
+  nameWithType: HarmonicPowerAnalysis
+  fullName: CircuitTool.PowerAnalysis.HarmonicPowerAnalysis
+- uid: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  commentId: T:CircuitTool.PowerAnalysis.PowerQualityAnalysis
+  parent: CircuitTool.PowerAnalysis
+  href: CircuitTool.PowerAnalysis.PowerQualityAnalysis.html
+  name: PowerQualityAnalysis
+  nameWithType: PowerQualityAnalysis
+  fullName: CircuitTool.PowerAnalysis.PowerQualityAnalysis
+- uid: CircuitTool.PowerAnalysis
+  commentId: N:CircuitTool.PowerAnalysis
+  href: CircuitTool.html
+  name: CircuitTool.PowerAnalysis
+  nameWithType: CircuitTool.PowerAnalysis
+  fullName: CircuitTool.PowerAnalysis
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerAnalysis
+    name: PowerAnalysis
+    href: CircuitTool.PowerAnalysis.html

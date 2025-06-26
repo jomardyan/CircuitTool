@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup
+  commentId: T:CircuitTool.PCBDesignCalculator.PCBStackup
+  id: PCBDesignCalculator.PCBStackup
+  parent: CircuitTool
+  children:
+  - CircuitTool.PCBDesignCalculator.PCBStackup.EightLayer
+  - CircuitTool.PCBDesignCalculator.PCBStackup.FourLayer
+  - CircuitTool.PCBDesignCalculator.PCBStackup.SixLayer
+  - CircuitTool.PCBDesignCalculator.PCBStackup.TwoLayer
+  langs:
+  - csharp
+  - vb
+  name: PCBDesignCalculator.PCBStackup
+  nameWithType: PCBDesignCalculator.PCBStackup
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PCBStackup
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 14
+  namespace: CircuitTool
+  summary: PCB layer stackup types
+  example: []
+  syntax:
+    content: public enum PCBDesignCalculator.PCBStackup
+    content.vb: Public Enum PCBDesignCalculator.PCBStackup
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup.TwoLayer
+  commentId: F:CircuitTool.PCBDesignCalculator.PCBStackup.TwoLayer
+  id: TwoLayer
+  parent: CircuitTool.PCBDesignCalculator.PCBStackup
+  langs:
+  - csharp
+  - vb
+  name: TwoLayer
+  nameWithType: PCBDesignCalculator.PCBStackup.TwoLayer
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup.TwoLayer
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TwoLayer
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  syntax:
+    content: TwoLayer = 0
+    return:
+      type: CircuitTool.PCBDesignCalculator.PCBStackup
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup.FourLayer
+  commentId: F:CircuitTool.PCBDesignCalculator.PCBStackup.FourLayer
+  id: FourLayer
+  parent: CircuitTool.PCBDesignCalculator.PCBStackup
+  langs:
+  - csharp
+  - vb
+  name: FourLayer
+  nameWithType: PCBDesignCalculator.PCBStackup.FourLayer
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup.FourLayer
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FourLayer
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 17
+  namespace: CircuitTool
+  syntax:
+    content: FourLayer = 1
+    return:
+      type: CircuitTool.PCBDesignCalculator.PCBStackup
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup.SixLayer
+  commentId: F:CircuitTool.PCBDesignCalculator.PCBStackup.SixLayer
+  id: SixLayer
+  parent: CircuitTool.PCBDesignCalculator.PCBStackup
+  langs:
+  - csharp
+  - vb
+  name: SixLayer
+  nameWithType: PCBDesignCalculator.PCBStackup.SixLayer
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup.SixLayer
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SixLayer
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 18
+  namespace: CircuitTool
+  syntax:
+    content: SixLayer = 2
+    return:
+      type: CircuitTool.PCBDesignCalculator.PCBStackup
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup.EightLayer
+  commentId: F:CircuitTool.PCBDesignCalculator.PCBStackup.EightLayer
+  id: EightLayer
+  parent: CircuitTool.PCBDesignCalculator.PCBStackup
+  langs:
+  - csharp
+  - vb
+  name: EightLayer
+  nameWithType: PCBDesignCalculator.PCBStackup.EightLayer
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup.EightLayer
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EightLayer
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 19
+  namespace: CircuitTool
+  syntax:
+    content: EightLayer = 3
+    return:
+      type: CircuitTool.PCBDesignCalculator.PCBStackup
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup
+  commentId: T:CircuitTool.PCBDesignCalculator.PCBStackup
+  parent: CircuitTool
+  href: CircuitTool.PCBDesignCalculator.html
+  name: PCBDesignCalculator.PCBStackup
+  nameWithType: PCBDesignCalculator.PCBStackup
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup
+  spec.csharp:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
+  spec.vb:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html

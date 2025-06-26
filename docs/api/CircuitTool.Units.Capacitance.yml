@@ -1,0 +1,1627 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Units.Capacitance
+  commentId: T:CircuitTool.Units.Capacitance
+  id: Capacitance
+  parent: CircuitTool.Units
+  children:
+  - CircuitTool.Units.Capacitance.#ctor(System.Double,CircuitTool.Units.CapacitanceUnit)
+  - CircuitTool.Units.Capacitance.CompareTo(CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.ConvertTo(CircuitTool.Units.CapacitanceUnit)
+  - CircuitTool.Units.Capacitance.Equals(CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.Equals(System.Object)
+  - CircuitTool.Units.Capacitance.Farads
+  - CircuitTool.Units.Capacitance.GetHashCode
+  - CircuitTool.Units.Capacitance.Kilofarads
+  - CircuitTool.Units.Capacitance.Microfarads
+  - CircuitTool.Units.Capacitance.Millifarads
+  - CircuitTool.Units.Capacitance.Nanofarads
+  - CircuitTool.Units.Capacitance.Picofarads
+  - CircuitTool.Units.Capacitance.ToString
+  - CircuitTool.Units.Capacitance.ToString(CircuitTool.Units.CapacitanceUnit)
+  - CircuitTool.Units.Capacitance.op_Addition(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_Division(CircuitTool.Units.Capacitance,System.Double)
+  - CircuitTool.Units.Capacitance.op_Equality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_GreaterThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_GreaterThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_Inequality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_LessThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_LessThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_Multiply(CircuitTool.Units.Capacitance,System.Double)
+  - CircuitTool.Units.Capacitance.op_Multiply(System.Double,CircuitTool.Units.Capacitance)
+  - CircuitTool.Units.Capacitance.op_Subtraction(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  langs:
+  - csharp
+  - vb
+  name: Capacitance
+  nameWithType: Capacitance
+  fullName: CircuitTool.Units.Capacitance
+  type: Struct
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Capacitance
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 27
+  namespace: CircuitTool.Units
+  summary: Represents a strongly-typed capacitance measurement with automatic unit conversion
+  example: []
+  syntax:
+    content: 'public readonly struct Capacitance : IEquatable<Capacitance>, IComparable<Capacitance>'
+    content.vb: Public Structure Capacitance Implements IEquatable(Of Capacitance), IComparable(Of Capacitance)
+  implements:
+  - System.IEquatable{CircuitTool.Units.Capacitance}
+  - System.IComparable{CircuitTool.Units.Capacitance}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CircuitTool.Units.Capacitance.#ctor(System.Double,CircuitTool.Units.CapacitanceUnit)
+  commentId: M:CircuitTool.Units.Capacitance.#ctor(System.Double,CircuitTool.Units.CapacitanceUnit)
+  id: '#ctor(System.Double,CircuitTool.Units.CapacitanceUnit)'
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Capacitance(double, CapacitanceUnit)
+  nameWithType: Capacitance.Capacitance(double, CapacitanceUnit)
+  fullName: CircuitTool.Units.Capacitance.Capacitance(double, CircuitTool.Units.CapacitanceUnit)
+  type: Constructor
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: .ctor
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 36
+  namespace: CircuitTool.Units
+  summary: Creates a new capacitance measurement
+  example: []
+  syntax:
+    content: public Capacitance(double value, CapacitanceUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value in the specified unit
+    - id: unit
+      type: CircuitTool.Units.CapacitanceUnit
+      description: The unit of measurement
+    content.vb: Public Sub New(value As Double, unit As CapacitanceUnit)
+  overload: CircuitTool.Units.Capacitance.#ctor*
+  nameWithType.vb: Capacitance.New(Double, CapacitanceUnit)
+  fullName.vb: CircuitTool.Units.Capacitance.New(Double, CircuitTool.Units.CapacitanceUnit)
+  name.vb: New(Double, CapacitanceUnit)
+- uid: CircuitTool.Units.Capacitance.Farads
+  commentId: P:CircuitTool.Units.Capacitance.Farads
+  id: Farads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Farads
+  nameWithType: Capacitance.Farads
+  fullName: CircuitTool.Units.Capacitance.Farads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Farads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 44
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in farads
+  example: []
+  syntax:
+    content: public double Farads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Farads As Double
+  overload: CircuitTool.Units.Capacitance.Farads*
+- uid: CircuitTool.Units.Capacitance.Picofarads
+  commentId: P:CircuitTool.Units.Capacitance.Picofarads
+  id: Picofarads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Picofarads
+  nameWithType: Capacitance.Picofarads
+  fullName: CircuitTool.Units.Capacitance.Picofarads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Picofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 49
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in picofarads
+  example: []
+  syntax:
+    content: public double Picofarads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Picofarads As Double
+  overload: CircuitTool.Units.Capacitance.Picofarads*
+- uid: CircuitTool.Units.Capacitance.Nanofarads
+  commentId: P:CircuitTool.Units.Capacitance.Nanofarads
+  id: Nanofarads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Nanofarads
+  nameWithType: Capacitance.Nanofarads
+  fullName: CircuitTool.Units.Capacitance.Nanofarads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Nanofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 54
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in nanofarads
+  example: []
+  syntax:
+    content: public double Nanofarads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Nanofarads As Double
+  overload: CircuitTool.Units.Capacitance.Nanofarads*
+- uid: CircuitTool.Units.Capacitance.Microfarads
+  commentId: P:CircuitTool.Units.Capacitance.Microfarads
+  id: Microfarads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Microfarads
+  nameWithType: Capacitance.Microfarads
+  fullName: CircuitTool.Units.Capacitance.Microfarads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Microfarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 59
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in microfarads
+  example: []
+  syntax:
+    content: public double Microfarads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Microfarads As Double
+  overload: CircuitTool.Units.Capacitance.Microfarads*
+- uid: CircuitTool.Units.Capacitance.Millifarads
+  commentId: P:CircuitTool.Units.Capacitance.Millifarads
+  id: Millifarads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Millifarads
+  nameWithType: Capacitance.Millifarads
+  fullName: CircuitTool.Units.Capacitance.Millifarads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Millifarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 64
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in millifarads
+  example: []
+  syntax:
+    content: public double Millifarads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Millifarads As Double
+  overload: CircuitTool.Units.Capacitance.Millifarads*
+- uid: CircuitTool.Units.Capacitance.Kilofarads
+  commentId: P:CircuitTool.Units.Capacitance.Kilofarads
+  id: Kilofarads
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Kilofarads
+  nameWithType: Capacitance.Kilofarads
+  fullName: CircuitTool.Units.Capacitance.Kilofarads
+  type: Property
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Kilofarads
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 69
+  namespace: CircuitTool.Units
+  summary: Gets the capacitance value in kilofarads
+  example: []
+  syntax:
+    content: public double Kilofarads { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Kilofarads As Double
+  overload: CircuitTool.Units.Capacitance.Kilofarads*
+- uid: CircuitTool.Units.Capacitance.ConvertTo(CircuitTool.Units.CapacitanceUnit)
+  commentId: M:CircuitTool.Units.Capacitance.ConvertTo(CircuitTool.Units.CapacitanceUnit)
+  id: ConvertTo(CircuitTool.Units.CapacitanceUnit)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: ConvertTo(CapacitanceUnit)
+  nameWithType: Capacitance.ConvertTo(CapacitanceUnit)
+  fullName: CircuitTool.Units.Capacitance.ConvertTo(CircuitTool.Units.CapacitanceUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConvertTo
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 85
+  namespace: CircuitTool.Units
+  syntax:
+    content: public double ConvertTo(CapacitanceUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.CapacitanceUnit
+    return:
+      type: System.Double
+    content.vb: Public Function ConvertTo(unit As CapacitanceUnit) As Double
+  overload: CircuitTool.Units.Capacitance.ConvertTo*
+- uid: CircuitTool.Units.Capacitance.op_Addition(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_Addition(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_Addition(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator +(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator +(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator +(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Addition
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 99
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Capacitance operator +(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: CircuitTool.Units.Capacitance
+    content.vb: Public Shared Operator +(left As Capacitance, right As Capacitance) As Capacitance
+  overload: CircuitTool.Units.Capacitance.op_Addition*
+  nameWithType.vb: Capacitance.+(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.+(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: +(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_Subtraction(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_Subtraction(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_Subtraction(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator -(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator -(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator -(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Subtraction
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 100
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Capacitance operator -(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: CircuitTool.Units.Capacitance
+    content.vb: Public Shared Operator -(left As Capacitance, right As Capacitance) As Capacitance
+  overload: CircuitTool.Units.Capacitance.op_Subtraction*
+  nameWithType.vb: Capacitance.-(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.-(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: -(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_Multiply(CircuitTool.Units.Capacitance,System.Double)
+  commentId: M:CircuitTool.Units.Capacitance.op_Multiply(CircuitTool.Units.Capacitance,System.Double)
+  id: op_Multiply(CircuitTool.Units.Capacitance,System.Double)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator *(Capacitance, double)
+  nameWithType: Capacitance.operator *(Capacitance, double)
+  fullName: CircuitTool.Units.Capacitance.operator *(CircuitTool.Units.Capacitance, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 101
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Capacitance operator *(Capacitance capacitance, double scalar)
+    parameters:
+    - id: capacitance
+      type: CircuitTool.Units.Capacitance
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Capacitance
+    content.vb: Public Shared Operator *(capacitance As Capacitance, scalar As Double) As Capacitance
+  overload: CircuitTool.Units.Capacitance.op_Multiply*
+  nameWithType.vb: Capacitance.*(Capacitance, Double)
+  fullName.vb: CircuitTool.Units.Capacitance.*(CircuitTool.Units.Capacitance, Double)
+  name.vb: '*(Capacitance, Double)'
+- uid: CircuitTool.Units.Capacitance.op_Multiply(System.Double,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_Multiply(System.Double,CircuitTool.Units.Capacitance)
+  id: op_Multiply(System.Double,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, Capacitance)
+  nameWithType: Capacitance.operator *(double, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator *(double, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Multiply
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 102
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Capacitance operator *(double scalar, Capacitance capacitance)
+    parameters:
+    - id: scalar
+      type: System.Double
+    - id: capacitance
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: CircuitTool.Units.Capacitance
+    content.vb: Public Shared Operator *(scalar As Double, capacitance As Capacitance) As Capacitance
+  overload: CircuitTool.Units.Capacitance.op_Multiply*
+  nameWithType.vb: Capacitance.*(Double, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.*(Double, CircuitTool.Units.Capacitance)
+  name.vb: '*(Double, Capacitance)'
+- uid: CircuitTool.Units.Capacitance.op_Division(CircuitTool.Units.Capacitance,System.Double)
+  commentId: M:CircuitTool.Units.Capacitance.op_Division(CircuitTool.Units.Capacitance,System.Double)
+  id: op_Division(CircuitTool.Units.Capacitance,System.Double)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator /(Capacitance, double)
+  nameWithType: Capacitance.operator /(Capacitance, double)
+  fullName: CircuitTool.Units.Capacitance.operator /(CircuitTool.Units.Capacitance, double)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Division
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 103
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static Capacitance operator /(Capacitance capacitance, double scalar)
+    parameters:
+    - id: capacitance
+      type: CircuitTool.Units.Capacitance
+    - id: scalar
+      type: System.Double
+    return:
+      type: CircuitTool.Units.Capacitance
+    content.vb: Public Shared Operator /(capacitance As Capacitance, scalar As Double) As Capacitance
+  overload: CircuitTool.Units.Capacitance.op_Division*
+  nameWithType.vb: Capacitance./(Capacitance, Double)
+  fullName.vb: CircuitTool.Units.Capacitance./(CircuitTool.Units.Capacitance, Double)
+  name.vb: /(Capacitance, Double)
+- uid: CircuitTool.Units.Capacitance.op_Equality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_Equality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_Equality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator ==(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator ==(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Equality
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 105
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator ==(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_Equality*
+  nameWithType.vb: Capacitance.=(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: =(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_Inequality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_Inequality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_Inequality(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator !=(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator !=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_Inequality
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 106
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator !=(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_Inequality*
+  nameWithType.vb: Capacitance.<>(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.<>(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: <>(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_LessThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_LessThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_LessThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator <(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator <(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator <(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThan
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 107
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_LessThan*
+  nameWithType.vb: Capacitance.<(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.<(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: <(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_GreaterThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_GreaterThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_GreaterThan(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator >(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator >(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator >(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThan
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 108
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_GreaterThan*
+  nameWithType.vb: Capacitance.>(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.>(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: '>(Capacitance, Capacitance)'
+- uid: CircuitTool.Units.Capacitance.op_LessThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_LessThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_LessThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator <=(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator <=(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator <=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_LessThanOrEqual
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 109
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator <=(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <=(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_LessThanOrEqual*
+  nameWithType.vb: Capacitance.<=(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.<=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: <=(Capacitance, Capacitance)
+- uid: CircuitTool.Units.Capacitance.op_GreaterThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.op_GreaterThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  id: op_GreaterThanOrEqual(CircuitTool.Units.Capacitance,CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: operator >=(Capacitance, Capacitance)
+  nameWithType: Capacitance.operator >=(Capacitance, Capacitance)
+  fullName: CircuitTool.Units.Capacitance.operator >=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  type: Operator
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: op_GreaterThanOrEqual
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 110
+  namespace: CircuitTool.Units
+  syntax:
+    content: public static bool operator >=(Capacitance left, Capacitance right)
+    parameters:
+    - id: left
+      type: CircuitTool.Units.Capacitance
+    - id: right
+      type: CircuitTool.Units.Capacitance
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator >=(left As Capacitance, right As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.op_GreaterThanOrEqual*
+  nameWithType.vb: Capacitance.>=(Capacitance, Capacitance)
+  fullName.vb: CircuitTool.Units.Capacitance.>=(CircuitTool.Units.Capacitance, CircuitTool.Units.Capacitance)
+  name.vb: '>=(Capacitance, Capacitance)'
+- uid: CircuitTool.Units.Capacitance.Equals(CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.Equals(CircuitTool.Units.Capacitance)
+  id: Equals(CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Equals(Capacitance)
+  nameWithType: Capacitance.Equals(Capacitance)
+  fullName: CircuitTool.Units.Capacitance.Equals(CircuitTool.Units.Capacitance)
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 112
+  namespace: CircuitTool.Units
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Capacitance other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Capacitance
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Capacitance) As Boolean
+  overload: CircuitTool.Units.Capacitance.Equals*
+  implements:
+  - System.IEquatable{CircuitTool.Units.Capacitance}.Equals(CircuitTool.Units.Capacitance)
+- uid: CircuitTool.Units.Capacitance.Equals(System.Object)
+  commentId: M:CircuitTool.Units.Capacitance.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Capacitance.Equals(object?)
+  fullName: CircuitTool.Units.Capacitance.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Equals
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 113
+  namespace: CircuitTool.Units
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: CircuitTool.Units.Capacitance.Equals*
+  nameWithType.vb: Capacitance.Equals(Object)
+  fullName.vb: CircuitTool.Units.Capacitance.Equals(Object)
+  name.vb: Equals(Object)
+- uid: CircuitTool.Units.Capacitance.GetHashCode
+  commentId: M:CircuitTool.Units.Capacitance.GetHashCode
+  id: GetHashCode
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Capacitance.GetHashCode()
+  fullName: CircuitTool.Units.Capacitance.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetHashCode
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 114
+  namespace: CircuitTool.Units
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: CircuitTool.Units.Capacitance.GetHashCode*
+- uid: CircuitTool.Units.Capacitance.CompareTo(CircuitTool.Units.Capacitance)
+  commentId: M:CircuitTool.Units.Capacitance.CompareTo(CircuitTool.Units.Capacitance)
+  id: CompareTo(CircuitTool.Units.Capacitance)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Capacitance)
+  nameWithType: Capacitance.CompareTo(Capacitance)
+  fullName: CircuitTool.Units.Capacitance.CompareTo(CircuitTool.Units.Capacitance)
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CompareTo
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 115
+  namespace: CircuitTool.Units
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  example: []
+  syntax:
+    content: public int CompareTo(Capacitance other)
+    parameters:
+    - id: other
+      type: CircuitTool.Units.Capacitance
+      description: An object to compare with this instance.
+    return:
+      type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+    content.vb: Public Function CompareTo(other As Capacitance) As Integer
+  overload: CircuitTool.Units.Capacitance.CompareTo*
+  implements:
+  - System.IComparable{CircuitTool.Units.Capacitance}.CompareTo(CircuitTool.Units.Capacitance)
+- uid: CircuitTool.Units.Capacitance.ToString
+  commentId: M:CircuitTool.Units.Capacitance.ToString
+  id: ToString
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Capacitance.ToString()
+  fullName: CircuitTool.Units.Capacitance.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 117
+  namespace: CircuitTool.Units
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: CircuitTool.Units.Capacitance.ToString*
+- uid: CircuitTool.Units.Capacitance.ToString(CircuitTool.Units.CapacitanceUnit)
+  commentId: M:CircuitTool.Units.Capacitance.ToString(CircuitTool.Units.CapacitanceUnit)
+  id: ToString(CircuitTool.Units.CapacitanceUnit)
+  parent: CircuitTool.Units.Capacitance
+  langs:
+  - csharp
+  - vb
+  name: ToString(CapacitanceUnit)
+  nameWithType: Capacitance.ToString(CapacitanceUnit)
+  fullName: CircuitTool.Units.Capacitance.ToString(CircuitTool.Units.CapacitanceUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Units/CapacitanceUnit.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString
+    path: src/Units/CapacitanceUnit.cs
+    startLine: 118
+  namespace: CircuitTool.Units
+  syntax:
+    content: public string ToString(CapacitanceUnit unit)
+    parameters:
+    - id: unit
+      type: CircuitTool.Units.CapacitanceUnit
+    return:
+      type: System.String
+    content.vb: Public Function ToString(unit As CapacitanceUnit) As String
+  overload: CircuitTool.Units.Capacitance.ToString*
+references:
+- uid: CircuitTool.Units
+  commentId: N:CircuitTool.Units
+  href: CircuitTool.html
+  name: CircuitTool.Units
+  nameWithType: CircuitTool.Units
+  fullName: CircuitTool.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Units
+    name: Units
+    href: CircuitTool.Units.html
+- uid: System.IEquatable{CircuitTool.Units.Capacitance}
+  commentId: T:System.IEquatable{CircuitTool.Units.Capacitance}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Capacitance>
+  nameWithType: IEquatable<Capacitance>
+  fullName: System.IEquatable<CircuitTool.Units.Capacitance>
+  nameWithType.vb: IEquatable(Of Capacitance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Capacitance)
+  name.vb: IEquatable(Of Capacitance)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+- uid: System.IComparable{CircuitTool.Units.Capacitance}
+  commentId: T:System.IComparable{CircuitTool.Units.Capacitance}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<Capacitance>
+  nameWithType: IComparable<Capacitance>
+  fullName: System.IComparable<CircuitTool.Units.Capacitance>
+  nameWithType.vb: IComparable(Of Capacitance)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Capacitance)
+  name.vb: IComparable(Of Capacitance)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CircuitTool.Units.Capacitance.#ctor*
+  commentId: Overload:CircuitTool.Units.Capacitance.#ctor
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance__ctor_System_Double_CircuitTool_Units_CapacitanceUnit_
+  name: Capacitance
+  nameWithType: Capacitance.Capacitance
+  fullName: CircuitTool.Units.Capacitance.Capacitance
+  nameWithType.vb: Capacitance.New
+  fullName.vb: CircuitTool.Units.Capacitance.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Units.CapacitanceUnit
+  commentId: T:CircuitTool.Units.CapacitanceUnit
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.CapacitanceUnit.html
+  name: CapacitanceUnit
+  nameWithType: CapacitanceUnit
+  fullName: CircuitTool.Units.CapacitanceUnit
+- uid: CircuitTool.Units.Capacitance.Farads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Farads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Farads
+  name: Farads
+  nameWithType: Capacitance.Farads
+  fullName: CircuitTool.Units.Capacitance.Farads
+- uid: CircuitTool.Units.Capacitance.Picofarads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Picofarads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Picofarads
+  name: Picofarads
+  nameWithType: Capacitance.Picofarads
+  fullName: CircuitTool.Units.Capacitance.Picofarads
+- uid: CircuitTool.Units.Capacitance.Nanofarads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Nanofarads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Nanofarads
+  name: Nanofarads
+  nameWithType: Capacitance.Nanofarads
+  fullName: CircuitTool.Units.Capacitance.Nanofarads
+- uid: CircuitTool.Units.Capacitance.Microfarads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Microfarads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Microfarads
+  name: Microfarads
+  nameWithType: Capacitance.Microfarads
+  fullName: CircuitTool.Units.Capacitance.Microfarads
+- uid: CircuitTool.Units.Capacitance.Millifarads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Millifarads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Millifarads
+  name: Millifarads
+  nameWithType: Capacitance.Millifarads
+  fullName: CircuitTool.Units.Capacitance.Millifarads
+- uid: CircuitTool.Units.Capacitance.Kilofarads*
+  commentId: Overload:CircuitTool.Units.Capacitance.Kilofarads
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Kilofarads
+  name: Kilofarads
+  nameWithType: Capacitance.Kilofarads
+  fullName: CircuitTool.Units.Capacitance.Kilofarads
+- uid: CircuitTool.Units.Capacitance.ConvertTo*
+  commentId: Overload:CircuitTool.Units.Capacitance.ConvertTo
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_ConvertTo_CircuitTool_Units_CapacitanceUnit_
+  name: ConvertTo
+  nameWithType: Capacitance.ConvertTo
+  fullName: CircuitTool.Units.Capacitance.ConvertTo
+- uid: CircuitTool.Units.Capacitance.op_Addition*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Addition
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Addition_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator +
+  nameWithType: Capacitance.operator +
+  fullName: CircuitTool.Units.Capacitance.operator +
+  nameWithType.vb: Capacitance.+
+  fullName.vb: CircuitTool.Units.Capacitance.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Addition*
+    name: +
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Addition_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance
+  commentId: T:CircuitTool.Units.Capacitance
+  parent: CircuitTool.Units
+  href: CircuitTool.Units.Capacitance.html
+  name: Capacitance
+  nameWithType: Capacitance
+  fullName: CircuitTool.Units.Capacitance
+- uid: CircuitTool.Units.Capacitance.op_Subtraction*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Subtraction
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Subtraction_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator -
+  nameWithType: Capacitance.operator -
+  fullName: CircuitTool.Units.Capacitance.operator -
+  nameWithType.vb: Capacitance.-
+  fullName.vb: CircuitTool.Units.Capacitance.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Subtraction*
+    name: '-'
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Subtraction_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.op_Multiply*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Multiply
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Multiply_CircuitTool_Units_Capacitance_System_Double_
+  name: operator *
+  nameWithType: Capacitance.operator *
+  fullName: CircuitTool.Units.Capacitance.operator *
+  nameWithType.vb: Capacitance.*
+  fullName.vb: CircuitTool.Units.Capacitance.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Multiply*
+    name: '*'
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Multiply_CircuitTool_Units_Capacitance_System_Double_
+- uid: CircuitTool.Units.Capacitance.op_Division*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Division
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Division_CircuitTool_Units_Capacitance_System_Double_
+  name: operator /
+  nameWithType: Capacitance.operator /
+  fullName: CircuitTool.Units.Capacitance.operator /
+  nameWithType.vb: Capacitance./
+  fullName.vb: CircuitTool.Units.Capacitance./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Division*
+    name: /
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Division_CircuitTool_Units_Capacitance_System_Double_
+- uid: CircuitTool.Units.Capacitance.op_Equality*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Equality
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Equality_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator ==
+  nameWithType: Capacitance.operator ==
+  fullName: CircuitTool.Units.Capacitance.operator ==
+  nameWithType.vb: Capacitance.=
+  fullName.vb: CircuitTool.Units.Capacitance.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Equality*
+    name: ==
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Equality_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Units.Capacitance.op_Inequality*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_Inequality
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Inequality_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator !=
+  nameWithType: Capacitance.operator !=
+  fullName: CircuitTool.Units.Capacitance.operator !=
+  nameWithType.vb: Capacitance.<>
+  fullName.vb: CircuitTool.Units.Capacitance.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_Inequality*
+    name: '!='
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_Inequality_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.op_LessThan*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_LessThan
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_LessThan_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator <
+  nameWithType: Capacitance.operator <
+  fullName: CircuitTool.Units.Capacitance.operator <
+  nameWithType.vb: Capacitance.<
+  fullName.vb: CircuitTool.Units.Capacitance.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_LessThan*
+    name: <
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_LessThan_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.op_GreaterThan*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_GreaterThan
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_GreaterThan_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator >
+  nameWithType: Capacitance.operator >
+  fullName: CircuitTool.Units.Capacitance.operator >
+  nameWithType.vb: Capacitance.>
+  fullName.vb: CircuitTool.Units.Capacitance.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_GreaterThan*
+    name: '>'
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_GreaterThan_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.op_LessThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_LessThanOrEqual
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_LessThanOrEqual_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator <=
+  nameWithType: Capacitance.operator <=
+  fullName: CircuitTool.Units.Capacitance.operator <=
+  nameWithType.vb: Capacitance.<=
+  fullName.vb: CircuitTool.Units.Capacitance.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_LessThanOrEqual*
+    name: <=
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_LessThanOrEqual_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.op_GreaterThanOrEqual*
+  commentId: Overload:CircuitTool.Units.Capacitance.op_GreaterThanOrEqual
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_GreaterThanOrEqual_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+  name: operator >=
+  nameWithType: Capacitance.operator >=
+  fullName: CircuitTool.Units.Capacitance.operator >=
+  nameWithType.vb: Capacitance.>=
+  fullName.vb: CircuitTool.Units.Capacitance.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: CircuitTool.Units.Capacitance.op_GreaterThanOrEqual*
+    name: '>='
+    href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_op_GreaterThanOrEqual_CircuitTool_Units_Capacitance_CircuitTool_Units_Capacitance_
+- uid: CircuitTool.Units.Capacitance.Equals*
+  commentId: Overload:CircuitTool.Units.Capacitance.Equals
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_Equals_CircuitTool_Units_Capacitance_
+  name: Equals
+  nameWithType: Capacitance.Equals
+  fullName: CircuitTool.Units.Capacitance.Equals
+- uid: System.IEquatable{CircuitTool.Units.Capacitance}.Equals(CircuitTool.Units.Capacitance)
+  commentId: M:System.IEquatable{CircuitTool.Units.Capacitance}.Equals(CircuitTool.Units.Capacitance)
+  parent: System.IEquatable{CircuitTool.Units.Capacitance}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Capacitance)
+  nameWithType: IEquatable<Capacitance>.Equals(Capacitance)
+  fullName: System.IEquatable<CircuitTool.Units.Capacitance>.Equals(CircuitTool.Units.Capacitance)
+  nameWithType.vb: IEquatable(Of Capacitance).Equals(Capacitance)
+  fullName.vb: System.IEquatable(Of CircuitTool.Units.Capacitance).Equals(CircuitTool.Units.Capacitance)
+  spec.csharp:
+  - uid: System.IEquatable{CircuitTool.Units.Capacitance}.Equals(CircuitTool.Units.Capacitance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{CircuitTool.Units.Capacitance}.Equals(CircuitTool.Units.Capacitance)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Capacitance.GetHashCode*
+  commentId: Overload:CircuitTool.Units.Capacitance.GetHashCode
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_GetHashCode
+  name: GetHashCode
+  nameWithType: Capacitance.GetHashCode
+  fullName: CircuitTool.Units.Capacitance.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Units.Capacitance.CompareTo*
+  commentId: Overload:CircuitTool.Units.Capacitance.CompareTo
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_CompareTo_CircuitTool_Units_Capacitance_
+  name: CompareTo
+  nameWithType: Capacitance.CompareTo
+  fullName: CircuitTool.Units.Capacitance.CompareTo
+- uid: System.IComparable{CircuitTool.Units.Capacitance}.CompareTo(CircuitTool.Units.Capacitance)
+  commentId: M:System.IComparable{CircuitTool.Units.Capacitance}.CompareTo(CircuitTool.Units.Capacitance)
+  parent: System.IComparable{CircuitTool.Units.Capacitance}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(Capacitance)
+  nameWithType: IComparable<Capacitance>.CompareTo(Capacitance)
+  fullName: System.IComparable<CircuitTool.Units.Capacitance>.CompareTo(CircuitTool.Units.Capacitance)
+  nameWithType.vb: IComparable(Of Capacitance).CompareTo(Capacitance)
+  fullName.vb: System.IComparable(Of CircuitTool.Units.Capacitance).CompareTo(CircuitTool.Units.Capacitance)
+  spec.csharp:
+  - uid: System.IComparable{CircuitTool.Units.Capacitance}.CompareTo(CircuitTool.Units.Capacitance)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{CircuitTool.Units.Capacitance}.CompareTo(CircuitTool.Units.Capacitance)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: CircuitTool.Units.Capacitance
+    name: Capacitance
+    href: CircuitTool.Units.Capacitance.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: CircuitTool.Units.Capacitance.ToString*
+  commentId: Overload:CircuitTool.Units.Capacitance.ToString
+  href: CircuitTool.Units.Capacitance.html#CircuitTool_Units_Capacitance_ToString
+  name: ToString
+  nameWithType: Capacitance.ToString
+  fullName: CircuitTool.Units.Capacitance.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

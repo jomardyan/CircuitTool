@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Mathematics.WindowType
+  commentId: T:CircuitTool.Mathematics.WindowType
+  id: WindowType
+  parent: CircuitTool.Mathematics
+  children:
+  - CircuitTool.Mathematics.WindowType.Blackman
+  - CircuitTool.Mathematics.WindowType.Hamming
+  - CircuitTool.Mathematics.WindowType.Hanning
+  - CircuitTool.Mathematics.WindowType.Rectangular
+  langs:
+  - csharp
+  - vb
+  name: WindowType
+  nameWithType: WindowType
+  fullName: CircuitTool.Mathematics.WindowType
+  type: Enum
+  source:
+    remote:
+      path: src/Math/FourierTransform.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WindowType
+    path: src/Math/FourierTransform.cs
+    startLine: 9
+  namespace: CircuitTool.Mathematics
+  summary: Window function types for spectral analysis
+  example: []
+  syntax:
+    content: public enum WindowType
+    content.vb: Public Enum WindowType
+- uid: CircuitTool.Mathematics.WindowType.Rectangular
+  commentId: F:CircuitTool.Mathematics.WindowType.Rectangular
+  id: Rectangular
+  parent: CircuitTool.Mathematics.WindowType
+  langs:
+  - csharp
+  - vb
+  name: Rectangular
+  nameWithType: WindowType.Rectangular
+  fullName: CircuitTool.Mathematics.WindowType.Rectangular
+  type: Field
+  source:
+    remote:
+      path: src/Math/FourierTransform.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Rectangular
+    path: src/Math/FourierTransform.cs
+    startLine: 11
+  namespace: CircuitTool.Mathematics
+  syntax:
+    content: Rectangular = 0
+    return:
+      type: CircuitTool.Mathematics.WindowType
+- uid: CircuitTool.Mathematics.WindowType.Hanning
+  commentId: F:CircuitTool.Mathematics.WindowType.Hanning
+  id: Hanning
+  parent: CircuitTool.Mathematics.WindowType
+  langs:
+  - csharp
+  - vb
+  name: Hanning
+  nameWithType: WindowType.Hanning
+  fullName: CircuitTool.Mathematics.WindowType.Hanning
+  type: Field
+  source:
+    remote:
+      path: src/Math/FourierTransform.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Hanning
+    path: src/Math/FourierTransform.cs
+    startLine: 12
+  namespace: CircuitTool.Mathematics
+  syntax:
+    content: Hanning = 1
+    return:
+      type: CircuitTool.Mathematics.WindowType
+- uid: CircuitTool.Mathematics.WindowType.Hamming
+  commentId: F:CircuitTool.Mathematics.WindowType.Hamming
+  id: Hamming
+  parent: CircuitTool.Mathematics.WindowType
+  langs:
+  - csharp
+  - vb
+  name: Hamming
+  nameWithType: WindowType.Hamming
+  fullName: CircuitTool.Mathematics.WindowType.Hamming
+  type: Field
+  source:
+    remote:
+      path: src/Math/FourierTransform.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Hamming
+    path: src/Math/FourierTransform.cs
+    startLine: 13
+  namespace: CircuitTool.Mathematics
+  syntax:
+    content: Hamming = 2
+    return:
+      type: CircuitTool.Mathematics.WindowType
+- uid: CircuitTool.Mathematics.WindowType.Blackman
+  commentId: F:CircuitTool.Mathematics.WindowType.Blackman
+  id: Blackman
+  parent: CircuitTool.Mathematics.WindowType
+  langs:
+  - csharp
+  - vb
+  name: Blackman
+  nameWithType: WindowType.Blackman
+  fullName: CircuitTool.Mathematics.WindowType.Blackman
+  type: Field
+  source:
+    remote:
+      path: src/Math/FourierTransform.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Blackman
+    path: src/Math/FourierTransform.cs
+    startLine: 14
+  namespace: CircuitTool.Mathematics
+  syntax:
+    content: Blackman = 3
+    return:
+      type: CircuitTool.Mathematics.WindowType
+references:
+- uid: CircuitTool.Mathematics
+  commentId: N:CircuitTool.Mathematics
+  href: CircuitTool.html
+  name: CircuitTool.Mathematics
+  nameWithType: CircuitTool.Mathematics
+  fullName: CircuitTool.Mathematics
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Mathematics
+    name: Mathematics
+    href: CircuitTool.Mathematics.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Mathematics
+    name: Mathematics
+    href: CircuitTool.Mathematics.html
+- uid: CircuitTool.Mathematics.WindowType
+  commentId: T:CircuitTool.Mathematics.WindowType
+  parent: CircuitTool.Mathematics
+  href: CircuitTool.Mathematics.WindowType.html
+  name: WindowType
+  nameWithType: WindowType
+  fullName: CircuitTool.Mathematics.WindowType

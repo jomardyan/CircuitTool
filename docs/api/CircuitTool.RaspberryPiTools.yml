@@ -1,0 +1,586 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.RaspberryPiTools
+  commentId: T:CircuitTool.RaspberryPiTools
+  id: RaspberryPiTools
+  parent: CircuitTool
+  children:
+  - CircuitTool.RaspberryPiTools.CalculateLEDResistor(System.Double,System.Double,System.Double)
+  - CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency(System.Double,System.Double)
+  - CircuitTool.RaspberryPiTools.CalculateMotorPWM(System.Double,System.Double,System.Double)
+  - CircuitTool.RaspberryPiTools.CalculatePowerConsumption(CircuitTool.RaspberryPiModel,System.Double)
+  - CircuitTool.RaspberryPiTools.CalculatePullResistor(System.Double,System.Double,System.Double)
+  - CircuitTool.RaspberryPiTools.GenerateI2CScanCode
+  langs:
+  - csharp
+  - vb
+  name: RaspberryPiTools
+  nameWithType: RaspberryPiTools
+  fullName: CircuitTool.RaspberryPiTools
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RaspberryPiTools
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 9
+  namespace: CircuitTool
+  summary: Provides calculations and utilities for Raspberry Pi projects
+  example: []
+  syntax:
+    content: public static class RaspberryPiTools
+    content.vb: Public Module RaspberryPiTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.RaspberryPiTools.CalculateLEDResistor(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.RaspberryPiTools.CalculateLEDResistor(System.Double,System.Double,System.Double)
+  id: CalculateLEDResistor(System.Double,System.Double,System.Double)
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateLEDResistor(double, double, double)
+  nameWithType: RaspberryPiTools.CalculateLEDResistor(double, double, double)
+  fullName: CircuitTool.RaspberryPiTools.CalculateLEDResistor(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateLEDResistor
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 39
+  namespace: CircuitTool
+  summary: Calculates current limiting resistor for LED connected to GPIO pin
+  example: []
+  syntax:
+    content: public static double CalculateLEDResistor(double ledVoltage, double ledCurrent, double gpioVoltage = 3.3)
+    parameters:
+    - id: ledVoltage
+      type: System.Double
+      description: LED forward voltage in volts
+    - id: ledCurrent
+      type: System.Double
+      description: LED forward current in amperes
+    - id: gpioVoltage
+      type: System.Double
+      description: GPIO output voltage (typically 3.3V)
+    return:
+      type: System.Double
+      description: Required resistor value in ohms
+    content.vb: Public Shared Function CalculateLEDResistor(ledVoltage As Double, ledCurrent As Double, gpioVoltage As Double = 3.3) As Double
+  overload: CircuitTool.RaspberryPiTools.CalculateLEDResistor*
+  nameWithType.vb: RaspberryPiTools.CalculateLEDResistor(Double, Double, Double)
+  fullName.vb: CircuitTool.RaspberryPiTools.CalculateLEDResistor(Double, Double, Double)
+  name.vb: CalculateLEDResistor(Double, Double, Double)
+- uid: CircuitTool.RaspberryPiTools.CalculateMotorPWM(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.RaspberryPiTools.CalculateMotorPWM(System.Double,System.Double,System.Double)
+  id: CalculateMotorPWM(System.Double,System.Double,System.Double)
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateMotorPWM(double, double, double)
+  nameWithType: RaspberryPiTools.CalculateMotorPWM(double, double, double)
+  fullName: CircuitTool.RaspberryPiTools.CalculateMotorPWM(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateMotorPWM
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 54
+  namespace: CircuitTool
+  summary: Calculates PWM settings for motor speed control
+  example: []
+  syntax:
+    content: public static double CalculateMotorPWM(double motorVoltage, double supplyVoltage, double speedPercentage)
+    parameters:
+    - id: motorVoltage
+      type: System.Double
+      description: Motor rated voltage
+    - id: supplyVoltage
+      type: System.Double
+      description: Power supply voltage
+    - id: speedPercentage
+      type: System.Double
+      description: Desired speed as percentage (0-100)
+    return:
+      type: System.Double
+      description: PWM duty cycle (0-1)
+    content.vb: Public Shared Function CalculateMotorPWM(motorVoltage As Double, supplyVoltage As Double, speedPercentage As Double) As Double
+  overload: CircuitTool.RaspberryPiTools.CalculateMotorPWM*
+  nameWithType.vb: RaspberryPiTools.CalculateMotorPWM(Double, Double, Double)
+  fullName.vb: CircuitTool.RaspberryPiTools.CalculateMotorPWM(Double, Double, Double)
+  name.vb: CalculateMotorPWM(Double, Double, Double)
+- uid: CircuitTool.RaspberryPiTools.CalculatePullResistor(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.RaspberryPiTools.CalculatePullResistor(System.Double,System.Double,System.Double)
+  id: CalculatePullResistor(System.Double,System.Double,System.Double)
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: CalculatePullResistor(double, double, double)
+  nameWithType: RaspberryPiTools.CalculatePullResistor(double, double, double)
+  fullName: CircuitTool.RaspberryPiTools.CalculatePullResistor(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculatePullResistor
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 70
+  namespace: CircuitTool
+  summary: Calculates pull-up/pull-down resistor value for GPIO inputs
+  example: []
+  syntax:
+    content: public static double CalculatePullResistor(double inputVoltage = 3.3, double leakageCurrent = 1E-06, double noiseMargin = 0.5)
+    parameters:
+    - id: inputVoltage
+      type: System.Double
+      description: Input signal voltage
+    - id: leakageCurrent
+      type: System.Double
+      description: Maximum leakage current (typically 1µA)
+    - id: noiseMargin
+      type: System.Double
+      description: Desired noise margin voltage (typically 0.5V)
+    return:
+      type: System.Double
+      description: Recommended resistor value in ohms
+    content.vb: Public Shared Function CalculatePullResistor(inputVoltage As Double = 3.3, leakageCurrent As Double = 1E-06, noiseMargin As Double = 0.5) As Double
+  overload: CircuitTool.RaspberryPiTools.CalculatePullResistor*
+  nameWithType.vb: RaspberryPiTools.CalculatePullResistor(Double, Double, Double)
+  fullName.vb: CircuitTool.RaspberryPiTools.CalculatePullResistor(Double, Double, Double)
+  name.vb: CalculatePullResistor(Double, Double, Double)
+- uid: CircuitTool.RaspberryPiTools.CalculatePowerConsumption(CircuitTool.RaspberryPiModel,System.Double)
+  commentId: M:CircuitTool.RaspberryPiTools.CalculatePowerConsumption(CircuitTool.RaspberryPiModel,System.Double)
+  id: CalculatePowerConsumption(CircuitTool.RaspberryPiModel,System.Double)
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: CalculatePowerConsumption(RaspberryPiModel, double)
+  nameWithType: RaspberryPiTools.CalculatePowerConsumption(RaspberryPiModel, double)
+  fullName: CircuitTool.RaspberryPiTools.CalculatePowerConsumption(CircuitTool.RaspberryPiModel, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculatePowerConsumption
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 81
+  namespace: CircuitTool
+  summary: Calculates power consumption for Raspberry Pi project
+  example: []
+  syntax:
+    content: public static double CalculatePowerConsumption(RaspberryPiModel piModel, double peripheralPower = 0)
+    parameters:
+    - id: piModel
+      type: CircuitTool.RaspberryPiModel
+      description: Pi model power consumption
+    - id: peripheralPower
+      type: System.Double
+      description: Additional peripheral power in watts
+    return:
+      type: System.Double
+      description: Total power consumption in watts
+    content.vb: Public Shared Function CalculatePowerConsumption(piModel As RaspberryPiModel, peripheralPower As Double = 0) As Double
+  overload: CircuitTool.RaspberryPiTools.CalculatePowerConsumption*
+  nameWithType.vb: RaspberryPiTools.CalculatePowerConsumption(RaspberryPiModel, Double)
+  fullName.vb: CircuitTool.RaspberryPiTools.CalculatePowerConsumption(CircuitTool.RaspberryPiModel, Double)
+  name.vb: CalculatePowerConsumption(RaspberryPiModel, Double)
+- uid: CircuitTool.RaspberryPiTools.GenerateI2CScanCode
+  commentId: M:CircuitTool.RaspberryPiTools.GenerateI2CScanCode
+  id: GenerateI2CScanCode
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: GenerateI2CScanCode()
+  nameWithType: RaspberryPiTools.GenerateI2CScanCode()
+  fullName: CircuitTool.RaspberryPiTools.GenerateI2CScanCode()
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateI2CScanCode
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 100
+  namespace: CircuitTool
+  summary: Generates I2C address scanning code
+  example: []
+  syntax:
+    content: public static string GenerateI2CScanCode()
+    return:
+      type: System.String
+      description: Python code for I2C address scanning
+    content.vb: Public Shared Function GenerateI2CScanCode() As String
+  overload: CircuitTool.RaspberryPiTools.GenerateI2CScanCode*
+- uid: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency(System.Double,System.Double)
+  commentId: M:CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency(System.Double,System.Double)
+  id: CalculateMaxSPIFrequency(System.Double,System.Double)
+  parent: CircuitTool.RaspberryPiTools
+  langs:
+  - csharp
+  - vb
+  name: CalculateMaxSPIFrequency(double, double)
+  nameWithType: RaspberryPiTools.CalculateMaxSPIFrequency(double, double)
+  fullName: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateMaxSPIFrequency
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 138
+  namespace: CircuitTool
+  summary: Calculates SPI clock frequency limits
+  example: []
+  syntax:
+    content: public static double CalculateMaxSPIFrequency(double cableLength, double loadCapacitance = 5E-11)
+    parameters:
+    - id: cableLength
+      type: System.Double
+      description: SPI cable length in meters
+    - id: loadCapacitance
+      type: System.Double
+      description: Load capacitance in farads
+    return:
+      type: System.Double
+      description: Maximum safe SPI frequency in Hz
+    content.vb: Public Shared Function CalculateMaxSPIFrequency(cableLength As Double, loadCapacitance As Double = 5E-11) As Double
+  overload: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency*
+  nameWithType.vb: RaspberryPiTools.CalculateMaxSPIFrequency(Double, Double)
+  fullName.vb: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency(Double, Double)
+  name.vb: CalculateMaxSPIFrequency(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.RaspberryPiTools.CalculateLEDResistor*
+  commentId: Overload:CircuitTool.RaspberryPiTools.CalculateLEDResistor
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_CalculateLEDResistor_System_Double_System_Double_System_Double_
+  name: CalculateLEDResistor
+  nameWithType: RaspberryPiTools.CalculateLEDResistor
+  fullName: CircuitTool.RaspberryPiTools.CalculateLEDResistor
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.RaspberryPiTools.CalculateMotorPWM*
+  commentId: Overload:CircuitTool.RaspberryPiTools.CalculateMotorPWM
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_CalculateMotorPWM_System_Double_System_Double_System_Double_
+  name: CalculateMotorPWM
+  nameWithType: RaspberryPiTools.CalculateMotorPWM
+  fullName: CircuitTool.RaspberryPiTools.CalculateMotorPWM
+- uid: CircuitTool.RaspberryPiTools.CalculatePullResistor*
+  commentId: Overload:CircuitTool.RaspberryPiTools.CalculatePullResistor
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_CalculatePullResistor_System_Double_System_Double_System_Double_
+  name: CalculatePullResistor
+  nameWithType: RaspberryPiTools.CalculatePullResistor
+  fullName: CircuitTool.RaspberryPiTools.CalculatePullResistor
+- uid: CircuitTool.RaspberryPiTools.CalculatePowerConsumption*
+  commentId: Overload:CircuitTool.RaspberryPiTools.CalculatePowerConsumption
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_CalculatePowerConsumption_CircuitTool_RaspberryPiModel_System_Double_
+  name: CalculatePowerConsumption
+  nameWithType: RaspberryPiTools.CalculatePowerConsumption
+  fullName: CircuitTool.RaspberryPiTools.CalculatePowerConsumption
+- uid: CircuitTool.RaspberryPiModel
+  commentId: T:CircuitTool.RaspberryPiModel
+  parent: CircuitTool
+  href: CircuitTool.RaspberryPiModel.html
+  name: RaspberryPiModel
+  nameWithType: RaspberryPiModel
+  fullName: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.RaspberryPiTools.GenerateI2CScanCode*
+  commentId: Overload:CircuitTool.RaspberryPiTools.GenerateI2CScanCode
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_GenerateI2CScanCode
+  name: GenerateI2CScanCode
+  nameWithType: RaspberryPiTools.GenerateI2CScanCode
+  fullName: CircuitTool.RaspberryPiTools.GenerateI2CScanCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency*
+  commentId: Overload:CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency
+  href: CircuitTool.RaspberryPiTools.html#CircuitTool_RaspberryPiTools_CalculateMaxSPIFrequency_System_Double_System_Double_
+  name: CalculateMaxSPIFrequency
+  nameWithType: RaspberryPiTools.CalculateMaxSPIFrequency
+  fullName: CircuitTool.RaspberryPiTools.CalculateMaxSPIFrequency

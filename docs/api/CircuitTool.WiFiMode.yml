@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.WiFiMode
+  commentId: T:CircuitTool.WiFiMode
+  id: WiFiMode
+  parent: CircuitTool
+  children:
+  - CircuitTool.WiFiMode.Active
+  - CircuitTool.WiFiMode.DeepSleep
+  - CircuitTool.WiFiMode.LightSleep
+  - CircuitTool.WiFiMode.ModemSleep
+  - CircuitTool.WiFiMode.Transmitting
+  langs:
+  - csharp
+  - vb
+  name: WiFiMode
+  nameWithType: WiFiMode
+  fullName: CircuitTool.WiFiMode
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WiFiMode
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 111
+  namespace: CircuitTool
+  summary: ESP32 WiFi operation modes
+  example: []
+  syntax:
+    content: public enum WiFiMode
+    content.vb: Public Enum WiFiMode
+- uid: CircuitTool.WiFiMode.DeepSleep
+  commentId: F:CircuitTool.WiFiMode.DeepSleep
+  id: DeepSleep
+  parent: CircuitTool.WiFiMode
+  langs:
+  - csharp
+  - vb
+  name: DeepSleep
+  nameWithType: WiFiMode.DeepSleep
+  fullName: CircuitTool.WiFiMode.DeepSleep
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DeepSleep
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 113
+  namespace: CircuitTool
+  syntax:
+    content: DeepSleep = 0
+    return:
+      type: CircuitTool.WiFiMode
+- uid: CircuitTool.WiFiMode.LightSleep
+  commentId: F:CircuitTool.WiFiMode.LightSleep
+  id: LightSleep
+  parent: CircuitTool.WiFiMode
+  langs:
+  - csharp
+  - vb
+  name: LightSleep
+  nameWithType: WiFiMode.LightSleep
+  fullName: CircuitTool.WiFiMode.LightSleep
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LightSleep
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 114
+  namespace: CircuitTool
+  syntax:
+    content: LightSleep = 1
+    return:
+      type: CircuitTool.WiFiMode
+- uid: CircuitTool.WiFiMode.ModemSleep
+  commentId: F:CircuitTool.WiFiMode.ModemSleep
+  id: ModemSleep
+  parent: CircuitTool.WiFiMode
+  langs:
+  - csharp
+  - vb
+  name: ModemSleep
+  nameWithType: WiFiMode.ModemSleep
+  fullName: CircuitTool.WiFiMode.ModemSleep
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModemSleep
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 115
+  namespace: CircuitTool
+  syntax:
+    content: ModemSleep = 2
+    return:
+      type: CircuitTool.WiFiMode
+- uid: CircuitTool.WiFiMode.Active
+  commentId: F:CircuitTool.WiFiMode.Active
+  id: Active
+  parent: CircuitTool.WiFiMode
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: WiFiMode.Active
+  fullName: CircuitTool.WiFiMode.Active
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Active
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 116
+  namespace: CircuitTool
+  syntax:
+    content: Active = 3
+    return:
+      type: CircuitTool.WiFiMode
+- uid: CircuitTool.WiFiMode.Transmitting
+  commentId: F:CircuitTool.WiFiMode.Transmitting
+  id: Transmitting
+  parent: CircuitTool.WiFiMode
+  langs:
+  - csharp
+  - vb
+  name: Transmitting
+  nameWithType: WiFiMode.Transmitting
+  fullName: CircuitTool.WiFiMode.Transmitting
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ESP32Tools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Transmitting
+    path: src/Hardware/ESP32Tools.cs
+    startLine: 117
+  namespace: CircuitTool
+  syntax:
+    content: Transmitting = 4
+    return:
+      type: CircuitTool.WiFiMode
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.WiFiMode
+  commentId: T:CircuitTool.WiFiMode
+  parent: CircuitTool
+  href: CircuitTool.WiFiMode.html
+  name: WiFiMode
+  nameWithType: WiFiMode
+  fullName: CircuitTool.WiFiMode

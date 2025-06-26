@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.RaspberryPiModel
+  commentId: T:CircuitTool.RaspberryPiModel
+  id: RaspberryPiModel
+  parent: CircuitTool
+  children:
+  - CircuitTool.RaspberryPiModel.Pi3B
+  - CircuitTool.RaspberryPiModel.Pi400
+  - CircuitTool.RaspberryPiModel.Pi4B
+  - CircuitTool.RaspberryPiModel.PiZero
+  - CircuitTool.RaspberryPiModel.PiZero2W
+  langs:
+  - csharp
+  - vb
+  name: RaspberryPiModel
+  nameWithType: RaspberryPiModel
+  fullName: CircuitTool.RaspberryPiModel
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RaspberryPiModel
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 156
+  namespace: CircuitTool
+  summary: Raspberry Pi model enumeration
+  example: []
+  syntax:
+    content: public enum RaspberryPiModel
+    content.vb: Public Enum RaspberryPiModel
+- uid: CircuitTool.RaspberryPiModel.Pi4B
+  commentId: F:CircuitTool.RaspberryPiModel.Pi4B
+  id: Pi4B
+  parent: CircuitTool.RaspberryPiModel
+  langs:
+  - csharp
+  - vb
+  name: Pi4B
+  nameWithType: RaspberryPiModel.Pi4B
+  fullName: CircuitTool.RaspberryPiModel.Pi4B
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Pi4B
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 158
+  namespace: CircuitTool
+  syntax:
+    content: Pi4B = 0
+    return:
+      type: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.RaspberryPiModel.Pi3B
+  commentId: F:CircuitTool.RaspberryPiModel.Pi3B
+  id: Pi3B
+  parent: CircuitTool.RaspberryPiModel
+  langs:
+  - csharp
+  - vb
+  name: Pi3B
+  nameWithType: RaspberryPiModel.Pi3B
+  fullName: CircuitTool.RaspberryPiModel.Pi3B
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Pi3B
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 159
+  namespace: CircuitTool
+  syntax:
+    content: Pi3B = 1
+    return:
+      type: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.RaspberryPiModel.PiZero2W
+  commentId: F:CircuitTool.RaspberryPiModel.PiZero2W
+  id: PiZero2W
+  parent: CircuitTool.RaspberryPiModel
+  langs:
+  - csharp
+  - vb
+  name: PiZero2W
+  nameWithType: RaspberryPiModel.PiZero2W
+  fullName: CircuitTool.RaspberryPiModel.PiZero2W
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PiZero2W
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 160
+  namespace: CircuitTool
+  syntax:
+    content: PiZero2W = 2
+    return:
+      type: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.RaspberryPiModel.PiZero
+  commentId: F:CircuitTool.RaspberryPiModel.PiZero
+  id: PiZero
+  parent: CircuitTool.RaspberryPiModel
+  langs:
+  - csharp
+  - vb
+  name: PiZero
+  nameWithType: RaspberryPiModel.PiZero
+  fullName: CircuitTool.RaspberryPiModel.PiZero
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PiZero
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 161
+  namespace: CircuitTool
+  syntax:
+    content: PiZero = 3
+    return:
+      type: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.RaspberryPiModel.Pi400
+  commentId: F:CircuitTool.RaspberryPiModel.Pi400
+  id: Pi400
+  parent: CircuitTool.RaspberryPiModel
+  langs:
+  - csharp
+  - vb
+  name: Pi400
+  nameWithType: RaspberryPiModel.Pi400
+  fullName: CircuitTool.RaspberryPiModel.Pi400
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/RaspberryPiTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Pi400
+    path: src/Hardware/RaspberryPiTools.cs
+    startLine: 162
+  namespace: CircuitTool
+  syntax:
+    content: Pi400 = 4
+    return:
+      type: CircuitTool.RaspberryPiModel
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.RaspberryPiModel
+  commentId: T:CircuitTool.RaspberryPiModel
+  parent: CircuitTool
+  href: CircuitTool.RaspberryPiModel.html
+  name: RaspberryPiModel
+  nameWithType: RaspberryPiModel
+  fullName: CircuitTool.RaspberryPiModel

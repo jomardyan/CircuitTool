@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MatrixOperations.ComplexMatrix | CircuitTool Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MatrixOperations.ComplexMatrix | CircuitTool Documentation ">
+    
+    <meta name="description" content="Represents a complex matrix for AC circuit analysis">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix">
+
+
+
+  <h1 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix" class="text-break">Class MatrixOperations.ComplexMatrix</h1>
+  <div class="markdown level0 summary"><p>Represents a complex matrix for AC circuit analysis</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">MatrixOperations.ComplexMatrix</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.Mathematics.html">Mathematics</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatrixOperations.ComplexMatrix</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L19">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.#ctor*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_System_Int32_System_Int32_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.#ctor(System.Int32,System.Int32)">ComplexMatrix(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComplexMatrix(int rows, int columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_System_Numerics_Complex_0__0___.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.%23ctor(System.Numerics.Complex%5B0%3A%2C0%3A%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L29">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.#ctor*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix__ctor_System_Numerics_Complex_0__0___" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.#ctor(System.Numerics.Complex[0:,0:])">ComplexMatrix(Complex[,])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComplexMatrix(Complex[,] matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a>[,]</td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Columns.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Columns%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L37">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Columns_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Columns*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Columns" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Columns">Columns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Item_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Item(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L39">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Item_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Item*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Item_System_Int32_System_Int32_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Item(System.Int32,System.Int32)">this[int, int]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Complex this[int row, int col] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Rows.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Rows%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L36">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Rows_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Rows*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Rows" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Rows">Rows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Rows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Determinant.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Determinant%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L173">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Determinant_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Determinant*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Determinant" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Determinant">Determinant()</h4>
+  <div class="markdown level1 summary"><p>Calculates the determinant (for square matrices only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Complex Determinant()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Identity_System_Int32_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Identity(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L48">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Identity_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Identity*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Identity_System_Int32_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Identity(System.Int32)">Identity(int)</h4>
+  <div class="markdown level1 summary"><p>Creates an identity matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix Identity(int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_SolveLinearSystem_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_System_Numerics_Complex___.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.SolveLinearSystem(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%2CSystem.Numerics.Complex%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L228">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_SolveLinearSystem_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.SolveLinearSystem*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_SolveLinearSystem_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_System_Numerics_Complex___" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.SolveLinearSystem(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix,System.Numerics.Complex[])">SolveLinearSystem(ComplexMatrix, Complex[])</h4>
+  <div class="markdown level1 summary"><p>Solves the linear system Ax = b using Gaussian elimination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Complex[] SolveLinearSystem(MatrixOperations.ComplexMatrix a, Complex[] b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a>[]</td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Transpose.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Transpose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L155">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Transpose_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Transpose*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_Transpose" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.Transpose">Transpose()</h4>
+  <div class="markdown level1 summary"><p>Transposes the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatrixOperations.ComplexMatrix Transpose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Addition_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Addition(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%2CCircuitTool.Mathematics.MatrixOperations.ComplexMatrix)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L87">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Addition_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Addition*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Addition_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Addition(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix,CircuitTool.Mathematics.MatrixOperations.ComplexMatrix)">operator +(ComplexMatrix, ComplexMatrix)</h4>
+  <div class="markdown level1 summary"><p>Matrix addition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix operator +(MatrixOperations.ComplexMatrix a, MatrixOperations.ComplexMatrix b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%2CCircuitTool.Mathematics.MatrixOperations.ComplexMatrix)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L61">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix,CircuitTool.Mathematics.MatrixOperations.ComplexMatrix)">operator *(ComplexMatrix, ComplexMatrix)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix operator *(MatrixOperations.ComplexMatrix a, MatrixOperations.ComplexMatrix b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_System_Numerics_Complex_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%2CSystem.Numerics.Complex)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L147">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_System_Numerics_Complex_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix,System.Numerics.Complex)">operator *(ComplexMatrix, Complex)</h4>
+  <div class="markdown level1 summary"><p>Scalar multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix operator *(MatrixOperations.ComplexMatrix matrix, Complex scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a></td>
+        <td><span class="parametername">scalar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_System_Numerics_Complex_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(System.Numerics.Complex%2CCircuitTool.Mathematics.MatrixOperations.ComplexMatrix)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L129">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Multiply_System_Numerics_Complex_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Multiply(System.Numerics.Complex,CircuitTool.Mathematics.MatrixOperations.ComplexMatrix)">operator *(Complex, ComplexMatrix)</h4>
+  <div class="markdown level1 summary"><p>Scalar multiplication</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix operator *(Complex scalar, MatrixOperations.ComplexMatrix matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.complex">Complex</a></td>
+        <td><span class="parametername">scalar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Subtraction_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Subtraction(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%2CCircuitTool.Mathematics.MatrixOperations.ComplexMatrix)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L108">View Source</a>
+  </span>
+  <a id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Subtraction_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Subtraction*"></a>
+  <h4 id="CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_op_Subtraction_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_CircuitTool_Mathematics_MatrixOperations_ComplexMatrix_" data-uid="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.op_Subtraction(CircuitTool.Mathematics.MatrixOperations.ComplexMatrix,CircuitTool.Mathematics.MatrixOperations.ComplexMatrix)">operator -(ComplexMatrix, ComplexMatrix)</h4>
+  <div class="markdown level1 summary"><p>Matrix subtraction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MatrixOperations.ComplexMatrix operator -(MatrixOperations.ComplexMatrix a, MatrixOperations.ComplexMatrix b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CircuitTool.Mathematics.MatrixOperations.html">MatrixOperations</a>.<a class="xref" href="CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html">ComplexMatrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Mathematics_MatrixOperations_ComplexMatrix.md&amp;value=---%0Auid%3A%20CircuitTool.Mathematics.MatrixOperations.ComplexMatrix%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Math/MatrixOperations.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      CircuitTool - Comprehensive C# library for electrical engineering calculations
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

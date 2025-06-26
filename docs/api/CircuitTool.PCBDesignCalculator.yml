@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PCBDesignCalculator
+  commentId: T:CircuitTool.PCBDesignCalculator
+  id: PCBDesignCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.PCBDesignCalculator.CalculateConductorResistance(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing(System.Double,System.Int32,System.Int32)
+  - CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance(System.Double,System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion(System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.CalculateThermalResistance(System.Double,System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.CalculateTraceWidth(System.Double,System.Double,System.Double,System.Boolean)
+  - CircuitTool.PCBDesignCalculator.CalculateViaCurrent(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PCBDesignCalculator.GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup,System.Int32,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: PCBDesignCalculator
+  nameWithType: PCBDesignCalculator
+  fullName: CircuitTool.PCBDesignCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PCBDesignCalculator
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 9
+  namespace: CircuitTool
+  summary: Provides calculations and utilities for PCB design and layout
+  example: []
+  syntax:
+    content: public static class PCBDesignCalculator
+    content.vb: Public Module PCBDesignCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.PCBDesignCalculator.CalculateTraceWidth(System.Double,System.Double,System.Double,System.Boolean)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateTraceWidth(System.Double,System.Double,System.Double,System.Boolean)
+  id: CalculateTraceWidth(System.Double,System.Double,System.Double,System.Boolean)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateTraceWidth(double, double, double, bool)
+  nameWithType: PCBDesignCalculator.CalculateTraceWidth(double, double, double, bool)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateTraceWidth(double, double, double, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateTraceWidth
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 30
+  namespace: CircuitTool
+  summary: Calculates trace width for current carrying capacity
+  example: []
+  syntax:
+    content: public static double CalculateTraceWidth(double current, double copperThickness = 1, double temperatureRise = 10, bool isInternal = false)
+    parameters:
+    - id: current
+      type: System.Double
+      description: Current in amperes
+    - id: copperThickness
+      type: System.Double
+      description: Copper thickness in oz (typically 1 or 2)
+    - id: temperatureRise
+      type: System.Double
+      description: Allowable temperature rise in °C
+    - id: isInternal
+      type: System.Boolean
+      description: True if trace is internal layer
+    return:
+      type: System.Double
+      description: Required trace width in mils
+    content.vb: Public Shared Function CalculateTraceWidth(current As Double, copperThickness As Double = 1, temperatureRise As Double = 10, isInternal As Boolean = False) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateTraceWidth*
+  nameWithType.vb: PCBDesignCalculator.CalculateTraceWidth(Double, Double, Double, Boolean)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateTraceWidth(Double, Double, Double, Boolean)
+  name.vb: CalculateTraceWidth(Double, Double, Double, Boolean)
+- uid: CircuitTool.PCBDesignCalculator.CalculateViaCurrent(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateViaCurrent(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateViaCurrent(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateViaCurrent(double, double, double, double)
+  nameWithType: PCBDesignCalculator.CalculateViaCurrent(double, double, double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateViaCurrent(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateViaCurrent
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 57
+  namespace: CircuitTool
+  summary: Calculates via current carrying capacity
+  example: []
+  syntax:
+    content: public static double CalculateViaCurrent(double viaDiameter, double viaLength, double copperThickness = 1, double temperatureRise = 10)
+    parameters:
+    - id: viaDiameter
+      type: System.Double
+      description: Via barrel diameter in mils
+    - id: viaLength
+      type: System.Double
+      description: Via length (PCB thickness) in mils
+    - id: copperThickness
+      type: System.Double
+      description: Plating thickness in mils
+    - id: temperatureRise
+      type: System.Double
+      description: Allowable temperature rise in °C
+    return:
+      type: System.Double
+      description: Maximum current capacity in amperes
+    content.vb: Public Shared Function CalculateViaCurrent(viaDiameter As Double, viaLength As Double, copperThickness As Double = 1, temperatureRise As Double = 10) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateViaCurrent*
+  nameWithType.vb: PCBDesignCalculator.CalculateViaCurrent(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateViaCurrent(Double, Double, Double, Double)
+  name.vb: CalculateViaCurrent(Double, Double, Double, Double)
+- uid: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateDifferentialImpedance(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateDifferentialImpedance(double, double, double, double)
+  nameWithType: PCBDesignCalculator.CalculateDifferentialImpedance(double, double, double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateDifferentialImpedance
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 82
+  namespace: CircuitTool
+  summary: Calculates differential pair impedance for high-speed signals
+  example: []
+  syntax:
+    content: public static double CalculateDifferentialImpedance(double traceWidth, double traceSpacing, double dielectricHeight, double dielectricConstant = 4.3)
+    parameters:
+    - id: traceWidth
+      type: System.Double
+      description: Trace width in mils
+    - id: traceSpacing
+      type: System.Double
+      description: Spacing between traces in mils
+    - id: dielectricHeight
+      type: System.Double
+      description: Height above ground plane in mils
+    - id: dielectricConstant
+      type: System.Double
+      description: PCB dielectric constant (typically 4.2-4.8)
+    return:
+      type: System.Double
+      description: Differential impedance in ohms
+    content.vb: Public Shared Function CalculateDifferentialImpedance(traceWidth As Double, traceSpacing As Double, dielectricHeight As Double, dielectricConstant As Double = 4.3) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance*
+  nameWithType.vb: PCBDesignCalculator.CalculateDifferentialImpedance(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance(Double, Double, Double, Double)
+  name.vb: CalculateDifferentialImpedance(Double, Double, Double, Double)
+- uid: CircuitTool.PCBDesignCalculator.CalculateConductorResistance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateConductorResistance(System.Double,System.Double,System.Double,System.Double)
+  id: CalculateConductorResistance(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateConductorResistance(double, double, double, double)
+  nameWithType: PCBDesignCalculator.CalculateConductorResistance(double, double, double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateConductorResistance(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateConductorResistance
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 108
+  namespace: CircuitTool
+  summary: Calculates PCB conductor resistance
+  example: []
+  syntax:
+    content: public static double CalculateConductorResistance(double length, double width, double thickness = 1, double temperature = 25)
+    parameters:
+    - id: length
+      type: System.Double
+      description: Conductor length in inches
+    - id: width
+      type: System.Double
+      description: Conductor width in mils
+    - id: thickness
+      type: System.Double
+      description: Copper thickness in oz
+    - id: temperature
+      type: System.Double
+      description: Operating temperature in °C
+    return:
+      type: System.Double
+      description: Resistance in ohms
+    content.vb: Public Shared Function CalculateConductorResistance(length As Double, width As Double, thickness As Double = 1, temperature As Double = 25) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateConductorResistance*
+  nameWithType.vb: PCBDesignCalculator.CalculateConductorResistance(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateConductorResistance(Double, Double, Double, Double)
+  name.vb: CalculateConductorResistance(Double, Double, Double, Double)
+- uid: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance(System.Double,System.Double,System.Double)
+  id: CalculatePCBCapacitance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculatePCBCapacitance(double, double, double)
+  nameWithType: PCBDesignCalculator.CalculatePCBCapacitance(double, double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculatePCBCapacitance
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 134
+  namespace: CircuitTool
+  summary: Calculates PCB capacitance between layers
+  example: []
+  syntax:
+    content: public static double CalculatePCBCapacitance(double area, double dielectricThickness, double dielectricConstant = 4.3)
+    parameters:
+    - id: area
+      type: System.Double
+      description: Overlap area in square inches
+    - id: dielectricThickness
+      type: System.Double
+      description: Dielectric thickness in mils
+    - id: dielectricConstant
+      type: System.Double
+      description: Dielectric constant
+    return:
+      type: System.Double
+      description: Capacitance in picofarads
+    content.vb: Public Shared Function CalculatePCBCapacitance(area As Double, dielectricThickness As Double, dielectricConstant As Double = 4.3) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance*
+  nameWithType.vb: PCBDesignCalculator.CalculatePCBCapacitance(Double, Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance(Double, Double, Double)
+  name.vb: CalculatePCBCapacitance(Double, Double, Double)
+- uid: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing(System.Double,System.Int32,System.Int32)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing(System.Double,System.Int32,System.Int32)
+  id: CalculateMinimumAnnularRing(System.Double,System.Int32,System.Int32)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateMinimumAnnularRing(double, int, int)
+  nameWithType: PCBDesignCalculator.CalculateMinimumAnnularRing(double, int, int)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing(double, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateMinimumAnnularRing
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 155
+  namespace: CircuitTool
+  summary: Calculates minimum annular ring for vias
+  example: []
+  syntax:
+    content: public static double CalculateMinimumAnnularRing(double drillDiameter, int pcbClass = 2, int layerCount = 4)
+    parameters:
+    - id: drillDiameter
+      type: System.Double
+      description: Drill diameter in mils
+    - id: pcbClass
+      type: System.Int32
+      description: PCB class (1, 2, or 3)
+    - id: layerCount
+      type: System.Int32
+      description: Number of layers
+    return:
+      type: System.Double
+      description: Minimum annular ring in mils
+    content.vb: Public Shared Function CalculateMinimumAnnularRing(drillDiameter As Double, pcbClass As Integer = 2, layerCount As Integer = 4) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing*
+  nameWithType.vb: PCBDesignCalculator.CalculateMinimumAnnularRing(Double, Integer, Integer)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing(Double, Integer, Integer)
+  name.vb: CalculateMinimumAnnularRing(Double, Integer, Integer)
+- uid: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion(System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion(System.Double,System.Double)
+  id: CalculateSolderMaskExpansion(System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateSolderMaskExpansion(double, double)
+  nameWithType: PCBDesignCalculator.CalculateSolderMaskExpansion(double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateSolderMaskExpansion
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 179
+  namespace: CircuitTool
+  summary: Calculates solder mask expansion
+  example: []
+  syntax:
+    content: public static double CalculateSolderMaskExpansion(double padDimension, double pitchDistance)
+    parameters:
+    - id: padDimension
+      type: System.Double
+      description: Pad dimension in mils
+    - id: pitchDistance
+      type: System.Double
+      description: Component pitch in mils
+    return:
+      type: System.Double
+      description: Recommended solder mask expansion in mils
+    content.vb: Public Shared Function CalculateSolderMaskExpansion(padDimension As Double, pitchDistance As Double) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion*
+  nameWithType.vb: PCBDesignCalculator.CalculateSolderMaskExpansion(Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion(Double, Double)
+  name.vb: CalculateSolderMaskExpansion(Double, Double)
+- uid: CircuitTool.PCBDesignCalculator.GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup,System.Int32,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup,System.Int32,System.Double)
+  id: GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup,System.Int32,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: GenerateDesignRules(PCBStackup, int, double)
+  nameWithType: PCBDesignCalculator.GenerateDesignRules(PCBDesignCalculator.PCBStackup, int, double)
+  fullName: CircuitTool.PCBDesignCalculator.GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup, int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GenerateDesignRules
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 194
+  namespace: CircuitTool
+  summary: Generates PCB design rules summary
+  example: []
+  syntax:
+    content: public static string GenerateDesignRules(PCBDesignCalculator.PCBStackup stackup, int pcbClass = 2, double signalFrequency = 100)
+    parameters:
+    - id: stackup
+      type: CircuitTool.PCBDesignCalculator.PCBStackup
+      description: PCB layer stackup
+    - id: pcbClass
+      type: System.Int32
+      description: PCB class
+    - id: signalFrequency
+      type: System.Double
+      description: Maximum signal frequency in MHz
+    return:
+      type: System.String
+      description: Design rules text
+    content.vb: Public Shared Function GenerateDesignRules(stackup As PCBDesignCalculator.PCBStackup, pcbClass As Integer = 2, signalFrequency As Double = 100) As String
+  overload: CircuitTool.PCBDesignCalculator.GenerateDesignRules*
+  nameWithType.vb: PCBDesignCalculator.GenerateDesignRules(PCBDesignCalculator.PCBStackup, Integer, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.GenerateDesignRules(CircuitTool.PCBDesignCalculator.PCBStackup, Integer, Double)
+  name.vb: GenerateDesignRules(PCBStackup, Integer, Double)
+- uid: CircuitTool.PCBDesignCalculator.CalculateThermalResistance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PCBDesignCalculator.CalculateThermalResistance(System.Double,System.Double,System.Double)
+  id: CalculateThermalResistance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PCBDesignCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateThermalResistance(double, double, double)
+  nameWithType: PCBDesignCalculator.CalculateThermalResistance(double, double, double)
+  fullName: CircuitTool.PCBDesignCalculator.CalculateThermalResistance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Hardware/PCBDesignCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateThermalResistance
+    path: src/Hardware/PCBDesignCalculator.cs
+    startLine: 233
+  namespace: CircuitTool
+  summary: Calculates PCB thermal resistance
+  example: []
+  syntax:
+    content: public static double CalculateThermalResistance(double copperArea, double copperThickness = 1, double airflow = 0)
+    parameters:
+    - id: copperArea
+      type: System.Double
+      description: Copper area in square inches
+    - id: copperThickness
+      type: System.Double
+      description: Copper thickness in oz
+    - id: airflow
+      type: System.Double
+      description: Air flow velocity in m/s (0 for natural convection)
+    return:
+      type: System.Double
+      description: Thermal resistance in °C/W
+    content.vb: Public Shared Function CalculateThermalResistance(copperArea As Double, copperThickness As Double = 1, airflow As Double = 0) As Double
+  overload: CircuitTool.PCBDesignCalculator.CalculateThermalResistance*
+  nameWithType.vb: PCBDesignCalculator.CalculateThermalResistance(Double, Double, Double)
+  fullName.vb: CircuitTool.PCBDesignCalculator.CalculateThermalResistance(Double, Double, Double)
+  name.vb: CalculateThermalResistance(Double, Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PCBDesignCalculator.CalculateTraceWidth*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateTraceWidth
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateTraceWidth_System_Double_System_Double_System_Double_System_Boolean_
+  name: CalculateTraceWidth
+  nameWithType: PCBDesignCalculator.CalculateTraceWidth
+  fullName: CircuitTool.PCBDesignCalculator.CalculateTraceWidth
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.PCBDesignCalculator.CalculateViaCurrent*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateViaCurrent
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateViaCurrent_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateViaCurrent
+  nameWithType: PCBDesignCalculator.CalculateViaCurrent
+  fullName: CircuitTool.PCBDesignCalculator.CalculateViaCurrent
+- uid: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateDifferentialImpedance_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateDifferentialImpedance
+  nameWithType: PCBDesignCalculator.CalculateDifferentialImpedance
+  fullName: CircuitTool.PCBDesignCalculator.CalculateDifferentialImpedance
+- uid: CircuitTool.PCBDesignCalculator.CalculateConductorResistance*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateConductorResistance
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateConductorResistance_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateConductorResistance
+  nameWithType: PCBDesignCalculator.CalculateConductorResistance
+  fullName: CircuitTool.PCBDesignCalculator.CalculateConductorResistance
+- uid: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculatePCBCapacitance_System_Double_System_Double_System_Double_
+  name: CalculatePCBCapacitance
+  nameWithType: PCBDesignCalculator.CalculatePCBCapacitance
+  fullName: CircuitTool.PCBDesignCalculator.CalculatePCBCapacitance
+- uid: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateMinimumAnnularRing_System_Double_System_Int32_System_Int32_
+  name: CalculateMinimumAnnularRing
+  nameWithType: PCBDesignCalculator.CalculateMinimumAnnularRing
+  fullName: CircuitTool.PCBDesignCalculator.CalculateMinimumAnnularRing
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateSolderMaskExpansion_System_Double_System_Double_
+  name: CalculateSolderMaskExpansion
+  nameWithType: PCBDesignCalculator.CalculateSolderMaskExpansion
+  fullName: CircuitTool.PCBDesignCalculator.CalculateSolderMaskExpansion
+- uid: CircuitTool.PCBDesignCalculator.GenerateDesignRules*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.GenerateDesignRules
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_GenerateDesignRules_CircuitTool_PCBDesignCalculator_PCBStackup_System_Int32_System_Double_
+  name: GenerateDesignRules
+  nameWithType: PCBDesignCalculator.GenerateDesignRules
+  fullName: CircuitTool.PCBDesignCalculator.GenerateDesignRules
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup
+  commentId: T:CircuitTool.PCBDesignCalculator.PCBStackup
+  parent: CircuitTool
+  href: CircuitTool.PCBDesignCalculator.html
+  name: PCBDesignCalculator.PCBStackup
+  nameWithType: PCBDesignCalculator.PCBStackup
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup
+  spec.csharp:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
+  spec.vb:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.PCBDesignCalculator.CalculateThermalResistance*
+  commentId: Overload:CircuitTool.PCBDesignCalculator.CalculateThermalResistance
+  href: CircuitTool.PCBDesignCalculator.html#CircuitTool_PCBDesignCalculator_CalculateThermalResistance_System_Double_System_Double_System_Double_
+  name: CalculateThermalResistance
+  nameWithType: PCBDesignCalculator.CalculateThermalResistance
+  fullName: CircuitTool.PCBDesignCalculator.CalculateThermalResistance

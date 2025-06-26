@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ComPortTools.SerialParity
+  commentId: T:CircuitTool.ComPortTools.SerialParity
+  id: ComPortTools.SerialParity
+  parent: CircuitTool
+  children:
+  - CircuitTool.ComPortTools.SerialParity.Even
+  - CircuitTool.ComPortTools.SerialParity.Mark
+  - CircuitTool.ComPortTools.SerialParity.None
+  - CircuitTool.ComPortTools.SerialParity.Odd
+  - CircuitTool.ComPortTools.SerialParity.Space
+  langs:
+  - csharp
+  - vb
+  name: ComPortTools.SerialParity
+  nameWithType: ComPortTools.SerialParity
+  fullName: CircuitTool.ComPortTools.SerialParity
+  type: Enum
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SerialParity
+    path: src/Hardware/ComPortTools.cs
+    startLine: 81
+  namespace: CircuitTool
+  summary: Serial port parity options (compatibility for older frameworks)
+  example: []
+  syntax:
+    content: public enum ComPortTools.SerialParity
+    content.vb: Public Enum ComPortTools.SerialParity
+- uid: CircuitTool.ComPortTools.SerialParity.None
+  commentId: F:CircuitTool.ComPortTools.SerialParity.None
+  id: None
+  parent: CircuitTool.ComPortTools.SerialParity
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ComPortTools.SerialParity.None
+  fullName: CircuitTool.ComPortTools.SerialParity.None
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Hardware/ComPortTools.cs
+    startLine: 83
+  namespace: CircuitTool
+  syntax:
+    content: None = 0
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+- uid: CircuitTool.ComPortTools.SerialParity.Odd
+  commentId: F:CircuitTool.ComPortTools.SerialParity.Odd
+  id: Odd
+  parent: CircuitTool.ComPortTools.SerialParity
+  langs:
+  - csharp
+  - vb
+  name: Odd
+  nameWithType: ComPortTools.SerialParity.Odd
+  fullName: CircuitTool.ComPortTools.SerialParity.Odd
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Odd
+    path: src/Hardware/ComPortTools.cs
+    startLine: 84
+  namespace: CircuitTool
+  syntax:
+    content: Odd = 1
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+- uid: CircuitTool.ComPortTools.SerialParity.Even
+  commentId: F:CircuitTool.ComPortTools.SerialParity.Even
+  id: Even
+  parent: CircuitTool.ComPortTools.SerialParity
+  langs:
+  - csharp
+  - vb
+  name: Even
+  nameWithType: ComPortTools.SerialParity.Even
+  fullName: CircuitTool.ComPortTools.SerialParity.Even
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Even
+    path: src/Hardware/ComPortTools.cs
+    startLine: 85
+  namespace: CircuitTool
+  syntax:
+    content: Even = 2
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+- uid: CircuitTool.ComPortTools.SerialParity.Mark
+  commentId: F:CircuitTool.ComPortTools.SerialParity.Mark
+  id: Mark
+  parent: CircuitTool.ComPortTools.SerialParity
+  langs:
+  - csharp
+  - vb
+  name: Mark
+  nameWithType: ComPortTools.SerialParity.Mark
+  fullName: CircuitTool.ComPortTools.SerialParity.Mark
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Mark
+    path: src/Hardware/ComPortTools.cs
+    startLine: 86
+  namespace: CircuitTool
+  syntax:
+    content: Mark = 3
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+- uid: CircuitTool.ComPortTools.SerialParity.Space
+  commentId: F:CircuitTool.ComPortTools.SerialParity.Space
+  id: Space
+  parent: CircuitTool.ComPortTools.SerialParity
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: ComPortTools.SerialParity.Space
+  fullName: CircuitTool.ComPortTools.SerialParity.Space
+  type: Field
+  source:
+    remote:
+      path: src/Hardware/ComPortTools.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Space
+    path: src/Hardware/ComPortTools.cs
+    startLine: 87
+  namespace: CircuitTool
+  syntax:
+    content: Space = 4
+    return:
+      type: CircuitTool.ComPortTools.SerialParity
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.ComPortTools.SerialParity
+  commentId: T:CircuitTool.ComPortTools.SerialParity
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialParity
+  nameWithType: ComPortTools.SerialParity
+  fullName: CircuitTool.ComPortTools.SerialParity
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
