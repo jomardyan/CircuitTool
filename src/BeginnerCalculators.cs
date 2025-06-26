@@ -1,7 +1,5 @@
+
 using System;
-#if NET20 || NET35 || NET40
-using System.Collections.Generic;
-#endif
 
 namespace CircuitTool
 {
@@ -19,8 +17,7 @@ namespace CircuitTool
         public static double BatteryLifeCalculator(double batteryCapacity, double loadCurrent)
         {
             if (loadCurrent <= 0)
-                throw new ArgumentException("Load current must be greater than zero");
-            
+                throw new ArgumentException("Load current must be greater than zero.", nameof(loadCurrent));
             return batteryCapacity / loadCurrent;
         }
 
@@ -33,7 +30,6 @@ namespace CircuitTool
         public static int WireGaugeCalculator(double current, double safetyFactor = 1.5)
         {
             double adjustedCurrent = current * safetyFactor;
-            
             // Standard AWG current ratings (approximate)
             if (adjustedCurrent <= 0.5) return 30;
             if (adjustedCurrent <= 0.75) return 28;
@@ -52,7 +48,6 @@ namespace CircuitTool
             if (adjustedCurrent <= 75.0) return 2;
             if (adjustedCurrent <= 95.0) return 1;
             if (adjustedCurrent <= 125.0) return 0;
-            
             return -1; // Use professional calculation for higher currents
         }
 
@@ -70,9 +65,7 @@ namespace CircuitTool
             // L = (d^2 * n^2) / (18d + 40l) where L is in µH, d in inches, l in inches
             double diameterInches = coreDiameter / 25.4;
             double lengthInches = coreLength / 25.4;
-            
             double turns = Math.Sqrt((inductance * (18 * diameterInches + 40 * lengthInches)) / (Math.Pow(diameterInches, 2) * permeability));
-            
             return (int)Math.Ceiling(turns);
         }
 
@@ -85,8 +78,7 @@ namespace CircuitTool
         public static double RCTimeConstantCapacitor(double resistance, double timeConstant)
         {
             if (resistance <= 0)
-                throw new ArgumentException("Resistance must be greater than zero");
-            
+                throw new ArgumentException("Resistance must be greater than zero.", nameof(resistance));
             return timeConstant / resistance;
         }
 
@@ -99,8 +91,7 @@ namespace CircuitTool
         public static double RCOscillatorFrequency(double resistance, double capacitance)
         {
             if (resistance <= 0 || capacitance <= 0)
-                throw new ArgumentException("Resistance and capacitance must be greater than zero");
-            
+                throw new ArgumentException("Resistance and capacitance must be greater than zero.");
             // Approximate frequency for RC relaxation oscillator
             return 1.0 / (2.2 * resistance * capacitance);
         }
@@ -113,8 +104,7 @@ namespace CircuitTool
         public static double PowerRatioToDecibels(double powerRatio)
         {
             if (powerRatio <= 0)
-                throw new ArgumentException("Power ratio must be greater than zero");
-            
+                throw new ArgumentException("Power ratio must be greater than zero.", nameof(powerRatio));
             return 10 * Math.Log10(powerRatio);
         }
 
@@ -126,8 +116,7 @@ namespace CircuitTool
         public static double VoltageRatioToDecibels(double voltageRatio)
         {
             if (voltageRatio <= 0)
-                throw new ArgumentException("Voltage ratio must be greater than zero");
-            
+                throw new ArgumentException("Voltage ratio must be greater than zero.", nameof(voltageRatio));
             return 20 * Math.Log10(voltageRatio);
         }
 
@@ -140,8 +129,7 @@ namespace CircuitTool
         public static double TransformerTurnsRatio(double primaryVoltage, double secondaryVoltage)
         {
             if (primaryVoltage <= 0)
-                throw new ArgumentException("Primary voltage must be greater than zero");
-            
+                throw new ArgumentException("Primary voltage must be greater than zero.", nameof(primaryVoltage));
             return secondaryVoltage / primaryVoltage;
         }
     }

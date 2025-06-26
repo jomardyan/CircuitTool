@@ -3,8 +3,20 @@ using System;
 namespace CircuitTool
 {
     /// <summary>
-    /// Provides calculations for capacitor circuits and characteristics.
+    /// Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.
     /// </summary>
+    /// <remarks>
+    /// <para>Example usage:</para>
+    /// <code>
+    /// double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms
+    /// double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J
+    /// double tau = CapacitorCalculator.TimeConstant(1000, 0.000001); // 0.001 s
+    /// double cSeries = CapacitorCalculator.SeriesCapacitance(new[] {0.000001, 0.000002});
+    /// double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.000002});
+    /// double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);
+    /// double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);
+    /// </code>
+    /// </remarks>
     public static class CapacitorCalculator
     {
         /// <summary>
@@ -13,11 +25,13 @@ namespace CircuitTool
         /// <param name="frequency">Frequency in hertz (Hz).</param>
         /// <param name="capacitance">Capacitance in farads (F).</param>
         /// <returns>Capacitive reactance in ohms (Ω).</returns>
+        /// <example>
+        /// double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms
+        /// </example>
         public static double CapacitiveReactance(double frequency, double capacitance)
         {
             if (frequency <= 0 || capacitance <= 0)
                 throw new ArgumentException("Frequency and capacitance must be positive values.");
-            
             return 1.0 / (2 * Math.PI * frequency * capacitance);
         }
 
@@ -27,11 +41,13 @@ namespace CircuitTool
         /// <param name="capacitance">Capacitance in farads (F).</param>
         /// <param name="voltage">Voltage across the capacitor in volts (V).</param>
         /// <returns>Energy stored in joules (J).</returns>
+        /// <example>
+        /// double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J
+        /// </example>
         public static double EnergyStored(double capacitance, double voltage)
         {
             if (capacitance < 0 || voltage < 0)
                 throw new ArgumentException("Capacitance and voltage must be non-negative values.");
-            
             return 0.5 * capacitance * voltage * voltage;
         }
 
@@ -41,11 +57,13 @@ namespace CircuitTool
         /// <param name="resistance">Resistance in ohms (Ω).</param>
         /// <param name="capacitance">Capacitance in farads (F).</param>
         /// <returns>Time constant in seconds (s).</returns>
+        /// <example>
+        /// double tau = CapacitorCalculator.TimeConstant(1000, 0.000001); // 0.001 s
+        /// </example>
         public static double TimeConstant(double resistance, double capacitance)
         {
             if (resistance < 0 || capacitance < 0)
                 throw new ArgumentException("Resistance and capacitance must be non-negative values.");
-            
             return resistance * capacitance;
         }
 
@@ -54,11 +72,13 @@ namespace CircuitTool
         /// </summary>
         /// <param name="capacitances">Array of capacitance values in farads (F).</param>
         /// <returns>Total capacitance in farads (F).</returns>
+        /// <example>
+        /// double cSeries = CapacitorCalculator.SeriesCapacitance(new[] {0.000001, 0.000002});
+        /// </example>
         public static double SeriesCapacitance(double[] capacitances)
         {
             if (capacitances == null || capacitances.Length == 0)
                 throw new ArgumentException("Capacitances array cannot be null or empty.");
-            
             double reciprocalSum = 0;
             foreach (var capacitance in capacitances)
             {
@@ -74,11 +94,13 @@ namespace CircuitTool
         /// </summary>
         /// <param name="capacitances">Array of capacitance values in farads (F).</param>
         /// <returns>Total capacitance in farads (F).</returns>
+        /// <example>
+        /// double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.000002});
+        /// </example>
         public static double ParallelCapacitance(double[] capacitances)
         {
             if (capacitances == null || capacitances.Length == 0)
                 throw new ArgumentException("Capacitances array cannot be null or empty.");
-            
             double totalCapacitance = 0;
             foreach (var capacitance in capacitances)
             {
@@ -96,13 +118,15 @@ namespace CircuitTool
         /// <param name="timeConstant">Time constant τ in seconds (s).</param>
         /// <param name="time">Time in seconds (s).</param>
         /// <returns>Capacitor voltage at time t in volts (V).</returns>
+        /// <example>
+        /// double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);
+        /// </example>
         public static double ChargingVoltage(double sourceVoltage, double timeConstant, double time)
         {
             if (timeConstant <= 0)
                 throw new ArgumentException("Time constant must be positive.");
             if (time < 0)
                 throw new ArgumentException("Time must be non-negative.");
-            
             return sourceVoltage * (1 - Math.Exp(-time / timeConstant));
         }
 
@@ -113,13 +137,15 @@ namespace CircuitTool
         /// <param name="timeConstant">Time constant τ in seconds (s).</param>
         /// <param name="time">Time in seconds (s).</param>
         /// <returns>Capacitor voltage at time t in volts (V).</returns>
+        /// <example>
+        /// double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);
+        /// </example>
         public static double DischargingVoltage(double initialVoltage, double timeConstant, double time)
         {
             if (timeConstant <= 0)
                 throw new ArgumentException("Time constant must be positive.");
             if (time < 0)
                 throw new ArgumentException("Time must be non-negative.");
-            
             return initialVoltage * Math.Exp(-time / timeConstant);
         }
     }
