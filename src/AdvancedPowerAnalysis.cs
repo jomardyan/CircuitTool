@@ -1,5 +1,6 @@
 #nullable enable
 using System;
+using System.Collections.Generic;
 using System.Numerics;
 using CircuitTool.Units;
 
@@ -115,9 +116,9 @@ namespace CircuitTool.PowerAnalysis
 
             // Calculate THD values
             var voltageThd = CalculateTHD(fundamentalVoltage.Magnitude, 
-                                        voltageHarmonics.Select(v => v.Magnitude).ToArray());
+                                        GetMagnitudes(voltageHarmonics));
             var currentThd = CalculateTHD(fundamentalCurrent.Magnitude, 
-                                        currentHarmonics.Select(i => i.Magnitude).ToArray());
+                                        GetMagnitudes(currentHarmonics));
 
             // Calculate power factor components
             var totalRealPower = fundamentalPower.Real + totalHarmonicPower.Real;
@@ -208,15 +209,25 @@ namespace CircuitTool.PowerAnalysis
             ACVoltage[] voltageHarmonics, ACCurrent[] currentHarmonics)
         {
             // Simplified distortion power calculation
-            var vRmsSquared = Math.Pow(fundamentalVoltage.Magnitude, 2) + 
-                             voltageHarmonics.Sum(v => Math.Pow(v.Magnitude, 2));
-            var iRmsSquared = Math.Pow(fundamentalCurrent.Magnitude, 2) + 
-                             currentHarmonics.Sum(i => Math.Pow(i.Magnitude, 2));
+            var vHarmonicSum = 0.0;
+            foreach (var v in voltageHarmonics)
+                vHarmonicSum += Math.Pow(v.Magnitude, 2);
+                
+            var iHarmonicSum = 0.0;
+            foreach (var i in currentHarmonics)
+                iHarmonicSum += Math.Pow(i.Magnitude, 2);
+                
+            var vRmsSquared = Math.Pow(fundamentalVoltage.Magnitude, 2) + vHarmonicSum;
+            var iRmsSquared = Math.Pow(fundamentalCurrent.Magnitude, 2) + iHarmonicSum;
 
             var apparentPowerSquared = vRmsSquared * iRmsSquared;
             var fundamentalPowerSquared = Math.Pow(fundamentalVoltage.Magnitude * fundamentalCurrent.Magnitude, 2);
-            var harmonicPowerSquared = voltageHarmonics.Zip(currentHarmonics, (v, i) => 
-                Math.Pow(v.Magnitude * i.Magnitude, 2)).Sum();
+            
+            var harmonicPowerSquared = 0.0;
+            for (int j = 0; j < Math.Min(voltageHarmonics.Length, currentHarmonics.Length); j++)
+            {
+                harmonicPowerSquared += Math.Pow(voltageHarmonics[j].Magnitude * currentHarmonics[j].Magnitude, 2);
+            }
 
             var distortionPowerSquared = apparentPowerSquared - fundamentalPowerSquared - harmonicPowerSquared;
             
@@ -225,19 +236,26 @@ namespace CircuitTool.PowerAnalysis
 
         private static double CalculateTHD(double fundamental, double[] harmonics)
         {
-            var harmonicSum = harmonics.Sum(h => h * h);
+            var harmonicSum = 0.0;
+            foreach (var h in harmonics)
+                harmonicSum += h * h;
             return Math.Sqrt(harmonicSum) / fundamental;
         }
 
         private static double CalculateRMS(double[] waveform)
         {
-            var sumSquares = waveform.Sum(x => x * x);
+            var sumSquares = 0.0;
+            foreach (var x in waveform)
+                sumSquares += x * x;
             return Math.Sqrt(sumSquares / waveform.Length);
         }
 
         private static double CalculateAverageRectified(double[] waveform)
         {
-            return waveform.Select(Math.Abs).Average();
+            var sum = 0.0;
+            foreach (var x in waveform)
+                sum += Math.Abs(x);
+            return sum / waveform.Length;
         }
 
         private static double CalculatePowerFactor(double[] voltage, double[] current)
@@ -268,6 +286,36 @@ namespace CircuitTool.PowerAnalysis
             // Assume sample rate allows for frequency estimation
             var estimatedFrequency = zeroCrossings * nominalFrequency / (2 * waveform.Length);
             return (estimatedFrequency - nominalFrequency) / nominalFrequency;
+        }
+
+        private static double[] GetMagnitudes(Complex[] complexArray)
+        {
+            var result = new double[complexArray.Length];
+            for (int i = 0; i < complexArray.Length; i++)
+            {
+                result[i] = complexArray[i].Magnitude;
+            }
+            return result;
+        }
+
+        private static double[] GetMagnitudes(ACVoltage[] voltageArray)
+        {
+            var result = new double[voltageArray.Length];
+            for (int i = 0; i < voltageArray.Length; i++)
+            {
+                result[i] = voltageArray[i].Magnitude;
+            }
+            return result;
+        }
+
+        private static double[] GetMagnitudes(ACCurrent[] currentArray)
+        {
+            var result = new double[currentArray.Length];
+            for (int i = 0; i < currentArray.Length; i++)
+            {
+                result[i] = currentArray[i].Magnitude;
+            }
+            return result;
         }
     }
 
@@ -482,7 +530,10 @@ internal static class PowerAnalysisExtensions
 
     public static double Average(this double[] source)
     {
-        return source.Sum() / source.Length;
+        var sum = 0.0;
+        foreach (var item in source)
+            sum += item;
+        return sum / source.Length;
     }
 
     public static IEnumerable<TResult> Zip<T1, T2, TResult>(this T1[] first, T2[] second, Func<T1, T2, TResult> func)

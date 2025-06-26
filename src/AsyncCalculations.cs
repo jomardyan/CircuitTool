@@ -172,8 +172,18 @@ namespace CircuitTool.Async
             
             Array.Sort(_results);
             
-            Mean = _results.Average();
-            StandardDeviation = Math.Sqrt(_results.Select(x => Math.Pow(x - Mean, 2)).Average());
+            // Calculate mean manually to avoid extension method conflicts
+            var sum = 0.0;
+            foreach (var result in _results)
+                sum += result;
+            Mean = sum / _results.Length;
+            
+            // Calculate standard deviation manually
+            var varianceSum = 0.0;
+            foreach (var result in _results)
+                varianceSum += Math.Pow(result - Mean, 2);
+            StandardDeviation = Math.Sqrt(varianceSum / _results.Length);
+            
             Minimum = _results[0];
             Maximum = _results[_results.Length - 1];
         }

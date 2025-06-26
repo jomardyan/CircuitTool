@@ -178,9 +178,9 @@ namespace CircuitTool
         /// </summary>
         /// <param name="magnitude">Magnitude in ohms</param>
         /// <param name="phase">Phase angle in radians</param>
-        public Impedance(double magnitude, double phase)
+        public static Impedance FromPolar(double magnitude, double phase)
         {
-            _complex = Complex.FromPolarCoordinates(magnitude, phase);
+            return new Impedance(Complex.FromPolarCoordinates(magnitude, phase));
         }
 
         /// <summary>

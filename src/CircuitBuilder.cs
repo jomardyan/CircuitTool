@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 using CircuitTool.Units;
+using CircuitTool.Async;
 
 namespace CircuitTool.CircuitBuilder
 {
@@ -311,10 +312,18 @@ namespace CircuitTool.CircuitBuilder
         /// <returns>Resonant frequency in Hz, or null if not applicable</returns>
         public double? CalculateResonantFrequency()
         {
-            var inductors = _components.Where(c => c.Component is Inductor).ToArray();
-            var capacitors = _components.Where(c => c.Component is Capacitor).ToArray();
+            var inductors = new List<ComponentConnection>();
+            var capacitors = new List<ComponentConnection>();
+            
+            foreach (var component in _components)
+            {
+                if (component.Component is Inductor)
+                    inductors.Add(component);
+                else if (component.Component is Capacitor)
+                    capacitors.Add(component);
+            }
 
-            if (inductors.Length == 1 && capacitors.Length == 1)
+            if (inductors.Count == 1 && capacitors.Count == 1)
             {
                 var L = ((Inductor)inductors[0].Component).Inductance;
                 var C = ((Capacitor)capacitors[0].Component).Capacitance;
@@ -329,13 +338,18 @@ namespace CircuitTool.CircuitBuilder
         /// </summary>
         public double[] GetNominalValues()
         {
-            return _components.Select(c => c.Component switch
+            var values = new double[_components.Count];
+            for (int i = 0; i < _components.Count; i++)
             {
-                Resistor r => r.Resistance,
-                Capacitor cap => cap.Capacitance,
-                Inductor ind => ind.Inductance,
-                _ => 0.0
-            }).ToArray();
+                values[i] = _components[i].Component switch
+                {
+                    Resistor r => r.Resistance,
+                    Capacitor cap => cap.Capacitance,
+                    Inductor ind => ind.Inductance,
+                    _ => 0.0
+                };
+            }
+            return values;
         }
 
         /// <summary>
@@ -343,7 +357,12 @@ namespace CircuitTool.CircuitBuilder
         /// </summary>
         public double[] GetTolerances()
         {
-            return _components.Select(c => c.Component.Tolerance).ToArray();
+            var tolerances = new double[_components.Count];
+            for (int i = 0; i < _components.Count; i++)
+            {
+                tolerances[i] = _components[i].Component.Tolerance;
+            }
+            return tolerances;
         }
 
         private static ComplexPower CalculatePower(ACVoltage voltage, ACCurrent current)
@@ -354,8 +373,12 @@ namespace CircuitTool.CircuitBuilder
 
         public override string ToString()
         {
-            var components = string.Join(" -> ", _components.Select(c => 
-                $"{c.Component} ({c.ConnectionType})"));
+            var componentStrings = new string[_components.Count];
+            for (int i = 0; i < _components.Count; i++)
+            {
+                componentStrings[i] = $"{_components[i].Component} ({_components[i].ConnectionType})";
+            }
+            var components = string.Join(" -> ", componentStrings);
             return $"Circuit: {components}";
         }
     }
@@ -419,37 +442,5 @@ namespace CircuitTool.CircuitBuilder
 
         public override string ToString() => 
             $"{RealPower:F3} W + j{ReactivePower:F3} VAR (PF={PowerFactor:F3})";
-    }
-}
-
-// Extension methods for older framework compatibility
-internal static class ComponentExtensions
-{
-    public static T[] Where<T>(this ComponentConnection[] source, Func<ComponentConnection, bool> predicate)
-    {
-        var result = new List<T>();
-        foreach (var item in source)
-        {
-            if (predicate(item))
-            {
-                result.Add((T)(object)item);
-            }
-        }
-        return result.ToArray();
-    }
-
-    public static TResult[] Select<T, TResult>(this ComponentConnection[] source, Func<ComponentConnection, TResult> selector)
-    {
-        var result = new TResult[source.Length];
-        for (int i = 0; i < source.Length; i++)
-        {
-            result[i] = selector(source[i]);
-        }
-        return result;
-    }
-
-    public static TResult[] ToArray<TResult>(this List<TResult> source)
-    {
-        return source.ToArray();
     }
 }
