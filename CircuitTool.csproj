@@ -19,6 +19,7 @@
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <PathMap>$(MSBuildProjectDirectory)=.</PathMap>
     
     <!-- Suppress XML documentation warnings for missing docs -->
     <NoWarn>$(NoWarn);1591</NoWarn>
