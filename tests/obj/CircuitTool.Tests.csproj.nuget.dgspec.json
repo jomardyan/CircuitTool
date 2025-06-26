@@ -5,7 +5,7 @@
   },
   "projects": {
     "/workspaces/CircuitTool/CircuitTool.csproj": {
-      "version": "1.0.12",
+      "version": "1.0.13",
       "restore": {
         "projectUniqueName": "/workspaces/CircuitTool/CircuitTool.csproj",
         "projectName": "CircuitTool",
