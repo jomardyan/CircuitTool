@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lHQ8qNV47qM=",
+  "dgSpecHash": "BE2VRnAz6cU=",
   "success": true,
   "projectFilePath": "/workspaces/CircuitTool/tests/CircuitTool.Tests.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,8 @@
     "/home/codespace/.nuget/packages/nunit3testadapter/5.0.0/nunit3testadapter.5.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
-    "/home/codespace/.nuget/packages/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg.sha512"
+    "/home/codespace/.nuget/packages/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }
