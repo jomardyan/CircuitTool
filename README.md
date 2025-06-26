@@ -8,9 +8,10 @@ A comprehensive C# library for electrical engineering and electronics calculatio
 - **Resistor Network Analysis**: Series and parallel resistor calculations
 - **Voltage Analysis**: Voltage drop and voltage divider calculations
 - **Power Calculations**: Various methods to calculate electrical power
-- **Energy Calculations**: Convert between energy units, calculate energy costs
+- **Energy Calcululations**: Convert between energy units, calculate energy costs
 - **Unit Conversions**: Comprehensive electrical unit conversion utilities
 - **Specialized Calculators**: Power factor, electricity bill, and energy consumption calculators
+- **Advanced Circuit Analysis**: Total resistance, power, and energy calculations for complex circuits
 
 ## Getting Started
 
@@ -34,6 +35,18 @@ dotnet build
 Run the tests:
 ```bash
 dotnet test
+```
+
+### Installation via NuGet
+
+To install CircuitTool via NuGet, use the following command:
+```bash
+nuget install CircuitTool
+```
+
+Or add it to your project using the .NET CLI:
+```bash
+dotnet add package CircuitTool
 ```
 
 ## Usage Examples
@@ -78,6 +91,24 @@ double outputVoltage = VoltageCalculator.VoltageDivider(9, 2, 1); // 3V
 
 // Calculate power from voltage and current
 double power = PowerCalculator.Power(230, 5); // 1150W
+```
+
+### Advanced Circuit Analysis
+
+```csharp
+using CircuitTool;
+
+// Calculate total resistance in series
+var seriesResistance = CircuitCalculations.CalculateTotalResistance(new double[] { 10, 20, 30 }, true);
+
+// Calculate total resistance in parallel
+var parallelResistance = CircuitCalculations.CalculateTotalResistance(new double[] { 10, 20, 30 }, false);
+
+// Calculate power
+var power = CircuitCalculations.CalculatePower(230, 5); // 230V × 5A = 1150W
+
+// Calculate energy
+var energy = CircuitCalculations.CalculateEnergy(1150, 2); // 1150W × 2h = 2300Wh
 ```
 
 ## Documentation

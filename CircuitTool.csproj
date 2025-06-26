@@ -7,8 +7,22 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>CircuitTool</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Jomardyan</Authors>
+    <Description>A comprehensive C# library for electrical engineering and electronics calculations.</Description>
+    <PackageTags>ElectricalEngineering Electronics Calculations</PackageTags>
+    <RepositoryUrl>https://github.com/jomardyan/CircuitTool</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="src/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" />
   </ItemGroup>
 
 </Project>
