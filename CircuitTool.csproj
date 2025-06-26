@@ -19,7 +19,16 @@
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <PathMap>$(MSBuildProjectDirectory)=.</PathMap>
+    
+    <!-- Enable continuous integration build for deterministic builds -->
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+    
+    <!-- PathMap for deterministic source paths in PDBs -->
+    <PathMap>$(MSBuildProjectDirectory)=/src/</PathMap>
+    
+    <!-- Additional deterministic build settings -->
+    <EmbedAllSources>true</EmbedAllSources>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     
     <!-- Suppress XML documentation warnings for missing docs -->
     <NoWarn>$(NoWarn);1591</NoWarn>
