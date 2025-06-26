@@ -1,0 +1,102 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g., 1.0.8)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Mark as pre-release'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Validate version format
+      run: |
+        if [[ ! "${{ inputs.version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?$ ]]; then
+          echo "Invalid version format. Use semantic versioning (e.g., 1.0.8 or 1.0.8-beta)"
+          exit 1
+        fi
+
+    - name: Check if tag exists
+      run: |
+        if git rev-parse "v${{ inputs.version }}" >/dev/null 2>&1; then
+          echo "Tag v${{ inputs.version }} already exists"
+          exit 1
+        fi
+
+    - name: Update version in project file
+      run: |
+        sed -i 's/<Version>.*<\/Version>/<Version>${{ inputs.version }}<\/Version>/' CircuitTool.csproj
+        
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore and build
+      run: |
+        dotnet restore
+        dotnet build --configuration Release --no-restore
+
+    - name: Run tests
+      run: dotnet test --configuration Release --no-build --verbosity normal
+
+    - name: Generate changelog
+      id: changelog
+      run: |
+        # Get commits since last tag
+        LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+        if [ -z "$LAST_TAG" ]; then
+          COMMITS=$(git log --pretty=format:"* %s (%h)" --no-merges)
+        else
+          COMMITS=$(git log ${LAST_TAG}..HEAD --pretty=format:"* %s (%h)" --no-merges)
+        fi
+        
+        CHANGELOG="## What's Changed\n\n${COMMITS}\n\n**Full Changelog**: https://github.com/${{ github.repository }}/compare/${LAST_TAG}...v${{ inputs.version }}"
+        
+        # Save to file for the release
+        echo -e "$CHANGELOG" > CHANGELOG.md
+        
+        # Set output for use in release creation
+        echo "changelog<<EOF" >> $GITHUB_OUTPUT
+        echo -e "$CHANGELOG" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+
+    - name: Commit version update
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add CircuitTool.csproj
+        git commit -m "Bump version to ${{ inputs.version }}" || exit 0
+
+    - name: Create and push tag
+      run: |
+        git tag "v${{ inputs.version }}"
+        git push origin main
+        git push origin "v${{ inputs.version }}"
+
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ inputs.version }}
+        release_name: Release v${{ inputs.version }}
+        body: ${{ steps.changelog.outputs.changelog }}
+        draft: false
+        prerelease: ${{ inputs.prerelease }}
