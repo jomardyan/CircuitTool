@@ -2,6 +2,36 @@
 
 This repository uses GitHub Actions to automatically build, test, and publish the CircuitTool NuGet package. Here's how to set up and use the workflows.
 
+## Project Overview
+
+CircuitTool is a comprehensive C# library for electrical engineering and electronics calculations with support for:
+
+### Core Calculator Classes
+- `OhmsLawCalculator` - Basic Ohm's law calculations
+- `ResistorCalculator` - Resistor network analysis
+- `LEDCalculator` - LED circuit calculations
+- `PowerCalculator` - Power analysis
+- `VoltageCalculator` - Voltage calculations
+- `VoltageDropCalculator` - Voltage drop analysis
+- `VoltageDividerCalculator` - Voltage divider calculations
+- `WattsVoltsAmpsOhmsCalculator` - Power relationship calculations
+
+### Advanced Physics Calculators
+- `CapacitorCalculator` - Capacitive circuits, reactance, energy storage, time constants
+- `InductorCalculator` - Inductive circuits, reactance, energy storage, resonance
+- `TransformerCalculator` - Transformer analysis, efficiency, regulation
+- `ACCircuitCalculator` - AC circuit analysis, impedance, phase relationships
+- `FilterCalculator` - Filter design and analysis (RC/RL low-pass/high-pass)
+
+### Specialized Tools
+- `ArduinoTools` - Arduino-specific calculations and conversions
+- `ESP32Tools` - ESP32-specific calculations and power management
+- `BeginnerCalculators` - Simplified calculators for common tasks
+- `EnergyCalculator` - Energy consumption and cost calculations
+- `PowerFactorCalculator` - Power factor and reactive power analysis
+- `UnitConverter` - Electrical unit conversions
+- `CircuitCalculations` - General circuit analysis methods
+
 ## Workflows Overview
 
 ### 1. `.NET Build and Test` (dotnet.yml)
@@ -67,8 +97,8 @@ For additional security, the workflow uses a "production" environment for NuGet.
 
 1. **Create a Git Tag**:
    ```bash
-   git tag v1.0.8
-   git push origin v1.0.8
+   git tag v1.0.9
+   git push origin v1.0.9
    ```
 
 2. **Create a GitHub Release**:
@@ -93,6 +123,73 @@ You can manually trigger publishing using the workflow dispatch:
    - ✅ Publish to GitHub Packages
    - ✅ Publish to NuGet.org (if ready for public release)
 
+### Legacy Publishing Scripts
+
+For maintainers who prefer command-line publishing, legacy scripts are available:
+
+**PowerShell (Windows):**
+```powershell
+# Publish to GitHub Packages
+.\publish.ps1 -GitHub
+
+# Publish to NuGet.org
+.\publish.ps1 -NuGet
+
+# Publish to both
+.\publish.ps1 -All
+```
+
+**Bash (Linux/macOS):**
+```bash
+# Publish to GitHub Packages
+./publish.sh --github
+
+# Publish to NuGet.org
+./publish.sh --nuget
+
+# Publish to both
+./publish.sh --all
+```
+
+**Note**: The automated GitHub Actions workflow is the recommended approach for publishing.
+
+## Development and Maintenance
+
+### For Developers
+
+If you're contributing to CircuitTool development:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/jomardyan/CircuitTool.git
+   cd CircuitTool
+   ```
+
+2. **Build the library**:
+   ```bash
+   dotnet build
+   ```
+
+3. **Run tests**:
+   ```bash
+   dotnet test
+   ```
+
+4. **Build packages locally**:
+   ```bash
+   dotnet pack --configuration Release --output ./packages
+   ```
+
+### For Maintainers
+
+When maintaining the CircuitTool library:
+
+1. **Update version**: Modify the `<Version>` in `CircuitTool.csproj`
+2. **Update changelog**: Add release notes to `README.md`
+3. **Commit changes**: Commit version and changelog updates
+4. **Create release**: Use GitHub Actions workflows for publishing
+5. **Verify packages**: Check both NuGet.org and GitHub Packages for successful publication
+
 ## Package Consumption
 
 ### From NuGet.org
@@ -114,16 +211,44 @@ dotnet add package CircuitTool
 
 ## Versioning
 
-The project uses the version specified in `CircuitTool.csproj`:
+The project uses the version specified in `CircuitTool.csproj`. Current version is 1.0.12 which includes:
+
+- **New Advanced Calculators**: Added comprehensive physics calculators (Capacitor, Inductor, Transformer, AC Circuit, Filter)
+- **Test Framework Standardization**: Migrated all unit tests from MSTest to NUnit.Framework
+- **Complete Test Coverage**: Added comprehensive unit tests for all calculators
+- **Enhanced Documentation**: Updated with detailed usage examples for all calculators
+
 ```xml
-<Version>1.0.7</Version>
+<Version>1.0.12</Version>
 ```
 
 To release a new version:
 1. Update the version in `CircuitTool.csproj`
 2. Commit the change
-3. Create a tag matching the version (e.g., `v1.0.8`)
+3. Create a tag matching the version (e.g., `v1.0.13`)
 4. Create a GitHub release
+
+## Testing Framework
+
+The project uses **NUnit** as the testing framework. All tests are located in the `tests/` directory:
+
+- **Framework**: NUnit.Framework only (MSTest has been removed)
+- **Test Coverage**: All public methods in all calculator classes have corresponding unit tests
+- **Test Execution**: Tests run automatically on all pull requests and pushes to main/develop branches
+- **Test Files**: Each calculator class has its own dedicated test file (e.g., `CapacitorCalculatorTests.cs`)
+
+### Running Tests Locally
+
+```bash
+# Run all tests
+dotnet test
+
+# Run tests with detailed output
+dotnet test --verbosity normal
+
+# Run tests for a specific test file
+dotnet test --filter "FullyQualifiedName~CapacitorCalculatorTests"
+```
 
 ## Troubleshooting
 

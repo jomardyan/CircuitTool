@@ -13,6 +13,13 @@ A comprehensive C# library for electrical engineering and electronics calculatio
 - **Unit Conversions**: Comprehensive electrical unit conversion utilities
 - **Specialized Calculators**: Power factor, electricity bill, and energy consumption calculators
 
+### Advanced Circuit Analysis
+- **Capacitor Calculations**: Capacitance, reactance, energy storage, time constants, series/parallel combinations
+- **Inductor Calculations**: Inductive reactance, energy storage, time constants, current buildup/decay, resonance
+- **Transformer Analysis**: Voltage/current/turns ratios, efficiency, power loss, regulation calculations
+- **AC Circuit Analysis**: Impedance, phase angles, power factor, RMS/peak/average values, form/crest factors
+- **Filter Calculations**: RC/RL low-pass/high-pass filters, cutoff frequencies, gain, phase response
+
 ### LED and Lighting Calculations
 - **LED Resistor Calculator**: Calculate required resistor values for LED circuits
 - **LED Power Consumption**: Calculate power usage for LED projects
@@ -76,28 +83,7 @@ dotnet nuget add source --username YOUR_GITHUB_USERNAME --password YOUR_GITHUB_T
 dotnet add package CircuitTool --source github
 ```
 
-**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission. See [GITHUB_TOKEN_GUIDE.md](GITHUB_TOKEN_GUIDE.md) for detailed instructions on creating a token.
-```bash
-Install-Package CircuitTool
-```
-
-### Development Installation
-
-Clone the repository:
-```bash
-git clone https://github.com/jomardyan/CircuitTool.git
-cd CircuitTool
-```
-
-Build the library:
-```bash
-dotnet build
-```
-
-Run the tests:
-```bash
-dotnet test
-```
+**Note**: You'll need a GitHub Personal Access Token with `read:packages` permission.
 
 ## Usage Examples
 
@@ -132,6 +118,54 @@ double brightness = LEDCalculator.CalculateBrightness(75);  // 75% duty cycle = 
 
 // Calculate resistor for series LEDs
 double seriesResistor = LEDCalculator.CalculateSeriesResistor(12.0, 3.3, 3, 0.02);  // 12V, 3x 3.3V LEDs, 20mA
+```
+
+### Voltage Analysis
+
+```csharp
+using CircuitTool;
+
+// Calculate voltage drop in a conductor
+double voltageDrop = VoltageDropCalculator.CalculateVoltageDrop(5.0, 0.1, 100); // 5A, 0.1Ω/km, 100m = 0.05V
+
+// Calculate conductor resistance
+double resistance = VoltageDropCalculator.CalculateConductorResistance(0.05, 5.0, 100); // 0.05V drop, 5A, 100m = 0.1Ω/km
+
+// Calculate maximum current for allowed voltage drop
+double maxCurrent = VoltageDropCalculator.CalculateMaxCurrent(0.1, 0.1, 100); // 0.1V max drop, 0.1Ω/km, 100m = 10A
+
+// Calculate voltage divider output
+double outputVoltage = VoltageDividerCalculator.CalculateOutputVoltage(12, 1000, 2000); // 12V, 1kΩ, 2kΩ = 8V
+
+// Calculate required resistor for voltage divider
+double requiredR2 = VoltageDividerCalculator.CalculateR2(12, 8, 1000); // 12V in, 8V out, 1kΩ R1 = 2kΩ
+
+// Calculate input voltage from voltage divider
+double inputVoltage = VoltageDividerCalculator.CalculateInputVoltage(8, 1000, 2000); // 8V out, 1kΩ, 2kΩ = 12V
+```
+
+### Power Analysis
+
+```csharp
+using CircuitTool;
+
+// Calculate watts from voltage and current
+double watts = WattsVoltsAmpsOhmsCalculator.CalculateWatts(12, 2); // 12V, 2A = 24W
+
+// Calculate volts from watts and current
+double volts = WattsVoltsAmpsOhmsCalculator.CalculateVolts(24, 2); // 24W, 2A = 12V
+
+// Calculate amps from watts and voltage
+double amps = WattsVoltsAmpsOhmsCalculator.CalculateAmps(24, 12); // 24W, 12V = 2A
+
+// Calculate ohms from voltage and current
+double ohms = WattsVoltsAmpsOhmsCalculator.CalculateOhms(12, 2); // 12V, 2A = 6Ω
+
+// Calculate watts from voltage and resistance
+double wattsFromVR = WattsVoltsAmpsOhmsCalculator.CalculateWattsFromVoltageAndResistance(12, 6); // 12V, 6Ω = 24W
+
+// Calculate watts from current and resistance
+double wattsFromIR = WattsVoltsAmpsOhmsCalculator.CalculateWattsFromCurrentAndResistance(2, 6); // 2A, 6Ω = 24W
 ```
 
 ### Arduino Tools
@@ -189,6 +223,159 @@ double power = CircuitCalculations.CalculatePower(230, 5); // 230V × 5A = 1150W
 
 // Calculate energy
 double energy = CircuitCalculations.CalculateEnergy(1150, 2); // 1150W × 2h = 2300Wh
+```
+
+### Capacitor Calculations
+
+```csharp
+using CircuitTool;
+
+// Calculate capacitive reactance
+double reactance = CapacitorCalculator.CalculateCapacitiveReactance(0.000001, 1000); // 1μF at 1kHz = 159.15Ω
+
+// Calculate energy stored in capacitor
+double energy = CapacitorCalculator.CalculateEnergyStored(0.000001, 12); // 1μF at 12V = 72μJ
+
+// Calculate RC time constant
+double timeConstant = CapacitorCalculator.CalculateTimeConstant(1000, 0.000001); // 1kΩ, 1μF = 1ms
+
+// Calculate total capacitance in series
+double seriesCapacitance = CapacitorCalculator.CalculateSeriesCapacitance(new double[] { 0.000001, 0.000002 }); // 1μF, 2μF in series = 0.67μF
+
+// Calculate total capacitance in parallel
+double parallelCapacitance = CapacitorCalculator.CalculateParallelCapacitance(new double[] { 0.000001, 0.000002 }); // 1μF, 2μF in parallel = 3μF
+
+// Calculate charging voltage
+double voltage = CapacitorCalculator.CalculateChargingVoltage(12, 0.001, 0.001); // 12V source, t=1ms, τ=1ms = 7.59V
+
+// Calculate discharging voltage
+double dischargingVoltage = CapacitorCalculator.CalculateDischargingVoltage(12, 0.001, 0.001); // 12V initial, t=1ms, τ=1ms = 4.41V
+```
+
+### Inductor Calculations
+
+```csharp
+using CircuitTool;
+
+// Calculate inductive reactance
+double reactance = InductorCalculator.CalculateInductiveReactance(0.001, 1000); // 1mH at 1kHz = 6.28Ω
+
+// Calculate energy stored in inductor
+double energy = InductorCalculator.CalculateEnergyStored(0.001, 2); // 1mH with 2A = 2mJ
+
+// Calculate RL time constant
+double timeConstant = InductorCalculator.CalculateTimeConstant(0.001, 100); // 1mH, 100Ω = 10μs
+
+// Calculate total inductance in series
+double seriesInductance = InductorCalculator.CalculateSeriesInductance(new double[] { 0.001, 0.002 }); // 1mH, 2mH in series = 3mH
+
+// Calculate total inductance in parallel
+double parallelInductance = InductorCalculator.CalculateParallelInductance(new double[] { 0.001, 0.002 }); // 1mH, 2mH in parallel = 0.67mH
+
+// Calculate current buildup
+double current = InductorCalculator.CalculateCurrentBuildup(2, 0.001, 0.00001); // 2A final, t=10μs, τ=10μs = 1.26A
+
+// Calculate resonant frequency
+double frequency = InductorCalculator.CalculateResonantFrequency(0.001, 0.000001); // 1mH, 1μF = 5.03kHz
+```
+
+### Transformer Calculations
+
+```csharp
+using CircuitTool;
+
+// Calculate secondary voltage
+double secondaryVoltage = TransformerCalculator.CalculateSecondaryVoltage(120, 10, 1); // 120V primary, 10:1 ratio = 12V
+
+// Calculate secondary current
+double secondaryCurrent = TransformerCalculator.CalculateSecondaryCurrent(2, 10, 1); // 2A primary, 10:1 ratio = 20A
+
+// Calculate turns ratio
+double turnsRatio = TransformerCalculator.CalculateTurnsRatio(120, 12); // 120V to 12V = 10:1
+
+// Calculate voltage ratio
+double voltageRatio = TransformerCalculator.CalculateVoltageRatio(240, 120); // 240V to 120V = 2:1
+
+// Calculate efficiency
+double efficiency = TransformerCalculator.CalculateEfficiency(1000, 1100); // 1000W out, 1100W in = 90.9%
+
+// Calculate power loss
+double powerLoss = TransformerCalculator.CalculatePowerLoss(1100, 1000); // 1100W in, 1000W out = 100W loss
+
+// Calculate voltage regulation
+double regulation = TransformerCalculator.CalculateVoltageRegulation(120, 115); // 120V no-load, 115V load = 4.35%
+
+// Calculate apparent power
+double apparentPower = TransformerCalculator.CalculateApparentPower(120, 10); // 120V, 10A = 1200VA
+```
+
+### AC Circuit Analysis
+
+```csharp
+using CircuitTool;
+
+// Calculate impedance
+double impedance = ACCircuitCalculator.CalculateImpedance(50, 30); // 50Ω resistance, 30Ω reactance = 58.31Ω
+
+// Calculate phase angle
+double phaseAngle = ACCircuitCalculator.CalculatePhaseAngle(50, 30); // 50Ω R, 30Ω X = 30.96°
+
+// Calculate power factor
+double powerFactor = ACCircuitCalculator.CalculatePowerFactor(30.96); // 30.96° phase angle = 0.857
+
+// Calculate RMS from peak
+double rms = ACCircuitCalculator.CalculateRMS(170); // 170V peak = 120.21V RMS
+
+// Calculate peak from RMS
+double peak = ACCircuitCalculator.CalculatePeak(120); // 120V RMS = 169.74V peak
+
+// Calculate average from peak
+double average = ACCircuitCalculator.CalculateAverage(170); // 170V peak = 108.13V average
+
+// Calculate form factor
+double formFactor = ACCircuitCalculator.CalculateFormFactor(120, 108); // 120V RMS, 108V avg = 1.11
+
+// Calculate crest factor
+double crestFactor = ACCircuitCalculator.CalculateCrestFactor(170, 120); // 170V peak, 120V RMS = 1.42
+
+// Calculate Q factor
+double qFactor = ACCircuitCalculator.CalculateQFactor(30, 5); // 30Ω reactance, 5Ω resistance = 6
+
+// Calculate bandwidth
+double bandwidth = ACCircuitCalculator.CalculateBandwidth(1000, 6); // 1kHz resonant, Q=6 = 166.67Hz
+```
+
+### Filter Calculations
+
+```csharp
+using CircuitTool;
+
+// Calculate RC low-pass filter cutoff frequency
+double cutoffFreq = FilterCalculator.CalculateRCLowPassCutoff(1000, 0.000001); // 1kΩ, 1μF = 159.15Hz
+
+// Calculate RC high-pass filter cutoff frequency
+double highPassCutoff = FilterCalculator.CalculateRCHighPassCutoff(1000, 0.000001); // 1kΩ, 1μF = 159.15Hz
+
+// Calculate RL low-pass filter cutoff frequency
+double rlCutoff = FilterCalculator.CalculateRLLowPassCutoff(100, 0.001); // 100Ω, 1mH = 15.92kHz
+
+// Calculate RL high-pass filter cutoff frequency
+double rlHighPass = FilterCalculator.CalculateRLHighPassCutoff(100, 0.001); // 100Ω, 1mH = 15.92kHz
+
+// Calculate filter gain in dB
+double gain = FilterCalculator.CalculateFilterGain(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = -15.97dB
+
+// Calculate filter phase shift
+double phaseShift = FilterCalculator.CalculateFilterPhaseShift(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = -80.96°
+
+// Calculate magnitude response
+double magnitude = FilterCalculator.CalculateMagnitudeResponse(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = 0.158
+
+// Calculate required resistor for RC filter
+double resistor = FilterCalculator.CalculateRequiredResistor(159.15, 0.000001); // 159.15Hz cutoff, 1μF = 1kΩ
+
+// Calculate required capacitor for RC filter
+double capacitor = FilterCalculator.CalculateRequiredCapacitor(159.15, 1000); // 159.15Hz cutoff, 1kΩ = 1μF
 ```
 
 ### Beginner Calculator Examples
@@ -256,36 +443,6 @@ CircuitTool is available on multiple package registries:
 - **Registry URL**: https://nuget.pkg.github.com/jomardyan/index.json
 - **Installation**: Requires GitHub authentication (see installation section above)
 
-### Publishing
-
-For maintainers, use the provided scripts to publish new versions:
-
-**PowerShell (Windows):**
-```powershell
-# Publish to GitHub Packages
-.\publish.ps1 -GitHub
-
-# Publish to NuGet.org
-.\publish.ps1 -NuGet
-
-# Publish to both
-.\publish.ps1 -All
-```
-
-**Bash (Linux/macOS):**
-```bash
-# Publish to GitHub Packages
-./publish.sh --github
-
-# Publish to NuGet.org
-./publish.sh --nuget
-
-# Publish to both
-./publish.sh --all
-```
-
-See `GITHUB_PACKAGES.md` for detailed publishing instructions.
-
 ## Contributing
 
 We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
@@ -302,6 +459,53 @@ We welcome contributions! Please feel free to submit pull requests or open issue
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Changelog
+
+### Version 1.0.12 (Current)
+- **New Advanced Calculators**: Added comprehensive physics calculators for electrical engineering
+  - **CapacitorCalculator**: Capacitive reactance, energy storage, time constants, series/parallel combinations, charging/discharging curves
+  - **InductorCalculator**: Inductive reactance, energy storage, time constants, current buildup/decay, resonance frequency
+  - **TransformerCalculator**: Voltage/current/turns ratios, efficiency, power loss, regulation, apparent power calculations
+  - **ACCircuitCalculator**: Impedance, phase angles, power factor, RMS/peak/average conversions, form/crest factors, Q factor, bandwidth
+  - **FilterCalculator**: RC/RL low-pass/high-pass filters, cutoff frequencies, gain, phase response, magnitude response
+- **Test Framework Standardization**: Migrated all unit tests from MSTest to NUnit.Framework for consistency
+- **Complete Test Coverage**: Added comprehensive unit tests for all previously untested calculators and new calculators
+- **Bug Fixes**: Fixed logic issues in test expectations and duplicate variable declarations
+- **Enhanced Documentation**: Updated README.md with detailed usage examples for all new calculators
+
+### Version 1.0.11
+- **Documentation Improvements**: Enhanced README.md structure for better end-user experience
+- **Workflow Organization**: Moved development and publishing documentation to WORKFLOWS.md
+- **Package Quality**: Continued improvements to NuGet package structure and metadata
+- **User Experience**: Simplified installation instructions and focused documentation
+
+### Version 1.0.10
+- **Documentation Restructure**: Separated end-user documentation from developer/maintainer documentation
+- **Changelog Enhancement**: Added comprehensive version history with detailed feature descriptions
+- **Package Distribution**: Improved package distribution documentation and user guidance
+
+### Version 1.0.9
+- **Enhanced Documentation**: Added comprehensive XML documentation for all public methods and classes
+- **Debug Symbols**: Included portable debug symbols (.pdb files) for better debugging experience
+- **Package Icon**: Added custom circuit-themed package icon for better package identification
+- **Automated Publishing**: Implemented GitHub Actions for automatic publishing to NuGet.org and GitHub Packages
+- **Multi-Framework Compatibility**: Maintained support for all target frameworks with proper debug symbol generation
+- **Package Quality**: Improved NuGet package quality with proper metadata, symbols, and documentation
+
+### Version 1.0.8
+- **GitHub Actions Integration**: Added automated build, test, and publishing workflows
+- **Package Validation**: Implemented automated package validation and quality checks
+- **Cross-Platform Testing**: Added testing on Ubuntu, Windows, and macOS environments
+- **Environment Protection**: Added production environment protection for secure publishing
+
+### Version 1.0.7
+- **Source Linking**: Enhanced source linking for better debugging experience
+- **Symbol Packages**: Added symbol packages (.snupkg) for NuGet.org publishing
+- **Repository Integration**: Improved repository URL configuration and source embedding
+
+### Version 1.0.6
+- **Package Metadata**: Enhanced NuGet package metadata with proper tags and descriptions
+- **License Integration**: Added MIT license file to NuGet package
+- **README Integration**: Included README.md in NuGet package for better documentation
 
 ### Version 1.0.5
 - **Multi-Framework Support**: Added compatibility with .NET Framework 2.0, 3.5, 4.0, 4.5, 4.6.2, .NET 6.0, 8.0, and .NET Standard 2.0, 2.1

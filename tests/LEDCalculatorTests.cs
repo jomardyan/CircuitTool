@@ -1,13 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using CircuitTool;
 using System;
 
 namespace CircuitTool.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class LEDCalculatorTests
     {
-        [TestMethod]
+        [Test]
         public void CalculateResistorValue_ValidInputs_ReturnsCorrectValue()
         {
             // Arrange
@@ -19,10 +19,10 @@ namespace CircuitTool.Tests
             double result = LEDCalculator.CalculateResistorValue(supplyVoltage, ledVoltage, ledCurrent);
 
             // Assert
-            Assert.AreEqual(350.0, result, 0.01);
+            Assert.That(result, Is.EqualTo(350.0).Within(0.01));
         }
 
-        [TestMethod]
+        [Test]
         public void CalculateLEDPower_ValidInputs_ReturnsCorrectValue()
         {
             // Arrange
@@ -33,10 +33,10 @@ namespace CircuitTool.Tests
             double result = LEDCalculator.CalculateLEDPower(supplyVoltage, ledCurrent);
 
             // Assert
-            Assert.AreEqual(0.1, result, 0.01);
+            Assert.That(result, Is.EqualTo(0.1).Within(0.01));
         }
 
-        [TestMethod]
+        [Test]
         public void CalculateBrightness_ValidDutyCycle_ReturnsCorrectRatio()
         {
             // Arrange
@@ -46,14 +46,14 @@ namespace CircuitTool.Tests
             double result = LEDCalculator.CalculateBrightness(dutyCycle);
 
             // Assert
-            Assert.AreEqual(0.75, result, 0.01);
+            Assert.That(result, Is.EqualTo(0.75).Within(0.01));
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [Test]
         public void CalculateResistorValue_InvalidCurrent_ThrowsException()
         {
-            LEDCalculator.CalculateResistorValue(9.0, 2.0, 0.0);
+            // Arrange & Act & Assert
+            Assert.Throws<ArgumentException>(() => LEDCalculator.CalculateResistorValue(9.0, 2.0, 0.0));
         }
     }
 }

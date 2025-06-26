@@ -1,8 +1,4 @@
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/.msCoverageSourceRootsMapping_CircuitTool.Tests
-/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.csproj.AssemblyReference.cache
-/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.csproj.CoreCompileInputs.cache
-/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.sourcelink.json
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/nunit.engine.dll
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/nunit.engine.api.dll
@@ -149,9 +145,16 @@
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/CircuitTool.dll
 /workspaces/CircuitTool/tests/bin/Debug/net8.0/CircuitTool.pdb
+/workspaces/CircuitTool/tests/bin/Debug/net8.0/CircuitTool.xml
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.csproj.AssemblyReference.cache
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.csproj.CoreCompileInputs.cache
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.sourcelink.json
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitT.F0076B23.Up2Date
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.dll
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/refint/CircuitTool.Tests.dll
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.pdb
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.genruntimeconfig.cache
 /workspaces/CircuitTool/tests/obj/Debug/net8.0/ref/CircuitTool.Tests.dll
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.AssemblyInfoInputs.cache
+/workspaces/CircuitTool/tests/obj/Debug/net8.0/CircuitTool.Tests.AssemblyInfo.cs

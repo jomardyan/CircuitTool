@@ -1,13 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using CircuitTool;
 using System;
 
 namespace CircuitTool.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ESP32ToolsTests
     {
-        [TestMethod]
+        [Test]
         public void AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
         {
             // Arrange
@@ -18,20 +18,20 @@ namespace CircuitTool.Tests
             double result = ESP32Tools.AnalogToVoltage(analogReading);
 
             // Assert
-            Assert.AreEqual(expectedVoltage, result, 0.01);
+            Assert.That(result, Is.EqualTo(expectedVoltage).Within(0.01));
         }
 
-        [TestMethod]
+        [Test]
         public void CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
         {
             // Act
             double result = ESP32Tools.CalculateWiFiPowerConsumption(WiFiMode.Active);
 
             // Assert
-            Assert.AreEqual(80.0, result);
+            Assert.That(result, Is.EqualTo(80.0));
         }
 
-        [TestMethod]
+        [Test]
         public void CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
         {
             // Arrange
@@ -43,14 +43,14 @@ namespace CircuitTool.Tests
             double result = ESP32Tools.CalculateBatteryLife(batteryCapacity, averageCurrent, efficiency);
 
             // Assert
-            Assert.AreEqual(16.0, result, 0.01);
+            Assert.That(result, Is.EqualTo(16.0).Within(0.01));
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [Test]
         public void AnalogToVoltage_InvalidReading_ThrowsException()
         {
-            ESP32Tools.AnalogToVoltage(4096);
+            // Arrange & Act & Assert
+            Assert.Throws<ArgumentException>(() => ESP32Tools.AnalogToVoltage(4096));
         }
     }
 }

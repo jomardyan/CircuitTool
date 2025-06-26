@@ -1,13 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using CircuitTool;
 using System;
 
 namespace CircuitTool.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ArduinoToolsTests
     {
-        [TestMethod]
+        [Test]
         public void AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
         {
             // Arrange
@@ -18,10 +18,10 @@ namespace CircuitTool.Tests
             double result = ArduinoTools.AnalogToVoltage(analogReading);
 
             // Assert
-            Assert.AreEqual(expectedVoltage, result, 0.01);
+            Assert.That(result, Is.EqualTo(expectedVoltage).Within(0.01));
         }
 
-        [TestMethod]
+        [Test]
         public void VoltageToAnalog_ValidVoltage_ReturnsCorrectReading()
         {
             // Arrange
@@ -32,10 +32,10 @@ namespace CircuitTool.Tests
             int result = ArduinoTools.VoltageToAnalog(voltage);
 
             // Assert
-            Assert.AreEqual(expectedReading, result);
+            Assert.That(result, Is.EqualTo(expectedReading));
         }
 
-        [TestMethod]
+        [Test]
         public void ServoAngleToPulseWidth_ValidAngle_ReturnsCorrectPulseWidth()
         {
             // Arrange
@@ -46,14 +46,14 @@ namespace CircuitTool.Tests
             double result = ArduinoTools.ServoAngleToPulseWidth(angle);
 
             // Assert
-            Assert.AreEqual(expectedPulseWidth, result, 0.01);
+            Assert.That(result, Is.EqualTo(expectedPulseWidth).Within(0.01));
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [Test]
         public void AnalogToVoltage_InvalidReading_ThrowsException()
         {
-            ArduinoTools.AnalogToVoltage(1024);
+            // Arrange & Act & Assert
+            Assert.Throws<ArgumentException>(() => ArduinoTools.AnalogToVoltage(1024));
         }
     }
 }

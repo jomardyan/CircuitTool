@@ -5,7 +5,7 @@
   },
   "projects": {
     "/workspaces/CircuitTool/CircuitTool.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.11",
       "restore": {
         "projectUniqueName": "/workspaces/CircuitTool/CircuitTool.csproj",
         "projectName": "CircuitTool",
@@ -13,18 +13,61 @@
         "packagesPath": "/home/codespace/.nuget/packages/",
         "outputPath": "/workspaces/CircuitTool/obj/",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
+          "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net20",
+          "net35",
+          "net40",
+          "net45",
+          "net462",
+          "net6.0",
+          "net8.0",
+          "netstandard2.0",
+          "netstandard2.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/jomardyan/index.json": {}
         },
         "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          },
           "net8.0": {
             "targetAlias": "net8.0",
+            "projectReferences": {}
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {}
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {}
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {}
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -40,8 +83,52 @@
         }
       },
       "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,6 +146,146 @@
             }
           },
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -72,13 +299,15 @@
         "outputPath": "/workspaces/CircuitTool/tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/jomardyan/index.json": {}
         },
         "frameworks": {
           "net8.0": {
