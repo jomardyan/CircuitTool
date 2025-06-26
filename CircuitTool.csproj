@@ -18,6 +18,7 @@
     <!-- Enable debug symbols for all configurations -->
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     
     <!-- Suppress XML documentation warnings for missing docs -->
     <NoWarn>$(NoWarn);1591</NoWarn>
