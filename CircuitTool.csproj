@@ -12,6 +12,9 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
     
+    <!-- Enable nullable reference types for modern frameworks -->
+    <Nullable Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net8.0'">enable</Nullable>
+    
     <!-- Enable XML documentation generation -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     
@@ -41,7 +44,7 @@
 
   <PropertyGroup>
     <PackageId>CircuitTool</PackageId>
-    <Version>1.0.13</Version>
+    <Version>2.0.0</Version>
     <Authors>Jomardyan</Authors>
     <Description>A comprehensive C# library for electrical engineering and electronics calculations. Compatible with .NET Framework 2.0+, .NET 6.0+, and .NET Standard 2.0+.</Description>
     <PackageTags>ElectricalEngineering Electronics Calculations Arduino ESP32 LED Microcontroller</PackageTags>
@@ -73,6 +76,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net8.0' OR '$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" Condition="'$(TargetFramework)' != 'net6.0' AND '$(TargetFramework)' != 'net8.0'" />
   </ItemGroup>
 
 </Project>

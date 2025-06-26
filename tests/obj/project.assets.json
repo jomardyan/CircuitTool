@@ -639,7 +639,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "CircuitTool/1.0.13": {
+      "CircuitTool/1.0.14": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1634,7 +1634,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "CircuitTool/1.0.13": {
+    "CircuitTool/1.0.14": {
       "type": "project",
       "path": "../CircuitTool.csproj",
       "msbuildProject": "../CircuitTool.csproj"
@@ -1642,7 +1642,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CircuitTool >= 1.0.13",
+      "CircuitTool >= 1.0.14",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 5.0.0"
