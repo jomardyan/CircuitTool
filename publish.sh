@@ -145,14 +145,20 @@ publish_to_github() {
         fi
     fi
     
+    # Remove existing GitHub source if it exists (to avoid duplicate warning)
+    dotnet nuget remove source github 2>/dev/null || true
+    
     # Add GitHub Packages source
     dotnet nuget add source --username "jomardyan" --password "$token" --store-password-in-clear-text --name github "https://nuget.pkg.github.com/jomardyan/index.json"
+    
+    # Set API key for GitHub Packages source
+    dotnet nuget setapikey "$token" --source github
     
     # Push to GitHub Packages
     for package in ./packages/*.nupkg; do
         if [ -f "$package" ]; then
             print_color "Publishing $(basename "$package")..." "$YELLOW"
-            dotnet nuget push "$package" --source "github" --skip-duplicate
+            dotnet nuget push "$package" --source "github" --api-key "$token" --skip-duplicate
         fi
     done
     
