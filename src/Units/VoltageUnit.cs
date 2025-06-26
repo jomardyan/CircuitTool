@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 
 namespace CircuitTool.Units
@@ -105,7 +106,7 @@ namespace CircuitTool.Units
         public static implicit operator double(Voltage voltage) => voltage._volts;
 
         public bool Equals(Voltage other) => this == other;
-        public override bool Equals(object obj) => obj is Voltage voltage && Equals(voltage);
+        public override bool Equals(object? obj) => obj is Voltage voltage && Equals(voltage);
         public override int GetHashCode() => _volts.GetHashCode();
         public int CompareTo(Voltage other) => _volts.CompareTo(other._volts);
 

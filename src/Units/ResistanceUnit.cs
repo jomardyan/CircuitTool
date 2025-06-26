@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 
 namespace CircuitTool.Units
@@ -111,7 +112,7 @@ namespace CircuitTool.Units
         public static implicit operator double(Resistance resistance) => resistance._ohms;
 
         public bool Equals(Resistance other) => this == other;
-        public override bool Equals(object obj) => obj is Resistance resistance && Equals(resistance);
+        public override bool Equals(object? obj) => obj is Resistance resistance && Equals(resistance);
         public override int GetHashCode() => _ohms.GetHashCode();
         public int CompareTo(Resistance other) => _ohms.CompareTo(other._ohms);
 

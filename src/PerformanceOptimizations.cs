@@ -2,10 +2,9 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
-using System.Runtime.Intrinsics;
-using System.Runtime.Intrinsics.X86;
 
 namespace CircuitTool.Performance
 {
@@ -461,9 +460,10 @@ namespace CircuitTool.Performance
         /// <returns>Result of the operation</returns>
         public static T MeasureOperation<T>(string operationName, Func<T> operation)
         {
-            var startTime = Environment.TickCount64;
+            var stopwatch = Stopwatch.StartNew();
             var result = operation();
-            var elapsedMs = Environment.TickCount64 - startTime;
+            stopwatch.Stop();
+            var elapsedMs = stopwatch.ElapsedMilliseconds;
 
             _metrics.AddOrUpdate(operationName,
                 (1, elapsedMs),

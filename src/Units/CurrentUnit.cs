@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 
 namespace CircuitTool.Units
@@ -101,7 +102,7 @@ namespace CircuitTool.Units
         public static implicit operator double(Current current) => current._amperes;
 
         public bool Equals(Current other) => this == other;
-        public override bool Equals(object obj) => obj is Current current && Equals(current);
+        public override bool Equals(object? obj) => obj is Current current && Equals(current);
         public override int GetHashCode() => _amperes.GetHashCode();
         public int CompareTo(Current other) => _amperes.CompareTo(other._amperes);
 
