@@ -5,7 +5,7 @@
   },
   "projects": {
     "/workspaces/CircuitTool/CircuitTool.csproj": {
-      "version": "2.0.0",
+      "version": "2.1.0",
       "restore": {
         "projectUniqueName": "/workspaces/CircuitTool/CircuitTool.csproj",
         "projectName": "CircuitTool",
@@ -21,8 +21,10 @@
         "originalTargetFrameworks": [
           "net45",
           "net462",
+          "net481",
           "net6.0",
           "net8.0",
+          "netcoreapp3.1",
           "netstandard2.0",
           "netstandard2.1"
         ],
@@ -30,6 +32,10 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          },
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
@@ -44,6 +50,10 @@
           },
           "net462": {
             "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "net481": {
+            "targetAlias": "net481",
             "projectReferences": {}
           },
           "netstandard2.0": {
@@ -67,6 +77,55 @@
         }
       },
       "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
@@ -205,6 +264,35 @@
           },
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
         },
+        "net481": {
+          "targetAlias": "net481",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
+        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
@@ -295,6 +383,7 @@
         "packagesPath": "/home/codespace/.nuget/packages/",
         "outputPath": "/workspaces/CircuitTool/tests/obj/",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
           "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"

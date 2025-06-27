@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "CircuitTool.Tests/1.0.0": {
         "dependencies": {
-          "CircuitTool": "2.0.0",
+          "CircuitTool": "2.1.0",
           "Microsoft.NET.Test.Sdk": "17.14.1",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "5.0.0"
@@ -627,14 +627,14 @@
         }
       },
       "System.Text.Json/8.0.5": {},
-      "CircuitTool/2.0.0": {
+      "CircuitTool/2.1.0": {
         "dependencies": {
           "System.IO.Ports": "8.0.0",
           "System.Text.Json": "8.0.5"
         },
         "runtime": {
           "CircuitTool.dll": {
-            "assemblyVersion": "2.0.0",
+            "assemblyVersion": "2.1.0",
             "fileVersion": ""
           }
         }
@@ -829,7 +829,7 @@
       "path": "system.text.json/8.0.5",
       "hashPath": "system.text.json.8.0.5.nupkg.sha512"
     },
-    "CircuitTool/2.0.0": {
+    "CircuitTool/2.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

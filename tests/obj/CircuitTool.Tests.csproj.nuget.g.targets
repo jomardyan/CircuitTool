@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.testing.platform.msbuild/1.5.3/buildMultiTargeting/Microsoft.Testing.Platform.MSBuild.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform.msbuild/1.5.3/buildMultiTargeting/Microsoft.Testing.Platform.MSBuild.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net8.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)system.text.json/8.0.5/buildTransitive/net6.0/System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json/8.0.5/buildTransitive/net6.0/System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testing.platform.msbuild/1.5.3/buildTransitive/Microsoft.Testing.Platform.MSBuild.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform.msbuild/1.5.3/buildTransitive/Microsoft.Testing.Platform.MSBuild.targets')" />
     <Import Project="$(NuGetPackageRoot)nunit3testadapter/5.0.0/build/netcoreapp3.1/NUnit3TestAdapter.targets" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter/5.0.0/build/netcoreapp3.1/NUnit3TestAdapter.targets')" />
