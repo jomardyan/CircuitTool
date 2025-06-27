@@ -30,7 +30,7 @@ namespace CircuitTool.Calculators
             public double CharacterTime { get; set; }  // Time per character in microseconds
             public double MaxDataRate { get; set; }  // Maximum data rate in bytes/second
             public double EfficiencyPercent { get; set; }  // Data efficiency percentage
-            public int TotalBitsPerFrame { get; set; }  // Total bits per character frame
+            public double TotalBitsPerFrame { get; set; }  // Total bits per character frame
             public double InterCharacterGap { get; set; }  // Minimum gap between characters
         }
 
