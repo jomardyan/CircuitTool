@@ -1,0 +1,36 @@
+- name: 📚 Tutorials Overview
+  href: index.md
+- name: 🎯 Getting Started
+  href: ../articles/getting-started.md
+- name: 🧮 Basic Calculations
+  items:
+    - name: Ohm's Law Tutorial
+      href: basic/ohms-law.md
+    - name: Power Calculations
+      href: basic/power-calculations.md
+    - name: Voltage Dividers
+      href: basic/voltage-dividers.md
+- name: ⚡ AC Circuit Analysis
+  items:
+    - name: AC Circuit Basics
+      href: ac/ac-basics.md
+    - name: Impedance Calculations
+      href: ac/impedance.md
+    - name: Phasor Analysis
+      href: ac/phasors.md
+- name: 🔌 Component Design
+  items:
+    - name: Resistor Networks
+      href: components/resistor-networks.md
+    - name: Capacitor Sizing
+      href: components/capacitor-sizing.md
+    - name: Inductor Design
+      href: components/inductor-design.md
+- name: 🏭 Industrial Applications
+  items:
+    - name: Motor Control
+      href: industrial/motor-control.md
+    - name: Power Distribution
+      href: industrial/power-distribution.md
+    - name: Safety Systems
+      href: industrial/safety-systems.md

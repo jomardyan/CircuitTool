@@ -1,53 +1,74 @@
 # CircuitTool Interactive CLI
 
-An interactive command-line interface for testing the CircuitTool framework capabilities.
+> **Interactive command-line interface for testing and exploring CircuitTool framework capabilities**
 
-## Features
+The CircuitTool CLI provides both interactive and direct command-line access to all library features, making it perfect for learning, testing, and automation.
 
-### 🧮 Basic Calculations
-- Ohm's Law calculations (V, I, R)
-- Power calculations (P = VI, P = I²R, P = V²/R)
-- Series and parallel resistance combinations
+## ✨ Key Features
+
+### 🧮 Core Calculations
+- **Ohm's Law**: Voltage, current, resistance, and power calculations
+- **Power Analysis**: Multiple power calculation methods (P=VI, P=I²R, P=V²/R)
+- **Network Analysis**: Series and parallel resistance combinations
+- **Component Design**: Real-world component sizing and selection
 
 ### ⚡ AC Circuit Analysis  
-- Reactance calculations (inductive and capacitive)
-- RLC impedance analysis
-- Resonant frequency calculations
+- **Reactance Calculations**: Inductive (XL) and capacitive (XC) reactance
+- **Impedance Analysis**: Complex impedance for RLC circuits
+- **Resonance**: Find resonant frequencies and Q-factors
+- **Frequency Response**: Magnitude and phase analysis
 
-### 🔧 Component Design
-- LED current limiting resistor calculator
-- Voltage divider design
-- Simple RC filter calculations
+### 🔧 Component Design Tools
+- **LED Design**: Current limiting resistor calculator with safety margins
+- **Filter Design**: RC/RL low-pass, high-pass filter calculations
+- **Voltage Dividers**: Design optimal resistor ratios
+- **Power Supply**: Linear and switching regulator design
 
-### 📊 Power Analysis
-- Energy consumption calculations
-- Electricity bill estimation
-- Power efficiency analysis
+### 📊 Advanced Analysis
+- **Energy Calculations**: Power consumption and energy cost analysis
+- **Efficiency Analysis**: Power conversion efficiency calculations
+- **Performance Benchmarking**: Speed and accuracy testing
+- **Statistical Analysis**: Component tolerance and worst-case analysis
 
 ### 🎯 Interactive Features
-- Guided menu system
-- Built-in examples and tutorials
-- Performance benchmarking
-- Multiple output formats (table, JSON, CSV)
+- **Guided Menu System**: Step-by-step calculation wizards
+- **Built-in Examples**: Pre-loaded circuit examples and tutorials
+- **Multiple Output Formats**: Results in table, JSON, CSV, or XML format
+- **Batch Processing**: Execute multiple calculations from files
+- **Help System**: Context-sensitive help and documentation
 
-## Usage
+## 🚀 Usage Guide
 
-### Interactive Mode
+### Interactive Mode (Recommended for Learning)
 ```bash
 CircuitTool.CLI
 ```
-Launches the interactive menu system for guided calculations.
+Launches the interactive menu system with guided calculations and tutorials.
 
-### Command Line Mode
+### Direct Command Mode (Great for Automation)
 ```bash
-# Basic Ohm's Law calculation
+# 🧮 Basic electrical calculations
 CircuitTool.CLI basic ohms --voltage 12 --current 2
+CircuitTool.CLI basic power --voltage 12 --current 2 --method vi
 
-# LED resistor calculation
-CircuitTool.CLI component led --supply 5 --forward 2 --current 0.02
+# 🔧 Component design
+CircuitTool.CLI component led --supply 5 --forward 2.1 --current 0.02
+CircuitTool.CLI component divider --input 12 --output 5 --current 0.1
 
-# AC reactance calculation
+# ⚡ AC circuit analysis
 CircuitTool.CLI ac reactance --frequency 1000 --inductance 0.01
+CircuitTool.CLI ac impedance --resistance 100 --reactance 50
+CircuitTool.CLI ac resonance --inductance 0.001 --capacitance 1e-6
+
+# 📊 Advanced analysis
+CircuitTool.CLI analysis power --input-power 100 --output-power 85
+CircuitTool.CLI analysis thermal --power 25 --resistance 2.5
+CircuitTool.CLI analysis tolerance --nominal 100 --tolerance 0.05
+
+# 🎯 Performance and benchmarking
+CircuitTool.CLI benchmark --iterations 10000 --test ohms
+CircuitTool.CLI performance --test vectorized --size 1000
+```
 
 # Energy consumption analysis
 CircuitTool.CLI power energy --power 100 --time 24

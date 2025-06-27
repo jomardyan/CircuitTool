@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RFCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RFCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations for RF (Radio Frequency) and microwave circuit design.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_RFCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.RFCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.RFCalculator">
+
+
+
+  <h1 id="CircuitTool_RFCalculator" data-uid="CircuitTool.RFCalculator" class="text-break">
+Class RFCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations for RF (Radio Frequency) and microwave circuit design.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RFCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RFCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_RFCalculator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Example usage:</p>
+<pre><code class="lang-csharp">double wavelength = RFCalculator.Wavelength(2.4e9); // 0.125m for 2.4 GHz
+double vswr = RFCalculator.VSWR(0.5); // VSWR from reflection coefficient
+double rl = RFCalculator.ReturnLoss(2.0); // Return loss from VSWR
+double pl = RFCalculator.PathLoss(2.4e9, 100); // Free space path loss</code></pre>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_RFCalculator_CharacteristicImpedance_" data-uid="CircuitTool.RFCalculator.CharacteristicImpedance*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_CharacteristicImpedance_System_Double_System_Double_" data-uid="CircuitTool.RFCalculator.CharacteristicImpedance(System.Double,System.Double)">
+  CharacteristicImpedance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates characteristic impedance of a transmission line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CharacteristicImpedance(double inductancePerLength, double capacitancePerLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inductancePerLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Inductance per unit length (H/m).</p>
+</dd>
+    <dt><code>capacitancePerLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance per unit length (F/m).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Characteristic impedance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_Frequency_" data-uid="CircuitTool.RFCalculator.Frequency*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_Frequency_System_Double_" data-uid="CircuitTool.RFCalculator.Frequency(System.Double)">
+  Frequency(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates frequency from wavelength using f = c/λ.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Frequency(double wavelength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wavelength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wavelength in meters (m).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in hertz (Hz).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_PathLoss_" data-uid="CircuitTool.RFCalculator.PathLoss*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_PathLoss_System_Double_System_Double_" data-uid="CircuitTool.RFCalculator.PathLoss(System.Double,System.Double)">
+  PathLoss(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates free space path loss using Friis formula.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PathLoss(double frequency, double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in hertz (Hz).</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Distance in meters (m).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Path loss in dB.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_RFCalculator_PathLoss_System_Double_System_Double__examples">Examples</h4>
+  <p>double pl = RFCalculator.PathLoss(2.4e9, 100); // Free space path loss</p>
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_ReflectionCoefficient_" data-uid="CircuitTool.RFCalculator.ReflectionCoefficient*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_ReflectionCoefficient_System_Double_" data-uid="CircuitTool.RFCalculator.ReflectionCoefficient(System.Double)">
+  ReflectionCoefficient(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates reflection coefficient from VSWR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ReflectionCoefficient(double vswr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vswr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>VSWR value (≥ 1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Reflection coefficient magnitude.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_ReturnLoss_" data-uid="CircuitTool.RFCalculator.ReturnLoss*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_ReturnLoss_System_Double_" data-uid="CircuitTool.RFCalculator.ReturnLoss(System.Double)">
+  ReturnLoss(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates return loss from VSWR in dB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ReturnLoss(double vswr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vswr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>VSWR value (≥ 1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Return loss in dB.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_RFCalculator_ReturnLoss_System_Double__examples">Examples</h4>
+  <p>double rl = RFCalculator.ReturnLoss(2.0); // Return loss from VSWR</p>
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_SkinDepth_" data-uid="CircuitTool.RFCalculator.SkinDepth*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_SkinDepth_System_Double_System_Double_System_Double_" data-uid="CircuitTool.RFCalculator.SkinDepth(System.Double,System.Double,System.Double)">
+  SkinDepth(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates skin depth for a conductor at given frequency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SkinDepth(double frequency, double conductivity = 59600000, double permeability = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in hertz (Hz).</p>
+</dd>
+    <dt><code>conductivity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Conductivity in S/m (default: copper).</p>
+</dd>
+    <dt><code>permeability</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative permeability (default: 1 for non-magnetic).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Skin depth in meters (m).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_VSWR_" data-uid="CircuitTool.RFCalculator.VSWR*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_VSWR_System_Double_" data-uid="CircuitTool.RFCalculator.VSWR(System.Double)">
+  VSWR(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates VSWR (Voltage Standing Wave Ratio) from reflection coefficient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double VSWR(double reflectionCoefficient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reflectionCoefficient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Reflection coefficient magnitude (0-1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>VSWR value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_RFCalculator_VSWR_System_Double__examples">Examples</h4>
+  <p>double vswr = RFCalculator.VSWR(0.5); // VSWR from reflection coefficient</p>
+
+
+
+
+
+
+  <a id="CircuitTool_RFCalculator_Wavelength_" data-uid="CircuitTool.RFCalculator.Wavelength*"></a>
+
+  <h3 id="CircuitTool_RFCalculator_Wavelength_System_Double_" data-uid="CircuitTool.RFCalculator.Wavelength(System.Double)">
+  Wavelength(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates wavelength from frequency using λ = c/f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Wavelength(double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in hertz (Hz).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wavelength in meters (m).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_RFCalculator_Wavelength_System_Double__examples">Examples</h4>
+  <p>double wavelength = RFCalculator.Wavelength(2.4e9); // 0.125m for 2.4 GHz</p>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/RFCalculator.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

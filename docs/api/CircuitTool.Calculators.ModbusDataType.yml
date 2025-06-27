@@ -1,0 +1,231 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ModbusDataType
+  commentId: T:CircuitTool.Calculators.ModbusDataType
+  id: ModbusDataType
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ModbusDataType.Float32
+  - CircuitTool.Calculators.ModbusDataType.Float64
+  - CircuitTool.Calculators.ModbusDataType.Int16
+  - CircuitTool.Calculators.ModbusDataType.Int32
+  - CircuitTool.Calculators.ModbusDataType.String
+  - CircuitTool.Calculators.ModbusDataType.UInt16
+  - CircuitTool.Calculators.ModbusDataType.UInt32
+  langs:
+  - csharp
+  - vb
+  name: ModbusDataType
+  nameWithType: ModbusDataType
+  fullName: CircuitTool.Calculators.ModbusDataType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModbusDataType
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 277
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public enum ModbusDataType
+    content.vb: Public Enum ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.Int16
+  commentId: F:CircuitTool.Calculators.ModbusDataType.Int16
+  id: Int16
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: Int16
+  nameWithType: ModbusDataType.Int16
+  fullName: CircuitTool.Calculators.ModbusDataType.Int16
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Int16
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 279
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Int16 = 0
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.UInt16
+  commentId: F:CircuitTool.Calculators.ModbusDataType.UInt16
+  id: UInt16
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: UInt16
+  nameWithType: ModbusDataType.UInt16
+  fullName: CircuitTool.Calculators.ModbusDataType.UInt16
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UInt16
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 280
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: UInt16 = 1
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.Int32
+  commentId: F:CircuitTool.Calculators.ModbusDataType.Int32
+  id: Int32
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: ModbusDataType.Int32
+  fullName: CircuitTool.Calculators.ModbusDataType.Int32
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Int32
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 281
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Int32 = 2
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.UInt32
+  commentId: F:CircuitTool.Calculators.ModbusDataType.UInt32
+  id: UInt32
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: UInt32
+  nameWithType: ModbusDataType.UInt32
+  fullName: CircuitTool.Calculators.ModbusDataType.UInt32
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: UInt32
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 282
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: UInt32 = 3
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.Float32
+  commentId: F:CircuitTool.Calculators.ModbusDataType.Float32
+  id: Float32
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: Float32
+  nameWithType: ModbusDataType.Float32
+  fullName: CircuitTool.Calculators.ModbusDataType.Float32
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Float32
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 283
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Float32 = 4
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.Float64
+  commentId: F:CircuitTool.Calculators.ModbusDataType.Float64
+  id: Float64
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: Float64
+  nameWithType: ModbusDataType.Float64
+  fullName: CircuitTool.Calculators.ModbusDataType.Float64
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Float64
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 284
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Float64 = 5
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDataType.String
+  commentId: F:CircuitTool.Calculators.ModbusDataType.String
+  id: String
+  parent: CircuitTool.Calculators.ModbusDataType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: ModbusDataType.String
+  fullName: CircuitTool.Calculators.ModbusDataType.String
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: String
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 285
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: String = 6
+    return:
+      type: CircuitTool.Calculators.ModbusDataType
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.ModbusDataType
+  commentId: T:CircuitTool.Calculators.ModbusDataType
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ModbusDataType.html
+  name: ModbusDataType
+  nameWithType: ModbusDataType
+  fullName: CircuitTool.Calculators.ModbusDataType

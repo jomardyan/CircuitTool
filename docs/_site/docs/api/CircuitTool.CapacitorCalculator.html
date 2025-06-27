@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class CapacitorCalculator | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class CapacitorCalculator | CircuitTool Documentation ">
-    
-    <meta name="description" content="Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.">
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>Class CapacitorCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CapacitorCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CircuitTool.CapacitorCalculator">
+
+        <article data-uid="CircuitTool.CapacitorCalculator">
 
 
 
-  <h1 id="CircuitTool_CapacitorCalculator" data-uid="CircuitTool.CapacitorCalculator" class="text-break">Class CapacitorCalculator</h1>
-  <div class="markdown level0 summary"><p>Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">CapacitorCalculator</span></div>
+  <h1 id="CircuitTool_CapacitorCalculator" data-uid="CircuitTool.CapacitorCalculator" class="text-break">
+Class CapacitorCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CapacitorCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CapacitorCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -112,14 +142,12 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="CircuitTool_CapacitorCalculator_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CapacitorCalculator</code></pre>
-  </div>
-  <h5 id="CircuitTool_CapacitorCalculator_remarks"><strong>Remarks</strong></h5>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_CapacitorCalculator_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Example usage:</p>
 <pre><code class="lang-csharp">double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms
 double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J
@@ -129,462 +157,526 @@ double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.00
 double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);
 double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);</code></pre>
 </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L31">View Source</a>
-  </span>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_CapacitorCalculator_AnalyzeParallelCapacitorBank_" data-uid="CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank*"></a>
+
+  <h3 id="CircuitTool_CapacitorCalculator_AnalyzeParallelCapacitorBank_System_Double___System_Double___System_Double_System_Double___" data-uid="CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])">
+  AnalyzeParallelCapacitorBank(double[], double[], double, double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze parallel capacitor bank</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CapacitorCalculator.CapacitorBankResult AnalyzeParallelCapacitorBank(double[] capacitances, double[] voltageRatings, double appliedVoltage, double[] esrValues = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>voltageRatings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>appliedVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>esrValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.CapacitorCalculator.html">CapacitorCalculator</a>.<a class="xref" href="CircuitTool.CapacitorCalculator.CapacitorBankResult.html">CapacitorBankResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_CapacitorCalculator_AnalyzeRippleCurrent_" data-uid="CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent*"></a>
+
+  <h3 id="CircuitTool_CapacitorCalculator_AnalyzeRippleCurrent_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  AnalyzeRippleCurrent(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze capacitor ripple current capability</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CapacitorCalculator.RippleCurrentResult AnalyzeRippleCurrent(double capacitance, double esr, double rmsRippleCurrent, double maxRippleCurrentRating, double thermalResistance = 50)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>esr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>rmsRippleCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxRippleCurrentRating</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>thermalResistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.CapacitorCalculator.html">CapacitorCalculator</a>.<a class="xref" href="CircuitTool.CapacitorCalculator.RippleCurrentResult.html">RippleCurrentResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_CapacitorCalculator_AnalyzeSeriesCapacitorBank_" data-uid="CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank*"></a>
+
+  <h3 id="CircuitTool_CapacitorCalculator_AnalyzeSeriesCapacitorBank_System_Double___System_Double___System_Double_System_Double___" data-uid="CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])">
+  AnalyzeSeriesCapacitorBank(double[], double[], double, double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze series capacitor bank</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CapacitorCalculator.CapacitorBankResult AnalyzeSeriesCapacitorBank(double[] capacitances, double[] voltageRatings, double appliedVoltage, double[] esrValues = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>voltageRatings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>appliedVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>esrValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.CapacitorCalculator.html">CapacitorCalculator</a>.<a class="xref" href="CircuitTool.CapacitorCalculator.CapacitorBankResult.html">CapacitorBankResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_CapacitorCalculator_CalculateChargeAndEnergy_" data-uid="CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy*"></a>
+
+  <h3 id="CircuitTool_CapacitorCalculator_CalculateChargeAndEnergy_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  CalculateChargeAndEnergy(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enhanced charge and energy calculator with physical properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CapacitorCalculator.CapacitorChargeEnergyResult CalculateChargeAndEnergy(double capacitance, double voltage, double volumeCm3 = 0, double massGrams = 0, double dielectricThicknessMm = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>volumeCm3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>massGrams</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dielectricThicknessMm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.CapacitorCalculator.html">CapacitorCalculator</a>.<a class="xref" href="CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html">CapacitorChargeEnergyResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_CapacitiveReactance_" data-uid="CircuitTool.CapacitorCalculator.CapacitiveReactance*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)">CapacitiveReactance(double, double)</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)">
+  CapacitiveReactance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates capacitive reactance using the formula Xc = 1 / (2πfC).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double CapacitiveReactance(double frequency, double capacitance)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td><p>Frequency in hertz (Hz).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">capacitance</span></td>
-        <td><p>Capacitance in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Capacitive reactance in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in hertz (Hz).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitive reactance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_CapacitiveReactance_System_Double_System_Double__examples">Examples</h4>
   <p>double xc = CapacitorCalculator.CapacitiveReactance(1000, 0.000001); // 159.15 Ohms</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L124">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_ChargingVoltage_" data-uid="CircuitTool.CapacitorCalculator.ChargingVoltage*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)">ChargingVoltage(double, double, double)</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)">
+  ChargingVoltage(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates the charging voltage of a capacitor at time t using V(t) = Vsource × (1 - e^(-t/τ)).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double ChargingVoltage(double sourceVoltage, double timeConstant, double time)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sourceVoltage</span></td>
-        <td><p>Source voltage in volts (V).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">timeConstant</span></td>
-        <td><p>Time constant τ in seconds (s).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">time</span></td>
-        <td><p>Time in seconds (s).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Capacitor voltage at time t in volts (V).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Source voltage in volts (V).</p>
+</dd>
+    <dt><code>timeConstant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time constant τ in seconds (s).</p>
+</dd>
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time in seconds (s).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitor voltage at time t in volts (V).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_ChargingVoltage_System_Double_System_Double_System_Double__examples">Examples</h4>
   <p>double vCharge = CapacitorCalculator.ChargingVoltage(5, 0.001, 0.002);</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L143">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_DischargingVoltage_" data-uid="CircuitTool.CapacitorCalculator.DischargingVoltage*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)">DischargingVoltage(double, double, double)</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)">
+  DischargingVoltage(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates the discharging voltage of a capacitor at time t using V(t) = Vinitial × e^(-t/τ).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double DischargingVoltage(double initialVoltage, double timeConstant, double time)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">initialVoltage</span></td>
-        <td><p>Initial voltage in volts (V).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">timeConstant</span></td>
-        <td><p>Time constant τ in seconds (s).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">time</span></td>
-        <td><p>Time in seconds (s).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Capacitor voltage at time t in volts (V).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Initial voltage in volts (V).</p>
+</dd>
+    <dt><code>timeConstant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time constant τ in seconds (s).</p>
+</dd>
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time in seconds (s).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitor voltage at time t in volts (V).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_DischargingVoltage_System_Double_System_Double_System_Double__examples">Examples</h4>
   <p>double vDischarge = CapacitorCalculator.DischargingVoltage(5, 0.001, 0.002);</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.EnergyStored(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L47">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_EnergyStored_" data-uid="CircuitTool.CapacitorCalculator.EnergyStored*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.EnergyStored(System.Double,System.Double)">EnergyStored(double, double)</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.EnergyStored(System.Double,System.Double)">
+  EnergyStored(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates the energy stored in a capacitor using the formula E = 0.5 × C × V².</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double EnergyStored(double capacitance, double voltage)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">capacitance</span></td>
-        <td><p>Capacitance in farads (F).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">voltage</span></td>
-        <td><p>Voltage across the capacitor in volts (V).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Energy stored in joules (J).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance in farads (F).</p>
+</dd>
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Voltage across the capacitor in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Energy stored in joules (J).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_EnergyStored_System_Double_System_Double__examples">Examples</h4>
   <p>double energy = CapacitorCalculator.EnergyStored(0.001, 5); // 0.0125 J</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double___.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L100">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_ParallelCapacitance_" data-uid="CircuitTool.CapacitorCalculator.ParallelCapacitance*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double___" data-uid="CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double[])">ParallelCapacitance(double[])</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double___" data-uid="CircuitTool.CapacitorCalculator.ParallelCapacitance(System.Double[])">
+  ParallelCapacitance(double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates total capacitance for capacitors in parallel using the formula Ctotal = C1 + C2 + ...</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double ParallelCapacitance(double[] capacitances)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">capacitances</span></td>
-        <td><p>Array of capacitance values in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Total capacitance in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double____examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Array of capacitance values in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_ParallelCapacitance_System_Double____examples">Examples</h4>
   <p>double cParallel = CapacitorCalculator.ParallelCapacitance(new[] {0.000001, 0.000002});</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double___.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L78">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_SeriesCapacitance_" data-uid="CircuitTool.CapacitorCalculator.SeriesCapacitance*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double___" data-uid="CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double[])">SeriesCapacitance(double[])</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double___" data-uid="CircuitTool.CapacitorCalculator.SeriesCapacitance(System.Double[])">
+  SeriesCapacitance(double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates total capacitance for capacitors in series using the formula 1/Ctotal = 1/C1 + 1/C2 + ...</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double SeriesCapacitance(double[] capacitances)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">capacitances</span></td>
-        <td><p>Array of capacitance values in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Total capacitance in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double____examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacitances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Array of capacitance values in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_SeriesCapacitance_System_Double____examples">Examples</h4>
   <p>double cSeries = CapacitorCalculator.SeriesCapacitance(new[] {0.000001, 0.000002});</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator.TimeConstant(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L63">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_CapacitorCalculator_TimeConstant_" data-uid="CircuitTool.CapacitorCalculator.TimeConstant*"></a>
-  <h4 id="CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.TimeConstant(System.Double,System.Double)">TimeConstant(double, double)</h4>
+
+  <h3 id="CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double_" data-uid="CircuitTool.CapacitorCalculator.TimeConstant(System.Double,System.Double)">
+  TimeConstant(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates the time constant for an RC circuit using the formula τ = R × C.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double TimeConstant(double resistance, double capacitance)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">resistance</span></td>
-        <td><p>Resistance in ohms (Ω).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">capacitance</span></td>
-        <td><p>Capacitance in farads (F).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Time constant in seconds (s).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resistance in ohms (Ω).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time constant in seconds (s).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_CapacitorCalculator_TimeConstant_System_Double_System_Double__examples">Examples</h4>
   <p>double tau = CapacitorCalculator.TimeConstant(1000, 0.000001); // 0.001 s</p>
 
 
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_CapacitorCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.CapacitorCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L20" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/CapacitorCalculator.cs/#L24" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

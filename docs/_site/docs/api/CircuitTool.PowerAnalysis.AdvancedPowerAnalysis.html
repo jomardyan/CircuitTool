@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class AdvancedPowerAnalysis | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class AdvancedPowerAnalysis | CircuitTool Documentation ">
-    
-    <meta name="description" content="Advanced power analysis including three-phase systems and power quality">
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>Class AdvancedPowerAnalysis | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AdvancedPowerAnalysis | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Advanced power analysis including three-phase systems and power quality">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis">
+
+        <article data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis">
 
 
 
-  <h1 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis" class="text-break">Class AdvancedPowerAnalysis</h1>
-  <div class="markdown level0 summary"><p>Advanced power analysis including three-phase systems and power quality</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">AdvancedPowerAnalysis</span></div>
+  <h1 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis" class="text-break">
+Class AdvancedPowerAnalysis  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.PowerAnalysis.html">PowerAnalysis</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Advanced power analysis including three-phase systems and power quality</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AdvancedPowerAnalysis</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AdvancedPowerAnalysis</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -112,340 +142,238 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.PowerAnalysis.html">PowerAnalysis</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class AdvancedPowerAnalysis</code></pre>
-  </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzeHarmonicPower_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACVoltage___CircuitTool_ACCurrent___.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzeHarmonicPower(CircuitTool.ACVoltage%2CCircuitTool.ACCurrent%2CCircuitTool.ACVoltage%5B%5D%2CCircuitTool.ACCurrent%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L91">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzeHarmonicPower_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzeHarmonicPower*"></a>
-  <h4 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzeHarmonicPower_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACVoltage___CircuitTool_ACCurrent___" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzeHarmonicPower(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.ACVoltage[],CircuitTool.ACCurrent[])">AnalyzeHarmonicPower(ACVoltage, ACCurrent, ACVoltage[], ACCurrent[])</h4>
+
+  <h3 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzeHarmonicPower_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACVoltage___CircuitTool_ACCurrent___" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzeHarmonicPower(CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.ACVoltage[],CircuitTool.ACCurrent[])">
+  AnalyzeHarmonicPower(ACVoltage, ACCurrent, ACVoltage[], ACCurrent[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Analyzes harmonic content and calculates power quality metrics</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static HarmonicPowerAnalysis AnalyzeHarmonicPower(ACVoltage fundamentalVoltage, ACCurrent fundamentalCurrent, ACVoltage[] voltageHarmonics, ACCurrent[] currentHarmonics)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></td>
-        <td><span class="parametername">fundamentalVoltage</span></td>
-        <td><p>Fundamental voltage component</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></td>
-        <td><span class="parametername">fundamentalCurrent</span></td>
-        <td><p>Fundamental current component</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a>[]</td>
-        <td><span class="parametername">voltageHarmonics</span></td>
-        <td><p>Voltage harmonic components</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a>[]</td>
-        <td><span class="parametername">currentHarmonics</span></td>
-        <td><p>Current harmonic components</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html">HarmonicPowerAnalysis</a></td>
-        <td><p>Harmonic power analysis results</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzePowerQuality_System_Double___System_Double___System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzePowerQuality(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L147">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fundamentalVoltage</code> <a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></dt>
+    <dd><p>Fundamental voltage component</p>
+</dd>
+    <dt><code>fundamentalCurrent</code> <a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></dt>
+    <dd><p>Fundamental current component</p>
+</dd>
+    <dt><code>voltageHarmonics</code> <a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a>[]</dt>
+    <dd><p>Voltage harmonic components</p>
+</dd>
+    <dt><code>currentHarmonics</code> <a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a>[]</dt>
+    <dd><p>Current harmonic components</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html">HarmonicPowerAnalysis</a></dt>
+    <dd><p>Harmonic power analysis results</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzePowerQuality_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzePowerQuality*"></a>
-  <h4 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzePowerQuality_System_Double___System_Double___System_Double_System_Double_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzePowerQuality(System.Double[],System.Double[],System.Double,System.Double)">AnalyzePowerQuality(double[], double[], double, double)</h4>
+
+  <h3 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_AnalyzePowerQuality_System_Double___System_Double___System_Double_System_Double_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.AnalyzePowerQuality(System.Double[],System.Double[],System.Double,System.Double)">
+  AnalyzePowerQuality(double[], double[], double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates power quality indices</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static PowerQualityAnalysis AnalyzePowerQuality(double[] voltageWaveform, double[] currentWaveform, double nominalVoltage, double nominalFrequency)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">voltageWaveform</span></td>
-        <td><p>Voltage waveform samples</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">currentWaveform</span></td>
-        <td><p>Current waveform samples</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">nominalVoltage</span></td>
-        <td><p>Nominal voltage RMS value</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">nominalFrequency</span></td>
-        <td><p>Nominal frequency in Hz</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.PowerAnalysis.PowerQualityAnalysis.html">PowerQualityAnalysis</a></td>
-        <td><p>Power quality analysis results</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateBalancedThreePhasePower_System_Double_System_Double_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateBalancedThreePhasePower(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L60">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltageWaveform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Voltage waveform samples</p>
+</dd>
+    <dt><code>currentWaveform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Current waveform samples</p>
+</dd>
+    <dt><code>nominalVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Nominal voltage RMS value</p>
+</dd>
+    <dt><code>nominalFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Nominal frequency in Hz</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.PowerAnalysis.PowerQualityAnalysis.html">PowerQualityAnalysis</a></dt>
+    <dd><p>Power quality analysis results</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateBalancedThreePhasePower_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateBalancedThreePhasePower*"></a>
-  <h4 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateBalancedThreePhasePower_System_Double_System_Double_System_Double_System_Boolean_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateBalancedThreePhasePower(System.Double,System.Double,System.Double,System.Boolean)">CalculateBalancedThreePhasePower(double, double, double, bool)</h4>
+
+  <h3 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateBalancedThreePhasePower_System_Double_System_Double_System_Double_System_Boolean_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateBalancedThreePhasePower(System.Double,System.Double,System.Double,System.Boolean)">
+  CalculateBalancedThreePhasePower(double, double, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates balanced three-phase power from line values</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static BalancedThreePhasePower CalculateBalancedThreePhasePower(double lineToLineVoltage, double lineCurrent, double powerFactor, bool isLeading = false)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">lineToLineVoltage</span></td>
-        <td><p>Line-to-line voltage (RMS)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">lineCurrent</span></td>
-        <td><p>Line current (RMS)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">powerFactor</span></td>
-        <td><p>Power factor</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">isLeading</span></td>
-        <td><p>True if leading power factor</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.PowerAnalysis.BalancedThreePhasePower.html">BalancedThreePhasePower</a></td>
-        <td><p>Balanced three-phase power results</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateThreePhasePower_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACCurrent_CircuitTool_ACCurrent_.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateThreePhasePower(CircuitTool.ACVoltage%2CCircuitTool.ACVoltage%2CCircuitTool.ACVoltage%2CCircuitTool.ACCurrent%2CCircuitTool.ACCurrent%2CCircuitTool.ACCurrent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L24">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lineToLineVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Line-to-line voltage (RMS)</p>
+</dd>
+    <dt><code>lineCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Line current (RMS)</p>
+</dd>
+    <dt><code>powerFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Power factor</p>
+</dd>
+    <dt><code>isLeading</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if leading power factor</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.PowerAnalysis.BalancedThreePhasePower.html">BalancedThreePhasePower</a></dt>
+    <dd><p>Balanced three-phase power results</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateThreePhasePower_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateThreePhasePower*"></a>
-  <h4 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateThreePhasePower_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACCurrent_CircuitTool_ACCurrent_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateThreePhasePower(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.ACCurrent,CircuitTool.ACCurrent)">CalculateThreePhasePower(ACVoltage, ACVoltage, ACVoltage, ACCurrent, ACCurrent, ACCurrent)</h4>
+
+  <h3 id="CircuitTool_PowerAnalysis_AdvancedPowerAnalysis_CalculateThreePhasePower_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACVoltage_CircuitTool_ACCurrent_CircuitTool_ACCurrent_CircuitTool_ACCurrent_" data-uid="CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.CalculateThreePhasePower(CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACVoltage,CircuitTool.ACCurrent,CircuitTool.ACCurrent,CircuitTool.ACCurrent)">
+  CalculateThreePhasePower(ACVoltage, ACVoltage, ACVoltage, ACCurrent, ACCurrent, ACCurrent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates three-phase power values</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static ThreePhasePower CalculateThreePhasePower(ACVoltage voltageA, ACVoltage voltageB, ACVoltage voltageC, ACCurrent currentA, ACCurrent currentB, ACCurrent currentC)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></td>
-        <td><span class="parametername">voltageA</span></td>
-        <td><p>Phase A voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></td>
-        <td><span class="parametername">voltageB</span></td>
-        <td><p>Phase B voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></td>
-        <td><span class="parametername">voltageC</span></td>
-        <td><p>Phase C voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></td>
-        <td><span class="parametername">currentA</span></td>
-        <td><p>Phase A current</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></td>
-        <td><span class="parametername">currentB</span></td>
-        <td><p>Phase B current</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></td>
-        <td><span class="parametername">currentC</span></td>
-        <td><p>Phase C current</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.PowerAnalysis.ThreePhasePower.html">ThreePhasePower</a></td>
-        <td><p>Three-phase power analysis results</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltageA</code> <a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></dt>
+    <dd><p>Phase A voltage</p>
+</dd>
+    <dt><code>voltageB</code> <a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></dt>
+    <dd><p>Phase B voltage</p>
+</dd>
+    <dt><code>voltageC</code> <a class="xref" href="CircuitTool.ACVoltage.html">ACVoltage</a></dt>
+    <dd><p>Phase C voltage</p>
+</dd>
+    <dt><code>currentA</code> <a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></dt>
+    <dd><p>Phase A current</p>
+</dd>
+    <dt><code>currentB</code> <a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></dt>
+    <dd><p>Phase B current</p>
+</dd>
+    <dt><code>currentC</code> <a class="xref" href="CircuitTool.ACCurrent.html">ACCurrent</a></dt>
+    <dd><p>Phase C current</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.PowerAnalysis.ThreePhasePower.html">ThreePhasePower</a></dt>
+    <dd><p>Three-phase power analysis results</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerAnalysis_AdvancedPowerAnalysis.md&amp;value=---%0Auid%3A%20CircuitTool.PowerAnalysis.AdvancedPowerAnalysis%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L12" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Analysis/AdvancedPowerAnalysis.cs/#L12" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

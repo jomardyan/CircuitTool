@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorInBank
+  id: CapacitorCalculator.CapacitorInBank
+  parent: CircuitTool
+  children:
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+  - CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  langs:
+  - csharp
+  - vb
+  name: CapacitorCalculator.CapacitorInBank
+  nameWithType: CapacitorCalculator.CapacitorInBank
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitorInBank
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 244
+  namespace: CircuitTool
+  summary: Individual capacitor in a bank
+  example: []
+  syntax:
+    content: public class CapacitorCalculator.CapacitorInBank
+    content.vb: Public Class CapacitorCalculator.CapacitorInBank
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+  id: Capacitance
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: Capacitance
+  nameWithType: CapacitorCalculator.CapacitorInBank.Capacitance
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Capacitance
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 246
+  namespace: CircuitTool
+  syntax:
+    content: public double Capacitance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Capacitance As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+  id: VoltageRating
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: VoltageRating
+  nameWithType: CapacitorCalculator.CapacitorInBank.VoltageRating
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRating
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 247
+  namespace: CircuitTool
+  syntax:
+    content: public double VoltageRating { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property VoltageRating As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+  id: ActualVoltage
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: ActualVoltage
+  nameWithType: CapacitorCalculator.CapacitorInBank.ActualVoltage
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ActualVoltage
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 248
+  namespace: CircuitTool
+  syntax:
+    content: public double ActualVoltage { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ActualVoltage As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+  id: Charge
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: Charge
+  nameWithType: CapacitorCalculator.CapacitorInBank.Charge
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Charge
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 249
+  namespace: CircuitTool
+  syntax:
+    content: public double Charge { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Charge As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.Charge*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+  id: Energy
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: Energy
+  nameWithType: CapacitorCalculator.CapacitorInBank.Energy
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Energy
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 250
+  namespace: CircuitTool
+  syntax:
+    content: public double Energy { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Energy As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.Energy*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+  id: ESR
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: ESR
+  nameWithType: CapacitorCalculator.CapacitorInBank.ESR
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ESR
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 251
+  namespace: CircuitTool
+  syntax:
+    content: public double ESR { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ESR As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.ESR*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+  id: Position
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: CapacitorCalculator.CapacitorInBank.Position
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Position
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 252
+  namespace: CircuitTool
+  syntax:
+    content: public string Position { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Position As String
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.Position*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  id: VoltageDeratingPercent
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: VoltageDeratingPercent
+  nameWithType: CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageDeratingPercent
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 253
+  namespace: CircuitTool
+  syntax:
+    content: public double VoltageDeratingPercent { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property VoltageDeratingPercent As Double
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent*
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  commentId: P:CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  id: WithinSafeOperatingArea
+  parent: CircuitTool.CapacitorCalculator.CapacitorInBank
+  langs:
+  - csharp
+  - vb
+  name: WithinSafeOperatingArea
+  nameWithType: CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WithinSafeOperatingArea
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 254
+  namespace: CircuitTool
+  syntax:
+    content: public bool WithinSafeOperatingArea { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property WithinSafeOperatingArea As Boolean
+  overload: CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_Capacitance
+  name: Capacitance
+  nameWithType: CapacitorCalculator.CapacitorInBank.Capacitance
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Capacitance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_VoltageRating
+  name: VoltageRating
+  nameWithType: CapacitorCalculator.CapacitorInBank.VoltageRating
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageRating
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_ActualVoltage
+  name: ActualVoltage
+  nameWithType: CapacitorCalculator.CapacitorInBank.ActualVoltage
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.ActualVoltage
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Charge*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_Charge
+  name: Charge
+  nameWithType: CapacitorCalculator.CapacitorInBank.Charge
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Charge
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Energy*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_Energy
+  name: Energy
+  nameWithType: CapacitorCalculator.CapacitorInBank.Energy
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Energy
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.ESR*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_ESR
+  name: ESR
+  nameWithType: CapacitorCalculator.CapacitorInBank.ESR
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.ESR
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.Position*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_Position
+  name: Position
+  nameWithType: CapacitorCalculator.CapacitorInBank.Position
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.Position
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_VoltageDeratingPercent
+  name: VoltageDeratingPercent
+  nameWithType: CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.VoltageDeratingPercent
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  href: CircuitTool.CapacitorCalculator.CapacitorInBank.html#CircuitTool_CapacitorCalculator_CapacitorInBank_WithinSafeOperatingArea
+  name: WithinSafeOperatingArea
+  nameWithType: CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank.WithinSafeOperatingArea
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

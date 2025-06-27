@@ -1,0 +1,399 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  id: ResistorColorCodeCalculator.ResistorColor
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Black
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Blue
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Brown
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Gold
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Green
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Grey
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.None
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Orange
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Red
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Silver
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Violet
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.White
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Yellow
+  langs:
+  - csharp
+  - vb
+  name: ResistorColorCodeCalculator.ResistorColor
+  nameWithType: ResistorColorCodeCalculator.ResistorColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResistorColor
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 14
+  namespace: CircuitTool.Calculators
+  summary: Resistor color bands
+  example: []
+  syntax:
+    content: public enum ResistorColorCodeCalculator.ResistorColor
+    content.vb: Public Enum ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Black
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Black
+  id: Black
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Black
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Black
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Black
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Black
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 16
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Black = 0
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Brown
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Brown
+  id: Brown
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Brown
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Brown
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Brown
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Brown
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 17
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Brown = 1
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Red
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Red
+  id: Red
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Red
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Red
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Red
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 18
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Red = 2
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Orange
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Orange
+  id: Orange
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Orange
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Orange
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Orange
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Orange
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 19
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Orange = 3
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Yellow
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Yellow
+  id: Yellow
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Yellow
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Yellow
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Yellow
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Yellow
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 20
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Yellow = 4
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Green
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Green
+  id: Green
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Green
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Green
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Green
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 21
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Green = 5
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Blue
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Blue
+  id: Blue
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Blue
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Blue
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Blue
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 22
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Blue = 6
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Violet
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Violet
+  id: Violet
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Violet
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Violet
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Violet
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Violet
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 23
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Violet = 7
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Grey
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Grey
+  id: Grey
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Grey
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Grey
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Grey
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Grey
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 24
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Grey = 8
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.White
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.White
+  id: White
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: White
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.White
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.White
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: White
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 25
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: White = 9
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Gold
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Gold
+  id: Gold
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Gold
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Gold
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Gold
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Gold
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 26
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Gold = -1
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Silver
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Silver
+  id: Silver
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: Silver
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.Silver
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.Silver
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Silver
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 27
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Silver = -2
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.None
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.None
+  id: None
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ResistorColorCodeCalculator.ResistorColor.None
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.None
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 28
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: None = -3
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ResistorColor
+  nameWithType: ResistorColorCodeCalculator.ResistorColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html

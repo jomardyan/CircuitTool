@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class ArduinoTools | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ArduinoTools | CircuitTool Documentation ">
-    
-    <meta name="description" content="Provides Arduino-specific calculations and utilities">
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>Class ArduinoTools | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ArduinoTools | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides Arduino-specific calculations and utilities">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CircuitTool.ArduinoTools">
+
+        <article data-uid="CircuitTool.ArduinoTools">
 
 
 
-  <h1 id="CircuitTool_ArduinoTools" data-uid="CircuitTool.ArduinoTools" class="text-break">Class ArduinoTools</h1>
-  <div class="markdown level0 summary"><p>Provides Arduino-specific calculations and utilities</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">ArduinoTools</span></div>
+  <h1 id="CircuitTool_ArduinoTools" data-uid="CircuitTool.ArduinoTools" class="text-break">
+Class ArduinoTools  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Provides Arduino-specific calculations and utilities</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ArduinoTools</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ArduinoTools</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -112,342 +142,253 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="CircuitTool_ArduinoTools_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ArduinoTools</code></pre>
-  </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools_AnalogToVoltage_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools.AnalogToVoltage(System.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L16">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="CircuitTool_ArduinoTools_AnalogToVoltage_" data-uid="CircuitTool.ArduinoTools.AnalogToVoltage*"></a>
-  <h4 id="CircuitTool_ArduinoTools_AnalogToVoltage_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.AnalogToVoltage(System.Int32,System.Double)">AnalogToVoltage(int, double)</h4>
+
+  <h3 id="CircuitTool_ArduinoTools_AnalogToVoltage_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.AnalogToVoltage(System.Int32,System.Double)">
+  AnalogToVoltage(int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Converts analog reading to voltage for Arduino Uno (10-bit ADC, 5V reference)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double AnalogToVoltage(int analogReading, double referenceVoltage = 5)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">analogReading</span></td>
-        <td><p>Analog reading value (0-1023)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">referenceVoltage</span></td>
-        <td><p>Reference voltage (default 5V for Arduino Uno)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Voltage value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools_CalculateCurrentConsumption_System_Double_System_Int32_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools.CalculateCurrentConsumption(System.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L60">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>analogReading</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Analog reading value (0-1023)</p>
+</dd>
+    <dt><code>referenceVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Reference voltage (default 5V for Arduino Uno)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Voltage value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_ArduinoTools_CalculateCurrentConsumption_" data-uid="CircuitTool.ArduinoTools.CalculateCurrentConsumption*"></a>
-  <h4 id="CircuitTool_ArduinoTools_CalculateCurrentConsumption_System_Double_System_Int32_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.CalculateCurrentConsumption(System.Double,System.Int32,System.Int32,System.Double)">CalculateCurrentConsumption(double, int, int, double)</h4>
+
+  <h3 id="CircuitTool_ArduinoTools_CalculateCurrentConsumption_System_Double_System_Int32_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.CalculateCurrentConsumption(System.Double,System.Int32,System.Int32,System.Double)">
+  CalculateCurrentConsumption(double, int, int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates current consumption for Arduino projects</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double CalculateCurrentConsumption(double cpuCurrent = 20, int digitalPins = 0, int analogPins = 0, double additionalCurrent = 0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">cpuCurrent</span></td>
-        <td><p>CPU current consumption (mA)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">digitalPins</span></td>
-        <td><p>Number of active digital pins</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">analogPins</span></td>
-        <td><p>Number of active analog pins</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">additionalCurrent</span></td>
-        <td><p>Additional current from external components (mA)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Total current consumption in mA</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools_CalculatePWMFrequency_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools.CalculatePWMFrequency(System.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L72">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cpuCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>CPU current consumption (mA)</p>
+</dd>
+    <dt><code>digitalPins</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of active digital pins</p>
+</dd>
+    <dt><code>analogPins</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of active analog pins</p>
+</dd>
+    <dt><code>additionalCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Additional current from external components (mA)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total current consumption in mA</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_ArduinoTools_CalculatePWMFrequency_" data-uid="CircuitTool.ArduinoTools.CalculatePWMFrequency*"></a>
-  <h4 id="CircuitTool_ArduinoTools_CalculatePWMFrequency_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.CalculatePWMFrequency(System.Int32,System.Double)">CalculatePWMFrequency(int, double)</h4>
+
+  <h3 id="CircuitTool_ArduinoTools_CalculatePWMFrequency_System_Int32_System_Double_" data-uid="CircuitTool.ArduinoTools.CalculatePWMFrequency(System.Int32,System.Double)">
+  CalculatePWMFrequency(int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates PWM frequency for Arduino Timer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double CalculatePWMFrequency(int prescaler, double clockFrequency = 16000000)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">prescaler</span></td>
-        <td><p>Timer prescaler value</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">clockFrequency</span></td>
-        <td><p>Arduino clock frequency in Hz (default 16MHz)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>PWM frequency in Hz</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools_ServoAngleToPulseWidth_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools.ServoAngleToPulseWidth(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L43">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prescaler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Timer prescaler value</p>
+</dd>
+    <dt><code>clockFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Arduino clock frequency in Hz (default 16MHz)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>PWM frequency in Hz</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_ArduinoTools_ServoAngleToPulseWidth_" data-uid="CircuitTool.ArduinoTools.ServoAngleToPulseWidth*"></a>
-  <h4 id="CircuitTool_ArduinoTools_ServoAngleToPulseWidth_System_Double_" data-uid="CircuitTool.ArduinoTools.ServoAngleToPulseWidth(System.Double)">ServoAngleToPulseWidth(double)</h4>
+
+  <h3 id="CircuitTool_ArduinoTools_ServoAngleToPulseWidth_System_Double_" data-uid="CircuitTool.ArduinoTools.ServoAngleToPulseWidth(System.Double)">
+  ServoAngleToPulseWidth(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates delay time between servo pulses for specific angle</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double ServoAngleToPulseWidth(double angle)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">angle</span></td>
-        <td><p>Servo angle in degrees (0-180)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Pulse width in microseconds</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools_VoltageToAnalog_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools.VoltageToAnalog(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L30">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Servo angle in degrees (0-180)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Pulse width in microseconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_ArduinoTools_VoltageToAnalog_" data-uid="CircuitTool.ArduinoTools.VoltageToAnalog*"></a>
-  <h4 id="CircuitTool_ArduinoTools_VoltageToAnalog_System_Double_System_Double_" data-uid="CircuitTool.ArduinoTools.VoltageToAnalog(System.Double,System.Double)">VoltageToAnalog(double, double)</h4>
+
+  <h3 id="CircuitTool_ArduinoTools_VoltageToAnalog_System_Double_System_Double_" data-uid="CircuitTool.ArduinoTools.VoltageToAnalog(System.Double,System.Double)">
+  VoltageToAnalog(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Converts voltage to analog reading for Arduino Uno</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static int VoltageToAnalog(double voltage, double referenceVoltage = 5)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">voltage</span></td>
-        <td><p>Voltage value</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">referenceVoltage</span></td>
-        <td><p>Reference voltage (default 5V for Arduino Uno)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>Analog reading value (0-1023)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Voltage value</p>
+</dd>
+    <dt><code>referenceVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Reference voltage (default 5V for Arduino Uno)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Analog reading value (0-1023)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ArduinoTools.md&amp;value=---%0Auid%3A%20CircuitTool.ArduinoTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L8" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/ArduinoTools.cs/#L8" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

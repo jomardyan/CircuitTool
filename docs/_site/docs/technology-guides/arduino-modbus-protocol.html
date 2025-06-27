@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/arduino-modbus-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<pre><code>
+## Modbus Data Types and Encoding
+
+### Common Data Types
+```cpp
+// 16-bit signed integer
+int16_t encodeInt16(uint8_t* buffer, int offset, int16_t value) {
+  buffer[offset] = value &gt;&gt; 8;
+  buffer[offset + 1] = value &amp; 0xFF;
+  return offset + 2;
+}
+
+int16_t decodeInt16(uint8_t* buffer, int offset) {
+  return (buffer[offset] &lt;&lt; 8) | buffer[offset + 1];
+}
+
+// 32-bit float (IEEE 754)
+int encodeFloat32(uint8_t* buffer, int offset, float value) {
+  union {
+    float f;
+    uint32_t i;
+  } converter;
+  
+  converter.f = value;
+  buffer[offset] = converter.i &gt;&gt; 24;
+  buffer[offset + 1] = (converter.i &gt;&gt; 16) &amp; 0xFF;
+  buffer[offset + 2] = (converter.i &gt;&gt; 8) &amp; 0xFF;
+  buffer[offset + 3] = converter.i &amp; 0xFF;
+  return offset + 4;
+}
+
+float decodeFloat32(uint8_t* buffer, int offset) {
+  union {
+    float f;
+    uint32_t i;
+  } converter;
+  
+  converter.i = (buffer[offset] &lt;&lt; 24) | 
+                (buffer[offset + 1] &lt;&lt; 16) |
+                (buffer[offset + 2] &lt;&lt; 8) |
+                buffer[offset + 3];
+  return converter.f;
+}
+
+// String encoding
+int encodeString(uint8_t* buffer, int offset, String str, int maxLength) {
+  int length = min(str.length(), maxLength);
+  for (int i = 0; i &lt; length; i++) {
+    if (i % 2 == 0) {
+      buffer[offset + i/2] = str.charAt(i) &lt;&lt; 8;
+    } else {
+      buffer[offset + i/2] |= str.charAt(i);
+    }
+  }
+  // Pad with zeros if odd length
+  if (length % 2 == 1) {
+    buffer[offset + length/2] &amp;= 0xFF00;
+  }
+  return offset + (length + 1) / 2;
+}
+</code></pre>
+<h3 id="data-logger-with-modbus-interface">Data Logger with Modbus Interface</h3>
+<pre><code class="lang-cpp">#include &lt;SD.h&gt;
+#include &lt;RTClib.h&gt;
+
+class ModbusDataLogger {
+private:
+  ModbusRTUMaster modbus;
+  RTC_DS3231 rtc;
+  File dataFile;
+  
+  struct SensorConfig {
+    uint8_t slaveID;
+    uint16_t startAddress;
+    uint16_t registerCount;
+    String name;
+    float scale;
+    float offset;
+  };
+  
+  SensorConfig sensors[10];
+  int sensorCount = 0;
+  
+public:
+  ModbusDataLogger(Stream* serial) : modbus(serial) {}
+  
+  bool begin() {
+    if (!SD.begin(10)) {
+      Serial.println(&quot;SD initialization failed&quot;);
+      return false;
+    }
+    
+    if (!rtc.begin()) {
+      Serial.println(&quot;RTC initialization failed&quot;);
+      return false;
+    }
+    
+    // Create data file with timestamp
+    DateTime now = rtc.now();
+    String filename = &quot;LOG_&quot; + String(now.year()) + &quot;_&quot; + 
+                     String(now.month()) + &quot;_&quot; + String(now.day()) + &quot;.csv&quot;;
+    
+    dataFile = SD.open(filename, FILE_WRITE);
+    if (dataFile) {
+      dataFile.println(&quot;Timestamp,Sensor,Value,Unit&quot;);
+      dataFile.close();
+      return true;
+    }
+    
+    return false;
+  }
+  
+  void addSensor(uint8_t slaveID, uint16_t address, uint16_t count, 
+                 String name, float scale = 1.0, float offset = 0.0) {
+    if (sensorCount &lt; 10) {
+      sensors[sensorCount] = {slaveID, address, count, name, scale, offset};
+      sensorCount++;
+    }
+  }
+  
+  void logAllSensors() {
+    DateTime now = rtc.now();
+    String timestamp = formatTimestamp(now);
+    
+    dataFile = SD.open(&quot;datalog.csv&quot;, FILE_WRITE);
+    if (!dataFile) return;
+    
+    for (int i = 0; i &lt; sensorCount; i++) {
+      uint16_t registers[4];
+      if (modbus.readHoldingRegisters(sensors[i].slaveID, 
+                                     sensors[i].startAddress,
+                                     sensors[i].registerCount, 
+                                     registers)) {
+        
+        float value = 0;
+        if (sensors[i].registerCount == 1) {
+          value = registers[0] * sensors[i].scale + sensors[i].offset;
+        } else if (sensors[i].registerCount == 2) {
+          // Combine two registers for float
+          uint32_t combined = (registers[0] &lt;&lt; 16) | registers[1];
+          value = *(float*)&amp;combined * sensors[i].scale + sensors[i].offset;
+        }
+        
+        dataFile.print(timestamp);
+        dataFile.print(&quot;,&quot;);
+        dataFile.print(sensors[i].name);
+        dataFile.print(&quot;,&quot;);
+        dataFile.print(value, 2);
+        dataFile.println(&quot;,°C&quot;); // Example unit
+        
+        Serial.print(sensors[i].name);
+        Serial.print(&quot;: &quot;);
+        Serial.println(value);
+      } else {
+        Serial.print(&quot;Failed to read &quot;);
+        Serial.println(sensors[i].name);
+      }
+    }
+    
+    dataFile.close();
+  }
+  
+private:
+  String formatTimestamp(DateTime dt) {
+    return String(dt.year()) + &quot;-&quot; + 
+           String(dt.month()) + &quot;-&quot; + 
+           String(dt.day()) + &quot; &quot; +
+           String(dt.hour()) + &quot;:&quot; + 
+           String(dt.minute()) + &quot;:&quot; + 
+           String(dt.second());
+  }
+};
+
+ModbusDataLogger logger(&amp;Serial);
+
+void setup() {
+  Serial.begin(9600);
+  
+  if (logger.begin()) {
+    Serial.println(&quot;Data logger initialized&quot;);
+    
+    // Configure sensors
+    logger.addSensor(1, 0, 1, &quot;Temperature_1&quot;, 0.1, 0);    // Temp * 10
+    logger.addSensor(1, 1, 1, &quot;Humidity_1&quot;, 0.1, 0);       // Humidity * 10
+    logger.addSensor(2, 0, 2, &quot;Flow_Rate&quot;, 1.0, 0);        // Float value
+    logger.addSensor(3, 10, 1, &quot;Pressure&quot;, 0.01, 0);       // Pressure * 100
+  }
+}
+
+void loop() {
+  logger.logAllSensors();
+  delay(60000); // Log every minute
+}
+</code></pre>
+<h3 id="industrial-process-control">Industrial Process Control</h3>
+<pre><code class="lang-cpp">class ProcessController {
+private:
+  ModbusRTUMaster modbus;
+  
+  struct PIDController {
+    float kp, ki, kd;
+    float setpoint;
+    float integral;
+    float lastError;
+    unsigned long lastTime;
+    bool enabled;
+  };
+  
+  PIDController pid = {1.0, 0.1, 0.05, 25.0, 0, 0, 0, false};
+  
+public:
+  ProcessController(Stream* serial) : modbus(serial) {}
+  
+  void controlLoop() {
+    // Read process variable (temperature sensor)
+    uint16_t tempReg;
+    if (!modbus.readHoldingRegisters(1, 0, 1, &amp;tempReg)) {
+      Serial.println(&quot;Failed to read temperature&quot;);
+      return;
+    }
+    
+    float currentTemp = tempReg / 10.0; // Convert from temp * 10
+    
+    // Calculate PID output
+    float output = calculatePID(currentTemp);
+    
+    // Write control output (heater control)
+    uint16_t controlValue = constrain(output, 0, 100); // 0-100%
+    if (modbus.writeSingleRegister(2, 0, controlValue)) {
+      Serial.print(&quot;Temp: &quot;);
+      Serial.print(currentTemp);
+      Serial.print(&quot;°C, Output: &quot;);
+      Serial.print(controlValue);
+      Serial.println(&quot;%&quot;);
+    }
+    
+    // Safety checks
+    if (currentTemp &gt; 80.0) {
+      // Emergency shutdown
+      modbus.writeSingleRegister(2, 1, 1); // Emergency stop
+      Serial.println(&quot;EMERGENCY: Temperature too high!&quot;);
+    }
+  }
+  
+  void setSetpoint(float setpoint) {
+    pid.setpoint = setpoint;
+    pid.integral = 0; // Reset integral term
+  }
+  
+private:
+  float calculatePID(float processVariable) {
+    unsigned long now = millis();
+    float timeChange = (now - pid.lastTime) / 1000.0; // Convert to seconds
+    
+    if (timeChange &lt;= 0) return 0;
+    
+    float error = pid.setpoint - processVariable;
+    
+    // Integral term with windup protection
+    pid.integral += error * timeChange;
+    pid.integral = constrain(pid.integral, -100, 100);
+    
+    // Derivative term
+    float derivative = (error - pid.lastError) / timeChange;
+    
+    // Calculate output
+    float output = pid.kp * error + pid.ki * pid.integral + pid.kd * derivative;
+    
+    // Update for next iteration
+    pid.lastError = error;
+    pid.lastTime = now;
+    
+    return constrain(output, 0, 100);
+  }
+};
+</code></pre>
+<h2 id="network-diagnostics-and-troubleshooting">Network Diagnostics and Troubleshooting</h2>
+<h3 id="modbus-network-scanner">Modbus Network Scanner</h3>
+<pre><code class="lang-cpp">class ModbusScanner {
+private:
+  ModbusRTUMaster modbus;
+  
+public:
+  ModbusScanner(Stream* serial) : modbus(serial) {}
+  
+  void scanNetwork(uint8_t startID = 1, uint8_t endID = 247) {
+    Serial.println(&quot;Scanning Modbus network...&quot;);
+    Serial.println(&quot;ID\tStatus\tResponse Time\tDevice Info&quot;);
+    
+    for (uint8_t id = startID; id &lt;= endID; id++) {
+      unsigned long startTime = micros();
+      uint16_t testReg;
+      
+      bool found = modbus.readHoldingRegisters(id, 0, 1, &amp;testReg);
+      unsigned long responseTime = micros() - startTime;
+      
+      Serial.print(id);
+      Serial.print(&quot;\t&quot;);
+      
+      if (found) {
+        Serial.print(&quot;FOUND&quot;);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(responseTime / 1000.0);
+        Serial.print(&quot; ms\t&quot;);
+        
+        // Try to read device identification
+        identifyDevice(id);
+      } else {
+        Serial.print(&quot;N/A&quot;);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(&quot;N/A&quot;);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(&quot;No response&quot;);
+      }
+      
+      Serial.println();
+      delay(100); // Small delay between scans
+    }
+  }
+  
+private:
+  void identifyDevice(uint8_t slaveID) {
+    // Try reading common identification registers
+    uint16_t deviceInfo[4];
+    
+    if (modbus.readHoldingRegisters(slaveID, 100, 4, deviceInfo)) {
+      Serial.print(&quot;Vendor: &quot;);
+      Serial.print(deviceInfo[0]);
+      Serial.print(&quot;, Model: &quot;);
+      Serial.print(deviceInfo[1]);
+    } else {
+      Serial.print(&quot;Generic device&quot;);
+    }
+  }
+};
+
+void scanForDevices() {
+  ModbusScanner scanner(&amp;Serial);
+  scanner.scanNetwork();
+}
+</code></pre>
+<h3 id="communication-quality-monitor">Communication Quality Monitor</h3>
+<pre><code class="lang-cpp">class ModbusQualityMonitor {
+private:
+  struct Statistics {
+    unsigned long totalRequests;
+    unsigned long successfulRequests;
+    unsigned long timeoutErrors;
+    unsigned long crcErrors;
+    unsigned long exceptionErrors;
+    unsigned long totalResponseTime;
+    unsigned long maxResponseTime;
+    unsigned long minResponseTime;
+  };
+  
+  Statistics stats = {0, 0, 0, 0, 0, 0, 0, ULONG_MAX};
+  
+public:
+  void recordRequest(bool success, unsigned long responseTime, uint8_t errorType = 0) {
+    stats.totalRequests++;
+    
+    if (success) {
+      stats.successfulRequests++;
+      stats.totalResponseTime += responseTime;
+      stats.maxResponseTime = max(stats.maxResponseTime, responseTime);
+      stats.minResponseTime = min(stats.minResponseTime, responseTime);
+    } else {
+      switch (errorType) {
+        case 1: stats.timeoutErrors++; break;
+        case 2: stats.crcErrors++; break;
+        case 3: stats.exceptionErrors++; break;
+      }
+    }
+  }
+  
+  void printStatistics() {
+    Serial.println(&quot;=== Modbus Communication Statistics ===&quot;);
+    Serial.print(&quot;Total Requests: &quot;); Serial.println(stats.totalRequests);
+    Serial.print(&quot;Successful: &quot;); Serial.println(stats.successfulRequests);
+    Serial.print(&quot;Success Rate: &quot;); 
+    Serial.print((float)stats.successfulRequests / stats.totalRequests * 100, 1);
+    Serial.println(&quot;%&quot;);
+    
+    Serial.print(&quot;Timeout Errors: &quot;); Serial.println(stats.timeoutErrors);
+    Serial.print(&quot;CRC Errors: &quot;); Serial.println(stats.crcErrors);
+    Serial.print(&quot;Exception Errors: &quot;); Serial.println(stats.exceptionErrors);
+    
+    if (stats.successfulRequests &gt; 0) {
+      Serial.print(&quot;Avg Response Time: &quot;);
+      Serial.print(stats.totalResponseTime / stats.successfulRequests);
+      Serial.println(&quot; ms&quot;);
+      
+      Serial.print(&quot;Min Response Time: &quot;); 
+      Serial.print(stats.minResponseTime); Serial.println(&quot; ms&quot;);
+      
+      Serial.print(&quot;Max Response Time: &quot;); 
+      Serial.print(stats.maxResponseTime); Serial.println(&quot; ms&quot;);
+    }
+    
+    Serial.println();
+  }
+  
+  void reset() {
+    memset(&amp;stats, 0, sizeof(stats));
+    stats.minResponseTime = ULONG_MAX;
+  }
+};
+</code></pre>
+<h2 id="best-practices-and-optimization">Best Practices and Optimization</h2>
+<h3 id="1-network-design-guidelines">1. Network Design Guidelines</h3>
+<h4 id="electrical">Electrical</h4>
+<ul>
+<li><strong>Use twisted pair cable</strong> (120Ω characteristic impedance)</li>
+<li><strong>Add 120Ω termination resistors</strong> at both ends of the bus</li>
+<li><strong>Keep cable length under 1200m</strong> for standard baud rates</li>
+<li><strong>Use bias resistors</strong> (680Ω) for idle state definition</li>
+<li><strong>Implement proper grounding</strong> and EMI protection</li>
+</ul>
+<h4 id="topology">Topology</h4>
+<pre><code>Master ----+---- Slave 1
+           |
+           +---- Slave 2
+           |
+           +---- Slave 3
+           |
+        [120Ω termination]
+</code></pre>
+<h3 id="2-software-optimization">2. Software Optimization</h3>
+<h4 id="request-batching">Request Batching</h4>
+<pre><code class="lang-cpp">void optimizedPolling() {
+  // Bad: Multiple single register reads
+  // for (int i = 0; i &lt; 10; i++) {
+  //   modbus.readHoldingRegisters(1, i, 1, &amp;data[i]);
+  // }
+  
+  // Good: Single multi-register read
+  uint16_t data[10];
+  modbus.readHoldingRegisters(1, 0, 10, data);
+}
+</code></pre>
+<h4 id="error-recovery-strategy">Error Recovery Strategy</h4>
+<pre><code class="lang-cpp">class RobustModbusMaster {
+private:
+  static const int MAX_RETRIES = 3;
+  static const unsigned long RETRY_DELAY = 100;
+  
+public:
+  bool readWithRetry(uint8_t slaveID, uint16_t address, uint16_t count, uint16_t* data) {
+    for (int attempt = 0; attempt &lt; MAX_RETRIES; attempt++) {
+      if (modbus.readHoldingRegisters(slaveID, address, count, data)) {
+        return true;
+      }
+      
+      Serial.print(&quot;Retry attempt &quot;);
+      Serial.print(attempt + 1);
+      Serial.print(&quot; for slave &quot;);
+      Serial.println(slaveID);
+      
+      delay(RETRY_DELAY * (attempt + 1)); // Exponential backoff
+    }
+    
+    return false;
+  }
+};
+</code></pre>
+<h3 id="3-performance-tuning">3. Performance Tuning</h3>
+<h4 id="baud-rate-selection">Baud Rate Selection</h4>
+<pre><code class="lang-cpp">void selectOptimalBaudRate() {
+  // For short networks (&lt; 100m): 115200 bps
+  // For medium networks (&lt; 500m): 38400 bps
+  // For long networks (&lt; 1200m): 9600 bps
+  
+  int cableLength = 200; // meters
+  int baudRate;
+  
+  if (cableLength &lt; 100) {
+    baudRate = 115200;
+  } else if (cableLength &lt; 500) {
+    baudRate = 38400;
+  } else {
+    baudRate = 9600;
+  }
+  
+  Serial.print(&quot;Recommended baud rate: &quot;);
+  Serial.println(baudRate);
+}
+</code></pre>
+<h3 id="4-security-considerations">4. Security Considerations</h3>
+<p>While Modbus has limited built-in security, implement these practices:</p>
+<ol>
+<li><strong>Network Segmentation</strong>: Isolate Modbus networks</li>
+<li><strong>Access Control</strong>: Limit physical access to the network</li>
+<li><strong>Monitoring</strong>: Log all communication for security analysis</li>
+<li><strong>Encryption</strong>: Use VPN for Modbus TCP over public networks</li>
+<li><strong>Authentication</strong>: Implement application-level authentication</li>
+</ol>
+<h2 id="common-issues-and-solutions">Common Issues and Solutions</h2>
+<h3 id="problem-communication-timeouts">Problem: Communication Timeouts</h3>
+<p><strong>Symptoms</strong>: Intermittent or complete communication failures
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Check cable connections and termination</li>
+<li>Verify baud rate settings on all devices</li>
+<li>Increase timeout values</li>
+<li>Check for electromagnetic interference</li>
+</ul>
+<h3 id="problem-crc-errors">Problem: CRC Errors</h3>
+<p><strong>Symptoms</strong>: Frequent CRC validation failures
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Inspect cable quality and connections</li>
+<li>Add ferrite cores for EMI suppression</li>
+<li>Reduce baud rate</li>
+<li>Check ground connections</li>
+</ul>
+<h3 id="problem-address-conflicts">Problem: Address Conflicts</h3>
+<p><strong>Symptoms</strong>: Unexpected responses or no responses
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Use network scanner to identify devices</li>
+<li>Maintain device address documentation</li>
+<li>Implement address conflict detection</li>
+</ul>
+<h3 id="problem-poor-performance">Problem: Poor Performance</h3>
+<p><strong>Symptoms</strong>: Slow response times, low throughput
+<strong>Solutions</strong>:</p>
+<ul>
+<li>Optimize polling strategies (batch reads)</li>
+<li>Reduce polling frequency for non-critical data</li>
+<li>Use appropriate baud rate for network distance</li>
+<li>Implement request prioritization</li>
+</ul>
+<h2 id="integration-examples">Integration Examples</h2>
+<h3 id="home-automation-with-modbus">Home Automation with Modbus</h3>
+<pre><code class="lang-cpp">class HomeAutomationController {
+private:
+  ModbusRTUMaster modbus;
+  
+  struct Device {
+    uint8_t slaveID;
+    String name;
+    DeviceType type;
+  };
+  
+  enum DeviceType {
+    THERMOSTAT,
+    LIGHT_DIMMER,
+    ENERGY_METER,
+    DOOR_SENSOR
+  };
+  
+  Device devices[20];
+  int deviceCount = 0;
+  
+public:
+  void addDevice(uint8_t id, String name, DeviceType type) {
+    if (deviceCount &lt; 20) {
+      devices[deviceCount] = {id, name, type};
+      deviceCount++;
+    }
+  }
+  
+  void controlLighting(uint8_t lightID, uint8_t brightness) {
+    // Find light dimmer device
+    for (int i = 0; i &lt; deviceCount; i++) {
+      if (devices[i].slaveID == lightID &amp;&amp; devices[i].type == LIGHT_DIMMER) {
+        modbus.writeSingleRegister(lightID, 0, brightness);
+        Serial.print(&quot;Set &quot;);
+        Serial.print(devices[i].name);
+        Serial.print(&quot; to &quot;);
+        Serial.print(brightness);
+        Serial.println(&quot;%&quot;);
+        break;
+      }
+    }
+  }
+  
+  float readEnergyConsumption(uint8_t meterID) {
+    uint16_t energyRegs[2];
+    if (modbus.readHoldingRegisters(meterID, 0, 2, energyRegs)) {
+      // Combine two registers for float value
+      uint32_t combined = (energyRegs[0] &lt;&lt; 16) | energyRegs[1];
+      return *(float*)&amp;combined; // kWh
+    }
+    return 0;
+  }
+  
+  void automationLoop() {
+    // Read temperature from thermostat
+    uint16_t tempReg;
+    if (modbus.readHoldingRegisters(1, 0, 1, &amp;tempReg)) {
+      float temperature = tempReg / 10.0;
+      
+      // Automatic lighting based on time and occupancy
+      if (isDaytime() &amp;&amp; temperature &gt; 22.0) {
+        controlLighting(3, 30); // Dim lights
+      } else if (!isDaytime()) {
+        controlLighting(3, 80); // Bright lights
+      }
+    }
+    
+    // Energy monitoring
+    float energy = readEnergyConsumption(4);
+    if (energy &gt; 10.0) { // High consumption alert
+      Serial.println(&quot;High energy consumption detected!&quot;);
+    }
+  }
+  
+private:
+  bool isDaytime() {
+    // Simplified day/night detection
+    int hour = 12; // Get from RTC
+    return (hour &gt;= 6 &amp;&amp; hour &lt;= 18);
+  }
+};
+</code></pre>
+<p>This comprehensive guide covers Modbus protocol implementation with Arduino, including practical examples for industrial automation, home automation, and data logging applications. The included calculator framework provides tools for network analysis and optimization.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/arduino-modbus-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class ResistorCalculator | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ResistorCalculator | CircuitTool Documentation ">
-    
-    <meta name="description" content="Provides methods for resistor calculations, including Ohm&#39;s Law, series, and parallel combinations.">
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>Class ResistorCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ResistorCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides methods for resistor calculations, including Ohm&#39;s Law, series, and parallel combinations.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ResistorCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.ResistorCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CircuitTool.ResistorCalculator">
+
+        <article data-uid="CircuitTool.ResistorCalculator">
 
 
 
-  <h1 id="CircuitTool_ResistorCalculator" data-uid="CircuitTool.ResistorCalculator" class="text-break">Class ResistorCalculator</h1>
-  <div class="markdown level0 summary"><p>Provides methods for resistor calculations, including Ohm's Law, series, and parallel combinations.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">ResistorCalculator</span></div>
+  <h1 id="CircuitTool_ResistorCalculator" data-uid="CircuitTool.ResistorCalculator" class="text-break">
+Class ResistorCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Provides methods for resistor calculations, including Ohm's Law, series, and parallel combinations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ResistorCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ResistorCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -112,227 +142,378 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="CircuitTool_ResistorCalculator_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ResistorCalculator</code></pre>
-  </div>
-  <h5 id="CircuitTool_ResistorCalculator_remarks"><strong>Remarks</strong></h5>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_ResistorCalculator_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Example usage:</p>
 <pre><code class="lang-csharp">double r = ResistorCalculator.Resistance(10, 2); // 5 Ohms
 double series = ResistorCalculator.Series(10, 20, 30); // 60 Ohms
 double parallel = ResistorCalculator.Parallel(10, 20); // 6.67 Ohms</code></pre>
 </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ResistorCalculator_Parallel_System_Double___.md&amp;value=---%0Auid%3A%20CircuitTool.ResistorCalculator.Parallel(System.Double%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L63">View Source</a>
-  </span>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_ResistorCalculator_AnalyzeParallelNetwork_" data-uid="CircuitTool.ResistorCalculator.AnalyzeParallelNetwork*"></a>
+
+  <h3 id="CircuitTool_ResistorCalculator_AnalyzeParallelNetwork_System_Double___System_Double_System_Double___" data-uid="CircuitTool.ResistorCalculator.AnalyzeParallelNetwork(System.Double[],System.Double,System.Double[])">
+  AnalyzeParallelNetwork(double[], double, double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze parallel resistor network with applied voltage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResistorCalculator.ResistorNetworkResult AnalyzeParallelNetwork(double[] resistors, double appliedVoltage, double[] powerRatings = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>appliedVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>powerRatings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.ResistorCalculator.html">ResistorCalculator</a>.<a class="xref" href="CircuitTool.ResistorCalculator.ResistorNetworkResult.html">ResistorNetworkResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_ResistorCalculator_AnalyzeSeriesNetwork_" data-uid="CircuitTool.ResistorCalculator.AnalyzeSeriesNetwork*"></a>
+
+  <h3 id="CircuitTool_ResistorCalculator_AnalyzeSeriesNetwork_System_Double___System_Double_System_Double___" data-uid="CircuitTool.ResistorCalculator.AnalyzeSeriesNetwork(System.Double[],System.Double,System.Double[])">
+  AnalyzeSeriesNetwork(double[], double, double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze series resistor network with applied voltage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResistorCalculator.ResistorNetworkResult AnalyzeSeriesNetwork(double[] resistors, double appliedVoltage, double[] powerRatings = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>appliedVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>powerRatings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.ResistorCalculator.html">ResistorCalculator</a>.<a class="xref" href="CircuitTool.ResistorCalculator.ResistorNetworkResult.html">ResistorNetworkResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_ResistorCalculator_AnalyzeVoltageDivider_" data-uid="CircuitTool.ResistorCalculator.AnalyzeVoltageDivider*"></a>
+
+  <h3 id="CircuitTool_ResistorCalculator_AnalyzeVoltageDivider_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.ResistorCalculator.AnalyzeVoltageDivider(System.Double,System.Double,System.Double,System.Double)">
+  AnalyzeVoltageDivider(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze voltage divider with load effects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResistorCalculator.VoltageDividerResult AnalyzeVoltageDivider(double inputVoltage, double r1, double r2, double loadResistance = Infinity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>r1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>r2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>loadResistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.ResistorCalculator.html">ResistorCalculator</a>.<a class="xref" href="CircuitTool.ResistorCalculator.VoltageDividerResult.html">VoltageDividerResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_ResistorCalculator_FindResistorCombinations_" data-uid="CircuitTool.ResistorCalculator.FindResistorCombinations*"></a>
+
+  <h3 id="CircuitTool_ResistorCalculator_FindResistorCombinations_System_Double_System_String_System_Int32_" data-uid="CircuitTool.ResistorCalculator.FindResistorCombinations(System.Double,System.String,System.Int32)">
+  FindResistorCombinations(double, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find best resistor combination for target value using standard values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ResistorCalculator.ResistorCombinationResult&gt; FindResistorCombinations(double targetResistance, string series = &quot;E12&quot;, int maxResistors = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetResistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>series</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>maxResistors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CircuitTool.ResistorCalculator.html">ResistorCalculator</a>.<a class="xref" href="CircuitTool.ResistorCalculator.ResistorCombinationResult.html">ResistorCombinationResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_ResistorCalculator_Parallel_" data-uid="CircuitTool.ResistorCalculator.Parallel*"></a>
-  <h4 id="CircuitTool_ResistorCalculator_Parallel_System_Double___" data-uid="CircuitTool.ResistorCalculator.Parallel(System.Double[])">Parallel(params double[])</h4>
+
+  <h3 id="CircuitTool_ResistorCalculator_Parallel_System_Double___" data-uid="CircuitTool.ResistorCalculator.Parallel(System.Double[])">
+  Parallel(params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates total resistance for resistors in parallel: <code>1/Rtotal = 1/R1 + 1/R2 + ...</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double Parallel(params double[] resistors)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">resistors</span></td>
-        <td><p>Resistor values in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Total parallel resistance in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_ResistorCalculator_Parallel_System_Double____examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Resistor values in ohms (Ω).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total parallel resistance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_ResistorCalculator_Parallel_System_Double____examples">Examples</h4>
   <p>double total = ResistorCalculator.Parallel(10, 20); // 6.67 Ohms</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ResistorCalculator_Resistance_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.ResistorCalculator.Resistance(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L30">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_ResistorCalculator_Resistance_" data-uid="CircuitTool.ResistorCalculator.Resistance*"></a>
-  <h4 id="CircuitTool_ResistorCalculator_Resistance_System_Double_System_Double_" data-uid="CircuitTool.ResistorCalculator.Resistance(System.Double,System.Double)">Resistance(double, double)</h4>
+
+  <h3 id="CircuitTool_ResistorCalculator_Resistance_System_Double_System_Double_" data-uid="CircuitTool.ResistorCalculator.Resistance(System.Double,System.Double)">
+  Resistance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates resistance using Ohm's Law: <code>R = V / I</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double Resistance(double voltage, double current)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">voltage</span></td>
-        <td><p>Voltage in volts (V).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">current</span></td>
-        <td><p>Current in amperes (A).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Resistance in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_ResistorCalculator_Resistance_System_Double_System_Double__examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Voltage in volts (V).</p>
+</dd>
+    <dt><code>current</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Current in amperes (A).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resistance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_ResistorCalculator_Resistance_System_Double_System_Double__examples">Examples</h4>
   <p>double r = ResistorCalculator.Resistance(10, 2); // 5 Ohms</p>
 
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ResistorCalculator_Series_System_Double___.md&amp;value=---%0Auid%3A%20CircuitTool.ResistorCalculator.Series(System.Double%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L40">View Source</a>
-  </span>
+
+
+
+
+
   <a id="CircuitTool_ResistorCalculator_Series_" data-uid="CircuitTool.ResistorCalculator.Series*"></a>
-  <h4 id="CircuitTool_ResistorCalculator_Series_System_Double___" data-uid="CircuitTool.ResistorCalculator.Series(System.Double[])">Series(params double[])</h4>
+
+  <h3 id="CircuitTool_ResistorCalculator_Series_System_Double___" data-uid="CircuitTool.ResistorCalculator.Series(System.Double[])">
+  Series(params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates total resistance for resistors in series: <code>Rtotal = R1 + R2 + ...</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double Series(params double[] resistors)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">resistors</span></td>
-        <td><p>Resistor values in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Total series resistance in ohms (Ω).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CircuitTool_ResistorCalculator_Series_System_Double____examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Resistor values in ohms (Ω).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total series resistance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_ResistorCalculator_Series_System_Double____examples">Examples</h4>
   <p>double total = ResistorCalculator.Series(10, 20, 30); // 60 Ohms</p>
 
 
-</article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_ResistorCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.ResistorCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L19" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+
+
+  <a id="CircuitTool_ResistorCalculator_SeriesParallelCombination_" data-uid="CircuitTool.ResistorCalculator.SeriesParallelCombination*"></a>
+
+  <h3 id="CircuitTool_ResistorCalculator_SeriesParallelCombination_CircuitTool_ResistorCalculator_ResistorNetwork_" data-uid="CircuitTool.ResistorCalculator.SeriesParallelCombination(CircuitTool.ResistorCalculator.ResistorNetwork)">
+  SeriesParallelCombination(ResistorNetwork)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate series-parallel combination resistance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SeriesParallelCombination(ResistorCalculator.ResistorNetwork network)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>network</code> <a class="xref" href="CircuitTool.ResistorCalculator.html">ResistorCalculator</a>.<a class="xref" href="CircuitTool.ResistorCalculator.ResistorNetwork.html">ResistorNetwork</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ResistorCalculator.cs/#L20" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.DigitalCalculator
+  commentId: T:CircuitTool.DigitalCalculator
+  id: DigitalCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.DigitalCalculator.CharacteristicImpedance(System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.DynamicPower(System.Double,System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.FallTime(System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.Fanout(System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.MaxFrequency(System.Double,System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.MinimumTraceWidth(System.Double,System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.NoiseMargin(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.PropagationDelay(System.Double,System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.RiseTime(System.Double,System.Double)
+  - CircuitTool.DigitalCalculator.StaticPower(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: DigitalCalculator
+  nameWithType: DigitalCalculator
+  fullName: CircuitTool.DigitalCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DigitalCalculator
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Provides calculations for digital circuit design and analysis.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double propDelay = DigitalCalculator.PropagationDelay(5e-9, 3e-12, 1000); // Propagation delay
+
+    double risetime = DigitalCalculator.RiseTime(100e-12, 50e-12); // Rise time calculation
+
+    double power = DigitalCalculator.DynamicPower(3.3, 1e-12, 100e6); // Dynamic power consumption</code></pre>
+  example: []
+  syntax:
+    content: public static class DigitalCalculator
+    content.vb: Public Module DigitalCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.DigitalCalculator.PropagationDelay(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.PropagationDelay(System.Double,System.Double,System.Double)
+  id: PropagationDelay(System.Double,System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: PropagationDelay(double, double, double)
+  nameWithType: DigitalCalculator.PropagationDelay(double, double, double)
+  fullName: CircuitTool.DigitalCalculator.PropagationDelay(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PropagationDelay
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 27
+  namespace: CircuitTool
+  summary: Calculates propagation delay for a digital gate.
+  example:
+  - double propDelay = DigitalCalculator.PropagationDelay(5e-9, 3e-12, 1000); // Propagation delay
+  syntax:
+    content: public static double PropagationDelay(double intrinsicDelay, double loadCapacitance, double driveStrength)
+    parameters:
+    - id: intrinsicDelay
+      type: System.Double
+      description: Intrinsic delay of the gate in seconds.
+    - id: loadCapacitance
+      type: System.Double
+      description: Load capacitance in farads (F).
+    - id: driveStrength
+      type: System.Double
+      description: Drive strength in ohms (Ω).
+    return:
+      type: System.Double
+      description: Total propagation delay in seconds.
+    content.vb: Public Shared Function PropagationDelay(intrinsicDelay As Double, loadCapacitance As Double, driveStrength As Double) As Double
+  overload: CircuitTool.DigitalCalculator.PropagationDelay*
+  nameWithType.vb: DigitalCalculator.PropagationDelay(Double, Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.PropagationDelay(Double, Double, Double)
+  name.vb: PropagationDelay(Double, Double, Double)
+- uid: CircuitTool.DigitalCalculator.RiseTime(System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.RiseTime(System.Double,System.Double)
+  id: RiseTime(System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: RiseTime(double, double)
+  nameWithType: DigitalCalculator.RiseTime(double, double)
+  fullName: CircuitTool.DigitalCalculator.RiseTime(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RiseTime
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 43
+  namespace: CircuitTool
+  summary: Calculates rise time for a digital signal.
+  example:
+  - double risetime = DigitalCalculator.RiseTime(100e-12, 50e-12); // Rise time calculation
+  syntax:
+    content: public static double RiseTime(double resistance, double capacitance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Rise time (10% to 90%) in seconds.
+    content.vb: Public Shared Function RiseTime(resistance As Double, capacitance As Double) As Double
+  overload: CircuitTool.DigitalCalculator.RiseTime*
+  nameWithType.vb: DigitalCalculator.RiseTime(Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.RiseTime(Double, Double)
+  name.vb: RiseTime(Double, Double)
+- uid: CircuitTool.DigitalCalculator.FallTime(System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.FallTime(System.Double,System.Double)
+  id: FallTime(System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: FallTime(double, double)
+  nameWithType: DigitalCalculator.FallTime(double, double)
+  fullName: CircuitTool.DigitalCalculator.FallTime(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FallTime
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 56
+  namespace: CircuitTool
+  summary: Calculates fall time for a digital signal.
+  example: []
+  syntax:
+    content: public static double FallTime(double resistance, double capacitance)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance in farads (F).
+    return:
+      type: System.Double
+      description: Fall time (90% to 10%) in seconds.
+    content.vb: Public Shared Function FallTime(resistance As Double, capacitance As Double) As Double
+  overload: CircuitTool.DigitalCalculator.FallTime*
+  nameWithType.vb: DigitalCalculator.FallTime(Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.FallTime(Double, Double)
+  name.vb: FallTime(Double, Double)
+- uid: CircuitTool.DigitalCalculator.DynamicPower(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.DynamicPower(System.Double,System.Double,System.Double)
+  id: DynamicPower(System.Double,System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: DynamicPower(double, double, double)
+  nameWithType: DigitalCalculator.DynamicPower(double, double, double)
+  fullName: CircuitTool.DigitalCalculator.DynamicPower(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DynamicPower
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 73
+  namespace: CircuitTool
+  summary: Calculates dynamic power consumption in CMOS circuits.
+  example:
+  - double power = DigitalCalculator.DynamicPower(3.3, 1e-12, 100e6); // Dynamic power consumption
+  syntax:
+    content: public static double DynamicPower(double voltage, double capacitance, double frequency)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Supply voltage in volts (V).
+    - id: capacitance
+      type: System.Double
+      description: Load capacitance in farads (F).
+    - id: frequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    return:
+      type: System.Double
+      description: Dynamic power consumption in watts (W).
+    content.vb: Public Shared Function DynamicPower(voltage As Double, capacitance As Double, frequency As Double) As Double
+  overload: CircuitTool.DigitalCalculator.DynamicPower*
+  nameWithType.vb: DigitalCalculator.DynamicPower(Double, Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.DynamicPower(Double, Double, Double)
+  name.vb: DynamicPower(Double, Double, Double)
+- uid: CircuitTool.DigitalCalculator.StaticPower(System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.StaticPower(System.Double,System.Double)
+  id: StaticPower(System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: StaticPower(double, double)
+  nameWithType: DigitalCalculator.StaticPower(double, double)
+  fullName: CircuitTool.DigitalCalculator.StaticPower(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StaticPower
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 86
+  namespace: CircuitTool
+  summary: Calculates static power consumption due to leakage current.
+  example: []
+  syntax:
+    content: public static double StaticPower(double voltage, double leakageCurrent)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Supply voltage in volts (V).
+    - id: leakageCurrent
+      type: System.Double
+      description: Leakage current in amperes (A).
+    return:
+      type: System.Double
+      description: Static power consumption in watts (W).
+    content.vb: Public Shared Function StaticPower(voltage As Double, leakageCurrent As Double) As Double
+  overload: CircuitTool.DigitalCalculator.StaticPower*
+  nameWithType.vb: DigitalCalculator.StaticPower(Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.StaticPower(Double, Double)
+  name.vb: StaticPower(Double, Double)
+- uid: CircuitTool.DigitalCalculator.MaxFrequency(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.MaxFrequency(System.Double,System.Double,System.Double)
+  id: MaxFrequency(System.Double,System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: MaxFrequency(double, double, double)
+  nameWithType: DigitalCalculator.MaxFrequency(double, double, double)
+  fullName: CircuitTool.DigitalCalculator.MaxFrequency(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MaxFrequency
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 100
+  namespace: CircuitTool
+  summary: Calculates the maximum operating frequency based on propagation delay.
+  example: []
+  syntax:
+    content: public static double MaxFrequency(double propagationDelay, double setupTime, double holdTime)
+    parameters:
+    - id: propagationDelay
+      type: System.Double
+      description: Propagation delay in seconds.
+    - id: setupTime
+      type: System.Double
+      description: Setup time in seconds.
+    - id: holdTime
+      type: System.Double
+      description: Hold time in seconds.
+    return:
+      type: System.Double
+      description: Maximum operating frequency in Hz.
+    content.vb: Public Shared Function MaxFrequency(propagationDelay As Double, setupTime As Double, holdTime As Double) As Double
+  overload: CircuitTool.DigitalCalculator.MaxFrequency*
+  nameWithType.vb: DigitalCalculator.MaxFrequency(Double, Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.MaxFrequency(Double, Double, Double)
+  name.vb: MaxFrequency(Double, Double, Double)
+- uid: CircuitTool.DigitalCalculator.Fanout(System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.Fanout(System.Double,System.Double)
+  id: Fanout(System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: Fanout(double, double)
+  nameWithType: DigitalCalculator.Fanout(double, double)
+  fullName: CircuitTool.DigitalCalculator.Fanout(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Fanout
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 116
+  namespace: CircuitTool
+  summary: Calculates the fanout capability of a digital gate.
+  example: []
+  syntax:
+    content: public static int Fanout(double outputCurrent, double inputCurrent)
+    parameters:
+    - id: outputCurrent
+      type: System.Double
+      description: Output drive current in amperes (A).
+    - id: inputCurrent
+      type: System.Double
+      description: Input current requirement per gate in amperes (A).
+    return:
+      type: System.Int32
+      description: Maximum fanout (number of gates that can be driven).
+    content.vb: Public Shared Function Fanout(outputCurrent As Double, inputCurrent As Double) As Integer
+  overload: CircuitTool.DigitalCalculator.Fanout*
+  nameWithType.vb: DigitalCalculator.Fanout(Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.Fanout(Double, Double)
+  name.vb: Fanout(Double, Double)
+- uid: CircuitTool.DigitalCalculator.NoiseMargin(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.NoiseMargin(System.Double,System.Double,System.Double,System.Double)
+  id: NoiseMargin(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: NoiseMargin(double, double, double, double)
+  nameWithType: DigitalCalculator.NoiseMargin(double, double, double, double)
+  fullName: CircuitTool.DigitalCalculator.NoiseMargin(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NoiseMargin
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 131
+  namespace: CircuitTool
+  summary: Calculates noise margin for a digital circuit.
+  example: []
+  syntax:
+    content: public static (double NoiseMarginHigh, double NoiseMarginLow) NoiseMargin(double outputHighVoltage, double inputHighThreshold, double outputLowVoltage, double inputLowThreshold)
+    parameters:
+    - id: outputHighVoltage
+      type: System.Double
+      description: Output high voltage (VOH) in volts.
+    - id: inputHighThreshold
+      type: System.Double
+      description: Input high threshold (VIH) in volts.
+    - id: outputLowVoltage
+      type: System.Double
+      description: Output low voltage (VOL) in volts.
+    - id: inputLowThreshold
+      type: System.Double
+      description: Input low threshold (VIL) in volts.
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: Tuple containing (NoiseMarginHigh, NoiseMarginLow) in volts.
+    content.vb: Public Shared Function NoiseMargin(outputHighVoltage As Double, inputHighThreshold As Double, outputLowVoltage As Double, inputLowThreshold As Double) As (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  overload: CircuitTool.DigitalCalculator.NoiseMargin*
+  nameWithType.vb: DigitalCalculator.NoiseMargin(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.NoiseMargin(Double, Double, Double, Double)
+  name.vb: NoiseMargin(Double, Double, Double, Double)
+- uid: CircuitTool.DigitalCalculator.CharacteristicImpedance(System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.CharacteristicImpedance(System.Double,System.Double)
+  id: CharacteristicImpedance(System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: CharacteristicImpedance(double, double)
+  nameWithType: DigitalCalculator.CharacteristicImpedance(double, double)
+  fullName: CircuitTool.DigitalCalculator.CharacteristicImpedance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CharacteristicImpedance
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 152
+  namespace: CircuitTool
+  summary: Calculates characteristic impedance for a digital transmission line.
+  example: []
+  syntax:
+    content: public static double CharacteristicImpedance(double inductance, double capacitance)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Inductance per unit length (H/m).
+    - id: capacitance
+      type: System.Double
+      description: Capacitance per unit length (F/m).
+    return:
+      type: System.Double
+      description: Characteristic impedance in ohms (Ω).
+    content.vb: Public Shared Function CharacteristicImpedance(inductance As Double, capacitance As Double) As Double
+  overload: CircuitTool.DigitalCalculator.CharacteristicImpedance*
+  nameWithType.vb: DigitalCalculator.CharacteristicImpedance(Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.CharacteristicImpedance(Double, Double)
+  name.vb: CharacteristicImpedance(Double, Double)
+- uid: CircuitTool.DigitalCalculator.MinimumTraceWidth(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.DigitalCalculator.MinimumTraceWidth(System.Double,System.Double,System.Double)
+  id: MinimumTraceWidth(System.Double,System.Double,System.Double)
+  parent: CircuitTool.DigitalCalculator
+  langs:
+  - csharp
+  - vb
+  name: MinimumTraceWidth(double, double, double)
+  nameWithType: DigitalCalculator.MinimumTraceWidth(double, double, double)
+  fullName: CircuitTool.DigitalCalculator.MinimumTraceWidth(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/DigitalCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MinimumTraceWidth
+    path: src/Calculators/DigitalCalculator.cs
+    startLine: 166
+  namespace: CircuitTool
+  summary: Calculates the minimum trace width for a given current carrying capacity.
+  example: []
+  syntax:
+    content: public static double MinimumTraceWidth(double current, double temperatureRise, double copperThickness = 1)
+    parameters:
+    - id: current
+      type: System.Double
+      description: Current in amperes (A).
+    - id: temperatureRise
+      type: System.Double
+      description: Allowed temperature rise in Celsius.
+    - id: copperThickness
+      type: System.Double
+      description: Copper thickness in ounces (1 oz = 35 μm).
+    return:
+      type: System.Double
+      description: Minimum trace width in meters.
+    content.vb: Public Shared Function MinimumTraceWidth(current As Double, temperatureRise As Double, copperThickness As Double = 1) As Double
+  overload: CircuitTool.DigitalCalculator.MinimumTraceWidth*
+  nameWithType.vb: DigitalCalculator.MinimumTraceWidth(Double, Double, Double)
+  fullName.vb: CircuitTool.DigitalCalculator.MinimumTraceWidth(Double, Double, Double)
+  name.vb: MinimumTraceWidth(Double, Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.DigitalCalculator.PropagationDelay*
+  commentId: Overload:CircuitTool.DigitalCalculator.PropagationDelay
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_PropagationDelay_System_Double_System_Double_System_Double_
+  name: PropagationDelay
+  nameWithType: DigitalCalculator.PropagationDelay
+  fullName: CircuitTool.DigitalCalculator.PropagationDelay
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.DigitalCalculator.RiseTime*
+  commentId: Overload:CircuitTool.DigitalCalculator.RiseTime
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_RiseTime_System_Double_System_Double_
+  name: RiseTime
+  nameWithType: DigitalCalculator.RiseTime
+  fullName: CircuitTool.DigitalCalculator.RiseTime
+- uid: CircuitTool.DigitalCalculator.FallTime*
+  commentId: Overload:CircuitTool.DigitalCalculator.FallTime
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_FallTime_System_Double_System_Double_
+  name: FallTime
+  nameWithType: DigitalCalculator.FallTime
+  fullName: CircuitTool.DigitalCalculator.FallTime
+- uid: CircuitTool.DigitalCalculator.DynamicPower*
+  commentId: Overload:CircuitTool.DigitalCalculator.DynamicPower
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_DynamicPower_System_Double_System_Double_System_Double_
+  name: DynamicPower
+  nameWithType: DigitalCalculator.DynamicPower
+  fullName: CircuitTool.DigitalCalculator.DynamicPower
+- uid: CircuitTool.DigitalCalculator.StaticPower*
+  commentId: Overload:CircuitTool.DigitalCalculator.StaticPower
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_StaticPower_System_Double_System_Double_
+  name: StaticPower
+  nameWithType: DigitalCalculator.StaticPower
+  fullName: CircuitTool.DigitalCalculator.StaticPower
+- uid: CircuitTool.DigitalCalculator.MaxFrequency*
+  commentId: Overload:CircuitTool.DigitalCalculator.MaxFrequency
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_MaxFrequency_System_Double_System_Double_System_Double_
+  name: MaxFrequency
+  nameWithType: DigitalCalculator.MaxFrequency
+  fullName: CircuitTool.DigitalCalculator.MaxFrequency
+- uid: CircuitTool.DigitalCalculator.Fanout*
+  commentId: Overload:CircuitTool.DigitalCalculator.Fanout
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_Fanout_System_Double_System_Double_
+  name: Fanout
+  nameWithType: DigitalCalculator.Fanout
+  fullName: CircuitTool.DigitalCalculator.Fanout
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.DigitalCalculator.NoiseMargin*
+  commentId: Overload:CircuitTool.DigitalCalculator.NoiseMargin
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_NoiseMargin_System_Double_System_Double_System_Double_System_Double_
+  name: NoiseMargin
+  nameWithType: DigitalCalculator.NoiseMargin
+  fullName: CircuitTool.DigitalCalculator.NoiseMargin
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double referenceResistor, double biasVoltage)
+  nameWithType: (double referenceResistor, double biasVoltage)
+  fullName: (double referenceResistor, double biasVoltage)
+  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
+  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
+  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
+    name: referenceResistor
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
+    name: biasVoltage
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: CircuitTool.DigitalCalculator.CharacteristicImpedance*
+  commentId: Overload:CircuitTool.DigitalCalculator.CharacteristicImpedance
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_CharacteristicImpedance_System_Double_System_Double_
+  name: CharacteristicImpedance
+  nameWithType: DigitalCalculator.CharacteristicImpedance
+  fullName: CircuitTool.DigitalCalculator.CharacteristicImpedance
+- uid: CircuitTool.DigitalCalculator.MinimumTraceWidth*
+  commentId: Overload:CircuitTool.DigitalCalculator.MinimumTraceWidth
+  href: CircuitTool.DigitalCalculator.html#CircuitTool_DigitalCalculator_MinimumTraceWidth_System_Double_System_Double_System_Double_
+  name: MinimumTraceWidth
+  nameWithType: DigitalCalculator.MinimumTraceWidth
+  fullName: CircuitTool.DigitalCalculator.MinimumTraceWidth

@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  commentId: T:CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  id: ElectromagneticsCalculator
+  parent: CircuitTool.Electromagnetics
+  children:
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(System.Double,System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(System.Double,System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: ElectromagneticsCalculator
+  nameWithType: ElectromagneticsCalculator
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ElectromagneticsCalculator
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 15
+  namespace: CircuitTool.Electromagnetics
+  summary: Provides calculations for electromagnetic field analysis and antenna design.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double efield = ElectromagneticsCalculator.ElectricFieldStrength(100, 1000); // Electric field
+
+    double power = ElectromagneticsCalculator.PowerDensity(377, 1.0); // Power density
+
+    double gain = ElectromagneticsCalculator.AntennaGain(10, 0.8); // Antenna gain</code></pre>
+  example: []
+  syntax:
+    content: public static class ElectromagneticsCalculator
+    content.vb: Public Module ElectromagneticsCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(System.Double,System.Double,System.Double)
+  id: ElectricFieldStrength(System.Double,System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: ElectricFieldStrength(double, double, double)
+  nameWithType: ElectromagneticsCalculator.ElectricFieldStrength(double, double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ElectricFieldStrength
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 32
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates electric field strength from power and distance.
+  example:
+  - double efield = ElectromagneticsCalculator.ElectricFieldStrength(100, 1000); // Electric field
+  syntax:
+    content: public static double ElectricFieldStrength(double power, double distance, double gain = 1)
+    parameters:
+    - id: power
+      type: System.Double
+      description: Transmitted power in watts (W).
+    - id: distance
+      type: System.Double
+      description: Distance from source in meters (m).
+    - id: gain
+      type: System.Double
+      description: Antenna gain (linear, not dB). Default is 1 (isotropic).
+    return:
+      type: System.Double
+      description: Electric field strength in V/m.
+    content.vb: Public Shared Function ElectricFieldStrength(power As Double, distance As Double, gain As Double = 1) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength*
+  nameWithType.vb: ElectromagneticsCalculator.ElectricFieldStrength(Double, Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(Double, Double, Double)
+  name.vb: ElectricFieldStrength(Double, Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(System.Double,System.Double)
+  id: MagneticFieldStrength(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: MagneticFieldStrength(double, double)
+  nameWithType: ElectromagneticsCalculator.MagneticFieldStrength(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MagneticFieldStrength
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 46
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates magnetic field strength from electric field.
+  example: []
+  syntax:
+    content: public static double MagneticFieldStrength(double electricField, double impedance = 376.730313668)
+    parameters:
+    - id: electricField
+      type: System.Double
+      description: Electric field strength in V/m.
+    - id: impedance
+      type: System.Double
+      description: 'Wave impedance in ohms (default: free space).'
+    return:
+      type: System.Double
+      description: Magnetic field strength in A/m.
+    content.vb: Public Shared Function MagneticFieldStrength(electricField As Double, impedance As Double = 376.730313668) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength*
+  nameWithType.vb: ElectromagneticsCalculator.MagneticFieldStrength(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(Double, Double)
+  name.vb: MagneticFieldStrength(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(System.Double,System.Double)
+  id: PowerDensity(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: PowerDensity(double, double)
+  nameWithType: ElectromagneticsCalculator.PowerDensity(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerDensity
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 63
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates power density from electric field.
+  example:
+  - double power = ElectromagneticsCalculator.PowerDensity(377, 1.0); // Power density
+  syntax:
+    content: public static double PowerDensity(double impedance, double electricField)
+    parameters:
+    - id: impedance
+      type: System.Double
+      description: Wave impedance in ohms.
+    - id: electricField
+      type: System.Double
+      description: Electric field strength in V/m.
+    return:
+      type: System.Double
+      description: Power density in W/m².
+    content.vb: Public Shared Function PowerDensity(impedance As Double, electricField As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity*
+  nameWithType.vb: ElectromagneticsCalculator.PowerDensity(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(Double, Double)
+  name.vb: PowerDensity(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(System.Double,System.Double)
+  id: FarFieldDistance(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: FarFieldDistance(double, double)
+  nameWithType: ElectromagneticsCalculator.FarFieldDistance(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FarFieldDistance
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 77
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates far-field distance for an antenna.
+  example: []
+  syntax:
+    content: public static double FarFieldDistance(double antennaSize, double frequency)
+    parameters:
+    - id: antennaSize
+      type: System.Double
+      description: Largest dimension of antenna in meters.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    return:
+      type: System.Double
+      description: Far-field distance in meters.
+    content.vb: Public Shared Function FarFieldDistance(antennaSize As Double, frequency As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance*
+  nameWithType.vb: ElectromagneticsCalculator.FarFieldDistance(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(Double, Double)
+  name.vb: FarFieldDistance(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(System.Double,System.Double)
+  id: AntennaGain(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: AntennaGain(double, double)
+  nameWithType: ElectromagneticsCalculator.AntennaGain(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaGain
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 95
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates antenna gain from directivity and efficiency.
+  example:
+  - double gain = ElectromagneticsCalculator.AntennaGain(10, 0.8); // Antenna gain
+  syntax:
+    content: public static double AntennaGain(double directivity, double efficiency)
+    parameters:
+    - id: directivity
+      type: System.Double
+      description: Directivity (linear, not dB).
+    - id: efficiency
+      type: System.Double
+      description: Antenna efficiency (0-1).
+    return:
+      type: System.Double
+      description: Antenna gain (linear).
+    content.vb: Public Shared Function AntennaGain(directivity As Double, efficiency As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain*
+  nameWithType.vb: ElectromagneticsCalculator.AntennaGain(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(Double, Double)
+  name.vb: AntennaGain(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(System.Double,System.Double)
+  id: EffectiveAperture(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: EffectiveAperture(double, double)
+  nameWithType: ElectromagneticsCalculator.EffectiveAperture(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EffectiveAperture
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 111
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates effective aperture of an antenna.
+  example: []
+  syntax:
+    content: public static double EffectiveAperture(double gain, double frequency)
+    parameters:
+    - id: gain
+      type: System.Double
+      description: Antenna gain (linear, not dB).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    return:
+      type: System.Double
+      description: Effective aperture in square meters (m²).
+    content.vb: Public Shared Function EffectiveAperture(gain As Double, frequency As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture*
+  nameWithType.vb: ElectromagneticsCalculator.EffectiveAperture(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(Double, Double)
+  name.vb: EffectiveAperture(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(System.Double,System.Double)
+  id: DipoleLength(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: DipoleLength(double, double)
+  nameWithType: ElectromagneticsCalculator.DipoleLength(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DipoleLength
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 126
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates resonant length of a dipole antenna.
+  example: []
+  syntax:
+    content: public static double DipoleLength(double frequency, double velocityFactor = 0.95)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: velocityFactor
+      type: System.Double
+      description: 'Velocity factor (default: 0.95 for wire in air).'
+    return:
+      type: System.Double
+      description: Resonant length in meters.
+    content.vb: Public Shared Function DipoleLength(frequency As Double, velocityFactor As Double = 0.95) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength*
+  nameWithType.vb: ElectromagneticsCalculator.DipoleLength(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(Double, Double)
+  name.vb: DipoleLength(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(System.Double,System.Double)
+  id: ShortDipoleRadiationResistance(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: ShortDipoleRadiationResistance(double, double)
+  nameWithType: ElectromagneticsCalculator.ShortDipoleRadiationResistance(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ShortDipoleRadiationResistance
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 143
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates radiation resistance of a short dipole.
+  example: []
+  syntax:
+    content: public static double ShortDipoleRadiationResistance(double length, double frequency)
+    parameters:
+    - id: length
+      type: System.Double
+      description: Antenna length in meters.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    return:
+      type: System.Double
+      description: Radiation resistance in ohms (Ω).
+    content.vb: Public Shared Function ShortDipoleRadiationResistance(length As Double, frequency As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance*
+  nameWithType.vb: ElectromagneticsCalculator.ShortDipoleRadiationResistance(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(Double, Double)
+  name.vb: ShortDipoleRadiationResistance(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  id: SkinDepth(System.Double,System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: SkinDepth(double, double, double)
+  nameWithType: ElectromagneticsCalculator.SkinDepth(double, double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SkinDepth
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 164
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates skin depth in a conductor.
+  example: []
+  syntax:
+    content: public static double SkinDepth(double frequency, double conductivity = 59600000, double relativePermeability = 1)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: conductivity
+      type: System.Double
+      description: 'Conductivity in S/m (default: copper).'
+    - id: relativePermeability
+      type: System.Double
+      description: 'Relative permeability (default: 1).'
+    return:
+      type: System.Double
+      description: Skin depth in meters.
+    content.vb: Public Shared Function SkinDepth(frequency As Double, conductivity As Double = 59600000, relativePermeability As Double = 1) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth*
+  nameWithType.vb: ElectromagneticsCalculator.SkinDepth(Double, Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(Double, Double, Double)
+  name.vb: SkinDepth(Double, Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(System.Double,System.Double)
+  id: WaveImpedance(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: WaveImpedance(double, double)
+  nameWithType: ElectromagneticsCalculator.WaveImpedance(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WaveImpedance
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 178
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates wave impedance in a medium.
+  example: []
+  syntax:
+    content: public static double WaveImpedance(double relativePermittivity, double relativePermeability = 1)
+    parameters:
+    - id: relativePermittivity
+      type: System.Double
+      description: Relative permittivity.
+    - id: relativePermeability
+      type: System.Double
+      description: 'Relative permeability (default: 1).'
+    return:
+      type: System.Double
+      description: Wave impedance in ohms (Ω).
+    content.vb: Public Shared Function WaveImpedance(relativePermittivity As Double, relativePermeability As Double = 1) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance*
+  nameWithType.vb: ElectromagneticsCalculator.WaveImpedance(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(Double, Double)
+  name.vb: WaveImpedance(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: FriisTransmission(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: FriisTransmission(double, double, double, double, double)
+  nameWithType: ElectromagneticsCalculator.FriisTransmission(double, double, double, double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FriisTransmission
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 195
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates Friis transmission formula for power received.
+  example: []
+  syntax:
+    content: public static double FriisTransmission(double transmittedPower, double transmitGain, double receiveGain, double frequency, double distance)
+    parameters:
+    - id: transmittedPower
+      type: System.Double
+      description: Transmitted power in watts (W).
+    - id: transmitGain
+      type: System.Double
+      description: Transmit antenna gain (linear).
+    - id: receiveGain
+      type: System.Double
+      description: Receive antenna gain (linear).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: distance
+      type: System.Double
+      description: Distance between antennas in meters.
+    return:
+      type: System.Double
+      description: Received power in watts (W).
+    content.vb: Public Shared Function FriisTransmission(transmittedPower As Double, transmitGain As Double, receiveGain As Double, frequency As Double, distance As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission*
+  nameWithType.vb: ElectromagneticsCalculator.FriisTransmission(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(Double, Double, Double, Double, Double)
+  name.vb: FriisTransmission(Double, Double, Double, Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(System.Double,System.Double)
+  id: LoopInductance(System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: LoopInductance(double, double)
+  nameWithType: ElectromagneticsCalculator.LoopInductance(double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LoopInductance
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 213
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates loop antenna inductance.
+  example: []
+  syntax:
+    content: public static double LoopInductance(double radius, double wireRadius)
+    parameters:
+    - id: radius
+      type: System.Double
+      description: Loop radius in meters.
+    - id: wireRadius
+      type: System.Double
+      description: Wire radius in meters.
+    return:
+      type: System.Double
+      description: Inductance in henries (H).
+    content.vb: Public Shared Function LoopInductance(radius As Double, wireRadius As Double) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance*
+  nameWithType.vb: ElectromagneticsCalculator.LoopInductance(Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(Double, Double)
+  name.vb: LoopInductance(Double, Double)
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(System.Double,System.Double,System.Double)
+  id: MonopoleImpedance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: MonopoleImpedance(double, double, double)
+  nameWithType: ElectromagneticsCalculator.MonopoleImpedance(double, double, double)
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Electromagnetics/ElectromagneticsCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MonopoleImpedance
+    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    startLine: 228
+  namespace: CircuitTool.Electromagnetics
+  summary: Calculates monopole antenna impedance.
+  example: []
+  syntax:
+    content: public static double MonopoleImpedance(double height, double frequency, double groundRadius = Infinity)
+    parameters:
+    - id: height
+      type: System.Double
+      description: Monopole height in meters.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: groundRadius
+      type: System.Double
+      description: Ground plane radius in meters (if applicable).
+    return:
+      type: System.Double
+      description: Input impedance in ohms (Ω).
+    content.vb: Public Shared Function MonopoleImpedance(height As Double, frequency As Double, groundRadius As Double = Infinity) As Double
+  overload: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance*
+  nameWithType.vb: ElectromagneticsCalculator.MonopoleImpedance(Double, Double, Double)
+  fullName.vb: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(Double, Double, Double)
+  name.vb: MonopoleImpedance(Double, Double, Double)
+references:
+- uid: CircuitTool.Electromagnetics
+  commentId: N:CircuitTool.Electromagnetics
+  href: CircuitTool.html
+  name: CircuitTool.Electromagnetics
+  nameWithType: CircuitTool.Electromagnetics
+  fullName: CircuitTool.Electromagnetics
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Electromagnetics
+    name: Electromagnetics
+    href: CircuitTool.Electromagnetics.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Electromagnetics
+    name: Electromagnetics
+    href: CircuitTool.Electromagnetics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_ElectricFieldStrength_System_Double_System_Double_System_Double_
+  name: ElectricFieldStrength
+  nameWithType: ElectromagneticsCalculator.ElectricFieldStrength
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_MagneticFieldStrength_System_Double_System_Double_
+  name: MagneticFieldStrength
+  nameWithType: ElectromagneticsCalculator.MagneticFieldStrength
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_PowerDensity_System_Double_System_Double_
+  name: PowerDensity
+  nameWithType: ElectromagneticsCalculator.PowerDensity
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_FarFieldDistance_System_Double_System_Double_
+  name: FarFieldDistance
+  nameWithType: ElectromagneticsCalculator.FarFieldDistance
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_AntennaGain_System_Double_System_Double_
+  name: AntennaGain
+  nameWithType: ElectromagneticsCalculator.AntennaGain
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_EffectiveAperture_System_Double_System_Double_
+  name: EffectiveAperture
+  nameWithType: ElectromagneticsCalculator.EffectiveAperture
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_DipoleLength_System_Double_System_Double_
+  name: DipoleLength
+  nameWithType: ElectromagneticsCalculator.DipoleLength
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_ShortDipoleRadiationResistance_System_Double_System_Double_
+  name: ShortDipoleRadiationResistance
+  nameWithType: ElectromagneticsCalculator.ShortDipoleRadiationResistance
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_SkinDepth_System_Double_System_Double_System_Double_
+  name: SkinDepth
+  nameWithType: ElectromagneticsCalculator.SkinDepth
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_WaveImpedance_System_Double_System_Double_
+  name: WaveImpedance
+  nameWithType: ElectromagneticsCalculator.WaveImpedance
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_FriisTransmission_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: FriisTransmission
+  nameWithType: ElectromagneticsCalculator.FriisTransmission
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_LoopInductance_System_Double_System_Double_
+  name: LoopInductance
+  nameWithType: ElectromagneticsCalculator.LoopInductance
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance*
+  commentId: Overload:CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html#CircuitTool_Electromagnetics_ElectromagneticsCalculator_MonopoleImpedance_System_Double_System_Double_System_Double_
+  name: MonopoleImpedance
+  nameWithType: ElectromagneticsCalculator.MonopoleImpedance
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance

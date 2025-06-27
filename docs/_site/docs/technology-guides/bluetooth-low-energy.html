@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Bluetooth&#174; Low Energy (BLE) Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Bluetooth&#174; Low Energy (BLE) Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/bluetooth-low-energy.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="bluetooth-low-energy-ble-guide">Bluetooth® Low Energy (BLE) Guide</h1>
+
+<h2 id="introduction-to-bluetooth-low-energy">Introduction to Bluetooth Low Energy</h2>
+<p>Bluetooth Low Energy (BLE), also known as Bluetooth Smart, is a wireless personal area network technology designed for applications that require minimal power consumption while maintaining reasonable communication range and data throughput. BLE is part of the Bluetooth 4.0+ specification and is optimized for devices that need to operate for months or years on a single battery.</p>
+<h2 id="ble-architecture-overview">BLE Architecture Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Ultra-low power consumption</strong>: Designed for battery-powered devices</li>
+<li><strong>Short range communication</strong>: Typically 10-30 meters</li>
+<li><strong>Low data throughput</strong>: Optimized for small, infrequent data transfers</li>
+<li><strong>Fast connection establishment</strong>: Sub-second connection times</li>
+<li><strong>Smartphone compatibility</strong>: Built into iOS, Android, and most modern devices</li>
+</ul>
+<h3 id="ble-vs-classic-bluetooth">BLE vs Classic Bluetooth</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Classic Bluetooth</th>
+<th>Bluetooth Low Energy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power consumption</td>
+<td>High (mW)</td>
+<td>Ultra-low (µW)</td>
+</tr>
+<tr>
+<td>Data rate</td>
+<td>Up to 2.1 Mbps</td>
+<td>Up to 1 Mbps</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>10m (Class 2)</td>
+<td>10-30m</td>
+</tr>
+<tr>
+<td>Connection time</td>
+<td>~6 seconds</td>
+<td>&lt;100ms</td>
+</tr>
+<tr>
+<td>Peak current</td>
+<td>~30mA</td>
+<td>~15mA</td>
+</tr>
+<tr>
+<td>Average current</td>
+<td>~1mA</td>
+<td>1-50µA</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>Audio, file transfer</td>
+<td>IoT sensors, health monitors</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ble-protocol-stack">BLE Protocol Stack</h2>
+<h3 id="generic-access-profile-gap">Generic Access Profile (GAP)</h3>
+<ul>
+<li><strong>Roles</strong>: Central (scanner/master) and Peripheral (advertiser/slave)</li>
+<li><strong>Advertising</strong>: Peripheral broadcasts presence and services</li>
+<li><strong>Scanning</strong>: Central discovers advertising peripherals</li>
+<li><strong>Connection</strong>: Establishment and parameter negotiation</li>
+</ul>
+<h3 id="generic-attribute-protocol-gatt">Generic Attribute Protocol (GATT)</h3>
+<ul>
+<li><strong>Services</strong>: Collections of related functionality</li>
+<li><strong>Characteristics</strong>: Data endpoints within services</li>
+<li><strong>Descriptors</strong>: Metadata about characteristics</li>
+<li><strong>Client-Server</strong>: Central acts as client, peripheral as server</li>
+</ul>
+<h3 id="advertising-and-connection-states">Advertising and Connection States</h3>
+<pre><code>Standby → Advertising → Connected → Standby
+    ↑        ↓              ↓
+    ← ← ← ← Standby ← ← ← ← ←
+</code></pre>
+<h2 id="arduino-ble-programming">Arduino BLE Programming</h2>
+<h3 id="esp32-ble-server-example">ESP32 BLE Server Example</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEServer.h&quot;
+#include &quot;BLEUtils.h&quot;
+#include &quot;BLE2902.h&quot;
+
+// Service and characteristic UUIDs
+#define SERVICE_UUID        &quot;12345678-1234-1234-1234-123456789abc&quot;
+#define CHARACTERISTIC_UUID &quot;87654321-4321-4321-4321-cba987654321&quot;
+
+BLEServer* pServer = NULL;
+BLECharacteristic* pCharacteristic = NULL;
+bool deviceConnected = false;
+bool oldDeviceConnected = false;
+
+class MyServerCallbacks: public BLEServerCallbacks {
+    void onConnect(BLEServer* pServer) {
+      deviceConnected = true;
+      Serial.println(&quot;Device connected&quot;);
+    };
+
+    void onDisconnect(BLEServer* pServer) {
+      deviceConnected = false;
+      Serial.println(&quot;Device disconnected&quot;);
+    }
+};
+
+class MyCharacteristicCallbacks: public BLECharacteristicCallbacks {
+    void onWrite(BLECharacteristic *pCharacteristic) {
+      std::string value = pCharacteristic-&gt;getValue();
+      
+      if (value.length() &gt; 0) {
+        Serial.print(&quot;Received: &quot;);
+        for (int i = 0; i &lt; value.length(); i++) {
+          Serial.print(value[i]);
+        }
+        Serial.println();
+        
+        // Echo response
+        String response = &quot;Echo: &quot; + String(value.c_str());
+        pCharacteristic-&gt;setValue(response.c_str());
+        pCharacteristic-&gt;notify();
+      }
+    }
+};
+
+void setup() {
+  Serial.begin(115200);
+  
+  // Initialize BLE
+  BLEDevice::init(&quot;ESP32-BLE-Server&quot;);
+  
+  // Create BLE Server
+  pServer = BLEDevice::createServer();
+  pServer-&gt;setCallbacks(new MyServerCallbacks());
+  
+  // Create BLE Service
+  BLEService *pService = pServer-&gt;createService(SERVICE_UUID);
+  
+  // Create BLE Characteristic
+  pCharacteristic = pService-&gt;createCharacteristic(
+                      CHARACTERISTIC_UUID,
+                      BLECharacteristic::PROPERTY_READ |
+                      BLECharacteristic::PROPERTY_WRITE |
+                      BLECharacteristic::PROPERTY_NOTIFY
+                    );
+  
+  pCharacteristic-&gt;setCallbacks(new MyCharacteristicCallbacks());
+  pCharacteristic-&gt;addDescriptor(new BLE2902());
+  
+  // Start the service
+  pService-&gt;start();
+  
+  // Start advertising
+  BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+  pAdvertising-&gt;addServiceUUID(SERVICE_UUID);
+  pAdvertising-&gt;setScanResponse(false);
+  pAdvertising-&gt;setMinPreferred(0x06);
+  pAdvertising-&gt;setMinPreferred(0x12);
+  BLEDevice::startAdvertising();
+  
+  Serial.println(&quot;BLE Server started, waiting for connections...&quot;);
+}
+
+void loop() {
+  // Handle connection state changes
+  if (!deviceConnected &amp;&amp; oldDeviceConnected) {
+    delay(500); // Give time for disconnect to complete
+    pServer-&gt;startAdvertising(); // Restart advertising
+    Serial.println(&quot;Restarting advertising&quot;);
+    oldDeviceConnected = deviceConnected;
+  }
+  
+  if (deviceConnected &amp;&amp; !oldDeviceConnected) {
+    oldDeviceConnected = deviceConnected;
+  }
+  
+  // Send sensor data every 5 seconds if connected
+  static unsigned long lastSensorRead = 0;
+  if (deviceConnected &amp;&amp; millis() - lastSensorRead &gt; 5000) {
+    // Read sensor data
+    float temperature = 23.5 + random(-50, 50) / 10.0; // Simulate temperature
+    float humidity = 65.0 + random(-100, 100) / 10.0;  // Simulate humidity
+    
+    // Format as JSON
+    String sensorData = &quot;{\&quot;temp\&quot;:&quot; + String(temperature, 1) + 
+                       &quot;,\&quot;hum\&quot;:&quot; + String(humidity, 1) + &quot;}&quot;;
+    
+    pCharacteristic-&gt;setValue(sensorData.c_str());
+    pCharacteristic-&gt;notify();
+    
+    Serial.println(&quot;Sent: &quot; + sensorData);
+    lastSensorRead = millis();
+  }
+  
+  delay(100);
+}
+</code></pre>
+<h3 id="esp32-ble-client-scanner-example">ESP32 BLE Client (Scanner) Example</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEScan.h&quot;
+#include &quot;BLEAdvertisedDevice.h&quot;
+#include &quot;BLEClient.h&quot;
+
+// Service and characteristic UUIDs (must match server)
+#define SERVICE_UUID        &quot;12345678-1234-1234-1234-123456789abc&quot;
+#define CHARACTERISTIC_UUID &quot;87654321-4321-4321-4321-cba987654321&quot;
+
+BLEScan* pBLEScan;
+BLEClient* pClient;
+BLERemoteCharacteristic* pRemoteCharacteristic;
+
+bool connected = false;
+bool doConnect = false;
+BLEAdvertisedDevice* myDevice;
+
+// Callback for scan results
+class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+  void onResult(BLEAdvertisedDevice advertisedDevice) {
+    Serial.print(&quot;Found device: &quot;);
+    Serial.println(advertisedDevice.toString().c_str());
+    
+    if (advertisedDevice.haveServiceUUID() &amp;&amp; 
+        advertisedDevice.isAdvertisingService(BLEUUID(SERVICE_UUID))) {
+      
+      Serial.println(&quot;Found our device!&quot;);
+      BLEDevice::getScan()-&gt;stop();
+      myDevice = new BLEAdvertisedDevice(advertisedDevice);
+      doConnect = true;
+    }
+  }
+};
+
+// Callback for notifications
+static void notifyCallback(BLERemoteCharacteristic* pBLERemoteCharacteristic,
+                          uint8_t* pData, size_t length, bool isNotify) {
+  Serial.print(&quot;Notification received: &quot;);
+  for (int i = 0; i &lt; length; i++) {
+    Serial.print((char)pData[i]);
+  }
+  Serial.println();
+}
+
+// Callback for connection events
+class MyClientCallback : public BLEClientCallbacks {
+  void onConnect(BLEClient* pclient) {
+    Serial.println(&quot;Connected to server&quot;);
+  }
+
+  void onDisconnect(BLEClient* pclient) {
+    connected = false;
+    Serial.println(&quot;Disconnected from server&quot;);
+  }
+};
+
+bool connectToServer() {
+  Serial.print(&quot;Forming a connection to &quot;);
+  Serial.println(myDevice-&gt;getAddress().toString().c_str());
+  
+  pClient = BLEDevice::createClient();
+  pClient-&gt;setClientCallbacks(new MyClientCallback());
+  
+  // Connect to the remote BLE Server
+  pClient-&gt;connect(myDevice);
+  Serial.println(&quot;Connected to server&quot;);
+  
+  // Obtain a reference to the service
+  BLERemoteService* pRemoteService = pClient-&gt;getService(SERVICE_UUID);
+  if (pRemoteService == nullptr) {
+    Serial.print(&quot;Failed to find our service UUID: &quot;);
+    Serial.println(SERVICE_UUID);
+    pClient-&gt;disconnect();
+    return false;
+  }
+  Serial.println(&quot;Found our service&quot;);
+  
+  // Obtain a reference to the characteristic
+  pRemoteCharacteristic = pRemoteService-&gt;getCharacteristic(CHARACTERISTIC_UUID);
+  if (pRemoteCharacteristic == nullptr) {
+    Serial.print(&quot;Failed to find our characteristic UUID: &quot;);
+    Serial.println(CHARACTERISTIC_UUID);
+    pClient-&gt;disconnect();
+    return false;
+  }
+  Serial.println(&quot;Found our characteristic&quot;);
+  
+  // Read the value of the characteristic
+  if(pRemoteCharacteristic-&gt;canRead()) {
+    std::string value = pRemoteCharacteristic-&gt;readValue();
+    Serial.print(&quot;The characteristic value was: &quot;);
+    Serial.println(value.c_str());
+  }
+  
+  // Register for notifications
+  if(pRemoteCharacteristic-&gt;canNotify()) {
+    pRemoteCharacteristic-&gt;registerForNotify(notifyCallback);
+    Serial.println(&quot;Registered for notifications&quot;);
+  }
+  
+  connected = true;
+  return true;
+}
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println(&quot;Starting BLE Client...&quot;);
+  
+  BLEDevice::init(&quot;&quot;);
+  
+  // Retrieve a Scanner and set the callback
+  pBLEScan = BLEDevice::getScan();
+  pBLEScan-&gt;setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks());
+  pBLEScan-&gt;setInterval(1349);
+  pBLEScan-&gt;setWindow(449);
+  pBLEScan-&gt;setActiveScan(true);
+  pBLEScan-&gt;start(5, false);
+}
+
+void loop() {
+  if (doConnect == true) {
+    if (connectToServer()) {
+      Serial.println(&quot;We are now connected to the BLE Server.&quot;);
+    } else {
+      Serial.println(&quot;We have failed to connect to the server; there is nothing more we will do.&quot;);
+    }
+    doConnect = false;
+  }
+  
+  if (connected) {
+    // Send data to server every 10 seconds
+    static unsigned long lastSend = 0;
+    if (millis() - lastSend &gt; 10000) {
+      String message = &quot;Hello from client: &quot; + String(millis());
+      pRemoteCharacteristic-&gt;writeValue(message.c_str(), message.length());
+      Serial.println(&quot;Sent: &quot; + message);
+      lastSend = millis();
+    }
+  } else if (!doConnect) {
+    // Restart scanning if not connected
+    pBLEScan-&gt;start(5, false);
+    delay(1000);
+  }
+  
+  delay(100);
+}
+</code></pre>
+<h3 id="advanced-ble-sensor-hub">Advanced BLE Sensor Hub</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEServer.h&quot;
+#include &quot;BLEUtils.h&quot;
+#include &quot;BLE2902.h&quot;
+#include &quot;DHT.h&quot;
+#include &quot;ArduinoJson.h&quot;
+
+#define DHT_PIN 4
+#define DHT_TYPE DHT22
+
+DHT dht(DHT_PIN, DHT_TYPE);
+
+// Multiple service UUIDs for different sensor types
+#define ENVIRONMENTAL_SERVICE_UUID &quot;12345678-1234-1234-1234-123456789001&quot;
+#define MOTION_SERVICE_UUID        &quot;12345678-1234-1234-1234-123456789002&quot;
+#define BATTERY_SERVICE_UUID       &quot;12345678-1234-1234-1234-123456789003&quot;
+
+// Characteristic UUIDs
+#define TEMPERATURE_CHAR_UUID      &quot;87654321-4321-4321-4321-000000000001&quot;
+#define HUMIDITY_CHAR_UUID         &quot;87654321-4321-4321-4321-000000000002&quot;
+#define PRESSURE_CHAR_UUID         &quot;87654321-4321-4321-4321-000000000003&quot;
+#define MOTION_CHAR_UUID           &quot;87654321-4321-4321-4321-000000000004&quot;
+#define BATTERY_CHAR_UUID          &quot;87654321-4321-4321-4321-000000000005&quot;
+
+class BLESensorHub {
+private:
+  BLEServer* pServer;
+  BLEService* pEnvService;
+  BLEService* pMotionService;
+  BLEService* pBatteryService;
+  
+  BLECharacteristic* pTempCharacteristic;
+  BLECharacteristic* pHumidityCharacteristic;
+  BLECharacteristic* pPressureCharacteristic;
+  BLECharacteristic* pMotionCharacteristic;
+  BLECharacteristic* pBatteryCharacteristic;
+  
+  bool deviceConnected = false;
+  int connectedDevices = 0;
+  
+  struct SensorData {
+    float temperature;
+    float humidity;
+    float pressure;
+    bool motionDetected;
+    uint8_t batteryLevel;
+    unsigned long timestamp;
+  };
+  
+  SensorData currentData;
+  
+public:
+  void begin(String deviceName = &quot;BLE-SensorHub&quot;) {
+    Serial.println(&quot;Initializing BLE Sensor Hub...&quot;);
+    
+    // Initialize sensors
+    dht.begin();
+    
+    // Initialize BLE
+    BLEDevice::init(deviceName.c_str());
+    
+    // Create BLE Server
+    pServer = BLEDevice::createServer();
+    pServer-&gt;setCallbacks(new ServerCallbacks(this));
+    
+    setupServices();
+    startAdvertising();
+    
+    Serial.println(&quot;BLE Sensor Hub ready!&quot;);
+  }
+  
+  void loop() {
+    updateSensorData();
+    
+    if (deviceConnected) {
+      publishSensorData();
+    }
+    
+    handlePowerManagement();
+    delay(1000); // 1 second update rate
+  }
+  
+private:
+  void setupServices() {
+    // Environmental Service
+    pEnvService = pServer-&gt;createService(ENVIRONMENTAL_SERVICE_UUID);
+    
+    pTempCharacteristic = pEnvService-&gt;createCharacteristic(
+      TEMPERATURE_CHAR_UUID,
+      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pTempCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    pHumidityCharacteristic = pEnvService-&gt;createCharacteristic(
+      HUMIDITY_CHAR_UUID,
+      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pHumidityCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    pPressureCharacteristic = pEnvService-&gt;createCharacteristic(
+      PRESSURE_CHAR_UUID,
+      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pPressureCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    // Motion Service
+    pMotionService = pServer-&gt;createService(MOTION_SERVICE_UUID);
+    
+    pMotionCharacteristic = pMotionService-&gt;createCharacteristic(
+      MOTION_CHAR_UUID,
+      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pMotionCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    // Battery Service
+    pBatteryService = pServer-&gt;createService(BATTERY_SERVICE_UUID);
+    
+    pBatteryCharacteristic = pBatteryService-&gt;createCharacteristic(
+      BATTERY_CHAR_UUID,
+      BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pBatteryCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    // Start services
+    pEnvService-&gt;start();
+    pMotionService-&gt;start();
+    pBatteryService-&gt;start();
+  }
+  
+  void startAdvertising() {
+    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    
+    // Add service UUIDs to advertisement
+    pAdvertising-&gt;addServiceUUID(ENVIRONMENTAL_SERVICE_UUID);
+    pAdvertising-&gt;addServiceUUID(MOTION_SERVICE_UUID);
+    pAdvertising-&gt;addServiceUUID(BATTERY_SERVICE_UUID);
+    
+    // Set advertising parameters
+    pAdvertising-&gt;setScanResponse(true);
+    pAdvertising-&gt;setMinPreferred(0x06);  // Functions that help with iPhone connections issue
+    pAdvertising-&gt;setMinPreferred(0x12);
+    
+    BLEDevice::startAdvertising();
+    Serial.println(&quot;Started advertising&quot;);
+  }
+  
+  void updateSensorData() {
+    // Read DHT22 sensor
+    currentData.temperature = dht.readTemperature();
+    currentData.humidity = dht.readHumidity();
+    
+    // Simulate pressure sensor (replace with actual sensor)
+    currentData.pressure = 1013.25 + random(-50, 50) / 10.0;
+    
+    // Simulate motion detection (replace with actual PIR sensor)
+    currentData.motionDetected = (random(100) &lt; 10); // 10% chance
+    
+    // Read battery level (ADC voltage divider)
+    float batteryVoltage = analogRead(A0) * 3.3 / 4095.0 * 2; // Voltage divider
+    currentData.batteryLevel = map(batteryVoltage * 100, 300, 420, 0, 100); // 3.0V-4.2V → 0-100%
+    currentData.batteryLevel = constrain(currentData.batteryLevel, 0, 100);
+    
+    currentData.timestamp = millis();
+  }
+  
+  void publishSensorData() {
+    // Temperature
+    if (!isnan(currentData.temperature)) {
+      String tempStr = String(currentData.temperature, 1);
+      pTempCharacteristic-&gt;setValue(tempStr.c_str());
+      pTempCharacteristic-&gt;notify();
+    }
+    
+    // Humidity
+    if (!isnan(currentData.humidity)) {
+      String humStr = String(currentData.humidity, 1);
+      pHumidityCharacteristic-&gt;setValue(humStr.c_str());
+      pHumidityCharacteristic-&gt;notify();
+    }
+    
+    // Pressure
+    String pressStr = String(currentData.pressure, 1);
+    pPressureCharacteristic-&gt;setValue(pressStr.c_str());
+    pPressureCharacteristic-&gt;notify();
+    
+    // Motion
+    String motionStr = currentData.motionDetected ? &quot;1&quot; : &quot;0&quot;;
+    pMotionCharacteristic-&gt;setValue(motionStr.c_str());
+    pMotionCharacteristic-&gt;notify();
+    
+    // Battery
+    String battStr = String(currentData.batteryLevel);
+    pBatteryCharacteristic-&gt;setValue(battStr.c_str());
+    pBatteryCharacteristic-&gt;notify();
+    
+    // Debug output
+    Serial.printf(&quot;T:%.1f H:%.1f P:%.1f M:%d B:%d%%\n&quot;,
+                  currentData.temperature, currentData.humidity, 
+                  currentData.pressure, currentData.motionDetected,
+                  currentData.batteryLevel);
+  }
+  
+  void handlePowerManagement() {
+    // Implement power saving based on battery level
+    if (currentData.batteryLevel &lt; 10) {
+      // Critical battery - reduce update rate
+      delay(4000); // Additional 4 second delay
+    } else if (currentData.batteryLevel &lt; 30) {
+      // Low battery - moderate power saving
+      delay(1000); // Additional 1 second delay
+    }
+    
+    // Deep sleep could be implemented here for ultra-low power operation
+  }
+  
+  class ServerCallbacks: public BLEServerCallbacks {
+  private:
+    BLESensorHub* hub;
+    
+  public:
+    ServerCallbacks(BLESensorHub* h) : hub(h) {}
+    
+    void onConnect(BLEServer* pServer) {
+      hub-&gt;deviceConnected = true;
+      hub-&gt;connectedDevices++;
+      Serial.printf(&quot;Device connected. Total: %d\n&quot;, hub-&gt;connectedDevices);
+    }
+    
+    void onDisconnect(BLEServer* pServer) {
+      hub-&gt;deviceConnected = false;
+      hub-&gt;connectedDevices--;
+      Serial.printf(&quot;Device disconnected. Total: %d\n&quot;, hub-&gt;connectedDevices);
+      
+      if (hub-&gt;connectedDevices == 0) {
+        delay(500); // Give time for disconnect to complete
+        pServer-&gt;startAdvertising(); // Restart advertising
+        Serial.println(&quot;Restarting advertising&quot;);
+      }
+    }
+  };
+};
+
+BLESensorHub sensorHub;
+
+void setup() {
+  Serial.begin(115200);
+  sensorHub.begin(&quot;ESP32-SensorHub&quot;);
+}
+
+void loop() {
+  sensorHub.loop();
+}
+</code></pre>
+<h2 id="ble-beacons-and-ibeacon-implementation">BLE Beacons and iBeacon Implementation</h2>
+<h3 id="ibeacon-transmitter">iBeacon Transmitter</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEUtils.h&quot;
+#include &quot;BLEBeacon.h&quot;
+#include &quot;esp_sleep.h&quot;
+
+class iBeaconTransmitter {
+private:
+  BLEAdvertising *pAdvertising;
+  String uuid;
+  uint16_t major;
+  uint16_t minor;
+  int8_t txPower;
+  
+public:
+  iBeaconTransmitter(String beaconUUID, uint16_t majorID, uint16_t minorID, int8_t power = -59) {
+    uuid = beaconUUID;
+    major = majorID;
+    minor = minorID;
+    txPower = power;
+  }
+  
+  void begin() {
+    BLEDevice::init(&quot;iBeacon&quot;);
+    
+    // Create BLE Beacon
+    BLEBeacon oBeacon = BLEBeacon();
+    oBeacon.setManufacturerId(0x004C); // Apple
+    oBeacon.setProximityUUID(BLEUUID(uuid.c_str()));
+    oBeacon.setMajor(major);
+    oBeacon.setMinor(minor);
+    oBeacon.setSignalPower(txPower);
+    
+    // Create advertising data
+    BLEAdvertisementData oAdvertisementData = BLEAdvertisementData();
+    BLEAdvertisementData oScanResponseData = BLEAdvertisementData();
+    
+    oAdvertisementData.setFlags(0x04); // BR_EDR_NOT_SUPPORTED 0x04
+    
+    std::string strServiceData = &quot;&quot;;
+    strServiceData += (char)26;     // Len
+    strServiceData += (char)0xFF;   // Type
+    strServiceData += oBeacon.getData(); 
+    oAdvertisementData.addData(strServiceData);
+    
+    pAdvertising = BLEDevice::getAdvertising();
+    pAdvertising-&gt;setAdvertisementData(oAdvertisementData);
+    pAdvertising-&gt;setScanResponseData(oScanResponseData);
+    
+    // Set advertising parameters for iBeacon
+    pAdvertising-&gt;setAdvertisementType(ADV_TYPE_NONCONN_IND);
+    
+    Serial.println(&quot;iBeacon configured&quot;);
+    Serial.println(&quot;UUID: &quot; + uuid);
+    Serial.println(&quot;Major: &quot; + String(major));
+    Serial.println(&quot;Minor: &quot; + String(minor));
+  }
+  
+  void startAdvertising() {
+    pAdvertising-&gt;start();
+    Serial.println(&quot;iBeacon advertising started&quot;);
+  }
+  
+  void stopAdvertising() {
+    pAdvertising-&gt;stop();
+    Serial.println(&quot;iBeacon advertising stopped&quot;);
+  }
+  
+  void updateValues(uint16_t newMajor, uint16_t newMinor) {
+    major = newMajor;
+    minor = newMinor;
+    
+    stopAdvertising();
+    begin(); // Reconfigure with new values
+    startAdvertising();
+  }
+  
+  void enterPowerSaveMode(uint32_t sleepSeconds) {
+    stopAdvertising();
+    Serial.println(&quot;Entering deep sleep for &quot; + String(sleepSeconds) + &quot; seconds&quot;);
+    Serial.flush();
+    
+    esp_sleep_enable_timer_wakeup(sleepSeconds * 1000000);
+    esp_deep_sleep_start();
+  }
+};
+
+iBeaconTransmitter beacon(&quot;550e8400-e29b-41d4-a716-446655440000&quot;, 1, 1);
+
+void setup() {
+  Serial.begin(115200);
+  
+  beacon.begin();
+  beacon.startAdvertising();
+  
+  // For power saving, you could implement periodic sleep
+  // beacon.enterPowerSaveMode(300); // Sleep for 5 minutes
+}
+
+void loop() {
+  // Update beacon values based on sensors or time
+  static unsigned long lastUpdate = 0;
+  if (millis() - lastUpdate &gt; 60000) { // Every minute
+    uint16_t newMinor = random(1, 100); // Random minor ID
+    beacon.updateValues(1, newMinor);
+    lastUpdate = millis();
+  }
+  
+  delay(1000);
+}
+</code></pre>
+<h3 id="ble-scanner-for-beacons">BLE Scanner for Beacons</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEScan.h&quot;
+#include &quot;BLEAdvertisedDevice.h&quot;
+
+class BeaconScanner {
+private:
+  BLEScan* pBLEScan;
+  
+  struct BeaconInfo {
+    String address;
+    String uuid;
+    uint16_t major;
+    uint16_t minor;
+    int rssi;
+    unsigned long lastSeen;
+  };
+  
+  BeaconInfo beacons[20];
+  int beaconCount = 0;
+  
+public:
+  void begin() {
+    BLEDevice::init(&quot;&quot;);
+    
+    pBLEScan = BLEDevice::getScan();
+    pBLEScan-&gt;setAdvertisedDeviceCallbacks(new AdvertisedDeviceCallbacks(this));
+    pBLEScan-&gt;setActiveScan(true);
+    pBLEScan-&gt;setInterval(100);
+    pBLEScan-&gt;setWindow(99);
+  }
+  
+  void startScanning() {
+    Serial.println(&quot;Starting BLE scan for beacons...&quot;);
+    pBLEScan-&gt;start(0, false); // Scan continuously
+  }
+  
+  void stopScanning() {
+    pBLEScan-&gt;stop();
+    Serial.println(&quot;BLE scan stopped&quot;);
+  }
+  
+  void printBeacons() {
+    Serial.println(&quot;\n=== Discovered Beacons ===&quot;);
+    Serial.println(&quot;Address\t\t\tUUID\t\t\t\t\tMajor\tMinor\tRSSI\tDistance&quot;);
+    
+    for (int i = 0; i &lt; beaconCount; i++) {
+      if (millis() - beacons[i].lastSeen &lt; 30000) { // Show beacons seen in last 30 seconds
+        Serial.print(beacons[i].address);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(beacons[i].uuid);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(beacons[i].major);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(beacons[i].minor);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(beacons[i].rssi);
+        Serial.print(&quot;\t&quot;);
+        Serial.print(calculateDistance(beacons[i].rssi), 1);
+        Serial.println(&quot;m&quot;);
+      }
+    }
+    Serial.println();
+  }
+  
+private:
+  void addOrUpdateBeacon(String address, String uuid, uint16_t major, uint16_t minor, int rssi) {
+    // Look for existing beacon
+    for (int i = 0; i &lt; beaconCount; i++) {
+      if (beacons[i].address == address) {
+        // Update existing beacon
+        beacons[i].rssi = rssi;
+        beacons[i].lastSeen = millis();
+        return;
+      }
+    }
+    
+    // Add new beacon
+    if (beaconCount &lt; 20) {
+      beacons[beaconCount] = {address, uuid, major, minor, rssi, millis()};
+      beaconCount++;
+    }
+  }
+  
+  float calculateDistance(int rssi) {
+    // Simplified distance calculation (accuracy varies greatly)
+    if (rssi == 0) return -1.0;
+    
+    double ratio = rssi * 1.0 / -59; // -59 is measured power at 1 meter
+    if (ratio &lt; 1.0) {
+      return pow(ratio, 10);
+    } else {
+      double accuracy = (0.89976) * pow(ratio, 7.7095) + 0.111;
+      return accuracy;
+    }
+  }
+  
+  class AdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
+  private:
+    BeaconScanner* scanner;
+    
+  public:
+    AdvertisedDeviceCallbacks(BeaconScanner* s) : scanner(s) {}
+    
+    void onResult(BLEAdvertisedDevice advertisedDevice) {
+      if (advertisedDevice.haveManufacturerData()) {
+        std::string manufacturerData = advertisedDevice.getManufacturerData();
+        
+        if (manufacturerData.length() &gt;= 25 &amp;&amp; 
+            manufacturerData[0] == 0x4C &amp;&amp; manufacturerData[1] == 0x00) { // Apple
+          
+          if (manufacturerData[2] == 0x02 &amp;&amp; manufacturerData[3] == 0x15) { // iBeacon
+            // Parse iBeacon data
+            String uuid = &quot;&quot;;
+            for (int i = 4; i &lt; 20; i++) {
+              if (manufacturerData[i] &lt; 16) uuid += &quot;0&quot;;
+              uuid += String(manufacturerData[i] &amp; 0xFF, HEX);
+              if (i == 7 || i == 9 || i == 11 || i == 13) uuid += &quot;-&quot;;
+            }
+            
+            uint16_t major = (manufacturerData[20] &lt;&lt; 8) | manufacturerData[21];
+            uint16_t minor = (manufacturerData[22] &lt;&lt; 8) | manufacturerData[23];
+            
+            scanner-&gt;addOrUpdateBeacon(
+              advertisedDevice.getAddress().toString().c_str(),
+              uuid,
+              major,
+              minor,
+              advertisedDevice.getRSSI()
+            );
+          }
+        }
+      }
+    }
+  };
+};
+
+BeaconScanner scanner;
+
+void setup() {
+  Serial.begin(115200);
+  
+  scanner.begin();
+  scanner.startScanning();
+}
+
+void loop() {
+  static unsigned long lastPrint = 0;
+  if (millis() - lastPrint &gt; 5000) { // Print every 5 seconds
+    scanner.printBeacons();
+    lastPrint = millis();
+  }
+  
+  delay(100);
+}
+</code></pre>
+<h2 id="power-optimization-techniques">Power Optimization Techniques</h2>
+<h3 id="ultra-low-power-ble-implementation">Ultra-Low Power BLE Implementation</h3>
+<pre><code class="lang-cpp">#include &quot;esp_sleep.h&quot;
+#include &quot;driver/gpio.h&quot;
+
+class LowPowerBLE {
+private:
+  unsigned long lastAdvertisement = 0;
+  unsigned long advertisementInterval = 1000; // 1 second
+  unsigned long sleepDuration = 30000; // 30 seconds
+  bool deepSleepEnabled = true;
+  
+public:
+  void begin() {
+    // Configure wake-up source
+    esp_sleep_enable_timer_wakeup(sleepDuration * 1000);
+    
+    // Configure GPIO wake-up (optional)
+    esp_sleep_enable_ext0_wakeup(GPIO_NUM_0, 0); // Boot button
+    
+    // Reduce CPU frequency
+    setCpuFrequencyMhz(80); // Reduce from 240MHz to 80MHz
+    
+    // Initialize BLE with power-optimized settings
+    BLEDevice::init(&quot;LowPowerDevice&quot;);
+    setupLowPowerAdvertising();
+  }
+  
+  void setupLowPowerAdvertising() {
+    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    
+    // Set longer advertising intervals (power saving)
+    pAdvertising-&gt;setMinInterval(1600); // 1000ms
+    pAdvertising-&gt;setMaxInterval(1600); // 1000ms
+    
+    // Reduce TX power
+    esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_ADV, ESP_PWR_LVL_N12); // -12dBm
+    
+    // Minimal advertising data
+    BLEAdvertisementData advertisementData;
+    advertisementData.setName(&quot;LowPwr&quot;);
+    advertisementData.setFlags(0x06); // BR_EDR_NOT_SUPPORTED | GENERAL_DISC_MODE
+    
+    pAdvertising-&gt;setAdvertisementData(advertisementData);
+    pAdvertising-&gt;setScanResponse(false); // Disable scan response
+  }
+  
+  void periodicAdvertise() {
+    if (millis() - lastAdvertisement &gt; advertisementInterval) {
+      // Wake up BLE
+      BLEDevice::startAdvertising();
+      Serial.println(&quot;Advertising started&quot;);
+      
+      // Advertise for 5 seconds
+      delay(5000);
+      
+      // Stop advertising
+      BLEDevice::getAdvertising()-&gt;stop();
+      Serial.println(&quot;Advertising stopped&quot;);
+      
+      lastAdvertisement = millis();
+      
+      if (deepSleepEnabled) {
+        enterDeepSleep();
+      }
+    }
+  }
+  
+  void enterDeepSleep() {
+    Serial.println(&quot;Entering deep sleep...&quot;);
+    Serial.flush();
+    
+    // Turn off BLE
+    BLEDevice::deinit(false);
+    
+    // Enter deep sleep
+    esp_deep_sleep_start();
+  }
+  
+  void enablePeriodicWakeup(bool enable) {
+    deepSleepEnabled = enable;
+  }
+  
+  void setAdvertisingInterval(unsigned long interval) {
+    advertisementInterval = interval;
+  }
+};
+
+LowPowerBLE lowPowerBLE;
+
+void setup() {
+  Serial.begin(115200);
+  
+  // Print wake-up reason
+  esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
+  switch(wakeup_reason) {
+    case ESP_SLEEP_WAKEUP_EXT0: 
+      Serial.println(&quot;Wakeup caused by external signal using RTC_IO&quot;); 
+      break;
+    case ESP_SLEEP_WAKEUP_TIMER: 
+      Serial.println(&quot;Wakeup caused by timer&quot;); 
+      break;
+    default: 
+      Serial.println(&quot;Wakeup was not caused by deep sleep&quot;); 
+      break;
+  }
+  
+  lowPowerBLE.begin();
+}
+
+void loop() {
+  lowPowerBLE.periodicAdvertise();
+  delay(100);
+}
+</code></pre>
+<h2 id="ble-security-implementation">BLE Security Implementation</h2>
+<h3 id="pairing-and-bonding">Pairing and Bonding</h3>
+<pre><code class="lang-cpp">#include &quot;BLEDevice.h&quot;
+#include &quot;BLEServer.h&quot;
+#include &quot;BLESecurity.h&quot;
+
+class SecureBLEServer {
+private:
+  BLEServer* pServer;
+  BLEService* pService;
+  BLECharacteristic* pCharacteristic;
+  bool deviceConnected = false;
+  
+  // Security callback class
+  class SecurityCallbacks : public BLESecurityCallbacks {
+    uint32_t onPassKeyRequest() {
+      Serial.println(&quot;PassKeyRequest&quot;);
+      return 123456; // Static passkey (use random in production)
+    }
+    
+    void onPassKeyNotify(uint32_t pass_key) {
+      Serial.printf(&quot;PassKeyNotify: %d\n&quot;, pass_key);
+    }
+    
+    bool onConfirmPIN(uint32_t pass_key) {
+      Serial.printf(&quot;Confirm PIN: %d\n&quot;, pass_key);
+      return true; // Auto-confirm (implement user confirmation in production)
+    }
+    
+    bool onSecurityRequest() {
+      Serial.println(&quot;Security Request&quot;);
+      return true;
+    }
+    
+    void onAuthenticationComplete(esp_ble_auth_cmpl_t auth_cmpl) {
+      if (auth_cmpl.success) {
+        Serial.println(&quot;Authentication Success&quot;);
+      } else {
+        Serial.printf(&quot;Authentication Failed: %d\n&quot;, auth_cmpl.fail_reason);
+      }
+    }
+  };
+  
+public:
+  void begin() {
+    BLEDevice::init(&quot;SecureBLE&quot;);
+    BLEDevice::setEncryptionLevel(ESP_BLE_SEC_ENCRYPT);
+    BLEDevice::setSecurityCallbacks(new SecurityCallbacks());
+    
+    // Configure security
+    BLESecurity *pSecurity = new BLESecurity();
+    pSecurity-&gt;setAuthenticationMode(ESP_LE_AUTH_REQ_SC_MITM_BOND);
+    pSecurity-&gt;setCapability(ESP_IO_CAP_OUT);
+    pSecurity-&gt;setRespEncryptionKey(ESP_BLE_ENC_KEY_MASK | ESP_BLE_ID_KEY_MASK);
+    
+    setupServer();
+    startAdvertising();
+  }
+  
+private:
+  void setupServer() {
+    pServer = BLEDevice::createServer();
+    pServer-&gt;setCallbacks(new ServerCallbacks(this));
+    
+    pService = pServer-&gt;createService(&quot;12345678-1234-1234-1234-123456789abc&quot;);
+    
+    pCharacteristic = pService-&gt;createCharacteristic(
+      &quot;87654321-4321-4321-4321-cba987654321&quot;,
+      BLECharacteristic::PROPERTY_READ |
+      BLECharacteristic::PROPERTY_WRITE |
+      BLECharacteristic::PROPERTY_NOTIFY
+    );
+    
+    // Require encryption for this characteristic
+    pCharacteristic-&gt;setAccessPermissions(ESP_GATT_PERM_READ_ENCRYPTED | ESP_GATT_PERM_WRITE_ENCRYPTED);
+    
+    pCharacteristic-&gt;setCallbacks(new CharacteristicCallbacks());
+    pCharacteristic-&gt;addDescriptor(new BLE2902());
+    
+    pService-&gt;start();
+  }
+  
+  void startAdvertising() {
+    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    pAdvertising-&gt;addServiceUUID(&quot;12345678-1234-1234-1234-123456789abc&quot;);
+    pAdvertising-&gt;setScanResponse(true);
+    pAdvertising-&gt;setMinPreferred(0x06);
+    pAdvertising-&gt;setMinPreferred(0x12);
+    BLEDevice::startAdvertising();
+    
+    Serial.println(&quot;Secure BLE server started, waiting for connections...&quot;);
+  }
+  
+  class ServerCallbacks: public BLEServerCallbacks {
+  private:
+    SecureBLEServer* server;
+    
+  public:
+    ServerCallbacks(SecureBLEServer* s) : server(s) {}
+    
+    void onConnect(BLEServer* pServer) {
+      server-&gt;deviceConnected = true;
+      Serial.println(&quot;Device connected - starting security negotiation&quot;);
+    }
+    
+    void onDisconnect(BLEServer* pServer) {
+      server-&gt;deviceConnected = false;
+      Serial.println(&quot;Device disconnected&quot;);
+      pServer-&gt;startAdvertising(); // Restart advertising
+    }
+  };
+  
+  class CharacteristicCallbacks: public BLECharacteristicCallbacks {
+    void onWrite(BLECharacteristic *pCharacteristic) {
+      std::string value = pCharacteristic-&gt;getValue();
+      Serial.printf(&quot;Received secure data: %s\n&quot;, value.c_str());
+      
+      // Echo back with timestamp
+      String response = &quot;Secure Echo: &quot; + String(value.c_str()) + &quot; at &quot; + String(millis());
+      pCharacteristic-&gt;setValue(response.c_str());
+      pCharacteristic-&gt;notify();
+    }
+  };
+};
+</code></pre>
+<h2 id="best-practices-and-guidelines">Best Practices and Guidelines</h2>
+<h3 id="1-connection-management">1. Connection Management</h3>
+<pre><code class="lang-cpp">class BLEConnectionManager {
+private:
+  static const int MAX_CONNECTIONS = 4;
+  static const unsigned long CONNECTION_TIMEOUT = 30000; // 30 seconds
+  
+  struct Connection {
+    bool active;
+    unsigned long lastActivity;
+    String clientAddress;
+  };
+  
+  Connection connections[MAX_CONNECTIONS];
+  
+public:
+  void manageConnections() {
+    unsigned long now = millis();
+    
+    for (int i = 0; i &lt; MAX_CONNECTIONS; i++) {
+      if (connections[i].active &amp;&amp; 
+          (now - connections[i].lastActivity &gt; CONNECTION_TIMEOUT)) {
+        // Disconnect inactive clients
+        disconnectClient(i);
+      }
+    }
+  }
+  
+  bool addConnection(String address) {
+    for (int i = 0; i &lt; MAX_CONNECTIONS; i++) {
+      if (!connections[i].active) {
+        connections[i].active = true;
+        connections[i].lastActivity = millis();
+        connections[i].clientAddress = address;
+        return true;
+      }
+    }
+    return false; // No slots available
+  }
+  
+private:
+  void disconnectClient(int index) {
+    connections[index].active = false;
+    Serial.println(&quot;Disconnected inactive client: &quot; + connections[index].clientAddress);
+  }
+};
+</code></pre>
+<h3 id="2-data-rate-optimization">2. Data Rate Optimization</h3>
+<pre><code class="lang-cpp">void optimizeDataTransmission() {
+  // Use connection parameter update for better throughput
+  esp_ble_conn_update_params_t conn_params;
+  conn_params.min_int = 6;    // 7.5ms
+  conn_params.max_int = 12;   // 15ms
+  conn_params.latency = 0;    // No slave latency
+  conn_params.timeout = 400;  // 4s supervision timeout
+  
+  // This would be called after connection establishment
+  // esp_ble_gap_update_conn_params(&amp;conn_params);
+}
+</code></pre>
+<h3 id="3-error-handling-and-recovery">3. Error Handling and Recovery</h3>
+<pre><code class="lang-cpp">class BLEErrorHandler {
+public:
+  static void handleBLEError(esp_err_t error, const char* context) {
+    switch (error) {
+      case ESP_OK:
+        break;
+      case ESP_ERR_NO_MEM:
+        Serial.printf(&quot;BLE Error in %s: Out of memory\n&quot;, context);
+        break;
+      case ESP_ERR_INVALID_ARG:
+        Serial.printf(&quot;BLE Error in %s: Invalid argument\n&quot;, context);
+        break;
+      case ESP_ERR_INVALID_STATE:
+        Serial.printf(&quot;BLE Error in %s: Invalid state\n&quot;, context);
+        restartBLE();
+        break;
+      default:
+        Serial.printf(&quot;BLE Error in %s: Code %d\n&quot;, context, error);
+        break;
+    }
+  }
+  
+private:
+  static void restartBLE() {
+    Serial.println(&quot;Restarting BLE stack...&quot;);
+    BLEDevice::deinit(true);
+    delay(1000);
+    BLEDevice::init(&quot;Restarted-Device&quot;);
+    // Reinitialize services and advertising
+  }
+};
+</code></pre>
+<p>This comprehensive BLE guide covers the fundamental concepts, practical implementations, and advanced features needed to develop robust Bluetooth Low Energy applications with Arduino/ESP32 platforms.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/bluetooth-low-energy.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

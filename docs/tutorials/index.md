@@ -1,53 +1,74 @@
-# Getting Started with CircuitTool
+# 🎓 CircuitTool Tutorials
 
-This tutorial will guide you through the basics of using CircuitTool for electrical engineering calculations.
+> **Comprehensive learning materials for mastering electrical engineering calculations**
 
-## Prerequisites
+Welcome to the CircuitTool tutorials section! These step-by-step guides will take you from basic concepts to advanced engineering analysis.
 
-- .NET Framework 4.5+ or .NET 6.0+
-- Basic understanding of electrical engineering concepts
-- Visual Studio, VS Code, or any .NET-compatible IDE
+## 📚 Learning Path
 
-## Installation
+### 🎯 Beginner Level (Start Here)
 
-### Via NuGet Package Manager (Recommended)
+#### 1. [Fundamentals of Electrical Calculations](fundamentals.md)
+- **Duration**: 30 minutes
+- **Topics**: Ohm's Law, Power calculations, Units
+- **Prerequisites**: Basic algebra
+- **Outcome**: Understand core electrical relationships
 
-1. **Using Package Manager Console:**
-   ```powershell
-   Install-Package CircuitTool
-   ```
+#### 2. [Component Analysis & Design](components.md)  
+- **Duration**: 45 minutes
+- **Topics**: Resistors, LEDs, Capacitors, Inductors
+- **Prerequisites**: Fundamentals tutorial
+- **Outcome**: Design basic electronic components
 
-2. **Using .NET CLI:**
-   ```bash
-   dotnet add package CircuitTool
-   ```
+#### 3. [Circuit Analysis Techniques](circuits.md)
+- **Duration**: 60 minutes  
+- **Topics**: Series/parallel networks, Voltage dividers, Thevenin equivalent
+- **Prerequisites**: Component analysis
+- **Outcome**: Analyze complex circuit networks
 
-3. **Using PackageReference in .csproj:**
-   ```xml
-   <PackageReference Include="CircuitTool" Version="2.0.0" />
-   ```
+### ⚡ Intermediate Level
 
-## Basic Usage Examples
+#### 4. [AC Circuit Analysis](ac-analysis.md)
+- **Duration**: 75 minutes
+- **Topics**: Impedance, Reactance, Frequency response, Resonance
+- **Prerequisites**: Circuit analysis basics
+- **Outcome**: Master AC circuit calculations
 
-### 1. Ohm's Law Calculations
+#### 5. [Filter Design & Analysis](filters.md)
+- **Duration**: 60 minutes
+- **Topics**: Low-pass, High-pass, Band-pass filters
+- **Prerequisites**: AC circuit analysis
+- **Outcome**: Design practical filter circuits
 
-```csharp
-using CircuitTool;
+#### 6. [Power System Analysis](power-systems.md)
+- **Duration**: 90 minutes
+- **Topics**: Efficiency, Regulation, Transformers, Power factor
+- **Prerequisites**: AC analysis
+- **Outcome**: Analyze power distribution systems
 
-// Calculate voltage when current and resistance are known
-double voltage = OhmsLawCalculator.CalculateVoltage(current: 2.5, resistance: 100.0);
-Console.WriteLine($"Voltage: {voltage}V"); // Output: 250V
+### 🚀 Advanced Level
 
-// Calculate current when voltage and resistance are known
-double current = OhmsLawCalculator.CalculateCurrent(voltage: 12.0, resistance: 1000.0);
-Console.WriteLine($"Current: {current}A"); // Output: 0.012A
+#### 7. [Signal Integrity & EMC](signal-integrity.md)
+- **Duration**: 120 minutes
+- **Topics**: Transmission lines, Crosstalk, EMC compliance
+- **Prerequisites**: Filter design
+- **Outcome**: Design high-speed digital systems
 
-// Calculate resistance when voltage and current are known
-double resistance = OhmsLawCalculator.CalculateResistance(voltage: 5.0, current: 0.1);
-Console.WriteLine($"Resistance: {resistance}Ω"); // Output: 50Ω
-```
+#### 8. [Thermal Management](thermal-analysis.md)
+- **Duration**: 90 minutes
+- **Topics**: Heat transfer, Junction temperature, Thermal resistance
+- **Prerequisites**: Power systems
+- **Outcome**: Design thermal management solutions
 
-### 2. Power Calculations
+#### 9. [Performance Optimization](performance.md)
+- **Duration**: 75 minutes
+- **Topics**: Vectorization, Caching, Batch processing
+- **Prerequisites**: Basic programming knowledge
+- **Outcome**: Optimize calculation performance
+
+---
+
+**Ready to start learning?** Begin with the [Fundamentals of Electrical Calculations](fundamentals.md) tutorial!
 
 ```csharp
 // Power using voltage and current

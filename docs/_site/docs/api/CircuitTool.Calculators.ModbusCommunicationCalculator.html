@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModbusCommunicationCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModbusCommunicationCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Calculator for Modbus communication parameters and frame analysis">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Calculators_ModbusCommunicationCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.Calculators.ModbusCommunicationCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator">
+
+
+
+  <h1 id="CircuitTool_Calculators_ModbusCommunicationCalculator" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator" class="text-break">
+Class ModbusCommunicationCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.Calculators.html">Calculators</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Calculator for Modbus communication parameters and frame analysis</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ModbusCommunicationCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ModbusCommunicationCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_AnalyzeNetwork_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.AnalyzeNetwork*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_AnalyzeNetwork_System_Collections_Generic_List_CircuitTool_Calculators_ModbusDevice__System_Int32_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.AnalyzeNetwork(System.Collections.Generic.List{CircuitTool.Calculators.ModbusDevice},System.Int32)">
+  AnalyzeNetwork(List&lt;ModbusDevice&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate network loading analysis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModbusNetworkAnalysis AnalyzeNetwork(List&lt;ModbusDevice&gt; devices, int baudRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>devices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CircuitTool.Calculators.ModbusDevice.html">ModbusDevice</a>&gt;</dt>
+    <dd><p>List of Modbus devices</p>
+</dd>
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Network baud rate</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CircuitTool.Calculators.ModbusNetworkAnalysis.html">ModbusNetworkAnalysis</a></dt>
+    <dd><p>Network analysis results</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCRC16_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCRC16*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCRC16_System_Byte___" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCRC16(System.Byte[])">
+  CalculateCRC16(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate CRC16 for Modbus RTU</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ushort CalculateCRC16(byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data bytes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>CRC16 value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCharacterTime_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCharacterTime*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCharacterTime_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCharacterTime(System.Int32,System.Int32,System.Int32,System.Boolean)">
+  CalculateCharacterTime(int, int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate character time for given baud rate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateCharacterTime(int baudRate, int dataBits = 8, int stopBits = 1, bool parity = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Baud rate in bps</p>
+</dd>
+    <dt><code>dataBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of data bits (typically 8)</p>
+</dd>
+    <dt><code>stopBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of stop bits (1 or 2)</p>
+</dd>
+    <dt><code>parity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether parity bit is used</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Character time in microseconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCharacterTimeout_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCharacterTimeout*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateCharacterTimeout_System_Int32_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateCharacterTimeout(System.Int32)">
+  CalculateCharacterTimeout(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate character timeout (1.5 character times)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateCharacterTimeout(int baudRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Baud rate in bps</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Character timeout in microseconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateFrameTimeout_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateFrameTimeout*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateFrameTimeout_System_Int32_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateFrameTimeout(System.Int32)">
+  CalculateFrameTimeout(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate frame timeout (3.5 character times)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateFrameTimeout(int baudRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Baud rate in bps</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frame timeout in microseconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateLRC_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateLRC*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateLRC_System_Byte___" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateLRC(System.Byte[])">
+  CalculateLRC(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate LRC (Longitudinal Redundancy Check) for Modbus ASCII</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte CalculateLRC(byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data bytes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>LRC value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateMaxThroughput_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateMaxThroughput*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateMaxThroughput_System_Int32_System_Int32_System_Double_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateMaxThroughput(System.Int32,System.Int32,System.Double)">
+  CalculateMaxThroughput(int, int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate maximum theoretical throughput</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateMaxThroughput(int frameLength, int baudRate, double responseTime = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frameLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Average frame length in bytes</p>
+</dd>
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Baud rate in bps</p>
+</dd>
+    <dt><code>responseTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Device response time in milliseconds</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum frames per second</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateRS485Power_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateRS485Power*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateRS485Power_System_Int32_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateRS485Power(System.Int32,System.Double,System.Double,System.Double,System.Double)">
+  CalculateRS485Power(int, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate power consumption for RS485 network</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateRS485Power(int deviceCount, double transmitCurrent, double receiveCurrent, double dutyCycle, double voltage = 5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deviceCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of devices on network</p>
+</dd>
+    <dt><code>transmitCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmit current per device (mA)</p>
+</dd>
+    <dt><code>receiveCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Receive current per device (mA)</p>
+</dd>
+    <dt><code>dutyCycle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmission duty cycle (0-1)</p>
+</dd>
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply voltage (V)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total network power consumption (mW)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateTransmissionTime_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateTransmissionTime*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_CalculateTransmissionTime_System_Int32_System_Int32_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.CalculateTransmissionTime(System.Int32,System.Int32)">
+  CalculateTransmissionTime(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate total frame transmission time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateTransmissionTime(int frameLength, int baudRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frameLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Frame length in bytes</p>
+</dd>
+    <dt><code>baudRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Baud rate in bps</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmission time in milliseconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_ConvertAddress_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.ConvertAddress*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_ConvertAddress_System_Int32_CircuitTool_Calculators_ModbusAddressFormat_CircuitTool_Calculators_ModbusAddressFormat_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.ConvertAddress(System.Int32,CircuitTool.Calculators.ModbusAddressFormat,CircuitTool.Calculators.ModbusAddressFormat)">
+  ConvertAddress(int, ModbusAddressFormat, ModbusAddressFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert between different Modbus address formats</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ConvertAddress(int address, ModbusAddressFormat fromFormat, ModbusAddressFormat toFormat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Input address</p>
+</dd>
+    <dt><code>fromFormat</code> <a class="xref" href="CircuitTool.Calculators.ModbusAddressFormat.html">ModbusAddressFormat</a></dt>
+    <dd><p>Source format</p>
+</dd>
+    <dt><code>toFormat</code> <a class="xref" href="CircuitTool.Calculators.ModbusAddressFormat.html">ModbusAddressFormat</a></dt>
+    <dd><p>Target format</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Converted address</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Calculators_ModbusCommunicationCalculator_GetRegisterCount_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.GetRegisterCount*"></a>
+
+  <h3 id="CircuitTool_Calculators_ModbusCommunicationCalculator_GetRegisterCount_CircuitTool_Calculators_ModbusDataType_" data-uid="CircuitTool.Calculators.ModbusCommunicationCalculator.GetRegisterCount(CircuitTool.Calculators.ModbusDataType)">
+  GetRegisterCount(ModbusDataType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate register count needed for data type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetRegisterCount(ModbusDataType dataType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataType</code> <a class="xref" href="CircuitTool.Calculators.ModbusDataType.html">ModbusDataType</a></dt>
+    <dd><p>Data type</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of 16-bit registers required</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/ModbusCommunicationCalculator.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

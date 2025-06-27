@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>1-Wire Protocol Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="1-Wire Protocol Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/1wire-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="1-wire-protocol-guide">1-Wire Protocol Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The 1-Wire protocol is a device communications bus system designed by Dallas Semiconductor (now part of Analog Devices) that provides low-speed data, signaling, and power over a single conductor. It's widely used for temperature sensors, memory devices, and other simple peripheral devices.</p>
+<h2 id="protocol-overview">Protocol Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Single data line</strong>: Data, power, and ground on one wire</li>
+<li><strong>Parasitic power</strong>: Devices can be powered from the data line</li>
+<li><strong>Unique 64-bit addressing</strong>: Each device has a unique ROM code</li>
+<li><strong>Multi-drop capability</strong>: Multiple devices on one bus</li>
+<li><strong>Master-slave architecture</strong>: One master controls all communication</li>
+<li><strong>Distance capability</strong>: Up to 100 meters with proper drivers</li>
+</ul>
+<h3 id="electrical-characteristics">Electrical Characteristics</h3>
+<ul>
+<li><strong>Voltage Levels</strong>: 0V (logic 0), 5V (logic 1)</li>
+<li><strong>Pull-up resistor</strong>: 4.7kΩ typical</li>
+<li><strong>Open-drain outputs</strong>: Devices pull line low</li>
+<li><strong>Parasitic power</strong>: 5.5V stored in internal capacitor</li>
+</ul>
+<h2 id="1-wire-timing">1-Wire Timing</h2>
+<h3 id="time-slots">Time Slots</h3>
+<p>All 1-Wire communication occurs in 60-90μs time slots:</p>
+<h4 id="write-1-time-slot">Write 1 Time Slot</h4>
+<pre><code>Master pulls line low for 1-15μs, then releases
+___     ___________
+   |___|           (60-120μs total)
+   1-15μs
+</code></pre>
+<h4 id="write-0-time-slot">Write 0 Time Slot</h4>
+<pre><code>Master pulls line low for 60-120μs
+___________________
+                   |___
+   60-120μs
+</code></pre>
+<h4 id="read-time-slot">Read Time Slot</h4>
+<pre><code>Master pulls line low for 1-15μs, then samples line
+___     ___________
+   |___|           Sample at 15μs
+   1-15μs
+</code></pre>
+<h3 id="reset-and-presence-detection">Reset and Presence Detection</h3>
+<pre><code>Reset Pulse (480-960μs):
+____________________                    ________
+                    |__________________|
+                    480-960μs    15-60μs
+                              Presence Pulse
+</code></pre>
+<h2 id="device-addressing">Device Addressing</h2>
+<h3 id="64-bit-rom-code-structure">64-bit ROM Code Structure</h3>
+<pre><code>[8-bit Family Code][48-bit Serial Number][8-bit CRC]
+</code></pre>
+<p>Example: 28-12A4B6C8D9E0-A1</p>
+<ul>
+<li><strong>28</strong>: DS18B20 temperature sensor family code</li>
+<li><strong>12A4B6C8D9E0</strong>: Unique serial number</li>
+<li><strong>A1</strong>: CRC checksum</li>
+</ul>
+<h3 id="common-family-codes">Common Family Codes</h3>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Device Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>DS2401 Serial Number</td>
+</tr>
+<tr>
+<td>10</td>
+<td>DS18S20 Temperature</td>
+</tr>
+<tr>
+<td>12</td>
+<td>DS2406 Dual Switch</td>
+</tr>
+<tr>
+<td>23</td>
+<td>DS2433 EEPROM</td>
+</tr>
+<tr>
+<td>28</td>
+<td>DS18B20 Temperature</td>
+</tr>
+<tr>
+<td>3A</td>
+<td>DS2413 Dual Switch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="programming-examples">Programming Examples</h2>
+<h3 id="basic-1-wire-arduino-library">Basic 1-Wire Arduino Library</h3>
+<pre><code class="lang-cpp">#include &lt;OneWire.h&gt;
+
+// 1-Wire bus connected to digital pin 2
+OneWire ds(2);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(&quot;1-Wire Device Scanner&quot;);
+}
+
+void loop() {
+  byte addr[8];
+  
+  Serial.println(&quot;Searching for 1-Wire devices...&quot;);
+  
+  while (ds.search(addr)) {
+    Serial.print(&quot;Found device: &quot;);
+    printAddress(addr);
+    
+    if (OneWire::crc8(addr, 7) != addr[7]) {
+      Serial.println(&quot;CRC is not valid!&quot;);
+      continue;
+    }
+    
+    // Identify device type
+    switch (addr[0]) {
+      case 0x28:
+        Serial.println(&quot;DS18B20 Temperature Sensor&quot;);
+        readDS18B20(addr);
+        break;
+      case 0x10:
+        Serial.println(&quot;DS18S20 Temperature Sensor&quot;);
+        break;
+      case 0x23:
+        Serial.println(&quot;DS2433 EEPROM&quot;);
+        break;
+      default:
+        Serial.println(&quot;Unknown device&quot;);
+        break;
+    }
+    Serial.println();
+  }
+  
+  ds.reset_search();
+  delay(5000);
+}
+
+void printAddress(byte addr[8]) {
+  for (int i = 0; i &lt; 8; i++) {
+    if (addr[i] &lt; 16) Serial.print(&quot;0&quot;);
+    Serial.print(addr[i], HEX);
+    if (i &lt; 7) Serial.print(&quot;-&quot;);
+  }
+  Serial.println();
+}
+
+void readDS18B20(byte addr[8]) {
+  byte data[12];
+  
+  // Start temperature conversion
+  ds.reset();
+  ds.select(addr);
+  ds.write(0x44); // Start conversion command
+  
+  delay(1000); // Wait for conversion (750ms max)
+  
+  // Read scratchpad
+  ds.reset();
+  ds.select(addr);
+  ds.write(0xBE); // Read scratchpad command
+  
+  for (int i = 0; i &lt; 9; i++) {
+    data[i] = ds.read();
+  }
+  
+  // Verify CRC
+  if (OneWire::crc8(data, 8) != data[8]) {
+    Serial.println(&quot;CRC error in temperature reading&quot;);
+    return;
+  }
+  
+  // Convert temperature
+  int16_t raw = (data[1] &lt;&lt; 8) | data[0];
+  float celsius = (float)raw / 16.0;
+  
+  Serial.print(&quot;Temperature: &quot;);
+  Serial.print(celsius);
+  Serial.println(&quot;°C&quot;);
+}
+</code></pre>
+<h3 id="advanced-temperature-sensor-array">Advanced Temperature Sensor Array</h3>
+<pre><code class="lang-cpp">#include &lt;OneWire.h&gt;
+#include &lt;DallasTemperature.h&gt;
+
+#define ONE_WIRE_BUS 2
+#define TEMPERATURE_PRECISION 12
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&amp;oneWire);
+
+struct TemperatureSensor {
+  DeviceAddress address;
+  String name;
+  float lastTemperature;
+  bool isConnected;
+};
+
+class TemperatureArray {
+private:
+  TemperatureSensor sensorArray[10];
+  int sensorCount = 0;
+  
+public:
+  void begin() {
+    sensors.begin();
+    
+    Serial.print(&quot;Found &quot;);
+    Serial.print(sensors.getDeviceCount());
+    Serial.println(&quot; temperature sensors&quot;);
+    
+    // Discover and register sensors
+    DeviceAddress tempAddr;
+    for (int i = 0; i &lt; sensors.getDeviceCount(); i++) {
+      if (sensors.getAddress(tempAddr, i)) {
+        addSensor(tempAddr, &quot;Sensor_&quot; + String(i + 1));
+      }
+    }
+    
+    // Set precision for all sensors
+    for (int i = 0; i &lt; sensorCount; i++) {
+      sensors.setResolution(sensorArray[i].address, TEMPERATURE_PRECISION);
+    }
+  }
+  
+  void addSensor(DeviceAddress addr, String name) {
+    if (sensorCount &lt; 10) {
+      memcpy(sensorArray[sensorCount].address, addr, 8);
+      sensorArray[sensorCount].name = name;
+      sensorArray[sensorCount].isConnected = true;
+      sensorCount++;
+      
+      Serial.print(&quot;Added sensor: &quot;);
+      Serial.print(name);
+      Serial.print(&quot; Address: &quot;);
+      printAddress(addr);
+    }
+  }
+  
+  void readAllSensors() {
+    sensors.requestTemperatures(); // Send command to all sensors
+    
+    Serial.println(&quot;=== Temperature Readings ===&quot;);
+    for (int i = 0; i &lt; sensorCount; i++) {
+      float temp = sensors.getTempC(sensorArray[i].address);
+      
+      if (temp == DEVICE_DISCONNECTED_C) {
+        Serial.print(sensorArray[i].name);
+        Serial.println(&quot;: DISCONNECTED&quot;);
+        sensorArray[i].isConnected = false;
+      } else {
+        sensorArray[i].lastTemperature = temp;
+        sensorArray[i].isConnected = true;
+        
+        Serial.print(sensorArray[i].name);
+        Serial.print(&quot;: &quot;);
+        Serial.print(temp, 2);
+        Serial.println(&quot;°C&quot;);
+      }
+    }
+    Serial.println();
+  }
+  
+  float getTemperature(int index) {
+    if (index &gt;= 0 &amp;&amp; index &lt; sensorCount &amp;&amp; sensorArray[index].isConnected) {
+      return sensorArray[index].lastTemperature;
+    }
+    return DEVICE_DISCONNECTED_C;
+  }
+  
+  bool isSensorConnected(int index) {
+    return (index &gt;= 0 &amp;&amp; index &lt; sensorCount &amp;&amp; sensorArray[index].isConnected);
+  }
+  
+  void printSensorInfo() {
+    Serial.println(&quot;=== Sensor Information ===&quot;);
+    for (int i = 0; i &lt; sensorCount; i++) {
+      Serial.print(&quot;Index: &quot;); Serial.println(i);
+      Serial.print(&quot;Name: &quot;); Serial.println(sensorArray[i].name);
+      Serial.print(&quot;Address: &quot;); printAddress(sensorArray[i].address);
+      Serial.print(&quot;Resolution: &quot;); 
+      Serial.print(sensors.getResolution(sensorArray[i].address));
+      Serial.println(&quot; bits&quot;);
+      Serial.print(&quot;Status: &quot;);
+      Serial.println(sensorArray[i].isConnected ? &quot;Connected&quot; : &quot;Disconnected&quot;);
+      Serial.println();
+    }
+  }
+  
+private:
+  void printAddress(DeviceAddress addr) {
+    for (int i = 0; i &lt; 8; i++) {
+      if (addr[i] &lt; 16) Serial.print(&quot;0&quot;);
+      Serial.print(addr[i], HEX);
+      if (i &lt; 7) Serial.print(&quot;:&quot;);
+    }
+    Serial.println();
+  }
+};
+
+TemperatureArray tempArray;
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(&quot;Advanced 1-Wire Temperature Array&quot;);
+  
+  tempArray.begin();
+  tempArray.printSensorInfo();
+}
+
+void loop() {
+  tempArray.readAllSensors();
+  
+  // Example of using individual sensor data
+  for (int i = 0; i &lt; 5; i++) {
+    if (tempArray.isSensorConnected(i)) {
+      float temp = tempArray.getTemperature(i);
+      
+      // Temperature threshold checking
+      if (temp &gt; 30.0) {
+        Serial.print(&quot;WARNING: Sensor &quot;);
+        Serial.print(i);
+        Serial.print(&quot; temperature high: &quot;);
+        Serial.println(temp);
+      }
+    }
+  }
+  
+  delay(5000);
+}
+</code></pre>
+<h3 id="1-wire-eeprom-interface">1-Wire EEPROM Interface</h3>
+<pre><code class="lang-cpp">class OneWireEEPROM {
+private:
+  OneWire* wire;
+  byte address[8];
+  
+public:
+  OneWireEEPROM(OneWire* ow, byte addr[8]) {
+    wire = ow;
+    memcpy(address, addr, 8);
+  }
+  
+  bool writeByte(uint16_t memAddr, byte data) {
+    if (!wire-&gt;reset()) return false;
+    
+    wire-&gt;select(address);
+    wire-&gt;write(0x0F); // Write scratchpad command
+    wire-&gt;write(memAddr &amp; 0xFF); // Address low
+    wire-&gt;write((memAddr &gt;&gt; 8) &amp; 0xFF); // Address high
+    wire-&gt;write(data); // Data byte
+    
+    // Read CRC
+    uint16_t crc = wire-&gt;read() | (wire-&gt;read() &lt;&lt; 8);
+    
+    if (!verifyCRC16(memAddr, data, crc)) {
+      return false;
+    }
+    
+    // Copy scratchpad to EEPROM
+    if (!wire-&gt;reset()) return false;
+    
+    wire-&gt;select(address);
+    wire-&gt;write(0x55); // Copy scratchpad command
+    wire-&gt;write(memAddr &amp; 0xFF);
+    wire-&gt;write((memAddr &gt;&gt; 8) &amp; 0xFF);
+    wire-&gt;write(0x1F); // Authorization code
+    
+    // Wait for copy completion
+    delay(10);
+    
+    return true;
+  }
+  
+  byte readByte(uint16_t memAddr) {
+    if (!wire-&gt;reset()) return 0xFF;
+    
+    wire-&gt;select(address);
+    wire-&gt;write(0xF0); // Read memory command
+    wire-&gt;write(memAddr &amp; 0xFF); // Address low
+    wire-&gt;write((memAddr &gt;&gt; 8) &amp; 0xFF); // Address high
+    
+    return wire-&gt;read();
+  }
+  
+  bool writeBlock(uint16_t startAddr, byte* data, int length) {
+    for (int i = 0; i &lt; length; i++) {
+      if (!writeByte(startAddr + i, data[i])) {
+        return false;
+      }
+      delay(5); // Allow EEPROM write time
+    }
+    return true;
+  }
+  
+  bool readBlock(uint16_t startAddr, byte* buffer, int length) {
+    if (!wire-&gt;reset()) return false;
+    
+    wire-&gt;select(address);
+    wire-&gt;write(0xF0); // Read memory command
+    wire-&gt;write(startAddr &amp; 0xFF);
+    wire-&gt;write((startAddr &gt;&gt; 8) &amp; 0xFF);
+    
+    for (int i = 0; i &lt; length; i++) {
+      buffer[i] = wire-&gt;read();
+    }
+    
+    return true;
+  }
+  
+private:
+  bool verifyCRC16(uint16_t addr, byte data, uint16_t receivedCRC) {
+    // Simplified CRC16 verification
+    // In practice, implement full CRC16 calculation
+    return true; // Placeholder
+  }
+};
+
+// Usage example
+void eepromExample() {
+  OneWire ds(2);
+  byte eepromAddr[8] = {0x23, 0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE};
+  
+  OneWireEEPROM eeprom(&amp;ds, eepromAddr);
+  
+  // Write some data
+  String message = &quot;Hello 1-Wire!&quot;;
+  eeprom.writeBlock(0, (byte*)message.c_str(), message.length());
+  
+  // Read it back
+  byte buffer[20];
+  eeprom.readBlock(0, buffer, message.length());
+  buffer[message.length()] = 0; // Null terminate
+  
+  Serial.print(&quot;Read from EEPROM: &quot;);
+  Serial.println((char*)buffer);
+}
+</code></pre>
+<h2 id="custom-1-wire-device-implementation">Custom 1-Wire Device Implementation</h2>
+<h3 id="software-1-wire-master">Software 1-Wire Master</h3>
+<pre><code class="lang-cpp">class SoftwareOneWire {
+private:
+  int pin;
+  
+public:
+  SoftwareOneWire(int dataPin) : pin(dataPin) {
+    pinMode(pin, INPUT_PULLUP);
+  }
+  
+  bool reset() {
+    // Pull line low for reset pulse
+    pinMode(pin, OUTPUT);
+    digitalWrite(pin, LOW);
+    delayMicroseconds(480);
+    
+    // Release line and wait for presence pulse
+    pinMode(pin, INPUT_PULLUP);
+    delayMicroseconds(70);
+    
+    bool presence = !digitalRead(pin);
+    delayMicroseconds(410);
+    
+    return presence;
+  }
+  
+  void writeBit(bool bit) {
+    pinMode(pin, OUTPUT);
+    digitalWrite(pin, LOW);
+    
+    if (bit) {
+      delayMicroseconds(6);
+      pinMode(pin, INPUT_PULLUP);
+      delayMicroseconds(64);
+    } else {
+      delayMicroseconds(60);
+      pinMode(pin, INPUT_PULLUP);
+      delayMicroseconds(10);
+    }
+  }
+  
+  bool readBit() {
+    pinMode(pin, OUTPUT);
+    digitalWrite(pin, LOW);
+    delayMicroseconds(6);
+    
+    pinMode(pin, INPUT_PULLUP);
+    delayMicroseconds(9);
+    
+    bool bit = digitalRead(pin);
+    delayMicroseconds(55);
+    
+    return bit;
+  }
+  
+  void writeByte(byte data) {
+    for (int i = 0; i &lt; 8; i++) {
+      writeBit(data &amp; 1);
+      data &gt;&gt;= 1;
+    }
+  }
+  
+  byte readByte() {
+    byte result = 0;
+    
+    for (int i = 0; i &lt; 8; i++) {
+      result &gt;&gt;= 1;
+      if (readBit()) {
+        result |= 0x80;
+      }
+    }
+    
+    return result;
+  }
+  
+  void select(byte addr[8]) {
+    writeByte(0x55); // Match ROM command
+    for (int i = 0; i &lt; 8; i++) {
+      writeByte(addr[i]);
+    }
+  }
+  
+  void skip() {
+    writeByte(0xCC); // Skip ROM command
+  }
+  
+  bool search(byte addr[8]) {
+    // Implement ROM search algorithm
+    // This is a simplified version
+    static byte lastAddr[8] = {0};
+    static int lastDiscrepancy = 0;
+    
+    // ROM search implementation would go here
+    // Returns true if device found, false if search complete
+    
+    return false; // Placeholder
+  }
+};
+</code></pre>
+<h2 id="power-management-and-parasitic-power">Power Management and Parasitic Power</h2>
+<h3 id="parasitic-power-configuration">Parasitic Power Configuration</h3>
+<pre><code class="lang-cpp">class ParasiticPowerManager {
+private:
+  int dataPin;
+  int powerPin; // Optional strong pull-up pin
+  
+public:
+  ParasiticPowerManager(int data, int power = -1) 
+    : dataPin(data), powerPin(power) {
+    pinMode(dataPin, INPUT_PULLUP);
+    if (powerPin &gt;= 0) {
+      pinMode(powerPin, OUTPUT);
+      digitalWrite(powerPin, LOW);
+    }
+  }
+  
+  void enableStrongPullup() {
+    if (powerPin &gt;= 0) {
+      digitalWrite(powerPin, HIGH);
+    }
+  }
+  
+  void disableStrongPullup() {
+    if (powerPin &gt;= 0) {
+      digitalWrite(powerPin, LOW);
+    }
+  }
+  
+  void performConversion() {
+    OneWire ds(dataPin);
+    
+    // Start conversion on all sensors
+    ds.reset();
+    ds.skip();
+    ds.write(0x44); // Convert T command
+    
+    // Enable strong pull-up for parasitic power
+    enableStrongPullup();
+    
+    // Wait for conversion (750ms max for 12-bit)
+    delay(750);
+    
+    // Disable strong pull-up
+    disableStrongPullup();
+  }
+  
+  bool checkPowerSupply(byte addr[8]) {
+    OneWire ds(dataPin);
+    
+    ds.reset();
+    ds.select(addr);
+    ds.write(0xB4); // Read power supply command
+    
+    return ds.read_bit(); // 1 = external power, 0 = parasitic
+  }
+};
+</code></pre>
+<h2 id="troubleshooting-and-diagnostics">Troubleshooting and Diagnostics</h2>
+<h3 id="1-wire-bus-diagnostics">1-Wire Bus Diagnostics</h3>
+<pre><code class="lang-cpp">class OneWireDiagnostics {
+private:
+  OneWire* wire;
+  
+public:
+  OneWireDiagnostics(OneWire* ow) : wire(ow) {}
+  
+  void runDiagnostics() {
+    Serial.println(&quot;=== 1-Wire Bus Diagnostics ===&quot;);
+    
+    // Test bus presence
+    if (wire-&gt;reset()) {
+      Serial.println(&quot;✓ Bus presence detected&quot;);
+    } else {
+      Serial.println(&quot;✗ No devices detected on bus&quot;);
+      Serial.println(&quot;  Check connections and pull-up resistor&quot;);
+      return;
+    }
+    
+    // Count devices
+    int deviceCount = countDevices();
+    Serial.print(&quot;Device count: &quot;);
+    Serial.println(deviceCount);
+    
+    // Check for shorts
+    checkForShorts();
+    
+    // Test timing
+    testTiming();
+    
+    // Power supply test
+    testPowerSupply();
+  }
+  
+private:
+  int countDevices() {
+    int count = 0;
+    byte addr[8];
+    
+    wire-&gt;reset_search();
+    while (wire-&gt;search(addr)) {
+      count++;
+    }
+    
+    return count;
+  }
+  
+  void checkForShorts() {
+    // Pull line low and check if it stays low
+    pinMode(2, OUTPUT); // Assuming pin 2
+    digitalWrite(2, LOW);
+    delayMicroseconds(100);
+    pinMode(2, INPUT);
+    
+    if (digitalRead(2) == LOW) {
+      Serial.println(&quot;✗ Possible short circuit detected&quot;);
+    } else {
+      Serial.println(&quot;✓ No short circuit detected&quot;);
+    }
+  }
+  
+  void testTiming() {
+    unsigned long start = micros();
+    wire-&gt;reset();
+    unsigned long resetTime = micros() - start;
+    
+    Serial.print(&quot;Reset pulse timing: &quot;);
+    Serial.print(resetTime);
+    Serial.println(&quot; μs&quot;);
+    
+    if (resetTime &lt; 480 || resetTime &gt; 960) {
+      Serial.println(&quot;⚠ Reset timing may be incorrect&quot;);
+    }
+  }
+  
+  void testPowerSupply() {
+    byte addr[8];
+    
+    wire-&gt;reset_search();
+    while (wire-&gt;search(addr)) {
+      if (addr[0] == 0x28) { // DS18B20
+        wire-&gt;reset();
+        wire-&gt;select(addr);
+        wire-&gt;write(0xB4); // Read power supply
+        
+        bool externalPower = wire-&gt;read_bit();
+        Serial.print(&quot;Device &quot;);
+        printAddress(addr);
+        Serial.print(&quot; power: &quot;);
+        Serial.println(externalPower ? &quot;External&quot; : &quot;Parasitic&quot;);
+      }
+    }
+  }
+  
+  void printAddress(byte addr[8]) {
+    for (int i = 0; i &lt; 8; i++) {
+      if (addr[i] &lt; 16) Serial.print(&quot;0&quot;);
+      Serial.print(addr[i], HEX);
+    }
+  }
+};
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="network-design-guidelines">Network Design Guidelines</h3>
+<ol>
+<li><strong>Bus Length</strong>: Keep total bus length under 300m for reliable operation</li>
+<li><strong>Branch Length</strong>: Limit individual branches to 25m</li>
+<li><strong>Pull-up Resistor</strong>: Use 4.7kΩ for short networks, 2.2kΩ for longer ones</li>
+<li><strong>Cable Type</strong>: Use twisted pair cable for noise immunity</li>
+<li><strong>Star vs. Linear</strong>: Linear topology preferred over star configuration</li>
+</ol>
+<h3 id="software-implementation">Software Implementation</h3>
+<ol>
+<li><strong>Error Handling</strong>: Always check CRC and implement retry logic</li>
+<li><strong>Timing Critical</strong>: Use hardware timers for precise timing</li>
+<li><strong>Parasitic Power</strong>: Allow extra time for capacitor charging</li>
+<li><strong>Device Management</strong>: Maintain device list and monitor connectivity</li>
+<li><strong>Temperature Sensors</strong>: Account for conversion time based on resolution</li>
+</ol>
+<h3 id="common-issues-and-solutions">Common Issues and Solutions</h3>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Symptoms</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No devices found</td>
+<td>Search returns no results</td>
+<td>Check wiring, pull-up resistor</td>
+</tr>
+<tr>
+<td>CRC errors</td>
+<td>Intermittent read failures</td>
+<td>Improve wiring, add filtering</td>
+</tr>
+<tr>
+<td>Timing issues</td>
+<td>Unreliable communication</td>
+<td>Use hardware timers, check CPU load</td>
+</tr>
+<tr>
+<td>Power problems</td>
+<td>Devices drop out</td>
+<td>Verify power supply, use strong pull-up</td>
+</tr>
+<tr>
+<td>Long bus issues</td>
+<td>Communication fails</td>
+<td>Use active drivers, reduce capacitance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-applications">Advanced Applications</h2>
+<h3 id="multi-zone-temperature-monitoring">Multi-Zone Temperature Monitoring</h3>
+<pre><code class="lang-cpp">struct ThermalZone {
+  String name;
+  byte sensorAddresses[5][8];
+  int sensorCount;
+  float targetTemp;
+  float tolerance;
+  bool heatingEnabled;
+  bool coolingEnabled;
+};
+
+class ThermalController {
+private:
+  OneWire wire;
+  ThermalZone zones[4];
+  int zoneCount = 0;
+  
+public:
+  void addZone(String name, float target, float tol) {
+    if (zoneCount &lt; 4) {
+      zones[zoneCount].name = name;
+      zones[zoneCount].targetTemp = target;
+      zones[zoneCount].tolerance = tol;
+      zones[zoneCount].sensorCount = 0;
+      zoneCount++;
+    }
+  }
+  
+  void controlTemperature() {
+    for (int z = 0; z &lt; zoneCount; z++) {
+      float avgTemp = getZoneTemperature(z);
+      
+      if (avgTemp &lt; zones[z].targetTemp - zones[z].tolerance) {
+        // Enable heating
+        zones[z].heatingEnabled = true;
+        zones[z].coolingEnabled = false;
+      } else if (avgTemp &gt; zones[z].targetTemp + zones[z].tolerance) {
+        // Enable cooling
+        zones[z].heatingEnabled = false;
+        zones[z].coolingEnabled = true;
+      } else {
+        // Temperature OK
+        zones[z].heatingEnabled = false;
+        zones[z].coolingEnabled = false;
+      }
+    }
+  }
+  
+private:
+  float getZoneTemperature(int zone) {
+    float total = 0;
+    int validReadings = 0;
+    
+    for (int s = 0; s &lt; zones[zone].sensorCount; s++) {
+      float temp = readTemperature(zones[zone].sensorAddresses[s]);
+      if (temp != DEVICE_DISCONNECTED_C) {
+        total += temp;
+        validReadings++;
+      }
+    }
+    
+    return validReadings &gt; 0 ? total / validReadings : 0;
+  }
+  
+  float readTemperature(byte addr[8]) {
+    // Implementation similar to previous examples
+    return 25.0; // Placeholder
+  }
+};
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/1wire-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

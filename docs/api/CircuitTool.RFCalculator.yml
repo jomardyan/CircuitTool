@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.RFCalculator
+  commentId: T:CircuitTool.RFCalculator
+  id: RFCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.RFCalculator.CharacteristicImpedance(System.Double,System.Double)
+  - CircuitTool.RFCalculator.Frequency(System.Double)
+  - CircuitTool.RFCalculator.PathLoss(System.Double,System.Double)
+  - CircuitTool.RFCalculator.ReflectionCoefficient(System.Double)
+  - CircuitTool.RFCalculator.ReturnLoss(System.Double)
+  - CircuitTool.RFCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  - CircuitTool.RFCalculator.VSWR(System.Double)
+  - CircuitTool.RFCalculator.Wavelength(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: RFCalculator
+  nameWithType: RFCalculator
+  fullName: CircuitTool.RFCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RFCalculator
+    path: src/Calculators/RFCalculator.cs
+    startLine: 16
+  namespace: CircuitTool
+  summary: Provides calculations for RF (Radio Frequency) and microwave circuit design.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double wavelength = RFCalculator.Wavelength(2.4e9); // 0.125m for 2.4 GHz
+
+    double vswr = RFCalculator.VSWR(0.5); // VSWR from reflection coefficient
+
+    double rl = RFCalculator.ReturnLoss(2.0); // Return loss from VSWR
+
+    double pl = RFCalculator.PathLoss(2.4e9, 100); // Free space path loss</code></pre>
+  example: []
+  syntax:
+    content: public static class RFCalculator
+    content.vb: Public Module RFCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.RFCalculator.Wavelength(System.Double)
+  commentId: M:CircuitTool.RFCalculator.Wavelength(System.Double)
+  id: Wavelength(System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: Wavelength(double)
+  nameWithType: RFCalculator.Wavelength(double)
+  fullName: CircuitTool.RFCalculator.Wavelength(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Wavelength
+    path: src/Calculators/RFCalculator.cs
+    startLine: 28
+  namespace: CircuitTool
+  summary: Calculates wavelength from frequency using λ = c/f.
+  example:
+  - double wavelength = RFCalculator.Wavelength(2.4e9); // 0.125m for 2.4 GHz
+  syntax:
+    content: public static double Wavelength(double frequency)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    return:
+      type: System.Double
+      description: Wavelength in meters (m).
+    content.vb: Public Shared Function Wavelength(frequency As Double) As Double
+  overload: CircuitTool.RFCalculator.Wavelength*
+  nameWithType.vb: RFCalculator.Wavelength(Double)
+  fullName.vb: CircuitTool.RFCalculator.Wavelength(Double)
+  name.vb: Wavelength(Double)
+- uid: CircuitTool.RFCalculator.Frequency(System.Double)
+  commentId: M:CircuitTool.RFCalculator.Frequency(System.Double)
+  id: Frequency(System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: Frequency(double)
+  nameWithType: RFCalculator.Frequency(double)
+  fullName: CircuitTool.RFCalculator.Frequency(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Frequency
+    path: src/Calculators/RFCalculator.cs
+    startLine: 40
+  namespace: CircuitTool
+  summary: Calculates frequency from wavelength using f = c/λ.
+  example: []
+  syntax:
+    content: public static double Frequency(double wavelength)
+    parameters:
+    - id: wavelength
+      type: System.Double
+      description: Wavelength in meters (m).
+    return:
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    content.vb: Public Shared Function Frequency(wavelength As Double) As Double
+  overload: CircuitTool.RFCalculator.Frequency*
+  nameWithType.vb: RFCalculator.Frequency(Double)
+  fullName.vb: CircuitTool.RFCalculator.Frequency(Double)
+  name.vb: Frequency(Double)
+- uid: CircuitTool.RFCalculator.VSWR(System.Double)
+  commentId: M:CircuitTool.RFCalculator.VSWR(System.Double)
+  id: VSWR(System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: VSWR(double)
+  nameWithType: RFCalculator.VSWR(double)
+  fullName: CircuitTool.RFCalculator.VSWR(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VSWR
+    path: src/Calculators/RFCalculator.cs
+    startLine: 55
+  namespace: CircuitTool
+  summary: Calculates VSWR (Voltage Standing Wave Ratio) from reflection coefficient.
+  example:
+  - double vswr = RFCalculator.VSWR(0.5); // VSWR from reflection coefficient
+  syntax:
+    content: public static double VSWR(double reflectionCoefficient)
+    parameters:
+    - id: reflectionCoefficient
+      type: System.Double
+      description: Reflection coefficient magnitude (0-1).
+    return:
+      type: System.Double
+      description: VSWR value.
+    content.vb: Public Shared Function VSWR(reflectionCoefficient As Double) As Double
+  overload: CircuitTool.RFCalculator.VSWR*
+  nameWithType.vb: RFCalculator.VSWR(Double)
+  fullName.vb: CircuitTool.RFCalculator.VSWR(Double)
+  name.vb: VSWR(Double)
+- uid: CircuitTool.RFCalculator.ReflectionCoefficient(System.Double)
+  commentId: M:CircuitTool.RFCalculator.ReflectionCoefficient(System.Double)
+  id: ReflectionCoefficient(System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: ReflectionCoefficient(double)
+  nameWithType: RFCalculator.ReflectionCoefficient(double)
+  fullName: CircuitTool.RFCalculator.ReflectionCoefficient(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ReflectionCoefficient
+    path: src/Calculators/RFCalculator.cs
+    startLine: 67
+  namespace: CircuitTool
+  summary: Calculates reflection coefficient from VSWR.
+  example: []
+  syntax:
+    content: public static double ReflectionCoefficient(double vswr)
+    parameters:
+    - id: vswr
+      type: System.Double
+      description: VSWR value (≥ 1).
+    return:
+      type: System.Double
+      description: Reflection coefficient magnitude.
+    content.vb: Public Shared Function ReflectionCoefficient(vswr As Double) As Double
+  overload: CircuitTool.RFCalculator.ReflectionCoefficient*
+  nameWithType.vb: RFCalculator.ReflectionCoefficient(Double)
+  fullName.vb: CircuitTool.RFCalculator.ReflectionCoefficient(Double)
+  name.vb: ReflectionCoefficient(Double)
+- uid: CircuitTool.RFCalculator.ReturnLoss(System.Double)
+  commentId: M:CircuitTool.RFCalculator.ReturnLoss(System.Double)
+  id: ReturnLoss(System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: ReturnLoss(double)
+  nameWithType: RFCalculator.ReturnLoss(double)
+  fullName: CircuitTool.RFCalculator.ReturnLoss(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ReturnLoss
+    path: src/Calculators/RFCalculator.cs
+    startLine: 82
+  namespace: CircuitTool
+  summary: Calculates return loss from VSWR in dB.
+  example:
+  - double rl = RFCalculator.ReturnLoss(2.0); // Return loss from VSWR
+  syntax:
+    content: public static double ReturnLoss(double vswr)
+    parameters:
+    - id: vswr
+      type: System.Double
+      description: VSWR value (≥ 1).
+    return:
+      type: System.Double
+      description: Return loss in dB.
+    content.vb: Public Shared Function ReturnLoss(vswr As Double) As Double
+  overload: CircuitTool.RFCalculator.ReturnLoss*
+  nameWithType.vb: RFCalculator.ReturnLoss(Double)
+  fullName.vb: CircuitTool.RFCalculator.ReturnLoss(Double)
+  name.vb: ReturnLoss(Double)
+- uid: CircuitTool.RFCalculator.PathLoss(System.Double,System.Double)
+  commentId: M:CircuitTool.RFCalculator.PathLoss(System.Double,System.Double)
+  id: PathLoss(System.Double,System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: PathLoss(double, double)
+  nameWithType: RFCalculator.PathLoss(double, double)
+  fullName: CircuitTool.RFCalculator.PathLoss(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PathLoss
+    path: src/Calculators/RFCalculator.cs
+    startLine: 99
+  namespace: CircuitTool
+  summary: Calculates free space path loss using Friis formula.
+  example:
+  - double pl = RFCalculator.PathLoss(2.4e9, 100); // Free space path loss
+  syntax:
+    content: public static double PathLoss(double frequency, double distance)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    - id: distance
+      type: System.Double
+      description: Distance in meters (m).
+    return:
+      type: System.Double
+      description: Path loss in dB.
+    content.vb: Public Shared Function PathLoss(frequency As Double, distance As Double) As Double
+  overload: CircuitTool.RFCalculator.PathLoss*
+  nameWithType.vb: RFCalculator.PathLoss(Double, Double)
+  fullName.vb: CircuitTool.RFCalculator.PathLoss(Double, Double)
+  name.vb: PathLoss(Double, Double)
+- uid: CircuitTool.RFCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.RFCalculator.SkinDepth(System.Double,System.Double,System.Double)
+  id: SkinDepth(System.Double,System.Double,System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: SkinDepth(double, double, double)
+  nameWithType: RFCalculator.SkinDepth(double, double, double)
+  fullName: CircuitTool.RFCalculator.SkinDepth(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SkinDepth
+    path: src/Calculators/RFCalculator.cs
+    startLine: 113
+  namespace: CircuitTool
+  summary: Calculates skin depth for a conductor at given frequency.
+  example: []
+  syntax:
+    content: public static double SkinDepth(double frequency, double conductivity = 59600000, double permeability = 1)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in hertz (Hz).
+    - id: conductivity
+      type: System.Double
+      description: 'Conductivity in S/m (default: copper).'
+    - id: permeability
+      type: System.Double
+      description: 'Relative permeability (default: 1 for non-magnetic).'
+    return:
+      type: System.Double
+      description: Skin depth in meters (m).
+    content.vb: Public Shared Function SkinDepth(frequency As Double, conductivity As Double = 59600000, permeability As Double = 1) As Double
+  overload: CircuitTool.RFCalculator.SkinDepth*
+  nameWithType.vb: RFCalculator.SkinDepth(Double, Double, Double)
+  fullName.vb: CircuitTool.RFCalculator.SkinDepth(Double, Double, Double)
+  name.vb: SkinDepth(Double, Double, Double)
+- uid: CircuitTool.RFCalculator.CharacteristicImpedance(System.Double,System.Double)
+  commentId: M:CircuitTool.RFCalculator.CharacteristicImpedance(System.Double,System.Double)
+  id: CharacteristicImpedance(System.Double,System.Double)
+  parent: CircuitTool.RFCalculator
+  langs:
+  - csharp
+  - vb
+  name: CharacteristicImpedance(double, double)
+  nameWithType: RFCalculator.CharacteristicImpedance(double, double)
+  fullName: CircuitTool.RFCalculator.CharacteristicImpedance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/RFCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CharacteristicImpedance
+    path: src/Calculators/RFCalculator.cs
+    startLine: 127
+  namespace: CircuitTool
+  summary: Calculates characteristic impedance of a transmission line.
+  example: []
+  syntax:
+    content: public static double CharacteristicImpedance(double inductancePerLength, double capacitancePerLength)
+    parameters:
+    - id: inductancePerLength
+      type: System.Double
+      description: Inductance per unit length (H/m).
+    - id: capacitancePerLength
+      type: System.Double
+      description: Capacitance per unit length (F/m).
+    return:
+      type: System.Double
+      description: Characteristic impedance in ohms (Ω).
+    content.vb: Public Shared Function CharacteristicImpedance(inductancePerLength As Double, capacitancePerLength As Double) As Double
+  overload: CircuitTool.RFCalculator.CharacteristicImpedance*
+  nameWithType.vb: RFCalculator.CharacteristicImpedance(Double, Double)
+  fullName.vb: CircuitTool.RFCalculator.CharacteristicImpedance(Double, Double)
+  name.vb: CharacteristicImpedance(Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.RFCalculator.Wavelength*
+  commentId: Overload:CircuitTool.RFCalculator.Wavelength
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_Wavelength_System_Double_
+  name: Wavelength
+  nameWithType: RFCalculator.Wavelength
+  fullName: CircuitTool.RFCalculator.Wavelength
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.RFCalculator.Frequency*
+  commentId: Overload:CircuitTool.RFCalculator.Frequency
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_Frequency_System_Double_
+  name: Frequency
+  nameWithType: RFCalculator.Frequency
+  fullName: CircuitTool.RFCalculator.Frequency
+- uid: CircuitTool.RFCalculator.VSWR*
+  commentId: Overload:CircuitTool.RFCalculator.VSWR
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_VSWR_System_Double_
+  name: VSWR
+  nameWithType: RFCalculator.VSWR
+  fullName: CircuitTool.RFCalculator.VSWR
+- uid: CircuitTool.RFCalculator.ReflectionCoefficient*
+  commentId: Overload:CircuitTool.RFCalculator.ReflectionCoefficient
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_ReflectionCoefficient_System_Double_
+  name: ReflectionCoefficient
+  nameWithType: RFCalculator.ReflectionCoefficient
+  fullName: CircuitTool.RFCalculator.ReflectionCoefficient
+- uid: CircuitTool.RFCalculator.ReturnLoss*
+  commentId: Overload:CircuitTool.RFCalculator.ReturnLoss
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_ReturnLoss_System_Double_
+  name: ReturnLoss
+  nameWithType: RFCalculator.ReturnLoss
+  fullName: CircuitTool.RFCalculator.ReturnLoss
+- uid: CircuitTool.RFCalculator.PathLoss*
+  commentId: Overload:CircuitTool.RFCalculator.PathLoss
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_PathLoss_System_Double_System_Double_
+  name: PathLoss
+  nameWithType: RFCalculator.PathLoss
+  fullName: CircuitTool.RFCalculator.PathLoss
+- uid: CircuitTool.RFCalculator.SkinDepth*
+  commentId: Overload:CircuitTool.RFCalculator.SkinDepth
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_SkinDepth_System_Double_System_Double_System_Double_
+  name: SkinDepth
+  nameWithType: RFCalculator.SkinDepth
+  fullName: CircuitTool.RFCalculator.SkinDepth
+- uid: CircuitTool.RFCalculator.CharacteristicImpedance*
+  commentId: Overload:CircuitTool.RFCalculator.CharacteristicImpedance
+  href: CircuitTool.RFCalculator.html#CircuitTool_RFCalculator_CharacteristicImpedance_System_Double_System_Double_
+  name: CharacteristicImpedance
+  nameWithType: RFCalculator.CharacteristicImpedance
+  fullName: CircuitTool.RFCalculator.CharacteristicImpedance

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>LPWAN Technologies Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="LPWAN Technologies Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/lpwan-technologies.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="lpwan-technologies-guide">LPWAN Technologies Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Low Power Wide Area Network (LPWAN) technologies are designed for IoT applications that require long-range communication with minimal power consumption. These technologies enable devices to operate for years on a single battery while communicating over distances of several kilometers.</p>
+<h2 id="overview-of-lpwan-technologies">Overview of LPWAN Technologies</h2>
+<h3 id="key-characteristics">Key Characteristics</h3>
+<ul>
+<li><strong>Long Range</strong>: 2-40+ km depending on environment</li>
+<li><strong>Low Power</strong>: Battery life of 5-20 years</li>
+<li><strong>Low Data Rate</strong>: Typically 0.3-50 kbps</li>
+<li><strong>Low Cost</strong>: Simplified hardware and infrastructure</li>
+<li><strong>Deep Penetration</strong>: Good indoor and underground coverage</li>
+</ul>
+<h3 id="main-lpwan-technologies">Main LPWAN Technologies</h3>
+<ol>
+<li><strong>LoRaWAN</strong> (Long Range Wide Area Network)</li>
+<li><strong>Sigfox</strong></li>
+<li><strong>NB-IoT</strong> (Narrowband IoT)</li>
+<li><strong>LTE-M</strong> (LTE Cat-M1)</li>
+</ol>
+<h2 id="lorawan-technology">LoRaWAN Technology</h2>
+<h3 id="technical-specifications">Technical Specifications</h3>
+<ul>
+<li><strong>Frequency Bands</strong>:
+<ul>
+<li>EU868: 863-870 MHz</li>
+<li>US915: 902-928 MHz</li>
+<li>AS923: 915-928 MHz</li>
+</ul>
+</li>
+<li><strong>Modulation</strong>: Chirp Spread Spectrum (CSS)</li>
+<li><strong>Data Rate</strong>: 0.3-27 kbps</li>
+<li><strong>Range</strong>: 2-15 km (urban), 15-40 km (rural)</li>
+<li><strong>Payload</strong>: 11-242 bytes per message</li>
+</ul>
+<h3 id="lorawan-architecture">LoRaWAN Architecture</h3>
+<pre><code>End Devices &lt;-&gt; Gateway &lt;-&gt; Network Server &lt;-&gt; Application Server
+</code></pre>
+<h3 id="device-classes">Device Classes</h3>
+<ul>
+<li><strong>Class A</strong>: Bidirectional, lowest power</li>
+<li><strong>Class B</strong>: Bidirectional with scheduled receive slots</li>
+<li><strong>Class C</strong>: Bidirectional with maximal receive slots</li>
+</ul>
+<h3 id="security-features">Security Features</h3>
+<ul>
+<li><strong>AES-128 encryption</strong> at multiple layers</li>
+<li><strong>Device authentication</strong> with unique keys</li>
+<li><strong>Message integrity</strong> protection</li>
+<li><strong>Anti-replay</strong> protection</li>
+</ul>
+<h2 id="sigfox-technology">Sigfox Technology</h2>
+<h3 id="technical-specifications-1">Technical Specifications</h3>
+<ul>
+<li><strong>Frequency</strong>: 868 MHz (EU), 902 MHz (US)</li>
+<li><strong>Modulation</strong>: Ultra Narrow Band (UNB)</li>
+<li><strong>Data Rate</strong>: 100-600 bps</li>
+<li><strong>Range</strong>: 3-50 km</li>
+<li><strong>Message Limit</strong>: 140 messages/day uplink, 4 downlink</li>
+<li><strong>Payload</strong>: 12 bytes uplink, 8 bytes downlink</li>
+</ul>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li><strong>Simple protocol</strong> - easy to implement</li>
+<li><strong>Low power consumption</strong></li>
+<li><strong>Global coverage</strong> through operator network</li>
+<li><strong>No gateway required</strong> for end users</li>
+</ul>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li><strong>Limited data throughput</strong></li>
+<li><strong>Restricted message frequency</strong></li>
+<li><strong>Vendor lock-in</strong> to Sigfox network</li>
+</ul>
+<h2 id="nb-iot-narrowband-iot">NB-IoT (Narrowband IoT)</h2>
+<h3 id="technical-specifications-2">Technical Specifications</h3>
+<ul>
+<li><strong>Frequency</strong>: Licensed LTE spectrum</li>
+<li><strong>Bandwidth</strong>: 180 kHz</li>
+<li><strong>Data Rate</strong>: 25-250 kbps</li>
+<li><strong>Range</strong>: 1-10 km</li>
+<li><strong>Power Consumption</strong>: Very low with PSM/eDRX</li>
+</ul>
+<h3 id="deployment-modes">Deployment Modes</h3>
+<ul>
+<li><strong>In-band</strong>: Within existing LTE carrier</li>
+<li><strong>Guard-band</strong>: In LTE guard band</li>
+<li><strong>Standalone</strong>: Dedicated spectrum</li>
+</ul>
+<h3 id="power-saving-features">Power Saving Features</h3>
+<ul>
+<li><strong>PSM (Power Saving Mode)</strong>: Deep sleep between communications</li>
+<li><strong>eDRX (Extended Discontinuous Reception)</strong>: Extended sleep cycles</li>
+<li><strong>Coverage Enhancement</strong>: Up to 20 dB improvement</li>
+</ul>
+<h2 id="lte-m-lte-cat-m1">LTE-M (LTE Cat-M1)</h2>
+<h3 id="technical-specifications-3">Technical Specifications</h3>
+<ul>
+<li><strong>Bandwidth</strong>: 1.4 MHz</li>
+<li><strong>Data Rate</strong>: Up to 1 Mbps</li>
+<li><strong>Mobility</strong>: Full mobility support</li>
+<li><strong>Voice Support</strong>: VoLTE capability</li>
+<li><strong>Battery Life</strong>: 10+ years</li>
+</ul>
+<h3 id="applications">Applications</h3>
+<ul>
+<li><strong>Asset tracking</strong> with mobility</li>
+<li><strong>Smart city</strong> infrastructure</li>
+<li><strong>Industrial automation</strong></li>
+<li><strong>Emergency services</strong></li>
+</ul>
+<h2 id="programming-examples">Programming Examples</h2>
+<h3 id="lorawan-with-arduino-and-rn2483">LoRaWAN with Arduino and RN2483</h3>
+<pre><code class="lang-cpp">#include &lt;SoftwareSerial.h&gt;
+
+SoftwareSerial loraSerial(7, 8);
+
+void setup() {
+  Serial.begin(9600);
+  loraSerial.begin(57600);
+  
+  // Initialize LoRaWAN module
+  sendCommand(&quot;sys reset&quot;);
+  delay(1000);
+  
+  // Configure LoRaWAN parameters
+  sendCommand(&quot;mac set deveui 0004A30B001B8B39&quot;);
+  sendCommand(&quot;mac set appeui 8000000000000000&quot;);
+  sendCommand(&quot;mac set appkey 2B7E151628AED2A6ABF7158809CF4F3C&quot;);
+  
+  // Join network
+  sendCommand(&quot;mac join otaa&quot;);
+}
+
+void loop() {
+  // Read sensor data
+  float temperature = readTemperature();
+  float humidity = readHumidity();
+  
+  // Prepare payload
+  String payload = String(temperature, 1) + &quot;,&quot; + String(humidity, 1);
+  
+  // Send data
+  String command = &quot;mac tx uncnf 1 &quot; + stringToHex(payload);
+  sendCommand(command);
+  
+  // Sleep for 10 minutes
+  delay(600000);
+}
+
+void sendCommand(String command) {
+  loraSerial.println(command);
+  String response = loraSerial.readString();
+  Serial.println(&quot;Response: &quot; + response);
+}
+
+String stringToHex(String str) {
+  String hex = &quot;&quot;;
+  for (int i = 0; i &lt; str.length(); i++) {
+    if (str.charAt(i) &lt; 16) hex += &quot;0&quot;;
+    hex += String(str.charAt(i), HEX);
+  }
+  return hex;
+}
+</code></pre>
+<h3 id="sigfox-with-arduino-and-mkrfox1200">Sigfox with Arduino and MKRFOX1200</h3>
+<pre><code class="lang-cpp">#include &lt;SigFox.h&gt;
+
+void setup() {
+  Serial.begin(9600);
+  
+  if (!SigFox.begin()) {
+    Serial.println(&quot;Shield error or not present!&quot;);
+    return;
+  }
+  
+  // Print device information
+  String version = SigFox.SigVersion();
+  String ID = SigFox.ID();
+  String PAC = SigFox.PAC();
+  
+  Serial.println(&quot;SigFox FW version: &quot; + version);
+  Serial.println(&quot;ID: &quot; + ID);
+  Serial.println(&quot;PAC: &quot; + PAC);
+  
+  SigFox.end();
+}
+
+void loop() {
+  // Start SigFox module
+  SigFox.begin();
+  
+  // Prepare data packet
+  uint8_t msg[12];
+  float temperature = 23.5;
+  float humidity = 65.2;
+  
+  // Pack data (little endian)
+  memcpy(msg, &amp;temperature, 4);
+  memcpy(msg + 4, &amp;humidity, 4);
+  
+  // Send message
+  SigFox.beginPacket();
+  SigFox.write(msg, 12);
+  int ret = SigFox.endPacket();
+  
+  if (ret &gt; 0) {
+    Serial.println(&quot;No transmission&quot;);
+  } else {
+    Serial.println(&quot;Transmission ok&quot;);
+  }
+  
+  SigFox.end();
+  
+  // Sleep for 15 minutes (respect daily message limit)
+  delay(900000);
+}
+</code></pre>
+<h3 id="nb-iot-with-sim7020">NB-IoT with SIM7020</h3>
+<pre><code class="lang-cpp">#include &lt;SoftwareSerial.h&gt;
+
+SoftwareSerial nbiot(7, 8);
+
+void setup() {
+  Serial.begin(9600);
+  nbiot.begin(9600);
+  
+  // Initialize NB-IoT module
+  sendATCommand(&quot;AT+CFUN=1&quot;);        // Set full functionality
+  delay(5000);
+  
+  sendATCommand(&quot;AT+CBAND=20&quot;);      // Set band 20 (800MHz)
+  sendATCommand(&quot;AT+CGDCONT=1,\&quot;IP\&quot;,\&quot;nb-iot.apn\&quot;&quot;); // Set APN
+  sendATCommand(&quot;AT+COPS=1,2,\&quot;26201\&quot;&quot;); // Select operator
+  
+  // Attach to network
+  sendATCommand(&quot;AT+CGATT=1&quot;);
+  
+  // Wait for network attachment
+  while (!checkNetworkAttachment()) {
+    delay(5000);
+  }
+  
+  Serial.println(&quot;Connected to NB-IoT network&quot;);
+}
+
+void loop() {
+  // Read sensor data
+  String data = &quot;{\&quot;temp\&quot;:23.5,\&quot;hum\&quot;:65.2}&quot;;
+  
+  // Send data via UDP
+  sendUDPData(&quot;server.example.com&quot;, 1234, data);
+  
+  // Enter PSM mode for power saving
+  sendATCommand(&quot;AT+CPSMS=1,,,\&quot;00000001\&quot;,\&quot;00000001\&quot;&quot;);
+  
+  delay(3600000); // 1 hour
+}
+
+void sendATCommand(String command) {
+  nbiot.println(command);
+  String response = nbiot.readString();
+  Serial.println(&quot;AT Response: &quot; + response);
+}
+
+bool checkNetworkAttachment() {
+  nbiot.println(&quot;AT+CGATT?&quot;);
+  String response = nbiot.readString();
+  return response.indexOf(&quot;+CGATT: 1&quot;) != -1;
+}
+
+void sendUDPData(String server, int port, String data) {
+  // Create UDP socket
+  sendATCommand(&quot;AT+CSOC=1,2,1&quot;);
+  
+  // Connect to server
+  String connectCmd = &quot;AT+CSOCON=0,1234,\&quot;&quot; + server + &quot;\&quot;&quot;;
+  sendATCommand(connectCmd);
+  
+  // Send data
+  String sendCmd = &quot;AT+CSOSEND=0,&quot; + String(data.length()) + &quot;,\&quot;&quot; + data + &quot;\&quot;&quot;;
+  sendATCommand(sendCmd);
+  
+  // Close socket
+  sendATCommand(&quot;AT+CSOCL=0&quot;);
+}
+</code></pre>
+<h2 id="network-architecture-and-protocols">Network Architecture and Protocols</h2>
+<h3 id="lorawan-protocol-stack">LoRaWAN Protocol Stack</h3>
+<pre><code>Application Layer    | User Application
+Presentation Layer   | Application Server
+Session Layer       | Network Server
+Transport Layer     | LoRaWAN MAC
+Network Layer       | LoRaWAN PHY
+Data Link Layer     | LoRa Modulation
+Physical Layer      | Radio Hardware
+</code></pre>
+<h3 id="message-types">Message Types</h3>
+<ul>
+<li><strong>Join Request/Accept</strong>: Device activation</li>
+<li><strong>Unconfirmed Data</strong>: No acknowledgment required</li>
+<li><strong>Confirmed Data</strong>: Acknowledgment required</li>
+<li><strong>MAC Commands</strong>: Network management</li>
+</ul>
+<h2 id="power-consumption-analysis">Power Consumption Analysis</h2>
+<h3 id="current-consumption-examples">Current Consumption Examples</h3>
+<pre><code class="lang-cpp">// LoRaWAN power consumption calculation
+class PowerCalculator {
+public:
+  static float calculateBatteryLife(
+    float batteryCapacity,    // mAh
+    float sleepCurrent,       // mA
+    float txCurrent,          // mA
+    float txTime,             // seconds
+    int messagesPerDay,
+    float rxCurrent = 0,      // mA
+    float rxTime = 0          // seconds
+  ) {
+    float dailyTxCharge = (txCurrent * txTime * messagesPerDay) / 3600;
+    float dailyRxCharge = (rxCurrent * rxTime * messagesPerDay) / 3600;
+    float dailySleepCharge = sleepCurrent * 24;
+    
+    float totalDailyCharge = dailyTxCharge + dailyRxCharge + dailySleepCharge;
+    
+    return batteryCapacity / totalDailyCharge; // Days
+  }
+};
+
+// Example calculation
+void calculateLoRaBatteryLife() {
+  float batteryLife = PowerCalculator::calculateBatteryLife(
+    2000,    // 2000 mAh battery
+    0.002,   // 2 µA sleep current
+    120,     // 120 mA TX current
+    1.0,     // 1 second TX time
+    24       // 24 messages per day
+  );
+  
+  Serial.print(&quot;Battery life: &quot;);
+  Serial.print(batteryLife / 365, 1);
+  Serial.println(&quot; years&quot;);
+}
+</code></pre>
+<h2 id="application-examples">Application Examples</h2>
+<h3 id="environmental-monitoring-station">Environmental Monitoring Station</h3>
+<pre><code class="lang-cpp">struct SensorData {
+  float temperature;
+  float humidity;
+  float pressure;
+  float batteryVoltage;
+  uint16_t messageCounter;
+};
+
+void sendEnvironmentalData() {
+  SensorData data;
+  data.temperature = bme280.readTemperature();
+  data.humidity = bme280.readHumidity();
+  data.pressure = bme280.readPressure() / 100.0F;
+  data.batteryVoltage = readBatteryVoltage();
+  data.messageCounter = messageCount++;
+  
+  // Encode data efficiently
+  uint8_t payload[12];
+  encodeFloat16(payload, 0, data.temperature, -40, 85);
+  encodeFloat16(payload + 2, 0, data.humidity, 0, 100);
+  encodeFloat16(payload + 4, 0, data.pressure, 800, 1200);
+  encodeFloat16(payload + 6, 0, data.batteryVoltage, 2.5, 4.2);
+  payload[8] = data.messageCounter &amp; 0xFF;
+  payload[9] = (data.messageCounter &gt;&gt; 8) &amp; 0xFF;
+  
+  sendLoRaMessage(payload, 10);
+}
+
+void encodeFloat16(uint8_t* buffer, int offset, float value, float min, float max) {
+  uint16_t encoded = (uint16_t)((value - min) / (max - min) * 65535);
+  buffer[offset] = encoded &amp; 0xFF;
+  buffer[offset + 1] = (encoded &gt;&gt; 8) &amp; 0xFF;
+}
+</code></pre>
+<h3 id="asset-tracking-device">Asset Tracking Device</h3>
+<pre><code class="lang-cpp">struct LocationData {
+  float latitude;
+  float longitude;
+  uint8_t satellites;
+  float speed;
+  uint16_t heading;
+  uint8_t batteryLevel;
+};
+
+void sendLocationUpdate() {
+  if (gps.location.isValid()) {
+    LocationData location;
+    location.latitude = gps.location.lat();
+    location.longitude = gps.location.lng();
+    location.satellites = gps.satellites.value();
+    location.speed = gps.speed.kmph();
+    location.heading = gps.course.deg();
+    location.batteryLevel = readBatteryPercentage();
+    
+    // Efficient encoding for GPS coordinates
+    uint8_t payload[15];
+    encodeGPSCoordinate(payload, 0, location.latitude);
+    encodeGPSCoordinate(payload + 4, 0, location.longitude);
+    payload[8] = location.satellites;
+    payload[9] = (uint8_t)location.speed;
+    payload[10] = location.heading &amp; 0xFF;
+    payload[11] = (location.heading &gt;&gt; 8) &amp; 0xFF;
+    payload[12] = location.batteryLevel;
+    
+    sendLoRaMessage(payload, 13);
+  }
+}
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="power-optimization">Power Optimization</h3>
+<ol>
+<li><strong>Use efficient encoding</strong> to minimize air time</li>
+<li><strong>Implement adaptive data rates</strong> based on conditions</li>
+<li><strong>Use confirmed messages</strong> only when necessary</li>
+<li><strong>Optimize transmission timing</strong> to avoid collisions</li>
+<li><strong>Implement proper sleep modes</strong> between transmissions</li>
+</ol>
+<h3 id="network-optimization">Network Optimization</h3>
+<ol>
+<li><strong>Choose appropriate spreading factor</strong> for range vs. speed</li>
+<li><strong>Implement frequency hopping</strong> where available</li>
+<li><strong>Monitor network quality</strong> and adjust parameters</li>
+<li><strong>Use network analytics</strong> to optimize performance</li>
+</ol>
+<h3 id="security-considerations">Security Considerations</h3>
+<ol>
+<li><strong>Protect device keys</strong> with secure storage</li>
+<li><strong>Implement secure key provisioning</strong></li>
+<li><strong>Monitor for replay attacks</strong></li>
+<li><strong>Use end-to-end encryption</strong> for sensitive data</li>
+<li><strong>Regular security audits</strong> and updates</li>
+</ol>
+<h2 id="future-trends">Future Trends</h2>
+<h3 id="technology-evolution">Technology Evolution</h3>
+<ul>
+<li><strong>5G integration</strong> with massive IoT capabilities</li>
+<li><strong>Satellite LPWAN</strong> for global coverage</li>
+<li><strong>Mesh networking</strong> for extended range</li>
+<li><strong>AI-powered optimization</strong> for network management</li>
+<li><strong>Energy harvesting</strong> integration for perpetual operation</li>
+</ul>
+<h3 id="market-drivers">Market Drivers</h3>
+<ul>
+<li><strong>Smart city</strong> deployments</li>
+<li><strong>Industrial IoT</strong> automation</li>
+<li><strong>Environmental monitoring</strong></li>
+<li><strong>Supply chain tracking</strong></li>
+<li><strong>Precision agriculture</strong></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/lpwan-technologies.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

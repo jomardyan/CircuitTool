@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  commentId: T:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  id: CapacitorCodeCalculator.VoltageCode
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.A
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.B
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.C
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.D
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.E
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.F
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.G
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.H
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.J
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.K
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.L
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.M
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.N
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.P
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Q
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.R
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.S
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.T
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.U
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.V
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.W
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.X
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Y
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Z
+  - CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.ZZ
+  langs:
+  - csharp
+  - vb
+  name: CapacitorCodeCalculator.VoltageCode
+  nameWithType: CapacitorCodeCalculator.VoltageCode
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageCode
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 27
+  namespace: CircuitTool.Calculators
+  summary: Capacitor voltage rating codes
+  example: []
+  syntax:
+    content: public enum CapacitorCodeCalculator.VoltageCode
+    content.vb: Public Enum CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Z
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Z
+  id: Z
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: CapacitorCodeCalculator.VoltageCode.Z
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Z
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Z
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 29
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Z = 0
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.A
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.A
+  id: A
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: CapacitorCodeCalculator.VoltageCode.A
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.A
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: A
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 30
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: A = 10
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.B
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.B
+  id: B
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: CapacitorCodeCalculator.VoltageCode.B
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.B
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: B
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 31
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: B = 15
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.C
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.C
+  id: C
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: C
+  nameWithType: CapacitorCodeCalculator.VoltageCode.C
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.C
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: C
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 32
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: C = 25
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.D
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.D
+  id: D
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: CapacitorCodeCalculator.VoltageCode.D
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.D
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: D
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 33
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: D = 35
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.E
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.E
+  id: E
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: E
+  nameWithType: CapacitorCodeCalculator.VoltageCode.E
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.E
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: E
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 34
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: E = 50
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.F
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.F
+  id: F
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: F
+  nameWithType: CapacitorCodeCalculator.VoltageCode.F
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.F
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: F
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 35
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: F = 63
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.G
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.G
+  id: G
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: CapacitorCodeCalculator.VoltageCode.G
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.G
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: G
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 36
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: G = 100
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.H
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.H
+  id: H
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: H
+  nameWithType: CapacitorCodeCalculator.VoltageCode.H
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.H
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: H
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 37
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: H = 160
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.J
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.J
+  id: J
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: J
+  nameWithType: CapacitorCodeCalculator.VoltageCode.J
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.J
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: J
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 38
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: J = 250
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.K
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.K
+  id: K
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: K
+  nameWithType: CapacitorCodeCalculator.VoltageCode.K
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.K
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: K
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 39
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: K = 350
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.L
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.L
+  id: L
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: CapacitorCodeCalculator.VoltageCode.L
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.L
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: L
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 40
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: L = 500
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.M
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.M
+  id: M
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: M
+  nameWithType: CapacitorCodeCalculator.VoltageCode.M
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.M
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: M
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 41
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: M = 630
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.N
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.N
+  id: N
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: CapacitorCodeCalculator.VoltageCode.N
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.N
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: N
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 42
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: N = 1000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.P
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.P
+  id: P
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: P
+  nameWithType: CapacitorCodeCalculator.VoltageCode.P
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.P
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: P
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 43
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: P = 1600
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Q
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Q
+  id: Q
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: Q
+  nameWithType: CapacitorCodeCalculator.VoltageCode.Q
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Q
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Q
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 44
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Q = 2500
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.R
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.R
+  id: R
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: CapacitorCodeCalculator.VoltageCode.R
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.R
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: R
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 45
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: R = 3500
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.S
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.S
+  id: S
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: S
+  nameWithType: CapacitorCodeCalculator.VoltageCode.S
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.S
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: S
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 46
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: S = 5000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.T
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.T
+  id: T
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: T
+  nameWithType: CapacitorCodeCalculator.VoltageCode.T
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.T
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: T
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 47
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: T = 6300
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.U
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.U
+  id: U
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: U
+  nameWithType: CapacitorCodeCalculator.VoltageCode.U
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.U
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: U
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 48
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: U = 10000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.V
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.V
+  id: V
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: V
+  nameWithType: CapacitorCodeCalculator.VoltageCode.V
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.V
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: V
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 49
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: V = 16000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.W
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.W
+  id: W
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: W
+  nameWithType: CapacitorCodeCalculator.VoltageCode.W
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.W
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: W
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 50
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: W = 25000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.X
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.X
+  id: X
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: CapacitorCodeCalculator.VoltageCode.X
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.X
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: X
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 51
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: X = 35000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Y
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Y
+  id: Y
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: CapacitorCodeCalculator.VoltageCode.Y
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.Y
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Y
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 52
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Y = 50000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.ZZ
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.ZZ
+  id: ZZ
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  langs:
+  - csharp
+  - vb
+  name: ZZ
+  nameWithType: CapacitorCodeCalculator.VoltageCode.ZZ
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.ZZ
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ZZ
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 53
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: ZZ = 63000
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  commentId: T:CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  name: CapacitorCodeCalculator.VoltageCode
+  nameWithType: CapacitorCodeCalculator.VoltageCode
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator
+    name: CapacitorCodeCalculator
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+    name: VoltageCode
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator
+    name: CapacitorCodeCalculator
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+    name: VoltageCode
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.html

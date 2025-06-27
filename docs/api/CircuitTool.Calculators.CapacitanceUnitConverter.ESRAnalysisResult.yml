@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  id: CapacitanceUnitConverter.ESRAnalysisResult
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  langs:
+  - csharp
+  - vb
+  name: CapacitanceUnitConverter.ESRAnalysisResult
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ESRAnalysisResult
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 259
+  namespace: CircuitTool.Calculators
+  summary: Calculate equivalent series resistance (ESR) effects
+  example: []
+  syntax:
+    content: public class CapacitanceUnitConverter.ESRAnalysisResult
+    content.vb: Public Class CapacitanceUnitConverter.ESRAnalysisResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  commentId: P:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  id: ESR
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: ESR
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ESR
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 261
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double ESR { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ESR As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR*
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  commentId: P:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  id: PowerLoss
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: PowerLoss
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerLoss
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 262
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double PowerLoss { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property PowerLoss As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss*
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  commentId: P:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  id: EfficiencyPercent
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: EfficiencyPercent
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EfficiencyPercent
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 263
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double EfficiencyPercent { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property EfficiencyPercent As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent*
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  commentId: P:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  id: VoltageRipple
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: VoltageRipple
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageRipple
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 264
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double VoltageRipple { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property VoltageRipple As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple*
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  commentId: P:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  id: QualityFactor
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  langs:
+  - csharp
+  - vb
+  name: QualityFactor
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QualityFactor
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 265
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double QualityFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property QualityFactor As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor*
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html#CircuitTool_Calculators_CapacitanceUnitConverter_ESRAnalysisResult_ESR
+  name: ESR
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.ESR
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.ESR
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html#CircuitTool_Calculators_CapacitanceUnitConverter_ESRAnalysisResult_PowerLoss
+  name: PowerLoss
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.PowerLoss
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html#CircuitTool_Calculators_CapacitanceUnitConverter_ESRAnalysisResult_EfficiencyPercent
+  name: EfficiencyPercent
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.EfficiencyPercent
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html#CircuitTool_Calculators_CapacitanceUnitConverter_ESRAnalysisResult_VoltageRipple
+  name: VoltageRipple
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.VoltageRipple
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html#CircuitTool_Calculators_CapacitanceUnitConverter_ESRAnalysisResult_QualityFactor
+  name: QualityFactor
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.QualityFactor

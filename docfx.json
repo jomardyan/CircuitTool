@@ -8,7 +8,8 @@
           ],
           "exclude": [
             "**/bin/**",
-            "**/obj/**"
+            "**/obj/**",
+            "**/Properties/AssemblyInfo.cs"
           ]
         }
       ],
@@ -19,7 +20,10 @@
       "noRestore": false,
       "namespaceLayout": "flattened",
       "memberLayout": "samePage",
-      "allowCompilationErrors": false
+      "allowCompilationErrors": true,
+      "properties": {
+        "TargetFramework": "net8.0"
+      }
     }
   ],
   "build": {
@@ -36,13 +40,29 @@
           "docs/**/toc.yml",
           "toc.yml",
           "*.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "docs/_site/**"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "docs/images/**"
+          "docs/images/**",
+          "images/**",
+          "*.png",
+          "*.jpg",
+          "*.gif",
+          "*.svg"
         ]
       }
     ],
@@ -50,15 +70,16 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "modern"
     ],
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false,
     "globalMetadata": {
-      "_appTitle": "CircuitTool Documentation",
+      "_appTitle": "CircuitTool - Electrical Engineering Library",
       "_appName": "CircuitTool",
-      "_appFooter": "CircuitTool - Comprehensive C# library for electrical engineering calculations",
+      "_appFooter": "CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>",
       "_enableSearch": true,
       "_enableNewTab": true,
       "_disableContribution": false,
@@ -66,7 +87,18 @@
         "repo": "https://github.com/jomardyan/CircuitTool",
         "branch": "main"
       },
-      "_gitUrlPattern": "github"
+      "_gitUrlPattern": "github",
+      "pdf": false,
+      "_appLogoPath": "icon.png",
+      "_appFaviconPath": "icon.png"
+    },
+    "fileMetadata": {
+      "_tocTitle": {
+        "articles/**.md": "Articles",
+        "docs/tutorials/**.md": "Tutorials", 
+        "docs/examples/**.md": "Examples",
+        "docs/technology-guides/**.md": "Hardware Guides"
+      }
     }
   }
 }

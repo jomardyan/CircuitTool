@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Guide to LoRa&#174; and LPWAN Technologies | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Guide to LoRa&#174; and LPWAN Technologies | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/lora-lpwan-guide.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="guide-to-lora-and-lpwan-technologies">Guide to LoRa® and LPWAN Technologies</h1>
+
+<h2 id="introduction-to-lora">Introduction to LoRa®</h2>
+<p>LoRa (Long Range) is a proprietary spread spectrum modulation technique developed by Semtech Corporation. It enables long-range communication with low power consumption, making it ideal for IoT applications. LoRa is the physical layer technology that forms the foundation of LoRaWAN networks.</p>
+<h2 id="lora-technology-overview">LoRa Technology Overview</h2>
+<h3 id="key-technical-features">Key Technical Features</h3>
+<ul>
+<li><strong>Chirp Spread Spectrum (CSS)</strong> modulation</li>
+<li><strong>Sub-GHz frequency bands</strong>: 433MHz, 868MHz, 915MHz</li>
+<li><strong>Excellent range</strong>: 2-15km urban, 15-45km rural</li>
+<li><strong>Low power consumption</strong>: Years of battery life</li>
+<li><strong>High sensitivity</strong>: Down to -148dBm</li>
+<li><strong>Adaptive data rate</strong>: 0.3 to 27 kbps</li>
+</ul>
+<h3 id="modulation-technique">Modulation Technique</h3>
+<p>LoRa uses Chirp Spread Spectrum where frequency changes continuously over time:</p>
+<ul>
+<li><strong>Up-chirp</strong>: Frequency increases linearly</li>
+<li><strong>Down-chirp</strong>: Frequency decreases linearly</li>
+<li><strong>Symbol encoding</strong>: Different starting frequencies encode data</li>
+</ul>
+<h2 id="lora-parameters">LoRa Parameters</h2>
+<h3 id="spreading-factor-sf">Spreading Factor (SF)</h3>
+<p>Controls the trade-off between range and data rate:</p>
+<table>
+<thead>
+<tr>
+<th>SF</th>
+<th>Chip Rate</th>
+<th>Bit Rate</th>
+<th>Range</th>
+<th>Sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>128</td>
+<td>5469 bps</td>
+<td>Short</td>
+<td>-123 dBm</td>
+</tr>
+<tr>
+<td>8</td>
+<td>256</td>
+<td>3125 bps</td>
+<td>-</td>
+<td>-126 dBm</td>
+</tr>
+<tr>
+<td>9</td>
+<td>512</td>
+<td>1758 bps</td>
+<td>-</td>
+<td>-129 dBm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1024</td>
+<td>977 bps</td>
+<td>-</td>
+<td>-132 dBm</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2048</td>
+<td>537 bps</td>
+<td>-</td>
+<td>-134.5 dBm</td>
+</tr>
+<tr>
+<td>12</td>
+<td>4096</td>
+<td>293 bps</td>
+<td>Long</td>
+<td>-137 dBm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bandwidth-bw">Bandwidth (BW)</h3>
+<p>Available bandwidths in most regions:</p>
+<ul>
+<li><strong>125 kHz</strong>: Most common, good sensitivity</li>
+<li><strong>250 kHz</strong>: Higher data rate, reduced sensitivity</li>
+<li><strong>500 kHz</strong>: Maximum data rate</li>
+</ul>
+<h3 id="coding-rate-cr">Coding Rate (CR)</h3>
+<p>Forward error correction:</p>
+<ul>
+<li><strong>4/5</strong>: Highest data rate, least protection</li>
+<li><strong>4/6</strong>: Balanced performance</li>
+<li><strong>4/7</strong>: More protection</li>
+<li><strong>4/8</strong>: Maximum protection, lowest data rate</li>
+</ul>
+<h2 id="lora-hardware-modules">LoRa Hardware Modules</h2>
+<h3 id="popular-lora-chips">Popular LoRa Chips</h3>
+<ul>
+<li><strong>SX1272/SX1276</strong>: Original LoRa transceivers</li>
+<li><strong>SX1262/SX1268</strong>: Next generation, improved performance</li>
+<li><strong>SX1280</strong>: 2.4GHz variant</li>
+</ul>
+<h3 id="arduino-compatible-modules">Arduino-Compatible Modules</h3>
+<ul>
+<li><strong>RFM95/96</strong>: Based on SX1276</li>
+<li><strong>Ra-02</strong>: Low-cost SX1278 based</li>
+<li><strong>TTGO LoRa32</strong>: ESP32 with integrated LoRa</li>
+<li><strong>Heltec WiFi LoRa 32</strong>: ESP32 with LoRa and OLED</li>
+</ul>
+<h2 id="programming-examples">Programming Examples</h2>
+<h3 id="basic-lora-communication-with-arduino">Basic LoRa Communication with Arduino</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+#include &lt;LoRa.h&gt;
+
+// Pin definitions for most Arduino boards
+#define SS_PIN    10
+#define RST_PIN   9
+#define DIO0_PIN  2
+
+int counter = 0;
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+  
+  Serial.println(&quot;LoRa Sender&quot;);
+  
+  // Initialize LoRa module
+  LoRa.setPins(SS_PIN, RST_PIN, DIO0_PIN);
+  
+  if (!LoRa.begin(868E6)) { // 868MHz frequency
+    Serial.println(&quot;Starting LoRa failed!&quot;);
+    while (1);
+  }
+  
+  // Configure LoRa parameters
+  LoRa.setSpreadingFactor(9);           // SF9 (default is 7)
+  LoRa.setSignalBandwidth(125E3);       // 125kHz bandwidth
+  LoRa.setCodingRate4(5);               // 4/5 coding rate
+  LoRa.setPreambleLength(8);            // 8 symbol preamble
+  LoRa.setSyncWord(0x12);               // Private network sync word
+  LoRa.setTxPower(14);                  // 14dBm output power
+  
+  Serial.println(&quot;LoRa Initialization complete&quot;);
+}
+
+void loop() {
+  Serial.print(&quot;Sending packet: &quot;);
+  Serial.println(counter);
+  
+  // Send packet
+  LoRa.beginPacket();
+  LoRa.print(&quot;Hello World &quot;);
+  LoRa.print(counter);
+  LoRa.endPacket();
+  
+  counter++;
+  delay(5000); // Send every 5 seconds
+}
+</code></pre>
+<h3 id="lora-receiver-with-rssi-and-snr">LoRa Receiver with RSSI and SNR</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+#include &lt;LoRa.h&gt;
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+  
+  Serial.println(&quot;LoRa Receiver&quot;);
+  
+  LoRa.setPins(SS_PIN, RST_PIN, DIO0_PIN);
+  
+  if (!LoRa.begin(868E6)) {
+    Serial.println(&quot;Starting LoRa failed!&quot;);
+    while (1);
+  }
+  
+  // Match transmitter settings
+  LoRa.setSpreadingFactor(9);
+  LoRa.setSignalBandwidth(125E3);
+  LoRa.setCodingRate4(5);
+  LoRa.setPreambleLength(8);
+  LoRa.setSyncWord(0x12);
+  
+  Serial.println(&quot;LoRa Receiver ready&quot;);
+}
+
+void loop() {
+  // Check for incoming packets
+  int packetSize = LoRa.parsePacket();
+  
+  if (packetSize) {
+    Serial.print(&quot;Received packet: '&quot;);
+    
+    // Read packet contents
+    String message = &quot;&quot;;
+    while (LoRa.available()) {
+      message += (char)LoRa.read();
+    }
+    
+    Serial.print(message);
+    Serial.print(&quot;' with RSSI &quot;);
+    Serial.print(LoRa.packetRssi());
+    Serial.print(&quot; dBm, SNR &quot;);
+    Serial.print(LoRa.packetSnr());
+    Serial.println(&quot; dB&quot;);
+  }
+}
+</code></pre>
+<h3 id="advanced-lora-mesh-network">Advanced LoRa Mesh Network</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+#include &lt;LoRa.h&gt;
+#include &lt;ArduinoJson.h&gt;
+
+struct LoRaMessage {
+  uint8_t sourceID;
+  uint8_t destID;
+  uint8_t messageID;
+  uint8_t hopCount;
+  uint8_t maxHops;
+  String payload;
+};
+
+class LoRaMesh {
+private:
+  uint8_t nodeID;
+  uint8_t messageCounter = 0;
+  unsigned long lastBeacon = 0;
+  const unsigned long BEACON_INTERVAL = 30000; // 30 seconds
+  
+  struct RouteEntry {
+    uint8_t destID;
+    uint8_t nextHop;
+    uint8_t hopCount;
+    unsigned long lastSeen;
+  };
+  
+  RouteEntry routingTable[10];
+  int routeCount = 0;
+  
+public:
+  LoRaMesh(uint8_t id) : nodeID(id) {}
+  
+  void begin() {
+    LoRa.setPins(SS_PIN, RST_PIN, DIO0_PIN);
+    
+    if (!LoRa.begin(868E6)) {
+      Serial.println(&quot;LoRa initialization failed!&quot;);
+      return;
+    }
+    
+    LoRa.setSpreadingFactor(9);
+    LoRa.setSignalBandwidth(125E3);
+    LoRa.setCodingRate4(5);
+    LoRa.setSyncWord(0x34); // Mesh network sync word
+    
+    Serial.print(&quot;LoRa Mesh Node &quot;);
+    Serial.print(nodeID);
+    Serial.println(&quot; started&quot;);
+  }
+  
+  void update() {
+    // Handle incoming messages
+    handleIncomingMessages();
+    
+    // Send periodic beacons
+    if (millis() - lastBeacon &gt; BEACON_INTERVAL) {
+      sendBeacon();
+      lastBeacon = millis();
+    }
+  }
+  
+  bool sendMessage(uint8_t destID, String payload) {
+    LoRaMessage msg;
+    msg.sourceID = nodeID;
+    msg.destID = destID;
+    msg.messageID = messageCounter++;
+    msg.hopCount = 0;
+    msg.maxHops = 5;
+    msg.payload = payload;
+    
+    return transmitMessage(msg);
+  }
+  
+private:
+  void handleIncomingMessages() {
+    int packetSize = LoRa.parsePacket();
+    if (packetSize == 0) return;
+    
+    String rawMessage = &quot;&quot;;
+    while (LoRa.available()) {
+      rawMessage += (char)LoRa.read();
+    }
+    
+    LoRaMessage msg = parseMessage(rawMessage);
+    
+    // Update routing table
+    updateRoute(msg.sourceID, msg.sourceID, msg.hopCount);
+    
+    if (msg.destID == nodeID) {
+      // Message for this node
+      Serial.println(&quot;Received: &quot; + msg.payload);
+    } else if (msg.hopCount &lt; msg.maxHops) {
+      // Forward message
+      msg.hopCount++;
+      transmitMessage(msg);
+    }
+  }
+  
+  void sendBeacon() {
+    DynamicJsonDocument doc(200);
+    doc[&quot;type&quot;] = &quot;beacon&quot;;
+    doc[&quot;nodeID&quot;] = nodeID;
+    doc[&quot;routes&quot;] = JsonArray();
+    
+    for (int i = 0; i &lt; routeCount; i++) {
+      JsonObject route = doc[&quot;routes&quot;].createNestedObject();
+      route[&quot;dest&quot;] = routingTable[i].destID;
+      route[&quot;hops&quot;] = routingTable[i].hopCount;
+    }
+    
+    String beacon;
+    serializeJson(doc, beacon);
+    
+    LoRaMessage msg;
+    msg.sourceID = nodeID;
+    msg.destID = 255; // Broadcast
+    msg.messageID = messageCounter++;
+    msg.hopCount = 0;
+    msg.maxHops = 3;
+    msg.payload = beacon;
+    
+    transmitMessage(msg);
+  }
+  
+  bool transmitMessage(const LoRaMessage&amp; msg) {
+    DynamicJsonDocument doc(300);
+    doc[&quot;src&quot;] = msg.sourceID;
+    doc[&quot;dst&quot;] = msg.destID;
+    doc[&quot;mid&quot;] = msg.messageID;
+    doc[&quot;hop&quot;] = msg.hopCount;
+    doc[&quot;max&quot;] = msg.maxHops;
+    doc[&quot;data&quot;] = msg.payload;
+    
+    String jsonStr;
+    serializeJson(doc, jsonStr);
+    
+    LoRa.beginPacket();
+    LoRa.print(jsonStr);
+    LoRa.endPacket();
+    
+    return true;
+  }
+  
+  LoRaMessage parseMessage(const String&amp; rawMsg) {
+    LoRaMessage msg;
+    DynamicJsonDocument doc(300);
+    
+    if (deserializeJson(doc, rawMsg) == DeserializationError::Ok) {
+      msg.sourceID = doc[&quot;src&quot;];
+      msg.destID = doc[&quot;dst&quot;];
+      msg.messageID = doc[&quot;mid&quot;];
+      msg.hopCount = doc[&quot;hop&quot;];
+      msg.maxHops = doc[&quot;max&quot;];
+      msg.payload = doc[&quot;data&quot;].as&lt;String&gt;();
+    }
+    
+    return msg;
+  }
+  
+  void updateRoute(uint8_t destID, uint8_t nextHop, uint8_t hopCount) {
+    // Find existing route or create new one
+    int routeIndex = -1;
+    for (int i = 0; i &lt; routeCount; i++) {
+      if (routingTable[i].destID == destID) {
+        routeIndex = i;
+        break;
+      }
+    }
+    
+    if (routeIndex == -1 &amp;&amp; routeCount &lt; 10) {
+      routeIndex = routeCount++;
+    }
+    
+    if (routeIndex != -1) {
+      routingTable[routeIndex].destID = destID;
+      routingTable[routeIndex].nextHop = nextHop;
+      routingTable[routeIndex].hopCount = hopCount;
+      routingTable[routeIndex].lastSeen = millis();
+    }
+  }
+};
+
+LoRaMesh mesh(1); // Node ID 1
+
+void setup() {
+  Serial.begin(9600);
+  mesh.begin();
+}
+
+void loop() {
+  mesh.update();
+  
+  // Example: Send message every 60 seconds
+  static unsigned long lastSend = 0;
+  if (millis() - lastSend &gt; 60000) {
+    mesh.sendMessage(2, &quot;Hello from Node 1&quot;);
+    lastSend = millis();
+  }
+}
+</code></pre>
+<h2 id="lora-range-and-link-budget-analysis">LoRa Range and Link Budget Analysis</h2>
+<h3 id="link-budget-calculation">Link Budget Calculation</h3>
+<pre><code class="lang-cpp">class LoRaLinkBudget {
+public:
+  static float calculateRange(
+    float txPower,          // dBm
+    float rxSensitivity,    // dBm
+    float txAntennaGain,    // dBi
+    float rxAntennaGain,    // dBi
+    float frequency,        // MHz
+    float margin = 10       // dB fade margin
+  ) {
+    // Free space path loss budget
+    float linkBudget = txPower + txAntennaGain + rxAntennaGain - rxSensitivity - margin;
+    
+    // Friis transmission equation
+    float range = pow(10, (linkBudget - 32.45 - 20 * log10(frequency)) / 20);
+    
+    return range; // kilometers
+  }
+  
+  static void printLinkAnalysis(int sf, float bw, int cr) {
+    Serial.println(&quot;=== LoRa Link Analysis ===&quot;);
+    Serial.print(&quot;SF: &quot;); Serial.println(sf);
+    Serial.print(&quot;BW: &quot;); Serial.print(bw/1000); Serial.println(&quot; kHz&quot;);
+    Serial.print(&quot;CR: 4/&quot;); Serial.println(cr);
+    
+    // Calculate theoretical sensitivity
+    float sensitivity = getSensitivity(sf, bw);
+    Serial.print(&quot;Sensitivity: &quot;); Serial.print(sensitivity); Serial.println(&quot; dBm&quot;);
+    
+    // Calculate data rate
+    float dataRate = calculateDataRate(sf, bw, cr);
+    Serial.print(&quot;Data Rate: &quot;); Serial.print(dataRate); Serial.println(&quot; bps&quot;);
+    
+    // Calculate range (typical conditions)
+    float range = calculateRange(14, sensitivity, 2, 2, 868);
+    Serial.print(&quot;Estimated Range: &quot;); Serial.print(range); Serial.println(&quot; km&quot;);
+    
+    Serial.println();
+  }
+  
+private:
+  static float getSensitivity(int sf, float bw) {
+    // Theoretical sensitivity calculation
+    float thermalNoise = -174; // dBm/Hz
+    float noiseFigure = 6;     // dB (typical for SX1276)
+    float snrRequired = -20 + (sf - 6) * 2.5; // Empirical formula
+    
+    float sensitivity = thermalNoise + noiseFigure + 10 * log10(bw) + snrRequired;
+    return sensitivity;
+  }
+  
+  static float calculateDataRate(int sf, float bw, int cr) {
+    float symbolRate = bw / pow(2, sf);
+    float bitRate = symbolRate * sf * cr / (cr + 4);
+    return bitRate;
+  }
+};
+
+void analyzeLinkBudget() {
+  Serial.println(&quot;LoRa Configuration Analysis:&quot;);
+  
+  LoRaLinkBudget::printLinkAnalysis(7, 125000, 5);
+  LoRaLinkBudget::printLinkAnalysis(9, 125000, 5);
+  LoRaLinkBudget::printLinkAnalysis(12, 125000, 5);
+}
+</code></pre>
+<h2 id="lorawan-integration">LoRaWAN Integration</h2>
+<h3 id="otaa-over-the-air-activation">OTAA (Over-The-Air Activation)</h3>
+<pre><code class="lang-cpp">#include &lt;lmic.h&gt;
+#include &lt;hal/hal.h&gt;
+#include &lt;SPI.h&gt;
+
+// LoRaWAN credentials (replace with your own)
+static const u1_t PROGMEM APPEUI[8] = { /* LSB format */ };
+static const u1_t PROGMEM DEVEUI[8] = { /* LSB format */ };
+static const u1_t PROGMEM APPKEY[16] = { /* MSB format */ };
+
+void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
+void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
+void os_getDevKey (u1_t* buf) { memcpy_P(buf, APPKEY, 16);}
+
+static osjob_t sendjob;
+const unsigned TX_INTERVAL = 60; // seconds
+
+// Pin mapping for specific boards
+const lmic_pinmap lmic_pins = {
+    .nss = 10,
+    .rxtx = LMIC_UNUSED_PIN,
+    .rst = 9,
+    .dio = {2, 6, 7},
+};
+
+void onEvent (ev_t ev) {
+    switch(ev) {
+        case EV_JOINED:
+            Serial.println(F(&quot;EV_JOINED&quot;));
+            LMIC_setLinkCheckMode(0);
+            break;
+        case EV_TXCOMPLETE:
+            Serial.println(F(&quot;EV_TXCOMPLETE&quot;));
+            if (LMIC.txrxFlags &amp; TXRX_ACK)
+                Serial.println(F(&quot;Received ack&quot;));
+            if (LMIC.dataLen) {
+                Serial.print(F(&quot;Received &quot;));
+                Serial.print(LMIC.dataLen);
+                Serial.println(F(&quot; bytes of payload&quot;));
+            }
+            // Schedule next transmission
+            os_setTimedCallback(&amp;sendjob, os_getTime()+sec2osticks(TX_INTERVAL), do_send);
+            break;
+        default:
+            Serial.print(F(&quot;Unknown event: &quot;));
+            Serial.println((unsigned) ev);
+            break;
+    }
+}
+
+void do_send(osjob_t* j) {
+    if (LMIC.opmode &amp; OP_TXRXPEND) {
+        Serial.println(F(&quot;OP_TXRXPEND, not sending&quot;));
+    } else {
+        // Prepare upstream data transmission
+        uint8_t payload[4];
+        float temperature = 23.5;
+        int16_t temp = temperature * 100; // Send as integer * 100
+        payload[0] = temp &gt;&gt; 8;
+        payload[1] = temp &amp; 0xFF;
+        payload[2] = 0x01; // Sensor type identifier
+        payload[3] = 0x00; // Reserved
+        
+        LMIC_setTxData2(1, payload, sizeof(payload), 0);
+        Serial.println(F(&quot;Packet queued&quot;));
+    }
+}
+
+void setup() {
+    Serial.begin(9600);
+    Serial.println(F(&quot;Starting LoRaWAN&quot;));
+    
+    // LMIC init
+    os_init();
+    LMIC_reset();
+    
+    // Start job (sending automatically starts OTAA too)
+    do_send(&amp;sendjob);
+}
+
+void loop() {
+    os_runloop_once();
+}
+</code></pre>
+<h2 id="power-optimization-techniques">Power Optimization Techniques</h2>
+<h3 id="deep-sleep-implementation">Deep Sleep Implementation</h3>
+<pre><code class="lang-cpp">#include &lt;ESP.h&gt;
+#include &lt;RTC.h&gt;
+
+class LoRaPowerManager {
+private:
+  static const int SLEEP_DURATION = 600; // 10 minutes
+  RTC_DATA_ATTR static int bootCount;
+  
+public:
+  static void enterDeepSleep() {
+    Serial.println(&quot;Entering deep sleep...&quot;);
+    Serial.flush();
+    
+    // Configure wake-up timer
+    esp_sleep_enable_timer_wakeup(SLEEP_DURATION * 1000000ULL);
+    
+    // Power down LoRa module
+    LoRa.sleep();
+    
+    // Enter deep sleep
+    esp_deep_sleep_start();
+  }
+  
+  static void wakeUpRoutine() {
+    bootCount++;
+    Serial.printf(&quot;Wake up #%d\n&quot;, bootCount);
+    
+    // Re-initialize LoRa
+    LoRa.begin(868E6);
+    LoRa.setSpreadingFactor(9);
+    
+    // Quick transmission mode
+    LoRa.setTxPower(14);
+  }
+  
+  static void optimizePower() {
+    // Reduce CPU frequency
+    setCpuFrequencyMhz(80);
+    
+    // Disable WiFi and Bluetooth
+    WiFi.mode(WIFI_OFF);
+    btStop();
+    
+    // Configure unused pins
+    for (int i = 0; i &lt; 40; i++) {
+      if (i != LoRa_SS &amp;&amp; i != LoRa_RST &amp;&amp; i != LoRa_DIO0) {
+        pinMode(i, INPUT_PULLUP);
+      }
+    }
+  }
+};
+
+RTC_DATA_ATTR int LoRaPowerManager::bootCount = 0;
+
+void setup() {
+  Serial.begin(9600);
+  
+  LoRaPowerManager::wakeUpRoutine();
+  LoRaPowerManager::optimizePower();
+  
+  // Send sensor data
+  sendSensorData();
+  
+  // Go back to sleep
+  LoRaPowerManager::enterDeepSleep();
+}
+
+void sendSensorData() {
+  // Read sensors quickly
+  float temp = readTemperature();
+  float humidity = readHumidity();
+  
+  // Encode and send
+  uint8_t payload[6];
+  encodeFloat16(payload, 0, temp);
+  encodeFloat16(payload + 2, humidity);
+  
+  LoRa.beginPacket();
+  LoRa.write(payload, 6);
+  LoRa.endPacket();
+  
+  // Wait for transmission complete
+  delay(1000);
+}
+</code></pre>
+<h2 id="regulatory-considerations">Regulatory Considerations</h2>
+<h3 id="duty-cycle-limitations">Duty Cycle Limitations</h3>
+<pre><code class="lang-cpp">class DutyCycleManager {
+private:
+  static const float DUTY_CYCLE_LIMIT = 0.01; // 1% for 868MHz EU
+  unsigned long lastTransmission = 0;
+  unsigned long transmissionTime = 0;
+  unsigned long windowStart = 0;
+  
+public:
+  bool canTransmit(int payloadSize, int sf, float bw) {
+    unsigned long airTime = calculateAirTime(payloadSize, sf, bw);
+    unsigned long currentTime = millis();
+    
+    // Reset window every hour
+    if (currentTime - windowStart &gt; 3600000) {
+      windowStart = currentTime;
+      transmissionTime = 0;
+    }
+    
+    // Check if transmission would exceed duty cycle
+    float currentDutyCycle = (float)transmissionTime / (currentTime - windowStart);
+    float newDutyCycle = (float)(transmissionTime + airTime) / (currentTime - windowStart);
+    
+    return newDutyCycle &lt;= DUTY_CYCLE_LIMIT;
+  }
+  
+  void recordTransmission(int payloadSize, int sf, float bw) {
+    unsigned long airTime = calculateAirTime(payloadSize, sf, bw);
+    transmissionTime += airTime;
+    lastTransmission = millis();
+  }
+  
+private:
+  unsigned long calculateAirTime(int payloadSize, int sf, float bw) {
+    // Simplified air time calculation
+    int symbolTime = (1 &lt;&lt; sf) / bw * 1000; // ms
+    int preambleTime = (8 + 4.25) * symbolTime;
+    int headerTime = 8 * symbolTime;
+    int payloadSymbols = 8 + max(ceil((8.0 * payloadSize - 4 * sf + 28 + 16) / (4 * sf)) * 5, 0);
+    int payloadTime = payloadSymbols * symbolTime;
+    
+    return preambleTime + headerTime + payloadTime;
+  }
+};
+</code></pre>
+<h2 id="best-practices-and-optimization">Best Practices and Optimization</h2>
+<h3 id="1-parameter-selection-guidelines">1. Parameter Selection Guidelines</h3>
+<pre><code class="lang-cpp">void selectOptimalParameters(float distance, int payloadSize, float batteryLife) {
+  Serial.println(&quot;=== LoRa Parameter Optimization ===&quot;);
+  
+  if (distance &lt; 2) {
+    Serial.println(&quot;Short range - Use SF7, high data rate&quot;);
+    LoRa.setSpreadingFactor(7);
+    LoRa.setSignalBandwidth(250E3);
+  } else if (distance &lt; 10) {
+    Serial.println(&quot;Medium range - Use SF9, balanced performance&quot;);
+    LoRa.setSpreadingFactor(9);
+    LoRa.setSignalBandwidth(125E3);
+  } else {
+    Serial.println(&quot;Long range - Use SF12, maximum sensitivity&quot;);
+    LoRa.setSpreadingFactor(12);
+    LoRa.setSignalBandwidth(125E3);
+  }
+  
+  if (batteryLife &gt; 5) {
+    Serial.println(&quot;Long battery life required - Reduce TX power&quot;);
+    LoRa.setTxPower(2); // Minimum power
+  } else {
+    LoRa.setTxPower(14); // Maximum power
+  }
+}
+</code></pre>
+<h3 id="2-error-handling-and-reliability">2. Error Handling and Reliability</h3>
+<pre><code class="lang-cpp">class ReliableLoRa {
+private:
+  static const int MAX_RETRIES = 3;
+  static const int ACK_TIMEOUT = 5000;
+  
+public:
+  bool sendWithAck(String message, uint8_t destID) {
+    for (int attempt = 0; attempt &lt; MAX_RETRIES; attempt++) {
+      // Send message with sequence number
+      uint8_t seqNum = random(256);
+      String packet = String(destID) + &quot;:&quot; + String(seqNum) + &quot;:&quot; + message;
+      
+      LoRa.beginPacket();
+      LoRa.print(packet);
+      LoRa.endPacket();
+      
+      // Wait for ACK
+      unsigned long timeout = millis() + ACK_TIMEOUT;
+      while (millis() &lt; timeout) {
+        int packetSize = LoRa.parsePacket();
+        if (packetSize &gt; 0) {
+          String ack = LoRa.readString();
+          if (ack == &quot;ACK:&quot; + String(seqNum)) {
+            return true; // Success
+          }
+        }
+      }
+      
+      Serial.println(&quot;Retry &quot; + String(attempt + 1));
+      delay(1000 * (attempt + 1)); // Exponential backoff
+    }
+    
+    return false; // Failed after all retries
+  }
+};
+</code></pre>
+<h2 id="applications-and-use-cases">Applications and Use Cases</h2>
+<h3 id="environmental-monitoring-network">Environmental Monitoring Network</h3>
+<ul>
+<li><strong>Sensor nodes</strong>: Temperature, humidity, soil moisture</li>
+<li><strong>Data collection</strong>: Centralized gateway with internet backhaul</li>
+<li><strong>Power source</strong>: Solar panel with battery backup</li>
+<li><strong>Range</strong>: 5-15 km from gateway</li>
+</ul>
+<h3 id="asset-tracking-system">Asset Tracking System</h3>
+<ul>
+<li><strong>GPS integration</strong>: Location reporting</li>
+<li><strong>Geofencing</strong>: Alert on boundary crossing</li>
+<li><strong>Battery optimization</strong>: Adaptive reporting intervals</li>
+<li><strong>Coverage</strong>: Regional tracking network</li>
+</ul>
+<h3 id="smart-agriculture">Smart Agriculture</h3>
+<ul>
+<li><strong>Soil sensors</strong>: Moisture, pH, nutrients</li>
+<li><strong>Weather stations</strong>: Local microclimate monitoring</li>
+<li><strong>Irrigation control</strong>: Remote valve operation</li>
+<li><strong>Crop monitoring</strong>: Growth stage detection</li>
+</ul>
+<h3 id="industrial-iot">Industrial IoT</h3>
+<ul>
+<li><strong>Machine monitoring</strong>: Vibration, temperature</li>
+<li><strong>Predictive maintenance</strong>: Sensor data analysis</li>
+<li><strong>Remote control</strong>: Equipment on/off commands</li>
+<li><strong>Safety systems</strong>: Gas leak detection</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/lora-lpwan-guide.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

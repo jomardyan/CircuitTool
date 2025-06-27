@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SMPSCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SMPSCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations for switching mode power supplies (SMPS) design.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerElectronics_SMPSCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.PowerElectronics.SMPSCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.PowerElectronics.SMPSCalculator">
+
+
+
+  <h1 id="CircuitTool_PowerElectronics_SMPSCalculator" data-uid="CircuitTool.PowerElectronics.SMPSCalculator" class="text-break">
+Class SMPSCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.PowerElectronics.html">PowerElectronics</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations for switching mode power supplies (SMPS) design.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SMPSCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SMPSCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_PowerElectronics_SMPSCalculator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Example usage:</p>
+<pre><code class="lang-csharp">double duty = SMPSCalculator.DutyCycle(12, 5); // Buck converter duty cycle
+double ripple = SMPSCalculator.OutputRipple(100e-6, 1, 100e3); // Output voltage ripple
+double inductance = SMPSCalculator.MinimumInductance(5, 2, 100e3, 0.3); // CCM inductance</code></pre>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_BoostDutyCycle_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_BoostDutyCycle_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(System.Double,System.Double)">
+  BoostDutyCycle(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates duty cycle for a boost converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double BoostDutyCycle(double inputVoltage, double outputVoltage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage in volts (V).</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Duty cycle (0-1).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_BuckBoostDutyCycle_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_BuckBoostDutyCycle_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(System.Double,System.Double)">
+  BuckBoostDutyCycle(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates duty cycle for a buck-boost converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double BuckBoostDutyCycle(double inputVoltage, double outputVoltage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage in volts (V).</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Duty cycle (0-1).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_BuckDutyCycle_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_BuckDutyCycle_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(System.Double,System.Double)">
+  BuckDutyCycle(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates duty cycle for a buck converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double BuckDutyCycle(double inputVoltage, double outputVoltage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage in volts (V).</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Duty cycle (0-1).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_SMPSCalculator_BuckDutyCycle_System_Double_System_Double__examples">Examples</h4>
+  <p>double duty = SMPSCalculator.DutyCycle(12, 5); // Buck converter duty cycle</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_ConductionLoss_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_ConductionLoss_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(System.Double,System.Double,System.Double)">
+  ConductionLoss(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates conduction losses in a MOSFET.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ConductionLoss(double current, double onResistance, double dutyCycle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>current</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>RMS current in amperes (A).</p>
+</dd>
+    <dt><code>onResistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>On-state resistance in ohms (Ω).</p>
+</dd>
+    <dt><code>dutyCycle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Duty cycle (0-1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Conduction power loss in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_FlybackMagnetizingInductance_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_FlybackMagnetizingInductance_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(System.Double,System.Double,System.Double,System.Double)">
+  FlybackMagnetizingInductance(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates magnetizing inductance for flyback converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double FlybackMagnetizingInductance(double inputVoltage, double dutyCycle, double switchingFrequency, double peakCurrent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage in volts (V).</p>
+</dd>
+    <dt><code>dutyCycle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Duty cycle (0-1).</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+    <dt><code>peakCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Peak magnetizing current in amperes (A).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Magnetizing inductance in henries (H).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_FlybackTurnsRatio_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_FlybackTurnsRatio_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double)">
+  FlybackTurnsRatio(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates transformer turns ratio for flyback converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double FlybackTurnsRatio(double inputVoltageMin, double outputVoltage, double forwardDrop, double maxDutyCycle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltageMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum input voltage in volts (V).</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage in volts (V).</p>
+</dd>
+    <dt><code>forwardDrop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Forward voltage drop of output diode in volts (V).</p>
+</dd>
+    <dt><code>maxDutyCycle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum allowable duty cycle (typically 0.45-0.5).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transformer turns ratio (Np/Ns).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_MinimumInductanceBuck_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_MinimumInductanceBuck_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(System.Double,System.Double,System.Double,System.Double)">
+  MinimumInductanceBuck(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates minimum inductance for continuous conduction mode (CCM).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MinimumInductanceBuck(double outputVoltage, double outputCurrent, double switchingFrequency, double currentRippleFactor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage in volts (V).</p>
+</dd>
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current in amperes (A).</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+    <dt><code>currentRippleFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Current ripple factor (ΔI/I, typically 0.2-0.4).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum inductance in henries (H).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_SMPSCalculator_MinimumInductanceBuck_System_Double_System_Double_System_Double_System_Double__examples">Examples</h4>
+  <p>double inductance = SMPSCalculator.MinimumInductance(5, 2, 100e3, 0.3); // CCM inductance</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_OutputCapacitance_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_OutputCapacitance_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(System.Double,System.Double,System.Double)">
+  OutputCapacitance(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates output capacitance for desired voltage ripple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double OutputCapacitance(double outputCurrent, double switchingFrequency, double voltageRipple)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current in amperes (A).</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+    <dt><code>voltageRipple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Desired voltage ripple in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required output capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_OutputRipple_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_OutputRipple_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(System.Double,System.Double,System.Double)">
+  OutputRipple(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates output voltage ripple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double OutputRipple(double outputCapacitance, double outputCurrent, double switchingFrequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputCapacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output capacitance in farads (F).</p>
+</dd>
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current in amperes (A).</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage ripple in volts (V).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_SMPSCalculator_OutputRipple_System_Double_System_Double_System_Double__examples">Examples</h4>
+  <p>double ripple = SMPSCalculator.OutputRipple(100e-6, 1, 100e3); // Output voltage ripple</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_SMPSCalculator_SwitchingLoss_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_SMPSCalculator_SwitchingLoss_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  SwitchingLoss(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates switching losses in a MOSFET.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SwitchingLoss(double voltage, double current, double switchingFrequency, double riseTime, double fallTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Drain-source voltage in volts (V).</p>
+</dd>
+    <dt><code>current</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Drain current in amperes (A).</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+    <dt><code>riseTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rise time in seconds.</p>
+</dd>
+    <dt><code>fallTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Fall time in seconds.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching power loss in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/SMPSCalculator.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

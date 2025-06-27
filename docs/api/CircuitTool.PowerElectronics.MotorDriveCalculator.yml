@@ -1,0 +1,910 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator
+  commentId: T:CircuitTool.PowerElectronics.MotorDriveCalculator
+  id: MotorDriveCalculator
+  parent: CircuitTool.PowerElectronics
+  children:
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(System.Double,System.Int32)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: MotorDriveCalculator
+  nameWithType: MotorDriveCalculator
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator
+  type: Class
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MotorDriveCalculator
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 15
+  namespace: CircuitTool.PowerElectronics
+  summary: Provides calculations for motor drive and control systems.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double torque = MotorDriveCalculator.TorqueFromPower(750, 1800); // Motor torque
+
+    double speed = MotorDriveCalculator.SynchronousSpeed(50, 4); // Synchronous speed
+
+    double slip = MotorDriveCalculator.Slip(1800, 1750); // Motor slip</code></pre>
+  example: []
+  syntax:
+    content: public static class MotorDriveCalculator
+    content.vb: Public Module MotorDriveCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(System.Double,System.Double)
+  id: TorqueFromPower(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: TorqueFromPower(double, double)
+  nameWithType: MotorDriveCalculator.TorqueFromPower(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TorqueFromPower
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 26
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates motor torque from power and speed.
+  example:
+  - double torque = MotorDriveCalculator.TorqueFromPower(750, 1800); // Motor torque
+  syntax:
+    content: public static double TorqueFromPower(double power, double speed)
+    parameters:
+    - id: power
+      type: System.Double
+      description: Mechanical power in watts (W).
+    - id: speed
+      type: System.Double
+      description: Rotational speed in RPM.
+    return:
+      type: System.Double
+      description: Torque in Newton-meters (N⋅m).
+    content.vb: Public Shared Function TorqueFromPower(power As Double, speed As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower*
+  nameWithType.vb: MotorDriveCalculator.TorqueFromPower(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(Double, Double)
+  name.vb: TorqueFromPower(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(System.Double,System.Double)
+  id: PowerFromTorque(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: PowerFromTorque(double, double)
+  nameWithType: MotorDriveCalculator.PowerFromTorque(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFromTorque
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 41
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates mechanical power from torque and speed.
+  example: []
+  syntax:
+    content: public static double PowerFromTorque(double torque, double speed)
+    parameters:
+    - id: torque
+      type: System.Double
+      description: Torque in Newton-meters (N⋅m).
+    - id: speed
+      type: System.Double
+      description: Rotational speed in RPM.
+    return:
+      type: System.Double
+      description: Mechanical power in watts (W).
+    content.vb: Public Shared Function PowerFromTorque(torque As Double, speed As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque*
+  nameWithType.vb: MotorDriveCalculator.PowerFromTorque(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(Double, Double)
+  name.vb: PowerFromTorque(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(System.Double,System.Int32)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(System.Double,System.Int32)
+  id: SynchronousSpeed(System.Double,System.Int32)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: SynchronousSpeed(double, int)
+  nameWithType: MotorDriveCalculator.SynchronousSpeed(double, int)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(double, int)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SynchronousSpeed
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 59
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates synchronous speed for AC motor.
+  example:
+  - double speed = MotorDriveCalculator.SynchronousSpeed(50, 4); // Synchronous speed
+  syntax:
+    content: public static double SynchronousSpeed(double frequency, int poles)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Supply frequency in Hz.
+    - id: poles
+      type: System.Int32
+      description: Number of poles.
+    return:
+      type: System.Double
+      description: Synchronous speed in RPM.
+    content.vb: Public Shared Function SynchronousSpeed(frequency As Double, poles As Integer) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed*
+  nameWithType.vb: MotorDriveCalculator.SynchronousSpeed(Double, Integer)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(Double, Integer)
+  name.vb: SynchronousSpeed(Double, Integer)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(System.Double,System.Double)
+  id: Slip(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: Slip(double, double)
+  nameWithType: MotorDriveCalculator.Slip(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Slip
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 78
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates motor slip.
+  example:
+  - double slip = MotorDriveCalculator.Slip(1800, 1750); // Motor slip
+  syntax:
+    content: public static double Slip(double synchronousSpeed, double actualSpeed)
+    parameters:
+    - id: synchronousSpeed
+      type: System.Double
+      description: Synchronous speed in RPM.
+    - id: actualSpeed
+      type: System.Double
+      description: Actual rotor speed in RPM.
+    return:
+      type: System.Double
+      description: Slip as a percentage.
+    content.vb: Public Shared Function Slip(synchronousSpeed As Double, actualSpeed As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip*
+  nameWithType.vb: MotorDriveCalculator.Slip(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(Double, Double)
+  name.vb: Slip(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(System.Double,System.Double)
+  id: RotorFrequency(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: RotorFrequency(double, double)
+  nameWithType: MotorDriveCalculator.RotorFrequency(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RotorFrequency
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 94
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates rotor frequency for induction motor.
+  example: []
+  syntax:
+    content: public static double RotorFrequency(double slip, double supplyFrequency)
+    parameters:
+    - id: slip
+      type: System.Double
+      description: Slip as a percentage.
+    - id: supplyFrequency
+      type: System.Double
+      description: Supply frequency in Hz.
+    return:
+      type: System.Double
+      description: Rotor frequency in Hz.
+    content.vb: Public Shared Function RotorFrequency(slip As Double, supplyFrequency As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency*
+  nameWithType.vb: MotorDriveCalculator.RotorFrequency(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(Double, Double)
+  name.vb: RotorFrequency(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(System.Double,System.Double)
+  id: Efficiency(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: Efficiency(double, double)
+  nameWithType: MotorDriveCalculator.Efficiency(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Efficiency
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 110
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates motor efficiency.
+  example: []
+  syntax:
+    content: public static double Efficiency(double mechanicalPower, double electricalPower)
+    parameters:
+    - id: mechanicalPower
+      type: System.Double
+      description: Mechanical power output in watts (W).
+    - id: electricalPower
+      type: System.Double
+      description: Electrical power input in watts (W).
+    return:
+      type: System.Double
+      description: Efficiency as a percentage.
+    content.vb: Public Shared Function Efficiency(mechanicalPower As Double, electricalPower As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency*
+  nameWithType.vb: MotorDriveCalculator.Efficiency(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(Double, Double)
+  name.vb: Efficiency(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(System.Double,System.Double)
+  id: VHzRatio(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: VHzRatio(double, double)
+  nameWithType: MotorDriveCalculator.VHzRatio(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VHzRatio
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 126
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates V/Hz ratio for variable frequency drive.
+  example: []
+  syntax:
+    content: public static double VHzRatio(double voltage, double frequency)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Motor voltage in volts (V).
+    - id: frequency
+      type: System.Double
+      description: Motor frequency in Hz.
+    return:
+      type: System.Double
+      description: V/Hz ratio.
+    content.vb: Public Shared Function VHzRatio(voltage As Double, frequency As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio*
+  nameWithType.vb: MotorDriveCalculator.VHzRatio(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(Double, Double)
+  name.vb: VHzRatio(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(System.Double,System.Double,System.Double)
+  id: VoltageForConstantVHz(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: VoltageForConstantVHz(double, double, double)
+  nameWithType: MotorDriveCalculator.VoltageForConstantVHz(double, double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageForConstantVHz
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 141
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates required voltage for constant V/Hz operation.
+  example: []
+  syntax:
+    content: public static double VoltageForConstantVHz(double baseVoltage, double baseFrequency, double operatingFrequency)
+    parameters:
+    - id: baseVoltage
+      type: System.Double
+      description: Base (rated) voltage in volts (V).
+    - id: baseFrequency
+      type: System.Double
+      description: Base (rated) frequency in Hz.
+    - id: operatingFrequency
+      type: System.Double
+      description: Operating frequency in Hz.
+    return:
+      type: System.Double
+      description: Required voltage in volts (V).
+    content.vb: Public Shared Function VoltageForConstantVHz(baseVoltage As Double, baseFrequency As Double, operatingFrequency As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz*
+  nameWithType.vb: MotorDriveCalculator.VoltageForConstantVHz(Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(Double, Double, Double)
+  name.vb: VoltageForConstantVHz(Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(System.Double,System.Double,System.Double)
+  id: StartingTorque(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: StartingTorque(double, double, double)
+  nameWithType: MotorDriveCalculator.StartingTorque(double, double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StartingTorque
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 156
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates starting torque for induction motor.
+  example: []
+  syntax:
+    content: public static double StartingTorque(double voltage, double ratedVoltage, double ratedStartingTorque)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Applied voltage in volts (V).
+    - id: ratedVoltage
+      type: System.Double
+      description: Rated voltage in volts (V).
+    - id: ratedStartingTorque
+      type: System.Double
+      description: Rated starting torque in N⋅m.
+    return:
+      type: System.Double
+      description: Starting torque at applied voltage in N⋅m.
+    content.vb: Public Shared Function StartingTorque(voltage As Double, ratedVoltage As Double, ratedStartingTorque As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque*
+  nameWithType.vb: MotorDriveCalculator.StartingTorque(Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(Double, Double, Double)
+  name.vb: StartingTorque(Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  id: MotorCurrent(System.Double,System.Double,System.Double,System.Double,System.Boolean)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: MotorCurrent(double, double, double, double, bool)
+  nameWithType: MotorDriveCalculator.MotorCurrent(double, double, double, double, bool)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(double, double, double, double, bool)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MotorCurrent
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 174
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates motor current from power and power factor.
+  example: []
+  syntax:
+    content: public static double MotorCurrent(double power, double voltage, double efficiency, double powerFactor, bool isThreePhase = true)
+    parameters:
+    - id: power
+      type: System.Double
+      description: Mechanical power in watts (W).
+    - id: voltage
+      type: System.Double
+      description: Line voltage in volts (V).
+    - id: efficiency
+      type: System.Double
+      description: Motor efficiency (0-1).
+    - id: powerFactor
+      type: System.Double
+      description: Power factor (0-1).
+    - id: isThreePhase
+      type: System.Boolean
+      description: True for three-phase motor, false for single-phase.
+    return:
+      type: System.Double
+      description: Motor current in amperes (A).
+    content.vb: Public Shared Function MotorCurrent(power As Double, voltage As Double, efficiency As Double, powerFactor As Double, isThreePhase As Boolean = True) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent*
+  nameWithType.vb: MotorDriveCalculator.MotorCurrent(Double, Double, Double, Double, Boolean)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(Double, Double, Double, Double, Boolean)
+  name.vb: MotorCurrent(Double, Double, Double, Double, Boolean)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(System.Double,System.Double)
+  id: PWMFrequency(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: PWMFrequency(double, double)
+  nameWithType: MotorDriveCalculator.PWMFrequency(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PWMFrequency
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 202
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates PWM switching frequency for motor drive.
+  example: []
+  syntax:
+    content: public static double PWMFrequency(double fundamentalFrequency, double carrierRatio)
+    parameters:
+    - id: fundamentalFrequency
+      type: System.Double
+      description: Fundamental output frequency in Hz.
+    - id: carrierRatio
+      type: System.Double
+      description: Carrier to fundamental frequency ratio (typically 20-100).
+    return:
+      type: System.Double
+      description: PWM switching frequency in Hz.
+    content.vb: Public Shared Function PWMFrequency(fundamentalFrequency As Double, carrierRatio As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency*
+  nameWithType.vb: MotorDriveCalculator.PWMFrequency(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(Double, Double)
+  name.vb: PWMFrequency(Double, Double)
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(System.Double,System.Double)
+  id: ModulationIndex(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.MotorDriveCalculator
+  langs:
+  - csharp
+  - vb
+  name: ModulationIndex(double, double)
+  nameWithType: MotorDriveCalculator.ModulationIndex(double, double)
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/MotorDriveCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModulationIndex
+    path: src/PowerElectronics/MotorDriveCalculator.cs
+    startLine: 216
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates modulation index for PWM inverter.
+  example: []
+  syntax:
+    content: public static double ModulationIndex(double outputVoltage, double dcBusVoltage)
+    parameters:
+    - id: outputVoltage
+      type: System.Double
+      description: Peak output voltage in volts (V).
+    - id: dcBusVoltage
+      type: System.Double
+      description: DC bus voltage in volts (V).
+    return:
+      type: System.Double
+      description: Modulation index (0-1).
+    content.vb: Public Shared Function ModulationIndex(outputVoltage As Double, dcBusVoltage As Double) As Double
+  overload: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex*
+  nameWithType.vb: MotorDriveCalculator.ModulationIndex(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(Double, Double)
+  name.vb: ModulationIndex(Double, Double)
+references:
+- uid: CircuitTool.PowerElectronics
+  commentId: N:CircuitTool.PowerElectronics
+  href: CircuitTool.html
+  name: CircuitTool.PowerElectronics
+  nameWithType: CircuitTool.PowerElectronics
+  fullName: CircuitTool.PowerElectronics
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerElectronics
+    name: PowerElectronics
+    href: CircuitTool.PowerElectronics.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerElectronics
+    name: PowerElectronics
+    href: CircuitTool.PowerElectronics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_TorqueFromPower_System_Double_System_Double_
+  name: TorqueFromPower
+  nameWithType: MotorDriveCalculator.TorqueFromPower
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_PowerFromTorque_System_Double_System_Double_
+  name: PowerFromTorque
+  nameWithType: MotorDriveCalculator.PowerFromTorque
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_SynchronousSpeed_System_Double_System_Int32_
+  name: SynchronousSpeed
+  nameWithType: MotorDriveCalculator.SynchronousSpeed
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.Slip
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_Slip_System_Double_System_Double_
+  name: Slip
+  nameWithType: MotorDriveCalculator.Slip
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.Slip
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_RotorFrequency_System_Double_System_Double_
+  name: RotorFrequency
+  nameWithType: MotorDriveCalculator.RotorFrequency
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_Efficiency_System_Double_System_Double_
+  name: Efficiency
+  nameWithType: MotorDriveCalculator.Efficiency
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_VHzRatio_System_Double_System_Double_
+  name: VHzRatio
+  nameWithType: MotorDriveCalculator.VHzRatio
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_VoltageForConstantVHz_System_Double_System_Double_System_Double_
+  name: VoltageForConstantVHz
+  nameWithType: MotorDriveCalculator.VoltageForConstantVHz
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_StartingTorque_System_Double_System_Double_System_Double_
+  name: StartingTorque
+  nameWithType: MotorDriveCalculator.StartingTorque
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_MotorCurrent_System_Double_System_Double_System_Double_System_Double_System_Boolean_
+  name: MotorCurrent
+  nameWithType: MotorDriveCalculator.MotorCurrent
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_PWMFrequency_System_Double_System_Double_
+  name: PWMFrequency
+  nameWithType: MotorDriveCalculator.PWMFrequency
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex*
+  commentId: Overload:CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html#CircuitTool_PowerElectronics_MotorDriveCalculator_ModulationIndex_System_Double_System_Double_
+  name: ModulationIndex
+  nameWithType: MotorDriveCalculator.ModulationIndex
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex

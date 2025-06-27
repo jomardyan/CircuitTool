@@ -1,8 +1,18 @@
-- name: Home
+- name: 🏠 Home
   href: index.md
-- name: API Reference
+- name: 🚀 Getting Started  
+  href: articles/getting-started.md
+- name: 📖 API Reference
   href: api/
-- name: Articles
-  href: articles/
-- name: GitHub
+- name: 📚 Tutorials
+  href: docs/tutorials/
+- name: 💡 Examples
+  href: docs/examples/
+- name: 🔧 Hardware Guides
+  href: docs/technology-guides/
+- name: 💻 CLI Documentation
+  href: CircuitTool.CLI/README.md
+- name: 🗺️ Architecture
+  href: PROJECT_CODE_MAP.md
+- name: 🐙 GitHub
   href: https://github.com/jomardyan/CircuitTool

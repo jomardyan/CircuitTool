@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DigitalCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DigitalCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations for digital circuit design and analysis.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_DigitalCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.DigitalCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.DigitalCalculator">
+
+
+
+  <h1 id="CircuitTool_DigitalCalculator" data-uid="CircuitTool.DigitalCalculator" class="text-break">
+Class DigitalCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations for digital circuit design and analysis.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DigitalCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DigitalCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_DigitalCalculator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Example usage:</p>
+<pre><code class="lang-csharp">double propDelay = DigitalCalculator.PropagationDelay(5e-9, 3e-12, 1000); // Propagation delay
+double risetime = DigitalCalculator.RiseTime(100e-12, 50e-12); // Rise time calculation
+double power = DigitalCalculator.DynamicPower(3.3, 1e-12, 100e6); // Dynamic power consumption</code></pre>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_DigitalCalculator_CharacteristicImpedance_" data-uid="CircuitTool.DigitalCalculator.CharacteristicImpedance*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_CharacteristicImpedance_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.CharacteristicImpedance(System.Double,System.Double)">
+  CharacteristicImpedance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates characteristic impedance for a digital transmission line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CharacteristicImpedance(double inductance, double capacitance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inductance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Inductance per unit length (H/m).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance per unit length (F/m).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Characteristic impedance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_DynamicPower_" data-uid="CircuitTool.DigitalCalculator.DynamicPower*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_DynamicPower_System_Double_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.DynamicPower(System.Double,System.Double,System.Double)">
+  DynamicPower(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates dynamic power consumption in CMOS circuits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DynamicPower(double voltage, double capacitance, double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply voltage in volts (V).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Load capacitance in farads (F).</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dynamic power consumption in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_DigitalCalculator_DynamicPower_System_Double_System_Double_System_Double__examples">Examples</h4>
+  <p>double power = DigitalCalculator.DynamicPower(3.3, 1e-12, 100e6); // Dynamic power consumption</p>
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_FallTime_" data-uid="CircuitTool.DigitalCalculator.FallTime*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_FallTime_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.FallTime(System.Double,System.Double)">
+  FallTime(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates fall time for a digital signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double FallTime(double resistance, double capacitance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resistance in ohms (Ω).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Fall time (90% to 10%) in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_Fanout_" data-uid="CircuitTool.DigitalCalculator.Fanout*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_Fanout_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.Fanout(System.Double,System.Double)">
+  Fanout(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the fanout capability of a digital gate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Fanout(double outputCurrent, double inputCurrent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output drive current in amperes (A).</p>
+</dd>
+    <dt><code>inputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input current requirement per gate in amperes (A).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Maximum fanout (number of gates that can be driven).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_MaxFrequency_" data-uid="CircuitTool.DigitalCalculator.MaxFrequency*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_MaxFrequency_System_Double_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.MaxFrequency(System.Double,System.Double,System.Double)">
+  MaxFrequency(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the maximum operating frequency based on propagation delay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MaxFrequency(double propagationDelay, double setupTime, double holdTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propagationDelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Propagation delay in seconds.</p>
+</dd>
+    <dt><code>setupTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Setup time in seconds.</p>
+</dd>
+    <dt><code>holdTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Hold time in seconds.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum operating frequency in Hz.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_MinimumTraceWidth_" data-uid="CircuitTool.DigitalCalculator.MinimumTraceWidth*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_MinimumTraceWidth_System_Double_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.MinimumTraceWidth(System.Double,System.Double,System.Double)">
+  MinimumTraceWidth(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the minimum trace width for a given current carrying capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MinimumTraceWidth(double current, double temperatureRise, double copperThickness = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>current</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Current in amperes (A).</p>
+</dd>
+    <dt><code>temperatureRise</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Allowed temperature rise in Celsius.</p>
+</dd>
+    <dt><code>copperThickness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Copper thickness in ounces (1 oz = 35 μm).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum trace width in meters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_NoiseMargin_" data-uid="CircuitTool.DigitalCalculator.NoiseMargin*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_NoiseMargin_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.NoiseMargin(System.Double,System.Double,System.Double,System.Double)">
+  NoiseMargin(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates noise margin for a digital circuit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double NoiseMarginHigh, double NoiseMarginLow) NoiseMargin(double outputHighVoltage, double inputHighThreshold, double outputLowVoltage, double inputLowThreshold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputHighVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output high voltage (VOH) in volts.</p>
+</dd>
+    <dt><code>inputHighThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input high threshold (VIH) in volts.</p>
+</dd>
+    <dt><code>outputLowVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output low voltage (VOL) in volts.</p>
+</dd>
+    <dt><code>inputLowThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input low threshold (VIL) in volts.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</dt>
+    <dd><p>Tuple containing (NoiseMarginHigh, NoiseMarginLow) in volts.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_PropagationDelay_" data-uid="CircuitTool.DigitalCalculator.PropagationDelay*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_PropagationDelay_System_Double_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.PropagationDelay(System.Double,System.Double,System.Double)">
+  PropagationDelay(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates propagation delay for a digital gate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PropagationDelay(double intrinsicDelay, double loadCapacitance, double driveStrength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intrinsicDelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Intrinsic delay of the gate in seconds.</p>
+</dd>
+    <dt><code>loadCapacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Load capacitance in farads (F).</p>
+</dd>
+    <dt><code>driveStrength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Drive strength in ohms (Ω).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Total propagation delay in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_DigitalCalculator_PropagationDelay_System_Double_System_Double_System_Double__examples">Examples</h4>
+  <p>double propDelay = DigitalCalculator.PropagationDelay(5e-9, 3e-12, 1000); // Propagation delay</p>
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_RiseTime_" data-uid="CircuitTool.DigitalCalculator.RiseTime*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_RiseTime_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.RiseTime(System.Double,System.Double)">
+  RiseTime(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates rise time for a digital signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RiseTime(double resistance, double capacitance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resistance in ohms (Ω).</p>
+</dd>
+    <dt><code>capacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Capacitance in farads (F).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rise time (10% to 90%) in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_DigitalCalculator_RiseTime_System_Double_System_Double__examples">Examples</h4>
+  <p>double risetime = DigitalCalculator.RiseTime(100e-12, 50e-12); // Rise time calculation</p>
+
+
+
+
+
+
+  <a id="CircuitTool_DigitalCalculator_StaticPower_" data-uid="CircuitTool.DigitalCalculator.StaticPower*"></a>
+
+  <h3 id="CircuitTool_DigitalCalculator_StaticPower_System_Double_System_Double_" data-uid="CircuitTool.DigitalCalculator.StaticPower(System.Double,System.Double)">
+  StaticPower(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates static power consumption due to leakage current.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double StaticPower(double voltage, double leakageCurrent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply voltage in volts (V).</p>
+</dd>
+    <dt><code>leakageCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Leakage current in amperes (A).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Static power consumption in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Calculators/DigitalCalculator.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

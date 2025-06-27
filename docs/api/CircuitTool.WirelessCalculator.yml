@@ -1,0 +1,860 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.WirelessCalculator
+  commentId: T:CircuitTool.WirelessCalculator
+  id: WirelessCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.WirelessCalculator.AntennaGainForEIRP(System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.BERFromEbN0(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  - CircuitTool.WirelessCalculator.DataRate(System.Double,System.Int32)
+  - CircuitTool.WirelessCalculator.EbN0FromBER(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  - CircuitTool.WirelessCalculator.FadeMargin(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.LinkBudget(System.Double,System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.ProcessingGain(System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.ReceivedSignalStrength(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.ShannonCapacity(System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.SpectralEfficiency(System.Double,System.Double)
+  - CircuitTool.WirelessCalculator.VSWRFromReturnLoss(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: WirelessCalculator
+  nameWithType: WirelessCalculator
+  fullName: CircuitTool.WirelessCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WirelessCalculator
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Provides calculations for wireless communication systems and protocols.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double linkBudget = WirelessCalculator.LinkBudget(20, -90, 5); // Link budget calculation
+
+    double bitrate = WirelessCalculator.ShannonCapacity(1e6, 20); // Shannon capacity
+
+    double ber = WirelessCalculator.BERFromEbN0(10, ModulationType.BPSK); // Bit error rate</code></pre>
+  example: []
+  syntax:
+    content: public static class WirelessCalculator
+    content.vb: Public Module WirelessCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.WirelessCalculator.LinkBudget(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.LinkBudget(System.Double,System.Double,System.Double)
+  id: LinkBudget(System.Double,System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: LinkBudget(double, double, double)
+  nameWithType: WirelessCalculator.LinkBudget(double, double, double)
+  fullName: CircuitTool.WirelessCalculator.LinkBudget(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LinkBudget
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 39
+  namespace: CircuitTool
+  summary: Calculates link budget for wireless communication.
+  example:
+  - double linkBudget = WirelessCalculator.LinkBudget(20, -90, 5); // Link budget calculation
+  syntax:
+    content: public static double LinkBudget(double transmitPowerDbm, double receiverSensitivityDbm, double systemMarginDb)
+    parameters:
+    - id: transmitPowerDbm
+      type: System.Double
+      description: Transmit power in dBm.
+    - id: receiverSensitivityDbm
+      type: System.Double
+      description: Receiver sensitivity in dBm.
+    - id: systemMarginDb
+      type: System.Double
+      description: System margin in dB.
+    return:
+      type: System.Double
+      description: Available path loss budget in dB.
+    content.vb: Public Shared Function LinkBudget(transmitPowerDbm As Double, receiverSensitivityDbm As Double, systemMarginDb As Double) As Double
+  overload: CircuitTool.WirelessCalculator.LinkBudget*
+  nameWithType.vb: WirelessCalculator.LinkBudget(Double, Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.LinkBudget(Double, Double, Double)
+  name.vb: LinkBudget(Double, Double, Double)
+- uid: CircuitTool.WirelessCalculator.ShannonCapacity(System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.ShannonCapacity(System.Double,System.Double)
+  id: ShannonCapacity(System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: ShannonCapacity(double, double)
+  nameWithType: WirelessCalculator.ShannonCapacity(double, double)
+  fullName: CircuitTool.WirelessCalculator.ShannonCapacity(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ShannonCapacity
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 56
+  namespace: CircuitTool
+  summary: Calculates Shannon channel capacity.
+  example:
+  - double bitrate = WirelessCalculator.ShannonCapacity(1e6, 20); // Shannon capacity
+  syntax:
+    content: public static double ShannonCapacity(double bandwidth, double snrDb)
+    parameters:
+    - id: bandwidth
+      type: System.Double
+      description: Channel bandwidth in Hz.
+    - id: snrDb
+      type: System.Double
+      description: Signal-to-noise ratio in dB.
+    return:
+      type: System.Double
+      description: Maximum data rate in bits per second.
+    content.vb: Public Shared Function ShannonCapacity(bandwidth As Double, snrDb As Double) As Double
+  overload: CircuitTool.WirelessCalculator.ShannonCapacity*
+  nameWithType.vb: WirelessCalculator.ShannonCapacity(Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.ShannonCapacity(Double, Double)
+  name.vb: ShannonCapacity(Double, Double)
+- uid: CircuitTool.WirelessCalculator.BERFromEbN0(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  commentId: M:CircuitTool.WirelessCalculator.BERFromEbN0(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  id: BERFromEbN0(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: BERFromEbN0(double, ModulationType)
+  nameWithType: WirelessCalculator.BERFromEbN0(double, WirelessCalculator.ModulationType)
+  fullName: CircuitTool.WirelessCalculator.BERFromEbN0(double, CircuitTool.WirelessCalculator.ModulationType)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BERFromEbN0
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 74
+  namespace: CircuitTool
+  summary: Calculates bit error rate (BER) from Eb/N0.
+  example:
+  - double ber = WirelessCalculator.BERFromEbN0(10, ModulationType.BPSK); // Bit error rate
+  syntax:
+    content: public static double BERFromEbN0(double ebN0Db, WirelessCalculator.ModulationType modulation)
+    parameters:
+    - id: ebN0Db
+      type: System.Double
+      description: Energy per bit to noise spectral density ratio in dB.
+    - id: modulation
+      type: CircuitTool.WirelessCalculator.ModulationType
+      description: Modulation type.
+    return:
+      type: System.Double
+      description: Bit error rate.
+    content.vb: Public Shared Function BERFromEbN0(ebN0Db As Double, modulation As WirelessCalculator.ModulationType) As Double
+  overload: CircuitTool.WirelessCalculator.BERFromEbN0*
+  nameWithType.vb: WirelessCalculator.BERFromEbN0(Double, WirelessCalculator.ModulationType)
+  fullName.vb: CircuitTool.WirelessCalculator.BERFromEbN0(Double, CircuitTool.WirelessCalculator.ModulationType)
+  name.vb: BERFromEbN0(Double, ModulationType)
+- uid: CircuitTool.WirelessCalculator.EbN0FromBER(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  commentId: M:CircuitTool.WirelessCalculator.EbN0FromBER(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  id: EbN0FromBER(System.Double,CircuitTool.WirelessCalculator.ModulationType)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: EbN0FromBER(double, ModulationType)
+  nameWithType: WirelessCalculator.EbN0FromBER(double, WirelessCalculator.ModulationType)
+  fullName: CircuitTool.WirelessCalculator.EbN0FromBER(double, CircuitTool.WirelessCalculator.ModulationType)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EbN0FromBER
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 106
+  namespace: CircuitTool
+  summary: Calculates required Eb/N0 for target BER.
+  example: []
+  syntax:
+    content: public static double EbN0FromBER(double targetBer, WirelessCalculator.ModulationType modulation)
+    parameters:
+    - id: targetBer
+      type: System.Double
+      description: Target bit error rate.
+    - id: modulation
+      type: CircuitTool.WirelessCalculator.ModulationType
+      description: Modulation type.
+    return:
+      type: System.Double
+      description: Required Eb/N0 in dB.
+    content.vb: Public Shared Function EbN0FromBER(targetBer As Double, modulation As WirelessCalculator.ModulationType) As Double
+  overload: CircuitTool.WirelessCalculator.EbN0FromBER*
+  nameWithType.vb: WirelessCalculator.EbN0FromBER(Double, WirelessCalculator.ModulationType)
+  fullName.vb: CircuitTool.WirelessCalculator.EbN0FromBER(Double, CircuitTool.WirelessCalculator.ModulationType)
+  name.vb: EbN0FromBER(Double, ModulationType)
+- uid: CircuitTool.WirelessCalculator.AntennaGainForEIRP(System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.AntennaGainForEIRP(System.Double,System.Double)
+  id: AntennaGainForEIRP(System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: AntennaGainForEIRP(double, double)
+  nameWithType: WirelessCalculator.AntennaGainForEIRP(double, double)
+  fullName: CircuitTool.WirelessCalculator.AntennaGainForEIRP(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaGainForEIRP
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 129
+  namespace: CircuitTool
+  summary: Calculates antenna gain required for a given EIRP.
+  example: []
+  syntax:
+    content: public static double AntennaGainForEIRP(double eirpDbm, double transmitPowerDbm)
+    parameters:
+    - id: eirpDbm
+      type: System.Double
+      description: Effective Isotropic Radiated Power in dBm.
+    - id: transmitPowerDbm
+      type: System.Double
+      description: Transmit power in dBm.
+    return:
+      type: System.Double
+      description: Required antenna gain in dBi.
+    content.vb: Public Shared Function AntennaGainForEIRP(eirpDbm As Double, transmitPowerDbm As Double) As Double
+  overload: CircuitTool.WirelessCalculator.AntennaGainForEIRP*
+  nameWithType.vb: WirelessCalculator.AntennaGainForEIRP(Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.AntennaGainForEIRP(Double, Double)
+  name.vb: AntennaGainForEIRP(Double, Double)
+- uid: CircuitTool.WirelessCalculator.ReceivedSignalStrength(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.ReceivedSignalStrength(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: ReceivedSignalStrength(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: ReceivedSignalStrength(double, double, double, double, double)
+  nameWithType: WirelessCalculator.ReceivedSignalStrength(double, double, double, double, double)
+  fullName: CircuitTool.WirelessCalculator.ReceivedSignalStrength(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ReceivedSignalStrength
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 143
+  namespace: CircuitTool
+  summary: Calculates received signal strength (RSS) using Friis equation.
+  example: []
+  syntax:
+    content: public static double ReceivedSignalStrength(double transmitPowerDbm, double transmitGainDbi, double receiveGainDbi, double frequency, double distance)
+    parameters:
+    - id: transmitPowerDbm
+      type: System.Double
+      description: Transmit power in dBm.
+    - id: transmitGainDbi
+      type: System.Double
+      description: Transmit antenna gain in dBi.
+    - id: receiveGainDbi
+      type: System.Double
+      description: Receive antenna gain in dBi.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: distance
+      type: System.Double
+      description: Distance in meters.
+    return:
+      type: System.Double
+      description: Received signal strength in dBm.
+    content.vb: Public Shared Function ReceivedSignalStrength(transmitPowerDbm As Double, transmitGainDbi As Double, receiveGainDbi As Double, frequency As Double, distance As Double) As Double
+  overload: CircuitTool.WirelessCalculator.ReceivedSignalStrength*
+  nameWithType.vb: WirelessCalculator.ReceivedSignalStrength(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.ReceivedSignalStrength(Double, Double, Double, Double, Double)
+  name.vb: ReceivedSignalStrength(Double, Double, Double, Double, Double)
+- uid: CircuitTool.WirelessCalculator.DataRate(System.Double,System.Int32)
+  commentId: M:CircuitTool.WirelessCalculator.DataRate(System.Double,System.Int32)
+  id: DataRate(System.Double,System.Int32)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: DataRate(double, int)
+  nameWithType: WirelessCalculator.DataRate(double, int)
+  fullName: CircuitTool.WirelessCalculator.DataRate(double, int)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DataRate
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 161
+  namespace: CircuitTool
+  summary: Calculates data rate from symbol rate and modulation order.
+  example: []
+  syntax:
+    content: public static double DataRate(double symbolRate, int bitsPerSymbol)
+    parameters:
+    - id: symbolRate
+      type: System.Double
+      description: Symbol rate in symbols per second.
+    - id: bitsPerSymbol
+      type: System.Int32
+      description: Bits per symbol (log2 of modulation order).
+    return:
+      type: System.Double
+      description: Data rate in bits per second.
+    content.vb: Public Shared Function DataRate(symbolRate As Double, bitsPerSymbol As Integer) As Double
+  overload: CircuitTool.WirelessCalculator.DataRate*
+  nameWithType.vb: WirelessCalculator.DataRate(Double, Integer)
+  fullName.vb: CircuitTool.WirelessCalculator.DataRate(Double, Integer)
+  name.vb: DataRate(Double, Integer)
+- uid: CircuitTool.WirelessCalculator.SpectralEfficiency(System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.SpectralEfficiency(System.Double,System.Double)
+  id: SpectralEfficiency(System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: SpectralEfficiency(double, double)
+  nameWithType: WirelessCalculator.SpectralEfficiency(double, double)
+  fullName: CircuitTool.WirelessCalculator.SpectralEfficiency(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SpectralEfficiency
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 175
+  namespace: CircuitTool
+  summary: Calculates spectral efficiency.
+  example: []
+  syntax:
+    content: public static double SpectralEfficiency(double dataRate, double bandwidth)
+    parameters:
+    - id: dataRate
+      type: System.Double
+      description: Data rate in bits per second.
+    - id: bandwidth
+      type: System.Double
+      description: Bandwidth in Hz.
+    return:
+      type: System.Double
+      description: Spectral efficiency in bits per second per Hz.
+    content.vb: Public Shared Function SpectralEfficiency(dataRate As Double, bandwidth As Double) As Double
+  overload: CircuitTool.WirelessCalculator.SpectralEfficiency*
+  nameWithType.vb: WirelessCalculator.SpectralEfficiency(Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.SpectralEfficiency(Double, Double)
+  name.vb: SpectralEfficiency(Double, Double)
+- uid: CircuitTool.WirelessCalculator.ProcessingGain(System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.ProcessingGain(System.Double,System.Double)
+  id: ProcessingGain(System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: ProcessingGain(double, double)
+  nameWithType: WirelessCalculator.ProcessingGain(double, double)
+  fullName: CircuitTool.WirelessCalculator.ProcessingGain(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ProcessingGain
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 189
+  namespace: CircuitTool
+  summary: Calculates processing gain for spread spectrum systems.
+  example: []
+  syntax:
+    content: public static double ProcessingGain(double chipRate, double dataRate)
+    parameters:
+    - id: chipRate
+      type: System.Double
+      description: Chip rate in chips per second.
+    - id: dataRate
+      type: System.Double
+      description: Data rate in bits per second.
+    return:
+      type: System.Double
+      description: Processing gain in dB.
+    content.vb: Public Shared Function ProcessingGain(chipRate As Double, dataRate As Double) As Double
+  overload: CircuitTool.WirelessCalculator.ProcessingGain*
+  nameWithType.vb: WirelessCalculator.ProcessingGain(Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.ProcessingGain(Double, Double)
+  name.vb: ProcessingGain(Double, Double)
+- uid: CircuitTool.WirelessCalculator.FadeMargin(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.FadeMargin(System.Double,System.Double,System.Double,System.Double)
+  id: FadeMargin(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: FadeMargin(double, double, double, double)
+  nameWithType: WirelessCalculator.FadeMargin(double, double, double, double)
+  fullName: CircuitTool.WirelessCalculator.FadeMargin(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FadeMargin
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 207
+  namespace: CircuitTool
+  summary: Calculates fade margin for wireless link.
+  example: []
+  syntax:
+    content: public static double FadeMargin(double linkMargin, double requiredAvailability, double frequency, double distance)
+    parameters:
+    - id: linkMargin
+      type: System.Double
+      description: Available link margin in dB.
+    - id: requiredAvailability
+      type: System.Double
+      description: Required availability percentage (e.g., 99.9).
+    - id: frequency
+      type: System.Double
+      description: Frequency in GHz.
+    - id: distance
+      type: System.Double
+      description: Distance in km.
+    return:
+      type: System.Double
+      description: Fade margin in dB.
+    content.vb: Public Shared Function FadeMargin(linkMargin As Double, requiredAvailability As Double, frequency As Double, distance As Double) As Double
+  overload: CircuitTool.WirelessCalculator.FadeMargin*
+  nameWithType.vb: WirelessCalculator.FadeMargin(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.WirelessCalculator.FadeMargin(Double, Double, Double, Double)
+  name.vb: FadeMargin(Double, Double, Double, Double)
+- uid: CircuitTool.WirelessCalculator.VSWRFromReturnLoss(System.Double)
+  commentId: M:CircuitTool.WirelessCalculator.VSWRFromReturnLoss(System.Double)
+  id: VSWRFromReturnLoss(System.Double)
+  parent: CircuitTool.WirelessCalculator
+  langs:
+  - csharp
+  - vb
+  name: VSWRFromReturnLoss(double)
+  nameWithType: WirelessCalculator.VSWRFromReturnLoss(double)
+  fullName: CircuitTool.WirelessCalculator.VSWRFromReturnLoss(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VSWRFromReturnLoss
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 226
+  namespace: CircuitTool
+  summary: Calculates VSWR from return loss.
+  example: []
+  syntax:
+    content: public static double VSWRFromReturnLoss(double returnLossDb)
+    parameters:
+    - id: returnLossDb
+      type: System.Double
+      description: Return loss in dB.
+    return:
+      type: System.Double
+      description: VSWR value.
+    content.vb: Public Shared Function VSWRFromReturnLoss(returnLossDb As Double) As Double
+  overload: CircuitTool.WirelessCalculator.VSWRFromReturnLoss*
+  nameWithType.vb: WirelessCalculator.VSWRFromReturnLoss(Double)
+  fullName.vb: CircuitTool.WirelessCalculator.VSWRFromReturnLoss(Double)
+  name.vb: VSWRFromReturnLoss(Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.WirelessCalculator.LinkBudget*
+  commentId: Overload:CircuitTool.WirelessCalculator.LinkBudget
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_LinkBudget_System_Double_System_Double_System_Double_
+  name: LinkBudget
+  nameWithType: WirelessCalculator.LinkBudget
+  fullName: CircuitTool.WirelessCalculator.LinkBudget
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.WirelessCalculator.ShannonCapacity*
+  commentId: Overload:CircuitTool.WirelessCalculator.ShannonCapacity
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_ShannonCapacity_System_Double_System_Double_
+  name: ShannonCapacity
+  nameWithType: WirelessCalculator.ShannonCapacity
+  fullName: CircuitTool.WirelessCalculator.ShannonCapacity
+- uid: CircuitTool.WirelessCalculator.BERFromEbN0*
+  commentId: Overload:CircuitTool.WirelessCalculator.BERFromEbN0
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_BERFromEbN0_System_Double_CircuitTool_WirelessCalculator_ModulationType_
+  name: BERFromEbN0
+  nameWithType: WirelessCalculator.BERFromEbN0
+  fullName: CircuitTool.WirelessCalculator.BERFromEbN0
+- uid: CircuitTool.WirelessCalculator.ModulationType
+  commentId: T:CircuitTool.WirelessCalculator.ModulationType
+  parent: CircuitTool
+  href: CircuitTool.WirelessCalculator.html
+  name: WirelessCalculator.ModulationType
+  nameWithType: WirelessCalculator.ModulationType
+  fullName: CircuitTool.WirelessCalculator.ModulationType
+  spec.csharp:
+  - uid: CircuitTool.WirelessCalculator
+    name: WirelessCalculator
+    href: CircuitTool.WirelessCalculator.html
+  - name: .
+  - uid: CircuitTool.WirelessCalculator.ModulationType
+    name: ModulationType
+    href: CircuitTool.WirelessCalculator.ModulationType.html
+  spec.vb:
+  - uid: CircuitTool.WirelessCalculator
+    name: WirelessCalculator
+    href: CircuitTool.WirelessCalculator.html
+  - name: .
+  - uid: CircuitTool.WirelessCalculator.ModulationType
+    name: ModulationType
+    href: CircuitTool.WirelessCalculator.ModulationType.html
+- uid: CircuitTool.WirelessCalculator.EbN0FromBER*
+  commentId: Overload:CircuitTool.WirelessCalculator.EbN0FromBER
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_EbN0FromBER_System_Double_CircuitTool_WirelessCalculator_ModulationType_
+  name: EbN0FromBER
+  nameWithType: WirelessCalculator.EbN0FromBER
+  fullName: CircuitTool.WirelessCalculator.EbN0FromBER
+- uid: CircuitTool.WirelessCalculator.AntennaGainForEIRP*
+  commentId: Overload:CircuitTool.WirelessCalculator.AntennaGainForEIRP
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_AntennaGainForEIRP_System_Double_System_Double_
+  name: AntennaGainForEIRP
+  nameWithType: WirelessCalculator.AntennaGainForEIRP
+  fullName: CircuitTool.WirelessCalculator.AntennaGainForEIRP
+- uid: CircuitTool.WirelessCalculator.ReceivedSignalStrength*
+  commentId: Overload:CircuitTool.WirelessCalculator.ReceivedSignalStrength
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_ReceivedSignalStrength_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: ReceivedSignalStrength
+  nameWithType: WirelessCalculator.ReceivedSignalStrength
+  fullName: CircuitTool.WirelessCalculator.ReceivedSignalStrength
+- uid: CircuitTool.WirelessCalculator.DataRate*
+  commentId: Overload:CircuitTool.WirelessCalculator.DataRate
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_DataRate_System_Double_System_Int32_
+  name: DataRate
+  nameWithType: WirelessCalculator.DataRate
+  fullName: CircuitTool.WirelessCalculator.DataRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.WirelessCalculator.SpectralEfficiency*
+  commentId: Overload:CircuitTool.WirelessCalculator.SpectralEfficiency
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_SpectralEfficiency_System_Double_System_Double_
+  name: SpectralEfficiency
+  nameWithType: WirelessCalculator.SpectralEfficiency
+  fullName: CircuitTool.WirelessCalculator.SpectralEfficiency
+- uid: CircuitTool.WirelessCalculator.ProcessingGain*
+  commentId: Overload:CircuitTool.WirelessCalculator.ProcessingGain
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_ProcessingGain_System_Double_System_Double_
+  name: ProcessingGain
+  nameWithType: WirelessCalculator.ProcessingGain
+  fullName: CircuitTool.WirelessCalculator.ProcessingGain
+- uid: CircuitTool.WirelessCalculator.FadeMargin*
+  commentId: Overload:CircuitTool.WirelessCalculator.FadeMargin
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_FadeMargin_System_Double_System_Double_System_Double_System_Double_
+  name: FadeMargin
+  nameWithType: WirelessCalculator.FadeMargin
+  fullName: CircuitTool.WirelessCalculator.FadeMargin
+- uid: CircuitTool.WirelessCalculator.VSWRFromReturnLoss*
+  commentId: Overload:CircuitTool.WirelessCalculator.VSWRFromReturnLoss
+  href: CircuitTool.WirelessCalculator.html#CircuitTool_WirelessCalculator_VSWRFromReturnLoss_System_Double_
+  name: VSWRFromReturnLoss
+  nameWithType: WirelessCalculator.VSWRFromReturnLoss
+  fullName: CircuitTool.WirelessCalculator.VSWRFromReturnLoss

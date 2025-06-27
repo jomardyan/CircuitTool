@@ -1,53 +1,62 @@
-# CircuitTool Project Code Map
+# CircuitTool - Project Architecture & Code Map
 
-## Project Overview
-**CircuitTool** is a comprehensive C# library for electrical engineering and electronics calculations, designed for embedded systems development and hardware design.
+> **Comprehensive overview of the CircuitTool library structure and organization**
 
-```
-Repository: CircuitTool
-Owner: jomardyan
-License: MIT License
-Version: 2.0.0
-Target Frameworks: .NET 4.5, 4.6.2, 6.0, 8.0, Standard 2.0, 2.1
-```
+## 📊 Project Overview
 
-## 📁 Project Structure
+**CircuitTool** is a modern, high-performance C# library for electrical engineering and electronics calculations, designed for embedded systems development, hardware design, and educational purposes.
+
+| Property | Value |
+|----------|-------|
+| **Repository** | [github.com/jomardyan/CircuitTool](https://github.com/jomardyan/CircuitTool) |
+| **License** | MIT License |
+| **Current Version** | 2.1.0 |
+| **Target Frameworks** | .NET 4.5, 4.6.2, 4.8.1, 6.0, 8.0, Core 3.1, Standard 2.0/2.1 |
+| **Package Type** | Library + Interactive CLI |
+| **Primary Language** | C# 12.0 with nullable reference types |
+
+## 🏗️ Solution Structure
 
 ```
 CircuitTool/
-├── 📄 LICENSE                          # MIT License
-├── 📄 README.md                        # Project documentation
-├── 📄 CircuitTool.csproj                # Main project file
-├── 📄 CircuitTool.sln                   # Solution file
-├── 📄 DOCUMENTATION.md                  # API documentation
-├── 📄 REORGANIZATION_SUMMARY.md         # Code reorganization history
-├── 📄 COM_PORT_TOOLS_SUMMARY.md         # COM port tools documentation
-├── 📄 HARDWARE_ENHANCEMENT_SUMMARY.md   # Hardware tools documentation
-├── 🖼️ icon.png/svg                      # Package icons
-├── ⚙️ nuget.config                      # NuGet configuration
-├── 🔧 publish.ps1/sh                   # Publishing scripts
-├── 🏗️ Properties/AssemblyInfo.cs       # Assembly information
-├── 📁 src/                             # Source code (see detailed breakdown below)
-├── 📁 tests/                           # Unit tests
-├── 📁 bin/                             # Build output
-└── 📁 obj/                             # Build artifacts
+├── 📄 CircuitTool.sln                   # Main solution file
+├── 📄 CircuitTool.CLI.sln               # CLI solution file  
+├── � src/                              # 📚 Core library source code
+├── � CircuitTool.CLI/                  # 💻 Interactive CLI application
+├── � tests/                            # 🧪 Unit tests (344 test cases)
+├── 📁 docs/                             # 📖 Documentation website
+├── � articles/                         # 📝 Tutorials and guides
+├── 📁 .github/                          # 🔄 CI/CD workflows
+├── � README.md                         # 📋 Project overview
+├── � DOCUMENTATION.md                  # 📚 Complete API docs
+├── 📄 PROJECT_CODE_MAP.md               # 🗺️ This file
+└── � LICENSE                           # ⚖️ MIT License
 ```
 
-## 🏗️ Source Code Architecture
+## 🧩 Core Library Architecture
 
 ### 📁 `/src/` - Main Source Directory
 
+The core library is organized into focused modules for maximum usability and maintainability:
+
 ```
 src/
-├── 📄 ACTypes.cs                       # AC circuit type definitions
-├── 📄 CircuitBuilder.cs                # Circuit construction utilities
-├── 📄 CircuitCalculations.cs           # Core circuit calculations
-├── 📄 Utilities.cs                     # General utility functions
-├── 📁 Calculators/                     # Calculation modules (23 files)
-├── 📁 Hardware/                        # Hardware-specific tools (10 files)
-├── 📁 Analysis/                        # Analysis and simulation (5 files)
-├── 📁 Performance/                     # Performance optimization (6 files)
-├── 📁 Documentation/                   # Documentation and examples (4 files)
+├── 📄 ACTypes.cs                        # AC circuit type definitions
+├── 📄 CircuitBuilder.cs                 # Circuit construction utilities  
+├── 📄 CircuitCalculations.cs            # Core calculation methods
+├── 📄 Utilities.cs                      # Cross-cutting utility functions
+├── 📁 Calculators/                      # 🧮 Calculation modules (23 classes)
+├── 📁 Hardware/                         # 🔧 Platform-specific tools (10 classes)
+├── 📁 Analysis/                         # 📊 Advanced analysis (5 classes)
+├── 📁 Performance/                      # ⚡ Optimization features (6 classes)
+├── 📁 Documentation/                    # 📚 Examples & tutorials (4 classes)
+├── 📁 Math/                             # 🔢 Mathematical operations (2 classes)
+├── 📁 Serialization/                    # 💾 Data persistence (1 class)
+├── 📁 Units/                            # 📏 Unit system (3 classes)
+├── 📁 Electromagnetics/                 # 📡 RF & EMC tools
+├── 📁 PowerElectronics/                 # 🔋 Power system analysis
+└── 📁 Utilities/                        # 🔧 Helper functions
+```
 ├── 📁 Math/                           # Mathematical utilities (2 files)
 ├── 📁 Serialization/                  # Import/export functionality (1 file)
 └── 📁 Units/                          # Unit system management (3 files)

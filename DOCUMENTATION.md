@@ -1,43 +1,68 @@
-# CircuitTool Documentation
+# CircuitTool - Complete API Documentation
 
-CircuitTool is a comprehensive C# library for electrical engineering and electronics calculations. It provides a wide range of calculators and utilities for circuit analysis, power calculations, unit conversions, and more. This documentation covers the main features, usage examples, and API references for the library.
+> **Comprehensive C# library for electrical engineering and electronics calculations**
 
-## Table of Contents
-- [Installation](#installation)
-- [Core Calculators](#core-calculators)
-- [Advanced Calculators](#advanced-calculators)
-- [Hardware Support](#hardware-support)
-- [Performance & Optimization](#performance--optimization)
-- [Unit Conversion](#unit-conversion)
-- [Interactive CLI](#interactive-cli)
-- [API Reference](#api-reference)
-- [Contributing](#contributing)
+CircuitTool is a modern, high-performance library designed for engineers, students, and developers working with electronic systems. This documentation provides complete API references, usage examples, and implementation guides.
+
+## 📋 Table of Contents
+
+- [🚀 Quick Start](#-quick-start)
+- [🧮 Core Calculators](#-core-calculators)
+- [🔧 Hardware Platform Support](#-hardware-platform-support)  
+- [📊 Advanced Analysis](#-advanced-analysis)
+- [⚡ Performance & Optimization](#-performance--optimization)
+- [📏 Unit System](#-unit-system)
+- [💻 Interactive CLI](#-interactive-cli)
+- [🔍 API Reference](#api-reference)
+- [🤝 Contributing](#contributing)
 
 ---
 
-## Installation
+## 🚀 Quick Start
 
-### NuGet Package Manager
+### Installation Methods
+
+#### NuGet Package Manager
 ```bash
 dotnet add package CircuitTool
 ```
 
-### Package Manager Console
+#### Package Manager Console
 ```powershell
 Install-Package CircuitTool
 ```
 
-### PackageReference
+#### PackageReference
 Add to your `.csproj` file:
 ```xml
-<PackageReference Include="CircuitTool" Version="2.0.0" />
+<PackageReference Include="CircuitTool" Version="2.1.0" />
 ```
 
-### Supported Frameworks
-- .NET Framework 4.5+
-- .NET 6.0+, 8.0+
-- .NET Standard 2.0+, 2.1+
-- .NET Core 3.1+
+### Platform Compatibility
+| Platform | Versions | Status |
+|----------|----------|---------|
+| **.NET Framework** | 4.5, 4.6.2, 4.8.1+ | ✅ Fully Supported |
+| **.NET Core** | 3.1+ | ✅ Fully Supported |
+| **.NET** | 6.0+, 8.0+ | ✅ Fully Supported |
+| **.NET Standard** | 2.0, 2.1 | ✅ Fully Supported |
+
+### First Steps
+
+```csharp
+using CircuitTool;
+
+// Simple voltage calculation
+double voltage = OhmsLawCalculator.Voltage(current: 2.0, resistance: 100.0);
+Console.WriteLine($"Voltage: {voltage}V"); // Output: 200V
+
+// LED resistor calculation
+var result = LEDCalculator.CalculateResistorValue(
+    supplyVoltage: 5.0,
+    ledVoltage: 2.1, 
+    ledCurrent: 0.02
+);
+Console.WriteLine($"Required resistor: {result}Ω"); // Output: 145Ω
+```
 
 ---
 

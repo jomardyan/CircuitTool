@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UART (Universal Asynchronous Receiver-Transmitter) Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UART (Universal Asynchronous Receiver-Transmitter) Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/uart-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="uart-universal-asynchronous-receiver-transmitter-guide">UART (Universal Asynchronous Receiver-Transmitter) Guide</h1>
+
+<h2 id="introduction-to-uart">Introduction to UART</h2>
+<p>UART is one of the most fundamental and widely used serial communication protocols in embedded systems. It provides asynchronous, full-duplex communication between devices using only two wires for data transmission (plus ground). UART is the foundation for many other protocols like RS-232, RS-485, and is commonly used for debugging, sensor communication, and device interfacing.</p>
+<h2 id="uart-protocol-overview">UART Protocol Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Asynchronous</strong>: No shared clock signal required</li>
+<li><strong>Full-duplex</strong>: Simultaneous bidirectional communication</li>
+<li><strong>Point-to-point</strong>: Direct connection between two devices</li>
+<li><strong>Simple hardware</strong>: Minimal pins required (TX, RX, GND)</li>
+<li><strong>Configurable</strong>: Adjustable baud rate, data bits, parity, stop bits</li>
+<li><strong>Universal</strong>: Supported by virtually all microcontrollers</li>
+</ul>
+<h3 id="signal-lines">Signal Lines</h3>
+<ul>
+<li><strong>TX (Transmit)</strong>: Data output from device</li>
+<li><strong>RX (Receive)</strong>: Data input to device</li>
+<li><strong>GND (Ground)</strong>: Common reference voltage</li>
+<li><strong>Optional</strong>: RTS/CTS for hardware flow control</li>
+</ul>
+<h3 id="data-frame-structure">Data Frame Structure</h3>
+<pre><code>[Start Bit][Data Bits][Parity Bit][Stop Bit(s)]
+    1 bit    5-9 bits    0-1 bit     1-2 bits
+</code></pre>
+<h2 id="uart-configuration-parameters">UART Configuration Parameters</h2>
+<h3 id="common-settings">Common Settings</h3>
+<ul>
+<li><strong>Baud Rate</strong>: 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600 bps</li>
+<li><strong>Data Bits</strong>: 5, 6, 7, 8 (most common is 8)</li>
+<li><strong>Parity</strong>: None, Even, Odd, Mark, Space</li>
+<li><strong>Stop Bits</strong>: 1, 1.5, 2 (most common is 1)</li>
+<li><strong>Flow Control</strong>: None, Hardware (RTS/CTS), Software (XON/XOFF)</li>
+</ul>
+<h3 id="baud-rate-calculation">Baud Rate Calculation</h3>
+<p>For most microcontrollers:</p>
+<pre><code>Baud Rate = Clock Frequency / (Prescaler × (BRR + 1))
+</code></pre>
+<p>Where BRR is the Baud Rate Register value.</p>
+<h2 id="arduino-uart-programming">Arduino UART Programming</h2>
+<h3 id="basic-uart-communication">Basic UART Communication</h3>
+<pre><code class="lang-cpp">void setup() {
+  // Initialize hardware UART
+  Serial.begin(9600);        // USB/Debug UART
+  Serial1.begin(115200);     // Hardware UART 1 (pins vary by board)
+  Serial2.begin(38400);      // Hardware UART 2 (if available)
+  
+  Serial.println(&quot;UART Communication Demo&quot;);
+}
+
+void loop() {
+  // Echo data between Serial and Serial1
+  if (Serial.available()) {
+    String data = Serial.readString();
+    data.trim();
+    Serial1.println(&quot;From PC: &quot; + data);
+    Serial.println(&quot;Sent to UART1: &quot; + data);
+  }
+  
+  if (Serial1.available()) {
+    String data = Serial1.readString();
+    data.trim();
+    Serial.println(&quot;From UART1: &quot; + data);
+  }
+}
+</code></pre>
+<h3 id="advanced-uart-class-implementation">Advanced UART Class Implementation</h3>
+<pre><code class="lang-cpp">class UARTInterface {
+private:
+  HardwareSerial* uart;
+  unsigned long baudRate;
+  uint8_t config;
+  
+  // Buffer management
+  static const int BUFFER_SIZE = 256;
+  uint8_t rxBuffer[BUFFER_SIZE];
+  uint8_t txBuffer[BUFFER_SIZE];
+  volatile int rxHead = 0;
+  volatile int rxTail = 0;
+  volatile int txHead = 0;
+  volatile int txTail = 0;
+  
+  // Statistics
+  unsigned long bytesReceived = 0;
+  unsigned long bytesSent = 0;
+  unsigned long frameErrors = 0;
+  unsigned long overrunErrors = 0;
+  
+public:
+  UARTInterface(HardwareSerial* serial, unsigned long baud = 9600) {
+    uart = serial;
+    baudRate = baud;
+    config = SERIAL_8N1; // 8 data bits, no parity, 1 stop bit
+  }
+  
+  bool begin(uint8_t rxPin = -1, uint8_t txPin = -1) {
+    if (rxPin != -1 &amp;&amp; txPin != -1) {
+      // ESP32 allows custom pin assignment
+      uart-&gt;begin(baudRate, config, rxPin, txPin);
+    } else {
+      uart-&gt;begin(baudRate, config);
+    }
+    
+    // Clear buffers
+    clearBuffers();
+    
+    Serial.printf(&quot;UART initialized: %lu baud, pins RX=%d TX=%d\n&quot;, 
+                  baudRate, rxPin, txPin);
+    return true;
+  }
+  
+  void end() {
+    uart-&gt;end();
+  }
+  
+  // Blocking write
+  size_t write(const uint8_t* data, size_t length) {
+    size_t written = uart-&gt;write(data, length);
+    bytesSent += written;
+    return written;
+  }
+  
+  size_t write(const String&amp; str) {
+    return write((uint8_t*)str.c_str(), str.length());
+  }
+  
+  // Non-blocking write with buffering
+  bool writeNonBlocking(const uint8_t* data, size_t length) {
+    for (size_t i = 0; i &lt; length; i++) {
+      int next = (txHead + 1) % BUFFER_SIZE;
+      if (next == txTail) {
+        return false; // Buffer full
+      }
+      txBuffer[txHead] = data[i];
+      txHead = next;
+    }
+    return true;
+  }
+  
+  // Process buffered transmission
+  void processTx() {
+    while (txHead != txTail &amp;&amp; uart-&gt;availableForWrite()) {
+      uart-&gt;write(txBuffer[txTail]);
+      txTail = (txTail + 1) % BUFFER_SIZE;
+      bytesSent++;
+    }
+  }
+  
+  // Blocking read
+  int read() {
+    int data = uart-&gt;read();
+    if (data != -1) {
+      bytesReceived++;
+    }
+    return data;
+  }
+  
+  // Read with timeout
+  bool readBytes(uint8_t* buffer, size_t length, unsigned long timeout = 1000) {
+    unsigned long startTime = millis();
+    size_t index = 0;
+    
+    while (index &lt; length &amp;&amp; (millis() - startTime) &lt; timeout) {
+      if (uart-&gt;available()) {
+        buffer[index++] = uart-&gt;read();
+        bytesReceived++;
+        startTime = millis(); // Reset timeout on data reception
+      }
+    }
+    
+    return index == length;
+  }
+  
+  // Read line with timeout
+  String readLine(unsigned long timeout = 1000) {
+    String line = &quot;&quot;;
+    unsigned long startTime = millis();
+    
+    while ((millis() - startTime) &lt; timeout) {
+      if (uart-&gt;available()) {
+        char c = uart-&gt;read();
+        bytesReceived++;
+        
+        if (c == '\n') {
+          break;
+        } else if (c != '\r') {
+          line += c;
+        }
+        
+        startTime = millis(); // Reset timeout
+      }
+    }
+    
+    return line;
+  }
+  
+  // Available data
+  int available() {
+    return uart-&gt;available();
+  }
+  
+  // Check for errors (ESP32 specific)
+  void checkErrors() {
+    if (uart-&gt;hasRxError()) {
+      frameErrors++;
+      uart-&gt;clearWriteError();
+    }
+    
+    if (uart-&gt;hasOverrun()) {
+      overrunErrors++;
+    }
+  }
+  
+  // Configuration methods
+  void setBaudRate(unsigned long baud) {
+    baudRate = baud;
+    uart-&gt;updateBaudRate(baud);
+  }
+  
+  void setConfig(uint8_t databits, uint8_t parity, uint8_t stopbits) {
+    config = (databits &lt;&lt; 2) | (parity &lt;&lt; 1) | stopbits;
+    uart-&gt;begin(baudRate, config);
+  }
+  
+  // Statistics
+  void printStatistics() {
+    Serial.println(&quot;=== UART Statistics ===&quot;);
+    Serial.printf(&quot;Bytes Received: %lu\n&quot;, bytesReceived);
+    Serial.printf(&quot;Bytes Sent: %lu\n&quot;, bytesSent);
+    Serial.printf(&quot;Frame Errors: %lu\n&quot;, frameErrors);
+    Serial.printf(&quot;Overrun Errors: %lu\n&quot;, overrunErrors);
+    Serial.printf(&quot;RX Buffer Usage: %d/%d\n&quot;, available(), BUFFER_SIZE);
+    Serial.println();
+  }
+  
+  void resetStatistics() {
+    bytesReceived = 0;
+    bytesSent = 0;
+    frameErrors = 0;
+    overrunErrors = 0;
+  }
+  
+private:
+  void clearBuffers() {
+    rxHead = rxTail = 0;
+    txHead = txTail = 0;
+    while (uart-&gt;available()) {
+      uart-&gt;read(); // Clear hardware buffer
+    }
+  }
+};
+
+// Usage example
+UARTInterface uart1(&amp;Serial1, 115200);
+UARTInterface uart2(&amp;Serial2, 9600);
+
+void setup() {
+  Serial.begin(115200);
+  
+  // Initialize UART interfaces
+  uart1.begin(16, 17); // ESP32 custom pins
+  uart2.begin();       // Default pins
+  
+  Serial.println(&quot;Multiple UART interface demo&quot;);
+}
+
+void loop() {
+  // Handle communication
+  if (uart1.available()) {
+    String data = uart1.readLine();
+    Serial.println(&quot;UART1: &quot; + data);
+    uart2.write(&quot;Relayed: &quot; + data + &quot;\n&quot;);
+  }
+  
+  if (uart2.available()) {
+    String data = uart2.readLine();
+    Serial.println(&quot;UART2: &quot; + data);
+    uart1.write(&quot;Response: &quot; + data + &quot;\n&quot;);
+  }
+  
+  // Process buffered transmissions
+  uart1.processTx();
+  uart2.processTx();
+  
+  // Check for errors periodically
+  static unsigned long lastErrorCheck = 0;
+  if (millis() - lastErrorCheck &gt; 5000) {
+    uart1.checkErrors();
+    uart2.checkErrors();
+    lastErrorCheck = millis();
+  }
+  
+  // Print statistics every 30 seconds
+  static unsigned long lastStats = 0;
+  if (millis() - lastStats &gt; 30000) {
+    uart1.printStatistics();
+    uart2.printStatistics();
+    lastStats = millis();
+  }
+}
+</code></pre>
+<h3 id="protocol-implementation-over-uart">Protocol Implementation Over UART</h3>
+<pre><code class="lang-cpp">// Simple packet protocol over UART
+class UARTProtocol {
+private:
+  UARTInterface* uart;
+  
+  struct Packet {
+    uint8_t header;      // 0xAA
+    uint8_t length;      // Data length
+    uint8_t command;     // Command byte
+    uint8_t data[32];    // Payload
+    uint8_t checksum;    // Simple checksum
+  };
+  
+  static const uint8_t PACKET_HEADER = 0xAA;
+  static const uint8_t MAX_PACKET_SIZE = 35;
+  
+public:
+  UARTProtocol(UARTInterface* uartInterface) : uart(uartInterface) {}
+  
+  bool sendPacket(uint8_t command, const uint8_t* data, uint8_t dataLength) {
+    if (dataLength &gt; 32) return false;
+    
+    Packet packet;
+    packet.header = PACKET_HEADER;
+    packet.length = dataLength;
+    packet.command = command;
+    
+    memcpy(packet.data, data, dataLength);
+    
+    // Calculate checksum
+    packet.checksum = 0;
+    packet.checksum ^= packet.length;
+    packet.checksum ^= packet.command;
+    for (int i = 0; i &lt; dataLength; i++) {
+      packet.checksum ^= packet.data[i];
+    }
+    
+    // Send packet
+    uart-&gt;write((uint8_t*)&amp;packet, 4 + dataLength);
+    return true;
+  }
+  
+  bool receivePacket(uint8_t&amp; command, uint8_t* data, uint8_t&amp; dataLength, unsigned long timeout = 1000) {
+    unsigned long startTime = millis();
+    
+    // Wait for header
+    while ((millis() - startTime) &lt; timeout) {
+      if (uart-&gt;available()) {
+        uint8_t byte = uart-&gt;read();
+        if (byte == PACKET_HEADER) {
+          break;
+        }
+      }
+    }
+    
+    if ((millis() - startTime) &gt;= timeout) return false;
+    
+    // Read packet
+    uint8_t packetData[MAX_PACKET_SIZE];
+    if (!uart-&gt;readBytes(packetData, 3, timeout)) { // length, command, first data byte or checksum
+      return false;
+    }
+    
+    uint8_t length = packetData[0];
+    command = packetData[1];
+    
+    if (length &gt; 32) return false; // Invalid length
+    
+    // Read remaining data and checksum
+    if (length &gt; 0) {
+      if (!uart-&gt;readBytes(data, length, timeout)) {
+        return false;
+      }
+    }
+    
+    uint8_t receivedChecksum;
+    if (!uart-&gt;readBytes(&amp;receivedChecksum, 1, timeout)) {
+      return false;
+    }
+    
+    // Verify checksum
+    uint8_t calculatedChecksum = 0;
+    calculatedChecksum ^= length;
+    calculatedChecksum ^= command;
+    for (int i = 0; i &lt; length; i++) {
+      calculatedChecksum ^= data[i];
+    }
+    
+    if (receivedChecksum != calculatedChecksum) {
+      return false; // Checksum mismatch
+    }
+    
+    dataLength = length;
+    return true;
+  }
+  
+  // Command definitions
+  enum Commands {
+    CMD_PING = 0x01,
+    CMD_READ_SENSOR = 0x02,
+    CMD_WRITE_CONFIG = 0x03,
+    CMD_GET_STATUS = 0x04,
+    CMD_RESET = 0x05
+  };
+  
+  // High-level command methods
+  bool ping() {
+    return sendPacket(CMD_PING, nullptr, 0);
+  }
+  
+  bool readSensor(uint8_t sensorId, float&amp; value) {
+    if (!sendPacket(CMD_READ_SENSOR, &amp;sensorId, 1)) {
+      return false;
+    }
+    
+    uint8_t command, data[4], dataLength;
+    if (receivePacket(command, data, dataLength, 2000)) {
+      if (command == CMD_READ_SENSOR &amp;&amp; dataLength == 4) {
+        memcpy(&amp;value, data, 4);
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  bool writeConfig(uint8_t configId, uint32_t value) {
+    uint8_t data[5];
+    data[0] = configId;
+    memcpy(&amp;data[1], &amp;value, 4);
+    return sendPacket(CMD_WRITE_CONFIG, data, 5);
+  }
+};
+
+// Example usage
+UARTInterface uart(&amp;Serial1, 115200);
+UARTProtocol protocol(&amp;uart);
+
+void setup() {
+  Serial.begin(115200);
+  uart.begin();
+  
+  Serial.println(&quot;UART Protocol Demo&quot;);
+}
+
+void loop() {
+  // Ping remote device
+  if (protocol.ping()) {
+    Serial.println(&quot;Ping successful&quot;);
+    
+    // Read sensor data
+    float temperature;
+    if (protocol.readSensor(1, temperature)) {
+      Serial.printf(&quot;Temperature: %.2f°C\n&quot;, temperature);
+    }
+    
+    // Write configuration
+    protocol.writeConfig(0x10, 12345);
+  }
+  
+  delay(5000);
+}
+</code></pre>
+<h3 id="uart-bridge-and-data-logger">UART Bridge and Data Logger</h3>
+<pre><code class="lang-cpp">#include &lt;SD.h&gt;
+#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+class UARTBridge {
+private:
+  UARTInterface* uart;
+  File logFile;
+  WebServer server;
+  String logBuffer;
+  bool wifiEnabled = false;
+  bool sdEnabled = false;
+  
+public:
+  UARTBridge(UARTInterface* uartInterface) : uart(uartInterface), server(80) {}
+  
+  void begin() {
+    // Initialize SD card
+    if (SD.begin()) {
+      sdEnabled = true;
+      Serial.println(&quot;SD card initialized&quot;);
+      
+      // Create log file
+      String filename = &quot;/uart_log_&quot; + String(millis()) + &quot;.txt&quot;;
+      logFile = SD.open(filename, FILE_WRITE);
+      if (logFile) {
+        logFile.println(&quot;UART Log Started&quot;);
+        logFile.close();
+      }
+    }
+    
+    // Initialize WiFi (optional)
+    setupWiFi();
+    
+    // Setup web server
+    if (wifiEnabled) {
+      setupWebServer();
+    }
+  }
+  
+  void loop() {
+    // Handle UART data
+    while (uart-&gt;available()) {
+      String data = uart-&gt;readLine();
+      if (data.length() &gt; 0) {
+        processUARTData(data);
+      }
+    }
+    
+    // Handle web server
+    if (wifiEnabled) {
+      server.handleClient();
+    }
+    
+    // Periodic log flushing
+    static unsigned long lastFlush = 0;
+    if (millis() - lastFlush &gt; 10000) { // Flush every 10 seconds
+      flushLog();
+      lastFlush = millis();
+    }
+  }
+  
+private:
+  void processUARTData(const String&amp; data) {
+    String timestamp = String(millis());
+    String logEntry = timestamp + &quot;: &quot; + data;
+    
+    // Add to buffer
+    logBuffer += logEntry + &quot;\n&quot;;
+    
+    // Print to serial
+    Serial.println(&quot;UART&gt; &quot; + data);
+    
+    // If buffer is large, flush to SD
+    if (logBuffer.length() &gt; 1024) {
+      flushLog();
+    }
+  }
+  
+  void flushLog() {
+    if (sdEnabled &amp;&amp; logBuffer.length() &gt; 0) {
+      logFile = SD.open(&quot;/uart_log.txt&quot;, FILE_APPEND);
+      if (logFile) {
+        logFile.print(logBuffer);
+        logFile.close();
+        logBuffer = &quot;&quot;;
+      }
+    }
+  }
+  
+  void setupWiFi() {
+    WiFi.begin(&quot;YourSSID&quot;, &quot;YourPassword&quot;);
+    
+    int attempts = 0;
+    while (WiFi.status() != WL_CONNECTED &amp;&amp; attempts &lt; 20) {
+      delay(500);
+      Serial.print(&quot;.&quot;);
+      attempts++;
+    }
+    
+    if (WiFi.status() == WL_CONNECTED) {
+      wifiEnabled = true;
+      Serial.println();
+      Serial.print(&quot;WiFi connected: &quot;);
+      Serial.println(WiFi.localIP());
+    } else {
+      Serial.println(&quot;WiFi connection failed&quot;);
+    }
+  }
+  
+  void setupWebServer() {
+    // Serve log data
+    server.on(&quot;/&quot;, [this]() {
+      String html = &quot;&lt;html&gt;&lt;head&gt;&lt;title&gt;UART Bridge&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&quot;;
+      html += &quot;&lt;h1&gt;UART Data Bridge&lt;/h1&gt;&quot;;
+      html += &quot;&lt;h2&gt;Recent Data:&lt;/h2&gt;&quot;;
+      html += &quot;&lt;pre&gt;&quot; + logBuffer + &quot;&lt;/pre&gt;&quot;;
+      html += &quot;&lt;br&gt;&lt;a href='/download'&gt;Download Full Log&lt;/a&gt;&quot;;
+      html += &quot;&lt;/body&gt;&lt;/html&gt;&quot;;
+      server.send(200, &quot;text/html&quot;, html);
+    });
+    
+    // Download log file
+    server.on(&quot;/download&quot;, [this]() {
+      if (sdEnabled) {
+        File file = SD.open(&quot;/uart_log.txt&quot;);
+        if (file) {
+          server.sendHeader(&quot;Content-Disposition&quot;, &quot;attachment; filename=uart_log.txt&quot;);
+          server.streamFile(file, &quot;text/plain&quot;);
+          file.close();
+        } else {
+          server.send(404, &quot;text/plain&quot;, &quot;Log file not found&quot;);
+        }
+      } else {
+        server.send(503, &quot;text/plain&quot;, &quot;SD card not available&quot;);
+      }
+    });
+    
+    // Send data to UART
+    server.on(&quot;/send&quot;, [this]() {
+      if (server.hasArg(&quot;data&quot;)) {
+        String data = server.arg(&quot;data&quot;);
+        uart-&gt;write(data + &quot;\n&quot;);
+        server.send(200, &quot;text/plain&quot;, &quot;Data sent: &quot; + data);
+      } else {
+        server.send(400, &quot;text/plain&quot;, &quot;Missing 'data' parameter&quot;);
+      }
+    });
+    
+    server.begin();
+    Serial.println(&quot;Web server started&quot;);
+  }
+};
+</code></pre>
+<h3 id="multi-device-uart-communication-hub">Multi-Device UART Communication Hub</h3>
+<pre><code class="lang-cpp">class UARTHub {
+private:
+  static const int MAX_DEVICES = 4;
+  
+  struct Device {
+    UARTInterface* uart;
+    String name;
+    bool active;
+    unsigned long lastActivity;
+    uint8_t deviceId;
+  };
+  
+  Device devices[MAX_DEVICES];
+  int deviceCount = 0;
+  
+public:
+  bool addDevice(const String&amp; name, UARTInterface* uart, uint8_t id) {
+    if (deviceCount &lt; MAX_DEVICES) {
+      devices[deviceCount] = {uart, name, true, millis(), id};
+      deviceCount++;
+      Serial.println(&quot;Added device: &quot; + name);
+      return true;
+    }
+    return false;
+  }
+  
+  void broadcastMessage(const String&amp; message, uint8_t excludeId = 0xFF) {
+    for (int i = 0; i &lt; deviceCount; i++) {
+      if (devices[i].active &amp;&amp; devices[i].deviceId != excludeId) {
+        devices[i].uart-&gt;write(&quot;[BROADCAST] &quot; + message + &quot;\n&quot;);
+      }
+    }
+  }
+  
+  void sendToDevice(uint8_t deviceId, const String&amp; message) {
+    for (int i = 0; i &lt; deviceCount; i++) {
+      if (devices[i].deviceId == deviceId &amp;&amp; devices[i].active) {
+        devices[i].uart-&gt;write(message + &quot;\n&quot;);
+        devices[i].lastActivity = millis();
+        break;
+      }
+    }
+  }
+  
+  void processMessages() {
+    for (int i = 0; i &lt; deviceCount; i++) {
+      if (devices[i].active &amp;&amp; devices[i].uart-&gt;available()) {
+        String message = devices[i].uart-&gt;readLine();
+        if (message.length() &gt; 0) {
+          devices[i].lastActivity = millis();
+          handleMessage(devices[i].deviceId, devices[i].name, message);
+        }
+      }
+    }
+  }
+  
+  void checkDeviceHealth() {
+    unsigned long now = millis();
+    
+    for (int i = 0; i &lt; deviceCount; i++) {
+      if (devices[i].active &amp;&amp; (now - devices[i].lastActivity &gt; 30000)) {
+        Serial.println(&quot;Device &quot; + devices[i].name + &quot; appears inactive&quot;);
+        // Could implement ping or disable device
+      }
+    }
+  }
+  
+private:
+  void handleMessage(uint8_t fromId, const String&amp; deviceName, const String&amp; message) {
+    Serial.println(&quot;[&quot; + deviceName + &quot;] &quot; + message);
+    
+    // Parse and route messages
+    if (message.startsWith(&quot;@&quot;)) {
+      // Direct message to specific device
+      int spaceIndex = message.indexOf(' ');
+      if (spaceIndex &gt; 1) {
+        uint8_t targetId = message.substring(1, spaceIndex).toInt();
+        String content = message.substring(spaceIndex + 1);
+        sendToDevice(targetId, &quot;[&quot; + deviceName + &quot;] &quot; + content);
+      }
+    } else if (message.startsWith(&quot;!&quot;)) {
+      // Broadcast message
+      String content = message.substring(1);
+      broadcastMessage(&quot;[&quot; + deviceName + &quot;] &quot; + content, fromId);
+    } else {
+      // Regular message - could be logged or processed
+      logMessage(deviceName, message);
+    }
+  }
+  
+  void logMessage(const String&amp; device, const String&amp; message) {
+    // Implement message logging
+    Serial.println(&quot;LOG: [&quot; + device + &quot;] &quot; + message);
+  }
+};
+
+// Example setup
+UARTInterface device1(&amp;Serial1, 115200);
+UARTInterface device2(&amp;Serial2, 9600);
+UARTHub hub;
+
+void setup() {
+  Serial.begin(115200);
+  
+  device1.begin(16, 17);
+  device2.begin(25, 26);
+  
+  hub.addDevice(&quot;Sensor Node&quot;, &amp;device1, 1);
+  hub.addDevice(&quot;Display Unit&quot;, &amp;device2, 2);
+  
+  Serial.println(&quot;UART Hub initialized&quot;);
+}
+
+void loop() {
+  hub.processMessages();
+  hub.checkDeviceHealth();
+  
+  // Example: Send periodic status
+  static unsigned long lastStatus = 0;
+  if (millis() - lastStatus &gt; 60000) {
+    hub.broadcastMessage(&quot;System Status: OK&quot;);
+    lastStatus = millis();
+  }
+  
+  delay(10);
+}
+</code></pre>
+<h2 id="uart-best-practices">UART Best Practices</h2>
+<h3 id="1-baud-rate-selection">1. Baud Rate Selection</h3>
+<pre><code class="lang-cpp">void selectOptimalBaudRate(float cableLength, bool highSpeed = false) {
+  // Guidelines for baud rate selection
+  if (cableLength &gt; 100) { // &gt; 100 meters
+    Serial.println(&quot;Recommended: 9600 bps or lower&quot;);
+  } else if (cableLength &gt; 15) { // 15-100 meters
+    Serial.println(&quot;Recommended: 38400 bps or lower&quot;);
+  } else if (cableLength &gt; 3) { // 3-15 meters
+    Serial.println(&quot;Recommended: 115200 bps or lower&quot;);
+  } else { // &lt; 3 meters
+    if (highSpeed) {
+      Serial.println(&quot;Recommended: Up to 921600 bps&quot;);
+    } else {
+      Serial.println(&quot;Recommended: Up to 230400 bps&quot;);
+    }
+  }
+}
+</code></pre>
+<h3 id="2-error-detection-and-recovery">2. Error Detection and Recovery</h3>
+<pre><code class="lang-cpp">class RobustUART {
+private:
+  UARTInterface* uart;
+  unsigned long timeoutMs;
+  int maxRetries;
+  
+public:
+  RobustUART(UARTInterface* u, unsigned long timeout = 1000, int retries = 3) 
+    : uart(u), timeoutMs(timeout), maxRetries(retries) {}
+  
+  bool sendWithAck(const String&amp; message) {
+    for (int attempt = 0; attempt &lt; maxRetries; attempt++) {
+      uart-&gt;write(message + &quot;\n&quot;);
+      
+      String response = uart-&gt;readLine(timeoutMs);
+      if (response == &quot;ACK&quot;) {
+        return true;
+      }
+      
+      Serial.println(&quot;Retry &quot; + String(attempt + 1));
+      delay(100 * (attempt + 1)); // Exponential backoff
+    }
+    
+    return false;
+  }
+  
+  bool receiveWithAck(String&amp; message) {
+    message = uart-&gt;readLine(timeoutMs);
+    if (message.length() &gt; 0) {
+      uart-&gt;write(&quot;ACK\n&quot;);
+      return true;
+    }
+    return false;
+  }
+};
+</code></pre>
+<h3 id="3-flow-control-implementation">3. Flow Control Implementation</h3>
+<pre><code class="lang-cpp">class UARTFlowControl {
+private:
+  UARTInterface* uart;
+  int rtsPin, ctsPin;
+  bool hardwareFlowControl;
+  
+public:
+  UARTFlowControl(UARTInterface* u, int rts = -1, int cts = -1) 
+    : uart(u), rtsPin(rts), ctsPin(cts) {
+    hardwareFlowControl = (rts != -1 &amp;&amp; cts != -1);
+    
+    if (hardwareFlowControl) {
+      pinMode(rtsPin, OUTPUT);
+      pinMode(ctsPin, INPUT);
+      digitalWrite(rtsPin, LOW); // Ready to receive
+    }
+  }
+  
+  bool canSend() {
+    if (hardwareFlowControl) {
+      return digitalRead(ctsPin) == LOW; // Clear to send
+    }
+    return true;
+  }
+  
+  void setReady(bool ready) {
+    if (hardwareFlowControl) {
+      digitalWrite(rtsPin, ready ? LOW : HIGH);
+    }
+  }
+  
+  bool sendData(const uint8_t* data, size_t length) {
+    if (!canSend()) {
+      return false;
+    }
+    
+    for (size_t i = 0; i &lt; length; i++) {
+      while (!canSend()) {
+        delay(1); // Wait for clear to send
+      }
+      uart-&gt;write(&amp;data[i], 1);
+    }
+    
+    return true;
+  }
+};
+</code></pre>
+<h3 id="4-power-management">4. Power Management</h3>
+<pre><code class="lang-cpp">class UARTPowerManager {
+private:
+  UARTInterface* uart;
+  bool autoSleep;
+  unsigned long inactivityTimeout;
+  unsigned long lastActivity;
+  
+public:
+  UARTPowerManager(UARTInterface* u, unsigned long timeout = 30000) 
+    : uart(u), inactivityTimeout(timeout), autoSleep(false) {
+    lastActivity = millis();
+  }
+  
+  void enableAutoSleep(bool enable) {
+    autoSleep = enable;
+  }
+  
+  void updateActivity() {
+    lastActivity = millis();
+  }
+  
+  void checkPowerState() {
+    if (autoSleep &amp;&amp; (millis() - lastActivity &gt; inactivityTimeout)) {
+      enterSleepMode();
+    }
+  }
+  
+private:
+  void enterSleepMode() {
+    Serial.println(&quot;UART entering sleep mode&quot;);
+    uart-&gt;end();
+    
+    // Configure wake-up source (e.g., RX pin interrupt)
+    esp_sleep_enable_ext0_wakeup(GPIO_NUM_16, 0); // RX pin low
+    esp_light_sleep_start();
+    
+    // Wake up
+    uart-&gt;begin();
+    updateActivity();
+    Serial.println(&quot;UART woke up&quot;);
+  }
+};
+</code></pre>
+<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
+<h3 id="problem-no-communication">Problem: No Communication</h3>
+<p><strong>Check:</strong></p>
+<ul>
+<li>Baud rate mismatch between devices</li>
+<li>Crossed TX/RX connections (TX to RX, RX to TX)</li>
+<li>Common ground connection</li>
+<li>Voltage level compatibility (3.3V vs 5V)</li>
+</ul>
+<h3 id="problem-garbled-data">Problem: Garbled Data</h3>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Verify baud rate accuracy</li>
+<li>Check for electromagnetic interference</li>
+<li>Reduce cable length or baud rate</li>
+<li>Add termination resistors for long cables</li>
+</ul>
+<h3 id="problem-data-loss">Problem: Data Loss</h3>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Implement flow control</li>
+<li>Increase buffer sizes</li>
+<li>Reduce transmission rate</li>
+<li>Add error detection/correction</li>
+</ul>
+<h3 id="problem-timing-issues">Problem: Timing Issues</h3>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Use hardware timers for precise timing</li>
+<li>Implement proper timeout handling</li>
+<li>Account for processing delays</li>
+<li>Use DMA for high-speed transfers</li>
+</ul>
+<h2 id="uart-vs-other-protocols">UART vs Other Protocols</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>UART</th>
+<th>I2C</th>
+<th>SPI</th>
+<th>CAN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wires</td>
+<td>3 (TX,RX,GND)</td>
+<td>2 (SDA,SCL)</td>
+<td>4+ (MOSI,MISO,SCK,CS)</td>
+<td>2 (CAN_H,CAN_L)</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Up to 1Mbps</td>
+<td>Up to 3.4Mbps</td>
+<td>Up to 50Mbps</td>
+<td>Up to 1Mbps</td>
+</tr>
+<tr>
+<td>Distance</td>
+<td>Long (km with RS485)</td>
+<td>Short (&lt;1m)</td>
+<td>Short (&lt;1m)</td>
+<td>Long (km)</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Multi-drop</td>
+<td>No (point-to-point)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Error detection</td>
+<td>Optional</td>
+<td>ACK/NACK</td>
+<td>None</td>
+<td>CRC + ACK</td>
+</tr>
+</tbody>
+</table>
+<p>This comprehensive UART guide covers everything from basic communication to advanced features like protocol implementation, error handling, and power management.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/uart-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

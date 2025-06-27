@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  commentId: T:CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  id: ResistorCalculator.ResistorNetwork.ConnectionType
+  parent: CircuitTool
+  children:
+  - CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Parallel
+  - CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Series
+  langs:
+  - csharp
+  - vb
+  name: ResistorCalculator.ResistorNetwork.ConnectionType
+  nameWithType: ResistorCalculator.ResistorNetwork.ConnectionType
+  fullName: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/ResistorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConnectionType
+    path: src/Calculators/ResistorCalculator.cs
+    startLine: 112
+  namespace: CircuitTool
+  syntax:
+    content: public enum ResistorCalculator.ResistorNetwork.ConnectionType
+    content.vb: Public Enum ResistorCalculator.ResistorNetwork.ConnectionType
+- uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Series
+  commentId: F:CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Series
+  id: Series
+  parent: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: ResistorCalculator.ResistorNetwork.ConnectionType.Series
+  fullName: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Series
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Series
+    path: src/Calculators/ResistorCalculator.cs
+    startLine: 112
+  namespace: CircuitTool
+  syntax:
+    content: Series = 0
+    return:
+      type: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+- uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Parallel
+  commentId: F:CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Parallel
+  id: Parallel
+  parent: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  langs:
+  - csharp
+  - vb
+  name: Parallel
+  nameWithType: ResistorCalculator.ResistorNetwork.ConnectionType.Parallel
+  fullName: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.Parallel
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Parallel
+    path: src/Calculators/ResistorCalculator.cs
+    startLine: 112
+  namespace: CircuitTool
+  syntax:
+    content: Parallel = 1
+    return:
+      type: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  commentId: T:CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  parent: CircuitTool
+  href: CircuitTool.ResistorCalculator.html
+  name: ResistorCalculator.ResistorNetwork.ConnectionType
+  nameWithType: ResistorCalculator.ResistorNetwork.ConnectionType
+  fullName: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+  spec.csharp:
+  - uid: CircuitTool.ResistorCalculator
+    name: ResistorCalculator
+    href: CircuitTool.ResistorCalculator.html
+  - name: .
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork
+    name: ResistorNetwork
+    href: CircuitTool.ResistorCalculator.ResistorNetwork.html
+  - name: .
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+    name: ConnectionType
+    href: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.html
+  spec.vb:
+  - uid: CircuitTool.ResistorCalculator
+    name: ResistorCalculator
+    href: CircuitTool.ResistorCalculator.html
+  - name: .
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork
+    name: ResistorNetwork
+    href: CircuitTool.ResistorCalculator.ResistorNetwork.html
+  - name: .
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+    name: ConnectionType
+    href: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.html

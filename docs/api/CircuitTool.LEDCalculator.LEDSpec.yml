@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.LEDCalculator.LEDSpec
+  commentId: T:CircuitTool.LEDCalculator.LEDSpec
+  id: LEDCalculator.LEDSpec
+  parent: CircuitTool
+  children:
+  - CircuitTool.LEDCalculator.LEDSpec.Color
+  - CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+  - CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+  - CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+  - CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+  langs:
+  - csharp
+  - vb
+  name: LEDCalculator.LEDSpec
+  nameWithType: LEDCalculator.LEDSpec
+  fullName: CircuitTool.LEDCalculator.LEDSpec
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LEDSpec
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 96
+  namespace: CircuitTool
+  summary: LED specifications for calculations
+  example: []
+  syntax:
+    content: public class LEDCalculator.LEDSpec
+    content.vb: Public Class LEDCalculator.LEDSpec
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+  commentId: P:CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+  id: ForwardVoltage
+  parent: CircuitTool.LEDCalculator.LEDSpec
+  langs:
+  - csharp
+  - vb
+  name: ForwardVoltage
+  nameWithType: LEDCalculator.LEDSpec.ForwardVoltage
+  fullName: CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ForwardVoltage
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 98
+  namespace: CircuitTool
+  syntax:
+    content: public double ForwardVoltage { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ForwardVoltage As Double
+  overload: CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage*
+- uid: CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+  commentId: P:CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+  id: ForwardCurrent
+  parent: CircuitTool.LEDCalculator.LEDSpec
+  langs:
+  - csharp
+  - vb
+  name: ForwardCurrent
+  nameWithType: LEDCalculator.LEDSpec.ForwardCurrent
+  fullName: CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ForwardCurrent
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 99
+  namespace: CircuitTool
+  syntax:
+    content: public double ForwardCurrent { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ForwardCurrent As Double
+  overload: CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent*
+- uid: CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+  commentId: P:CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+  id: MaxCurrent
+  parent: CircuitTool.LEDCalculator.LEDSpec
+  langs:
+  - csharp
+  - vb
+  name: MaxCurrent
+  nameWithType: LEDCalculator.LEDSpec.MaxCurrent
+  fullName: CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MaxCurrent
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 100
+  namespace: CircuitTool
+  syntax:
+    content: public double MaxCurrent { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property MaxCurrent As Double
+  overload: CircuitTool.LEDCalculator.LEDSpec.MaxCurrent*
+- uid: CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+  commentId: P:CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+  id: LuminousFlux
+  parent: CircuitTool.LEDCalculator.LEDSpec
+  langs:
+  - csharp
+  - vb
+  name: LuminousFlux
+  nameWithType: LEDCalculator.LEDSpec.LuminousFlux
+  fullName: CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: LuminousFlux
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 101
+  namespace: CircuitTool
+  syntax:
+    content: public double LuminousFlux { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property LuminousFlux As Double
+  overload: CircuitTool.LEDCalculator.LEDSpec.LuminousFlux*
+- uid: CircuitTool.LEDCalculator.LEDSpec.Color
+  commentId: P:CircuitTool.LEDCalculator.LEDSpec.Color
+  id: Color
+  parent: CircuitTool.LEDCalculator.LEDSpec
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: LEDCalculator.LEDSpec.Color
+  fullName: CircuitTool.LEDCalculator.LEDSpec.Color
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Color
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 102
+  namespace: CircuitTool
+  syntax:
+    content: public string Color { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Color As String
+  overload: CircuitTool.LEDCalculator.LEDSpec.Color*
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage*
+  commentId: Overload:CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+  href: CircuitTool.LEDCalculator.LEDSpec.html#CircuitTool_LEDCalculator_LEDSpec_ForwardVoltage
+  name: ForwardVoltage
+  nameWithType: LEDCalculator.LEDSpec.ForwardVoltage
+  fullName: CircuitTool.LEDCalculator.LEDSpec.ForwardVoltage
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent*
+  commentId: Overload:CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+  href: CircuitTool.LEDCalculator.LEDSpec.html#CircuitTool_LEDCalculator_LEDSpec_ForwardCurrent
+  name: ForwardCurrent
+  nameWithType: LEDCalculator.LEDSpec.ForwardCurrent
+  fullName: CircuitTool.LEDCalculator.LEDSpec.ForwardCurrent
+- uid: CircuitTool.LEDCalculator.LEDSpec.MaxCurrent*
+  commentId: Overload:CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+  href: CircuitTool.LEDCalculator.LEDSpec.html#CircuitTool_LEDCalculator_LEDSpec_MaxCurrent
+  name: MaxCurrent
+  nameWithType: LEDCalculator.LEDSpec.MaxCurrent
+  fullName: CircuitTool.LEDCalculator.LEDSpec.MaxCurrent
+- uid: CircuitTool.LEDCalculator.LEDSpec.LuminousFlux*
+  commentId: Overload:CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+  href: CircuitTool.LEDCalculator.LEDSpec.html#CircuitTool_LEDCalculator_LEDSpec_LuminousFlux
+  name: LuminousFlux
+  nameWithType: LEDCalculator.LEDSpec.LuminousFlux
+  fullName: CircuitTool.LEDCalculator.LEDSpec.LuminousFlux
+- uid: CircuitTool.LEDCalculator.LEDSpec.Color*
+  commentId: Overload:CircuitTool.LEDCalculator.LEDSpec.Color
+  href: CircuitTool.LEDCalculator.LEDSpec.html#CircuitTool_LEDCalculator_LEDSpec_Color
+  name: Color
+  nameWithType: LEDCalculator.LEDSpec.Color
+  fullName: CircuitTool.LEDCalculator.LEDSpec.Color
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

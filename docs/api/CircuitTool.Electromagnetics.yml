@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Electromagnetics
+  commentId: N:CircuitTool.Electromagnetics
+  id: CircuitTool.Electromagnetics
+  children:
+  - CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Electromagnetics
+  nameWithType: CircuitTool.Electromagnetics
+  fullName: CircuitTool.Electromagnetics
+  type: Namespace
+references:
+- uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  commentId: T:CircuitTool.Electromagnetics.ElectromagneticsCalculator
+  href: CircuitTool.Electromagnetics.ElectromagneticsCalculator.html
+  name: ElectromagneticsCalculator
+  nameWithType: ElectromagneticsCalculator
+  fullName: CircuitTool.Electromagnetics.ElectromagneticsCalculator

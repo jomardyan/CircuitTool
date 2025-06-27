@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CAN Bus (Controller Area Network) Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CAN Bus (Controller Area Network) Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/can-bus-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="can-bus-controller-area-network-guide">CAN Bus (Controller Area Network) Guide</h1>
+
+<h2 id="introduction-to-can-bus">Introduction to CAN Bus</h2>
+<p>CAN (Controller Area Network) is a robust vehicle bus standard designed for automotive applications but widely used in industrial automation, medical equipment, and embedded systems. Developed by Bosch in the 1980s, CAN provides reliable, real-time communication in environments with high electromagnetic interference. It's known for its excellent error detection capabilities, priority-based message transmission, and fault tolerance.</p>
+<h2 id="can-protocol-overview">CAN Protocol Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Multi-master</strong>: Any node can initiate communication</li>
+<li><strong>Message-based</strong>: Data is transmitted in frames, not addresses</li>
+<li><strong>Priority-based</strong>: High-priority messages get bus access first</li>
+<li><strong>Error detection</strong>: Multiple error detection mechanisms</li>
+<li><strong>Fault tolerant</strong>: Can operate with one wire broken (CAN-FD)</li>
+<li><strong>Deterministic</strong>: Predictable message timing</li>
+<li><strong>Real-time</strong>: Low latency communication</li>
+</ul>
+<h3 id="can-frame-types">CAN Frame Types</h3>
+<ol>
+<li><strong>Data Frame</strong>: Carries actual data (0-8 bytes)</li>
+<li><strong>Remote Frame</strong>: Requests data from another node</li>
+<li><strong>Error Frame</strong>: Indicates transmission errors</li>
+<li><strong>Overload Frame</strong>: Introduces delays between frames</li>
+</ol>
+<h3 id="can-versions">CAN Versions</h3>
+<ul>
+<li><strong>CAN 2.0A</strong>: Standard 11-bit identifier (2048 IDs)</li>
+<li><strong>CAN 2.0B</strong>: Extended 29-bit identifier (536M IDs)</li>
+<li><strong>CAN-FD</strong>: Flexible Data Rate with up to 64 bytes payload</li>
+</ul>
+<h2 id="can-physical-layer">CAN Physical Layer</h2>
+<h3 id="differential-signaling">Differential Signaling</h3>
+<p>CAN uses differential signaling on two wires:</p>
+<ul>
+<li><strong>CAN_H (CAN High)</strong>: Positive signal line</li>
+<li><strong>CAN_L (CAN Low)</strong>: Negative signal line</li>
+</ul>
+<h3 id="bus-states">Bus States</h3>
+<ul>
+<li><strong>Dominant (0)</strong>: CAN_H = 3.5V, CAN_L = 1.5V (Difference = 2V)</li>
+<li><strong>Recessive (1)</strong>: CAN_H = 2.5V, CAN_L = 2.5V (Difference = 0V)</li>
+</ul>
+<h3 id="bit-rates">Bit Rates</h3>
+<ul>
+<li><strong>Low Speed CAN</strong>: 125 kbps</li>
+<li><strong>High Speed CAN</strong>: 250 kbps, 500 kbps, 1 Mbps</li>
+<li><strong>CAN-FD</strong>: Up to 8 Mbps (data phase)</li>
+</ul>
+<h2 id="arduino-can-implementation">Arduino CAN Implementation</h2>
+<h3 id="basic-can-setup-mcp2515">Basic CAN Setup (MCP2515)</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+#include &lt;mcp2515.h&gt;
+
+// MCP2515 CAN controller
+struct can_frame canMsg;
+MCP2515 mcp2515(10); // CS pin
+
+void setup() {
+  Serial.begin(115200);
+  
+  mcp2515.reset();
+  mcp2515.setBitrate(CAN_500KBPS, MCP_8MHZ);
+  mcp2515.setNormalMode();
+  
+  Serial.println(&quot;CAN Bus initialized - 500kbps&quot;);
+}
+
+void loop() {
+  // Send CAN message
+  canMsg.can_id = 0x123;
+  canMsg.can_dlc = 8;
+  canMsg.data[0] = 0x01;
+  canMsg.data[1] = 0x02;
+  canMsg.data[2] = 0x03;
+  canMsg.data[3] = 0x04;
+  canMsg.data[4] = 0x05;
+  canMsg.data[5] = 0x06;
+  canMsg.data[6] = 0x07;
+  canMsg.data[7] = 0x08;
+  
+  mcp2515.sendMessage(&amp;canMsg);
+  Serial.println(&quot;Message Sent&quot;);
+  
+  // Receive CAN message
+  if (mcp2515.readMessage(&amp;canMsg) == MCP2515::ERROR_OK) {
+    Serial.print(&quot;ID: 0x&quot;);
+    Serial.print(canMsg.can_id, HEX);
+    Serial.print(&quot; DLC: &quot;);
+    Serial.print(canMsg.can_dlc);
+    Serial.print(&quot; Data: &quot;);
+    
+    for (int i = 0; i &lt; canMsg.can_dlc; i++) {
+      Serial.print(&quot;0x&quot;);
+      Serial.print(canMsg.data[i], HEX);
+      Serial.print(&quot; &quot;);
+    }
+    Serial.println();
+  }
+  
+  delay(1000);
+}
+</code></pre>
+<h3 id="advanced-can-class-implementation">Advanced CAN Class Implementation</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+#include &lt;mcp2515.h&gt;
+
+class CANInterface {
+private:
+  MCP2515* mcp;
+  
+  // Statistics
+  unsigned long messagesSent = 0;
+  unsigned long messagesReceived = 0;
+  unsigned long transmissionErrors = 0;
+  unsigned long receptionErrors = 0;
+  unsigned long busOffEvents = 0;
+  
+  // Filters and masks
+  struct Filter {
+    uint32_t id;
+    uint32_t mask;
+    bool enabled;
+  };
+  
+  Filter filters[6]; // MCP2515 has 6 filters
+  
+  // Message queues
+  static const int TX_QUEUE_SIZE = 16;
+  static const int RX_QUEUE_SIZE = 32;
+  
+  struct QueuedMessage {
+    can_frame frame;
+    unsigned long timestamp;
+    int priority;
+  };
+  
+  QueuedMessage txQueue[TX_QUEUE_SIZE];
+  QueuedMessage rxQueue[RX_QUEUE_SIZE];
+  volatile int txHead = 0, txTail = 0;
+  volatile int rxHead = 0, rxTail = 0;
+  
+public:
+  CANInterface(int csPin) {
+    mcp = new MCP2515(csPin);
+    initializeFilters();
+  }
+  
+  ~CANInterface() {
+    delete mcp;
+  }
+  
+  bool begin(CAN_SPEED speed = CAN_500KBPS, CAN_CLOCK clock = MCP_8MHZ) {
+    mcp-&gt;reset();
+    
+    if (mcp-&gt;setBitrate(speed, clock) != MCP2515::ERROR_OK) {
+      Serial.println(&quot;Failed to set bitrate&quot;);
+      return false;
+    }
+    
+    if (mcp-&gt;setNormalMode() != MCP2515::ERROR_OK) {
+      Serial.println(&quot;Failed to set normal mode&quot;);
+      return false;
+    }
+    
+    setupFilters();
+    clearStatistics();
+    
+    Serial.printf(&quot;CAN Bus initialized - Speed: %d kbps\n&quot;, 
+                  getBitrateKbps(speed));
+    return true;
+  }
+  
+  // Send message with priority queuing
+  bool sendMessage(uint32_t id, const uint8_t* data, uint8_t length, 
+                   int priority = 0, bool extended = false) {
+    if (length &gt; 8) return false;
+    
+    QueuedMessage msg;
+    msg.frame.can_id = id;
+    if (extended) {
+      msg.frame.can_id |= CAN_EFF_FLAG;
+    }
+    msg.frame.can_dlc = length;
+    memcpy(msg.frame.data, data, length);
+    msg.timestamp = millis();
+    msg.priority = priority;
+    
+    return enqueueMessage(msg, true);
+  }
+  
+  // Send remote frame
+  bool sendRemoteFrame(uint32_t id, uint8_t length, bool extended = false) {
+    can_frame frame;
+    frame.can_id = id | CAN_RTR_FLAG;
+    if (extended) {
+      frame.can_id |= CAN_EFF_FLAG;
+    }
+    frame.can_dlc = length;
+    
+    return transmitFrame(frame);
+  }
+  
+  // Receive message (non-blocking)
+  bool receiveMessage(uint32_t&amp; id, uint8_t* data, uint8_t&amp; length, 
+                      bool&amp; extended, bool&amp; remote, unsigned long&amp; timestamp) {
+    if (isRxQueueEmpty()) {
+      processIncomingMessages(); // Check for new messages
+    }
+    
+    if (!isRxQueueEmpty()) {
+      QueuedMessage msg = dequeueMessage(false);
+      
+      id = msg.frame.can_id &amp; CAN_EFF_MASK;
+      extended = (msg.frame.can_id &amp; CAN_EFF_FLAG) != 0;
+      remote = (msg.frame.can_id &amp; CAN_RTR_FLAG) != 0;
+      length = msg.frame.can_dlc;
+      timestamp = msg.timestamp;
+      
+      if (!remote) {
+        memcpy(data, msg.frame.data, length);
+      }
+      
+      messagesReceived++;
+      return true;
+    }
+    
+    return false;
+  }
+  
+  // Process transmission queue
+  void processTxQueue() {
+    while (!isTxQueueEmpty()) {
+      QueuedMessage msg = peekTxMessage();
+      
+      if (transmitFrame(msg.frame)) {
+        dequeueTxMessage();
+        messagesSent++;
+      } else {
+        break; // Transmission failed, try again later
+      }
+    }
+  }
+  
+  // Filter management
+  void setFilter(int filterNum, uint32_t id, uint32_t mask, bool extended = false) {
+    if (filterNum &gt;= 0 &amp;&amp; filterNum &lt; 6) {
+      filters[filterNum].id = id;
+      filters[filterNum].mask = mask;
+      filters[filterNum].enabled = true;
+      
+      // Apply filter to MCP2515
+      if (filterNum &lt; 2) {
+        // RXB0 filters
+        mcp-&gt;setFilter((MCP2515::RXF)filterNum, extended, id);
+        mcp-&gt;setFilterMask(MCP2515::MASK0, extended, mask);
+      } else {
+        // RXB1 filters
+        mcp-&gt;setFilter((MCP2515::RXF)filterNum, extended, id);
+        mcp-&gt;setFilterMask(MCP2515::MASK1, extended, mask);
+      }
+    }
+  }
+  
+  void disableFilter(int filterNum) {
+    if (filterNum &gt;= 0 &amp;&amp; filterNum &lt; 6) {
+      filters[filterNum].enabled = false;
+      // Set filter to accept all messages
+      setFilter(filterNum, 0, 0);
+    }
+  }
+  
+  // Error handling
+  void checkErrors() {
+    uint8_t errorFlags = mcp-&gt;getErrorFlags();
+    
+    if (errorFlags &amp; MCP2515::EFLG_RX1OVR) {
+      Serial.println(&quot;RX1 Buffer Overflow&quot;);
+      receptionErrors++;
+    }
+    
+    if (errorFlags &amp; MCP2515::EFLG_RX0OVR) {
+      Serial.println(&quot;RX0 Buffer Overflow&quot;);
+      receptionErrors++;
+    }
+    
+    if (errorFlags &amp; MCP2515::EFLG_TXBO) {
+      Serial.println(&quot;Bus Off Error&quot;);
+      busOffEvents++;
+      // Attempt recovery
+      mcp-&gt;setNormalMode();
+    }
+    
+    if (errorFlags &amp; MCP2515::EFLG_TXEP) {
+      Serial.println(&quot;TX Error Passive&quot;);
+      transmissionErrors++;
+    }
+    
+    if (errorFlags &amp; MCP2515::EFLG_RXEP) {
+      Serial.println(&quot;RX Error Passive&quot;);
+      receptionErrors++;
+    }
+  }
+  
+  // Diagnostics
+  void printStatistics() {
+    Serial.println(&quot;=== CAN Bus Statistics ===&quot;);
+    Serial.printf(&quot;Messages Sent: %lu\n&quot;, messagesSent);
+    Serial.printf(&quot;Messages Received: %lu\n&quot;, messagesReceived);
+    Serial.printf(&quot;TX Errors: %lu\n&quot;, transmissionErrors);
+    Serial.printf(&quot;RX Errors: %lu\n&quot;, receptionErrors);
+    Serial.printf(&quot;Bus Off Events: %lu\n&quot;, busOffEvents);
+    Serial.printf(&quot;TX Queue: %d/%d\n&quot;, getTxQueueCount(), TX_QUEUE_SIZE);
+    Serial.printf(&quot;RX Queue: %d/%d\n&quot;, getRxQueueCount(), RX_QUEUE_SIZE);
+    
+    // Error counters
+    uint8_t txErrors = mcp-&gt;getErrorCountTX();
+    uint8_t rxErrors = mcp-&gt;getErrorCountRX();
+    Serial.printf(&quot;Error Counters - TX: %d, RX: %d\n&quot;, txErrors, rxErrors);
+    Serial.println();
+  }
+  
+  void clearStatistics() {
+    messagesSent = 0;
+    messagesReceived = 0;
+    transmissionErrors = 0;
+    receptionErrors = 0;
+    busOffEvents = 0;
+  }
+  
+  // Bus monitoring
+  bool setBusMonitorMode() {
+    return mcp-&gt;setListenOnlyMode() == MCP2515::ERROR_OK;
+  }
+  
+  bool setNormalMode() {
+    return mcp-&gt;setNormalMode() == MCP2515::ERROR_OK;
+  }
+  
+  bool setLoopbackMode() {
+    return mcp-&gt;setLoopbackMode() == MCP2515::ERROR_OK;
+  }
+  
+private:
+  void initializeFilters() {
+    for (int i = 0; i &lt; 6; i++) {
+      filters[i].enabled = false;
+      filters[i].id = 0;
+      filters[i].mask = 0;
+    }
+  }
+  
+  void setupFilters() {
+    // Default: accept all messages
+    for (int i = 0; i &lt; 6; i++) {
+      disableFilter(i);
+    }
+  }
+  
+  bool transmitFrame(const can_frame&amp; frame) {
+    MCP2515::ERROR result = mcp-&gt;sendMessage(&amp;frame);
+    
+    if (result == MCP2515::ERROR_OK) {
+      return true;
+    } else {
+      transmissionErrors++;
+      return false;
+    }
+  }
+  
+  void processIncomingMessages() {
+    can_frame frame;
+    
+    while (mcp-&gt;readMessage(&amp;frame) == MCP2515::ERROR_OK) {
+      QueuedMessage msg;
+      msg.frame = frame;
+      msg.timestamp = millis();
+      msg.priority = 0;
+      
+      enqueueMessage(msg, false);
+    }
+  }
+  
+  bool enqueueMessage(const QueuedMessage&amp; msg, bool isTx) {
+    if (isTx) {
+      int next = (txHead + 1) % TX_QUEUE_SIZE;
+      if (next == txTail) return false; // Queue full
+      
+      txQueue[txHead] = msg;
+      txHead = next;
+    } else {
+      int next = (rxHead + 1) % RX_QUEUE_SIZE;
+      if (next == rxTail) return false; // Queue full
+      
+      rxQueue[rxHead] = msg;
+      rxHead = next;
+    }
+    
+    return true;
+  }
+  
+  QueuedMessage dequeueMessage(bool isTx) {
+    if (isTx) {
+      QueuedMessage msg = txQueue[txTail];
+      txTail = (txTail + 1) % TX_QUEUE_SIZE;
+      return msg;
+    } else {
+      QueuedMessage msg = rxQueue[rxTail];
+      rxTail = (rxTail + 1) % RX_QUEUE_SIZE;
+      return msg;
+    }
+  }
+  
+  QueuedMessage peekTxMessage() {
+    return txQueue[txTail];
+  }
+  
+  void dequeueTxMessage() {
+    txTail = (txTail + 1) % TX_QUEUE_SIZE;
+  }
+  
+  bool isTxQueueEmpty() { return txHead == txTail; }
+  bool isRxQueueEmpty() { return rxHead == rxTail; }
+  
+  int getTxQueueCount() {
+    return (txHead - txTail + TX_QUEUE_SIZE) % TX_QUEUE_SIZE;
+  }
+  
+  int getRxQueueCount() {
+    return (rxHead - rxTail + RX_QUEUE_SIZE) % RX_QUEUE_SIZE;
+  }
+  
+  int getBitrateKbps(CAN_SPEED speed) {
+    switch (speed) {
+      case CAN_5KBPS: return 5;
+      case CAN_10KBPS: return 10;
+      case CAN_20KBPS: return 20;
+      case CAN_31K25BPS: return 31;
+      case CAN_33KBPS: return 33;
+      case CAN_40KBPS: return 40;
+      case CAN_50KBPS: return 50;
+      case CAN_80KBPS: return 80;
+      case CAN_95KBPS: return 95;
+      case CAN_100KBPS: return 100;
+      case CAN_125KBPS: return 125;
+      case CAN_200KBPS: return 200;
+      case CAN_250KBPS: return 250;
+      case CAN_500KBPS: return 500;
+      case CAN_1000KBPS: return 1000;
+      default: return 0;
+    }
+  }
+};
+
+// Usage example
+CANInterface can(10); // CS pin 10
+
+void setup() {
+  Serial.begin(115200);
+  
+  if (!can.begin(CAN_500KBPS)) {
+    Serial.println(&quot;CAN initialization failed!&quot;);
+    while (1);
+  }
+  
+  // Set up some filters
+  can.setFilter(0, 0x100, 0x700); // Accept IDs 0x100-0x1FF
+  can.setFilter(1, 0x200, 0x7F0); // Accept IDs 0x200-0x20F
+  
+  Serial.println(&quot;CAN Bus ready&quot;);
+}
+
+void loop() {
+  // Send test message
+  uint8_t data[] = {0x01, 0x02, 0x03, 0x04};
+  can.sendMessage(0x123, data, 4);
+  
+  // Process queues
+  can.processTxQueue();
+  
+  // Check for received messages
+  uint32_t id;
+  uint8_t rxData[8], length;
+  bool extended, remote;
+  unsigned long timestamp;
+  
+  while (can.receiveMessage(id, rxData, length, extended, remote, timestamp)) {
+    Serial.printf(&quot;RX: ID=0x%X, DLC=%d, Time=%lu\n&quot;, id, length, timestamp);
+    if (!remote) {
+      Serial.print(&quot;Data: &quot;);
+      for (int i = 0; i &lt; length; i++) {
+        Serial.printf(&quot;0x%02X &quot;, rxData[i]);
+      }
+      Serial.println();
+    }
+  }
+  
+  // Check for errors
+  can.checkErrors();
+  
+  // Print statistics every 10 seconds
+  static unsigned long lastStats = 0;
+  if (millis() - lastStats &gt; 10000) {
+    can.printStatistics();
+    lastStats = millis();
+  }
+  
+  delay(100);
+}
+</code></pre>
+<h3 id="can-protocol-stack-implementation">CAN Protocol Stack Implementation</h3>
+<pre><code class="lang-cpp">// Higher-level CAN protocol implementation
+class CANProtocol {
+private:
+  CANInterface* can;
+  
+  // Protocol definitions
+  enum MessageTypes {
+    MSG_HEARTBEAT = 0x100,
+    MSG_SENSOR_DATA = 0x200,
+    MSG_ACTUATOR_CMD = 0x300,
+    MSG_DIAGNOSTIC = 0x400,
+    MSG_CONFIGURATION = 0x500,
+    MSG_EMERGENCY = 0x600
+  };
+  
+  struct SensorData {
+    uint8_t sensorId;
+    float value;
+    uint8_t status;
+  } __attribute__((packed));
+  
+  struct ActuatorCommand {
+    uint8_t actuatorId;
+    uint8_t command;
+    uint16_t value;
+  } __attribute__((packed));
+  
+  struct DiagnosticData {
+    uint8_t nodeId;
+    uint8_t errorCode;
+    uint16_t errorData;
+  } __attribute__((packed));
+  
+  // Node management
+  uint8_t nodeId;
+  bool nodeActive = false;
+  unsigned long lastHeartbeat = 0;
+  unsigned long heartbeatInterval = 1000; // 1 second
+  
+  // Callback functions
+  typedef void (*MessageCallback)(uint32_t id, const uint8_t* data, uint8_t length);
+  MessageCallback callbacks[16];
+  uint32_t callbackIds[16];
+  int callbackCount = 0;
+  
+public:
+  CANProtocol(CANInterface* canInterface, uint8_t id) 
+    : can(canInterface), nodeId(id) {}
+  
+  void begin() {
+    nodeActive = true;
+    lastHeartbeat = millis();
+    
+    // Set up message filters
+    can-&gt;setFilter(0, MSG_HEARTBEAT, 0x700);     // Heartbeat messages
+    can-&gt;setFilter(1, MSG_SENSOR_DATA, 0x700);   // Sensor data
+    can-&gt;setFilter(2, MSG_ACTUATOR_CMD, 0x700);  // Actuator commands
+    can-&gt;setFilter(3, MSG_DIAGNOSTIC, 0x700);    // Diagnostics
+    can-&gt;setFilter(4, MSG_EMERGENCY, 0x700);     // Emergency messages
+    
+    Serial.printf(&quot;CAN Protocol started - Node ID: %d\n&quot;, nodeId);
+  }
+  
+  void loop() {
+    // Send heartbeat
+    if (millis() - lastHeartbeat &gt; heartbeatInterval) {
+      sendHeartbeat();
+      lastHeartbeat = millis();
+    }
+    
+    // Process incoming messages
+    processMessages();
+    
+    // Process transmission queue
+    can-&gt;processTxQueue();
+  }
+  
+  // Message sending methods
+  bool sendSensorData(uint8_t sensorId, float value, uint8_t status = 0) {
+    SensorData data = {sensorId, value, status};
+    uint32_t msgId = MSG_SENSOR_DATA | nodeId;
+    
+    return can-&gt;sendMessage(msgId, (uint8_t*)&amp;data, sizeof(data), 1);
+  }
+  
+  bool sendActuatorCommand(uint8_t targetNode, uint8_t actuatorId, 
+                          uint8_t command, uint16_t value) {
+    ActuatorCommand cmd = {actuatorId, command, value};
+    uint32_t msgId = MSG_ACTUATOR_CMD | targetNode;
+    
+    return can-&gt;sendMessage(msgId, (uint8_t*)&amp;cmd, sizeof(cmd), 2);
+  }
+  
+  bool sendDiagnostic(uint8_t errorCode, uint16_t errorData = 0) {
+    DiagnosticData diag = {nodeId, errorCode, errorData};
+    uint32_t msgId = MSG_DIAGNOSTIC | nodeId;
+    
+    return can-&gt;sendMessage(msgId, (uint8_t*)&amp;diag, sizeof(diag), 1);
+  }
+  
+  bool sendEmergency(uint8_t emergencyCode, const uint8_t* data = nullptr, 
+                    uint8_t dataLength = 0) {
+    uint8_t payload[8] = {nodeId, emergencyCode};
+    uint8_t totalLength = 2;
+    
+    if (data &amp;&amp; dataLength &gt; 0 &amp;&amp; dataLength &lt;= 6) {
+      memcpy(&amp;payload[2], data, dataLength);
+      totalLength += dataLength;
+    }
+    
+    uint32_t msgId = MSG_EMERGENCY | 0x7F; // Broadcast emergency
+    return can-&gt;sendMessage(msgId, payload, totalLength, 3); // High priority
+  }
+  
+  // Configuration methods
+  void setHeartbeatInterval(unsigned long interval) {
+    heartbeatInterval = interval;
+  }
+  
+  void registerCallback(uint32_t messageId, MessageCallback callback) {
+    if (callbackCount &lt; 16) {
+      callbackIds[callbackCount] = messageId;
+      callbacks[callbackCount] = callback;
+      callbackCount++;
+    }
+  }
+  
+  // Network management
+  bool requestNodeInfo(uint8_t targetNode) {
+    uint8_t request = 0x01; // Node info request
+    uint32_t msgId = MSG_DIAGNOSTIC | targetNode;
+    
+    return can-&gt;sendMessage(msgId, &amp;request, 1);
+  }
+  
+  bool pingNode(uint8_t targetNode) {
+    uint8_t ping = 0xFF; // Ping command
+    uint32_t msgId = MSG_HEARTBEAT | targetNode;
+    
+    return can-&gt;sendMessage(msgId, &amp;ping, 1);
+  }
+  
+private:
+  void sendHeartbeat() {
+    uint8_t status = nodeActive ? 0x01 : 0x00;
+    uint32_t msgId = MSG_HEARTBEAT | nodeId;
+    
+    can-&gt;sendMessage(msgId, &amp;status, 1, 0); // Low priority
+  }
+  
+  void processMessages() {
+    uint32_t id;
+    uint8_t data[8], length;
+    bool extended, remote;
+    unsigned long timestamp;
+    
+    while (can-&gt;receiveMessage(id, data, length, extended, remote, timestamp)) {
+      if (remote) continue; // Skip remote frames
+      
+      // Extract message type and source node
+      uint32_t msgType = id &amp; 0x700;
+      uint8_t sourceNode = id &amp; 0xFF;
+      
+      // Handle different message types
+      switch (msgType) {
+        case MSG_HEARTBEAT:
+          handleHeartbeat(sourceNode, data, length);
+          break;
+          
+        case MSG_SENSOR_DATA:
+          handleSensorData(sourceNode, data, length);
+          break;
+          
+        case MSG_ACTUATOR_CMD:
+          if ((id &amp; 0xFF) == nodeId) { // Message for this node
+            handleActuatorCommand(sourceNode, data, length);
+          }
+          break;
+          
+        case MSG_DIAGNOSTIC:
+          handleDiagnostic(sourceNode, data, length);
+          break;
+          
+        case MSG_EMERGENCY:
+          handleEmergency(sourceNode, data, length);
+          break;
+      }
+      
+      // Call registered callbacks
+      for (int i = 0; i &lt; callbackCount; i++) {
+        if ((id &amp; 0x700) == (callbackIds[i] &amp; 0x700)) {
+          callbacks[i](id, data, length);
+        }
+      }
+    }
+  }
+  
+  void handleHeartbeat(uint8_t sourceNode, const uint8_t* data, uint8_t length) {
+    if (length &gt; 0) {
+      Serial.printf(&quot;Heartbeat from Node %d, Status: 0x%02X\n&quot;, 
+                    sourceNode, data[0]);
+    }
+  }
+  
+  void handleSensorData(uint8_t sourceNode, const uint8_t* data, uint8_t length) {
+    if (length &gt;= sizeof(SensorData)) {
+      SensorData* sensorData = (SensorData*)data;
+      Serial.printf(&quot;Sensor Data from Node %d: ID=%d, Value=%.2f, Status=0x%02X\n&quot;,
+                    sourceNode, sensorData-&gt;sensorId, sensorData-&gt;value, 
+                    sensorData-&gt;status);
+    }
+  }
+  
+  void handleActuatorCommand(uint8_t sourceNode, const uint8_t* data, uint8_t length) {
+    if (length &gt;= sizeof(ActuatorCommand)) {
+      ActuatorCommand* cmd = (ActuatorCommand*)data;
+      Serial.printf(&quot;Actuator Command from Node %d: ID=%d, Cmd=0x%02X, Value=%d\n&quot;,
+                    sourceNode, cmd-&gt;actuatorId, cmd-&gt;command, cmd-&gt;value);
+      
+      // Execute actuator command here
+      executeActuatorCommand(cmd-&gt;actuatorId, cmd-&gt;command, cmd-&gt;value);
+    }
+  }
+  
+  void handleDiagnostic(uint8_t sourceNode, const uint8_t* data, uint8_t length) {
+    if (length &gt;= sizeof(DiagnosticData)) {
+      DiagnosticData* diag = (DiagnosticData*)data;
+      Serial.printf(&quot;Diagnostic from Node %d: Error=0x%02X, Data=0x%04X\n&quot;,
+                    sourceNode, diag-&gt;errorCode, diag-&gt;errorData);
+    }
+  }
+  
+  void handleEmergency(uint8_t sourceNode, const uint8_t* data, uint8_t length) {
+    if (length &gt;= 2) {
+      uint8_t emergencyNode = data[0];
+      uint8_t emergencyCode = data[1];
+      
+      Serial.printf(&quot;EMERGENCY from Node %d: Code=0x%02X\n&quot;, 
+                    emergencyNode, emergencyCode);
+      
+      // Handle emergency (stop operations, safe state, etc.)
+      handleEmergencyCondition(emergencyCode, &amp;data[2], length - 2);
+    }
+  }
+  
+  void executeActuatorCommand(uint8_t actuatorId, uint8_t command, uint16_t value) {
+    // Implement actuator control logic
+    Serial.printf(&quot;Executing: Actuator %d, Command 0x%02X, Value %d\n&quot;,
+                  actuatorId, command, value);
+  }
+  
+  void handleEmergencyCondition(uint8_t code, const uint8_t* data, uint8_t length) {
+    // Implement emergency handling
+    Serial.printf(&quot;Emergency condition 0x%02X detected\n&quot;, code);
+    
+    switch (code) {
+      case 0x01: // Emergency stop
+        Serial.println(&quot;EMERGENCY STOP activated&quot;);
+        break;
+      case 0x02: // Overheat
+        Serial.println(&quot;Overheating detected&quot;);
+        break;
+      case 0x03: // Power failure
+        Serial.println(&quot;Power failure detected&quot;);
+        break;
+      default:
+        Serial.println(&quot;Unknown emergency&quot;);
+        break;
+    }
+  }
+};
+
+// Example usage
+CANInterface can(10);
+CANProtocol protocol(&amp;can, 1); // Node ID 1
+
+void sensorDataCallback(uint32_t id, const uint8_t* data, uint8_t length) {
+  Serial.println(&quot;Custom sensor data handler called&quot;);
+}
+
+void setup() {
+  Serial.begin(115200);
+  
+  if (!can.begin(CAN_500KBPS)) {
+    Serial.println(&quot;CAN initialization failed!&quot;);
+    while (1);
+  }
+  
+  protocol.begin();
+  protocol.setHeartbeatInterval(2000); // 2 seconds
+  protocol.registerCallback(0x200, sensorDataCallback);
+  
+  Serial.println(&quot;CAN Protocol stack ready&quot;);
+}
+
+void loop() {
+  protocol.loop();
+  
+  // Send sensor data periodically
+  static unsigned long lastSensor = 0;
+  if (millis() - lastSensor &gt; 5000) {
+    float temperature = 25.5 + random(-50, 50) / 10.0;
+    protocol.sendSensorData(1, temperature, 0x00);
+    lastSensor = millis();
+  }
+  
+  // Send actuator commands occasionally
+  static unsigned long lastActuator = 0;
+  if (millis() - lastActuator &gt; 15000) {
+    protocol.sendActuatorCommand(2, 1, 0x01, 100);
+    lastActuator = millis();
+  }
+  
+  delay(10);
+}
+</code></pre>
+<h3 id="can-gateway-and-bridge">CAN Gateway and Bridge</h3>
+<pre><code class="lang-cpp">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+#include &lt;ArduinoJson.h&gt;
+
+class CANGateway {
+private:
+  CANInterface* can;
+  WebServer server;
+  bool wifiConnected = false;
+  
+  // Message logging
+  struct LogEntry {
+    unsigned long timestamp;
+    uint32_t id;
+    uint8_t data[8];
+    uint8_t length;
+    bool transmitted; // true = TX, false = RX
+  };
+  
+  static const int LOG_SIZE = 100;
+  LogEntry messageLog[LOG_SIZE];
+  int logIndex = 0;
+  
+public:
+  CANGateway(CANInterface* canInterface) : can(canInterface), server(80) {}
+  
+  void begin(const char* ssid, const char* password) {
+    // Connect to WiFi
+    WiFi.begin(ssid, password);
+    
+    int attempts = 0;
+    while (WiFi.status() != WL_CONNECTED &amp;&amp; attempts &lt; 20) {
+      delay(500);
+      Serial.print(&quot;.&quot;);
+      attempts++;
+    }
+    
+    if (WiFi.status() == WL_CONNECTED) {
+      wifiConnected = true;
+      Serial.println();
+      Serial.print(&quot;WiFi connected: &quot;);
+      Serial.println(WiFi.localIP());
+      
+      setupWebServer();
+    } else {
+      Serial.println(&quot;WiFi connection failed&quot;);
+    }
+  }
+  
+  void loop() {
+    if (wifiConnected) {
+      server.handleClient();
+    }
+    
+    // Log CAN messages
+    logCANMessages();
+  }
+  
+private:
+  void setupWebServer() {
+    // Serve main page
+    server.on(&quot;/&quot;, [this]() {
+      String html = generateWebInterface();
+      server.send(200, &quot;text/html&quot;, html);
+    });
+    
+    // API endpoints
+    server.on(&quot;/api/send&quot;, HTTP_POST, [this]() {
+      handleSendMessage();
+    });
+    
+    server.on(&quot;/api/messages&quot;, HTTP_GET, [this]() {
+      handleGetMessages();
+    });
+    
+    server.on(&quot;/api/status&quot;, HTTP_GET, [this]() {
+      handleGetStatus();
+    });
+    
+    server.on(&quot;/api/clear&quot;, HTTP_POST, [this]() {
+      clearLog();
+      server.send(200, &quot;application/json&quot;, &quot;{\&quot;status\&quot;:\&quot;ok\&quot;}&quot;);
+    });
+    
+    server.begin();
+    Serial.println(&quot;Web server started&quot;);
+  }
+  
+  void handleSendMessage() {
+    if (server.hasArg(&quot;plain&quot;)) {
+      DynamicJsonDocument doc(1024);
+      deserializeJson(doc, server.arg(&quot;plain&quot;));
+      
+      uint32_t id = doc[&quot;id&quot;];
+      JsonArray dataArray = doc[&quot;data&quot;];
+      
+      uint8_t data[8];
+      uint8_t length = min((int)dataArray.size(), 8);
+      
+      for (int i = 0; i &lt; length; i++) {
+        data[i] = dataArray[i];
+      }
+      
+      bool success = can-&gt;sendMessage(id, data, length);
+      
+      if (success) {
+        logMessage(id, data, length, true);
+        server.send(200, &quot;application/json&quot;, &quot;{\&quot;status\&quot;:\&quot;sent\&quot;}&quot;);
+      } else {
+        server.send(500, &quot;application/json&quot;, &quot;{\&quot;status\&quot;:\&quot;error\&quot;}&quot;);
+      }
+    } else {
+      server.send(400, &quot;application/json&quot;, &quot;{\&quot;status\&quot;:\&quot;invalid request\&quot;}&quot;);
+    }
+  }
+  
+  void handleGetMessages() {
+    DynamicJsonDocument doc(4096);
+    JsonArray messages = doc.createNestedArray(&quot;messages&quot;);
+    
+    for (int i = 0; i &lt; LOG_SIZE; i++) {
+      int index = (logIndex + i) % LOG_SIZE;
+      const LogEntry&amp; entry = messageLog[index];
+      
+      if (entry.timestamp &gt; 0) { // Valid entry
+        JsonObject msg = messages.createNestedObject();
+        msg[&quot;timestamp&quot;] = entry.timestamp;
+        msg[&quot;id&quot;] = entry.id;
+        msg[&quot;length&quot;] = entry.length;
+        msg[&quot;direction&quot;] = entry.transmitted ? &quot;TX&quot; : &quot;RX&quot;;
+        
+        JsonArray dataArray = msg.createNestedArray(&quot;data&quot;);
+        for (int j = 0; j &lt; entry.length; j++) {
+          dataArray.add(entry.data[j]);
+        }
+      }
+    }
+    
+    String response;
+    serializeJson(doc, response);
+    server.send(200, &quot;application/json&quot;, response);
+  }
+  
+  void handleGetStatus() {
+    DynamicJsonDocument doc(512);
+    
+    doc[&quot;uptime&quot;] = millis();
+    doc[&quot;free_heap&quot;] = ESP.getFreeHeap();
+    doc[&quot;wifi_rssi&quot;] = WiFi.RSSI();
+    
+    // Add CAN statistics if available
+    // This would require extending CANInterface to expose statistics
+    
+    String response;
+    serializeJson(doc, response);
+    server.send(200, &quot;application/json&quot;, response);
+  }
+  
+  void logCANMessages() {
+    uint32_t id;
+    uint8_t data[8], length;
+    bool extended, remote;
+    unsigned long timestamp;
+    
+    while (can-&gt;receiveMessage(id, data, length, extended, remote, timestamp)) {
+      if (!remote) {
+        logMessage(id, data, length, false);
+      }
+    }
+  }
+  
+  void logMessage(uint32_t id, const uint8_t* data, uint8_t length, bool transmitted) {
+    LogEntry&amp; entry = messageLog[logIndex];
+    entry.timestamp = millis();
+    entry.id = id;
+    entry.length = length;
+    entry.transmitted = transmitted;
+    memcpy(entry.data, data, length);
+    
+    logIndex = (logIndex + 1) % LOG_SIZE;
+  }
+  
+  void clearLog() {
+    for (int i = 0; i &lt; LOG_SIZE; i++) {
+      messageLog[i].timestamp = 0;
+    }
+    logIndex = 0;
+  }
+  
+  String generateWebInterface() {
+    return R&quot;(
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;CAN Bus Gateway&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .message { margin: 5px 0; padding: 5px; background: #f5f5f5; }
+        .tx { background: #e7f3ff; }
+        .rx { background: #f0fff0; }
+        input, button { margin: 5px; padding: 5px; }
+        #messages { height: 400px; overflow-y: scroll; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;CAN Bus Gateway&lt;/h1&gt;
+        
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;h3&gt;Send CAN Message&lt;/h3&gt;
+            &lt;input type=&quot;text&quot; id=&quot;canId&quot; placeholder=&quot;CAN ID (hex)&quot; value=&quot;0x123&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;canData&quot; placeholder=&quot;Data bytes (hex, space separated)&quot; value=&quot;01 02 03 04&quot;&gt;
+            &lt;button onclick=&quot;sendMessage()&quot;&gt;Send&lt;/button&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;h3&gt;CAN Messages&lt;/h3&gt;
+            &lt;button onclick=&quot;refreshMessages()&quot;&gt;Refresh&lt;/button&gt;
+            &lt;button onclick=&quot;clearMessages()&quot;&gt;Clear&lt;/button&gt;
+            &lt;div id=&quot;messages&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;section&quot;&gt;
+            &lt;h3&gt;System Status&lt;/h3&gt;
+            &lt;div id=&quot;status&quot;&gt;&lt;/div&gt;
+            &lt;button onclick=&quot;refreshStatus()&quot;&gt;Refresh Status&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        function sendMessage() {
+            const id = parseInt(document.getElementById('canId').value, 16);
+            const dataStr = document.getElementById('canData').value;
+            const data = dataStr.split(' ').map(b =&gt; parseInt(b, 16));
+            
+            fetch('/api/send', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({id: id, data: data})
+            })
+            .then(response =&gt; response.json())
+            .then(data =&gt; {
+                console.log('Message sent:', data);
+                refreshMessages();
+            });
+        }
+        
+        function refreshMessages() {
+            fetch('/api/messages')
+            .then(response =&gt; response.json())
+            .then(data =&gt; {
+                const container = document.getElementById('messages');
+                container.innerHTML = '';
+                
+                data.messages.forEach(msg =&gt; {
+                    const div = document.createElement('div');
+                    div.className = 'message ' + (msg.direction === 'TX' ? 'tx' : 'rx');
+                    
+                    const dataStr = msg.data.map(b =&gt; b.toString(16).padStart(2, '0')).join(' ');
+                    div.innerHTML = `[${msg.timestamp}] ${msg.direction} ID:0x${msg.id.toString(16)} DLC:${msg.length} Data:${dataStr}`;
+                    
+                    container.appendChild(div);
+                });
+                
+                container.scrollTop = container.scrollHeight;
+            });
+        }
+        
+        function clearMessages() {
+            fetch('/api/clear', {method: 'POST'})
+            .then(() =&gt; refreshMessages());
+        }
+        
+        function refreshStatus() {
+            fetch('/api/status')
+            .then(response =&gt; response.json())
+            .then(data =&gt; {
+                document.getElementById('status').innerHTML = 
+                    `Uptime: ${data.uptime}ms&lt;br&gt;
+                     Free Heap: ${data.free_heap} bytes&lt;br&gt;
+                     WiFi RSSI: ${data.wifi_rssi} dBm`;
+            });
+        }
+        
+        // Auto-refresh messages every 2 seconds
+        setInterval(refreshMessages, 2000);
+        
+        // Initial load
+        refreshMessages();
+        refreshStatus();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    )&quot;;
+  }
+};
+
+// Example usage
+CANInterface can(10);
+CANGateway gateway(&amp;can);
+
+void setup() {
+  Serial.begin(115200);
+  
+  if (!can.begin(CAN_500KBPS)) {
+    Serial.println(&quot;CAN initialization failed!&quot;);
+    while (1);
+  }
+  
+  gateway.begin(&quot;YourSSID&quot;, &quot;YourPassword&quot;);
+  
+  Serial.println(&quot;CAN Gateway ready&quot;);
+}
+
+void loop() {
+  gateway.loop();
+  can.processTxQueue();
+  delay(10);
+}
+</code></pre>
+<h2 id="can-bus-best-practices">CAN Bus Best Practices</h2>
+<h3 id="1-network-topology">1. Network Topology</h3>
+<ul>
+<li><strong>Bus topology</strong>: Single bus with termination resistors (120Ω) at both ends</li>
+<li><strong>Maximum bus length</strong>: 40m at 1Mbps, 1000m at 50kbps</li>
+<li><strong>Maximum nodes</strong>: 64 for CAN 2.0A, 110 for CAN 2.0B</li>
+<li><strong>Stub length</strong>: Keep as short as possible (&lt;0.3m)</li>
+</ul>
+<h3 id="2-message-design">2. Message Design</h3>
+<pre><code class="lang-cpp">// Good message design principles
+struct StandardMessage {
+  uint32_t id;        // Use meaningful IDs
+  uint8_t priority;   // Lower number = higher priority
+  uint8_t source;     // Source node ID
+  uint8_t target;     // Target node ID (0 = broadcast)
+  uint8_t function;   // Message function
+  uint8_t data[4];    // Actual payload
+} __attribute__((packed));
+
+// Message ID allocation strategy
+#define EMERGENCY_BASE    0x000  // 0x000-0x0FF (highest priority)
+#define CONTROL_BASE      0x100  // 0x100-0x1FF
+#define SENSOR_BASE       0x200  // 0x200-0x2FF
+#define STATUS_BASE       0x300  // 0x300-0x3FF
+#define HEARTBEAT_BASE    0x700  // 0x700-0x7FF (lowest priority)
+</code></pre>
+<h3 id="3-error-handling">3. Error Handling</h3>
+<pre><code class="lang-cpp">void robustCANOperation() {
+  // Implement proper error handling
+  
+  // 1. Check bus-off condition
+  if (can.isBusOff()) {
+    Serial.println(&quot;Bus-off detected, attempting recovery&quot;);
+    can.reset();
+    delay(100);
+    can.setNormalMode();
+  }
+  
+  // 2. Monitor error counters
+  uint8_t txErrors = can.getTxErrorCount();
+  uint8_t rxErrors = can.getRxErrorCount();
+  
+  if (txErrors &gt; 96 || rxErrors &gt; 96) {
+    Serial.println(&quot;High error count detected&quot;);
+    // Implement recovery strategy
+  }
+  
+  // 3. Implement message timeouts
+  const unsigned long MSG_TIMEOUT = 5000;
+  static unsigned long lastHeartbeat = 0;
+  
+  if (millis() - lastHeartbeat &gt; MSG_TIMEOUT) {
+    Serial.println(&quot;Communication timeout&quot;);
+    // Handle timeout condition
+  }
+}
+</code></pre>
+<h3 id="4-real-time-considerations">4. Real-time Considerations</h3>
+<pre><code class="lang-cpp">class RealTimeCANScheduler {
+private:
+  struct ScheduledMessage {
+    uint32_t id;
+    uint8_t data[8];
+    uint8_t length;
+    unsigned long period;
+    unsigned long lastSent;
+    int priority;
+  };
+  
+  ScheduledMessage schedule[16];
+  int messageCount = 0;
+  
+public:
+  void addPeriodicMessage(uint32_t id, const uint8_t* data, uint8_t length,
+                         unsigned long period, int priority = 0) {
+    if (messageCount &lt; 16) {
+      schedule[messageCount] = {id, {0}, length, period, 0, priority};
+      memcpy(schedule[messageCount].data, data, length);
+      messageCount++;
+    }
+  }
+  
+  void process() {
+    unsigned long now = millis();
+    
+    // Sort by priority when due
+    for (int i = 0; i &lt; messageCount; i++) {
+      if (now - schedule[i].lastSent &gt;= schedule[i].period) {
+        // Message is due, send it
+        can.sendMessage(schedule[i].id, schedule[i].data, 
+                       schedule[i].length, schedule[i].priority);
+        schedule[i].lastSent = now;
+      }
+    }
+  }
+};
+</code></pre>
+<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
+<h3 id="problem-no-communication">Problem: No Communication</h3>
+<p><strong>Check:</strong></p>
+<ul>
+<li>Termination resistors (120Ω at each end)</li>
+<li>Baud rate configuration</li>
+<li>CAN_H and CAN_L wiring</li>
+<li>Ground connections</li>
+<li>Node addresses/filters</li>
+</ul>
+<h3 id="problem-high-error-rates">Problem: High Error Rates</h3>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Check cable quality and length</li>
+<li>Verify termination resistors</li>
+<li>Reduce baud rate</li>
+<li>Check for electromagnetic interference</li>
+<li>Verify power supply stability</li>
+</ul>
+<h3 id="problem-bus-off-condition">Problem: Bus-Off Condition</h3>
+<p><strong>Causes:</strong></p>
+<ul>
+<li>Faulty node transmitting errors</li>
+<li>Incorrect baud rate</li>
+<li>Hardware malfunction</li>
+<li>Poor cable connections</li>
+</ul>
+<p><strong>Recovery:</strong></p>
+<ul>
+<li>Reset the CAN controller</li>
+<li>Check error counters</li>
+<li>Isolate problematic nodes</li>
+<li>Verify network integrity</li>
+</ul>
+<p>This comprehensive CAN Bus guide covers everything from basic implementation to advanced protocol stacks, error handling, and real-time communication strategies.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/can-bus-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

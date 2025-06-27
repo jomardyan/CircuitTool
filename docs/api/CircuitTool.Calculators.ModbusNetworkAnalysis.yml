@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis
+  commentId: T:CircuitTool.Calculators.ModbusNetworkAnalysis
+  id: ModbusNetworkAnalysis
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+  - CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+  - CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+  - CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate
+  - CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+  langs:
+  - csharp
+  - vb
+  name: ModbusNetworkAnalysis
+  nameWithType: ModbusNetworkAnalysis
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModbusNetworkAnalysis
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 298
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public class ModbusNetworkAnalysis
+    content.vb: Public Class ModbusNetworkAnalysis
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+  commentId: P:CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+  id: NetworkUtilization
+  parent: CircuitTool.Calculators.ModbusNetworkAnalysis
+  langs:
+  - csharp
+  - vb
+  name: NetworkUtilization
+  nameWithType: ModbusNetworkAnalysis.NetworkUtilization
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NetworkUtilization
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 300
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double NetworkUtilization { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property NetworkUtilization As Double
+  overload: CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization*
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+  commentId: P:CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+  id: EffectiveThroughput
+  parent: CircuitTool.Calculators.ModbusNetworkAnalysis
+  langs:
+  - csharp
+  - vb
+  name: EffectiveThroughput
+  nameWithType: ModbusNetworkAnalysis.EffectiveThroughput
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EffectiveThroughput
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 301
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double EffectiveThroughput { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property EffectiveThroughput As Double
+  overload: CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput*
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+  commentId: P:CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+  id: MaxResponseTime
+  parent: CircuitTool.Calculators.ModbusNetworkAnalysis
+  langs:
+  - csharp
+  - vb
+  name: MaxResponseTime
+  nameWithType: ModbusNetworkAnalysis.MaxResponseTime
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MaxResponseTime
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 302
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double MaxResponseTime { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property MaxResponseTime As Double
+  overload: CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime*
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+  commentId: P:CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+  id: TotalDevices
+  parent: CircuitTool.Calculators.ModbusNetworkAnalysis
+  langs:
+  - csharp
+  - vb
+  name: TotalDevices
+  nameWithType: ModbusNetworkAnalysis.TotalDevices
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TotalDevices
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 303
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public int TotalDevices { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalDevices As Integer
+  overload: CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices*
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate
+  commentId: P:CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate
+  id: RecommendedPollRate
+  parent: CircuitTool.Calculators.ModbusNetworkAnalysis
+  langs:
+  - csharp
+  - vb
+  name: RecommendedPollRate
+  nameWithType: ModbusNetworkAnalysis.RecommendedPollRate
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RecommendedPollRate
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 304
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double RecommendedPollRate { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RecommendedPollRate As Double
+  overload: CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate*
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization*
+  commentId: Overload:CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html#CircuitTool_Calculators_ModbusNetworkAnalysis_NetworkUtilization
+  name: NetworkUtilization
+  nameWithType: ModbusNetworkAnalysis.NetworkUtilization
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.NetworkUtilization
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput*
+  commentId: Overload:CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html#CircuitTool_Calculators_ModbusNetworkAnalysis_EffectiveThroughput
+  name: EffectiveThroughput
+  nameWithType: ModbusNetworkAnalysis.EffectiveThroughput
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.EffectiveThroughput
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime*
+  commentId: Overload:CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html#CircuitTool_Calculators_ModbusNetworkAnalysis_MaxResponseTime
+  name: MaxResponseTime
+  nameWithType: ModbusNetworkAnalysis.MaxResponseTime
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.MaxResponseTime
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices*
+  commentId: Overload:CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html#CircuitTool_Calculators_ModbusNetworkAnalysis_TotalDevices
+  name: TotalDevices
+  nameWithType: ModbusNetworkAnalysis.TotalDevices
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.TotalDevices
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate*
+  commentId: Overload:CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html#CircuitTool_Calculators_ModbusNetworkAnalysis_RecommendedPollRate
+  name: RecommendedPollRate
+  nameWithType: ModbusNetworkAnalysis.RecommendedPollRate
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis.RecommendedPollRate

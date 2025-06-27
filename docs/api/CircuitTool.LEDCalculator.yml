@@ -5,8 +5,13 @@ items:
   id: LEDCalculator
   parent: CircuitTool
   children:
+  - CircuitTool.LEDCalculator.AnalyzeLEDThermal(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.LEDCalculator.CalculateArrayResistor(System.Double,System.Int32,System.Double,System.Double)
   - CircuitTool.LEDCalculator.CalculateBrightness(System.Double)
+  - CircuitTool.LEDCalculator.CalculateLEDArray(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Double)
+  - CircuitTool.LEDCalculator.CalculateLEDCurrent(System.Double,System.Int32,System.Double,System.Double)
   - CircuitTool.LEDCalculator.CalculateLEDPower(System.Double,System.Double)
+  - CircuitTool.LEDCalculator.CalculateLEDStripResistors(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Int32,System.Double)
   - CircuitTool.LEDCalculator.CalculateResistorValue(System.Double,System.Double,System.Double)
   - CircuitTool.LEDCalculator.CalculateSeriesResistor(System.Double,System.Double,System.Int32,System.Double)
   langs:
@@ -23,7 +28,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: LEDCalculator
     path: src/Calculators/LEDCalculator.cs
-    startLine: 15
+    startLine: 16
   namespace: CircuitTool
   summary: Provides easy-to-use methods for LED circuit calculations, including resistor values, power, and brightness.
   remarks: >-
@@ -67,7 +72,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateResistorValue
     path: src/Calculators/LEDCalculator.cs
-    startLine: 27
+    startLine: 28
   namespace: CircuitTool
   summary: Calculates the required resistor value for an LED circuit using <code>R = (Vs - Vf) / I</code>.
   example:
@@ -110,7 +115,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateLEDPower
     path: src/Calculators/LEDCalculator.cs
-    startLine: 45
+    startLine: 46
   namespace: CircuitTool
   summary: Calculates the power consumption of an LED circuit using <code>P = V × I</code>.
   example:
@@ -150,7 +155,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBrightness
     path: src/Calculators/LEDCalculator.cs
-    startLine: 55
+    startLine: 56
   namespace: CircuitTool
   summary: Calculates the brightness ratio when dimming an LED with PWM.
   example:
@@ -187,7 +192,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateSeriesResistor
     path: src/Calculators/LEDCalculator.cs
-    startLine: 70
+    startLine: 71
   namespace: CircuitTool
   summary: Calculates resistor value for multiple LEDs in series
   example: []
@@ -214,6 +219,210 @@ items:
   nameWithType.vb: LEDCalculator.CalculateSeriesResistor(Double, Double, Integer, Double)
   fullName.vb: CircuitTool.LEDCalculator.CalculateSeriesResistor(Double, Double, Integer, Double)
   name.vb: CalculateSeriesResistor(Double, Double, Integer, Double)
+- uid: CircuitTool.LEDCalculator.CalculateLEDArray(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Double)
+  commentId: M:CircuitTool.LEDCalculator.CalculateLEDArray(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Double)
+  id: CalculateLEDArray(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Double)
+  parent: CircuitTool.LEDCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateLEDArray(double, int, LEDSpec, double)
+  nameWithType: LEDCalculator.CalculateLEDArray(double, int, LEDCalculator.LEDSpec, double)
+  fullName: CircuitTool.LEDCalculator.CalculateLEDArray(double, int, CircuitTool.LEDCalculator.LEDSpec, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateLEDArray
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 108
+  namespace: CircuitTool
+  summary: Calculate optimal LED array configuration
+  example: []
+  syntax:
+    content: public static LEDCalculator.LEDArrayResult CalculateLEDArray(double supplyVoltage, int totalLEDs, LEDCalculator.LEDSpec ledSpec, double targetCurrent = 0)
+    parameters:
+    - id: supplyVoltage
+      type: System.Double
+    - id: totalLEDs
+      type: System.Int32
+    - id: ledSpec
+      type: CircuitTool.LEDCalculator.LEDSpec
+    - id: targetCurrent
+      type: System.Double
+    return:
+      type: CircuitTool.LEDCalculator.LEDArrayResult
+    content.vb: Public Shared Function CalculateLEDArray(supplyVoltage As Double, totalLEDs As Integer, ledSpec As LEDCalculator.LEDSpec, targetCurrent As Double = 0) As LEDCalculator.LEDArrayResult
+  overload: CircuitTool.LEDCalculator.CalculateLEDArray*
+  nameWithType.vb: LEDCalculator.CalculateLEDArray(Double, Integer, LEDCalculator.LEDSpec, Double)
+  fullName.vb: CircuitTool.LEDCalculator.CalculateLEDArray(Double, Integer, CircuitTool.LEDCalculator.LEDSpec, Double)
+  name.vb: CalculateLEDArray(Double, Integer, LEDSpec, Double)
+- uid: CircuitTool.LEDCalculator.CalculateArrayResistor(System.Double,System.Int32,System.Double,System.Double)
+  commentId: M:CircuitTool.LEDCalculator.CalculateArrayResistor(System.Double,System.Int32,System.Double,System.Double)
+  id: CalculateArrayResistor(System.Double,System.Int32,System.Double,System.Double)
+  parent: CircuitTool.LEDCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateArrayResistor(double, int, double, double)
+  nameWithType: LEDCalculator.CalculateArrayResistor(double, int, double, double)
+  fullName: CircuitTool.LEDCalculator.CalculateArrayResistor(double, int, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateArrayResistor
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 187
+  namespace: CircuitTool
+  summary: Calculate resistor for specific LED configuration
+  example: []
+  syntax:
+    content: public static double CalculateArrayResistor(double supplyVoltage, int seriesLEDs, double ledForwardVoltage, double targetCurrent)
+    parameters:
+    - id: supplyVoltage
+      type: System.Double
+    - id: seriesLEDs
+      type: System.Int32
+    - id: ledForwardVoltage
+      type: System.Double
+    - id: targetCurrent
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function CalculateArrayResistor(supplyVoltage As Double, seriesLEDs As Integer, ledForwardVoltage As Double, targetCurrent As Double) As Double
+  overload: CircuitTool.LEDCalculator.CalculateArrayResistor*
+  nameWithType.vb: LEDCalculator.CalculateArrayResistor(Double, Integer, Double, Double)
+  fullName.vb: CircuitTool.LEDCalculator.CalculateArrayResistor(Double, Integer, Double, Double)
+  name.vb: CalculateArrayResistor(Double, Integer, Double, Double)
+- uid: CircuitTool.LEDCalculator.CalculateLEDCurrent(System.Double,System.Int32,System.Double,System.Double)
+  commentId: M:CircuitTool.LEDCalculator.CalculateLEDCurrent(System.Double,System.Int32,System.Double,System.Double)
+  id: CalculateLEDCurrent(System.Double,System.Int32,System.Double,System.Double)
+  parent: CircuitTool.LEDCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateLEDCurrent(double, int, double, double)
+  nameWithType: LEDCalculator.CalculateLEDCurrent(double, int, double, double)
+  fullName: CircuitTool.LEDCalculator.CalculateLEDCurrent(double, int, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateLEDCurrent
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 200
+  namespace: CircuitTool
+  summary: Calculate LED current with known resistor
+  example: []
+  syntax:
+    content: public static double CalculateLEDCurrent(double supplyVoltage, int seriesLEDs, double ledForwardVoltage, double resistorValue)
+    parameters:
+    - id: supplyVoltage
+      type: System.Double
+    - id: seriesLEDs
+      type: System.Int32
+    - id: ledForwardVoltage
+      type: System.Double
+    - id: resistorValue
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function CalculateLEDCurrent(supplyVoltage As Double, seriesLEDs As Integer, ledForwardVoltage As Double, resistorValue As Double) As Double
+  overload: CircuitTool.LEDCalculator.CalculateLEDCurrent*
+  nameWithType.vb: LEDCalculator.CalculateLEDCurrent(Double, Integer, Double, Double)
+  fullName.vb: CircuitTool.LEDCalculator.CalculateLEDCurrent(Double, Integer, Double, Double)
+  name.vb: CalculateLEDCurrent(Double, Integer, Double, Double)
+- uid: CircuitTool.LEDCalculator.AnalyzeLEDThermal(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.LEDCalculator.AnalyzeLEDThermal(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: AnalyzeLEDThermal(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.LEDCalculator
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeLEDThermal(double, double, double, double, double)
+  nameWithType: LEDCalculator.AnalyzeLEDThermal(double, double, double, double, double)
+  fullName: CircuitTool.LEDCalculator.AnalyzeLEDThermal(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeLEDThermal
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 227
+  namespace: CircuitTool
+  summary: Analyze LED thermal characteristics
+  example: []
+  syntax:
+    content: public static LEDCalculator.LEDThermalResult AnalyzeLEDThermal(double forwardVoltage, double forwardCurrent, double thermalResistance = 300, double ambientTemp = 25, double maxJunctionTemp = 85)
+    parameters:
+    - id: forwardVoltage
+      type: System.Double
+    - id: forwardCurrent
+      type: System.Double
+    - id: thermalResistance
+      type: System.Double
+    - id: ambientTemp
+      type: System.Double
+    - id: maxJunctionTemp
+      type: System.Double
+    return:
+      type: CircuitTool.LEDCalculator.LEDThermalResult
+    content.vb: Public Shared Function AnalyzeLEDThermal(forwardVoltage As Double, forwardCurrent As Double, thermalResistance As Double = 300, ambientTemp As Double = 25, maxJunctionTemp As Double = 85) As LEDCalculator.LEDThermalResult
+  overload: CircuitTool.LEDCalculator.AnalyzeLEDThermal*
+  nameWithType.vb: LEDCalculator.AnalyzeLEDThermal(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.LEDCalculator.AnalyzeLEDThermal(Double, Double, Double, Double, Double)
+  name.vb: AnalyzeLEDThermal(Double, Double, Double, Double, Double)
+- uid: CircuitTool.LEDCalculator.CalculateLEDStripResistors(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Int32,System.Double)
+  commentId: M:CircuitTool.LEDCalculator.CalculateLEDStripResistors(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Int32,System.Double)
+  id: CalculateLEDStripResistors(System.Double,System.Int32,CircuitTool.LEDCalculator.LEDSpec,System.Int32,System.Double)
+  parent: CircuitTool.LEDCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateLEDStripResistors(double, int, LEDSpec, int, double)
+  nameWithType: LEDCalculator.CalculateLEDStripResistors(double, int, LEDCalculator.LEDSpec, int, double)
+  fullName: CircuitTool.LEDCalculator.CalculateLEDStripResistors(double, int, CircuitTool.LEDCalculator.LEDSpec, int, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/LEDCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateLEDStripResistors
+    path: src/Calculators/LEDCalculator.cs
+    startLine: 307
+  namespace: CircuitTool
+  summary: Calculate resistors for LED strip segments
+  example: []
+  syntax:
+    content: public static LEDCalculator.LEDStripResult CalculateLEDStripResistors(double supplyVoltage, int ledsPerSegment, LEDCalculator.LEDSpec ledSpec, int totalSegments, double targetCurrent = 0)
+    parameters:
+    - id: supplyVoltage
+      type: System.Double
+    - id: ledsPerSegment
+      type: System.Int32
+    - id: ledSpec
+      type: CircuitTool.LEDCalculator.LEDSpec
+    - id: totalSegments
+      type: System.Int32
+    - id: targetCurrent
+      type: System.Double
+    return:
+      type: CircuitTool.LEDCalculator.LEDStripResult
+    content.vb: Public Shared Function CalculateLEDStripResistors(supplyVoltage As Double, ledsPerSegment As Integer, ledSpec As LEDCalculator.LEDSpec, totalSegments As Integer, targetCurrent As Double = 0) As LEDCalculator.LEDStripResult
+  overload: CircuitTool.LEDCalculator.CalculateLEDStripResistors*
+  nameWithType.vb: LEDCalculator.CalculateLEDStripResistors(Double, Integer, LEDCalculator.LEDSpec, Integer, Double)
+  fullName.vb: CircuitTool.LEDCalculator.CalculateLEDStripResistors(Double, Integer, CircuitTool.LEDCalculator.LEDSpec, Integer, Double)
+  name.vb: CalculateLEDStripResistors(Double, Integer, LEDSpec, Integer, Double)
 references:
 - uid: CircuitTool
   commentId: N:CircuitTool
@@ -504,3 +713,125 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: CircuitTool.LEDCalculator.CalculateLEDArray*
+  commentId: Overload:CircuitTool.LEDCalculator.CalculateLEDArray
+  href: CircuitTool.LEDCalculator.html#CircuitTool_LEDCalculator_CalculateLEDArray_System_Double_System_Int32_CircuitTool_LEDCalculator_LEDSpec_System_Double_
+  name: CalculateLEDArray
+  nameWithType: LEDCalculator.CalculateLEDArray
+  fullName: CircuitTool.LEDCalculator.CalculateLEDArray
+- uid: CircuitTool.LEDCalculator.LEDSpec
+  commentId: T:CircuitTool.LEDCalculator.LEDSpec
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDSpec
+  nameWithType: LEDCalculator.LEDSpec
+  fullName: CircuitTool.LEDCalculator.LEDSpec
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDSpec
+    name: LEDSpec
+    href: CircuitTool.LEDCalculator.LEDSpec.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDSpec
+    name: LEDSpec
+    href: CircuitTool.LEDCalculator.LEDSpec.html
+- uid: CircuitTool.LEDCalculator.LEDArrayResult
+  commentId: T:CircuitTool.LEDCalculator.LEDArrayResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDArrayResult
+  nameWithType: LEDCalculator.LEDArrayResult
+  fullName: CircuitTool.LEDCalculator.LEDArrayResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDArrayResult
+    name: LEDArrayResult
+    href: CircuitTool.LEDCalculator.LEDArrayResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDArrayResult
+    name: LEDArrayResult
+    href: CircuitTool.LEDCalculator.LEDArrayResult.html
+- uid: CircuitTool.LEDCalculator.CalculateArrayResistor*
+  commentId: Overload:CircuitTool.LEDCalculator.CalculateArrayResistor
+  href: CircuitTool.LEDCalculator.html#CircuitTool_LEDCalculator_CalculateArrayResistor_System_Double_System_Int32_System_Double_System_Double_
+  name: CalculateArrayResistor
+  nameWithType: LEDCalculator.CalculateArrayResistor
+  fullName: CircuitTool.LEDCalculator.CalculateArrayResistor
+- uid: CircuitTool.LEDCalculator.CalculateLEDCurrent*
+  commentId: Overload:CircuitTool.LEDCalculator.CalculateLEDCurrent
+  href: CircuitTool.LEDCalculator.html#CircuitTool_LEDCalculator_CalculateLEDCurrent_System_Double_System_Int32_System_Double_System_Double_
+  name: CalculateLEDCurrent
+  nameWithType: LEDCalculator.CalculateLEDCurrent
+  fullName: CircuitTool.LEDCalculator.CalculateLEDCurrent
+- uid: CircuitTool.LEDCalculator.AnalyzeLEDThermal*
+  commentId: Overload:CircuitTool.LEDCalculator.AnalyzeLEDThermal
+  href: CircuitTool.LEDCalculator.html#CircuitTool_LEDCalculator_AnalyzeLEDThermal_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: AnalyzeLEDThermal
+  nameWithType: LEDCalculator.AnalyzeLEDThermal
+  fullName: CircuitTool.LEDCalculator.AnalyzeLEDThermal
+- uid: CircuitTool.LEDCalculator.LEDThermalResult
+  commentId: T:CircuitTool.LEDCalculator.LEDThermalResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDThermalResult
+  nameWithType: LEDCalculator.LEDThermalResult
+  fullName: CircuitTool.LEDCalculator.LEDThermalResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDThermalResult
+    name: LEDThermalResult
+    href: CircuitTool.LEDCalculator.LEDThermalResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDThermalResult
+    name: LEDThermalResult
+    href: CircuitTool.LEDCalculator.LEDThermalResult.html
+- uid: CircuitTool.LEDCalculator.CalculateLEDStripResistors*
+  commentId: Overload:CircuitTool.LEDCalculator.CalculateLEDStripResistors
+  href: CircuitTool.LEDCalculator.html#CircuitTool_LEDCalculator_CalculateLEDStripResistors_System_Double_System_Int32_CircuitTool_LEDCalculator_LEDSpec_System_Int32_System_Double_
+  name: CalculateLEDStripResistors
+  nameWithType: LEDCalculator.CalculateLEDStripResistors
+  fullName: CircuitTool.LEDCalculator.CalculateLEDStripResistors
+- uid: CircuitTool.LEDCalculator.LEDStripResult
+  commentId: T:CircuitTool.LEDCalculator.LEDStripResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDStripResult
+  nameWithType: LEDCalculator.LEDStripResult
+  fullName: CircuitTool.LEDCalculator.LEDStripResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDStripResult
+    name: LEDStripResult
+    href: CircuitTool.LEDCalculator.LEDStripResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDStripResult
+    name: LEDStripResult
+    href: CircuitTool.LEDCalculator.LEDStripResult.html

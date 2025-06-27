@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>&#128161; CircuitTool Examples &amp; Use Cases | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="&#128161; CircuitTool Examples &amp; Use Cases | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/examples/index-new.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="-circuittool-examples--use-cases">💡 CircuitTool Examples &amp; Use Cases</h1>
+
+<blockquote>
+<p><strong>Real-world examples demonstrating CircuitTool's practical applications</strong></p>
+</blockquote>
+<p>This section provides comprehensive examples showing how to use CircuitTool in real engineering scenarios. Each example includes complete code, explanations, and practical applications.</p>
+<h2 id="-featured-examples">🎯 Featured Examples</h2>
+<h3 id="-power-electronics">🔋 Power Electronics</h3>
+<h4 id="linear-power-supply-design"><a href="power-supplies/linear-regulator.md">Linear Power Supply Design</a></h4>
+<p>Design a complete linear voltage regulator with thermal analysis and efficiency calculations.</p>
+<pre><code class="lang-csharp">// Design 5V regulator from 12V input
+var regulator = PowerCalculator.DesignLinearRegulator(
+    inputVoltage: 12.0,
+    outputVoltage: 5.0,
+    loadCurrent: 1.0,
+    maxJunctionTemp: 125.0
+);
+</code></pre>
+<h4 id="battery-life-estimation"><a href="power-systems/battery-calculator.md">Battery Life Estimation</a></h4>
+<p>Calculate battery life for embedded systems with varying power modes.</p>
+<pre><code class="lang-csharp">// ESP32 battery life analysis
+var batteryLife = ESP32Tools.CalculateBatteryLife(
+    batteryCapacity: 2500,
+    activeCurrentMA: 160,
+    sleepCurrentUA: 10,
+    dutyCycle: 0.02
+);
+</code></pre>
+<h3 id="-led--display-circuits">💡 LED &amp; Display Circuits</h3>
+<h4 id="led-matrix-driver-design"><a href="led-circuits/matrix-driver.md">LED Matrix Driver Design</a></h4>
+<p>Complete LED matrix driver circuit with current limiting and multiplexing.</p>
+<pre><code class="lang-csharp">// Calculate current limiting resistors for RGB LED
+var redResistor = LEDCalculator.CalculateResistorValue(5.0, 2.0, 0.02);
+var greenResistor = LEDCalculator.CalculateResistorValue(5.0, 3.2, 0.02);
+var blueResistor = LEDCalculator.CalculateResistorValue(5.0, 3.4, 0.02);
+</code></pre>
+<h4 id="7-segment-display-controller"><a href="led-circuits/seven-segment.md">7-Segment Display Controller</a></h4>
+<p>Design multiplexed 7-segment display with optimal brightness and power consumption.</p>
+<h3 id="-filter--signal-processing">📡 Filter &amp; Signal Processing</h3>
+<h4 id="audio-crossover-network"><a href="filters/audio-crossover.md">Audio Crossover Network</a></h4>
+<p>Design 2-way and 3-way speaker crossover networks with proper frequency separation.</p>
+<pre><code class="lang-csharp">// Design 2-way crossover at 2.5kHz
+var crossover = FilterCalculator.DesignCrossover(
+    crossoverFrequency: 2500,
+    wooferImpedance: 8.0,
+    tweeterImpedance: 8.0
+);
+</code></pre>
+<h4 id="anti-aliasing-filter"><a href="filters/anti-aliasing.md">Anti-Aliasing Filter</a></h4>
+<p>Calculate anti-aliasing filter for ADC applications with specific attenuation requirements.</p>
+<h3 id="-microcontroller-integration">🤖 Microcontroller Integration</h3>
+<h4 id="arduino-sensor-interface"><a href="arduino/sensor-interface.md">Arduino Sensor Interface</a></h4>
+<p>Complete sensor interface design with signal conditioning and ADC calculations.</p>
+<pre><code class="lang-csharp">// Temperature sensor with voltage divider
+var sensorInterface = ArduinoTools.DesignSensorInterface(
+    sensorType: &quot;NTC&quot;,
+    referenceVoltage: 5.0,
+    targetResolution: 0.1 // 0.1°C resolution
+);
+</code></pre>
+<h4 id="esp32-iot-power-optimization"><a href="esp32/iot-optimization.md">ESP32 IoT Power Optimization</a></h4>
+<p>Optimize ESP32 power consumption for battery-powered IoT applications.</p>
+<h2 id="-by-application-domain">📊 By Application Domain</h2>
+<h3 id="-industrial--automation">🏭 Industrial &amp; Automation</h3>
+<ul>
+<li><a href="industrial/motor-control.md">Motor Control Circuit Design</a></li>
+<li><a href="industrial/plc-interface.md">PLC Interface Design</a></li>
+<li><a href="industrial/current-loop.md">Current Loop Calculations</a></li>
+<li><a href="industrial/isolation.md">Isolation Circuit Design</a></li>
+</ul>
+<h3 id="-automotive-electronics">🚗 Automotive Electronics</h3>
+<ul>
+<li><a href="automotive/can-bus.md">CAN Bus Termination</a></li>
+<li><a href="automotive/led-lighting.md">Automotive LED Lighting</a></li>
+<li><a href="automotive/buck-converter.md">12V to 5V Buck Converter</a></li>
+<li><a href="automotive/emc-filters.md">EMC Filter Design</a></li>
+</ul>
+<h3 id="-consumer-electronics">📱 Consumer Electronics</h3>
+<ul>
+<li><a href="consumer/usb-pd.md">USB Power Delivery</a></li>
+<li><a href="consumer/wireless-charging.md">Wireless Charging Coil</a></li>
+<li><a href="consumer/audio-amplifier.md">Audio Amplifier Design</a></li>
+<li><a href="consumer/touchscreen.md">Touchscreen Interface</a></li>
+</ul>
+<h3 id="-educational-projects">🎓 Educational Projects</h3>
+<ul>
+<li><a href="educational/electronics-lab.md">Basic Electronics Lab</a></li>
+<li><a href="educational/arduino-kit.md">Arduino Learning Kit</a></li>
+<li><a href="educational/simulation.md">Circuit Simulation Setup</a></li>
+<li><a href="educational/component-testing.md">Component Testing Guide</a></li>
+</ul>
+<h2 id="-by-calculation-type">🔧 By Calculation Type</h2>
+<h3 id="-basic-electrical">⚡ Basic Electrical</h3>
+<ul>
+<li><a href="basic/ohms-law-examples.md">Ohm's Law Applications</a></li>
+<li><a href="basic/power-examples.md">Power Calculations</a></li>
+<li><a href="basic/voltage-dividers.md">Voltage Divider Networks</a></li>
+<li><a href="basic/resistor-networks.md">Resistor Networks</a></li>
+</ul>
+<h3 id="-ac-analysis">📡 AC Analysis</h3>
+<ul>
+<li><a href="ac/rlc-circuits.md">RLC Circuit Analysis</a></li>
+<li><a href="ac/impedance-matching.md">Impedance Matching</a></li>
+<li><a href="ac/resonant-circuits.md">Resonant Circuit Design</a></li>
+<li><a href="ac/phase-shift.md">Phase Shift Networks</a></li>
+</ul>
+<h3 id="-advanced-analysis">🔍 Advanced Analysis</h3>
+<ul>
+<li><a href="advanced/signal-integrity.md">Signal Integrity Analysis</a></li>
+<li><a href="advanced/emc-testing.md">EMC Compliance Testing</a></li>
+<li><a href="advanced/thermal-management.md">Thermal Management</a></li>
+<li><a href="advanced/tolerance-analysis.md">Tolerance Analysis</a></li>
+</ul>
+<h3 id="-performance--optimization">🎯 Performance &amp; Optimization</h3>
+<ul>
+<li><a href="performance/batch-processing.md">Batch Processing Examples</a></li>
+<li><a href="performance/vectorization.md">Vectorized Calculations</a></li>
+<li><a href="performance/custom-calculators.md">Custom Calculator Development</a></li>
+<li><a href="performance/caching.md">Caching Strategies</a></li>
+</ul>
+<h2 id="-quick-reference">📋 Quick Reference</h2>
+<h3 id="-getting-started-examples">🚀 Getting Started Examples</h3>
+<pre><code class="lang-csharp">// Quick LED resistor calculation
+double resistor = LEDCalculator.CalculateResistorValue(5.0, 2.1, 0.02);
+
+// Power dissipation in resistor
+double power = PowerCalculator.Power(voltage: 12, resistance: 100);
+
+// RC filter cutoff frequency
+double cutoff = FilterCalculator.RCLowPassCutoffFrequency(1000, 1e-6);
+</code></pre>
+<h3 id="-common-design-patterns">🔧 Common Design Patterns</h3>
+<pre><code class="lang-csharp">// Component design workflow
+var requirements = new ComponentRequirements { /* ... */ };
+var design = ComponentDesigner.Optimize(requirements);
+var analysis = PerformanceAnalyzer.Analyze(design);
+var validation = ComplianceChecker.Validate(analysis);
+</code></pre>
+<h2 id="-interactive-examples">🎯 Interactive Examples</h2>
+<p>Many examples include interactive CLI demonstrations:</p>
+<pre><code class="lang-bash"># Try LED calculator interactively
+CircuitTool.CLI component led --supply 5 --forward 2.1 --current 0.02
+
+# Power supply design wizard
+CircuitTool.CLI design power-supply --interactive
+
+# Filter design with frequency sweep
+CircuitTool.CLI analysis filter --sweep 10:10000 --type lowpass
+</code></pre>
+<hr>
+<p><strong>Ready to explore?</strong> Start with the <a href="power-supplies/linear-regulator.md">Power Supply Design</a> example or browse by your specific application domain above!</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/examples/index-new.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  commentId: T:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  id: CapacitorCodeCalculator.CapacitorCodeType
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Alphanumeric
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ColorCode
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Letter
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Numeric
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ThreeDigit
+  - CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.TwoDigit
+  langs:
+  - csharp
+  - vb
+  name: CapacitorCodeCalculator.CapacitorCodeType
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitorCodeType
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 14
+  namespace: CircuitTool.Calculators
+  summary: Capacitor code types
+  example: []
+  syntax:
+    content: public enum CapacitorCodeCalculator.CapacitorCodeType
+    content.vb: Public Enum CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Numeric
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Numeric
+  id: Numeric
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: Numeric
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.Numeric
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Numeric
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Numeric
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 16
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Numeric = 0
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ThreeDigit
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ThreeDigit
+  id: ThreeDigit
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: ThreeDigit
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.ThreeDigit
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ThreeDigit
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThreeDigit
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 17
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: ThreeDigit = 1
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.TwoDigit
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.TwoDigit
+  id: TwoDigit
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: TwoDigit
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.TwoDigit
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.TwoDigit
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TwoDigit
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 18
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: TwoDigit = 2
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Letter
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Letter
+  id: Letter
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: Letter
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.Letter
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Letter
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Letter
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 19
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Letter = 3
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ColorCode
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ColorCode
+  id: ColorCode
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: ColorCode
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.ColorCode
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.ColorCode
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ColorCode
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 20
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: ColorCode = 4
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Alphanumeric
+  commentId: F:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Alphanumeric
+  id: Alphanumeric
+  parent: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  langs:
+  - csharp
+  - vb
+  name: Alphanumeric
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType.Alphanumeric
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.Alphanumeric
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/CapacitorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Alphanumeric
+    path: src/Calculators/CapacitorCodeCalculator.cs
+    startLine: 21
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Alphanumeric = 5
+    return:
+      type: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  commentId: T:CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  name: CapacitorCodeCalculator.CapacitorCodeType
+  nameWithType: CapacitorCodeCalculator.CapacitorCodeType
+  fullName: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator
+    name: CapacitorCodeCalculator
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+    name: CapacitorCodeType
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator
+    name: CapacitorCodeCalculator
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+    name: CapacitorCodeType
+    href: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.html

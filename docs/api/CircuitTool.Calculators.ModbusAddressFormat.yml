@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ModbusAddressFormat
+  commentId: T:CircuitTool.Calculators.ModbusAddressFormat
+  id: ModbusAddressFormat
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ModbusAddressFormat.Protocol
+  - CircuitTool.Calculators.ModbusAddressFormat.Schneider
+  - CircuitTool.Calculators.ModbusAddressFormat.Wire
+  langs:
+  - csharp
+  - vb
+  name: ModbusAddressFormat
+  nameWithType: ModbusAddressFormat
+  fullName: CircuitTool.Calculators.ModbusAddressFormat
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModbusAddressFormat
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 270
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public enum ModbusAddressFormat
+    content.vb: Public Enum ModbusAddressFormat
+- uid: CircuitTool.Calculators.ModbusAddressFormat.Wire
+  commentId: F:CircuitTool.Calculators.ModbusAddressFormat.Wire
+  id: Wire
+  parent: CircuitTool.Calculators.ModbusAddressFormat
+  langs:
+  - csharp
+  - vb
+  name: Wire
+  nameWithType: ModbusAddressFormat.Wire
+  fullName: CircuitTool.Calculators.ModbusAddressFormat.Wire
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Wire
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 272
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Wire = 0
+    return:
+      type: CircuitTool.Calculators.ModbusAddressFormat
+- uid: CircuitTool.Calculators.ModbusAddressFormat.Protocol
+  commentId: F:CircuitTool.Calculators.ModbusAddressFormat.Protocol
+  id: Protocol
+  parent: CircuitTool.Calculators.ModbusAddressFormat
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: ModbusAddressFormat.Protocol
+  fullName: CircuitTool.Calculators.ModbusAddressFormat.Protocol
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Protocol
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 273
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Protocol = 1
+    return:
+      type: CircuitTool.Calculators.ModbusAddressFormat
+- uid: CircuitTool.Calculators.ModbusAddressFormat.Schneider
+  commentId: F:CircuitTool.Calculators.ModbusAddressFormat.Schneider
+  id: Schneider
+  parent: CircuitTool.Calculators.ModbusAddressFormat
+  langs:
+  - csharp
+  - vb
+  name: Schneider
+  nameWithType: ModbusAddressFormat.Schneider
+  fullName: CircuitTool.Calculators.ModbusAddressFormat.Schneider
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ModbusCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Schneider
+    path: src/Calculators/ModbusCommunicationCalculator.cs
+    startLine: 274
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Schneider = 2
+    return:
+      type: CircuitTool.Calculators.ModbusAddressFormat
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.ModbusAddressFormat
+  commentId: T:CircuitTool.Calculators.ModbusAddressFormat
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ModbusAddressFormat.html
+  name: ModbusAddressFormat
+  nameWithType: ModbusAddressFormat
+  fullName: CircuitTool.Calculators.ModbusAddressFormat

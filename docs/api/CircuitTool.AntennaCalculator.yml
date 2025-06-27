@@ -9,8 +9,8 @@ items:
   - CircuitTool.AntennaCalculator.CalculateVSWR(System.Double)
   - CircuitTool.AntennaCalculator.DipoleImpedance(System.Double,System.Double)
   - CircuitTool.AntennaCalculator.EffectiveRadiatedPower(System.Double,System.Double,System.Double)
-  - CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Double)
-  - CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Double)
+  - CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Nullable{System.Double})
+  - CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Nullable{System.Double})
   langs:
   - csharp
   - vb
@@ -42,16 +42,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Double)
-  commentId: M:CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Double)
-  id: QuarterWaveLength(System.Double,System.Double)
+- uid: CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Nullable{System.Double})
+  commentId: M:CircuitTool.AntennaCalculator.QuarterWaveLength(System.Double,System.Nullable{System.Double})
+  id: QuarterWaveLength(System.Double,System.Nullable{System.Double})
   parent: CircuitTool.AntennaCalculator
   langs:
   - csharp
   - vb
-  name: QuarterWaveLength(double, double)
-  nameWithType: AntennaCalculator.QuarterWaveLength(double, double)
-  fullName: CircuitTool.AntennaCalculator.QuarterWaveLength(double, double)
+  name: QuarterWaveLength(double, double?)
+  nameWithType: AntennaCalculator.QuarterWaveLength(double, double?)
+  fullName: CircuitTool.AntennaCalculator.QuarterWaveLength(double, double?)
   type: Method
   source:
     remote:
@@ -65,32 +65,32 @@ items:
   summary: Calculates the physical length of a quarter-wave antenna
   example: []
   syntax:
-    content: public static double QuarterWaveLength(double frequency, double velocityFactor = 0.95)
+    content: public static double QuarterWaveLength(double frequency, double? velocityFactor = null)
     parameters:
     - id: frequency
       type: System.Double
       description: Frequency in Hz
     - id: velocityFactor
-      type: System.Double
-      description: Velocity factor (default 0.95 for typical wire)
+      type: System.Nullable{System.Double}
+      description: 'Velocity factor (default varies by frequency: 1.0 for &gt;1GHz, 0.95 for lower frequencies)'
     return:
       type: System.Double
       description: Physical length in meters
-    content.vb: Public Shared Function QuarterWaveLength(frequency As Double, velocityFactor As Double = 0.95) As Double
+    content.vb: Public Shared Function QuarterWaveLength(frequency As Double, velocityFactor As Double? = Nothing) As Double
   overload: CircuitTool.AntennaCalculator.QuarterWaveLength*
-  nameWithType.vb: AntennaCalculator.QuarterWaveLength(Double, Double)
-  fullName.vb: CircuitTool.AntennaCalculator.QuarterWaveLength(Double, Double)
-  name.vb: QuarterWaveLength(Double, Double)
-- uid: CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Double)
-  commentId: M:CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Double)
-  id: HalfWaveLength(System.Double,System.Double)
+  nameWithType.vb: AntennaCalculator.QuarterWaveLength(Double, Double?)
+  fullName.vb: CircuitTool.AntennaCalculator.QuarterWaveLength(Double, Double?)
+  name.vb: QuarterWaveLength(Double, Double?)
+- uid: CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Nullable{System.Double})
+  commentId: M:CircuitTool.AntennaCalculator.HalfWaveLength(System.Double,System.Nullable{System.Double})
+  id: HalfWaveLength(System.Double,System.Nullable{System.Double})
   parent: CircuitTool.AntennaCalculator
   langs:
   - csharp
   - vb
-  name: HalfWaveLength(double, double)
-  nameWithType: AntennaCalculator.HalfWaveLength(double, double)
-  fullName: CircuitTool.AntennaCalculator.HalfWaveLength(double, double)
+  name: HalfWaveLength(double, double?)
+  nameWithType: AntennaCalculator.HalfWaveLength(double, double?)
+  fullName: CircuitTool.AntennaCalculator.HalfWaveLength(double, double?)
   type: Method
   source:
     remote:
@@ -99,27 +99,27 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: HalfWaveLength
     path: src/Calculators/AntennaCalculator.cs
-    startLine: 32
+    startLine: 38
   namespace: CircuitTool
   summary: Calculates the physical length of a half-wave antenna
   example: []
   syntax:
-    content: public static double HalfWaveLength(double frequency, double velocityFactor = 0.95)
+    content: public static double HalfWaveLength(double frequency, double? velocityFactor = null)
     parameters:
     - id: frequency
       type: System.Double
       description: Frequency in Hz
     - id: velocityFactor
-      type: System.Double
-      description: Velocity factor (default 0.95 for typical wire)
+      type: System.Nullable{System.Double}
+      description: 'Velocity factor (default varies by frequency: 1.0 for &gt;1GHz, 0.95 for lower frequencies)'
     return:
       type: System.Double
       description: Physical length in meters
-    content.vb: Public Shared Function HalfWaveLength(frequency As Double, velocityFactor As Double = 0.95) As Double
+    content.vb: Public Shared Function HalfWaveLength(frequency As Double, velocityFactor As Double? = Nothing) As Double
   overload: CircuitTool.AntennaCalculator.HalfWaveLength*
-  nameWithType.vb: AntennaCalculator.HalfWaveLength(Double, Double)
-  fullName.vb: CircuitTool.AntennaCalculator.HalfWaveLength(Double, Double)
-  name.vb: HalfWaveLength(Double, Double)
+  nameWithType.vb: AntennaCalculator.HalfWaveLength(Double, Double?)
+  fullName.vb: CircuitTool.AntennaCalculator.HalfWaveLength(Double, Double?)
+  name.vb: HalfWaveLength(Double, Double?)
 - uid: CircuitTool.AntennaCalculator.DipoleImpedance(System.Double,System.Double)
   commentId: M:CircuitTool.AntennaCalculator.DipoleImpedance(System.Double,System.Double)
   id: DipoleImpedance(System.Double,System.Double)
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: DipoleImpedance
     path: src/Calculators/AntennaCalculator.cs
-    startLine: 43
+    startLine: 49
   namespace: CircuitTool
   summary: Calculates the characteristic impedance of a dipole antenna
   example: []
@@ -177,7 +177,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: AntennaGain
     path: src/Calculators/AntennaCalculator.cs
-    startLine: 62
+    startLine: 69
   namespace: CircuitTool
   summary: Calculates antenna gain in dB for a given directivity and efficiency
   example: []
@@ -216,7 +216,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateVSWR
     path: src/Calculators/AntennaCalculator.cs
-    startLine: 75
+    startLine: 82
   namespace: CircuitTool
   summary: Calculates the VSWR (Voltage Standing Wave Ratio) from reflection coefficient
   example: []
@@ -252,7 +252,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: EffectiveRadiatedPower
     path: src/Calculators/AntennaCalculator.cs
-    startLine: 90
+    startLine: 97
   namespace: CircuitTool
   summary: Calculates the effective radiated power (ERP)
   example: []
@@ -522,7 +522,7 @@ references:
   fullName: System
 - uid: CircuitTool.AntennaCalculator.QuarterWaveLength*
   commentId: Overload:CircuitTool.AntennaCalculator.QuarterWaveLength
-  href: CircuitTool.AntennaCalculator.html#CircuitTool_AntennaCalculator_QuarterWaveLength_System_Double_System_Double_
+  href: CircuitTool.AntennaCalculator.html#CircuitTool_AntennaCalculator_QuarterWaveLength_System_Double_System_Nullable_System_Double__
   name: QuarterWaveLength
   nameWithType: AntennaCalculator.QuarterWaveLength
   fullName: CircuitTool.AntennaCalculator.QuarterWaveLength
@@ -537,9 +537,60 @@ references:
   nameWithType.vb: Double
   fullName.vb: Double
   name.vb: Double
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: CircuitTool.AntennaCalculator.HalfWaveLength*
   commentId: Overload:CircuitTool.AntennaCalculator.HalfWaveLength
-  href: CircuitTool.AntennaCalculator.html#CircuitTool_AntennaCalculator_HalfWaveLength_System_Double_System_Double_
+  href: CircuitTool.AntennaCalculator.html#CircuitTool_AntennaCalculator_HalfWaveLength_System_Double_System_Nullable_System_Double__
   name: HalfWaveLength
   nameWithType: AntennaCalculator.HalfWaveLength
   fullName: CircuitTool.AntennaCalculator.HalfWaveLength

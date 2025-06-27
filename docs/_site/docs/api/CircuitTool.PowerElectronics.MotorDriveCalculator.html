@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MotorDriveCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MotorDriveCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations for motor drive and control systems.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerElectronics_MotorDriveCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.PowerElectronics.MotorDriveCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator">
+
+
+
+  <h1 id="CircuitTool_PowerElectronics_MotorDriveCalculator" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator" class="text-break">
+Class MotorDriveCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.PowerElectronics.html">PowerElectronics</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations for motor drive and control systems.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MotorDriveCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MotorDriveCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_PowerElectronics_MotorDriveCalculator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Example usage:</p>
+<pre><code class="lang-csharp">double torque = MotorDriveCalculator.TorqueFromPower(750, 1800); // Motor torque
+double speed = MotorDriveCalculator.SynchronousSpeed(50, 4); // Synchronous speed
+double slip = MotorDriveCalculator.Slip(1800, 1750); // Motor slip</code></pre>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_Efficiency_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_Efficiency_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.Efficiency(System.Double,System.Double)">
+  Efficiency(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates motor efficiency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Efficiency(double mechanicalPower, double electricalPower)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mechanicalPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Mechanical power output in watts (W).</p>
+</dd>
+    <dt><code>electricalPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Electrical power input in watts (W).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Efficiency as a percentage.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_ModulationIndex_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_ModulationIndex_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.ModulationIndex(System.Double,System.Double)">
+  ModulationIndex(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates modulation index for PWM inverter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ModulationIndex(double outputVoltage, double dcBusVoltage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Peak output voltage in volts (V).</p>
+</dd>
+    <dt><code>dcBusVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>DC bus voltage in volts (V).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Modulation index (0-1).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_MotorCurrent_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_MotorCurrent_System_Double_System_Double_System_Double_System_Double_System_Boolean_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.MotorCurrent(System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+  MotorCurrent(double, double, double, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates motor current from power and power factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MotorCurrent(double power, double voltage, double efficiency, double powerFactor, bool isThreePhase = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>power</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Mechanical power in watts (W).</p>
+</dd>
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Line voltage in volts (V).</p>
+</dd>
+    <dt><code>efficiency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Motor efficiency (0-1).</p>
+</dd>
+    <dt><code>powerFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Power factor (0-1).</p>
+</dd>
+    <dt><code>isThreePhase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True for three-phase motor, false for single-phase.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Motor current in amperes (A).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_PWMFrequency_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_PWMFrequency_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.PWMFrequency(System.Double,System.Double)">
+  PWMFrequency(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates PWM switching frequency for motor drive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PWMFrequency(double fundamentalFrequency, double carrierRatio)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fundamentalFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Fundamental output frequency in Hz.</p>
+</dd>
+    <dt><code>carrierRatio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Carrier to fundamental frequency ratio (typically 20-100).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>PWM switching frequency in Hz.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_PowerFromTorque_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_PowerFromTorque_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.PowerFromTorque(System.Double,System.Double)">
+  PowerFromTorque(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates mechanical power from torque and speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PowerFromTorque(double torque, double speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>torque</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Torque in Newton-meters (N⋅m).</p>
+</dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rotational speed in RPM.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Mechanical power in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_RotorFrequency_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_RotorFrequency_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.RotorFrequency(System.Double,System.Double)">
+  RotorFrequency(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates rotor frequency for induction motor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RotorFrequency(double slip, double supplyFrequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Slip as a percentage.</p>
+</dd>
+    <dt><code>supplyFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rotor frequency in Hz.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_Slip_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.Slip*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_Slip_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.Slip(System.Double,System.Double)">
+  Slip(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates motor slip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Slip(double synchronousSpeed, double actualSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>synchronousSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Synchronous speed in RPM.</p>
+</dd>
+    <dt><code>actualSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Actual rotor speed in RPM.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Slip as a percentage.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_MotorDriveCalculator_Slip_System_Double_System_Double__examples">Examples</h4>
+  <p>double slip = MotorDriveCalculator.Slip(1800, 1750); // Motor slip</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_StartingTorque_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_StartingTorque_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.StartingTorque(System.Double,System.Double,System.Double)">
+  StartingTorque(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates starting torque for induction motor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double StartingTorque(double voltage, double ratedVoltage, double ratedStartingTorque)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Applied voltage in volts (V).</p>
+</dd>
+    <dt><code>ratedVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rated voltage in volts (V).</p>
+</dd>
+    <dt><code>ratedStartingTorque</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rated starting torque in N⋅m.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Starting torque at applied voltage in N⋅m.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_SynchronousSpeed_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_SynchronousSpeed_System_Double_System_Int32_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.SynchronousSpeed(System.Double,System.Int32)">
+  SynchronousSpeed(double, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates synchronous speed for AC motor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SynchronousSpeed(double frequency, int poles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply frequency in Hz.</p>
+</dd>
+    <dt><code>poles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of poles.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Synchronous speed in RPM.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_MotorDriveCalculator_SynchronousSpeed_System_Double_System_Int32__examples">Examples</h4>
+  <p>double speed = MotorDriveCalculator.SynchronousSpeed(50, 4); // Synchronous speed</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_TorqueFromPower_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_TorqueFromPower_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.TorqueFromPower(System.Double,System.Double)">
+  TorqueFromPower(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates motor torque from power and speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double TorqueFromPower(double power, double speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>power</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Mechanical power in watts (W).</p>
+</dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Rotational speed in RPM.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Torque in Newton-meters (N⋅m).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_PowerElectronics_MotorDriveCalculator_TorqueFromPower_System_Double_System_Double__examples">Examples</h4>
+  <p>double torque = MotorDriveCalculator.TorqueFromPower(750, 1800); // Motor torque</p>
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_VHzRatio_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_VHzRatio_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.VHzRatio(System.Double,System.Double)">
+  VHzRatio(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates V/Hz ratio for variable frequency drive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double VHzRatio(double voltage, double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Motor voltage in volts (V).</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Motor frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>V/Hz ratio.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerElectronics_MotorDriveCalculator_VoltageForConstantVHz_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz*"></a>
+
+  <h3 id="CircuitTool_PowerElectronics_MotorDriveCalculator_VoltageForConstantVHz_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerElectronics.MotorDriveCalculator.VoltageForConstantVHz(System.Double,System.Double,System.Double)">
+  VoltageForConstantVHz(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates required voltage for constant V/Hz operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double VoltageForConstantVHz(double baseVoltage, double baseFrequency, double operatingFrequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Base (rated) voltage in volts (V).</p>
+</dd>
+    <dt><code>baseFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Base (rated) frequency in Hz.</p>
+</dd>
+    <dt><code>operatingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Operating frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required voltage in volts (V).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/PowerElectronics/MotorDriveCalculator.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

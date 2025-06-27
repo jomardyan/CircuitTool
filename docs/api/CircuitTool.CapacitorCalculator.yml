@@ -5,6 +5,10 @@ items:
   id: CapacitorCalculator
   parent: CircuitTool
   children:
+  - CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  - CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  - CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(System.Double,System.Double,System.Double,System.Double,System.Double)
   - CircuitTool.CapacitorCalculator.CapacitiveReactance(System.Double,System.Double)
   - CircuitTool.CapacitorCalculator.ChargingVoltage(System.Double,System.Double,System.Double)
   - CircuitTool.CapacitorCalculator.DischargingVoltage(System.Double,System.Double,System.Double)
@@ -26,7 +30,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorCalculator
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 19
+    startLine: 23
   namespace: CircuitTool
   summary: Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.
   remarks: >-
@@ -78,7 +82,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitiveReactance
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 30
+    startLine: 34
   namespace: CircuitTool
   summary: Calculates capacitive reactance using the formula Xc = 1 / (2πfC).
   example:
@@ -118,7 +122,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyStored
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 46
+    startLine: 50
   namespace: CircuitTool
   summary: Calculates the energy stored in a capacitor using the formula E = 0.5 × C × V².
   example:
@@ -158,7 +162,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: TimeConstant
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 62
+    startLine: 66
   namespace: CircuitTool
   summary: Calculates the time constant for an RC circuit using the formula τ = R × C.
   example:
@@ -198,7 +202,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: SeriesCapacitance
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 77
+    startLine: 81
   namespace: CircuitTool
   summary: Calculates total capacitance for capacitors in series using the formula 1/Ctotal = 1/C1 + 1/C2 + ...
   example:
@@ -235,7 +239,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: ParallelCapacitance
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 99
+    startLine: 103
   namespace: CircuitTool
   summary: Calculates total capacitance for capacitors in parallel using the formula Ctotal = C1 + C2 + ...
   example:
@@ -272,7 +276,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: ChargingVoltage
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 123
+    startLine: 127
   namespace: CircuitTool
   summary: Calculates the charging voltage of a capacitor at time t using V(t) = Vsource × (1 - e^(-t/τ)).
   example:
@@ -315,7 +319,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: DischargingVoltage
     path: src/Calculators/CapacitorCalculator.cs
-    startLine: 142
+    startLine: 146
   namespace: CircuitTool
   summary: Calculates the discharging voltage of a capacitor at time t using V(t) = Vinitial × e^(-t/τ).
   example:
@@ -340,6 +344,170 @@ items:
   nameWithType.vb: CapacitorCalculator.DischargingVoltage(Double, Double, Double)
   fullName.vb: CircuitTool.CapacitorCalculator.DischargingVoltage(Double, Double, Double)
   name.vb: DischargingVoltage(Double, Double, Double)
+- uid: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: CalculateChargeAndEnergy(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculateChargeAndEnergy(double, double, double, double, double)
+  nameWithType: CapacitorCalculator.CalculateChargeAndEnergy(double, double, double, double, double)
+  fullName: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateChargeAndEnergy
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 175
+  namespace: CircuitTool
+  summary: Enhanced charge and energy calculator with physical properties
+  example: []
+  syntax:
+    content: public static CapacitorCalculator.CapacitorChargeEnergyResult CalculateChargeAndEnergy(double capacitance, double voltage, double volumeCm3 = 0, double massGrams = 0, double dielectricThicknessMm = 0)
+    parameters:
+    - id: capacitance
+      type: System.Double
+    - id: voltage
+      type: System.Double
+    - id: volumeCm3
+      type: System.Double
+    - id: massGrams
+      type: System.Double
+    - id: dielectricThicknessMm
+      type: System.Double
+    return:
+      type: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    content.vb: Public Shared Function CalculateChargeAndEnergy(capacitance As Double, voltage As Double, volumeCm3 As Double = 0, massGrams As Double = 0, dielectricThicknessMm As Double = 0) As CapacitorCalculator.CapacitorChargeEnergyResult
+  overload: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy*
+  nameWithType.vb: CapacitorCalculator.CalculateChargeAndEnergy(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy(Double, Double, Double, Double, Double)
+  name.vb: CalculateChargeAndEnergy(Double, Double, Double, Double, Double)
+- uid: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  commentId: M:CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  id: AnalyzeSeriesCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeSeriesCapacitorBank(double[], double[], double, double[])
+  nameWithType: CapacitorCalculator.AnalyzeSeriesCapacitorBank(double[], double[], double, double[])
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(double[], double[], double, double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeSeriesCapacitorBank
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 260
+  namespace: CircuitTool
+  summary: Analyze series capacitor bank
+  example: []
+  syntax:
+    content: public static CapacitorCalculator.CapacitorBankResult AnalyzeSeriesCapacitorBank(double[] capacitances, double[] voltageRatings, double appliedVoltage, double[] esrValues = null)
+    parameters:
+    - id: capacitances
+      type: System.Double[]
+    - id: voltageRatings
+      type: System.Double[]
+    - id: appliedVoltage
+      type: System.Double
+    - id: esrValues
+      type: System.Double[]
+    return:
+      type: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    content.vb: Public Shared Function AnalyzeSeriesCapacitorBank(capacitances As Double(), voltageRatings As Double(), appliedVoltage As Double, esrValues As Double() = Nothing) As CapacitorCalculator.CapacitorBankResult
+  overload: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank*
+  nameWithType.vb: CapacitorCalculator.AnalyzeSeriesCapacitorBank(Double(), Double(), Double, Double())
+  fullName.vb: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank(Double(), Double(), Double, Double())
+  name.vb: AnalyzeSeriesCapacitorBank(Double(), Double(), Double, Double())
+- uid: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  commentId: M:CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  id: AnalyzeParallelCapacitorBank(System.Double[],System.Double[],System.Double,System.Double[])
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeParallelCapacitorBank(double[], double[], double, double[])
+  nameWithType: CapacitorCalculator.AnalyzeParallelCapacitorBank(double[], double[], double, double[])
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(double[], double[], double, double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeParallelCapacitorBank
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 320
+  namespace: CircuitTool
+  summary: Analyze parallel capacitor bank
+  example: []
+  syntax:
+    content: public static CapacitorCalculator.CapacitorBankResult AnalyzeParallelCapacitorBank(double[] capacitances, double[] voltageRatings, double appliedVoltage, double[] esrValues = null)
+    parameters:
+    - id: capacitances
+      type: System.Double[]
+    - id: voltageRatings
+      type: System.Double[]
+    - id: appliedVoltage
+      type: System.Double
+    - id: esrValues
+      type: System.Double[]
+    return:
+      type: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    content.vb: Public Shared Function AnalyzeParallelCapacitorBank(capacitances As Double(), voltageRatings As Double(), appliedVoltage As Double, esrValues As Double() = Nothing) As CapacitorCalculator.CapacitorBankResult
+  overload: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank*
+  nameWithType.vb: CapacitorCalculator.AnalyzeParallelCapacitorBank(Double(), Double(), Double, Double())
+  fullName.vb: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank(Double(), Double(), Double, Double())
+  name.vb: AnalyzeParallelCapacitorBank(Double(), Double(), Double, Double())
+- uid: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: AnalyzeRippleCurrent(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.CapacitorCalculator
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeRippleCurrent(double, double, double, double, double)
+  nameWithType: CapacitorCalculator.AnalyzeRippleCurrent(double, double, double, double, double)
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitorCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeRippleCurrent
+    path: src/Calculators/CapacitorCalculator.cs
+    startLine: 386
+  namespace: CircuitTool
+  summary: Analyze capacitor ripple current capability
+  example: []
+  syntax:
+    content: public static CapacitorCalculator.RippleCurrentResult AnalyzeRippleCurrent(double capacitance, double esr, double rmsRippleCurrent, double maxRippleCurrentRating, double thermalResistance = 50)
+    parameters:
+    - id: capacitance
+      type: System.Double
+    - id: esr
+      type: System.Double
+    - id: rmsRippleCurrent
+      type: System.Double
+    - id: maxRippleCurrentRating
+      type: System.Double
+    - id: thermalResistance
+      type: System.Double
+    return:
+      type: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    content.vb: Public Shared Function AnalyzeRippleCurrent(capacitance As Double, esr As Double, rmsRippleCurrent As Double, maxRippleCurrentRating As Double, thermalResistance As Double = 50) As CapacitorCalculator.RippleCurrentResult
+  overload: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent*
+  nameWithType.vb: CapacitorCalculator.AnalyzeRippleCurrent(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent(Double, Double, Double, Double, Double)
+  name.vb: AnalyzeRippleCurrent(Double, Double, Double, Double, Double)
 references:
 - uid: CircuitTool
   commentId: N:CircuitTool
@@ -660,3 +828,96 @@ references:
   name: DischargingVoltage
   nameWithType: CapacitorCalculator.DischargingVoltage
   fullName: CircuitTool.CapacitorCalculator.DischargingVoltage
+- uid: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy*
+  commentId: Overload:CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_CalculateChargeAndEnergy_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateChargeAndEnergy
+  nameWithType: CapacitorCalculator.CalculateChargeAndEnergy
+  fullName: CircuitTool.CapacitorCalculator.CalculateChargeAndEnergy
+- uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.CapacitorChargeEnergyResult
+  nameWithType: CapacitorCalculator.CapacitorChargeEnergyResult
+  fullName: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    name: CapacitorChargeEnergyResult
+    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    name: CapacitorChargeEnergyResult
+    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
+- uid: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank*
+  commentId: Overload:CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_AnalyzeSeriesCapacitorBank_System_Double___System_Double___System_Double_System_Double___
+  name: AnalyzeSeriesCapacitorBank
+  nameWithType: CapacitorCalculator.AnalyzeSeriesCapacitorBank
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeSeriesCapacitorBank
+- uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorBankResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.CapacitorBankResult
+  nameWithType: CapacitorCalculator.CapacitorBankResult
+  fullName: CircuitTool.CapacitorCalculator.CapacitorBankResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    name: CapacitorBankResult
+    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    name: CapacitorBankResult
+    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
+- uid: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank*
+  commentId: Overload:CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_AnalyzeParallelCapacitorBank_System_Double___System_Double___System_Double_System_Double___
+  name: AnalyzeParallelCapacitorBank
+  nameWithType: CapacitorCalculator.AnalyzeParallelCapacitorBank
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeParallelCapacitorBank
+- uid: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent*
+  commentId: Overload:CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent
+  href: CircuitTool.CapacitorCalculator.html#CircuitTool_CapacitorCalculator_AnalyzeRippleCurrent_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: AnalyzeRippleCurrent
+  nameWithType: CapacitorCalculator.AnalyzeRippleCurrent
+  fullName: CircuitTool.CapacitorCalculator.AnalyzeRippleCurrent
+- uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+  commentId: T:CircuitTool.CapacitorCalculator.RippleCurrentResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.RippleCurrentResult
+  nameWithType: CapacitorCalculator.RippleCurrentResult
+  fullName: CircuitTool.CapacitorCalculator.RippleCurrentResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    name: RippleCurrentResult
+    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    name: RippleCurrentResult
+    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html

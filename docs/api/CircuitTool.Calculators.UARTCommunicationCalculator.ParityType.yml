@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  id: UARTCommunicationCalculator.ParityType
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Even
+  - CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Mark
+  - CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.None
+  - CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Odd
+  - CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Space
+  langs:
+  - csharp
+  - vb
+  name: UARTCommunicationCalculator.ParityType
+  nameWithType: UARTCommunicationCalculator.ParityType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParityType
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 58
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public enum UARTCommunicationCalculator.ParityType
+    content.vb: Public Enum UARTCommunicationCalculator.ParityType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.None
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.None
+  id: None
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UARTCommunicationCalculator.ParityType.None
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.None
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 60
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: None = 0
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Even
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Even
+  id: Even
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  langs:
+  - csharp
+  - vb
+  name: Even
+  nameWithType: UARTCommunicationCalculator.ParityType.Even
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Even
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Even
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 61
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Even = 1
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Odd
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Odd
+  id: Odd
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  langs:
+  - csharp
+  - vb
+  name: Odd
+  nameWithType: UARTCommunicationCalculator.ParityType.Odd
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Odd
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Odd
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 62
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Odd = 2
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Mark
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Mark
+  id: Mark
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  langs:
+  - csharp
+  - vb
+  name: Mark
+  nameWithType: UARTCommunicationCalculator.ParityType.Mark
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Mark
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Mark
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 63
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Mark = 3
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Space
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Space
+  id: Space
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: UARTCommunicationCalculator.ParityType.Space
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.Space
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Space
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 64
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Space = 4
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  name: UARTCommunicationCalculator.ParityType
+  nameWithType: UARTCommunicationCalculator.ParityType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+  spec.csharp:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+    name: ParityType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+    name: ParityType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.html

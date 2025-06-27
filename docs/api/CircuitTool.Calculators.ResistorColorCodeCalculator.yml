@@ -1,0 +1,832 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator
+  id: ResistorColorCodeCalculator
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode(System.Double,System.Double)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band(System.Double,System.Double)
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue(System.Double,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ResistorColorCodeCalculator
+  nameWithType: ResistorColorCodeCalculator
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResistorColorCodeCalculator
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 9
+  namespace: CircuitTool.Calculators
+  summary: Calculator for resistor color code encoding and decoding
+  example: []
+  syntax:
+    content: public class ResistorColorCodeCalculator
+    content.vb: Public Class ResistorColorCodeCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  id: Decode4Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: Decode4Band(ResistorColor, ResistorColor, ResistorColor, ResistorColor)
+  nameWithType: ResistorColorCodeCalculator.Decode4Band(ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Decode4Band
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 81
+  namespace: CircuitTool.Calculators
+  summary: Decode 4-band resistor color code
+  example: []
+  syntax:
+    content: public ResistorColorCodeCalculator.ResistorColorResult Decode4Band(ResistorColorCodeCalculator.ResistorColor band1, ResistorColorCodeCalculator.ResistorColor band2, ResistorColorCodeCalculator.ResistorColor multiplier, ResistorColorCodeCalculator.ResistorColor tolerance)
+    parameters:
+    - id: band1
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: band2
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: multiplier
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: tolerance
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    content.vb: Public Function Decode4Band(band1 As ResistorColorCodeCalculator.ResistorColor, band2 As ResistorColorCodeCalculator.ResistorColor, multiplier As ResistorColorCodeCalculator.ResistorColor, tolerance As ResistorColorCodeCalculator.ResistorColor) As ResistorColorCodeCalculator.ResistorColorResult
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  id: Decode5Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: Decode5Band(ResistorColor, ResistorColor, ResistorColor, ResistorColor, ResistorColor)
+  nameWithType: ResistorColorCodeCalculator.Decode5Band(ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Decode5Band
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 116
+  namespace: CircuitTool.Calculators
+  summary: Decode 5-band resistor color code
+  example: []
+  syntax:
+    content: public ResistorColorCodeCalculator.ResistorColorResult Decode5Band(ResistorColorCodeCalculator.ResistorColor band1, ResistorColorCodeCalculator.ResistorColor band2, ResistorColorCodeCalculator.ResistorColor band3, ResistorColorCodeCalculator.ResistorColor multiplier, ResistorColorCodeCalculator.ResistorColor tolerance)
+    parameters:
+    - id: band1
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: band2
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: band3
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: multiplier
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: tolerance
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    content.vb: Public Function Decode5Band(band1 As ResistorColorCodeCalculator.ResistorColor, band2 As ResistorColorCodeCalculator.ResistorColor, band3 As ResistorColorCodeCalculator.ResistorColor, multiplier As ResistorColorCodeCalculator.ResistorColor, tolerance As ResistorColorCodeCalculator.ResistorColor) As ResistorColorCodeCalculator.ResistorColorResult
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  id: Decode6Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor,CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: Decode6Band(ResistorColor, ResistorColor, ResistorColor, ResistorColor, ResistorColor, ResistorColor)
+  nameWithType: ResistorColorCodeCalculator.Decode6Band(ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor, ResistorColorCodeCalculator.ResistorColor)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band(CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor, CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Decode6Band
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 152
+  namespace: CircuitTool.Calculators
+  summary: Decode 6-band resistor color code (includes temperature coefficient)
+  example: []
+  syntax:
+    content: public ResistorColorCodeCalculator.ResistorColorResult Decode6Band(ResistorColorCodeCalculator.ResistorColor band1, ResistorColorCodeCalculator.ResistorColor band2, ResistorColorCodeCalculator.ResistorColor band3, ResistorColorCodeCalculator.ResistorColor multiplier, ResistorColorCodeCalculator.ResistorColor tolerance, ResistorColorCodeCalculator.ResistorColor tempCoeff)
+    parameters:
+    - id: band1
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: band2
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: band3
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: multiplier
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: tolerance
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    - id: tempCoeff
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    content.vb: Public Function Decode6Band(band1 As ResistorColorCodeCalculator.ResistorColor, band2 As ResistorColorCodeCalculator.ResistorColor, band3 As ResistorColorCodeCalculator.ResistorColor, multiplier As ResistorColorCodeCalculator.ResistorColor, tolerance As ResistorColorCodeCalculator.ResistorColor, tempCoeff As ResistorColorCodeCalculator.ResistorColor) As ResistorColorCodeCalculator.ResistorColorResult
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode(System.Double,System.Double)
+  id: EncodeToColorCode(System.Double,System.Double)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: EncodeToColorCode(double, double)
+  nameWithType: ResistorColorCodeCalculator.EncodeToColorCode(double, double)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EncodeToColorCode
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 167
+  namespace: CircuitTool.Calculators
+  summary: Encode resistance value to 4-band color code
+  example: []
+  syntax:
+    content: public List<ResistorColorCodeCalculator.ResistorColor> EncodeToColorCode(double resistance, double tolerancePercent = 5)
+    parameters:
+    - id: resistance
+      type: System.Double
+    - id: tolerancePercent
+      type: System.Double
+    return:
+      type: System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+    content.vb: Public Function EncodeToColorCode(resistance As Double, tolerancePercent As Double = 5) As List(Of ResistorColorCodeCalculator.ResistorColor)
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode*
+  nameWithType.vb: ResistorColorCodeCalculator.EncodeToColorCode(Double, Double)
+  fullName.vb: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode(Double, Double)
+  name.vb: EncodeToColorCode(Double, Double)
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band(System.Double,System.Double)
+  id: EncodeToColorCode5Band(System.Double,System.Double)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: EncodeToColorCode5Band(double, double)
+  nameWithType: ResistorColorCodeCalculator.EncodeToColorCode5Band(double, double)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EncodeToColorCode5Band
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 205
+  namespace: CircuitTool.Calculators
+  summary: Encode resistance value to 5-band color code for higher precision
+  example: []
+  syntax:
+    content: public List<ResistorColorCodeCalculator.ResistorColor> EncodeToColorCode5Band(double resistance, double tolerancePercent = 1)
+    parameters:
+    - id: resistance
+      type: System.Double
+    - id: tolerancePercent
+      type: System.Double
+    return:
+      type: System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+    content.vb: Public Function EncodeToColorCode5Band(resistance As Double, tolerancePercent As Double = 1) As List(Of ResistorColorCodeCalculator.ResistorColor)
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band*
+  nameWithType.vb: ResistorColorCodeCalculator.EncodeToColorCode5Band(Double, Double)
+  fullName.vb: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band(Double, Double)
+  name.vb: EncodeToColorCode5Band(Double, Double)
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue(System.Double,System.String)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue(System.Double,System.String)
+  id: FindNearestStandardValue(System.Double,System.String)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: FindNearestStandardValue(double, string)
+  nameWithType: ResistorColorCodeCalculator.FindNearestStandardValue(double, string)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue(double, string)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FindNearestStandardValue
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 259
+  namespace: CircuitTool.Calculators
+  summary: Find nearest standard resistor value
+  example: []
+  syntax:
+    content: public ResistorColorCodeCalculator.StandardResistorResult FindNearestStandardValue(double targetValue, string series = "E12")
+    parameters:
+    - id: targetValue
+      type: System.Double
+    - id: series
+      type: System.String
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    content.vb: Public Function FindNearestStandardValue(targetValue As Double, series As String = "E12") As ResistorColorCodeCalculator.StandardResistorResult
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue*
+  nameWithType.vb: ResistorColorCodeCalculator.FindNearestStandardValue(Double, String)
+  fullName.vb: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue(Double, String)
+  name.vb: FindNearestStandardValue(Double, String)
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating(System.Double,System.Double,System.Double,System.Double)
+  id: CalculatePowerRating(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator
+  langs:
+  - csharp
+  - vb
+  name: CalculatePowerRating(double, double, double, double)
+  nameWithType: ResistorColorCodeCalculator.CalculatePowerRating(double, double, double, double)
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculatePowerRating
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 299
+  namespace: CircuitTool.Calculators
+  summary: Calculate required power rating for resistor
+  example: []
+  syntax:
+    content: public ResistorColorCodeCalculator.PowerRatingResult CalculatePowerRating(double resistance, double voltage = 0, double current = 0, double safetyFactor = 2)
+    parameters:
+    - id: resistance
+      type: System.Double
+    - id: voltage
+      type: System.Double
+    - id: current
+      type: System.Double
+    - id: safetyFactor
+      type: System.Double
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    content.vb: Public Function CalculatePowerRating(resistance As Double, voltage As Double = 0, current As Double = 0, safetyFactor As Double = 2) As ResistorColorCodeCalculator.PowerRatingResult
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating*
+  nameWithType.vb: ResistorColorCodeCalculator.CalculatePowerRating(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating(Double, Double, Double, Double)
+  name.vb: CalculatePowerRating(Double, Double, Double, Double)
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_Decode4Band_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_
+  name: Decode4Band
+  nameWithType: ResistorColorCodeCalculator.Decode4Band
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode4Band
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ResistorColor
+  nameWithType: ResistorColorCodeCalculator.ResistorColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ResistorColorResult
+  nameWithType: ResistorColorCodeCalculator.ResistorColorResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    name: ResistorColorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    name: ResistorColorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_Decode5Band_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_
+  name: Decode5Band
+  nameWithType: ResistorColorCodeCalculator.Decode5Band
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode5Band
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_Decode6Band_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_CircuitTool_Calculators_ResistorColorCodeCalculator_ResistorColor_
+  name: Decode6Band
+  nameWithType: ResistorColorCodeCalculator.Decode6Band
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.Decode6Band
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_EncodeToColorCode_System_Double_System_Double_
+  name: EncodeToColorCode
+  nameWithType: ResistorColorCodeCalculator.EncodeToColorCode
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+  commentId: T:System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ResistorColorCodeCalculator.ResistorColor>
+  nameWithType: List<ResistorColorCodeCalculator.ResistorColor>
+  fullName: System.Collections.Generic.List<CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor>
+  nameWithType.vb: List(Of ResistorColorCodeCalculator.ResistorColor)
+  fullName.vb: System.Collections.Generic.List(Of CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  name.vb: List(Of ResistorColorCodeCalculator.ResistorColor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_EncodeToColorCode5Band_System_Double_System_Double_
+  name: EncodeToColorCode5Band
+  nameWithType: ResistorColorCodeCalculator.EncodeToColorCode5Band
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.EncodeToColorCode5Band
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_FindNearestStandardValue_System_Double_System_String_
+  name: FindNearestStandardValue
+  nameWithType: ResistorColorCodeCalculator.FindNearestStandardValue
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.FindNearestStandardValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.StandardResistorResult
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    name: StandardResistorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    name: StandardResistorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html#CircuitTool_Calculators_ResistorColorCodeCalculator_CalculatePowerRating_System_Double_System_Double_System_Double_System_Double_
+  name: CalculatePowerRating
+  nameWithType: ResistorColorCodeCalculator.CalculatePowerRating
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.CalculatePowerRating
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.PowerRatingResult
+  nameWithType: ResistorColorCodeCalculator.PowerRatingResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    name: PowerRatingResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    name: PowerRatingResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html

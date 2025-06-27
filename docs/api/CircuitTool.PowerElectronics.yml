@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerElectronics
+  commentId: N:CircuitTool.PowerElectronics
+  id: CircuitTool.PowerElectronics
+  children:
+  - CircuitTool.PowerElectronics.MotorDriveCalculator
+  - CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.PowerElectronics
+  nameWithType: CircuitTool.PowerElectronics
+  fullName: CircuitTool.PowerElectronics
+  type: Namespace
+references:
+- uid: CircuitTool.PowerElectronics.SMPSCalculator
+  commentId: T:CircuitTool.PowerElectronics.SMPSCalculator
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html
+  name: SMPSCalculator
+  nameWithType: SMPSCalculator
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator
+- uid: CircuitTool.PowerElectronics.MotorDriveCalculator
+  commentId: T:CircuitTool.PowerElectronics.MotorDriveCalculator
+  href: CircuitTool.PowerElectronics.MotorDriveCalculator.html
+  name: MotorDriveCalculator
+  nameWithType: MotorDriveCalculator
+  fullName: CircuitTool.PowerElectronics.MotorDriveCalculator

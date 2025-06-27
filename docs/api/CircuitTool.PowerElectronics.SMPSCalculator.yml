@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.PowerElectronics.SMPSCalculator
+  commentId: T:CircuitTool.PowerElectronics.SMPSCalculator
+  id: SMPSCalculator
+  parent: CircuitTool.PowerElectronics
+  children:
+  - CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(System.Double,System.Double,System.Double)
+  - CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(System.Double,System.Double,System.Double,System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: SMPSCalculator
+  nameWithType: SMPSCalculator
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator
+  type: Class
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SMPSCalculator
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 15
+  namespace: CircuitTool.PowerElectronics
+  summary: Provides calculations for switching mode power supplies (SMPS) design.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double duty = SMPSCalculator.DutyCycle(12, 5); // Buck converter duty cycle
+
+    double ripple = SMPSCalculator.OutputRipple(100e-6, 1, 100e3); // Output voltage ripple
+
+    double inductance = SMPSCalculator.MinimumInductance(5, 2, 100e3, 0.3); // CCM inductance</code></pre>
+  example: []
+  syntax:
+    content: public static class SMPSCalculator
+    content.vb: Public Module SMPSCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(System.Double,System.Double)
+  id: BuckDutyCycle(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: BuckDutyCycle(double, double)
+  nameWithType: SMPSCalculator.BuckDutyCycle(double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BuckDutyCycle
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 26
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates duty cycle for a buck converter.
+  example:
+  - double duty = SMPSCalculator.DutyCycle(12, 5); // Buck converter duty cycle
+  syntax:
+    content: public static double BuckDutyCycle(double inputVoltage, double outputVoltage)
+    parameters:
+    - id: inputVoltage
+      type: System.Double
+      description: Input voltage in volts (V).
+    - id: outputVoltage
+      type: System.Double
+      description: Output voltage in volts (V).
+    return:
+      type: System.Double
+      description: Duty cycle (0-1).
+    content.vb: Public Shared Function BuckDutyCycle(inputVoltage As Double, outputVoltage As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle*
+  nameWithType.vb: SMPSCalculator.BuckDutyCycle(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle(Double, Double)
+  name.vb: BuckDutyCycle(Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(System.Double,System.Double)
+  id: BoostDutyCycle(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: BoostDutyCycle(double, double)
+  nameWithType: SMPSCalculator.BoostDutyCycle(double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BoostDutyCycle
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 42
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates duty cycle for a boost converter.
+  example: []
+  syntax:
+    content: public static double BoostDutyCycle(double inputVoltage, double outputVoltage)
+    parameters:
+    - id: inputVoltage
+      type: System.Double
+      description: Input voltage in volts (V).
+    - id: outputVoltage
+      type: System.Double
+      description: Output voltage in volts (V).
+    return:
+      type: System.Double
+      description: Duty cycle (0-1).
+    content.vb: Public Shared Function BoostDutyCycle(inputVoltage As Double, outputVoltage As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle*
+  nameWithType.vb: SMPSCalculator.BoostDutyCycle(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle(Double, Double)
+  name.vb: BoostDutyCycle(Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(System.Double,System.Double)
+  id: BuckBoostDutyCycle(System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: BuckBoostDutyCycle(double, double)
+  nameWithType: SMPSCalculator.BuckBoostDutyCycle(double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BuckBoostDutyCycle
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 58
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates duty cycle for a buck-boost converter.
+  example: []
+  syntax:
+    content: public static double BuckBoostDutyCycle(double inputVoltage, double outputVoltage)
+    parameters:
+    - id: inputVoltage
+      type: System.Double
+      description: Input voltage in volts (V).
+    - id: outputVoltage
+      type: System.Double
+      description: Output voltage in volts (V).
+    return:
+      type: System.Double
+      description: Duty cycle (0-1).
+    content.vb: Public Shared Function BuckBoostDutyCycle(inputVoltage As Double, outputVoltage As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle*
+  nameWithType.vb: SMPSCalculator.BuckBoostDutyCycle(Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle(Double, Double)
+  name.vb: BuckBoostDutyCycle(Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(System.Double,System.Double,System.Double,System.Double)
+  id: MinimumInductanceBuck(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: MinimumInductanceBuck(double, double, double, double)
+  nameWithType: SMPSCalculator.MinimumInductanceBuck(double, double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: MinimumInductanceBuck
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 77
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates minimum inductance for continuous conduction mode (CCM).
+  example:
+  - double inductance = SMPSCalculator.MinimumInductance(5, 2, 100e3, 0.3); // CCM inductance
+  syntax:
+    content: public static double MinimumInductanceBuck(double outputVoltage, double outputCurrent, double switchingFrequency, double currentRippleFactor)
+    parameters:
+    - id: outputVoltage
+      type: System.Double
+      description: Output voltage in volts (V).
+    - id: outputCurrent
+      type: System.Double
+      description: Output current in amperes (A).
+    - id: switchingFrequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    - id: currentRippleFactor
+      type: System.Double
+      description: Current ripple factor (ΔI/I, typically 0.2-0.4).
+    return:
+      type: System.Double
+      description: Minimum inductance in henries (H).
+    content.vb: Public Shared Function MinimumInductanceBuck(outputVoltage As Double, outputCurrent As Double, switchingFrequency As Double, currentRippleFactor As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck*
+  nameWithType.vb: SMPSCalculator.MinimumInductanceBuck(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck(Double, Double, Double, Double)
+  name.vb: MinimumInductanceBuck(Double, Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(System.Double,System.Double,System.Double)
+  id: OutputCapacitance(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: OutputCapacitance(double, double, double)
+  nameWithType: SMPSCalculator.OutputCapacitance(double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: OutputCapacitance
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 96
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates output capacitance for desired voltage ripple.
+  example: []
+  syntax:
+    content: public static double OutputCapacitance(double outputCurrent, double switchingFrequency, double voltageRipple)
+    parameters:
+    - id: outputCurrent
+      type: System.Double
+      description: Output current in amperes (A).
+    - id: switchingFrequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    - id: voltageRipple
+      type: System.Double
+      description: Desired voltage ripple in volts (V).
+    return:
+      type: System.Double
+      description: Required output capacitance in farads (F).
+    content.vb: Public Shared Function OutputCapacitance(outputCurrent As Double, switchingFrequency As Double, voltageRipple As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance*
+  nameWithType.vb: SMPSCalculator.OutputCapacitance(Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance(Double, Double, Double)
+  name.vb: OutputCapacitance(Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(System.Double,System.Double,System.Double)
+  id: OutputRipple(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: OutputRipple(double, double, double)
+  nameWithType: SMPSCalculator.OutputRipple(double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: OutputRipple
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 114
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates output voltage ripple.
+  example:
+  - double ripple = SMPSCalculator.OutputRipple(100e-6, 1, 100e3); // Output voltage ripple
+  syntax:
+    content: public static double OutputRipple(double outputCapacitance, double outputCurrent, double switchingFrequency)
+    parameters:
+    - id: outputCapacitance
+      type: System.Double
+      description: Output capacitance in farads (F).
+    - id: outputCurrent
+      type: System.Double
+      description: Output current in amperes (A).
+    - id: switchingFrequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    return:
+      type: System.Double
+      description: Output voltage ripple in volts (V).
+    content.vb: Public Shared Function OutputRipple(outputCapacitance As Double, outputCurrent As Double, switchingFrequency As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple*
+  nameWithType.vb: SMPSCalculator.OutputRipple(Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple(Double, Double, Double)
+  name.vb: OutputRipple(Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: SwitchingLoss(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: SwitchingLoss(double, double, double, double, double)
+  nameWithType: SMPSCalculator.SwitchingLoss(double, double, double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SwitchingLoss
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 131
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates switching losses in a MOSFET.
+  example: []
+  syntax:
+    content: public static double SwitchingLoss(double voltage, double current, double switchingFrequency, double riseTime, double fallTime)
+    parameters:
+    - id: voltage
+      type: System.Double
+      description: Drain-source voltage in volts (V).
+    - id: current
+      type: System.Double
+      description: Drain current in amperes (A).
+    - id: switchingFrequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    - id: riseTime
+      type: System.Double
+      description: Rise time in seconds.
+    - id: fallTime
+      type: System.Double
+      description: Fall time in seconds.
+    return:
+      type: System.Double
+      description: Switching power loss in watts (W).
+    content.vb: Public Shared Function SwitchingLoss(voltage As Double, current As Double, switchingFrequency As Double, riseTime As Double, fallTime As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss*
+  nameWithType.vb: SMPSCalculator.SwitchingLoss(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss(Double, Double, Double, Double, Double)
+  name.vb: SwitchingLoss(Double, Double, Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(System.Double,System.Double,System.Double)
+  id: ConductionLoss(System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: ConductionLoss(double, double, double)
+  nameWithType: SMPSCalculator.ConductionLoss(double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConductionLoss
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 148
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates conduction losses in a MOSFET.
+  example: []
+  syntax:
+    content: public static double ConductionLoss(double current, double onResistance, double dutyCycle)
+    parameters:
+    - id: current
+      type: System.Double
+      description: RMS current in amperes (A).
+    - id: onResistance
+      type: System.Double
+      description: On-state resistance in ohms (Ω).
+    - id: dutyCycle
+      type: System.Double
+      description: Duty cycle (0-1).
+    return:
+      type: System.Double
+      description: Conduction power loss in watts (W).
+    content.vb: Public Shared Function ConductionLoss(current As Double, onResistance As Double, dutyCycle As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss*
+  nameWithType.vb: SMPSCalculator.ConductionLoss(Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss(Double, Double, Double)
+  name.vb: ConductionLoss(Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double)
+  id: FlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: FlybackTurnsRatio(double, double, double, double)
+  nameWithType: SMPSCalculator.FlybackTurnsRatio(double, double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FlybackTurnsRatio
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 166
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates transformer turns ratio for flyback converter.
+  example: []
+  syntax:
+    content: public static double FlybackTurnsRatio(double inputVoltageMin, double outputVoltage, double forwardDrop, double maxDutyCycle)
+    parameters:
+    - id: inputVoltageMin
+      type: System.Double
+      description: Minimum input voltage in volts (V).
+    - id: outputVoltage
+      type: System.Double
+      description: Output voltage in volts (V).
+    - id: forwardDrop
+      type: System.Double
+      description: Forward voltage drop of output diode in volts (V).
+    - id: maxDutyCycle
+      type: System.Double
+      description: Maximum allowable duty cycle (typically 0.45-0.5).
+    return:
+      type: System.Double
+      description: Transformer turns ratio (Np/Ns).
+    content.vb: Public Shared Function FlybackTurnsRatio(inputVoltageMin As Double, outputVoltage As Double, forwardDrop As Double, maxDutyCycle As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio*
+  nameWithType.vb: SMPSCalculator.FlybackTurnsRatio(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio(Double, Double, Double, Double)
+  name.vb: FlybackTurnsRatio(Double, Double, Double, Double)
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(System.Double,System.Double,System.Double,System.Double)
+  id: FlybackMagnetizingInductance(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.PowerElectronics.SMPSCalculator
+  langs:
+  - csharp
+  - vb
+  name: FlybackMagnetizingInductance(double, double, double, double)
+  nameWithType: SMPSCalculator.FlybackMagnetizingInductance(double, double, double, double)
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/PowerElectronics/SMPSCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FlybackMagnetizingInductance
+    path: src/PowerElectronics/SMPSCalculator.cs
+    startLine: 185
+  namespace: CircuitTool.PowerElectronics
+  summary: Calculates magnetizing inductance for flyback converter.
+  example: []
+  syntax:
+    content: public static double FlybackMagnetizingInductance(double inputVoltage, double dutyCycle, double switchingFrequency, double peakCurrent)
+    parameters:
+    - id: inputVoltage
+      type: System.Double
+      description: Input voltage in volts (V).
+    - id: dutyCycle
+      type: System.Double
+      description: Duty cycle (0-1).
+    - id: switchingFrequency
+      type: System.Double
+      description: Switching frequency in Hz.
+    - id: peakCurrent
+      type: System.Double
+      description: Peak magnetizing current in amperes (A).
+    return:
+      type: System.Double
+      description: Magnetizing inductance in henries (H).
+    content.vb: Public Shared Function FlybackMagnetizingInductance(inputVoltage As Double, dutyCycle As Double, switchingFrequency As Double, peakCurrent As Double) As Double
+  overload: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance*
+  nameWithType.vb: SMPSCalculator.FlybackMagnetizingInductance(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance(Double, Double, Double, Double)
+  name.vb: FlybackMagnetizingInductance(Double, Double, Double, Double)
+references:
+- uid: CircuitTool.PowerElectronics
+  commentId: N:CircuitTool.PowerElectronics
+  href: CircuitTool.html
+  name: CircuitTool.PowerElectronics
+  nameWithType: CircuitTool.PowerElectronics
+  fullName: CircuitTool.PowerElectronics
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerElectronics
+    name: PowerElectronics
+    href: CircuitTool.PowerElectronics.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.PowerElectronics
+    name: PowerElectronics
+    href: CircuitTool.PowerElectronics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_BuckDutyCycle_System_Double_System_Double_
+  name: BuckDutyCycle
+  nameWithType: SMPSCalculator.BuckDutyCycle
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BuckDutyCycle
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_BoostDutyCycle_System_Double_System_Double_
+  name: BoostDutyCycle
+  nameWithType: SMPSCalculator.BoostDutyCycle
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BoostDutyCycle
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_BuckBoostDutyCycle_System_Double_System_Double_
+  name: BuckBoostDutyCycle
+  nameWithType: SMPSCalculator.BuckBoostDutyCycle
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.BuckBoostDutyCycle
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_MinimumInductanceBuck_System_Double_System_Double_System_Double_System_Double_
+  name: MinimumInductanceBuck
+  nameWithType: SMPSCalculator.MinimumInductanceBuck
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.MinimumInductanceBuck
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_OutputCapacitance_System_Double_System_Double_System_Double_
+  name: OutputCapacitance
+  nameWithType: SMPSCalculator.OutputCapacitance
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.OutputCapacitance
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_OutputRipple_System_Double_System_Double_System_Double_
+  name: OutputRipple
+  nameWithType: SMPSCalculator.OutputRipple
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.OutputRipple
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_SwitchingLoss_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: SwitchingLoss
+  nameWithType: SMPSCalculator.SwitchingLoss
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.SwitchingLoss
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_ConductionLoss_System_Double_System_Double_System_Double_
+  name: ConductionLoss
+  nameWithType: SMPSCalculator.ConductionLoss
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.ConductionLoss
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_FlybackTurnsRatio_System_Double_System_Double_System_Double_System_Double_
+  name: FlybackTurnsRatio
+  nameWithType: SMPSCalculator.FlybackTurnsRatio
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.FlybackTurnsRatio
+- uid: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance*
+  commentId: Overload:CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html#CircuitTool_PowerElectronics_SMPSCalculator_FlybackMagnetizingInductance_System_Double_System_Double_System_Double_System_Double_
+  name: FlybackMagnetizingInductance
+  nameWithType: SMPSCalculator.FlybackMagnetizingInductance
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator.FlybackMagnetizingInductance

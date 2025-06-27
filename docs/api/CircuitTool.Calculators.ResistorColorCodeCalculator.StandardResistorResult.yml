@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  id: ResistorColorCodeCalculator.StandardResistorResult
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  langs:
+  - csharp
+  - vb
+  name: ResistorColorCodeCalculator.StandardResistorResult
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StandardResistorResult
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 247
+  namespace: CircuitTool.Calculators
+  summary: Get nearest standard resistor value (E12, E24, E96 series)
+  example: []
+  syntax:
+    content: public class ResistorColorCodeCalculator.StandardResistorResult
+    content.vb: Public Class ResistorColorCodeCalculator.StandardResistorResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  commentId: P:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  id: StandardValue
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  langs:
+  - csharp
+  - vb
+  name: StandardValue
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StandardValue
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 249
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double StandardValue { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property StandardValue As Double
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+  commentId: P:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+  id: Error
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.Error
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Error
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 250
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double Error { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property [Error] As Double
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  commentId: P:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  id: ErrorPercent
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorPercent
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ErrorPercent
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 251
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public double ErrorPercent { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ErrorPercent As Double
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+  commentId: P:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+  id: Series
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.Series
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Series
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 252
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public string Series { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Series As String
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series*
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  commentId: P:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  id: ColorCode
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  langs:
+  - csharp
+  - vb
+  name: ColorCode
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  type: Property
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ColorCode
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 253
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public List<ResistorColorCodeCalculator.ResistorColor> ColorCode { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+    content.vb: Public Property ColorCode As List(Of ResistorColorCodeCalculator.ResistorColor)
+  overload: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode*
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html#CircuitTool_Calculators_ResistorColorCodeCalculator_StandardResistorResult_StandardValue
+  name: StandardValue
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.StandardValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html#CircuitTool_Calculators_ResistorColorCodeCalculator_StandardResistorResult_Error
+  name: Error
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.Error
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Error
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html#CircuitTool_Calculators_ResistorColorCodeCalculator_StandardResistorResult_ErrorPercent
+  name: ErrorPercent
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ErrorPercent
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html#CircuitTool_Calculators_ResistorColorCodeCalculator_StandardResistorResult_Series
+  name: Series
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.Series
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.Series
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode*
+  commentId: Overload:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html#CircuitTool_Calculators_ResistorColorCodeCalculator_StandardResistorResult_ColorCode
+  name: ColorCode
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.ColorCode
+- uid: System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+  commentId: T:System.Collections.Generic.List{CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ResistorColorCodeCalculator.ResistorColor>
+  nameWithType: List<ResistorColorCodeCalculator.ResistorColor>
+  fullName: System.Collections.Generic.List<CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor>
+  nameWithType.vb: List(Of ResistorColorCodeCalculator.ResistorColor)
+  fullName.vb: System.Collections.Generic.List(Of CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor)
+  name.vb: List(Of ResistorColorCodeCalculator.ResistorColor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

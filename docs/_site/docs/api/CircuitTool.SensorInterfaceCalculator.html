@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class SensorInterfaceCalculator | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class SensorInterfaceCalculator | CircuitTool Documentation ">
-    
-    <meta name="description" content="Provides calculations and utilities for sensor interfacing and signal conditioning">
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>Class SensorInterfaceCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SensorInterfaceCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations and utilities for sensor interfacing and signal conditioning">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CircuitTool.SensorInterfaceCalculator">
+
+        <article data-uid="CircuitTool.SensorInterfaceCalculator">
 
 
 
-  <h1 id="CircuitTool_SensorInterfaceCalculator" data-uid="CircuitTool.SensorInterfaceCalculator" class="text-break">Class SensorInterfaceCalculator</h1>
-  <div class="markdown level0 summary"><p>Provides calculations and utilities for sensor interfacing and signal conditioning</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">SensorInterfaceCalculator</span></div>
+  <h1 id="CircuitTool_SensorInterfaceCalculator" data-uid="CircuitTool.SensorInterfaceCalculator" class="text-break">
+Class SensorInterfaceCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+  <div class="markdown summary"><p>Provides calculations and utilities for sensor interfacing and signal conditioning</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SensorInterfaceCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SensorInterfaceCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -112,632 +142,454 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CircuitTool.html">CircuitTool</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="CircuitTool_SensorInterfaceCalculator_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SensorInterfaceCalculator</code></pre>
-  </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_CalculateADCResolution_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L143">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_CalculateADCResolution_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateADCResolution*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_CalculateADCResolution_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double,System.Double,System.Double)">CalculateADCResolution(double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_CalculateADCResolution_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateADCResolution(System.Double,System.Double,System.Double)">
+  CalculateADCResolution(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates ADC resolution requirements for sensor measurement</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static int CalculateADCResolution(double sensorRange, double requiredAccuracy, double noiseBits = 2)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sensorRange</span></td>
-        <td><p>Full-scale sensor output range</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">requiredAccuracy</span></td>
-        <td><p>Required measurement accuracy</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">noiseBits</span></td>
-        <td><p>Effective noise in LSBs (typically 1-3)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>Required ADC resolution in bits</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_CalculateAmplifierGain_System_Double_System_Double_System_Double_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L84">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sensorRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Full-scale sensor output range</p>
+</dd>
+    <dt><code>requiredAccuracy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required measurement accuracy</p>
+</dd>
+    <dt><code>noiseBits</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Effective noise in LSBs (typically 1-3)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Required ADC resolution in bits</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_CalculateAmplifierGain_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_CalculateAmplifierGain_System_Double_System_Double_System_Double_System_Int32_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)">CalculateAmplifierGain(double, double, double, int, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_CalculateAmplifierGain_System_Double_System_Double_System_Double_System_Int32_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateAmplifierGain(System.Double,System.Double,System.Double,System.Int32,System.Double)">
+  CalculateAmplifierGain(double, double, double, int, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates amplifier gain for sensor signal conditioning</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double CalculateAmplifierGain(double sensorSignalMin, double sensorSignalMax, double adcReferenceVoltage, int adcResolution, double utilizationFactor = 0.8)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sensorSignalMin</span></td>
-        <td><p>Minimum sensor signal voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sensorSignalMax</span></td>
-        <td><p>Maximum sensor signal voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">adcReferenceVoltage</span></td>
-        <td><p>ADC reference voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">adcResolution</span></td>
-        <td><p>ADC resolution in bits</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">utilizationFactor</span></td>
-        <td><p>Desired ADC range utilization (0-1)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Required amplifier gain</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_CalculateLinearCalibration_System_Double___System_Double___.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L156">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sensorSignalMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum sensor signal voltage</p>
+</dd>
+    <dt><code>sensorSignalMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum sensor signal voltage</p>
+</dd>
+    <dt><code>adcReferenceVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>ADC reference voltage</p>
+</dd>
+    <dt><code>adcResolution</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ADC resolution in bits</p>
+</dd>
+    <dt><code>utilizationFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Desired ADC range utilization (0-1)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required amplifier gain</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_CalculateLinearCalibration_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_CalculateLinearCalibration_System_Double___System_Double___" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double[],System.Double[])">CalculateLinearCalibration(double[], double[])</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_CalculateLinearCalibration_System_Double___System_Double___" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateLinearCalibration(System.Double[],System.Double[])">
+  CalculateLinearCalibration(double[], double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates sensor calibration coefficients (linear)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static (double slope, double offset) CalculateLinearCalibration(double[] rawValues, double[] referenceValues)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">rawValues</span></td>
-        <td><p>Array of raw sensor readings</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</td>
-        <td><span class="parametername">referenceValues</span></td>
-        <td><p>Array of reference values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</td>
-        <td><p>Calibration slope and offset</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_CalculateResistiveSensorDivider_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L35">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rawValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Array of raw sensor readings</p>
+</dd>
+    <dt><code>referenceValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Array of reference values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</dt>
+    <dd><p>Calibration slope and offset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_CalculateResistiveSensorDivider_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_CalculateResistiveSensorDivider_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)">CalculateResistiveSensorDivider(double, double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_CalculateResistiveSensorDivider_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateResistiveSensorDivider(System.Double,System.Double,System.Double,System.Double)">
+  CalculateResistiveSensorDivider(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates voltage divider for resistive sensor conditioning</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static (double referenceResistor, double biasVoltage) CalculateResistiveSensorDivider(double sensorResistanceMin, double sensorResistanceMax, double supplyVoltage, double targetVoltageRange = 2.5)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sensorResistanceMin</span></td>
-        <td><p>Minimum sensor resistance</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">sensorResistanceMax</span></td>
-        <td><p>Maximum sensor resistance</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">supplyVoltage</span></td>
-        <td><p>Supply voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">targetVoltageRange</span></td>
-        <td><p>Desired output voltage range</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</td>
-        <td><p>Reference resistor value and bias voltage</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_CalculateSensorFilter_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L99">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sensorResistanceMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum sensor resistance</p>
+</dd>
+    <dt><code>sensorResistanceMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum sensor resistance</p>
+</dd>
+    <dt><code>supplyVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Supply voltage</p>
+</dd>
+    <dt><code>targetVoltageRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Desired output voltage range</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</dt>
+    <dd><p>Reference resistor value and bias voltage</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_CalculateSensorFilter_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_CalculateSensorFilter_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double,System.Double,System.Double)">CalculateSensorFilter(double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_CalculateSensorFilter_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.CalculateSensorFilter(System.Double,System.Double,System.Double)">
+  CalculateSensorFilter(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates low-pass filter for sensor noise reduction</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static (double resistance, double capacitance) CalculateSensorFilter(double signalFrequency, double noiseFrequency, double attenuationDb = 40)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">signalFrequency</span></td>
-        <td><p>Maximum signal frequency of interest</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">noiseFrequency</span></td>
-        <td><p>Noise frequency to attenuate</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">attenuationDb</span></td>
-        <td><p>Desired attenuation in dB</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</td>
-        <td><p>Filter resistance and capacitance values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_GenerateSensorCode_CircuitTool_SensorInterfaceCalculator_SensorType_System_String_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L184">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signalFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum signal frequency of interest</p>
+</dd>
+    <dt><code>noiseFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Noise frequency to attenuate</p>
+</dd>
+    <dt><code>attenuationDb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Desired attenuation in dB</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor">referenceResistor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage">biasVoltage</a>)</dt>
+    <dd><p>Filter resistance and capacitance values</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_GenerateSensorCode_" data-uid="CircuitTool.SensorInterfaceCalculator.GenerateSensorCode*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_GenerateSensorCode_CircuitTool_SensorInterfaceCalculator_SensorType_System_String_" data-uid="CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)">GenerateSensorCode(SensorType, string)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_GenerateSensorCode_CircuitTool_SensorInterfaceCalculator_SensorType_System_String_" data-uid="CircuitTool.SensorInterfaceCalculator.GenerateSensorCode(CircuitTool.SensorInterfaceCalculator.SensorType,System.String)">
+  GenerateSensorCode(SensorType, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Generates sensor interface code template</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string GenerateSensorCode(SensorInterfaceCalculator.SensorType sensorType, string interface_ = &quot;Analog&quot;)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CircuitTool.SensorInterfaceCalculator.html">SensorInterfaceCalculator</a>.<a class="xref" href="CircuitTool.SensorInterfaceCalculator.SensorType.html">SensorType</a></td>
-        <td><span class="parametername">sensorType</span></td>
-        <td><p>Type of sensor</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">interface_</span></td>
-        <td><p>Interface type (Analog, I2C, SPI)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>Code template</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_RTDTemperature_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L70">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sensorType</code> <a class="xref" href="CircuitTool.SensorInterfaceCalculator.html">SensorInterfaceCalculator</a>.<a class="xref" href="CircuitTool.SensorInterfaceCalculator.SensorType.html">SensorType</a></dt>
+    <dd><p>Type of sensor</p>
+</dd>
+    <dt><code>interface_</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Interface type (Analog, I2C, SPI)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Code template</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_RTDTemperature_" data-uid="CircuitTool.SensorInterfaceCalculator.RTDTemperature*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_RTDTemperature_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double,System.Double,System.Double)">RTDTemperature(double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_RTDTemperature_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.RTDTemperature(System.Double,System.Double,System.Double)">
+  RTDTemperature(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates RTD temperature from resistance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double RTDTemperature(double resistance, double r0 = 100, double alpha = 0.00385)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">resistance</span></td>
-        <td><p>RTD resistance in ohms</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">r0</span></td>
-        <td><p>RTD resistance at 0°C (typically 100Ω for PT100)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">alpha</span></td>
-        <td><p>Temperature coefficient (0.00385 for PT100)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Temperature in Celsius</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_StrainGaugeBridgeOutput_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L128">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>RTD resistance in ohms</p>
+</dd>
+    <dt><code>r0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>RTD resistance at 0°C (typically 100Ω for PT100)</p>
+</dd>
+    <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Temperature coefficient (0.00385 for PT100)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Temperature in Celsius</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_StrainGaugeBridgeOutput_" data-uid="CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_StrainGaugeBridgeOutput_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)">StrainGaugeBridgeOutput(double, double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_StrainGaugeBridgeOutput_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.StrainGaugeBridgeOutput(System.Double,System.Double,System.Double,System.Double)">
+  StrainGaugeBridgeOutput(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates Wheatstone bridge output for strain gauge</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double StrainGaugeBridgeOutput(double strain, double gaugeFactor = 2, double bridgeVoltage = 5, double nominalResistance = 350)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">strain</span></td>
-        <td><p>Applied strain (µε)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">gaugeFactor</span></td>
-        <td><p>Strain gauge factor (typically 2.0)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">bridgeVoltage</span></td>
-        <td><p>Bridge excitation voltage</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">nominalResistance</span></td>
-        <td><p>Gauge nominal resistance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Bridge output voltage</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator_ThermistorTemperature_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L56">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Applied strain (µε)</p>
+</dd>
+    <dt><code>gaugeFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Strain gauge factor (typically 2.0)</p>
+</dd>
+    <dt><code>bridgeVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Bridge excitation voltage</p>
+</dd>
+    <dt><code>nominalResistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gauge nominal resistance</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Bridge output voltage</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="CircuitTool_SensorInterfaceCalculator_ThermistorTemperature_" data-uid="CircuitTool.SensorInterfaceCalculator.ThermistorTemperature*"></a>
-  <h4 id="CircuitTool_SensorInterfaceCalculator_ThermistorTemperature_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)">ThermistorTemperature(double, double, double, double)</h4>
+
+  <h3 id="CircuitTool_SensorInterfaceCalculator_ThermistorTemperature_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.SensorInterfaceCalculator.ThermistorTemperature(System.Double,System.Double,System.Double,System.Double)">
+  ThermistorTemperature(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Calculates thermistor temperature from resistance using Steinhart-Hart equation</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static double ThermistorTemperature(double resistance, double a = 0.001009249522, double b = 0.0002378405444, double c = 2.019202697E-07)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">resistance</span></td>
-        <td><p>Thermistor resistance in ohms</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>Steinhart-Hart coefficient A</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>Steinhart-Hart coefficient B</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>Steinhart-Hart coefficient C</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>Temperature in Celsius</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Thermistor resistance in ohms</p>
+</dd>
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Steinhart-Hart coefficient A</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Steinhart-Hart coefficient B</p>
+</dd>
+    <dt><code>c</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Steinhart-Hart coefficient C</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Temperature in Celsius</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_SensorInterfaceCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.SensorInterfaceCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L10" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/SensorInterfaceCalculator.cs/#L10" class="edit-link">Edit this page</a>
         </div>
+
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -28,6 +28,18 @@ items:
   - uid: CircuitTool.CapacitorCalculator
     name: CapacitorCalculator
     type: Class
+  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    name: CapacitorCalculator.CapacitorBankResult
+    type: Class
+  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    name: CapacitorCalculator.CapacitorChargeEnergyResult
+    type: Class
+  - uid: CircuitTool.CapacitorCalculator.CapacitorInBank
+    name: CapacitorCalculator.CapacitorInBank
+    type: Class
+  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    name: CapacitorCalculator.RippleCurrentResult
+    type: Class
   - uid: CircuitTool.CircuitCalculations
     name: CircuitCalculations
     type: Class
@@ -64,6 +76,9 @@ items:
   - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
     name: CommunicationProtocolTools.UARTConfig
     type: Class
+  - uid: CircuitTool.DigitalCalculator
+    name: DigitalCalculator
+    type: Class
   - uid: CircuitTool.DocumentationExamples
     name: DocumentationExamples
     type: Class
@@ -81,6 +96,9 @@ items:
     type: Class
   - uid: CircuitTool.EMCCalculator
     name: EMCCalculator
+    type: Class
+  - uid: CircuitTool.EMICalculator
+    name: EMICalculator
     type: Class
   - uid: CircuitTool.ESP32Tools
     name: ESP32Tools
@@ -121,14 +139,38 @@ items:
   - uid: CircuitTool.LEDCalculator
     name: LEDCalculator
     type: Class
+  - uid: CircuitTool.LEDCalculator.CommonLEDs
+    name: LEDCalculator.CommonLEDs
+    type: Class
+  - uid: CircuitTool.LEDCalculator.LEDArrayResult
+    name: LEDCalculator.LEDArrayResult
+    type: Class
+  - uid: CircuitTool.LEDCalculator.LEDSpec
+    name: LEDCalculator.LEDSpec
+    type: Class
+  - uid: CircuitTool.LEDCalculator.LEDStripResult
+    name: LEDCalculator.LEDStripResult
+    type: Class
+  - uid: CircuitTool.LEDCalculator.LEDThermalResult
+    name: LEDCalculator.LEDThermalResult
+    type: Class
   - uid: CircuitTool.MotorControlCalculator
     name: MotorControlCalculator
     type: Class
   - uid: CircuitTool.MotorControlCalculator.MotorType
     name: MotorControlCalculator.MotorType
     type: Enum
+  - uid: CircuitTool.NoiseCalculator
+    name: NoiseCalculator
+    type: Class
   - uid: CircuitTool.OhmsLawCalculator
     name: OhmsLawCalculator
+    type: Class
+  - uid: CircuitTool.OpAmpCalculator
+    name: OpAmpCalculator
+    type: Class
+  - uid: CircuitTool.OptoelectronicsCalculator
+    name: OptoelectronicsCalculator
     type: Class
   - uid: CircuitTool.PCBDesignCalculator
     name: PCBDesignCalculator
@@ -151,6 +193,9 @@ items:
   - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
     name: PowerSupplyCalculator.PSUTopology
     type: Enum
+  - uid: CircuitTool.RFCalculator
+    name: RFCalculator
+    type: Class
   - uid: CircuitTool.RaspberryPiModel
     name: RaspberryPiModel
     type: Enum
@@ -166,6 +211,27 @@ items:
   - uid: CircuitTool.ResistorCalculator
     name: ResistorCalculator
     type: Class
+  - uid: CircuitTool.ResistorCalculator.ResistorAnalysis
+    name: ResistorCalculator.ResistorAnalysis
+    type: Class
+  - uid: CircuitTool.ResistorCalculator.ResistorCombinationResult
+    name: ResistorCalculator.ResistorCombinationResult
+    type: Class
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork
+    name: ResistorCalculator.ResistorNetwork
+    type: Class
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType
+    name: ResistorCalculator.ResistorNetwork.ConnectionType
+    type: Enum
+  - uid: CircuitTool.ResistorCalculator.ResistorNetwork.ResistorGroup
+    name: ResistorCalculator.ResistorNetwork.ResistorGroup
+    type: Class
+  - uid: CircuitTool.ResistorCalculator.ResistorNetworkResult
+    name: ResistorCalculator.ResistorNetworkResult
+    type: Class
+  - uid: CircuitTool.ResistorCalculator.VoltageDividerResult
+    name: ResistorCalculator.VoltageDividerResult
+    type: Class
   - uid: CircuitTool.SensorInterfaceCalculator
     name: SensorInterfaceCalculator
     type: Class
@@ -175,11 +241,17 @@ items:
   - uid: CircuitTool.SignalIntegrityCalculator
     name: SignalIntegrityCalculator
     type: Class
+  - uid: CircuitTool.SignalProcessingCalculator
+    name: SignalProcessingCalculator
+    type: Class
   - uid: CircuitTool.ThermalCalculator
     name: ThermalCalculator
     type: Class
   - uid: CircuitTool.TransformerCalculator
     name: TransformerCalculator
+    type: Class
+  - uid: CircuitTool.TransmissionLineCalculator
+    name: TransmissionLineCalculator
     type: Class
   - uid: CircuitTool.UnitConverter
     name: UnitConverter
@@ -210,6 +282,12 @@ items:
     type: Class
   - uid: CircuitTool.WiFiMode
     name: WiFiMode
+    type: Enum
+  - uid: CircuitTool.WirelessCalculator
+    name: WirelessCalculator
+    type: Class
+  - uid: CircuitTool.WirelessCalculator.ModulationType
+    name: WirelessCalculator.ModulationType
     type: Enum
 - uid: CircuitTool.Analysis
   name: CircuitTool.Analysis
@@ -265,8 +343,110 @@ items:
   name: CircuitTool.Calculators
   type: Namespace
   items:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    name: CapacitanceUnitConverter.CapacitanceConversionResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    name: CapacitanceUnitConverter.CapacitanceUnit
+    type: Enum
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    name: CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    name: CapacitanceUnitConverter.ChargingTimeResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    name: CapacitanceUnitConverter.ESRAnalysisResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator
+    name: CapacitorCodeCalculator
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult
+    name: CapacitorCodeCalculator.CapacitorCodeResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType
+    name: CapacitorCodeCalculator.CapacitorCodeType
+    type: Enum
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult
+    name: CapacitorCodeCalculator.CapacitorEncodingResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult
+    name: CapacitorCodeCalculator.CapacitorImpedanceResult
+    type: Class
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode
+    name: CapacitorCodeCalculator.TempCoeffCode
+    type: Enum
+  - uid: CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode
+    name: CapacitorCodeCalculator.VoltageCode
+    type: Enum
   - uid: CircuitTool.Calculators.ComponentCalculator
     name: ComponentCalculator
+    type: Class
+  - uid: CircuitTool.Calculators.ModbusAddressFormat
+    name: ModbusAddressFormat
+    type: Enum
+  - uid: CircuitTool.Calculators.ModbusCommunicationCalculator
+    name: ModbusCommunicationCalculator
+    type: Class
+  - uid: CircuitTool.Calculators.ModbusDataType
+    name: ModbusDataType
+    type: Enum
+  - uid: CircuitTool.Calculators.ModbusDevice
+    name: ModbusDevice
+    type: Class
+  - uid: CircuitTool.Calculators.ModbusNetworkAnalysis
+    name: ModbusNetworkAnalysis
+    type: Class
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    type: Class
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    name: ResistorColorCodeCalculator.PowerRatingResult
+    type: Class
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColorCodeCalculator.ResistorColor
+    type: Enum
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    name: ResistorColorCodeCalculator.ResistorColorResult
+    type: Class
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    name: ResistorColorCodeCalculator.StandardResistorResult
+    type: Class
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+    name: ResistorColorCodeCalculator.TempCoeffColor
+    type: Enum
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+    name: ResistorColorCodeCalculator.ToleranceColor
+    type: Enum
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    type: Class
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+    name: UARTCommunicationCalculator.FlowControlType
+    type: Enum
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.ParityType
+    name: UARTCommunicationCalculator.ParityType
+    type: Enum
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+    name: UARTCommunicationCalculator.StopBitsType
+    type: Enum
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis
+    name: UARTCommunicationCalculator.UARTBufferAnalysis
+    type: Class
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis
+    name: UARTCommunicationCalculator.UARTCableAnalysis
+    type: Class
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig
+    name: UARTCommunicationCalculator.UARTConfig
+    type: Class
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis
+    name: UARTCommunicationCalculator.UARTErrorAnalysis
+    type: Class
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult
+    name: UARTCommunicationCalculator.UARTTimingResult
     type: Class
 - uid: CircuitTool.CircuitBuilder
   name: CircuitTool.CircuitBuilder
@@ -301,6 +481,13 @@ items:
     type: Class
   - uid: CircuitTool.CircuitBuilder.Resistor
     name: Resistor
+    type: Class
+- uid: CircuitTool.Electromagnetics
+  name: CircuitTool.Electromagnetics
+  type: Namespace
+  items:
+  - uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator
+    name: ElectromagneticsCalculator
     type: Class
 - uid: CircuitTool.Mathematics
   name: CircuitTool.Mathematics
@@ -356,6 +543,16 @@ items:
   - uid: CircuitTool.PowerAnalysis.ThreePhasePower
     name: ThreePhasePower
     type: Struct
+- uid: CircuitTool.PowerElectronics
+  name: CircuitTool.PowerElectronics
+  type: Namespace
+  items:
+  - uid: CircuitTool.PowerElectronics.MotorDriveCalculator
+    name: MotorDriveCalculator
+    type: Class
+  - uid: CircuitTool.PowerElectronics.SMPSCalculator
+    name: SMPSCalculator
+    type: Class
 - uid: CircuitTool.Serialization
   name: CircuitTool.Serialization
   type: Namespace

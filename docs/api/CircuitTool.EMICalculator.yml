@@ -1,0 +1,847 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.EMICalculator
+  commentId: T:CircuitTool.EMICalculator
+  id: EMICalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.EMICalculator.CommonModeChokeImpedance(System.Double,System.Double)
+  - CircuitTool.EMICalculator.Crosstalk(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.DifferentialModeFilterAttenuation(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.EvanescentModeAttenuation(System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.FerriteBeadImpedance(System.Double,System.Double)
+  - CircuitTool.EMICalculator.NearFieldStrength(System.Double,System.Double)
+  - CircuitTool.EMICalculator.RadiatedEmissions(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.RequiredApertureSize(System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.ShieldingEffectiveness(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.SkinDepth(System.Double,System.Double,System.Double)
+  - CircuitTool.EMICalculator.WaveguideCutoff(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: EMICalculator
+  nameWithType: EMICalculator
+  fullName: CircuitTool.EMICalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMICalculator
+    path: src/Calculators/EMICalculator.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Provides calculations for Electromagnetic Interference (EMI) and Electromagnetic Compatibility (EMC) analysis.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double field = EMICalculator.NearFieldStrength(1.0, 0.1); // Near field strength
+
+    double shielding = EMICalculator.ShieldingEffectiveness(0.001, 1e6, 100); // SE calculation
+
+    double cutoff = EMICalculator.WaveguideCutoff(0.02, 0.01); // Waveguide cutoff frequency</code></pre>
+  example: []
+  syntax:
+    content: public static class EMICalculator
+    content.vb: Public Module EMICalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.EMICalculator.NearFieldStrength(System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.NearFieldStrength(System.Double,System.Double)
+  id: NearFieldStrength(System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: NearFieldStrength(double, double)
+  nameWithType: EMICalculator.NearFieldStrength(double, double)
+  fullName: CircuitTool.EMICalculator.NearFieldStrength(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NearFieldStrength
+    path: src/Calculators/EMICalculator.cs
+    startLine: 30
+  namespace: CircuitTool
+  summary: Calculates near-field electric field strength from current.
+  example:
+  - double field = EMICalculator.NearFieldStrength(1.0, 0.1); // Near field strength
+  syntax:
+    content: public static double NearFieldStrength(double current, double distance)
+    parameters:
+    - id: current
+      type: System.Double
+      description: Current in amperes (A).
+    - id: distance
+      type: System.Double
+      description: Distance from source in meters (m).
+    return:
+      type: System.Double
+      description: Electric field strength in V/m.
+    content.vb: Public Shared Function NearFieldStrength(current As Double, distance As Double) As Double
+  overload: CircuitTool.EMICalculator.NearFieldStrength*
+  nameWithType.vb: EMICalculator.NearFieldStrength(Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.NearFieldStrength(Double, Double)
+  name.vb: NearFieldStrength(Double, Double)
+- uid: CircuitTool.EMICalculator.ShieldingEffectiveness(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.ShieldingEffectiveness(System.Double,System.Double,System.Double,System.Double)
+  id: ShieldingEffectiveness(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: ShieldingEffectiveness(double, double, double, double)
+  nameWithType: EMICalculator.ShieldingEffectiveness(double, double, double, double)
+  fullName: CircuitTool.EMICalculator.ShieldingEffectiveness(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ShieldingEffectiveness
+    path: src/Calculators/EMICalculator.cs
+    startLine: 49
+  namespace: CircuitTool
+  summary: Calculates shielding effectiveness of a metallic enclosure.
+  example:
+  - double shielding = EMICalculator.ShieldingEffectiveness(0.001, 1e6, 100); // SE calculation
+  syntax:
+    content: public static double ShieldingEffectiveness(double thickness, double frequency, double conductivity = 59600000, double relativePermeability = 1)
+    parameters:
+    - id: thickness
+      type: System.Double
+      description: Shield thickness in meters.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: conductivity
+      type: System.Double
+      description: 'Conductivity in S/m (default: copper).'
+    - id: relativePermeability
+      type: System.Double
+      description: 'Relative permeability (default: 1).'
+    return:
+      type: System.Double
+      description: Shielding effectiveness in dB.
+    content.vb: Public Shared Function ShieldingEffectiveness(thickness As Double, frequency As Double, conductivity As Double = 59600000, relativePermeability As Double = 1) As Double
+  overload: CircuitTool.EMICalculator.ShieldingEffectiveness*
+  nameWithType.vb: EMICalculator.ShieldingEffectiveness(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.ShieldingEffectiveness(Double, Double, Double, Double)
+  name.vb: ShieldingEffectiveness(Double, Double, Double, Double)
+- uid: CircuitTool.EMICalculator.SkinDepth(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.SkinDepth(System.Double,System.Double,System.Double)
+  id: SkinDepth(System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: SkinDepth(double, double, double)
+  nameWithType: EMICalculator.SkinDepth(double, double, double)
+  fullName: CircuitTool.EMICalculator.SkinDepth(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SkinDepth
+    path: src/Calculators/EMICalculator.cs
+    startLine: 74
+  namespace: CircuitTool
+  summary: Calculates skin depth in a conductor.
+  example: []
+  syntax:
+    content: public static double SkinDepth(double frequency, double conductivity = 59600000, double relativePermeability = 1)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: conductivity
+      type: System.Double
+      description: 'Conductivity in S/m (default: copper).'
+    - id: relativePermeability
+      type: System.Double
+      description: 'Relative permeability (default: 1).'
+    return:
+      type: System.Double
+      description: Skin depth in meters.
+    content.vb: Public Shared Function SkinDepth(frequency As Double, conductivity As Double = 59600000, relativePermeability As Double = 1) As Double
+  overload: CircuitTool.EMICalculator.SkinDepth*
+  nameWithType.vb: EMICalculator.SkinDepth(Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.SkinDepth(Double, Double, Double)
+  name.vb: SkinDepth(Double, Double, Double)
+- uid: CircuitTool.EMICalculator.Crosstalk(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.Crosstalk(System.Double,System.Double,System.Double,System.Double)
+  id: Crosstalk(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: Crosstalk(double, double, double, double)
+  nameWithType: EMICalculator.Crosstalk(double, double, double, double)
+  fullName: CircuitTool.EMICalculator.Crosstalk(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Crosstalk
+    path: src/Calculators/EMICalculator.cs
+    startLine: 90
+  namespace: CircuitTool
+  summary: Calculates crosstalk between parallel traces.
+  example: []
+  syntax:
+    content: public static double Crosstalk(double length, double spacing, double height, double frequency)
+    parameters:
+    - id: length
+      type: System.Double
+      description: Trace length in meters.
+    - id: spacing
+      type: System.Double
+      description: Trace spacing in meters.
+    - id: height
+      type: System.Double
+      description: Height above ground plane in meters.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    return:
+      type: System.Double
+      description: Crosstalk in dB.
+    content.vb: Public Shared Function Crosstalk(length As Double, spacing As Double, height As Double, frequency As Double) As Double
+  overload: CircuitTool.EMICalculator.Crosstalk*
+  nameWithType.vb: EMICalculator.Crosstalk(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.Crosstalk(Double, Double, Double, Double)
+  name.vb: Crosstalk(Double, Double, Double, Double)
+- uid: CircuitTool.EMICalculator.WaveguideCutoff(System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.WaveguideCutoff(System.Double,System.Double)
+  id: WaveguideCutoff(System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: WaveguideCutoff(double, double)
+  nameWithType: EMICalculator.WaveguideCutoff(double, double)
+  fullName: CircuitTool.EMICalculator.WaveguideCutoff(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WaveguideCutoff
+    path: src/Calculators/EMICalculator.cs
+    startLine: 117
+  namespace: CircuitTool
+  summary: Calculates waveguide cutoff frequency for rectangular apertures.
+  example:
+  - double cutoff = EMICalculator.WaveguideCutoff(0.02, 0.01); // Waveguide cutoff frequency
+  syntax:
+    content: public static double WaveguideCutoff(double width, double height)
+    parameters:
+    - id: width
+      type: System.Double
+      description: Aperture width in meters.
+    - id: height
+      type: System.Double
+      description: Aperture height in meters.
+    return:
+      type: System.Double
+      description: Cutoff frequency in Hz.
+    content.vb: Public Shared Function WaveguideCutoff(width As Double, height As Double) As Double
+  overload: CircuitTool.EMICalculator.WaveguideCutoff*
+  nameWithType.vb: EMICalculator.WaveguideCutoff(Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.WaveguideCutoff(Double, Double)
+  name.vb: WaveguideCutoff(Double, Double)
+- uid: CircuitTool.EMICalculator.EvanescentModeAttenuation(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.EvanescentModeAttenuation(System.Double,System.Double,System.Double)
+  id: EvanescentModeAttenuation(System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: EvanescentModeAttenuation(double, double, double)
+  nameWithType: EMICalculator.EvanescentModeAttenuation(double, double, double)
+  fullName: CircuitTool.EMICalculator.EvanescentModeAttenuation(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EvanescentModeAttenuation
+    path: src/Calculators/EMICalculator.cs
+    startLine: 133
+  namespace: CircuitTool
+  summary: Calculates attenuation below cutoff frequency (evanescent mode).
+  example: []
+  syntax:
+    content: public static double EvanescentModeAttenuation(double frequency, double cutoffFrequency, double length)
+    parameters:
+    - id: frequency
+      type: System.Double
+      description: Operating frequency in Hz.
+    - id: cutoffFrequency
+      type: System.Double
+      description: Cutoff frequency in Hz.
+    - id: length
+      type: System.Double
+      description: Aperture depth in meters.
+    return:
+      type: System.Double
+      description: Attenuation in dB.
+    content.vb: Public Shared Function EvanescentModeAttenuation(frequency As Double, cutoffFrequency As Double, length As Double) As Double
+  overload: CircuitTool.EMICalculator.EvanescentModeAttenuation*
+  nameWithType.vb: EMICalculator.EvanescentModeAttenuation(Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.EvanescentModeAttenuation(Double, Double, Double)
+  name.vb: EvanescentModeAttenuation(Double, Double, Double)
+- uid: CircuitTool.EMICalculator.RequiredApertureSize(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.RequiredApertureSize(System.Double,System.Double,System.Double)
+  id: RequiredApertureSize(System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: RequiredApertureSize(double, double, double)
+  nameWithType: EMICalculator.RequiredApertureSize(double, double, double)
+  fullName: CircuitTool.EMICalculator.RequiredApertureSize(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RequiredApertureSize
+    path: src/Calculators/EMICalculator.cs
+    startLine: 153
+  namespace: CircuitTool
+  summary: Calculates required aperture size for given shielding effectiveness.
+  example: []
+  syntax:
+    content: public static double RequiredApertureSize(double targetSE, double frequency, double depth)
+    parameters:
+    - id: targetSE
+      type: System.Double
+      description: Target shielding effectiveness in dB.
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: depth
+      type: System.Double
+      description: Aperture depth in meters.
+    return:
+      type: System.Double
+      description: Maximum aperture dimension in meters.
+    content.vb: Public Shared Function RequiredApertureSize(targetSE As Double, frequency As Double, depth As Double) As Double
+  overload: CircuitTool.EMICalculator.RequiredApertureSize*
+  nameWithType.vb: EMICalculator.RequiredApertureSize(Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.RequiredApertureSize(Double, Double, Double)
+  name.vb: RequiredApertureSize(Double, Double, Double)
+- uid: CircuitTool.EMICalculator.RadiatedEmissions(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.RadiatedEmissions(System.Double,System.Double,System.Double,System.Double)
+  id: RadiatedEmissions(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: RadiatedEmissions(double, double, double, double)
+  nameWithType: EMICalculator.RadiatedEmissions(double, double, double, double)
+  fullName: CircuitTool.EMICalculator.RadiatedEmissions(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RadiatedEmissions
+    path: src/Calculators/EMICalculator.cs
+    startLine: 187
+  namespace: CircuitTool
+  summary: Calculates radiated emissions from a current loop.
+  example: []
+  syntax:
+    content: public static double RadiatedEmissions(double current, double loopArea, double frequency, double distance)
+    parameters:
+    - id: current
+      type: System.Double
+      description: Current in amperes (A).
+    - id: loopArea
+      type: System.Double
+      description: Loop area in square meters (m²).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: distance
+      type: System.Double
+      description: Distance from loop in meters (m).
+    return:
+      type: System.Double
+      description: Electric field strength in V/m.
+    content.vb: Public Shared Function RadiatedEmissions(current As Double, loopArea As Double, frequency As Double, distance As Double) As Double
+  overload: CircuitTool.EMICalculator.RadiatedEmissions*
+  nameWithType.vb: EMICalculator.RadiatedEmissions(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.RadiatedEmissions(Double, Double, Double, Double)
+  name.vb: RadiatedEmissions(Double, Double, Double, Double)
+- uid: CircuitTool.EMICalculator.CommonModeChokeImpedance(System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.CommonModeChokeImpedance(System.Double,System.Double)
+  id: CommonModeChokeImpedance(System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: CommonModeChokeImpedance(double, double)
+  nameWithType: EMICalculator.CommonModeChokeImpedance(double, double)
+  fullName: CircuitTool.EMICalculator.CommonModeChokeImpedance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CommonModeChokeImpedance
+    path: src/Calculators/EMICalculator.cs
+    startLine: 212
+  namespace: CircuitTool
+  summary: Calculates common mode choke impedance.
+  example: []
+  syntax:
+    content: public static double CommonModeChokeImpedance(double inductance, double frequency)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Choke inductance in henries (H).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    return:
+      type: System.Double
+      description: Impedance magnitude in ohms (Ω).
+    content.vb: Public Shared Function CommonModeChokeImpedance(inductance As Double, frequency As Double) As Double
+  overload: CircuitTool.EMICalculator.CommonModeChokeImpedance*
+  nameWithType.vb: EMICalculator.CommonModeChokeImpedance(Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.CommonModeChokeImpedance(Double, Double)
+  name.vb: CommonModeChokeImpedance(Double, Double)
+- uid: CircuitTool.EMICalculator.FerriteBeadImpedance(System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.FerriteBeadImpedance(System.Double,System.Double)
+  id: FerriteBeadImpedance(System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: FerriteBeadImpedance(double, double)
+  nameWithType: EMICalculator.FerriteBeadImpedance(double, double)
+  fullName: CircuitTool.EMICalculator.FerriteBeadImpedance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FerriteBeadImpedance
+    path: src/Calculators/EMICalculator.cs
+    startLine: 226
+  namespace: CircuitTool
+  summary: Calculates ferrite bead impedance approximation.
+  example: []
+  syntax:
+    content: public static double FerriteBeadImpedance(double impedanceAt100MHz, double frequency)
+    parameters:
+    - id: impedanceAt100MHz
+      type: System.Double
+      description: Impedance at 100 MHz in ohms (Ω).
+    - id: frequency
+      type: System.Double
+      description: Operating frequency in Hz.
+    return:
+      type: System.Double
+      description: Approximate impedance in ohms (Ω).
+    content.vb: Public Shared Function FerriteBeadImpedance(impedanceAt100MHz As Double, frequency As Double) As Double
+  overload: CircuitTool.EMICalculator.FerriteBeadImpedance*
+  nameWithType.vb: EMICalculator.FerriteBeadImpedance(Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.FerriteBeadImpedance(Double, Double)
+  name.vb: FerriteBeadImpedance(Double, Double)
+- uid: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.EMICalculator.DifferentialModeFilterAttenuation(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: DifferentialModeFilterAttenuation(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.EMICalculator
+  langs:
+  - csharp
+  - vb
+  name: DifferentialModeFilterAttenuation(double, double, double, double, double)
+  nameWithType: EMICalculator.DifferentialModeFilterAttenuation(double, double, double, double, double)
+  fullName: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/EMICalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DifferentialModeFilterAttenuation
+    path: src/Calculators/EMICalculator.cs
+    startLine: 250
+  namespace: CircuitTool
+  summary: Calculates differential mode filter attenuation.
+  example: []
+  syntax:
+    content: public static double DifferentialModeFilterAttenuation(double inductance, double capacitance, double frequency, double sourceImpedance = 50, double loadImpedance = 50)
+    parameters:
+    - id: inductance
+      type: System.Double
+      description: Filter inductance in henries (H).
+    - id: capacitance
+      type: System.Double
+      description: Filter capacitance in farads (F).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: sourceImpedance
+      type: System.Double
+      description: 'Source impedance in ohms (Ω) (default: 50Ω).'
+    - id: loadImpedance
+      type: System.Double
+      description: 'Load impedance in ohms (Ω) (default: 50Ω).'
+    return:
+      type: System.Double
+      description: Attenuation in dB.
+    content.vb: Public Shared Function DifferentialModeFilterAttenuation(inductance As Double, capacitance As Double, frequency As Double, sourceImpedance As Double = 50, loadImpedance As Double = 50) As Double
+  overload: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation*
+  nameWithType.vb: EMICalculator.DifferentialModeFilterAttenuation(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation(Double, Double, Double, Double, Double)
+  name.vb: DifferentialModeFilterAttenuation(Double, Double, Double, Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.EMICalculator.NearFieldStrength*
+  commentId: Overload:CircuitTool.EMICalculator.NearFieldStrength
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_NearFieldStrength_System_Double_System_Double_
+  name: NearFieldStrength
+  nameWithType: EMICalculator.NearFieldStrength
+  fullName: CircuitTool.EMICalculator.NearFieldStrength
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.EMICalculator.ShieldingEffectiveness*
+  commentId: Overload:CircuitTool.EMICalculator.ShieldingEffectiveness
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_ShieldingEffectiveness_System_Double_System_Double_System_Double_System_Double_
+  name: ShieldingEffectiveness
+  nameWithType: EMICalculator.ShieldingEffectiveness
+  fullName: CircuitTool.EMICalculator.ShieldingEffectiveness
+- uid: CircuitTool.EMICalculator.SkinDepth*
+  commentId: Overload:CircuitTool.EMICalculator.SkinDepth
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_SkinDepth_System_Double_System_Double_System_Double_
+  name: SkinDepth
+  nameWithType: EMICalculator.SkinDepth
+  fullName: CircuitTool.EMICalculator.SkinDepth
+- uid: CircuitTool.EMICalculator.Crosstalk*
+  commentId: Overload:CircuitTool.EMICalculator.Crosstalk
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_Crosstalk_System_Double_System_Double_System_Double_System_Double_
+  name: Crosstalk
+  nameWithType: EMICalculator.Crosstalk
+  fullName: CircuitTool.EMICalculator.Crosstalk
+- uid: CircuitTool.EMICalculator.WaveguideCutoff*
+  commentId: Overload:CircuitTool.EMICalculator.WaveguideCutoff
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_WaveguideCutoff_System_Double_System_Double_
+  name: WaveguideCutoff
+  nameWithType: EMICalculator.WaveguideCutoff
+  fullName: CircuitTool.EMICalculator.WaveguideCutoff
+- uid: CircuitTool.EMICalculator.EvanescentModeAttenuation*
+  commentId: Overload:CircuitTool.EMICalculator.EvanescentModeAttenuation
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_EvanescentModeAttenuation_System_Double_System_Double_System_Double_
+  name: EvanescentModeAttenuation
+  nameWithType: EMICalculator.EvanescentModeAttenuation
+  fullName: CircuitTool.EMICalculator.EvanescentModeAttenuation
+- uid: CircuitTool.EMICalculator.RequiredApertureSize*
+  commentId: Overload:CircuitTool.EMICalculator.RequiredApertureSize
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_RequiredApertureSize_System_Double_System_Double_System_Double_
+  name: RequiredApertureSize
+  nameWithType: EMICalculator.RequiredApertureSize
+  fullName: CircuitTool.EMICalculator.RequiredApertureSize
+- uid: CircuitTool.EMICalculator.RadiatedEmissions*
+  commentId: Overload:CircuitTool.EMICalculator.RadiatedEmissions
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_RadiatedEmissions_System_Double_System_Double_System_Double_System_Double_
+  name: RadiatedEmissions
+  nameWithType: EMICalculator.RadiatedEmissions
+  fullName: CircuitTool.EMICalculator.RadiatedEmissions
+- uid: CircuitTool.EMICalculator.CommonModeChokeImpedance*
+  commentId: Overload:CircuitTool.EMICalculator.CommonModeChokeImpedance
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_CommonModeChokeImpedance_System_Double_System_Double_
+  name: CommonModeChokeImpedance
+  nameWithType: EMICalculator.CommonModeChokeImpedance
+  fullName: CircuitTool.EMICalculator.CommonModeChokeImpedance
+- uid: CircuitTool.EMICalculator.FerriteBeadImpedance*
+  commentId: Overload:CircuitTool.EMICalculator.FerriteBeadImpedance
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_FerriteBeadImpedance_System_Double_System_Double_
+  name: FerriteBeadImpedance
+  nameWithType: EMICalculator.FerriteBeadImpedance
+  fullName: CircuitTool.EMICalculator.FerriteBeadImpedance
+- uid: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation*
+  commentId: Overload:CircuitTool.EMICalculator.DifferentialModeFilterAttenuation
+  href: CircuitTool.EMICalculator.html#CircuitTool_EMICalculator_DifferentialModeFilterAttenuation_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: DifferentialModeFilterAttenuation
+  nameWithType: EMICalculator.DifferentialModeFilterAttenuation
+  fullName: CircuitTool.EMICalculator.DifferentialModeFilterAttenuation

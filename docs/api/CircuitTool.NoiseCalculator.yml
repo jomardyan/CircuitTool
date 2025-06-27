@@ -1,0 +1,894 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.NoiseCalculator
+  commentId: T:CircuitTool.NoiseCalculator
+  id: NoiseCalculator
+  parent: CircuitTool
+  children:
+  - CircuitTool.NoiseCalculator.CascadedNoiseFactor(System.Double[],System.Double[])
+  - CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth(System.Double,System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.FlickerNoise(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.InputReferredNoiseCurrent(System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.InputReferredNoiseVoltage(System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.NoiseBandwidth(System.Double,System.Int32)
+  - CircuitTool.NoiseCalculator.NoiseFactorFromDb(System.Double)
+  - CircuitTool.NoiseCalculator.NoiseFigureFromFactor(System.Double)
+  - CircuitTool.NoiseCalculator.ShotNoise(System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.SignalToNoiseRatio(System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.ThermalNoise(System.Double,System.Double,System.Double)
+  - CircuitTool.NoiseCalculator.TotalNoise(System.Double[])
+  langs:
+  - csharp
+  - vb
+  name: NoiseCalculator
+  nameWithType: NoiseCalculator
+  fullName: CircuitTool.NoiseCalculator
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NoiseCalculator
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 15
+  namespace: CircuitTool
+  summary: Provides calculations for noise analysis in electronic circuits.
+  remarks: >-
+    <p>Example usage:</p>
+
+
+    <pre><code class="lang-csharp">double thermal = NoiseCalculator.ThermalNoise(1000, 10000, 300); // Thermal noise
+
+    double shot = NoiseCalculator.ShotNoise(1e-3, 1000); // Shot noise
+
+    double total = NoiseCalculator.TotalNoise(new[] {1e-9, 2e-9, 1.5e-9}); // Total noise</code></pre>
+  example: []
+  syntax:
+    content: public static class NoiseCalculator
+    content.vb: Public Module NoiseCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.NoiseCalculator.ThermalNoise(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.ThermalNoise(System.Double,System.Double,System.Double)
+  id: ThermalNoise(System.Double,System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: ThermalNoise(double, double, double)
+  nameWithType: NoiseCalculator.ThermalNoise(double, double, double)
+  fullName: CircuitTool.NoiseCalculator.ThermalNoise(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalNoise
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 30
+  namespace: CircuitTool
+  summary: Calculates thermal (Johnson) noise voltage.
+  example:
+  - double thermal = NoiseCalculator.ThermalNoise(1000, 10000, 300); // Thermal noise
+  syntax:
+    content: public static double ThermalNoise(double resistance, double bandwidth, double temperature = 290)
+    parameters:
+    - id: resistance
+      type: System.Double
+      description: Resistance in ohms (Ω).
+    - id: bandwidth
+      type: System.Double
+      description: Bandwidth in Hz.
+    - id: temperature
+      type: System.Double
+      description: 'Temperature in Kelvin (default: 290K).'
+    return:
+      type: System.Double
+      description: RMS noise voltage in volts (V).
+    content.vb: Public Shared Function ThermalNoise(resistance As Double, bandwidth As Double, temperature As Double = 290) As Double
+  overload: CircuitTool.NoiseCalculator.ThermalNoise*
+  nameWithType.vb: NoiseCalculator.ThermalNoise(Double, Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.ThermalNoise(Double, Double, Double)
+  name.vb: ThermalNoise(Double, Double, Double)
+- uid: CircuitTool.NoiseCalculator.ShotNoise(System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.ShotNoise(System.Double,System.Double)
+  id: ShotNoise(System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: ShotNoise(double, double)
+  nameWithType: NoiseCalculator.ShotNoise(double, double)
+  fullName: CircuitTool.NoiseCalculator.ShotNoise(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ShotNoise
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 47
+  namespace: CircuitTool
+  summary: Calculates shot noise current.
+  example:
+  - double shot = NoiseCalculator.ShotNoise(1e-3, 1000); // Shot noise
+  syntax:
+    content: public static double ShotNoise(double current, double bandwidth)
+    parameters:
+    - id: current
+      type: System.Double
+      description: DC current in amperes (A).
+    - id: bandwidth
+      type: System.Double
+      description: Bandwidth in Hz.
+    return:
+      type: System.Double
+      description: RMS noise current in amperes (A).
+    content.vb: Public Shared Function ShotNoise(current As Double, bandwidth As Double) As Double
+  overload: CircuitTool.NoiseCalculator.ShotNoise*
+  nameWithType.vb: NoiseCalculator.ShotNoise(Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.ShotNoise(Double, Double)
+  name.vb: ShotNoise(Double, Double)
+- uid: CircuitTool.NoiseCalculator.FlickerNoise(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.FlickerNoise(System.Double,System.Double,System.Double,System.Double)
+  id: FlickerNoise(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: FlickerNoise(double, double, double, double)
+  nameWithType: NoiseCalculator.FlickerNoise(double, double, double, double)
+  fullName: CircuitTool.NoiseCalculator.FlickerNoise(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FlickerNoise
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 63
+  namespace: CircuitTool
+  summary: Calculates flicker (1/f) noise voltage.
+  example: []
+  syntax:
+    content: public static double FlickerNoise(double current, double flickerCoefficient, double frequency, double bandwidth)
+    parameters:
+    - id: current
+      type: System.Double
+      description: DC current in amperes (A).
+    - id: flickerCoefficient
+      type: System.Double
+      description: Flicker noise coefficient (device dependent).
+    - id: frequency
+      type: System.Double
+      description: Frequency in Hz.
+    - id: bandwidth
+      type: System.Double
+      description: Bandwidth in Hz.
+    return:
+      type: System.Double
+      description: RMS noise voltage in volts (V).
+    content.vb: Public Shared Function FlickerNoise(current As Double, flickerCoefficient As Double, frequency As Double, bandwidth As Double) As Double
+  overload: CircuitTool.NoiseCalculator.FlickerNoise*
+  nameWithType.vb: NoiseCalculator.FlickerNoise(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.FlickerNoise(Double, Double, Double, Double)
+  name.vb: FlickerNoise(Double, Double, Double, Double)
+- uid: CircuitTool.NoiseCalculator.TotalNoise(System.Double[])
+  commentId: M:CircuitTool.NoiseCalculator.TotalNoise(System.Double[])
+  id: TotalNoise(System.Double[])
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: TotalNoise(double[])
+  nameWithType: NoiseCalculator.TotalNoise(double[])
+  fullName: CircuitTool.NoiseCalculator.TotalNoise(double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TotalNoise
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 79
+  namespace: CircuitTool
+  summary: Calculates total noise from multiple uncorrelated noise sources.
+  example:
+  - double total = NoiseCalculator.TotalNoise(new[] {1e-9, 2e-9, 1.5e-9}); // Total noise
+  syntax:
+    content: public static double TotalNoise(double[] noiseSources)
+    parameters:
+    - id: noiseSources
+      type: System.Double[]
+      description: Array of RMS noise values in the same units.
+    return:
+      type: System.Double
+      description: Total RMS noise in the same units.
+    content.vb: Public Shared Function TotalNoise(noiseSources As Double()) As Double
+  overload: CircuitTool.NoiseCalculator.TotalNoise*
+  nameWithType.vb: NoiseCalculator.TotalNoise(Double())
+  fullName.vb: CircuitTool.NoiseCalculator.TotalNoise(Double())
+  name.vb: TotalNoise(Double())
+- uid: CircuitTool.NoiseCalculator.NoiseFactorFromDb(System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.NoiseFactorFromDb(System.Double)
+  id: NoiseFactorFromDb(System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: NoiseFactorFromDb(double)
+  nameWithType: NoiseCalculator.NoiseFactorFromDb(double)
+  fullName: CircuitTool.NoiseCalculator.NoiseFactorFromDb(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NoiseFactorFromDb
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 100
+  namespace: CircuitTool
+  summary: Calculates noise factor (linear) from noise figure (dB).
+  example: []
+  syntax:
+    content: public static double NoiseFactorFromDb(double noiseFigureDb)
+    parameters:
+    - id: noiseFigureDb
+      type: System.Double
+      description: Noise figure in dB.
+    return:
+      type: System.Double
+      description: Noise factor (linear).
+    content.vb: Public Shared Function NoiseFactorFromDb(noiseFigureDb As Double) As Double
+  overload: CircuitTool.NoiseCalculator.NoiseFactorFromDb*
+  nameWithType.vb: NoiseCalculator.NoiseFactorFromDb(Double)
+  fullName.vb: CircuitTool.NoiseCalculator.NoiseFactorFromDb(Double)
+  name.vb: NoiseFactorFromDb(Double)
+- uid: CircuitTool.NoiseCalculator.NoiseFigureFromFactor(System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.NoiseFigureFromFactor(System.Double)
+  id: NoiseFigureFromFactor(System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: NoiseFigureFromFactor(double)
+  nameWithType: NoiseCalculator.NoiseFigureFromFactor(double)
+  fullName: CircuitTool.NoiseCalculator.NoiseFigureFromFactor(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NoiseFigureFromFactor
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 110
+  namespace: CircuitTool
+  summary: Calculates noise figure (dB) from noise factor (linear).
+  example: []
+  syntax:
+    content: public static double NoiseFigureFromFactor(double noiseFactor)
+    parameters:
+    - id: noiseFactor
+      type: System.Double
+      description: Noise factor (linear, ≥ 1).
+    return:
+      type: System.Double
+      description: Noise figure in dB.
+    content.vb: Public Shared Function NoiseFigureFromFactor(noiseFactor As Double) As Double
+  overload: CircuitTool.NoiseCalculator.NoiseFigureFromFactor*
+  nameWithType.vb: NoiseCalculator.NoiseFigureFromFactor(Double)
+  fullName.vb: CircuitTool.NoiseCalculator.NoiseFigureFromFactor(Double)
+  name.vb: NoiseFigureFromFactor(Double)
+- uid: CircuitTool.NoiseCalculator.CascadedNoiseFactor(System.Double[],System.Double[])
+  commentId: M:CircuitTool.NoiseCalculator.CascadedNoiseFactor(System.Double[],System.Double[])
+  id: CascadedNoiseFactor(System.Double[],System.Double[])
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: CascadedNoiseFactor(double[], double[])
+  nameWithType: NoiseCalculator.CascadedNoiseFactor(double[], double[])
+  fullName: CircuitTool.NoiseCalculator.CascadedNoiseFactor(double[], double[])
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CascadedNoiseFactor
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 124
+  namespace: CircuitTool
+  summary: Calculates cascaded noise figure for multiple stages.
+  example: []
+  syntax:
+    content: public static double CascadedNoiseFactor(double[] noiseFactors, double[] gains)
+    parameters:
+    - id: noiseFactors
+      type: System.Double[]
+      description: Array of noise factors (linear) for each stage.
+    - id: gains
+      type: System.Double[]
+      description: Array of power gains (linear) for each stage.
+    return:
+      type: System.Double
+      description: Overall noise factor (linear).
+    content.vb: Public Shared Function CascadedNoiseFactor(noiseFactors As Double(), gains As Double()) As Double
+  overload: CircuitTool.NoiseCalculator.CascadedNoiseFactor*
+  nameWithType.vb: NoiseCalculator.CascadedNoiseFactor(Double(), Double())
+  fullName.vb: CircuitTool.NoiseCalculator.CascadedNoiseFactor(Double(), Double())
+  name.vb: CascadedNoiseFactor(Double(), Double())
+- uid: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage(System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.InputReferredNoiseVoltage(System.Double,System.Double)
+  id: InputReferredNoiseVoltage(System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: InputReferredNoiseVoltage(double, double)
+  nameWithType: NoiseCalculator.InputReferredNoiseVoltage(double, double)
+  fullName: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InputReferredNoiseVoltage
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 152
+  namespace: CircuitTool
+  summary: Calculates input-referred noise voltage of an amplifier.
+  example: []
+  syntax:
+    content: public static double InputReferredNoiseVoltage(double outputNoiseVoltage, double gain)
+    parameters:
+    - id: outputNoiseVoltage
+      type: System.Double
+      description: Output noise voltage in volts (V).
+    - id: gain
+      type: System.Double
+      description: Voltage gain (linear).
+    return:
+      type: System.Double
+      description: Input-referred noise voltage in volts (V).
+    content.vb: Public Shared Function InputReferredNoiseVoltage(outputNoiseVoltage As Double, gain As Double) As Double
+  overload: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage*
+  nameWithType.vb: NoiseCalculator.InputReferredNoiseVoltage(Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage(Double, Double)
+  name.vb: InputReferredNoiseVoltage(Double, Double)
+- uid: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent(System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.InputReferredNoiseCurrent(System.Double,System.Double)
+  id: InputReferredNoiseCurrent(System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: InputReferredNoiseCurrent(double, double)
+  nameWithType: NoiseCalculator.InputReferredNoiseCurrent(double, double)
+  fullName: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InputReferredNoiseCurrent
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 166
+  namespace: CircuitTool
+  summary: Calculates input-referred noise current of an amplifier.
+  example: []
+  syntax:
+    content: public static double InputReferredNoiseCurrent(double outputNoiseCurrent, double gain)
+    parameters:
+    - id: outputNoiseCurrent
+      type: System.Double
+      description: Output noise current in amperes (A).
+    - id: gain
+      type: System.Double
+      description: Current gain (linear).
+    return:
+      type: System.Double
+      description: Input-referred noise current in amperes (A).
+    content.vb: Public Shared Function InputReferredNoiseCurrent(outputNoiseCurrent As Double, gain As Double) As Double
+  overload: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent*
+  nameWithType.vb: NoiseCalculator.InputReferredNoiseCurrent(Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent(Double, Double)
+  name.vb: InputReferredNoiseCurrent(Double, Double)
+- uid: CircuitTool.NoiseCalculator.NoiseBandwidth(System.Double,System.Int32)
+  commentId: M:CircuitTool.NoiseCalculator.NoiseBandwidth(System.Double,System.Int32)
+  id: NoiseBandwidth(System.Double,System.Int32)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: NoiseBandwidth(double, int)
+  nameWithType: NoiseCalculator.NoiseBandwidth(double, int)
+  fullName: CircuitTool.NoiseCalculator.NoiseBandwidth(double, int)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: NoiseBandwidth
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 180
+  namespace: CircuitTool
+  summary: Calculates noise bandwidth from 3dB bandwidth.
+  example: []
+  syntax:
+    content: public static double NoiseBandwidth(double bandwidth3dB, int filterOrder)
+    parameters:
+    - id: bandwidth3dB
+      type: System.Double
+      description: 3dB bandwidth in Hz.
+    - id: filterOrder
+      type: System.Int32
+      description: Filter order (1 for single pole, 2 for second order, etc.).
+    return:
+      type: System.Double
+      description: Noise bandwidth in Hz.
+    content.vb: Public Shared Function NoiseBandwidth(bandwidth3dB As Double, filterOrder As Integer) As Double
+  overload: CircuitTool.NoiseCalculator.NoiseBandwidth*
+  nameWithType.vb: NoiseCalculator.NoiseBandwidth(Double, Integer)
+  fullName.vb: CircuitTool.NoiseCalculator.NoiseBandwidth(Double, Integer)
+  name.vb: NoiseBandwidth(Double, Integer)
+- uid: CircuitTool.NoiseCalculator.SignalToNoiseRatio(System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.SignalToNoiseRatio(System.Double,System.Double)
+  id: SignalToNoiseRatio(System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: SignalToNoiseRatio(double, double)
+  nameWithType: NoiseCalculator.SignalToNoiseRatio(double, double)
+  fullName: CircuitTool.NoiseCalculator.SignalToNoiseRatio(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalToNoiseRatio
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 205
+  namespace: CircuitTool
+  summary: Calculates signal-to-noise ratio in dB.
+  example: []
+  syntax:
+    content: public static double SignalToNoiseRatio(double signalPower, double noisePower)
+    parameters:
+    - id: signalPower
+      type: System.Double
+      description: Signal power in watts or any consistent unit.
+    - id: noisePower
+      type: System.Double
+      description: Noise power in the same unit as signal power.
+    return:
+      type: System.Double
+      description: SNR in dB.
+    content.vb: Public Shared Function SignalToNoiseRatio(signalPower As Double, noisePower As Double) As Double
+  overload: CircuitTool.NoiseCalculator.SignalToNoiseRatio*
+  nameWithType.vb: NoiseCalculator.SignalToNoiseRatio(Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.SignalToNoiseRatio(Double, Double)
+  name.vb: SignalToNoiseRatio(Double, Double)
+- uid: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth(System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth(System.Double,System.Double,System.Double)
+  id: EquivalentNoiseBandwidth(System.Double,System.Double,System.Double)
+  parent: CircuitTool.NoiseCalculator
+  langs:
+  - csharp
+  - vb
+  name: EquivalentNoiseBandwidth(double, double, double)
+  nameWithType: NoiseCalculator.EquivalentNoiseBandwidth(double, double, double)
+  fullName: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth(double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/NoiseCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EquivalentNoiseBandwidth
+    path: src/Calculators/NoiseCalculator.cs
+    startLine: 220
+  namespace: CircuitTool
+  summary: Calculates equivalent noise bandwidth for a given filter response.
+  example: []
+  syntax:
+    content: public static double EquivalentNoiseBandwidth(double dcGain, double totalNoisePower, double noiseSpectralDensity)
+    parameters:
+    - id: dcGain
+      type: System.Double
+      description: DC gain of the filter (linear).
+    - id: totalNoisePower
+      type: System.Double
+      description: Total integrated noise power.
+    - id: noiseSpectralDensity
+      type: System.Double
+      description: Noise spectral density at DC.
+    return:
+      type: System.Double
+      description: Equivalent noise bandwidth in Hz.
+    content.vb: Public Shared Function EquivalentNoiseBandwidth(dcGain As Double, totalNoisePower As Double, noiseSpectralDensity As Double) As Double
+  overload: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth*
+  nameWithType.vb: NoiseCalculator.EquivalentNoiseBandwidth(Double, Double, Double)
+  fullName.vb: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth(Double, Double, Double)
+  name.vb: EquivalentNoiseBandwidth(Double, Double, Double)
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.NoiseCalculator.ThermalNoise*
+  commentId: Overload:CircuitTool.NoiseCalculator.ThermalNoise
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_ThermalNoise_System_Double_System_Double_System_Double_
+  name: ThermalNoise
+  nameWithType: NoiseCalculator.ThermalNoise
+  fullName: CircuitTool.NoiseCalculator.ThermalNoise
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.NoiseCalculator.ShotNoise*
+  commentId: Overload:CircuitTool.NoiseCalculator.ShotNoise
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_ShotNoise_System_Double_System_Double_
+  name: ShotNoise
+  nameWithType: NoiseCalculator.ShotNoise
+  fullName: CircuitTool.NoiseCalculator.ShotNoise
+- uid: CircuitTool.NoiseCalculator.FlickerNoise*
+  commentId: Overload:CircuitTool.NoiseCalculator.FlickerNoise
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_FlickerNoise_System_Double_System_Double_System_Double_System_Double_
+  name: FlickerNoise
+  nameWithType: NoiseCalculator.FlickerNoise
+  fullName: CircuitTool.NoiseCalculator.FlickerNoise
+- uid: CircuitTool.NoiseCalculator.TotalNoise*
+  commentId: Overload:CircuitTool.NoiseCalculator.TotalNoise
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_TotalNoise_System_Double___
+  name: TotalNoise
+  nameWithType: NoiseCalculator.TotalNoise
+  fullName: CircuitTool.NoiseCalculator.TotalNoise
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: CircuitTool.NoiseCalculator.NoiseFactorFromDb*
+  commentId: Overload:CircuitTool.NoiseCalculator.NoiseFactorFromDb
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_NoiseFactorFromDb_System_Double_
+  name: NoiseFactorFromDb
+  nameWithType: NoiseCalculator.NoiseFactorFromDb
+  fullName: CircuitTool.NoiseCalculator.NoiseFactorFromDb
+- uid: CircuitTool.NoiseCalculator.NoiseFigureFromFactor*
+  commentId: Overload:CircuitTool.NoiseCalculator.NoiseFigureFromFactor
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_NoiseFigureFromFactor_System_Double_
+  name: NoiseFigureFromFactor
+  nameWithType: NoiseCalculator.NoiseFigureFromFactor
+  fullName: CircuitTool.NoiseCalculator.NoiseFigureFromFactor
+- uid: CircuitTool.NoiseCalculator.CascadedNoiseFactor*
+  commentId: Overload:CircuitTool.NoiseCalculator.CascadedNoiseFactor
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_CascadedNoiseFactor_System_Double___System_Double___
+  name: CascadedNoiseFactor
+  nameWithType: NoiseCalculator.CascadedNoiseFactor
+  fullName: CircuitTool.NoiseCalculator.CascadedNoiseFactor
+- uid: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage*
+  commentId: Overload:CircuitTool.NoiseCalculator.InputReferredNoiseVoltage
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_InputReferredNoiseVoltage_System_Double_System_Double_
+  name: InputReferredNoiseVoltage
+  nameWithType: NoiseCalculator.InputReferredNoiseVoltage
+  fullName: CircuitTool.NoiseCalculator.InputReferredNoiseVoltage
+- uid: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent*
+  commentId: Overload:CircuitTool.NoiseCalculator.InputReferredNoiseCurrent
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_InputReferredNoiseCurrent_System_Double_System_Double_
+  name: InputReferredNoiseCurrent
+  nameWithType: NoiseCalculator.InputReferredNoiseCurrent
+  fullName: CircuitTool.NoiseCalculator.InputReferredNoiseCurrent
+- uid: CircuitTool.NoiseCalculator.NoiseBandwidth*
+  commentId: Overload:CircuitTool.NoiseCalculator.NoiseBandwidth
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_NoiseBandwidth_System_Double_System_Int32_
+  name: NoiseBandwidth
+  nameWithType: NoiseCalculator.NoiseBandwidth
+  fullName: CircuitTool.NoiseCalculator.NoiseBandwidth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CircuitTool.NoiseCalculator.SignalToNoiseRatio*
+  commentId: Overload:CircuitTool.NoiseCalculator.SignalToNoiseRatio
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_SignalToNoiseRatio_System_Double_System_Double_
+  name: SignalToNoiseRatio
+  nameWithType: NoiseCalculator.SignalToNoiseRatio
+  fullName: CircuitTool.NoiseCalculator.SignalToNoiseRatio
+- uid: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth*
+  commentId: Overload:CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth
+  href: CircuitTool.NoiseCalculator.html#CircuitTool_NoiseCalculator_EquivalentNoiseBandwidth_System_Double_System_Double_System_Double_
+  name: EquivalentNoiseBandwidth
+  nameWithType: NoiseCalculator.EquivalentNoiseBandwidth
+  fullName: CircuitTool.NoiseCalculator.EquivalentNoiseBandwidth

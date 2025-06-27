@@ -1,0 +1,885 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter
+  id: CapacitanceUnitConverter
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor(System.Double,System.Double,System.Double,System.Boolean)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR(System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance(System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge(System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy(System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage(System.Double,System.Double)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance(System.Double,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  - CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: CapacitanceUnitConverter
+  nameWithType: CapacitanceUnitConverter
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter
+  type: Class
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitanceUnitConverter
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 8
+  namespace: CircuitTool.Calculators
+  summary: Comprehensive calculator for capacitance unit conversions and related calculations
+  example: []
+  syntax:
+    content: public class CapacitanceUnitConverter
+    content.vb: Public Class CapacitanceUnitConverter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance(System.Double,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance(System.Double,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  id: ConvertCapacitance(System.Double,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit,CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertCapacitance(double, CapacitanceUnit, CapacitanceUnit)
+  nameWithType: CapacitanceUnitConverter.ConvertCapacitance(double, CapacitanceUnitConverter.CapacitanceUnit, CapacitanceUnitConverter.CapacitanceUnit)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance(double, CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit, CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ConvertCapacitance
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 52
+  namespace: CircuitTool.Calculators
+  summary: Convert capacitance between units
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.CapacitanceConversionResult ConvertCapacitance(double value, CapacitanceUnitConverter.CapacitanceUnit fromUnit, CapacitanceUnitConverter.CapacitanceUnit toUnit)
+    parameters:
+    - id: value
+      type: System.Double
+    - id: fromUnit
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    - id: toUnit
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    content.vb: Public Function ConvertCapacitance(value As Double, fromUnit As CapacitanceUnitConverter.CapacitanceUnit, toUnit As CapacitanceUnitConverter.CapacitanceUnit) As CapacitanceUnitConverter.CapacitanceConversionResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance*
+  nameWithType.vb: CapacitanceUnitConverter.ConvertCapacitance(Double, CapacitanceUnitConverter.CapacitanceUnit, CapacitanceUnitConverter.CapacitanceUnit)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance(Double, CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit, CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit)
+  name.vb: ConvertCapacitance(Double, CapacitanceUnit, CapacitanceUnit)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit(System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit(System.Double)
+  id: GetBestUnit(System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: GetBestUnit(double)
+  nameWithType: CapacitanceUnitConverter.GetBestUnit(double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit(double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetBestUnit
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 79
+  namespace: CircuitTool.Calculators
+  summary: Get the best unit for displaying a capacitance value
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.CapacitanceConversionResult GetBestUnit(double valueInFarads)
+    parameters:
+    - id: valueInFarads
+      type: System.Double
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    content.vb: Public Function GetBestUnit(valueInFarads As Double) As CapacitanceUnitConverter.CapacitanceConversionResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit*
+  nameWithType.vb: CapacitanceUnitConverter.GetBestUnit(Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit(Double)
+  name.vb: GetBestUnit(Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge(System.Double,System.Double)
+  id: CalculateCharge(System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateCharge(double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateCharge(double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateCharge
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 104
+  namespace: CircuitTool.Calculators
+  summary: 'Calculate charge stored in capacitor: Q = C × V'
+  example: []
+  syntax:
+    content: public double CalculateCharge(double capacitanceFarads, double voltageVolts)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: voltageVolts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function CalculateCharge(capacitanceFarads As Double, voltageVolts As Double) As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateCharge(Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge(Double, Double)
+  name.vb: CalculateCharge(Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy(System.Double,System.Double)
+  id: CalculateEnergy(System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateEnergy(double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateEnergy(double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateEnergy
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 112
+  namespace: CircuitTool.Calculators
+  summary: 'Calculate energy stored in capacitor: E = 0.5 × C × V²'
+  example: []
+  syntax:
+    content: public double CalculateEnergy(double capacitanceFarads, double voltageVolts)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: voltageVolts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function CalculateEnergy(capacitanceFarads As Double, voltageVolts As Double) As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateEnergy(Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy(Double, Double)
+  name.vb: CalculateEnergy(Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage(System.Double,System.Double)
+  id: CalculateVoltage(System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateVoltage(double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateVoltage(double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateVoltage
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 120
+  namespace: CircuitTool.Calculators
+  summary: 'Calculate voltage from charge and capacitance: V = Q / C'
+  example: []
+  syntax:
+    content: public double CalculateVoltage(double chargeCoulombs, double capacitanceFarads)
+    parameters:
+    - id: chargeCoulombs
+      type: System.Double
+    - id: capacitanceFarads
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function CalculateVoltage(chargeCoulombs As Double, capacitanceFarads As Double) As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateVoltage(Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage(Double, Double)
+  name.vb: CalculateVoltage(Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance(System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance(System.Double,System.Double)
+  id: CalculateCapacitance(System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateCapacitance(double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateCapacitance(double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance(double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateCapacitance
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 131
+  namespace: CircuitTool.Calculators
+  summary: 'Calculate capacitance from charge and voltage: C = Q / V'
+  example: []
+  syntax:
+    content: public double CalculateCapacitance(double chargeCoulombs, double voltageVolts)
+    parameters:
+    - id: chargeCoulombs
+      type: System.Double
+    - id: voltageVolts
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Function CalculateCapacitance(chargeCoulombs As Double, voltageVolts As Double) As Double
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateCapacitance(Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance(Double, Double)
+  name.vb: CalculateCapacitance(Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor(System.Double,System.Double,System.Double,System.Boolean)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor(System.Double,System.Double,System.Double,System.Boolean)
+  id: AnalyzeCapacitor(System.Double,System.Double,System.Double,System.Boolean)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeCapacitor(double, double, double, bool)
+  nameWithType: CapacitanceUnitConverter.AnalyzeCapacitor(double, double, double, bool)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor(double, double, double, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeCapacitor
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 142
+  namespace: CircuitTool.Calculators
+  summary: Comprehensive capacitor energy and charge analysis
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.CapacitorEnergyChargeResult AnalyzeCapacitor(double capacitanceFarads, double voltageVolts, double timeSeconds = 0, bool isCharging = true)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: voltageVolts
+      type: System.Double
+    - id: timeSeconds
+      type: System.Double
+    - id: isCharging
+      type: System.Boolean
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    content.vb: Public Function AnalyzeCapacitor(capacitanceFarads As Double, voltageVolts As Double, timeSeconds As Double = 0, isCharging As Boolean = True) As CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor*
+  nameWithType.vb: CapacitanceUnitConverter.AnalyzeCapacitor(Double, Double, Double, Boolean)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor(Double, Double, Double, Boolean)
+  name.vb: AnalyzeCapacitor(Double, Double, Double, Boolean)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: CalculateChargingTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateChargingTime(double, double, double, double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateChargingTime(double, double, double, double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateChargingTime
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 193
+  namespace: CircuitTool.Calculators
+  summary: Calculate RC charging characteristics
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.ChargingTimeResult CalculateChargingTime(double capacitanceFarads, double resistanceOhms, double sourceVoltage, double targetPercentage = 63.2, double atTime = 0)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: resistanceOhms
+      type: System.Double
+    - id: sourceVoltage
+      type: System.Double
+    - id: targetPercentage
+      type: System.Double
+    - id: atTime
+      type: System.Double
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    content.vb: Public Function CalculateChargingTime(capacitanceFarads As Double, resistanceOhms As Double, sourceVoltage As Double, targetPercentage As Double = 63.2, atTime As Double = 0) As CapacitanceUnitConverter.ChargingTimeResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateChargingTime(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime(Double, Double, Double, Double, Double)
+  name.vb: CalculateChargingTime(Double, Double, Double, Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: CalculateDischargeTime(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: CalculateDischargeTime(double, double, double, double, double)
+  nameWithType: CapacitanceUnitConverter.CalculateDischargeTime(double, double, double, double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime(double, double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateDischargeTime
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 226
+  namespace: CircuitTool.Calculators
+  summary: Calculate capacitor discharge characteristics
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.ChargingTimeResult CalculateDischargeTime(double capacitanceFarads, double resistanceOhms, double initialVoltage, double targetPercentage = 36.8, double atTime = 0)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: resistanceOhms
+      type: System.Double
+    - id: initialVoltage
+      type: System.Double
+    - id: targetPercentage
+      type: System.Double
+    - id: atTime
+      type: System.Double
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    content.vb: Public Function CalculateDischargeTime(capacitanceFarads As Double, resistanceOhms As Double, initialVoltage As Double, targetPercentage As Double = 36.8, atTime As Double = 0) As CapacitanceUnitConverter.ChargingTimeResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime*
+  nameWithType.vb: CapacitanceUnitConverter.CalculateDischargeTime(Double, Double, Double, Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime(Double, Double, Double, Double, Double)
+  name.vb: CalculateDischargeTime(Double, Double, Double, Double, Double)
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR(System.Double,System.Double,System.Double,System.Double)
+  id: AnalyzeESR(System.Double,System.Double,System.Double,System.Double)
+  parent: CircuitTool.Calculators.CapacitanceUnitConverter
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeESR(double, double, double, double)
+  nameWithType: CapacitanceUnitConverter.AnalyzeESR(double, double, double, double)
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR(double, double, double, double)
+  type: Method
+  source:
+    remote:
+      path: src/Calculators/CapacitanceUnitConverter.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalyzeESR
+    path: src/Calculators/CapacitanceUnitConverter.cs
+    startLine: 271
+  namespace: CircuitTool.Calculators
+  summary: Analyze ESR effects on capacitor performance
+  example: []
+  syntax:
+    content: public CapacitanceUnitConverter.ESRAnalysisResult AnalyzeESR(double capacitanceFarads, double esrOhms, double rmsCurrentAmps, double frequency = 0)
+    parameters:
+    - id: capacitanceFarads
+      type: System.Double
+    - id: esrOhms
+      type: System.Double
+    - id: rmsCurrentAmps
+      type: System.Double
+    - id: frequency
+      type: System.Double
+    return:
+      type: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    content.vb: Public Function AnalyzeESR(capacitanceFarads As Double, esrOhms As Double, rmsCurrentAmps As Double, frequency As Double = 0) As CapacitanceUnitConverter.ESRAnalysisResult
+  overload: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR*
+  nameWithType.vb: CapacitanceUnitConverter.AnalyzeESR(Double, Double, Double, Double)
+  fullName.vb: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR(Double, Double, Double, Double)
+  name.vb: AnalyzeESR(Double, Double, Double, Double)
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_ConvertCapacitance_System_Double_CircuitTool_Calculators_CapacitanceUnitConverter_CapacitanceUnit_CircuitTool_Calculators_CapacitanceUnitConverter_CapacitanceUnit_
+  name: ConvertCapacitance
+  nameWithType: CapacitanceUnitConverter.ConvertCapacitance
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ConvertCapacitance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitanceUnit
+  nameWithType: CapacitanceUnitConverter.CapacitanceUnit
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    name: CapacitanceUnit
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    name: CapacitanceUnit
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitanceConversionResult
+  nameWithType: CapacitanceUnitConverter.CapacitanceConversionResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    name: CapacitanceConversionResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    name: CapacitanceConversionResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_GetBestUnit_System_Double_
+  name: GetBestUnit
+  nameWithType: CapacitanceUnitConverter.GetBestUnit
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.GetBestUnit
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateCharge_System_Double_System_Double_
+  name: CalculateCharge
+  nameWithType: CapacitanceUnitConverter.CalculateCharge
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCharge
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateEnergy_System_Double_System_Double_
+  name: CalculateEnergy
+  nameWithType: CapacitanceUnitConverter.CalculateEnergy
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateEnergy
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateVoltage_System_Double_System_Double_
+  name: CalculateVoltage
+  nameWithType: CapacitanceUnitConverter.CalculateVoltage
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateVoltage
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateCapacitance_System_Double_System_Double_
+  name: CalculateCapacitance
+  nameWithType: CapacitanceUnitConverter.CalculateCapacitance
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateCapacitance
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_AnalyzeCapacitor_System_Double_System_Double_System_Double_System_Boolean_
+  name: AnalyzeCapacitor
+  nameWithType: CapacitanceUnitConverter.AnalyzeCapacitor
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeCapacitor
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  nameWithType: CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    name: CapacitorEnergyChargeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    name: CapacitorEnergyChargeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateChargingTime_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateChargingTime
+  nameWithType: CapacitanceUnitConverter.CalculateChargingTime
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateChargingTime
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.ChargingTimeResult
+  nameWithType: CapacitanceUnitConverter.ChargingTimeResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    name: ChargingTimeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    name: ChargingTimeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_CalculateDischargeTime_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: CalculateDischargeTime
+  nameWithType: CapacitanceUnitConverter.CalculateDischargeTime
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CalculateDischargeTime
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR*
+  commentId: Overload:CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html#CircuitTool_Calculators_CapacitanceUnitConverter_AnalyzeESR_System_Double_System_Double_System_Double_System_Double_
+  name: AnalyzeESR
+  nameWithType: CapacitanceUnitConverter.AnalyzeESR
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.AnalyzeESR
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.ESRAnalysisResult
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    name: ESRAnalysisResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - name: .
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    name: ESRAnalysisResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html

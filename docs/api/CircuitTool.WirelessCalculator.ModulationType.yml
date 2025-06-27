@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.WirelessCalculator.ModulationType
+  commentId: T:CircuitTool.WirelessCalculator.ModulationType
+  id: WirelessCalculator.ModulationType
+  parent: CircuitTool
+  children:
+  - CircuitTool.WirelessCalculator.ModulationType.BPSK
+  - CircuitTool.WirelessCalculator.ModulationType.QAM16
+  - CircuitTool.WirelessCalculator.ModulationType.QAM256
+  - CircuitTool.WirelessCalculator.ModulationType.QAM64
+  - CircuitTool.WirelessCalculator.ModulationType.QPSK
+  langs:
+  - csharp
+  - vb
+  name: WirelessCalculator.ModulationType
+  nameWithType: WirelessCalculator.ModulationType
+  fullName: CircuitTool.WirelessCalculator.ModulationType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ModulationType
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 20
+  namespace: CircuitTool
+  summary: Modulation types for BER calculations.
+  example: []
+  syntax:
+    content: public enum WirelessCalculator.ModulationType
+    content.vb: Public Enum WirelessCalculator.ModulationType
+- uid: CircuitTool.WirelessCalculator.ModulationType.BPSK
+  commentId: F:CircuitTool.WirelessCalculator.ModulationType.BPSK
+  id: BPSK
+  parent: CircuitTool.WirelessCalculator.ModulationType
+  langs:
+  - csharp
+  - vb
+  name: BPSK
+  nameWithType: WirelessCalculator.ModulationType.BPSK
+  fullName: CircuitTool.WirelessCalculator.ModulationType.BPSK
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BPSK
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 22
+  namespace: CircuitTool
+  syntax:
+    content: BPSK = 0
+    return:
+      type: CircuitTool.WirelessCalculator.ModulationType
+- uid: CircuitTool.WirelessCalculator.ModulationType.QPSK
+  commentId: F:CircuitTool.WirelessCalculator.ModulationType.QPSK
+  id: QPSK
+  parent: CircuitTool.WirelessCalculator.ModulationType
+  langs:
+  - csharp
+  - vb
+  name: QPSK
+  nameWithType: WirelessCalculator.ModulationType.QPSK
+  fullName: CircuitTool.WirelessCalculator.ModulationType.QPSK
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QPSK
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 23
+  namespace: CircuitTool
+  syntax:
+    content: QPSK = 1
+    return:
+      type: CircuitTool.WirelessCalculator.ModulationType
+- uid: CircuitTool.WirelessCalculator.ModulationType.QAM16
+  commentId: F:CircuitTool.WirelessCalculator.ModulationType.QAM16
+  id: QAM16
+  parent: CircuitTool.WirelessCalculator.ModulationType
+  langs:
+  - csharp
+  - vb
+  name: QAM16
+  nameWithType: WirelessCalculator.ModulationType.QAM16
+  fullName: CircuitTool.WirelessCalculator.ModulationType.QAM16
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QAM16
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 24
+  namespace: CircuitTool
+  syntax:
+    content: QAM16 = 2
+    return:
+      type: CircuitTool.WirelessCalculator.ModulationType
+- uid: CircuitTool.WirelessCalculator.ModulationType.QAM64
+  commentId: F:CircuitTool.WirelessCalculator.ModulationType.QAM64
+  id: QAM64
+  parent: CircuitTool.WirelessCalculator.ModulationType
+  langs:
+  - csharp
+  - vb
+  name: QAM64
+  nameWithType: WirelessCalculator.ModulationType.QAM64
+  fullName: CircuitTool.WirelessCalculator.ModulationType.QAM64
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QAM64
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 25
+  namespace: CircuitTool
+  syntax:
+    content: QAM64 = 3
+    return:
+      type: CircuitTool.WirelessCalculator.ModulationType
+- uid: CircuitTool.WirelessCalculator.ModulationType.QAM256
+  commentId: F:CircuitTool.WirelessCalculator.ModulationType.QAM256
+  id: QAM256
+  parent: CircuitTool.WirelessCalculator.ModulationType
+  langs:
+  - csharp
+  - vb
+  name: QAM256
+  nameWithType: WirelessCalculator.ModulationType.QAM256
+  fullName: CircuitTool.WirelessCalculator.ModulationType.QAM256
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/WirelessCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QAM256
+    path: src/Calculators/WirelessCalculator.cs
+    startLine: 26
+  namespace: CircuitTool
+  syntax:
+    content: QAM256 = 4
+    return:
+      type: CircuitTool.WirelessCalculator.ModulationType
+references:
+- uid: CircuitTool
+  commentId: N:CircuitTool
+  href: CircuitTool.html
+  name: CircuitTool
+  nameWithType: CircuitTool
+  fullName: CircuitTool
+- uid: CircuitTool.WirelessCalculator.ModulationType
+  commentId: T:CircuitTool.WirelessCalculator.ModulationType
+  parent: CircuitTool
+  href: CircuitTool.WirelessCalculator.html
+  name: WirelessCalculator.ModulationType
+  nameWithType: WirelessCalculator.ModulationType
+  fullName: CircuitTool.WirelessCalculator.ModulationType
+  spec.csharp:
+  - uid: CircuitTool.WirelessCalculator
+    name: WirelessCalculator
+    href: CircuitTool.WirelessCalculator.html
+  - name: .
+  - uid: CircuitTool.WirelessCalculator.ModulationType
+    name: ModulationType
+    href: CircuitTool.WirelessCalculator.ModulationType.html
+  spec.vb:
+  - uid: CircuitTool.WirelessCalculator
+    name: WirelessCalculator
+    href: CircuitTool.WirelessCalculator.html
+  - name: .
+  - uid: CircuitTool.WirelessCalculator.ModulationType
+    name: ModulationType
+    href: CircuitTool.WirelessCalculator.ModulationType.html

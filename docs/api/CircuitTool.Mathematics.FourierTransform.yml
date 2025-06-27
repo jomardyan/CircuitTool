@@ -97,7 +97,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: IDFT
     path: src/Math/FourierTransform.cs
-    startLine: 52
+    startLine: 57
   namespace: CircuitTool.Mathematics
   summary: Computes the Inverse Discrete Fourier Transform (IDFT)
   example: []
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: DFT
     path: src/Math/FourierTransform.cs
-    startLine: 77
+    startLine: 82
   namespace: CircuitTool.Mathematics
   summary: Computes the DFT of a real-valued signal
   example: []
@@ -169,7 +169,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerSpectralDensity
     path: src/Math/FourierTransform.cs
-    startLine: 92
+    startLine: 102
   namespace: CircuitTool.Mathematics
   summary: Computes power spectral density from a signal
   example: []
@@ -205,7 +205,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: ExtractHarmonics
     path: src/Math/FourierTransform.cs
-    startLine: 113
+    startLine: 123
   namespace: CircuitTool.Mathematics
   summary: Extracts harmonic content from a periodic signal
   example: []
@@ -250,7 +250,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateTHD
     path: src/Math/FourierTransform.cs
-    startLine: 150
+    startLine: 160
   namespace: CircuitTool.Mathematics
   summary: Calculates Total Harmonic Distortion (THD) from harmonic content
   example: []
@@ -286,7 +286,7 @@ items:
       repo: https://github.com/jomardyan/CircuitTool
     id: ApplyWindow
     path: src/Math/FourierTransform.cs
-    startLine: 172
+    startLine: 182
   namespace: CircuitTool.Mathematics
   summary: Applies a window function to reduce spectral leakage
   example: []

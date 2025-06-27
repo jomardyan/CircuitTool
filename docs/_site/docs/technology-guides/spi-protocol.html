@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SPI Protocol Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SPI Protocol Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/spi-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="spi-protocol-guide">SPI Protocol Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Serial Peripheral Interface (SPI) is a synchronous serial communication protocol developed by Motorola. It's widely used for short-distance communication between microcontrollers and peripheral devices, offering high-speed data transfer with simple implementation.</p>
+<h2 id="protocol-overview">Protocol Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Full-duplex communication</strong>: Simultaneous data transmission and reception</li>
+<li><strong>Master-slave architecture</strong>: One master controls multiple slaves</li>
+<li><strong>High-speed operation</strong>: Can operate at several MHz</li>
+<li><strong>Simple hardware interface</strong>: Uses 4 signal lines</li>
+<li><strong>No addressing required</strong>: Chip select lines determine active slave</li>
+</ul>
+<h3 id="signal-lines">Signal Lines</h3>
+<ul>
+<li><strong>MOSI (Master Out Slave In)</strong>: Data from master to slave</li>
+<li><strong>MISO (Master In Slave Out)</strong>: Data from slave to master</li>
+<li><strong>SCK/SCLK (Serial Clock)</strong>: Clock signal generated by master</li>
+<li><strong>SS/CS (Slave Select/Chip Select)</strong>: Selects active slave device</li>
+</ul>
+<h2 id="protocol-operation">Protocol Operation</h2>
+<h3 id="data-transfer">Data Transfer</h3>
+<ul>
+<li>Master generates clock signal (SCK)</li>
+<li>Data is transferred on clock edges (rising or falling)</li>
+<li>Each clock pulse transfers one bit</li>
+<li>8-bit, 16-bit, or 32-bit transfers are common</li>
+</ul>
+<h3 id="clock-polarity-and-phase-cpolcpha">Clock Polarity and Phase (CPOL/CPHA)</h3>
+<p>Four SPI modes based on clock polarity and phase:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>CPOL</th>
+<th>CPHA</th>
+<th>Clock Idle</th>
+<th>Data Sample Edge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Low</td>
+<td>Rising</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>Low</td>
+<td>Falling</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>High</td>
+<td>Falling</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>High</td>
+<td>Rising</td>
+</tr>
+</tbody>
+</table>
+<h3 id="timing-diagram">Timing Diagram</h3>
+<pre><code>SCK     ____/‾‾‾‾\____/‾‾‾‾\____/‾‾‾‾\____
+MOSI    ----&lt; D7 &gt;----&lt; D6 &gt;----&lt; D5 &gt;----
+MISO    ----&lt; D7 &gt;----&lt; D6 &gt;----&lt; D5 &gt;----
+CS      \___________________________/‾‾‾‾
+</code></pre>
+<h2 id="hardware-configuration">Hardware Configuration</h2>
+<h3 id="basic-connection">Basic Connection</h3>
+<pre><code>Master              Slave
+MOSI  ------------&gt; MOSI/DI
+MISO  &lt;------------ MISO/DO
+SCK   ------------&gt; SCK
+CS    ------------&gt; CS
+</code></pre>
+<h3 id="multi-slave-configuration">Multi-Slave Configuration</h3>
+<pre><code>Master
+  |
+  +-- MOSI --&gt; Slave 1 MOSI
+  |            Slave 2 MOSI
+  |            Slave 3 MOSI
+  |
+  +-- MISO &lt;-- Slave 1 MISO (tri-state)
+  |            Slave 2 MISO (tri-state)
+  |            Slave 3 MISO (tri-state)
+  |
+  +-- SCK  --&gt; Slave 1 SCK
+  |            Slave 2 SCK
+  |            Slave 3 SCK
+  |
+  +-- CS1  --&gt; Slave 1 CS
+  +-- CS2  --&gt; Slave 2 CS
+  +-- CS3  --&gt; Slave 3 CS
+</code></pre>
+<h2 id="clock-speed-considerations">Clock Speed Considerations</h2>
+<h3 id="maximum-clock-frequencies">Maximum Clock Frequencies</h3>
+<ul>
+<li><strong>Standard SPI</strong>: 1-10 MHz typical</li>
+<li><strong>High-speed SPI</strong>: 50+ MHz possible</li>
+<li><strong>Limited by</strong>: PCB traces, device capabilities, signal integrity</li>
+</ul>
+<h3 id="clock-speed-calculation">Clock Speed Calculation</h3>
+<pre><code>Max_Clock = 1 / (2 × (propagation_delay + setup_time + hold_time))
+</code></pre>
+<h2 id="programming-examples">Programming Examples</h2>
+<h3 id="arduino-spi-master">Arduino SPI Master</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+
+const int chipSelectPin = 10;
+
+void setup() {
+  pinMode(chipSelectPin, OUTPUT);
+  digitalWrite(chipSelectPin, HIGH); // Deselect slave
+  
+  SPI.begin();
+  SPI.setClockDivider(SPI_CLOCK_DIV16); // 1MHz @ 16MHz Arduino
+  SPI.setDataMode(SPI_MODE0);
+  SPI.setBitOrder(MSBFIRST);
+}
+
+void loop() {
+  // Send data to slave
+  digitalWrite(chipSelectPin, LOW);   // Select slave
+  byte response = SPI.transfer(0x42); // Send 0x42, receive response
+  digitalWrite(chipSelectPin, HIGH);  // Deselect slave
+  
+  delay(1000);
+}
+</code></pre>
+<h3 id="arduino-spi-multi-byte-transfer">Arduino SPI Multi-byte Transfer</h3>
+<pre><code class="lang-cpp">void writeRegister(byte address, byte value) {
+  digitalWrite(chipSelectPin, LOW);
+  SPI.transfer(address | 0x80); // Write command (set MSB)
+  SPI.transfer(value);
+  digitalWrite(chipSelectPin, HIGH);
+}
+
+byte readRegister(byte address) {
+  digitalWrite(chipSelectPin, LOW);
+  SPI.transfer(address &amp; 0x7F); // Read command (clear MSB)
+  byte value = SPI.transfer(0x00); // Dummy byte to receive data
+  digitalWrite(chipSelectPin, HIGH);
+  return value;
+}
+</code></pre>
+<h3 id="arduino-spi-slave-using-interrupt">Arduino SPI Slave (using interrupt)</h3>
+<pre><code class="lang-cpp">#include &lt;SPI.h&gt;
+
+volatile boolean received = false;
+volatile byte receivedData;
+
+void setup() {
+  pinMode(MISO, OUTPUT); // Set MISO as output
+  SPCR |= _BV(SPE);      // Enable SPI in slave mode
+  SPCR |= _BV(SPIE);     // Enable SPI interrupt
+}
+
+// SPI interrupt routine
+ISR(SPI_STC_vect) {
+  receivedData = SPDR;   // Read received data
+  received = true;
+  SPDR = 0x55;          // Send response data
+}
+
+void loop() {
+  if (received) {
+    // Process received data
+    received = false;
+  }
+}
+</code></pre>
+<h2 id="advanced-features">Advanced Features</h2>
+<h3 id="spi-with-dma-direct-memory-access">SPI with DMA (Direct Memory Access)</h3>
+<pre><code class="lang-cpp">// STM32 example with DMA
+void setupSPIDMA() {
+  // Configure SPI peripheral
+  SPI1-&gt;CR1 |= SPI_CR1_MSTR;  // Master mode
+  SPI1-&gt;CR2 |= SPI_CR2_TXDMAEN | SPI_CR2_RXDMAEN; // Enable DMA
+  
+  // Configure DMA channels
+  // TX DMA configuration
+  DMA1_Channel3-&gt;CPAR = (uint32_t)&amp;SPI1-&gt;DR;
+  DMA1_Channel3-&gt;CMAR = (uint32_t)txBuffer;
+  DMA1_Channel3-&gt;CNDTR = bufferSize;
+  
+  // RX DMA configuration
+  DMA1_Channel2-&gt;CPAR = (uint32_t)&amp;SPI1-&gt;DR;
+  DMA1_Channel2-&gt;CMAR = (uint32_t)rxBuffer;
+  DMA1_Channel2-&gt;CNDTR = bufferSize;
+}
+</code></pre>
+<h3 id="daisy-chain-configuration">Daisy Chain Configuration</h3>
+<pre><code class="lang-cpp">// For shift registers or similar devices
+void daisyChainWrite(byte* data, int length) {
+  digitalWrite(chipSelectPin, LOW);
+  
+  for (int i = length - 1; i &gt;= 0; i--) {
+    SPI.transfer(data[i]); // Send from last to first
+  }
+  
+  digitalWrite(chipSelectPin, HIGH); // Latch data
+}
+</code></pre>
+<h2 id="common-applications">Common Applications</h2>
+<h3 id="sd-card-interface">SD Card Interface</h3>
+<pre><code class="lang-cpp">#include &lt;SD.h&gt;
+
+void setupSDCard() {
+  if (!SD.begin(chipSelectPin)) {
+    Serial.println(&quot;SD card initialization failed&quot;);
+    return;
+  }
+  
+  File dataFile = SD.open(&quot;datalog.txt&quot;, FILE_WRITE);
+  if (dataFile) {
+    dataFile.println(&quot;Timestamp,Temperature,Humidity&quot;);
+    dataFile.close();
+  }
+}
+</code></pre>
+<h3 id="tft-display-control">TFT Display Control</h3>
+<pre><code class="lang-cpp">void writeCommand(byte cmd) {
+  digitalWrite(dcPin, LOW);  // Command mode
+  digitalWrite(csPin, LOW);
+  SPI.transfer(cmd);
+  digitalWrite(csPin, HIGH);
+}
+
+void writeData(byte data) {
+  digitalWrite(dcPin, HIGH); // Data mode
+  digitalWrite(csPin, LOW);
+  SPI.transfer(data);
+  digitalWrite(csPin, HIGH);
+}
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li><p><strong>No response from slave</strong></p>
+<ul>
+<li>Check connections (MOSI, MISO, SCK, CS)</li>
+<li>Verify SPI mode settings</li>
+<li>Confirm slave address/CS signal</li>
+</ul>
+</li>
+<li><p><strong>Corrupted data</strong></p>
+<ul>
+<li>Check clock frequency (too fast for slave)</li>
+<li>Verify signal integrity with oscilloscope</li>
+<li>Ensure proper grounding</li>
+</ul>
+</li>
+<li><p><strong>Timing issues</strong></p>
+<ul>
+<li>Adjust setup/hold times</li>
+<li>Use appropriate clock divider</li>
+<li>Check PCB trace lengths</li>
+</ul>
+</li>
+</ol>
+<h3 id="debug-techniques">Debug Techniques</h3>
+<pre><code class="lang-cpp">void debugSPI() {
+  Serial.print(&quot;SPI Status: &quot;);
+  Serial.println(SPSR, BIN);
+  Serial.print(&quot;SPI Control: &quot;);
+  Serial.println(SPCR, BIN);
+  
+  // Test loopback (connect MOSI to MISO)
+  byte testData = 0xAA;
+  byte received = SPI.transfer(testData);
+  Serial.print(&quot;Sent: 0x&quot;);
+  Serial.print(testData, HEX);
+  Serial.print(&quot;, Received: 0x&quot;);
+  Serial.println(received, HEX);
+}
+</code></pre>
+<h2 id="performance-optimization">Performance Optimization</h2>
+<h3 id="high-speed-considerations">High-Speed Considerations</h3>
+<ol>
+<li><strong>Use shorter traces</strong> on PCB</li>
+<li><strong>Add termination resistors</strong> for long traces</li>
+<li><strong>Use differential signaling</strong> for very high speeds</li>
+<li><strong>Implement proper grounding</strong> and power decoupling</li>
+<li><strong>Consider signal slew rate</strong> and EMI</li>
+</ol>
+<h3 id="buffer-management">Buffer Management</h3>
+<pre><code class="lang-cpp">class SPIBuffer {
+private:
+  byte buffer[256];
+  int writeIndex = 0;
+  int readIndex = 0;
+  
+public:
+  void write(byte data) {
+    buffer[writeIndex] = data;
+    writeIndex = (writeIndex + 1) % 256;
+  }
+  
+  byte read() {
+    byte data = buffer[readIndex];
+    readIndex = (readIndex + 1) % 256;
+    return data;
+  }
+  
+  bool available() {
+    return writeIndex != readIndex;
+  }
+};
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Use appropriate clock speed</strong> for your application</li>
+<li><strong>Implement proper error handling</strong> and timeouts</li>
+<li><strong>Use hardware CS</strong> when possible for timing accuracy</li>
+<li><strong>Keep traces short</strong> and use ground planes</li>
+<li><strong>Document SPI mode</strong> used for each device</li>
+<li><strong>Use pull-up resistors</strong> on CS lines</li>
+<li><strong>Consider power sequencing</strong> for complex systems</li>
+</ol>
+<h2 id="comparison-with-other-protocols">Comparison with Other Protocols</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>SPI</th>
+<th>I2C</th>
+<th>UART</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wires</td>
+<td>4+</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>High (MHz)</td>
+<td>Medium (kHz)</td>
+<td>Medium (kHz)</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>Medium</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Multi-master</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Addressing</td>
+<td>CS lines</td>
+<td>Address bits</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Duplex</td>
+<td>Full</td>
+<td>Half</td>
+<td>Full</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/spi-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

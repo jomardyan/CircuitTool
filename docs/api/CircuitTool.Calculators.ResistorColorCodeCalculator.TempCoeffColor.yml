@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  id: ResistorColorCodeCalculator.TempCoeffColor
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Black
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Blue
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Brown
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Green
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Grey
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Orange
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Red
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Violet
+  - CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Yellow
+  langs:
+  - csharp
+  - vb
+  name: ResistorColorCodeCalculator.TempCoeffColor
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TempCoeffColor
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 50
+  namespace: CircuitTool.Calculators
+  summary: Temperature coefficient colors
+  example: []
+  syntax:
+    content: public enum ResistorColorCodeCalculator.TempCoeffColor
+    content.vb: Public Enum ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Black
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Black
+  id: Black
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Black
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Black
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Black
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Black
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 52
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Black = 250
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Brown
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Brown
+  id: Brown
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Brown
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Brown
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Brown
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Brown
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 53
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Brown = 100
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Red
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Red
+  id: Red
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Red
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Red
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Red
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 54
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Red = 50
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Orange
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Orange
+  id: Orange
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Orange
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Orange
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Orange
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Orange
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 55
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Orange = 15
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Yellow
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Yellow
+  id: Yellow
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Yellow
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Yellow
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Yellow
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Yellow
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 56
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Yellow = 25
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Green
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Green
+  id: Green
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Green
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Green
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Green
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 57
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Green = 20
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Blue
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Blue
+  id: Blue
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Blue
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Blue
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Blue
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 58
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Blue = 10
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Violet
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Violet
+  id: Violet
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Violet
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Violet
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Violet
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Violet
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 59
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Violet = 5
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Grey
+  commentId: F:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Grey
+  id: Grey
+  parent: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  langs:
+  - csharp
+  - vb
+  name: Grey
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor.Grey
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.Grey
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/ResistorColorCodeCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Grey
+    path: src/Calculators/ResistorColorCodeCalculator.cs
+    startLine: 60
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Grey = 1
+    return:
+      type: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.TempCoeffColor
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+    name: TempCoeffColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+    name: TempCoeffColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html

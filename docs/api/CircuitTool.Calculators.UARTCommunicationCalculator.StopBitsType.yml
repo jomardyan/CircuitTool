@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  id: UARTCommunicationCalculator.StopBitsType
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.One
+  - CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.OneAndHalf
+  - CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.Two
+  langs:
+  - csharp
+  - vb
+  name: UARTCommunicationCalculator.StopBitsType
+  nameWithType: UARTCommunicationCalculator.StopBitsType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: StopBitsType
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 67
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public enum UARTCommunicationCalculator.StopBitsType
+    content.vb: Public Enum UARTCommunicationCalculator.StopBitsType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.One
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.One
+  id: One
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: UARTCommunicationCalculator.StopBitsType.One
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.One
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: One
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 69
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: One = 1
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.OneAndHalf
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.OneAndHalf
+  id: OneAndHalf
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  langs:
+  - csharp
+  - vb
+  name: OneAndHalf
+  nameWithType: UARTCommunicationCalculator.StopBitsType.OneAndHalf
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.OneAndHalf
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: OneAndHalf
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 70
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: OneAndHalf = 2
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.Two
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.Two
+  id: Two
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: UARTCommunicationCalculator.StopBitsType.Two
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.Two
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Two
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 71
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Two = 3
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  name: UARTCommunicationCalculator.StopBitsType
+  nameWithType: UARTCommunicationCalculator.StopBitsType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+  spec.csharp:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+    name: StopBitsType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType
+    name: StopBitsType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.html

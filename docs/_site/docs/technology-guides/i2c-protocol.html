@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>I2C Protocol Guide | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="I2C Protocol Guide | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/i2c-protocol.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="i2c-protocol-guide">I2C Protocol Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Inter-Integrated Circuit (I2C) is a serial communication protocol developed by Philips Semiconductor (now NXP). It's designed for short-distance communication between microcontrollers and peripheral devices using only two wires.</p>
+<h2 id="protocol-overview">Protocol Overview</h2>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>Two-wire interface</strong>: SDA (Serial Data) and SCL (Serial Clock)</li>
+<li><strong>Multi-master, multi-slave</strong> architecture</li>
+<li><strong>7-bit or 10-bit addressing</strong> (7-bit is most common)</li>
+<li><strong>Half-duplex communication</strong></li>
+<li><strong>Built-in arbitration</strong> for multi-master scenarios</li>
+<li><strong>Acknowledgment mechanism</strong> for error detection</li>
+</ul>
+<h3 id="signal-lines">Signal Lines</h3>
+<ul>
+<li><strong>SDA (Serial Data Line)</strong>: Bidirectional data transmission</li>
+<li><strong>SCL (Serial Clock Line)</strong>: Clock signal generated by master</li>
+<li><strong>Pull-up resistors</strong>: Required on both lines (typically 4.7kΩ to 10kΩ)</li>
+</ul>
+<h2 id="protocol-operation">Protocol Operation</h2>
+<h3 id="start-and-stop-conditions">Start and Stop Conditions</h3>
+<ul>
+<li><strong>Start Condition</strong>: SDA goes LOW while SCL is HIGH</li>
+<li><strong>Stop Condition</strong>: SDA goes HIGH while SCL is HIGH</li>
+<li><strong>Repeated Start</strong>: Start condition without preceding stop condition</li>
+</ul>
+<h3 id="data-transfer-format">Data Transfer Format</h3>
+<pre><code>[START] [7-bit Address + R/W bit] [ACK] [Data Byte] [ACK] ... [STOP]
+</code></pre>
+<h3 id="clock-speeds">Clock Speeds</h3>
+<ul>
+<li><strong>Standard Mode</strong>: 100 kbit/s</li>
+<li><strong>Fast Mode</strong>: 400 kbit/s</li>
+<li><strong>Fast Mode Plus</strong>: 1 Mbit/s</li>
+<li><strong>High-speed Mode</strong>: 3.4 Mbit/s</li>
+</ul>
+<h2 id="hardware-configuration">Hardware Configuration</h2>
+<h3 id="pull-up-resistor-calculation">Pull-up Resistor Calculation</h3>
+<pre><code>R_pullup = (Vcc - 0.4V) / (3mA × number_of_devices)
+</code></pre>
+<p>Typical values:</p>
+<ul>
+<li><strong>100 kHz</strong>: 4.7kΩ - 10kΩ</li>
+<li><strong>400 kHz</strong>: 2.2kΩ - 4.7kΩ</li>
+<li><strong>1 MHz</strong>: 1kΩ - 2.2kΩ</li>
+</ul>
+<h3 id="bus-capacitance-limits">Bus Capacitance Limits</h3>
+<ul>
+<li><strong>Standard/Fast Mode</strong>: 400pF maximum</li>
+<li><strong>Fast Mode Plus</strong>: 550pF maximum</li>
+</ul>
+<h2 id="programming-examples">Programming Examples</h2>
+<h3 id="arduino-i2c-master-writing-data">Arduino I2C Master (Writing Data)</h3>
+<pre><code class="lang-cpp">#include &lt;Wire.h&gt;
+
+void setup() {
+  Wire.begin(); // Initialize as master
+  Serial.begin(9600);
+}
+
+void loop() {
+  Wire.beginTransmission(0x48); // Address 0x48
+  Wire.write(0x01); // Register address
+  Wire.write(0xFF); // Data to write
+  byte error = Wire.endTransmission();
+  
+  if (error == 0) {
+    Serial.println(&quot;Success&quot;);
+  } else {
+    Serial.print(&quot;Error: &quot;);
+    Serial.println(error);
+  }
+  
+  delay(1000);
+}
+</code></pre>
+<h3 id="arduino-i2c-master-reading-data">Arduino I2C Master (Reading Data)</h3>
+<pre><code class="lang-cpp">void readSensor() {
+  Wire.beginTransmission(0x48);
+  Wire.write(0x00); // Register to read
+  Wire.endTransmission(false); // Repeated start
+  
+  Wire.requestFrom(0x48, 2); // Request 2 bytes
+  
+  if (Wire.available() &gt;= 2) {
+    byte highByte = Wire.read();
+    byte lowByte = Wire.read();
+    uint16_t value = (highByte &lt;&lt; 8) | lowByte;
+    Serial.print(&quot;Value: &quot;);
+    Serial.println(value);
+  }
+}
+</code></pre>
+<h3 id="arduino-i2c-slave">Arduino I2C Slave</h3>
+<pre><code class="lang-cpp">#include &lt;Wire.h&gt;
+
+void setup() {
+  Wire.begin(0x48); // Initialize as slave with address 0x48
+  Wire.onReceive(receiveEvent);
+  Wire.onRequest(requestEvent);
+}
+
+void receiveEvent(int bytes) {
+  while (Wire.available()) {
+    byte data = Wire.read();
+    // Process received data
+  }
+}
+
+void requestEvent() {
+  Wire.write(42); // Send data to master
+}
+</code></pre>
+<h2 id="common-issues-and-troubleshooting">Common Issues and Troubleshooting</h2>
+<h3 id="bus-hanging">Bus Hanging</h3>
+<ul>
+<li><strong>Cause</strong>: Slave device holding SDA low</li>
+<li><strong>Solution</strong>: Send 9 clock pulses to reset slave state</li>
+</ul>
+<h3 id="communication-failures">Communication Failures</h3>
+<ul>
+<li><strong>Check pull-up resistors</strong>: Too high/low values</li>
+<li><strong>Verify addresses</strong>: Ensure no conflicts</li>
+<li><strong>Bus capacitance</strong>: Too many devices or long wires</li>
+<li><strong>Power supply noise</strong>: Use proper decoupling capacitors</li>
+</ul>
+<h3 id="address-conflicts">Address Conflicts</h3>
+<ul>
+<li>Use I2C scanner to detect devices:</li>
+</ul>
+<pre><code class="lang-cpp">for (byte address = 1; address &lt; 127; address++) {
+  Wire.beginTransmission(address);
+  if (Wire.endTransmission() == 0) {
+    Serial.print(&quot;Device found at 0x&quot;);
+    Serial.println(address, HEX);
+  }
+}
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Always use pull-up resistors</strong> on SDA and SCL lines</li>
+<li><strong>Keep bus length short</strong> (&lt; 1 meter for standard speeds)</li>
+<li><strong>Use proper PCB layout</strong> with ground planes and short traces</li>
+<li><strong>Implement timeouts</strong> in software to prevent hanging</li>
+<li><strong>Use level shifters</strong> when mixing different voltage levels</li>
+<li><strong>Document device addresses</strong> to avoid conflicts</li>
+</ol>
+<h2 id="applications">Applications</h2>
+<ul>
+<li><strong>Sensor interfaces</strong>: Temperature, pressure, accelerometers</li>
+<li><strong>EEPROM/Flash memory</strong> communication</li>
+<li><strong>Real-time clocks (RTC)</strong></li>
+<li><strong>LCD displays</strong> with I2C backpacks</li>
+<li><strong>GPIO expanders</strong></li>
+<li><strong>DAC/ADC</strong> converters</li>
+</ul>
+<h2 id="related-protocols">Related Protocols</h2>
+<ul>
+<li><strong>SMBus</strong>: System Management Bus (subset of I2C)</li>
+<li><strong>PMBus</strong>: Power Management Bus (based on SMBus)</li>
+<li><strong>IPMB</strong>: Intelligent Platform Management Bus</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/technology-guides/i2c-protocol.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

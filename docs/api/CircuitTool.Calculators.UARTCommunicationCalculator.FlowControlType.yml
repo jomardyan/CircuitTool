@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  id: UARTCommunicationCalculator.FlowControlType
+  parent: CircuitTool.Calculators
+  children:
+  - CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Hardware
+  - CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.None
+  - CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Software
+  langs:
+  - csharp
+  - vb
+  name: UARTCommunicationCalculator.FlowControlType
+  nameWithType: UARTCommunicationCalculator.FlowControlType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  type: Enum
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FlowControlType
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 74
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: public enum UARTCommunicationCalculator.FlowControlType
+    content.vb: Public Enum UARTCommunicationCalculator.FlowControlType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.None
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.None
+  id: None
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UARTCommunicationCalculator.FlowControlType.None
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.None
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: None
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 76
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: None = 0
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Hardware
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Hardware
+  id: Hardware
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  langs:
+  - csharp
+  - vb
+  name: Hardware
+  nameWithType: UARTCommunicationCalculator.FlowControlType.Hardware
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Hardware
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Hardware
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 77
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Hardware = 1
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Software
+  commentId: F:CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Software
+  id: Software
+  parent: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  langs:
+  - csharp
+  - vb
+  name: Software
+  nameWithType: UARTCommunicationCalculator.FlowControlType.Software
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.Software
+  type: Field
+  source:
+    remote:
+      path: src/Calculators/UARTCommunicationCalculator.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Software
+    path: src/Calculators/UARTCommunicationCalculator.cs
+    startLine: 78
+  namespace: CircuitTool.Calculators
+  syntax:
+    content: Software = 2
+    return:
+      type: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+references:
+- uid: CircuitTool.Calculators
+  commentId: N:CircuitTool.Calculators
+  href: CircuitTool.html
+  name: CircuitTool.Calculators
+  nameWithType: CircuitTool.Calculators
+  fullName: CircuitTool.Calculators
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Calculators
+    name: Calculators
+    href: CircuitTool.Calculators.html
+- uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  name: UARTCommunicationCalculator.FlowControlType
+  nameWithType: UARTCommunicationCalculator.FlowControlType
+  fullName: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+  spec.csharp:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+    name: FlowControlType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator
+    name: UARTCommunicationCalculator
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType
+    name: FlowControlType
+    href: CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.html

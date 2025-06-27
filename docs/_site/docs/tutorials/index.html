@@ -1,124 +1,165 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Getting Started with CircuitTool | CircuitTool Documentation </title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Getting Started with CircuitTool | CircuitTool Documentation ">
-    
-    
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../../styles/docfx.css">
-      <link rel="stylesheet" href="../../styles/main.css">
-      <meta property="docfx:navrel" content="../../toc.html">
-      <meta property="docfx:tocrel" content="../toc.html">
-    
-    <meta property="docfx:rel" content="../../">
-    <meta property="docfx:newtab" content="true">
+      <title>&#127891; CircuitTool Tutorials | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="&#127891; CircuitTool Tutorials | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/tutorials/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="CircuitTool">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
+      </nav>
+    </header>
 
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="getting-started-with-circuittool">Getting Started with CircuitTool</h1>
 
-<p>This tutorial will guide you through the basics of using CircuitTool for electrical engineering calculations.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+        <article data-uid="">
+<h1 id="-circuittool-tutorials">🎓 CircuitTool Tutorials</h1>
+
+<blockquote>
+<p><strong>Comprehensive learning materials for mastering electrical engineering calculations</strong></p>
+</blockquote>
+<p>Welcome to the CircuitTool tutorials section! These step-by-step guides will take you from basic concepts to advanced engineering analysis.</p>
+<h2 id="-learning-path">📚 Learning Path</h2>
+<h3 id="-beginner-level-start-here">🎯 Beginner Level (Start Here)</h3>
+<h4 id="1-fundamentals-of-electrical-calculations">1. <a href="fundamentals.md">Fundamentals of Electrical Calculations</a></h4>
 <ul>
-<li>.NET Framework 4.5+ or .NET 6.0+</li>
-<li>Basic understanding of electrical engineering concepts</li>
-<li>Visual Studio, VS Code, or any .NET-compatible IDE</li>
+<li><strong>Duration</strong>: 30 minutes</li>
+<li><strong>Topics</strong>: Ohm's Law, Power calculations, Units</li>
+<li><strong>Prerequisites</strong>: Basic algebra</li>
+<li><strong>Outcome</strong>: Understand core electrical relationships</li>
 </ul>
-<h2 id="installation">Installation</h2>
-<h3 id="via-nuget-package-manager-recommended">Via NuGet Package Manager (Recommended)</h3>
-<ol>
-<li><p><strong>Using Package Manager Console:</strong></p>
-<pre><code class="lang-powershell">Install-Package CircuitTool
-</code></pre>
-</li>
-<li><p><strong>Using .NET CLI:</strong></p>
-<pre><code class="lang-bash">dotnet add package CircuitTool
-</code></pre>
-</li>
-<li><p><strong>Using PackageReference in .csproj:</strong></p>
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;CircuitTool&quot; Version=&quot;2.0.0&quot; /&gt;
-</code></pre>
-</li>
-</ol>
-<h2 id="basic-usage-examples">Basic Usage Examples</h2>
-<h3 id="1-ohms-law-calculations">1. Ohm's Law Calculations</h3>
-<pre><code class="lang-csharp">using CircuitTool;
-
-// Calculate voltage when current and resistance are known
-double voltage = OhmsLawCalculator.CalculateVoltage(current: 2.5, resistance: 100.0);
-Console.WriteLine($&quot;Voltage: {voltage}V&quot;); // Output: 250V
-
-// Calculate current when voltage and resistance are known
-double current = OhmsLawCalculator.CalculateCurrent(voltage: 12.0, resistance: 1000.0);
-Console.WriteLine($&quot;Current: {current}A&quot;); // Output: 0.012A
-
-// Calculate resistance when voltage and current are known
-double resistance = OhmsLawCalculator.CalculateResistance(voltage: 5.0, current: 0.1);
-Console.WriteLine($&quot;Resistance: {resistance}Ω&quot;); // Output: 50Ω
-</code></pre>
-<h3 id="2-power-calculations">2. Power Calculations</h3>
+<h4 id="2-component-analysis--design">2. <a href="components.md">Component Analysis &amp; Design</a></h4>
+<ul>
+<li><strong>Duration</strong>: 45 minutes</li>
+<li><strong>Topics</strong>: Resistors, LEDs, Capacitors, Inductors</li>
+<li><strong>Prerequisites</strong>: Fundamentals tutorial</li>
+<li><strong>Outcome</strong>: Design basic electronic components</li>
+</ul>
+<h4 id="3-circuit-analysis-techniques">3. <a href="circuits.md">Circuit Analysis Techniques</a></h4>
+<ul>
+<li><strong>Duration</strong>: 60 minutes</li>
+<li><strong>Topics</strong>: Series/parallel networks, Voltage dividers, Thevenin equivalent</li>
+<li><strong>Prerequisites</strong>: Component analysis</li>
+<li><strong>Outcome</strong>: Analyze complex circuit networks</li>
+</ul>
+<h3 id="-intermediate-level">⚡ Intermediate Level</h3>
+<h4 id="4-ac-circuit-analysis">4. <a href="ac-analysis.md">AC Circuit Analysis</a></h4>
+<ul>
+<li><strong>Duration</strong>: 75 minutes</li>
+<li><strong>Topics</strong>: Impedance, Reactance, Frequency response, Resonance</li>
+<li><strong>Prerequisites</strong>: Circuit analysis basics</li>
+<li><strong>Outcome</strong>: Master AC circuit calculations</li>
+</ul>
+<h4 id="5-filter-design--analysis">5. <a href="filters.md">Filter Design &amp; Analysis</a></h4>
+<ul>
+<li><strong>Duration</strong>: 60 minutes</li>
+<li><strong>Topics</strong>: Low-pass, High-pass, Band-pass filters</li>
+<li><strong>Prerequisites</strong>: AC circuit analysis</li>
+<li><strong>Outcome</strong>: Design practical filter circuits</li>
+</ul>
+<h4 id="6-power-system-analysis">6. <a href="power-systems.md">Power System Analysis</a></h4>
+<ul>
+<li><strong>Duration</strong>: 90 minutes</li>
+<li><strong>Topics</strong>: Efficiency, Regulation, Transformers, Power factor</li>
+<li><strong>Prerequisites</strong>: AC analysis</li>
+<li><strong>Outcome</strong>: Analyze power distribution systems</li>
+</ul>
+<h3 id="-advanced-level">🚀 Advanced Level</h3>
+<h4 id="7-signal-integrity--emc">7. <a href="signal-integrity.md">Signal Integrity &amp; EMC</a></h4>
+<ul>
+<li><strong>Duration</strong>: 120 minutes</li>
+<li><strong>Topics</strong>: Transmission lines, Crosstalk, EMC compliance</li>
+<li><strong>Prerequisites</strong>: Filter design</li>
+<li><strong>Outcome</strong>: Design high-speed digital systems</li>
+</ul>
+<h4 id="8-thermal-management">8. <a href="thermal-analysis.md">Thermal Management</a></h4>
+<ul>
+<li><strong>Duration</strong>: 90 minutes</li>
+<li><strong>Topics</strong>: Heat transfer, Junction temperature, Thermal resistance</li>
+<li><strong>Prerequisites</strong>: Power systems</li>
+<li><strong>Outcome</strong>: Design thermal management solutions</li>
+</ul>
+<h4 id="9-performance-optimization">9. <a href="performance.md">Performance Optimization</a></h4>
+<ul>
+<li><strong>Duration</strong>: 75 minutes</li>
+<li><strong>Topics</strong>: Vectorization, Caching, Batch processing</li>
+<li><strong>Prerequisites</strong>: Basic programming knowledge</li>
+<li><strong>Outcome</strong>: Optimize calculation performance</li>
+</ul>
+<hr>
+<p><strong>Ready to start learning?</strong> Begin with the <a href="fundamentals.md">Fundamentals of Electrical Calculations</a> tutorial!</p>
 <pre><code class="lang-csharp">// Power using voltage and current
 double power1 = PowerCalculator.CalculatePower(voltage: 12.0, current: 2.0);
 Console.WriteLine($&quot;Power: {power1}W&quot;); // Output: 24W
@@ -222,42 +263,28 @@ var results = BulkOperations.CalculateMultipleOhmsLaw(current: 0.01, resistanceV
 <p>Ready to dive deeper? Check out our <a href="hardware-tutorial.md">Hardware Integration Tutorial</a> next!</p>
 
 </article>
-          </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/tutorials/index.md/#L1" class="contribution-link">Edit this page</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/tutorials/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
       </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      CircuitTool - Comprehensive C# library for electrical engineering calculations
-      
-          </div>
-        </div>
-      </footer>
-    </div>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

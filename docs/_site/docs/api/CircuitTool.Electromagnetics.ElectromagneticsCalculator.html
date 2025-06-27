@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ElectromagneticsCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ElectromagneticsCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations for electromagnetic field analysis and antenna design.">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Electromagnetics_ElectromagneticsCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.Electromagnetics.ElectromagneticsCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator">
+
+
+
+  <h1 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator" class="text-break">
+Class ElectromagneticsCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.Electromagnetics.html">Electromagnetics</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations for electromagnetic field analysis and antenna design.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ElectromagneticsCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ElectromagneticsCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Example usage:</p>
+<pre><code class="lang-csharp">double efield = ElectromagneticsCalculator.ElectricFieldStrength(100, 1000); // Electric field
+double power = ElectromagneticsCalculator.PowerDensity(377, 1.0); // Power density
+double gain = ElectromagneticsCalculator.AntennaGain(10, 0.8); // Antenna gain</code></pre>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_AntennaGain_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_AntennaGain_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.AntennaGain(System.Double,System.Double)">
+  AntennaGain(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates antenna gain from directivity and efficiency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AntennaGain(double directivity, double efficiency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>directivity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Directivity (linear, not dB).</p>
+</dd>
+    <dt><code>efficiency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Antenna efficiency (0-1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Antenna gain (linear).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_AntennaGain_System_Double_System_Double__examples">Examples</h4>
+  <p>double gain = ElectromagneticsCalculator.AntennaGain(10, 0.8); // Antenna gain</p>
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_DipoleLength_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_DipoleLength_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.DipoleLength(System.Double,System.Double)">
+  DipoleLength(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates resonant length of a dipole antenna.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double DipoleLength(double frequency, double velocityFactor = 0.95)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+    <dt><code>velocityFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Velocity factor (default: 0.95 for wire in air).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resonant length in meters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_EffectiveAperture_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_EffectiveAperture_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.EffectiveAperture(System.Double,System.Double)">
+  EffectiveAperture(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates effective aperture of an antenna.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double EffectiveAperture(double gain, double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Antenna gain (linear, not dB).</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Effective aperture in square meters (m²).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_ElectricFieldStrength_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_ElectricFieldStrength_System_Double_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.ElectricFieldStrength(System.Double,System.Double,System.Double)">
+  ElectricFieldStrength(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates electric field strength from power and distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ElectricFieldStrength(double power, double distance, double gain = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>power</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmitted power in watts (W).</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Distance from source in meters (m).</p>
+</dd>
+    <dt><code>gain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Antenna gain (linear, not dB). Default is 1 (isotropic).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Electric field strength in V/m.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_ElectricFieldStrength_System_Double_System_Double_System_Double__examples">Examples</h4>
+  <p>double efield = ElectromagneticsCalculator.ElectricFieldStrength(100, 1000); // Electric field</p>
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_FarFieldDistance_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_FarFieldDistance_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.FarFieldDistance(System.Double,System.Double)">
+  FarFieldDistance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates far-field distance for an antenna.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double FarFieldDistance(double antennaSize, double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>antennaSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Largest dimension of antenna in meters.</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Far-field distance in meters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_FriisTransmission_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_FriisTransmission_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.FriisTransmission(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  FriisTransmission(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates Friis transmission formula for power received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double FriisTransmission(double transmittedPower, double transmitGain, double receiveGain, double frequency, double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transmittedPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmitted power in watts (W).</p>
+</dd>
+    <dt><code>transmitGain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Transmit antenna gain (linear).</p>
+</dd>
+    <dt><code>receiveGain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Receive antenna gain (linear).</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Distance between antennas in meters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Received power in watts (W).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_LoopInductance_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_LoopInductance_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.LoopInductance(System.Double,System.Double)">
+  LoopInductance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates loop antenna inductance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double LoopInductance(double radius, double wireRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Loop radius in meters.</p>
+</dd>
+    <dt><code>wireRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wire radius in meters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Inductance in henries (H).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_MagneticFieldStrength_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_MagneticFieldStrength_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.MagneticFieldStrength(System.Double,System.Double)">
+  MagneticFieldStrength(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates magnetic field strength from electric field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MagneticFieldStrength(double electricField, double impedance = 376.730313668)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>electricField</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Electric field strength in V/m.</p>
+</dd>
+    <dt><code>impedance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wave impedance in ohms (default: free space).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Magnetic field strength in A/m.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_MonopoleImpedance_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_MonopoleImpedance_System_Double_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.MonopoleImpedance(System.Double,System.Double,System.Double)">
+  MonopoleImpedance(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates monopole antenna impedance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MonopoleImpedance(double height, double frequency, double groundRadius = Infinity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Monopole height in meters.</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+    <dt><code>groundRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Ground plane radius in meters (if applicable).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input impedance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_PowerDensity_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_PowerDensity_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.PowerDensity(System.Double,System.Double)">
+  PowerDensity(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates power density from electric field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PowerDensity(double impedance, double electricField)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>impedance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wave impedance in ohms.</p>
+</dd>
+    <dt><code>electricField</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Electric field strength in V/m.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Power density in W/m².</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_PowerDensity_System_Double_System_Double__examples">Examples</h4>
+  <p>double power = ElectromagneticsCalculator.PowerDensity(377, 1.0); // Power density</p>
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_ShortDipoleRadiationResistance_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_ShortDipoleRadiationResistance_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.ShortDipoleRadiationResistance(System.Double,System.Double)">
+  ShortDipoleRadiationResistance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates radiation resistance of a short dipole.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ShortDipoleRadiationResistance(double length, double frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Antenna length in meters.</p>
+</dd>
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Radiation resistance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_SkinDepth_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_SkinDepth_System_Double_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.SkinDepth(System.Double,System.Double,System.Double)">
+  SkinDepth(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates skin depth in a conductor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SkinDepth(double frequency, double conductivity = 59600000, double relativePermeability = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Frequency in Hz.</p>
+</dd>
+    <dt><code>conductivity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Conductivity in S/m (default: copper).</p>
+</dd>
+    <dt><code>relativePermeability</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative permeability (default: 1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Skin depth in meters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_WaveImpedance_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance*"></a>
+
+  <h3 id="CircuitTool_Electromagnetics_ElectromagneticsCalculator_WaveImpedance_System_Double_System_Double_" data-uid="CircuitTool.Electromagnetics.ElectromagneticsCalculator.WaveImpedance(System.Double,System.Double)">
+  WaveImpedance(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates wave impedance in a medium.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double WaveImpedance(double relativePermittivity, double relativePermeability = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relativePermittivity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative permittivity.</p>
+</dd>
+    <dt><code>relativePermeability</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative permeability (default: 1).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wave impedance in ohms (Ω).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Electromagnetics/ElectromagneticsCalculator.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
