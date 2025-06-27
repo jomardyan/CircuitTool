@@ -50,11 +50,13 @@ jobs:
 
     - name: Restore and build
       run: |
-        dotnet restore
-        dotnet build --configuration Release --no-restore
+        dotnet restore CircuitTool.sln
+        dotnet restore CircuitTool.CLI.sln
+        dotnet build CircuitTool.sln --configuration Release --no-restore
+        dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
 
     - name: Run tests
-      run: dotnet test --configuration Release --no-build --verbosity normal
+      run: dotnet test CircuitTool.CLI.sln --configuration Release --no-build --verbosity normal
 
     - name: Generate changelog
       id: changelog

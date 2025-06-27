@@ -42,17 +42,23 @@ jobs:
           6.0.x
           8.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore dependencies for main library
+      run: dotnet restore CircuitTool.sln
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
+
+    - name: Build main library
+      run: dotnet build CircuitTool.sln --configuration Release --no-restore
+
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal
+      run: dotnet test CircuitTool.CLI.sln --configuration Release --no-build --verbosity normal
 
-    - name: Pack
-      run: dotnet pack --configuration Release --no-build --output ${{ env.NuGetDirectory }}
+    - name: Pack main library
+      run: dotnet pack CircuitTool.sln --configuration Release --no-build --output ${{ env.NuGetDirectory }}
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4

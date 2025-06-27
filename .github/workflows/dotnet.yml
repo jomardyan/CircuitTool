@@ -33,14 +33,20 @@ jobs:
           6.0.x
           8.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore dependencies for main library
+      run: dotnet restore CircuitTool.sln
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
+
+    - name: Build main library
+      run: dotnet build CircuitTool.sln --configuration Release --no-restore
+
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test --configuration Release --no-build --verbosity normal --logger trx --results-directory TestResults/
+      run: dotnet test CircuitTool.CLI.sln --configuration Release --no-build --verbosity normal --logger trx --results-directory TestResults/
 
     - name: Upload test results
       uses: actions/upload-artifact@v4
@@ -65,11 +71,11 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
 
     - name: Run code analysis
-      run: dotnet build --configuration Release --verbosity normal /p:RunCodeAnalysis=true
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --verbosity normal /p:RunCodeAnalysis=true
