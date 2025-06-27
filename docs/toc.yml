@@ -1,18 +1,18 @@
-- name: 🏠 Documentation Home
+- name: 🏠 Home
   href: index.md
-- name: 🚀 Getting Started
-  href: ../articles/getting-started.md
+- name: 🚀 Getting Started  
+  href: articles/getting-started.md
 - name: 📖 API Reference
   href: api/
-- name: 🎓 Tutorials
-  href: tutorials/
-- name: 💡 Examples & Use Cases
-  href: examples/
-- name: 🔧 Hardware Integration
-  href: technology-guides/
-- name: 💻 Interactive CLI
-  href: ../CircuitTool.CLI/README.md
-- name: 🏗️ Project Architecture
-  href: ../PROJECT_CODE_MAP.md
-- name: 🐙 Source Code
+- name: 📚 Tutorials
+  href: docs/tutorials/
+- name: 💡 Examples
+  href: docs/examples/
+- name: 🔧 Hardware Guides
+  href: docs/technology-guides/
+- name: 💻 CLI Documentation
+  href: CircuitTool.CLI/README.md
+- name: 🗺️ Architecture
+  href: PROJECT_CODE_MAP.md
+- name: 🐙 GitHub
   href: https://github.com/jomardyan/CircuitTool

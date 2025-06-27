@@ -124,8 +124,8 @@ install_docfx() {
 build_documentation() {
     echo -e "${YELLOW}Building documentation...${NC}"
     
-    if [ ! -f "docfx.json" ]; then
-        echo -e "${RED}✗ docfx.json not found. Make sure you're in the project root directory.${NC}"
+    if [ ! -f "config/docfx.json" ]; then
+        echo -e "${RED}✗ config/docfx.json not found. Make sure you're in the project root directory.${NC}"
         exit 1
     fi
     
@@ -140,7 +140,7 @@ build_documentation() {
     
     # Generate API documentation
     echo -e "${BLUE}Generating API documentation...${NC}"
-    docfx metadata docfx.json
+    docfx metadata config/docfx.json
     
     if [ $? -ne 0 ]; then
         echo -e "${RED}✗ API documentation generation failed${NC}"
@@ -149,7 +149,7 @@ build_documentation() {
     
     # Build HTML documentation
     echo -e "${BLUE}Building HTML documentation...${NC}"
-    docfx build docfx.json
+    docfx build config/docfx.json
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✓ Documentation built successfully!${NC}"

@@ -4,13 +4,13 @@
 # This script prepares everything needed for a GitHub release and optionally creates it automatically
 #
 # Usage:
-#   ./prepare-release.sh                    # Full release with auto GitHub creation
-#   AUTO_CREATE_RELEASE=false ./prepare-release.sh  # Build only, no GitHub release
-#   PRERELEASE=true ./prepare-release.sh    # Create as pre-release
-#   GITHUB_REPO="user/repo" ./prepare-release.sh    # Use different repository
-#   DRY_RUN=true ./prepare-release.sh       # Simulate release without creating it
-#   SKIP_TESTS=true ./prepare-release.sh    # Skip test execution (for debug builds)
-#   ./prepare-release.sh --help             # Show help information
+#   build/prepare-release.sh                    # Full release with auto GitHub creation
+#   AUTO_CREATE_RELEASE=false build/prepare-release.sh  # Build only, no GitHub release
+#   PRERELEASE=true build/prepare-release.sh    # Create as pre-release
+#   GITHUB_REPO="user/repo" build/prepare-release.sh    # Use different repository
+#   DRY_RUN=true build/prepare-release.sh       # Simulate release without creating it
+#   SKIP_TESTS=true build/prepare-release.sh    # Skip test execution (for debug builds)
+#   build/prepare-release.sh --help             # Show help information
 #
 # Prerequisites for auto GitHub release:
 #   - GitHub CLI installed (https://cli.github.com/)
@@ -29,14 +29,14 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo "It will automatically increment version numbers and commit any uncommitted changes before proceeding with the release."
     echo ""
     echo "Usage:"
-    echo "  ./prepare-release.sh                    # Full release with auto GitHub creation (patch increment)"
-    echo "  VERSION_INCREMENT=minor ./prepare-release.sh    # Increment minor version"
-    echo "  VERSION_INCREMENT=major ./prepare-release.sh    # Increment major version"
-    echo "  AUTO_CREATE_RELEASE=false ./prepare-release.sh  # Build only, no GitHub release"
-    echo "  PRERELEASE=true ./prepare-release.sh    # Create as pre-release"
-    echo "  GITHUB_REPO=\"user/repo\" ./prepare-release.sh    # Use different repository"
-    echo "  DRY_RUN=true ./prepare-release.sh       # Simulate release without creating it"
-    echo "  SKIP_TESTS=true ./prepare-release.sh    # Skip test execution (for debug builds)"
+    echo "  build/prepare-release.sh                    # Full release with auto GitHub creation (patch increment)"
+    echo "  VERSION_INCREMENT=minor build/prepare-release.sh    # Increment minor version"
+    echo "  VERSION_INCREMENT=major build/prepare-release.sh    # Increment major version"
+    echo "  AUTO_CREATE_RELEASE=false build/prepare-release.sh  # Build only, no GitHub release"
+    echo "  PRERELEASE=true build/prepare-release.sh    # Create as pre-release"
+    echo "  GITHUB_REPO=\"user/repo\" build/prepare-release.sh    # Use different repository"
+    echo "  DRY_RUN=true build/prepare-release.sh       # Simulate release without creating it"
+    echo "  SKIP_TESTS=true build/prepare-release.sh    # Skip test execution (for debug builds)"
     echo ""
     echo "Environment Variables:"
     echo "  VERSION_INCREMENT   - Version increment type: patch, minor, major (default: patch)"
@@ -316,6 +316,13 @@ commit_all_changes() {
 # ============================================================================
 # MAIN EXECUTION
 # ============================================================================
+
+# Ensure we're in the project root directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_ROOT"
+
+print_color "🏗️  Working from project root: $PROJECT_ROOT" "$BLUE"
 
 # Step -1: Read current versions from project files
 print_color "� Reading current version numbers..." "$YELLOW"

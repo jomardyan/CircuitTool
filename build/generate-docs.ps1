@@ -71,8 +71,8 @@ function Install-DocFX {
 function Build-Documentation {
     Write-Host "Building documentation..." -ForegroundColor Yellow
     
-    if (!(Test-Path "docfx.json")) {
-        Write-Host "✗ docfx.json not found. Make sure you're in the project root directory." -ForegroundColor Red
+    if (!(Test-Path "config/docfx.json")) {
+        Write-Host "✗ config/docfx.json not found. Make sure you're in the project root directory." -ForegroundColor Red
         exit 1
     }
     
@@ -87,7 +87,7 @@ function Build-Documentation {
     
     # Generate API documentation
     Write-Host "Generating API documentation..." -ForegroundColor Blue
-    docfx metadata docfx.json
+    docfx metadata config/docfx.json
     
     if ($LASTEXITCODE -ne 0) {
         Write-Host "✗ API documentation generation failed" -ForegroundColor Red
@@ -96,7 +96,7 @@ function Build-Documentation {
     
     # Build HTML documentation
     Write-Host "Building HTML documentation..." -ForegroundColor Blue
-    docfx build docfx.json
+    docfx build config/docfx.json
     
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✓ Documentation built successfully!" -ForegroundColor Green

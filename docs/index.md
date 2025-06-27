@@ -1,122 +1,114 @@
-# CircuitTool Documentation
+# 🔌 CircuitTool Documentation
+
+[![Build Status](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
+[![NuGet Version](https://img.shields.io/nuget/v/CircuitTool)](https://www.nuget.org/packages/CircuitTool)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 > **Comprehensive C# library for electrical engineering and electronics calculations**
 
-Welcome to the complete documentation for **CircuitTool** - a modern, high-performance library designed for engineers, students, and developers working with electronic systems.
+Welcome to the complete documentation for CircuitTool - a modern, high-performance library designed for engineers, students, and developers working with electronic systems.
 
-## 🎯 What is CircuitTool?
-
-CircuitTool provides a comprehensive suite of tools and calculators for:
-
-- **⚡ Electrical Calculations** - Ohm's Law, Power, Voltage, Current, Resistance
-- **🔧 Component Analysis** - Resistors, Capacitors, Inductors, Transformers, LEDs
-- **📡 AC Circuit Analysis** - Impedance, Phase, Frequency Response, Resonance
-- **🤖 Hardware Integration** - Arduino, ESP32, Raspberry Pi support and code generation
-- **📡 Communication Protocols** - I2C, SPI, UART, COM Port analysis tools
-- **📊 Advanced Analysis** - Signal Integrity, EMC compliance, Thermal management
-- **⚡ Performance Optimization** - Vectorized calculations, Intelligent caching
-
-## 🚀 Quick Start Guide
+## 🚀 Quick Start
 
 ### Installation
-
-Install CircuitTool via NuGet Package Manager:
-
 ```bash
-# .NET CLI
 dotnet add package CircuitTool
-
-# Package Manager Console  
-Install-Package CircuitTool
 ```
 
-### Platform Support
-- **.NET Framework**: 4.5, 4.6.2, 4.8.1+
-- **.NET Core**: 3.1+  
-- **.NET**: 6.0+, 8.0+
-- **.NET Standard**: 2.0, 2.1
-
-### Basic Usage Examples
-
+### Basic Example
 ```csharp
 using CircuitTool;
 
-// 🧮 Basic Ohm's Law calculation
-double voltage = OhmsLawCalculator.CalculateVoltage(current: 2.0, resistance: 100.0);
-Console.WriteLine($"Voltage: {voltage}V"); // Output: Voltage: 200V
+// Calculate LED resistor value
+double resistor = LEDCalculator.CalculateResistorValue(
+    supplyVoltage: 5.0,
+    ledVoltage: 2.1,
+    ledCurrent: 0.02
+); // Returns: 145Ω
 
-// 🔧 LED current limiting resistor design
-var ledResult = LEDCalculator.CalculateCurrentLimitingResistor(
-    supplyVoltage: 5.0, 
-    ledVoltage: 2.1, 
-    ledCurrent: 0.02);
-Console.WriteLine($"Required resistor: {ledResult.resistance}Ω");
-
-// 📡 AC circuit impedance analysis
-double impedance = ImpedanceCalculator.CalculateMagnitude(
-    resistance: 100,
-    reactance: 50);
-Console.WriteLine($"Impedance magnitude: {impedance:F1}Ω");
-
-// 🤖 Arduino GPIO code generation
-string gpioCode = ArduinoTools.GenerateGPIOCode(pin: 13, mode: "OUTPUT");
-Console.WriteLine($"Generated code:\n{gpioCode}");
-
-// 📊 Advanced power analysis
-double efficiency = PowerCalculator.CalculateEfficiency(
-    inputPower: 100, 
-    outputPower: 85);
-Console.WriteLine($"Power efficiency: {efficiency:P}");
+// Ohm's Law calculation
+double power = PowerCalculator.Power(voltage: 12, current: 2); // 24W
 ```
 
-## 📚 Documentation Structure
+## 📚 Documentation Sections
 
-| Section | Description | Target Audience |
-|---------|-------------|-----------------|
-| **[🚀 Getting Started](articles/getting-started.html)** | Step-by-step tutorials and basic examples | Beginners |
-| **[📖 API Reference](api/)** | Complete API documentation with examples | All users |
-| **[🎓 Tutorials](tutorials/)** | In-depth learning materials | Students & Engineers |
-| **[💡 Examples](examples/)** | Real-world usage scenarios | Developers |
-| **[🔧 Hardware Guides](technology-guides/)** | Platform-specific integration guides | Hardware developers |
-| **[💻 CLI Documentation](../CircuitTool.CLI/README.html)** | Interactive command-line interface | All users |
+| Section | Description | Best For |
+|---------|-------------|----------|
+| 🚀 **[Getting Started](articles/getting-started.md)** | Installation, basic usage, first steps | New users |
+| 📖 **[API Reference](docs/api/)** | Complete API documentation | All users |
+| 🎓 **[Tutorials](docs/tutorials/)** | Step-by-step learning materials | Learning |
+| 💡 **[Examples](docs/examples/)** | Real-world usage scenarios | Practical applications |
+| 🔧 **[Hardware Guides](docs/technology-guides/)** | Platform-specific integration | Hardware developers |
+| 💻 **[CLI Documentation](CircuitTool.CLI/README.md)** | Interactive command-line interface | Testing & automation |
+
+## ✨ Key Features
+
+### 🧮 Core Electrical Calculations
+- **Ohm's Law & Power**: All basic electrical relationships
+- **Component Analysis**: Resistors, capacitors, inductors, transformers  
+- **Circuit Networks**: Series/parallel combinations, voltage dividers
+- **Unit Conversions**: Comprehensive electrical units system
+
+### 🔧 Component Design & Analysis
+- **LED Design**: Current limiting resistors, brightness calculations
+- **Filter Design**: RC/RL filters, frequency response analysis
+- **Power Systems**: Efficiency, regulation, thermal analysis
+- **Tolerance Analysis**: Worst-case and statistical methods
+
+### 📡 AC Circuit Analysis
+- **Impedance & Reactance**: Complex impedance calculations
+- **Frequency Response**: Magnitude and phase analysis
+- **Resonance**: RLC circuit analysis and optimization
+- **Power Factor**: Real, reactive, and apparent power
+
+### 🤖 Hardware Platform Support
+- **Arduino**: Pin configuration, ADC/PWM, code generation
+- **ESP32**: Power optimization, WiFi calculations
+- **Raspberry Pi**: GPIO control, hardware interfaces
+- **Universal MCU**: Cross-platform microcontroller tools
+
+### 📊 Advanced Engineering Analysis
+- **Signal Integrity**: Transmission lines, crosstalk analysis
+- **EMC Compliance**: Electric field calculations, shielding
+- **Thermal Management**: Heat transfer, junction temperature
+- **Performance**: Vectorized calculations, intelligent caching
 
 ## 🎯 Popular Use Cases
 
-### 🔋 Electronics Design & Prototyping
+### 🔋 Electronics Design
 ```csharp
-// Power supply design
+// Power supply design with thermal analysis
 var regulator = PowerCalculator.DesignLinearRegulator(
     inputVoltage: 12.0,
-    outputVoltage: 5.0, 
+    outputVoltage: 5.0,
     loadCurrent: 1.0
 );
 
-// Component tolerance analysis
+// Component tolerance analysis  
 var analysis = ToleranceCalculator.WorstCaseAnalysis(
-    components: new[] { 100.0, 200.0, 300.0 },
+    nominalValues: new[] { 100, 200, 300 },
     tolerances: new[] { 0.05, 0.01, 0.02 }
 );
 ```
 
-### 🤖 Embedded Systems Development
+### 🤖 Embedded Development
 ```csharp
-// ESP32 battery life estimation
+// ESP32 battery life optimization
 var batteryLife = ESP32Tools.CalculateBatteryLife(
-    batteryCapacity: 2000,  // mAh
+    batteryCapacity: 2500,  // mAh
     activeCurrentMA: 160,
     sleepCurrentUA: 10,
     dutyCycle: 0.01
 );
 
-// UART communication analysis
-var timing = UARTCommunicationCalculator.CalculateTiming(
-    baudRate: 115200,
-    dataBits: 8,
-    stopBits: 1
+// Arduino sensor interface design
+var interface = ArduinoTools.DesignSensorInterface(
+    sensorType: "NTC",
+    targetResolution: 0.1  // 0.1°C
 );
 ```
 
-### 📊 Signal Analysis & EMC
+### 📡 Signal & Communication Analysis
 ```csharp
 // Signal integrity analysis
 var crosstalk = SignalIntegrityCalculator.CrosstalkCoupling(
@@ -125,84 +117,67 @@ var crosstalk = SignalIntegrityCalculator.CrosstalkCoupling(
     frequency: 100e6
 );
 
-// EMC compliance testing
-var fieldStrength = EMCCalculator.ElectricFieldStrength(
-    power: 1.0,
-    distance: 3.0,
-    antennaGain: 2.15
+// UART communication timing
+var timing = UARTCommunicationCalculator.CalculateTiming(
+    baudRate: 115200,
+    dataBits: 8,
+    stopBits: 1
 );
+```
+
+## 🛠️ Platform Support
+
+| Platform | Versions | Status |
+|----------|----------|---------|
+| **.NET Framework** | 4.5, 4.6.2, 4.8.1+ | ✅ Fully Supported |
+| **.NET Core** | 3.1+ | ✅ Fully Supported |
+| **.NET** | 6.0+, 8.0+ | ✅ Fully Supported |
+| **.NET Standard** | 2.0, 2.1 | ✅ Fully Supported |
+
+## 💻 Interactive CLI
+
+Test and explore CircuitTool with the interactive command-line interface:
+
+```bash
+# Interactive mode with guided menus
+CircuitTool.CLI
+
+# Direct calculations
+CircuitTool.CLI basic ohms --voltage 12 --current 2
+CircuitTool.CLI component led --supply 5 --forward 2.1 --current 0.02
+CircuitTool.CLI analysis power --input 100 --output 85
 ```
 
 ## 🎓 Learning Path
 
-### 1. **Fundamentals** (Start here if you're new)
-   - [Getting Started Guide](articles/getting-started.html)
-   - [Basic Electrical Calculations](tutorials/)
-   - [Ohm's Law and Power](api/CircuitTool.OhmsLawCalculator.html)
+### 1. **Start Here** (New to CircuitTool)
+   - [Installation Guide](articles/getting-started.md#installation--setup)
+   - [Basic Calculations](articles/getting-started.md#fundamental-calculations)
+   - [Your First Project](articles/getting-started.md#practical-projects)
 
-### 2. **Component Design**
-   - [LED and Resistor Calculations](api/CircuitTool.LEDCalculator.html)
-   - [Capacitor and Inductor Analysis](api/CircuitTool.CapacitorCalculator.html)
-   - [Filter Design](api/CircuitTool.FilterCalculator.html)
+### 2. **Core Concepts** (Building Skills)
+   - [Ohm's Law & Power](docs/tutorials/fundamentals.md)
+   - [Component Design](docs/tutorials/components.md)
+   - [Circuit Analysis](docs/tutorials/circuits.md)
 
-### 3. **Advanced Topics**
-   - [AC Circuit Analysis](api/CircuitTool.ACCircuitCalculator.html)
-   - [Signal Integrity](api/CircuitTool.Analysis.SignalIntegrityCalculator.html)
-   - [Performance Optimization](api/CircuitTool.Performance.html)
+### 3. **Advanced Topics** (Specialized Applications)
+   - [AC Circuit Analysis](docs/tutorials/ac-analysis.md)
+   - [Signal Integrity](docs/tutorials/signal-integrity.md)
+   - [Performance Optimization](docs/tutorials/performance.md)
 
-### 4. **Hardware Integration**
-   - [Arduino Development](api/CircuitTool.Hardware.ArduinoTools.html)
-   - [ESP32 Optimization](api/CircuitTool.Hardware.ESP32Tools.html)
-   - [Communication Protocols](technology-guides/)
+### 4. **Hardware Integration** (Real-World Projects)
+   - [Arduino Development](docs/tutorials/arduino-guide.md)
+   - [ESP32 Optimization](docs/tutorials/esp32-guide.md)
+   - [Communication Protocols](docs/tutorials/communications.md)
 
-## 🚀 Next Steps
+## 🔗 Quick Links
 
-Ready to start using CircuitTool? Here are some recommended next steps:
-
-1. **📥 Install the Package**: Follow the [installation guide](#installation)
-2. **🎯 Try the Examples**: Start with the [Getting Started guide](articles/getting-started.html)
-3. **💻 Use the CLI**: Experiment with the [Interactive CLI](../CircuitTool.CLI/README.html)
-4. **📖 Explore the API**: Browse the [complete API reference](api/)
-5. **🤝 Join the Community**: Check out the [GitHub repository](https://github.com/jomardyan/CircuitTool)
-```
-
-## Key Features
-
-### 🧮 Comprehensive Calculators
-- **23 specialized calculator classes** covering all aspects of electrical engineering
-- **Cross-platform compatibility** (.NET Framework 4.5+ to .NET 8.0)
-- **Unit conversion** with automatic handling of different measurement systems
-
-### 🔧 Hardware Integration
-- **Embedded platform support** for Arduino, ESP32, and Raspberry Pi
-- **Communication protocol tools** for I2C, SPI, UART analysis
-- **Code generation** for common hardware tasks and configurations
-
-### 📊 Advanced Analysis
-- **Signal integrity** calculations for high-speed designs
-- **EMC analysis** for electromagnetic compatibility
-- **Thermal management** tools for heat dissipation analysis
-- **Power analysis** for efficiency optimization
-
-### ⚡ Performance Optimized
-- **Vectorized calculations** using SIMD instructions
-- **Caching system** for repeated calculations
-- **Asynchronous support** for long-running operations
-- **Bulk processing** for large datasets
-
-## Documentation Sections
-
-- **[API Reference](api/index.md)** - Complete API documentation
-- **[Tutorials](tutorials/index.md)** - Step-by-step guides
-- **[Examples](examples/index.md)** - Practical code examples
-- **[Hardware Guides](hardware/index.md)** - Platform-specific documentation
-
-## Support & Contributing
-
-- **GitHub Repository**: [https://github.com/jomardyan/CircuitTool](https://github.com/jomardyan/CircuitTool)
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/jomardyan/CircuitTool/issues)
-- **License**: MIT License - see [LICENSE](https://github.com/jomardyan/CircuitTool/blob/main/LICENSE)
+- **📦 NuGet Package**: [CircuitTool on NuGet.org](https://www.nuget.org/packages/CircuitTool)
+- **🐙 Source Code**: [GitHub Repository](https://github.com/jomardyan/CircuitTool)
+- **🐛 Issues & Support**: [GitHub Issues](https://github.com/jomardyan/CircuitTool/issues)
+- **💬 Community**: [GitHub Discussions](https://github.com/jomardyan/CircuitTool/discussions)
+- **📄 License**: [MIT License](LICENSE)
 
 ---
 
-*CircuitTool v2.0.0 - © 2025 Jomardyan - MIT License*
+**Ready to get started?** Begin with the [Getting Started Guide](articles/getting-started.md) or explore the [Interactive CLI](CircuitTool.CLI/README.md)!

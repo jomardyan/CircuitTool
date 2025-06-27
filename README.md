@@ -1,6 +1,33 @@
 # 🔌 CircuitTool
 
-[![Build Status](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
+[![Build Status](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.s| 🔧 **Hardware Guides** | Platform-specific tutorials | [Hardware Docs](docs/technology-guides/) |
+| 📋 **Examples** | Real-world usage examples | [Examples](docs/examples/) |
+| 🎓 **Tutorials** | Learning materials | [Tutorials](docs/tutorials/) |
+
+## 📁 Project Structure
+
+CircuitTool is organized into logical folders for easy navigation and maintenance:
+
+```
+📦 CircuitTool/
+├── 🏗️ build/          # Build and deployment scripts
+├── ⚙️ config/         # Configuration files (DocFX, NuGet)
+├── 🎨 assets/         # Visual assets (icons, images)  
+├── 📚 docs/           # Documentation source files
+├── 💾 src/            # Library source code
+├── 🧪 tests/          # Unit tests
+├── 🖥️ CircuitTool.CLI/ # Command-line interface
+└── 📁 packages/       # Generated NuGet packages
+```
+
+**Quick Commands:**
+- **Build & Release**: `./build/prepare-release.sh`
+- **Run CLI**: `./build/run-cli.sh`  
+- **Generate Docs**: `./build/generate-docs.sh`
+
+For detailed information, see [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md).
+
+### 💻 Interactive CLIhttps://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
 [![NuGet Version](https://img.shields.io/nuget/v/CircuitTool)](https://www.nuget.org/packages/CircuitTool)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/CircuitTool)](https://www.nuget.org/packages/CircuitTool)
 [![GitHub Release](https://img.shields.io/github/v/release/jomardyan/CircuitTool)](https://github.com/jomardyan/CircuitTool/releases)

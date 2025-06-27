@@ -71,7 +71,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="assets/icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -86,7 +86,7 @@
   <!-- Documentation Generation Targets -->
   <PropertyGroup>
     <GenerateDocumentation Condition="'$(GenerateDocumentation)' == ''">false</GenerateDocumentation>
-    <DocFXProjectFile Condition="'$(DocFXProjectFile)' == ''">docfx.json</DocFXProjectFile>
+    <DocFXProjectFile Condition="'$(DocFXProjectFile)' == ''">config/docfx.json</DocFXProjectFile>
     <DocumentationOutputPath Condition="'$(DocumentationOutputPath)' == ''">docs/_site</DocumentationOutputPath>
   </PropertyGroup>
 
