@@ -148,5 +148,279 @@ namespace CircuitTool
                 throw new ArgumentException("Time must be non-negative.");
             return initialVoltage * Math.Exp(-time / timeConstant);
         }
+
+        /// <summary>
+        /// Comprehensive capacitor charge and energy analysis
+        /// </summary>
+        public class CapacitorChargeEnergyResult
+        {
+            public double Capacitance { get; set; }           // Farads
+            public double Voltage { get; set; }               // Volts
+            public double Charge { get; set; }                // Coulombs
+            public double Energy { get; set; }                // Joules
+            public double EnergyWattHours { get; set; }       // Watt-hours
+            public double EnergyDensity { get; set; }         // J/cm³ (if physical size provided)
+            public double SpecificEnergy { get; set; }        // J/g (if mass provided)
+            public double ChargeDensity { get; set; }         // C/cm³ (if physical size provided)
+            public double ElectricField { get; set; }         // V/m (if dielectric thickness provided)
+            public List<string> SafetyNotes { get; set; } = new List<string>();
+        }
+
+        /// <summary>
+        /// Enhanced charge and energy calculator with physical properties
+        /// </summary>
+        public static CapacitorChargeEnergyResult CalculateChargeAndEnergy(double capacitance, double voltage,
+            double volumeCm3 = 0, double massGrams = 0, double dielectricThicknessMm = 0)
+        {
+            var result = new CapacitorChargeEnergyResult
+            {
+                Capacitance = capacitance,
+                Voltage = voltage,
+                Charge = capacitance * voltage,
+                Energy = 0.5 * capacitance * voltage * voltage
+            };
+
+            // Convert to other energy units
+            result.EnergyWattHours = result.Energy / 3600.0;
+
+            // Calculate densities if physical properties provided
+            if (volumeCm3 > 0)
+            {
+                result.EnergyDensity = result.Energy / (volumeCm3 / 1000000.0); // J/m³ then convert to J/cm³
+                result.ChargeDensity = result.Charge / (volumeCm3 / 1000000.0); // C/m³ then convert to C/cm³
+            }
+
+            if (massGrams > 0)
+            {
+                result.SpecificEnergy = result.Energy / (massGrams / 1000.0); // J/kg then convert
+            }
+
+            if (dielectricThicknessMm > 0)
+            {
+                result.ElectricField = voltage / (dielectricThicknessMm / 1000.0); // V/m
+            }
+
+            // Safety warnings
+            if (voltage > 50)
+            {
+                result.SafetyNotes.Add("HIGH VOLTAGE: Take appropriate safety precautions");
+            }
+
+            if (result.Energy > 1.0)
+            {
+                result.SafetyNotes.Add($"HIGH ENERGY: {result.Energy:0.1}J stored - potentially dangerous discharge");
+            }
+
+            if (result.ElectricField > 1000000) // 1 MV/m
+            {
+                result.SafetyNotes.Add("High electric field - verify dielectric breakdown voltage");
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Capacitor bank analysis for series and parallel combinations
+        /// </summary>
+        public class CapacitorBankResult
+        {
+            public double TotalCapacitance { get; set; }
+            public double TotalVoltageRating { get; set; }
+            public double TotalEnergy { get; set; }
+            public double TotalCharge { get; set; }
+            public string Configuration { get; set; }
+            public List<CapacitorInBank> IndividualCapacitors { get; set; } = new List<CapacitorInBank>();
+            public double RippleCurrent { get; set; }
+            public double ESR { get; set; }
+            public List<string> DesignNotes { get; set; } = new List<string>();
+        }
+
+        /// <summary>
+        /// Individual capacitor in a bank
+        /// </summary>
+        public class CapacitorInBank
+        {
+            public double Capacitance { get; set; }
+            public double VoltageRating { get; set; }
+            public double ActualVoltage { get; set; }
+            public double Charge { get; set; }
+            public double Energy { get; set; }
+            public double ESR { get; set; }
+            public string Position { get; set; }
+            public double VoltageDeratingPercent { get; set; }
+            public bool WithinSafeOperatingArea { get; set; }
+        }
+
+        /// <summary>
+        /// Analyze series capacitor bank
+        /// </summary>
+        public static CapacitorBankResult AnalyzeSeriesCapacitorBank(double[] capacitances, 
+            double[] voltageRatings, double appliedVoltage, double[] esrValues = null)
+        {
+            var result = new CapacitorBankResult
+            {
+                Configuration = "Series",
+                TotalCapacitance = SeriesCapacitance(capacitances)
+            };
+
+            // In series: voltage divides inversely proportional to capacitance
+            double totalCapacitance = result.TotalCapacitance;
+            
+            for (int i = 0; i < capacitances.Length; i++)
+            {
+                var cap = new CapacitorInBank
+                {
+                    Capacitance = capacitances[i],
+                    VoltageRating = voltageRatings[i],
+                    Position = $"C{i + 1}",
+                    ESR = esrValues?[i] ?? 0
+                };
+
+                // Voltage across each capacitor (inverse proportion)
+                cap.ActualVoltage = appliedVoltage * (totalCapacitance / capacitances[i]);
+                cap.Charge = totalCapacitance * appliedVoltage; // Same charge for all in series
+                cap.Energy = 0.5 * capacitances[i] * cap.ActualVoltage * cap.ActualVoltage;
+                
+                cap.VoltageDeratingPercent = (cap.ActualVoltage / cap.VoltageRating) * 100;
+                cap.WithinSafeOperatingArea = cap.VoltageDeratingPercent <= 80; // 80% derating
+
+                result.IndividualCapacitors.Add(cap);
+            }
+
+            result.TotalVoltageRating = voltageRatings.Sum();
+            result.TotalCharge = result.TotalCapacitance * appliedVoltage;
+            result.TotalEnergy = result.IndividualCapacitors.Sum(c => c.Energy);
+            
+            if (esrValues != null)
+            {
+                result.ESR = esrValues.Sum(); // ESRs add in series
+            }
+
+            // Design notes
+            if (appliedVoltage > result.TotalVoltageRating * 0.8)
+            {
+                result.DesignNotes.Add("Applied voltage close to total rating - verify individual capacitor voltages");
+            }
+
+            var unbalanced = result.IndividualCapacitors.Where(c => c.VoltageDeratingPercent > 90).ToList();
+            if (unbalanced.Any())
+            {
+                result.DesignNotes.Add($"Voltage imbalance detected on {unbalanced.Count} capacitor(s) - consider balancing resistors");
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Analyze parallel capacitor bank
+        /// </summary>
+        public static CapacitorBankResult AnalyzeParallelCapacitorBank(double[] capacitances, 
+            double[] voltageRatings, double appliedVoltage, double[] esrValues = null)
+        {
+            var result = new CapacitorBankResult
+            {
+                Configuration = "Parallel",
+                TotalCapacitance = ParallelCapacitance(capacitances)
+            };
+
+            for (int i = 0; i < capacitances.Length; i++)
+            {
+                var cap = new CapacitorInBank
+                {
+                    Capacitance = capacitances[i],
+                    VoltageRating = voltageRatings[i],
+                    ActualVoltage = appliedVoltage, // Same voltage for all in parallel
+                    Position = $"C{i + 1}",
+                    ESR = esrValues?[i] ?? 0
+                };
+
+                cap.Charge = capacitances[i] * appliedVoltage;
+                cap.Energy = 0.5 * capacitances[i] * appliedVoltage * appliedVoltage;
+                
+                cap.VoltageDeratingPercent = (cap.ActualVoltage / cap.VoltageRating) * 100;
+                cap.WithinSafeOperatingArea = cap.VoltageDeratingPercent <= 80; // 80% derating
+
+                result.IndividualCapacitors.Add(cap);
+            }
+
+            result.TotalVoltageRating = voltageRatings.Min(); // Limited by lowest rating
+            result.TotalCharge = result.IndividualCapacitors.Sum(c => c.Charge);
+            result.TotalEnergy = result.IndividualCapacitors.Sum(c => c.Energy);
+            
+            if (esrValues != null)
+            {
+                // ESRs in parallel: 1/ESR_total = 1/ESR1 + 1/ESR2 + ...
+                result.ESR = 1.0 / esrValues.Sum(esr => 1.0 / esr);
+            }
+
+            // Design notes
+            var overstressed = result.IndividualCapacitors.Where(c => !c.WithinSafeOperatingArea).ToList();
+            if (overstressed.Any())
+            {
+                result.DesignNotes.Add($"{overstressed.Count} capacitor(s) operating above 80% voltage rating");
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Calculate capacitor ripple current handling
+        /// </summary>
+        public class RippleCurrentResult
+        {
+            public double RMSCurrent { get; set; }
+            public double PowerLoss { get; set; }
+            public double TemperatureRise { get; set; }
+            public double MaxAllowableCurrent { get; set; }
+            public double SafetyMargin { get; set; }
+            public bool WithinRating { get; set; }
+            public List<string> Recommendations { get; set; } = new List<string>();
+        }
+
+        /// <summary>
+        /// Analyze capacitor ripple current capability
+        /// </summary>
+        public static RippleCurrentResult AnalyzeRippleCurrent(double capacitance, double esr, 
+            double rmsRippleCurrent, double maxRippleCurrentRating, double thermalResistance = 50)
+        {
+            var result = new RippleCurrentResult
+            {
+                RMSCurrent = rmsRippleCurrent,
+                MaxAllowableCurrent = maxRippleCurrentRating
+            };
+
+            // Power loss due to ESR: P = I²R
+            result.PowerLoss = rmsRippleCurrent * rmsRippleCurrent * esr;
+
+            // Temperature rise: ΔT = P × Rth
+            result.TemperatureRise = result.PowerLoss * thermalResistance;
+
+            // Safety analysis
+            result.WithinRating = rmsRippleCurrent <= maxRippleCurrentRating;
+            result.SafetyMargin = (maxRippleCurrentRating - rmsRippleCurrent) / maxRippleCurrentRating * 100;
+
+            // Recommendations
+            if (!result.WithinRating)
+            {
+                result.Recommendations.Add("Ripple current exceeds rating - use larger capacitor or parallel combination");
+            }
+
+            if (result.SafetyMargin < 20)
+            {
+                result.Recommendations.Add("Low safety margin - consider derating for reliability");
+            }
+
+            if (result.TemperatureRise > 10)
+            {
+                result.Recommendations.Add($"High temperature rise ({result.TemperatureRise:0.1}°C) - improve thermal management");
+            }
+
+            if (result.PowerLoss > 0.1)
+            {
+                result.Recommendations.Add($"Significant power loss ({result.PowerLoss:0.3}W) - verify thermal design");
+            }
+
+            return result;
+        }
     }
 }
