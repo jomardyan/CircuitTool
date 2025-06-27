@@ -19,7 +19,7 @@
     <Product>CircuitTool CLI</Product>
     <Description>Interactive command-line interface for testing CircuitTool framework capabilities</Description>
     <Copyright>Copyright (c) 2025 Jomardyan</Copyright>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
