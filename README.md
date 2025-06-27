@@ -1,5 +1,3 @@
-<div align="center">
-
 [![Build and Publish NuGet Package](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml/badge.svg)](https://github.com/jomardyan/CircuitTool/actions/workflows/publish-nuget.yml)
 [![.NET Build and Test](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)
 [![NuGet Version](https://img.shields.io/nuget/v/CircuitTool?style=flat-square&logo=nuget&color=blue)](https://www.nuget.org/packages/CircuitTool)
@@ -10,412 +8,202 @@
 [![GitHub Forks](https://img.shields.io/github/forks/jomardyan/CircuitTool?style=flat-square&logo=github&color=lightgrey)](https://github.com/jomardyan/CircuitTool/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/jomardyan/CircuitTool?style=flat-square&logo=github&color=red)](https://github.com/jomardyan/CircuitTool/issues)
 
-[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-2.0%2B-blue?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
+[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.5%2B-blue?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
 [![.NET](https://img.shields.io/badge/.NET-6.0%2B%20%7C%208.0%2B-purple?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
 [![.NET Standard](https://img.shields.io/badge/.NET%20Standard-2.0%20%7C%202.1-orange?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-[![Language](https://img.shields.io/github/languages/top/jomardyan/CircuitTool?style=flat-square&logo=csharp&color=purple)](https://github.com/jomardyan/CircuitTool)
-[![Code Size](https://img.shields.io/github/languages/code-size/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool)
-[![Repo Size](https://img.shields.io/github/repo-size/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool)
-[![Last Commit](https://img.shields.io/github/last-commit/jomardyan/CircuitTool?style=flat-square&logo=github)](https://github.com/jomardyan/CircuitTool/commits/main)
-
-</div>
-
-
 # 🔌 CircuitTool
 
-A modern C# library for electrical engineering and electronics calculations. CircuitTool provides utilities for circuit analysis, power calculations, unit conversions, and more.
+**A comprehensive C# library for electrical engineering and electronics calculations.** CircuitTool provides utilities for circuit analysis, power calculations, unit conversions, microcontroller development, and much more.
 
-## Quick Install
+## ⚡ Key Features
 
+- **🧮 Core Calculations**: Ohm's Law, power analysis, resistor networks, voltage dividers
+- **🔧 Component Design**: LEDs, capacitors, inductors, transformers, filters
+- **📡 AC Analysis**: Impedance, reactance, resonance, power factor
+- **🤖 Hardware Support**: Arduino, ESP32, Raspberry Pi with code generation
+- **📊 Advanced Analysis**: Signal integrity, EMC, thermal, tolerance analysis
+- **⚙️ Communication**: COM port tools, I2C/SPI/UART protocol analysis
+- **📈 Performance**: Vectorized calculations, caching, async operations
+- **🎯 Interactive CLI**: Command-line interface for testing and learning
+
+## 🚀 Quick Start
+
+### Installation
 ```bash
 dotnet add package CircuitTool
 ```
 
-## Documentation
-
-See the full documentation and usage examples in [DOCUMENTATION.md](DOCUMENTATION.md).
-
-## License
-
-MIT License. See LICENSE for details.
-
-### LED Circuit Calculations
-
+### Basic Usage
 ```csharp
 using CircuitTool;
 
-// Calculate resistor value for LED
-double resistorValue = LEDCalculator.CalculateResistorValue(9.0, 2.0, 0.02);  // 9V supply, 2V LED, 20mA = 350Ω
+// Ohm's Law calculations
+double voltage = OhmsLawCalculator.Voltage(current: 2.0, resistance: 100); // 200V
+double power = PowerCalculator.Power(voltage: 12.0, current: 2.0); // 24W
 
-// Calculate LED power consumption
-double ledPower = LEDCalculator.CalculateLEDPower(5.0, 0.02);  // 5V, 20mA = 0.1W
+// LED current limiting resistor
+double resistor = LEDCalculator.CalculateResistorValue(
+    supplyVoltage: 5.0,
+    ledVoltage: 2.1,
+    ledCurrent: 0.02  // 20mA
+); // 145Ω
 
-// Calculate brightness from PWM duty cycle
-double brightness = LEDCalculator.CalculateBrightness(75);  // 75% duty cycle = 0.75 brightness
-
-// Calculate resistor for series LEDs
-double seriesResistor = LEDCalculator.CalculateSeriesResistor(12.0, 3.3, 3, 0.02);  // 12V, 3x 3.3V LEDs, 20mA
+// Arduino development
+double analogVoltage = ArduinoTools.AnalogToVoltage(512); // 2.5V (on 5V Arduino)
+string gpioCode = ArduinoTools.GenerateGPIOCode(pin: 13, mode: "OUTPUT");
 ```
 
-### Voltage Analysis
+## 📚 Documentation
 
-```csharp
-using CircuitTool;
+| Resource | Description |
+|----------|-------------|
+| [📖 **Full Documentation**](DOCUMENTATION.md) | Complete API reference with examples |
+| [🚀 **Getting Started Guide**](articles/getting-started.md) | Step-by-step tutorials |
+| [💻 **Interactive CLI**](CircuitTool.CLI/README.md) | Command-line interface documentation |
+| [🗺️ **Project Code Map**](PROJECT_CODE_MAP.md) | Architecture and module overview |
 
-// Calculate voltage drop in a conductor
-double voltageDrop = VoltageDropCalculator.CalculateVoltageDrop(5.0, 0.1, 100); // 5A, 0.1Ω/km, 100m = 0.05V
+## 💻 Interactive CLI
 
-// Calculate conductor resistance
-double resistance = VoltageDropCalculator.CalculateConductorResistance(0.05, 5.0, 100); // 0.05V drop, 5A, 100m = 0.1Ω/km
+Test and explore CircuitTool capabilities with the interactive command-line interface:
 
-// Calculate maximum current for allowed voltage drop
-double maxCurrent = VoltageDropCalculator.CalculateMaxCurrent(0.1, 0.1, 100); // 0.1V max drop, 0.1Ω/km, 100m = 10A
+```bash
+# Run interactively
+CircuitTool.CLI
 
-// Calculate voltage divider output
-double outputVoltage = VoltageDividerCalculator.CalculateOutputVoltage(12, 1000, 2000); // 12V, 1kΩ, 2kΩ = 8V
-
-// Calculate required resistor for voltage divider
-double requiredR2 = VoltageDividerCalculator.CalculateR2(12, 8, 1000); // 12V in, 8V out, 1kΩ R1 = 2kΩ
-
-// Calculate input voltage from voltage divider
-double inputVoltage = VoltageDividerCalculator.CalculateInputVoltage(8, 1000, 2000); // 8V out, 1kΩ, 2kΩ = 12V
+# Command-line calculations
+CircuitTool.CLI basic ohms --voltage 12 --current 2
+CircuitTool.CLI component led --supply 5 --forward 2.1 --current 0.02
+CircuitTool.CLI benchmark --iterations 10000
 ```
 
-### Power Analysis
+See [CLI Documentation](CircuitTool.CLI/README.md) for complete usage guide.
 
-```csharp
-using CircuitTool;
+## 🏗️ Architecture & Modules
 
-// Calculate watts from voltage and current
-double watts = WattsVoltsAmpsOhmsCalculator.CalculateWatts(12, 2); // 12V, 2A = 24W
+CircuitTool is organized into logical modules for easy navigation:
 
-// Calculate volts from watts and current
-double volts = WattsVoltsAmpsOhmsCalculator.CalculateVolts(24, 2); // 24W, 2A = 12V
+| Module | Classes | Description |
+|--------|---------|-------------|
+| **🧮 Calculators** | 23 | Core electrical calculations and component design |
+| **🔧 Hardware** | 10 | Platform-specific tools (Arduino, ESP32, RPi) |
+| **📊 Analysis** | 5 | Advanced power, signal, and thermal analysis |
+| **⚡ Performance** | 6 | Optimization, caching, and vectorized operations |
+| **📚 Documentation** | 4 | Examples, tutorials, and interactive guides |
+| **🔢 Math** | 2 | Matrix operations and Fourier transforms |
+| **💾 Serialization** | 1 | Circuit data import/export functionality |
+| **📏 Units** | 3 | Comprehensive unit conversion system |
 
-// Calculate amps from watts and voltage
-double amps = WattsVoltsAmpsOhmsCalculator.CalculateAmps(24, 12); // 24W, 12V = 2A
+See the [Project Code Map](PROJECT_CODE_MAP.md) for detailed architecture overview.
 
-// Calculate ohms from voltage and current
-double ohms = WattsVoltsAmpsOhmsCalculator.CalculateOhms(12, 2); // 12V, 2A = 6Ω
+## 🎯 Common Use Cases
 
-// Calculate watts from voltage and resistance
-double wattsFromVR = WattsVoltsAmpsOhmsCalculator.CalculateWattsFromVoltageAndResistance(12, 6); // 12V, 6Ω = 24W
+### Electronics Design
+- LED current limiting resistor calculations
+- Power supply design and analysis
+- Component tolerance and worst-case analysis
+- EMC compliance verification
 
-// Calculate watts from current and resistance
-double wattsFromIR = WattsVoltsAmpsOhmsCalculator.CalculateWattsFromCurrentAndResistance(2, 6); // 2A, 6Ω = 24W
+### Embedded Development
+- Arduino/ESP32 pin configuration and code generation
+- Power consumption optimization
+- Communication protocol (I2C/SPI/UART) analysis
+- Battery life estimation
+
+### Education & Learning
+- Interactive tutorials and examples
+- Step-by-step calculation guidance
+- Performance benchmarking and testing
+- Real-world circuit analysis
+
+### Industrial Applications
+- Power factor correction calculations
+- Energy consumption monitoring
+- Signal integrity analysis for high-speed designs
+- Thermal management calculations
+
+## 📦 Package Distribution
+
+### NuGet.org (Primary)
+```bash
+dotnet add package CircuitTool
 ```
-
-### Arduino Tools
-
-```csharp
-using CircuitTool;
-
-// Convert Arduino analog reading to voltage
-double voltage = ArduinoTools.AnalogToVoltage(512);  // 512 reading = 2.5V (on 5V Arduino)
-
-// Convert voltage to analog reading
-int analogReading = ArduinoTools.VoltageToAnalog(3.3);  // 3.3V = 675 reading
-
-// Calculate servo pulse width for specific angle
-double pulseWidth = ArduinoTools.ServoAngleToPulseWidth(90);  // 90° = 1500μs pulse
-
-// Calculate current consumption
-double current = ArduinoTools.CalculateCurrentConsumption(20, 5, 2, 50);  // CPU + pins + external = total mA
-```
-
-### ESP32 Tools
-
-```csharp
-using CircuitTool;
-
-// Convert ESP32 analog reading to voltage
-double voltage = ESP32Tools.AnalogToVoltage(2048);  // 2048 reading = 1.65V (on 3.3V ESP32)
-
-// Calculate WiFi power consumption
-double wifiPower = ESP32Tools.CalculateWiFiPowerConsumption(WiFiMode.Active);  // 80mA
-
-// Calculate total ESP32 current consumption
-double totalCurrent = ESP32Tools.CalculateTotalCurrentConsumption(240, WiFiMode.Active, true, 20);
-
-// Calculate battery life
-double batteryLife = ESP32Tools.CalculateBatteryLife(2000, 50);  // 2000mAh battery, 50mA load = 32 hours
-
-// Calculate touch sensor threshold
-int touchThreshold = ESP32Tools.CalculateTouchThreshold(1000, 0.3);  // 1000 baseline, 30% sensitivity
-```
-
-### Advanced Circuit Analysis
-
-```csharp
-using CircuitTool;
-
-// Calculate total resistance in series
-double seriesResistance = CircuitCalculations.CalculateTotalResistance(new double[] { 10, 20, 30 }, true);
-
-// Calculate total resistance in parallel
-double parallelResistance = CircuitCalculations.CalculateTotalResistance(new double[] { 10, 20, 30 }, false);
-
-// Calculate power
-double power = CircuitCalculations.CalculatePower(230, 5); // 230V × 5A = 1150W
-
-// Calculate energy
-double energy = CircuitCalculations.CalculateEnergy(1150, 2); // 1150W × 2h = 2300Wh
-```
-
-### Capacitor Calculations
-
-```csharp
-using CircuitTool;
-
-// Calculate capacitive reactance
-double reactance = CapacitorCalculator.CalculateCapacitiveReactance(0.000001, 1000); // 1μF at 1kHz = 159.15Ω
-
-// Calculate energy stored in capacitor
-double energy = CapacitorCalculator.CalculateEnergyStored(0.000001, 12); // 1μF at 12V = 72μJ
-
-// Calculate RC time constant
-double timeConstant = CapacitorCalculator.CalculateTimeConstant(1000, 0.000001); // 1kΩ, 1μF = 1ms
-
-// Calculate total capacitance in series
-double seriesCapacitance = CapacitorCalculator.CalculateSeriesCapacitance(new double[] { 0.000001, 0.000002 }); // 1μF, 2μF in series = 0.67μF
-
-// Calculate total capacitance in parallel
-double parallelCapacitance = CapacitorCalculator.CalculateParallelCapacitance(new double[] { 0.000001, 0.000002 }); // 1μF, 2μF in parallel = 3μF
-
-// Calculate charging voltage
-double voltage = CapacitorCalculator.CalculateChargingVoltage(12, 0.001, 0.001); // 12V source, t=1ms, τ=1ms = 7.59V
-
-// Calculate discharging voltage
-double dischargingVoltage = CapacitorCalculator.CalculateDischargingVoltage(12, 0.001, 0.001); // 12V initial, t=1ms, τ=1ms = 4.41V
-```
-
-### Inductor Calculations
-
-```csharp
-using CircuitTool;
-
-// Calculate inductive reactance
-double reactance = InductorCalculator.CalculateInductiveReactance(0.001, 1000); // 1mH at 1kHz = 6.28Ω
-
-// Calculate energy stored in inductor
-double energy = InductorCalculator.CalculateEnergyStored(0.001, 2); // 1mH with 2A = 2mJ
-
-// Calculate RL time constant
-double timeConstant = InductorCalculator.CalculateTimeConstant(0.001, 100); // 1mH, 100Ω = 10μs
-
-// Calculate total inductance in series
-double seriesInductance = InductorCalculator.CalculateSeriesInductance(new double[] { 0.001, 0.002 }); // 1mH, 2mH in series = 3mH
-
-// Calculate total inductance in parallel
-double parallelInductance = InductorCalculator.CalculateParallelInductance(new double[] { 0.001, 0.002 }); // 1mH, 2mH in parallel = 0.67mH
-
-// Calculate current buildup
-double current = InductorCalculator.CalculateCurrentBuildup(2, 0.001, 0.00001); // 2A final, t=10μs, τ=10μs = 1.26A
-
-// Calculate resonant frequency
-double frequency = InductorCalculator.CalculateResonantFrequency(0.001, 0.000001); // 1mH, 1μF = 5.03kHz
-```
-
-### Transformer Calculations
-
-```csharp
-using CircuitTool;
-
-// Calculate secondary voltage
-double secondaryVoltage = TransformerCalculator.CalculateSecondaryVoltage(120, 10, 1); // 120V primary, 10:1 ratio = 12V
-
-// Calculate secondary current
-double secondaryCurrent = TransformerCalculator.CalculateSecondaryCurrent(2, 10, 1); // 2A primary, 10:1 ratio = 20A
-
-// Calculate turns ratio
-double turnsRatio = TransformerCalculator.CalculateTurnsRatio(120, 12); // 120V to 12V = 10:1
-
-// Calculate voltage ratio
-double voltageRatio = TransformerCalculator.CalculateVoltageRatio(240, 120); // 240V to 120V = 2:1
-
-// Calculate efficiency
-double efficiency = TransformerCalculator.CalculateEfficiency(1000, 1100); // 1000W out, 1100W in = 90.9%
-
-// Calculate power loss
-double powerLoss = TransformerCalculator.CalculatePowerLoss(1100, 1000); // 1100W in, 1000W out = 100W loss
-
-// Calculate voltage regulation
-double regulation = TransformerCalculator.CalculateVoltageRegulation(120, 115); // 120V no-load, 115V load = 4.35%
-
-// Calculate apparent power
-double apparentPower = TransformerCalculator.CalculateApparentPower(120, 10); // 120V, 10A = 1200VA
-```
-
-### AC Circuit Analysis
-
-```csharp
-using CircuitTool;
-
-// Calculate impedance
-double impedance = ACCircuitCalculator.CalculateImpedance(50, 30); // 50Ω resistance, 30Ω reactance = 58.31Ω
-
-// Calculate phase angle
-double phaseAngle = ACCircuitCalculator.CalculatePhaseAngle(50, 30); // 50Ω R, 30Ω X = 30.96°
-
-// Calculate power factor
-double powerFactor = ACCircuitCalculator.CalculatePowerFactor(30.96); // 30.96° phase angle = 0.857
-
-// Calculate RMS from peak
-double rms = ACCircuitCalculator.CalculateRMS(170); // 170V peak = 120.21V RMS
-
-// Calculate peak from RMS
-double peak = ACCircuitCalculator.CalculatePeak(120); // 120V RMS = 169.74V peak
-
-// Calculate average from peak
-double average = ACCircuitCalculator.CalculateAverage(170); // 170V peak = 108.13V average
-
-// Calculate form factor
-double formFactor = ACCircuitCalculator.CalculateFormFactor(120, 108); // 120V RMS, 108V avg = 1.11
-
-// Calculate crest factor
-double crestFactor = ACCircuitCalculator.CalculateCrestFactor(170, 120); // 170V peak, 120V RMS = 1.42
-
-// Calculate Q factor
-double qFactor = ACCircuitCalculator.CalculateQFactor(30, 5); // 30Ω reactance, 5Ω resistance = 6
-
-// Calculate bandwidth
-double bandwidth = ACCircuitCalculator.CalculateBandwidth(1000, 6); // 1kHz resonant, Q=6 = 166.67Hz
-```
-
-### Filter Calculations
-
-```csharp
-using CircuitTool;
-
-// Calculate RC low-pass filter cutoff frequency
-double cutoffFreq = FilterCalculator.CalculateRCLowPassCutoff(1000, 0.000001); // 1kΩ, 1μF = 159.15Hz
-
-// Calculate RC high-pass filter cutoff frequency
-double highPassCutoff = FilterCalculator.CalculateRCHighPassCutoff(1000, 0.000001); // 1kΩ, 1μF = 159.15Hz
-
-// Calculate RL low-pass filter cutoff frequency
-double rlCutoff = FilterCalculator.CalculateRLLowPassCutoff(100, 0.001); // 100Ω, 1mH = 15.92kHz
-
-// Calculate RL high-pass filter cutoff frequency
-double rlHighPass = FilterCalculator.CalculateRLHighPassCutoff(100, 0.001); // 100Ω, 1mH = 15.92kHz
-
-// Calculate filter gain in dB
-double gain = FilterCalculator.CalculateFilterGain(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = -15.97dB
-
-// Calculate filter phase shift
-double phaseShift = FilterCalculator.CalculateFilterPhaseShift(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = -80.96°
-
-// Calculate magnitude response
-double magnitude = FilterCalculator.CalculateMagnitudeResponse(1000, 159.15); // 1kHz signal, 159.15Hz cutoff = 0.158
-
-// Calculate required resistor for RC filter
-double resistor = FilterCalculator.CalculateRequiredResistor(159.15, 0.000001); // 159.15Hz cutoff, 1μF = 1kΩ
-
-// Calculate required capacitor for RC filter
-double capacitor = FilterCalculator.CalculateRequiredCapacitor(159.15, 1000); // 159.15Hz cutoff, 1kΩ = 1μF
-```
-
-### Beginner Calculator Examples
-
-```csharp
-using CircuitTool;
-
-// Calculate battery life
-double hours = BeginnerCalculators.BatteryLifeCalculator(1000, 50);  // 1000mAh, 50mA = 20 hours
-
-// Determine wire gauge
-int awgGauge = BeginnerCalculators.WireGaugeCalculator(3.0);  // 3A = AWG 20
-
-// Calculate RC time constant capacitor value
-double capacitor = BeginnerCalculators.RCTimeConstantCapacitor(1000, 0.001);  // 1kΩ, 1ms = 1μF
-
-// Calculate RC oscillator frequency
-double frequency = BeginnerCalculators.RCOscillatorFrequency(1000, 0.000001);  // 1kΩ, 1μF = ~455Hz
-
-// Convert power ratio to decibels
-double db = BeginnerCalculators.PowerRatioToDecibels(10);  // 10x power = 10dB
-
-// Convert voltage ratio to decibels
-double dbVoltage = BeginnerCalculators.VoltageRatioToDecibels(2);  // 2x voltage = 6.02dB
-
-// Calculate transformer turns ratio
-double turnsRatio = BeginnerCalculators.TransformerTurnsRatio(120, 12);  // 120V to 12V = 0.1 ratio
-```
-
-## Power and Energy Calculations
-
-```csharp
-using CircuitTool;
-
-// Power factor calculations
-double apparentPower = PowerFactorCalculator.ApparentPower(1000, 0.8);  // 1000W real, 0.8 PF = 1250VA
-double reactivePower = PowerFactorCalculator.ReactivePower(1000, 0.8);  // 1000W real, 0.8 PF = 750VAR
-
-// Energy consumption calculations
-double monthlyCost = EnergyConsumptionCalculator.MonthlyCost(5000, 0.12);  // 5kWh, $0.12/kWh = $600/month
-double carbonFootprint = EnergyConsumptionCalculator.CarbonFootprint(1000, 0.5);  // 1kWh, 0.5kg/kWh = 0.5kg CO2
-```
-
-## Unit Conversions
-
-```csharp
-using CircuitTool;
-
-// Convert between electrical units
-double milliamps = UnitConverter.AmperesToMilliamps(0.5);  // 0.5A = 500mA
-double kilovolts = UnitConverter.VoltsToKilovolts(5000);  // 5000V = 5kV
-double megaohms = UnitConverter.OhmsToMegaohms(2000000);  // 2MΩ = 2000000Ω
-```
-
-## Package Distribution
-
-CircuitTool is available on multiple package registries:
-
-### NuGet.org
 - **Package URL**: https://www.nuget.org/packages/CircuitTool
-- **Installation**: `dotnet add package CircuitTool`
+- **Latest Version**: 2.0.0
+- **Total Downloads**: ![NuGet Downloads](https://img.shields.io/nuget/dt/CircuitTool)
 
-### GitHub Packages
-- **Package URL**: https://github.com/jomardyan/CircuitTool/packages
-- **Registry URL**: https://nuget.pkg.github.com/jomardyan/index.json
-- **Installation**: Requires GitHub authentication (see installation section above)
+### GitHub Packages (Secondary)
+```bash
+# Requires GitHub authentication
+dotnet add package CircuitTool --source https://nuget.pkg.github.com/jomardyan/index.json
+```
 
-## Contributing
+## 🤝 Contributing
 
-We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
+We welcome contributions! Here's how to get involved:
+
+### Quick Contribution Guide
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **✨ Add** your changes with tests and documentation
+4. **📝 Commit** your changes (`git commit -m 'Add amazing feature'`)
+5. **🚀 Push** to the branch (`git push origin feature/amazing-feature`)
+6. **🔄 Open** a Pull Request
 
 ### Development Guidelines
+- Follow C# coding standards and conventions
+- Add XML documentation for all public methods
+- Include unit tests for new functionality
+- Update documentation with usage examples
+- Ensure cross-platform compatibility
 
-1. Follow C# coding standards and conventions
-2. Add XML documentation for all public methods
-3. Include unit tests for new functionality
-4. Update the README.md with usage examples
+### Areas for Contribution
+- **🧮 New Calculators**: Specialized calculation modules
+- **🔧 Hardware Support**: Additional microcontroller platforms
+- **📊 Analysis Tools**: Advanced simulation capabilities
+- **🌐 Internationalization**: Multi-language support
+- **📚 Documentation**: Examples, tutorials, and guides
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Changelog
-
+## 📈 Version History
 
 ### Version 2.0.0 (Current)
-- **Modern C# Features**: Records for calculation results, pattern matching, init-only and required properties
-- **API Redesign**: More consistent naming, better separation of concerns, immutable calculation objects
-- **Dependency Injection Support**: Service-based architecture, configurable calculation engines, plugin system
-- **Integration Enhancements**: Extension methods for popular UI frameworks, scientific computing integration, plugin system
-- **Web API Version**: REST API, GraphQL support, real-time calculation updates
-- **Mobile Support**: Xamarin/MAUI optimizations, touch-friendly APIs, offline calculation support
-- **Performance & Quality**: SIMD/vectorized calculations, improved static analysis, enhanced documentation
+- **🆕 Modern C# Features**: Records, pattern matching, init-only properties
+- **🔄 API Redesign**: Consistent naming, better separation of concerns
+- **⚙️ Dependency Injection**: Service-based architecture, plugin system
+- **🌐 Integration**: Extension methods for UI frameworks, scientific computing
+- **📱 Mobile Support**: Xamarin/MAUI optimizations, offline calculations
+- **⚡ Performance**: SIMD/vectorized calculations, enhanced caching
+
+### Previous Versions
+- **1.x Series**: Core electrical calculations, basic hardware support
+- **0.x Series**: Initial proof-of-concept and foundational features
+
+See [GitHub Releases](https://github.com/jomardyan/CircuitTool/releases) for complete changelog.
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### License Summary
+- ✅ **Commercial Use**: Use in commercial projects
+- ✅ **Modification**: Modify the source code
+- ✅ **Distribution**: Distribute the library
+- ✅ **Private Use**: Use in private projects
+- ❌ **Liability**: No warranty or liability
+- ❌ **Trademark**: No trademark rights included
+
+## 🆘 Support & Community
+
+### Get Help
+- **📚 Documentation**: Check [DOCUMENTATION.md](DOCUMENTATION.md) and [Getting Started](articles/getting-started.md)
+- **🐛 Issues**: Report bugs or request features on [GitHub Issues](https://github.com/jomardyan/CircuitTool/issues)
+- **💬 Discussions**: Join community discussions on [GitHub Discussions](https://github.com/jomardyan/CircuitTool/discussions)
+
+### Contact
+- **📧 Email**: Create an issue for general inquiries
+- **🐦 GitHub**: [@jomardyan](https://github.com/jomardyan)
 
 ---
 
-
----
-
-_Previous changelog entries omitted for brevity. See https://github.com/jomardyan/CircuitTool/releases for full history._
-
-## Support
-
-For questions, issues, or feature requests, please visit the [GitHub repository](https://github.com/jomardyan/CircuitTool) or open an issue.
+*For more information, visit the [GitHub repository](https://github.com/jomardyan/CircuitTool) or check out the [Getting Started Guide](articles/getting-started.md).*
