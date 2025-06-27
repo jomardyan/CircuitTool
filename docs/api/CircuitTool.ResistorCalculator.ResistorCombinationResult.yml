@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorCombinationResult
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 228
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Find resistor combinations to achieve target resistance
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TargetResistance
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 230
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TargetResistance { get; set; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ActualResistance
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 231
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ActualResistance { get; set; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Error
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 232
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Error { get; set; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ErrorPercent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 233
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ErrorPercent { get; set; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiredResistors
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 234
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<double> RequiredResistors { get; set; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Configuration
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 235
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string Configuration { get; set; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UsesStandardValues
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 236
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool UsesStandardValues { get; set; }

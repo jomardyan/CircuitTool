@@ -20,6 +20,8 @@ items:
   nameWithType: CircuitTool.Analysis
   fullName: CircuitTool.Analysis
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.Analysis.ToleranceAnalysis
   commentId: T:CircuitTool.Analysis.ToleranceAnalysis

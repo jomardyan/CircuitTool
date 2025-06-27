@@ -22,10 +22,12 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SerialStopBits
-    path: src/Hardware/ComPortTools.cs
-    startLine: 93
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
-  summary: Serial port stop bits options (compatibility for older frameworks)
+  summary: Serial port stop bits options
   example: []
   syntax:
     content: public enum ComPortTools.SerialStopBits
@@ -47,8 +49,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: None
-    path: src/Hardware/ComPortTools.cs
-    startLine: 95
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: None = 0
@@ -71,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: One
-    path: src/Hardware/ComPortTools.cs
-    startLine: 96
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 62
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: One = 1
@@ -95,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Two
-    path: src/Hardware/ComPortTools.cs
-    startLine: 97
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Two = 2
@@ -119,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OnePointFive
-    path: src/Hardware/ComPortTools.cs
-    startLine: 98
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 64
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: OnePointFive = 3

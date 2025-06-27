@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorCalculator
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides methods for resistor calculations, including Ohm's Law, series, and parallel combinations.
   remarks: >-
@@ -70,8 +72,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistance
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: "Calculates resistance using Ohm's Law: <code>R = V / I</code>."
   example:
@@ -110,8 +114,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Series
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates total resistance for resistors in series: <code>Rtotal = R1 + R2 + ...</code>'
   example:
@@ -147,8 +153,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Parallel
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates total resistance for resistors in parallel: <code>1/Rtotal = 1/R1 + 1/R2 + ...</code>'
   example:
@@ -184,8 +192,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeSeriesNetwork
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 127
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze series resistor network with applied voltage
   example: []
@@ -222,8 +232,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeParallelNetwork
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze parallel resistor network with applied voltage
   example: []
@@ -260,8 +272,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SeriesParallelCombination
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 205
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculate series-parallel combination resistance
   example: []
@@ -291,8 +305,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FindResistorCombinations
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 242
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Find best resistor combination for target value using standard values
   example: []
@@ -329,8 +345,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeVoltageDivider
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 338
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze voltage divider with load effects
   example: []

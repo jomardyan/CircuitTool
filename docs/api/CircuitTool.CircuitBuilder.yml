@@ -21,6 +21,8 @@ items:
   nameWithType: CircuitTool.CircuitBuilder
   fullName: CircuitTool.CircuitBuilder
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.CircuitBuilder.Component
   commentId: T:CircuitTool.CircuitBuilder.Component

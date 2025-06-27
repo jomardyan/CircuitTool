@@ -33,8 +33,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OpAmpCalculator
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for operational amplifier circuits and characteristics.
   remarks: >-
@@ -77,8 +79,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NonInvertingGain
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates gain of a non-inverting amplifier.
   example:
@@ -117,8 +121,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InvertingGain
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates gain of an inverting amplifier.
   example:
@@ -157,8 +163,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ClosedLoopBandwidth
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 60
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates closed-loop bandwidth from gain-bandwidth product.
   example:
@@ -197,8 +205,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DifferentialGain
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 74
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates gain of a differential amplifier.
   example: []
@@ -236,8 +246,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CMRR
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 88
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates common-mode rejection ratio (CMRR) in dB.
   example: []
@@ -275,8 +287,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NonInvertingInputImpedance
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates input impedance of a non-inverting amplifier.
   example: []
@@ -317,8 +331,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OutputImpedance
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 119
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates output impedance of an op-amp circuit.
   example: []
@@ -359,8 +375,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SlewRateLimit
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 133
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates slew rate limitation for sinusoidal signals.
   example: []
@@ -398,8 +416,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StabilityMargins
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 147
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates gain and phase margins for stability analysis.
   example: []
@@ -437,8 +457,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: IntegratorOutput
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 164
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates integrator circuit output for DC input.
   example: []
@@ -482,8 +504,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DifferentiatorOutput
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 179
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates differentiator circuit output for step input.
   example: []
@@ -524,8 +548,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SallenKeyCutoffFrequency
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 197
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates Sallen-Key filter cutoff frequency.
   example: []
@@ -569,8 +595,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MultipleFeedbackCutoffFrequency
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 213
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates multiple feedback filter cutoff frequency.
   example: []
@@ -614,8 +642,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InstrumentationAmplifierGain
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 227
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates instrumentation amplifier gain.
   example: []
@@ -653,8 +683,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InputReferredOffset
-    path: src/Calculators/OpAmpCalculator.cs
+    path: ../src/Calculators/OpAmpCalculator.cs
     startLine: 241
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates offset voltage referred to input.
   example: []
@@ -989,12 +1021,12 @@ references:
   parent: System
   definition: System.ValueTuple`2
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: (double referenceResistor, double biasVoltage)
-  nameWithType: (double referenceResistor, double biasVoltage)
-  fullName: (double referenceResistor, double biasVoltage)
-  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
-  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
-  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  name: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType: (double NoiseMarginHigh, double NoiseMarginLow)
+  fullName: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  fullName.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  name.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
   spec.csharp:
   - name: (
   - uid: System.Double
@@ -1002,9 +1034,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: ','
   - name: " "
   - uid: System.Double
@@ -1012,15 +1044,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: " "
   - name: As
   - name: " "
@@ -1030,9 +1062,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: " "
   - name: As
   - name: " "

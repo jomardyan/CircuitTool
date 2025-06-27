@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HardwareDebuggingTools
-    path: src/Hardware/HardwareDebuggingTools.cs
+    path: ../src/Hardware/HardwareDebuggingTools.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides hardware debugging and troubleshooting tools for embedded systems
   example: []
@@ -56,8 +58,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PerformDiagnostics
-    path: src/Hardware/HardwareDebuggingTools.cs
+    path: ../src/Hardware/HardwareDebuggingTools.cs
     startLine: 58
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Performs comprehensive hardware diagnostic tests
   example: []
@@ -95,8 +99,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateArduinoDiagnosticSketch
-    path: src/Hardware/HardwareDebuggingTools.cs
+    path: ../src/Hardware/HardwareDebuggingTools.cs
     startLine: 333
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates Arduino diagnostic sketch
   example: []
@@ -131,8 +137,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateTroubleshootingGuide
-    path: src/Hardware/HardwareDebuggingTools.cs
+    path: ../src/Hardware/HardwareDebuggingTools.cs
     startLine: 524
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates troubleshooting guide based on symptoms
   example: []

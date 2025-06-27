@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistor
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 39
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Represents a resistor component
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistance
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public double Resistance { get; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public Resistor(string id, double resistance, string name = "")
@@ -121,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetImpedance
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 50
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Gets the impedance of this component at the specified frequency
   example: []
@@ -158,8 +166,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Returns a string that represents the current object.
   example: []

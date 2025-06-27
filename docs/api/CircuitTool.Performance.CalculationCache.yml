@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculationCache
-    path: src/Performance/CalculationCache.cs
+    path: ../src/Performance/CalculationCache.cs
     startLine: 10
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Provides caching for expensive electrical calculations
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxCacheSize
-    path: src/Performance/CalculationCache.cs
+    path: ../src/Performance/CalculationCache.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Gets or sets the maximum cache size
   example: []
@@ -86,8 +90,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetOrCompute
-    path: src/Performance/CalculationCache.cs
+    path: ../src/Performance/CalculationCache.cs
     startLine: 36
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Gets a cached result or computes and caches it
   example: []
@@ -128,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CreateKey
-    path: src/Performance/CalculationCache.cs
+    path: ../src/Performance/CalculationCache.cs
     startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Creates a cache key from multiple parameters
   example: []
@@ -164,8 +172,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Clear
-    path: src/Performance/CalculationCache.cs
+    path: ../src/Performance/CalculationCache.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Clears the entire cache
   example: []

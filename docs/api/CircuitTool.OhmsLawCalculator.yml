@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OhmsLawCalculator
-    path: src/Calculators/OhmsLawCalculator.cs
+    path: ../src/Calculators/OhmsLawCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for Ohm's Law (V = I × R).
   example: []
@@ -56,8 +58,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Calculators/OhmsLawCalculator.cs
+    path: ../src/Calculators/OhmsLawCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates voltage using Ohm's Law (V = I × R).
   example: []
@@ -95,8 +99,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Current
-    path: src/Calculators/OhmsLawCalculator.cs
+    path: ../src/Calculators/OhmsLawCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates current using Ohm's Law (I = V / R).
   example: []
@@ -134,8 +140,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistance
-    path: src/Calculators/OhmsLawCalculator.cs
+    path: ../src/Calculators/OhmsLawCalculator.cs
     startLine: 37
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates resistance using Ohm's Law (R = V / I).
   example: []

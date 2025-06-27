@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StopBitsType
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public enum UARTCommunicationCalculator.StopBitsType
@@ -44,8 +46,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: One
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: One = 1
@@ -68,8 +72,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OneAndHalf
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 70
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: OneAndHalf = 2
@@ -92,8 +98,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Two
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 71
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Two = 3

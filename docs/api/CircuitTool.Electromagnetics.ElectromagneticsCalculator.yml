@@ -31,8 +31,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ElectromagneticsCalculator
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Provides calculations for electromagnetic field analysis and antenna design.
   remarks: >-
@@ -75,8 +77,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ElectricFieldStrength
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates electric field strength from power and distance.
   example:
@@ -118,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MagneticFieldStrength
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 46
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates magnetic field strength from electric field.
   example: []
@@ -157,8 +163,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerDensity
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates power density from electric field.
   example:
@@ -197,8 +205,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FarFieldDistance
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 77
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates far-field distance for an antenna.
   example: []
@@ -236,8 +246,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AntennaGain
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 95
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates antenna gain from directivity and efficiency.
   example:
@@ -276,8 +288,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EffectiveAperture
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 111
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates effective aperture of an antenna.
   example: []
@@ -315,8 +329,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DipoleLength
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 126
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates resonant length of a dipole antenna.
   example: []
@@ -354,8 +370,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ShortDipoleRadiationResistance
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 143
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates radiation resistance of a short dipole.
   example: []
@@ -393,8 +411,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SkinDepth
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 164
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates skin depth in a conductor.
   example: []
@@ -435,8 +455,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WaveImpedance
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 178
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates wave impedance in a medium.
   example: []
@@ -474,8 +496,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FriisTransmission
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 195
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates Friis transmission formula for power received.
   example: []
@@ -522,8 +546,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LoopInductance
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 213
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates loop antenna inductance.
   example: []
@@ -561,8 +587,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MonopoleImpedance
-    path: src/Electromagnetics/ElectromagneticsCalculator.cs
+    path: ../src/Electromagnetics/ElectromagneticsCalculator.cs
     startLine: 228
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Electromagnetics
   summary: Calculates monopole antenna impedance.
   example: []

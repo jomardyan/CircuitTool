@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WorstCaseResult
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 211
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Results from worst-case analysis
   example: []
@@ -56,8 +58,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NominalValue
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 213
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double NominalValue { get; }
@@ -83,8 +87,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MinimumValue
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 214
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double MinimumValue { get; }
@@ -110,8 +116,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaximumValue
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 215
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double MaximumValue { get; }
@@ -137,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Range
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 216
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double Range { get; }
@@ -164,8 +174,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TolerancePercent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 217
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double TolerancePercent { get; }
@@ -191,8 +203,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 219
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public WorstCaseResult(double nominalValue, double minimumValue, double maximumValue)
@@ -225,8 +239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 226
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Returns the fully qualified type name of this instance.
   example: []

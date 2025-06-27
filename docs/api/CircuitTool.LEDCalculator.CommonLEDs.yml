@@ -32,8 +32,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CommonLEDs
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 270
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Common LED specifications database
   example: []
@@ -67,8 +69,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Red3mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 272
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Red3mm { get; }
@@ -94,8 +98,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Green3mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 273
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Green3mm { get; }
@@ -121,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Blue3mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 274
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Blue3mm { get; }
@@ -148,8 +156,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Yellow3mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 275
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Yellow3mm { get; }
@@ -175,8 +185,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: White3mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 276
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec White3mm { get; }
@@ -202,8 +214,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Red5mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 278
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Red5mm { get; }
@@ -229,8 +243,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Green5mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 279
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Green5mm { get; }
@@ -256,8 +272,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Blue5mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 280
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Blue5mm { get; }
@@ -283,8 +301,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Yellow5mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 281
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec Yellow5mm { get; }
@@ -310,8 +330,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: White5mm
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 282
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec White5mm { get; }
@@ -337,8 +359,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HighPowerWhite1W
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 284
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec HighPowerWhite1W { get; }
@@ -364,8 +388,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HighPowerWhite3W
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 285
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec HighPowerWhite3W { get; }
@@ -391,8 +417,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InfraredIR
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 287
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec InfraredIR { get; }
@@ -418,8 +446,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UVLed
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 288
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static LEDCalculator.LEDSpec UVLed { get; }

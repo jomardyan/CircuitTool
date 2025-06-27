@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESRAnalysisResult
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 259
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate equivalent series resistance (ESR) effects
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESR
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 261
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double ESR { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerLoss
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 262
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double PowerLoss { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EfficiencyPercent
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 263
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double EfficiencyPercent { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRipple
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 264
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double VoltageRipple { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QualityFactor
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 265
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double QualityFactor { get; set; }

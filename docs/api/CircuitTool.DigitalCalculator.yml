@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DigitalCalculator
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for digital circuit design and analysis.
   remarks: >-
@@ -72,8 +74,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PropagationDelay
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates propagation delay for a digital gate.
   example:
@@ -115,8 +119,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RiseTime
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates rise time for a digital signal.
   example:
@@ -155,8 +161,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FallTime
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 56
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates fall time for a digital signal.
   example: []
@@ -194,8 +202,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DynamicPower
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 73
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates dynamic power consumption in CMOS circuits.
   example:
@@ -237,8 +247,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StaticPower
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 86
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates static power consumption due to leakage current.
   example: []
@@ -276,8 +288,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxFrequency
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the maximum operating frequency based on propagation delay.
   example: []
@@ -318,8 +332,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Fanout
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 116
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the fanout capability of a digital gate.
   example: []
@@ -357,8 +373,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NoiseMargin
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 131
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates noise margin for a digital circuit.
   example: []
@@ -402,8 +420,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CharacteristicImpedance
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 152
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates characteristic impedance for a digital transmission line.
   example: []
@@ -441,8 +461,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MinimumTraceWidth
-    path: src/Calculators/DigitalCalculator.cs
+    path: ../src/Calculators/DigitalCalculator.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the minimum trace width for a given current carrying capacity.
   example: []
@@ -785,12 +807,12 @@ references:
   parent: System
   definition: System.ValueTuple`2
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: (double referenceResistor, double biasVoltage)
-  nameWithType: (double referenceResistor, double biasVoltage)
-  fullName: (double referenceResistor, double biasVoltage)
-  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
-  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
-  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  name: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType: (double NoiseMarginHigh, double NoiseMarginLow)
+  fullName: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  fullName.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  name.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
   spec.csharp:
   - name: (
   - uid: System.Double
@@ -798,9 +820,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: ','
   - name: " "
   - uid: System.Double
@@ -808,15 +830,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: " "
   - name: As
   - name: " "
@@ -826,9 +848,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: " "
   - name: As
   - name: " "

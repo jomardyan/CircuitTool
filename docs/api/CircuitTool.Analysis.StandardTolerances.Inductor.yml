@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Inductor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 360
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Standard inductor tolerances
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Precision_1Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 362
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Precision_1Percent = 0.01
@@ -82,8 +86,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Standard_5Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 363
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Standard_5Percent = 0.05
@@ -107,8 +113,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Standard_10Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 364
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Standard_10Percent = 0.1
@@ -132,8 +140,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Standard_20Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 365
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Standard_20Percent = 0.2

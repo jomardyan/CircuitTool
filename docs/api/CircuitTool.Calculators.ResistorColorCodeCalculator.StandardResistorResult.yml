@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StandardResistorResult
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 247
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Get nearest standard resistor value (E12, E24, E96 series)
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StandardValue
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 249
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double StandardValue { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Error
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 250
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Error { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ErrorPercent
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 251
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double ErrorPercent { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Series
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 252
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public string Series { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ColorCode
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 253
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public List<ResistorColorCodeCalculator.ResistorColor> ColorCode { get; set; }

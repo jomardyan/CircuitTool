@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PCBStackup
-    path: src/Hardware/PCBDesignCalculator.cs
+    path: ../src/Hardware/PCBDesignCalculator.cs
     startLine: 14
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: PCB layer stackup types
   example: []
@@ -47,8 +49,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TwoLayer
-    path: src/Hardware/PCBDesignCalculator.cs
+    path: ../src/Hardware/PCBDesignCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: TwoLayer = 0
@@ -71,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FourLayer
-    path: src/Hardware/PCBDesignCalculator.cs
+    path: ../src/Hardware/PCBDesignCalculator.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: FourLayer = 1
@@ -95,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SixLayer
-    path: src/Hardware/PCBDesignCalculator.cs
+    path: ../src/Hardware/PCBDesignCalculator.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: SixLayer = 2
@@ -119,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EightLayer
-    path: src/Hardware/PCBDesignCalculator.cs
+    path: ../src/Hardware/PCBDesignCalculator.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: EightLayer = 3

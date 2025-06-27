@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerCalculator
-    path: src/Calculators/PowerCalculator.cs
+    path: ../src/Calculators/PowerCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides easy-to-use methods for common electrical power calculations.
   remarks: >-
@@ -65,8 +67,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Power
-    path: src/Calculators/PowerCalculator.cs
+    path: ../src/Calculators/PowerCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates electrical power using the formula <code>P = V × I</code>.
   example:
@@ -105,8 +109,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFromCurrentResistance
-    path: src/Calculators/PowerCalculator.cs
+    path: ../src/Calculators/PowerCalculator.cs
     startLine: 37
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates electrical power using the formula <code>P = I² × R</code>.
   example:
@@ -145,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFromVoltageResistance
-    path: src/Calculators/PowerCalculator.cs
+    path: ../src/Calculators/PowerCalculator.cs
     startLine: 48
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates electrical power using the formula <code>P = V² / R</code>.
   example:

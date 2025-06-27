@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LEDThermalResult
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 213
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: LED thermal analysis result
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: JunctionTemperature
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 215
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double JunctionTemperature { get; set; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ThermalResistance
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 216
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ThermalResistance { get; set; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerDissipation
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 217
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double PowerDissipation { get; set; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmbientTemperature
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 218
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double AmbientTemperature { get; set; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxSafePower
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 219
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double MaxSafePower { get; set; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiresHeatsink
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 220
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool RequiresHeatsink { get; set; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Recommendations
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 221
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<string> Recommendations { get; set; }

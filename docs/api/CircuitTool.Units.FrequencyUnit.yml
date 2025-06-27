@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrequencyUnit
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents frequency measurement units
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Hertz
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Hertz (Hz)
   example: []
@@ -74,8 +78,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kilohertz
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Kilohertz (kHz)
   example: []
@@ -100,8 +106,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Megahertz
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Megahertz (MHz)
   example: []
@@ -126,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Gigahertz
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gigahertz (GHz)
   example: []
@@ -152,8 +162,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Terahertz
-    path: src/Units/FrequencyUnit.cs
+    path: ../src/Units/FrequencyUnit.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Terahertz (THz)
   example: []

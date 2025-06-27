@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorEnergyChargeResult
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 38
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Energy and charge calculation result
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Capacitance
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Capacitance { get; set; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Voltage { get; set; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Charge
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 42
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Charge { get; set; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Energy
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Energy { get; set; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyWattHours
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 44
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double EnergyWattHours { get; set; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Current
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 45
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Current { get; set; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerWatts
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 46
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double PowerWatts { get; set; }

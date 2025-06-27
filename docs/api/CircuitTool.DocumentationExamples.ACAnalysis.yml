@@ -19,8 +19,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ACAnalysis
-    path: src/Documentation/DocumentationExamples.cs
+    path: ../src/Documentation/DocumentationExamples.cs
     startLine: 65
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: AC circuit analysis example
   example: []
@@ -54,8 +56,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RunExample
-    path: src/Documentation/DocumentationExamples.cs
+    path: ../src/Documentation/DocumentationExamples.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static void RunExample()

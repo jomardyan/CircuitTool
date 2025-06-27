@@ -29,8 +29,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModbusCommunicationCalculator
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 10
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculator for Modbus communication parameters and frame analysis
   example: []
@@ -64,8 +66,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCharacterTime
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 22
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate character time for given baud rate
   example: []
@@ -109,8 +113,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateFrameTimeout
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 37
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate frame timeout (3.5 character times)
   example: []
@@ -145,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCharacterTimeout
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 48
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate character timeout (1.5 character times)
   example: []
@@ -181,8 +189,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCRC16
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate CRC16 for Modbus RTU
   example: []
@@ -217,8 +227,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateLRC
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 89
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate LRC (Longitudinal Redundancy Check) for Modbus ASCII
   example: []
@@ -253,8 +265,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateTransmissionTime
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 111
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate total frame transmission time
   example: []
@@ -292,8 +306,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateMaxThroughput
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 130
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate maximum theoretical throughput
   example: []
@@ -334,8 +350,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConvertAddress
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 149
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Convert between different Modbus address formats
   example: []
@@ -376,8 +394,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetRegisterCount
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 175
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate register count needed for data type
   example: []
@@ -409,8 +429,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeNetwork
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 200
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate network loading analysis
   example: []
@@ -448,8 +470,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateRS485Power
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 251
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate power consumption for RS485 network
   example: []

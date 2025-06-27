@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerRatingResult
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 288
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate power rating required for resistor
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatedPower
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 290
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double CalculatedPower { get; set; }
@@ -84,8 +88,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RecommendedRating
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 291
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double RecommendedRating { get; set; }
@@ -111,8 +117,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SafetyFactor
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 292
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double SafetyFactor { get; set; }
@@ -138,8 +146,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StandardRatings
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 293
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public List<double> StandardRatings { get; set; }

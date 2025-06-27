@@ -12,6 +12,8 @@ items:
   nameWithType: CircuitTool.Electromagnetics
   fullName: CircuitTool.Electromagnetics
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.Electromagnetics.ElectromagneticsCalculator
   commentId: T:CircuitTool.Electromagnetics.ElectromagneticsCalculator

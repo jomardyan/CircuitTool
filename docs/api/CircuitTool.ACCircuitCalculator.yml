@@ -29,8 +29,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ACCircuitCalculator
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for AC circuit analysis and characteristics.
   example: []
@@ -64,8 +66,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ImpedanceMagnitude
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the impedance magnitude of an RLC circuit using Z = √(R² + (XL - XC)²).
   example: []
@@ -106,8 +110,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PhaseAngle
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the phase angle of an RLC circuit using φ = arctan((XL - XC) / R).
   example: []
@@ -148,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFactor
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the power factor using cos(φ) = R / Z.
   example: []
@@ -187,8 +195,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PeakToRMS
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the RMS value from peak value (RMS = Peak / √2).
   example: []
@@ -223,8 +233,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RMSToPeak
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 76
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the peak value from RMS value (Peak = RMS × √2).
   example: []
@@ -259,8 +271,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PeakToAverage
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 86
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the average value of a sinusoidal waveform (Average = 2 × Peak / π).
   example: []
@@ -295,8 +309,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PeakToPeakToPeak
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the peak-to-peak value from peak value (Peak-to-Peak = 2 × Peak).
   example: []
@@ -331,8 +347,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FormFactor
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 107
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the form factor of a waveform (Form Factor = RMS / Average).
   example: []
@@ -370,8 +388,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CrestFactor
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 121
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the crest factor of a waveform (Crest Factor = Peak / RMS).
   example: []
@@ -409,8 +429,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QualityFactor
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 135
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the quality factor (Q) of a resonant circuit using Q = XL / R.
   example: []
@@ -448,8 +470,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Bandwidth
-    path: src/Calculators/ACCircuitCalculator.cs
+    path: ../src/Calculators/ACCircuitCalculator.cs
     startLine: 151
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the bandwidth of a resonant circuit using BW = f0 / Q.
   example: []

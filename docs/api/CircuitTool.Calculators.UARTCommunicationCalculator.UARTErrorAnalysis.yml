@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UARTErrorAnalysis
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 228
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate UART error probability
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BitErrorRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 230
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double BitErrorRate { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrameErrorRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 231
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double FrameErrorRate { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CharacterErrorRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 232
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double CharacterErrorRate { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MessageErrorRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 233
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double MessageErrorRate { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ErrorSources
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 234
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public List<string> ErrorSources { get; set; }

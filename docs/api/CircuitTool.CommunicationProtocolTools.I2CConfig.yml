@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: I2CConfig
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: I2C communication parameters
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ClockFrequency
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public int ClockFrequency { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PullUpResistance
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double PullUpResistance { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SupplyVoltage
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 20
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double SupplyVoltage { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BusCapacitance
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 21
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double BusCapacitance { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NumberOfDevices
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 22
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public int NumberOfDevices { get; set; }

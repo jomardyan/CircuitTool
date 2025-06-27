@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DesignCenteringResult
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 308
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Results from design centering optimization
   example: []
@@ -55,8 +57,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OptimizedValues
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 310
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double[] OptimizedValues { get; }
@@ -82,8 +86,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Yield
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 311
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double Yield { get; }
@@ -109,8 +115,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Iterations
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 312
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public int Iterations { get; }
@@ -136,8 +144,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 314
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public DesignCenteringResult(double[] optimizedValues, double yield, int iterations)
@@ -170,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: YieldPercent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 321
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double YieldPercent { get; }
@@ -197,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 323
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Returns the fully qualified type name of this instance.
   example: []

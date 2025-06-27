@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HarmonicAnalysis
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 251
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Results from harmonic analysis
   example: []
@@ -56,8 +58,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 253
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public HarmonicAnalysis(double fundamentalFrequency, double[] harmonicFrequencies, Complex[] responses)
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FundamentalFrequency
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 260
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double FundamentalFrequency { get; }
@@ -117,8 +123,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HarmonicFrequencies
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 261
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] HarmonicFrequencies { get; }
@@ -144,8 +152,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Responses
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 262
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public Complex[] Responses { get; }
@@ -171,8 +181,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Magnitudes
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 264
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] Magnitudes { get; }
@@ -198,8 +210,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalHarmonicDistortion
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 265
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double TotalHarmonicDistortion { get; }

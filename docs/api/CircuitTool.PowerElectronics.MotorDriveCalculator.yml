@@ -30,8 +30,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MotorDriveCalculator
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Provides calculations for motor drive and control systems.
   remarks: >-
@@ -74,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TorqueFromPower
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates motor torque from power and speed.
   example:
@@ -114,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFromTorque
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates mechanical power from torque and speed.
   example: []
@@ -153,8 +159,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SynchronousSpeed
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates synchronous speed for AC motor.
   example:
@@ -193,8 +201,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Slip
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 78
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates motor slip.
   example:
@@ -233,8 +243,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RotorFrequency
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 94
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates rotor frequency for induction motor.
   example: []
@@ -272,8 +284,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Efficiency
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 110
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates motor efficiency.
   example: []
@@ -311,8 +325,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VHzRatio
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 126
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates V/Hz ratio for variable frequency drive.
   example: []
@@ -350,8 +366,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageForConstantVHz
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 141
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates required voltage for constant V/Hz operation.
   example: []
@@ -392,8 +410,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StartingTorque
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 156
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates starting torque for induction motor.
   example: []
@@ -434,8 +454,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MotorCurrent
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 174
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates motor current from power and power factor.
   example: []
@@ -482,8 +504,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PWMFrequency
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 202
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates PWM switching frequency for motor drive.
   example: []
@@ -521,8 +545,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModulationIndex
-    path: src/PowerElectronics/MotorDriveCalculator.cs
+    path: ../src/PowerElectronics/MotorDriveCalculator.cs
     startLine: 216
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates modulation index for PWM inverter.
   example: []

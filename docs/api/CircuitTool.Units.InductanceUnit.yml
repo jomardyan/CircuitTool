@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductanceUnit
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents inductance measurement units
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Nanohenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Nanohenries (nH)
   example: []
@@ -74,8 +78,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Microhenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Microhenries (μH)
   example: []
@@ -100,8 +106,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Millihenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Millihenries (mH)
   example: []
@@ -126,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Henries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Henries (H)
   example: []
@@ -152,8 +162,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kilohenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Kilohenries (kH)
   example: []

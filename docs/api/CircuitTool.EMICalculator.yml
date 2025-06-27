@@ -29,8 +29,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EMICalculator
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for Electromagnetic Interference (EMI) and Electromagnetic Compatibility (EMC) analysis.
   remarks: >-
@@ -73,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NearFieldStrength
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates near-field electric field strength from current.
   example:
@@ -113,8 +117,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ShieldingEffectiveness
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates shielding effectiveness of a metallic enclosure.
   example:
@@ -159,8 +165,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SkinDepth
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 74
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates skin depth in a conductor.
   example: []
@@ -201,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Crosstalk
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates crosstalk between parallel traces.
   example: []
@@ -246,8 +256,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WaveguideCutoff
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 117
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates waveguide cutoff frequency for rectangular apertures.
   example:
@@ -286,8 +298,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EvanescentModeAttenuation
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 133
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates attenuation below cutoff frequency (evanescent mode).
   example: []
@@ -328,8 +342,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiredApertureSize
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 153
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates required aperture size for given shielding effectiveness.
   example: []
@@ -370,8 +386,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RadiatedEmissions
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 187
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates radiated emissions from a current loop.
   example: []
@@ -415,8 +433,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CommonModeChokeImpedance
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 212
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates common mode choke impedance.
   example: []
@@ -454,8 +474,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FerriteBeadImpedance
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 226
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates ferrite bead impedance approximation.
   example: []
@@ -493,8 +515,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DifferentialModeFilterAttenuation
-    path: src/Calculators/EMICalculator.cs
+    path: ../src/Calculators/EMICalculator.cs
     startLine: 250
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates differential mode filter attenuation.
   example: []

@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ThermalCalculator
-    path: src/Analysis/ThermalCalculator.cs
+    path: ../src/Analysis/ThermalCalculator.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides thermal analysis calculations for electronic components
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: JunctionTemperature
-    path: src/Analysis/ThermalCalculator.cs
+    path: ../src/Analysis/ThermalCalculator.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates junction temperature of a component
   example: []
@@ -99,8 +103,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiredHeatSinkThermalResistance
-    path: src/Analysis/ThermalCalculator.cs
+    path: ../src/Analysis/ThermalCalculator.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the required heat sink thermal resistance
   example: []
@@ -144,8 +150,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ThermalTimeConstant
-    path: src/Analysis/ThermalCalculator.cs
+    path: ../src/Analysis/ThermalCalculator.cs
     startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates thermal time constant for transient analysis
   example: []
@@ -183,8 +191,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConvectiveHeatTransfer
-    path: src/Analysis/ThermalCalculator.cs
+    path: ../src/Analysis/ThermalCalculator.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates convective heat transfer coefficient
   example: []

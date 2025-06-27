@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitanceConversionResult
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Capacitance conversion result
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Value
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Value { get; set; }
@@ -84,8 +88,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Unit
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public CapacitanceUnitConverter.CapacitanceUnit Unit { get; set; }
@@ -111,8 +117,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FormattedValue
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 31
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public string FormattedValue { get; set; }
@@ -138,8 +146,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AllUnits
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public Dictionary<CapacitanceUnitConverter.CapacitanceUnit, double> AllUnits { get; set; }

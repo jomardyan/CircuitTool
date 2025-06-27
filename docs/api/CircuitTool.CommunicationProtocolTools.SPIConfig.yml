@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SPIConfig
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: SPI communication parameters
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ClockFrequency
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public int ClockFrequency { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DataBits
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 31
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public int DataBits { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Mode
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public CommunicationProtocolTools.SPIMode Mode { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CableLength
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double CableLength { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UseChipSelect
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 34
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool UseChipSelect { get; set; }

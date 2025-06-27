@@ -30,8 +30,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BalancedThreePhasePower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 358
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Balanced three-phase power results
   example: []
@@ -61,8 +63,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RealPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 360
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double RealPower { get; }
@@ -88,8 +92,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ReactivePower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 361
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double ReactivePower { get; }
@@ -115,8 +121,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ApparentPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 362
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double ApparentPower { get; }
@@ -142,8 +150,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LineToLineVoltage
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 363
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double LineToLineVoltage { get; }
@@ -169,8 +179,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PhaseVoltage
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 364
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double PhaseVoltage { get; }
@@ -196,8 +208,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LineCurrent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 365
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double LineCurrent { get; }
@@ -223,8 +237,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PhaseCurrent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 366
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double PhaseCurrent { get; }
@@ -250,8 +266,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 367
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double PowerFactor { get; }
@@ -277,8 +295,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: IsLeading
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 368
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public bool IsLeading { get; }
@@ -304,8 +324,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 370
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public BalancedThreePhasePower(double realPower, double reactivePower, double apparentPower, double lineToLineVoltage, double phaseVoltage, double lineCurrent, double phaseCurrent, double powerFactor, bool isLeading)
@@ -350,8 +372,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFactorType
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 386
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public string PowerFactorType { get; }
@@ -377,8 +401,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 388
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Returns the fully qualified type name of this instance.
   example: []

@@ -27,8 +27,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ComponentCalculator
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Provides calculations for resistors, capacitors, and inductors.
   example: []
@@ -62,8 +64,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistance
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double Resistance(double voltage, double current)
@@ -96,8 +100,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SeriesResistance
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double SeriesResistance(params double[] resistors)
@@ -128,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ParallelResistance
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 24
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double ParallelResistance(params double[] resistors)
@@ -160,8 +168,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitiveReactance
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double CapacitiveReactance(double frequency, double capacitance)
@@ -194,8 +204,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorEnergyStored
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double CapacitorEnergyStored(double capacitance, double voltage)
@@ -228,8 +240,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCTimeConstant
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double RCTimeConstant(double resistance, double capacitance)
@@ -262,8 +276,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductiveReactance
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 57
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double InductiveReactance(double frequency, double inductance)
@@ -296,8 +312,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductorEnergyStored
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 64
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double InductorEnergyStored(double inductance, double current)
@@ -330,8 +348,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RLTimeConstant
-    path: src/Calculators/ComponentCalculator.cs
+    path: ../src/Calculators/ComponentCalculator.cs
     startLine: 71
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public static double RLTimeConstant(double inductance, double resistance)

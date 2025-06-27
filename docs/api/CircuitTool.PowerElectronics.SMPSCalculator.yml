@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SMPSCalculator
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Provides calculations for switching mode power supplies (SMPS) design.
   remarks: >-
@@ -72,8 +74,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BuckDutyCycle
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates duty cycle for a buck converter.
   example:
@@ -112,8 +116,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BoostDutyCycle
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 42
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates duty cycle for a boost converter.
   example: []
@@ -151,8 +157,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BuckBoostDutyCycle
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 58
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates duty cycle for a buck-boost converter.
   example: []
@@ -190,8 +198,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MinimumInductanceBuck
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 77
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates minimum inductance for continuous conduction mode (CCM).
   example:
@@ -236,8 +246,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OutputCapacitance
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates output capacitance for desired voltage ripple.
   example: []
@@ -278,8 +290,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OutputRipple
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 114
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates output voltage ripple.
   example:
@@ -321,8 +335,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SwitchingLoss
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 131
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates switching losses in a MOSFET.
   example: []
@@ -369,8 +385,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConductionLoss
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 148
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates conduction losses in a MOSFET.
   example: []
@@ -411,8 +429,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FlybackTurnsRatio
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates transformer turns ratio for flyback converter.
   example: []
@@ -456,8 +476,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FlybackMagnetizingInductance
-    path: src/PowerElectronics/SMPSCalculator.cs
+    path: ../src/PowerElectronics/SMPSCalculator.cs
     startLine: 185
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerElectronics
   summary: Calculates magnetizing inductance for flyback converter.
   example: []

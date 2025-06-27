@@ -15,7 +15,15 @@ items:
   nameWithType: CircuitTool.Performance
   fullName: CircuitTool.Performance
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
+- uid: CircuitTool.Performance.BulkOperations
+  commentId: T:CircuitTool.Performance.BulkOperations
+  href: CircuitTool.Performance.BulkOperations.html
+  name: BulkOperations
+  nameWithType: BulkOperations
+  fullName: CircuitTool.Performance.BulkOperations
 - uid: CircuitTool.Performance.CalculationCache
   commentId: T:CircuitTool.Performance.CalculationCache
   href: CircuitTool.Performance.CalculationCache.html
@@ -34,9 +42,3 @@ references:
   name: VectorizedCalculations
   nameWithType: VectorizedCalculations
   fullName: CircuitTool.Performance.VectorizedCalculations
-- uid: CircuitTool.Performance.BulkOperations
-  commentId: T:CircuitTool.Performance.BulkOperations
-  href: CircuitTool.Performance.BulkOperations.html
-  name: BulkOperations
-  nameWithType: BulkOperations
-  fullName: CircuitTool.Performance.BulkOperations

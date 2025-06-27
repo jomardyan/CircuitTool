@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MonteCarloResult
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 164
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Results from Monte Carlo analysis
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 168
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public MonteCarloResult(double[] results)
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Mean
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 190
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double Mean { get; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StandardDeviation
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 191
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double StandardDeviation { get; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Minimum
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 192
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double Minimum { get; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Maximum
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 193
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double Maximum { get; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SampleCount
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 194
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public int SampleCount { get; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetPercentile
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 196
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double GetPercentile(double percentile)
@@ -254,8 +270,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 205
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Returns the fully qualified type name of this instance.
   example: []

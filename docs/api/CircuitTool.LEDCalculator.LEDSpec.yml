@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LEDSpec
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: LED specifications for calculations
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ForwardVoltage
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ForwardVoltage { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ForwardCurrent
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ForwardCurrent { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxCurrent
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double MaxCurrent { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LuminousFlux
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 101
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double LuminousFlux { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Color
-    path: src/Calculators/LEDCalculator.cs
+    path: ../src/Calculators/LEDCalculator.cs
     startLine: 102
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string Color { get; set; }

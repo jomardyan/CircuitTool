@@ -14,6 +14,8 @@ items:
   nameWithType: CircuitTool.Serialization
   fullName: CircuitTool.Serialization
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.Serialization.CircuitSerialization
   commentId: T:CircuitTool.Serialization.CircuitSerialization

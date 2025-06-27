@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorGroup
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 114
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public class ResistorCalculator.ResistorNetwork.ResistorGroup
@@ -53,8 +55,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistors
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 116
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<double> Resistors { get; set; }
@@ -80,8 +84,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Connection
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 117
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public ResistorCalculator.ResistorNetwork.ConnectionType Connection { get; set; }

@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ThermalResult
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 272
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Results from thermal analysis
   example: []
@@ -54,8 +56,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 274
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public ThermalResult(double temperature, int iterations, bool converged)
@@ -88,8 +92,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Temperature
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 281
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double Temperature { get; }
@@ -115,8 +121,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Iterations
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 282
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public int Iterations { get; }
@@ -142,8 +150,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Converged
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 283
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public bool Converged { get; }
@@ -169,8 +179,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 285
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Returns the fully qualified type name of this instance.
   example: []

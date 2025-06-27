@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CircuitCalculations
-    path: src/CircuitCalculations.cs
+    path: ../src/CircuitCalculations.cs
     startLine: 4
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static class CircuitCalculations
@@ -54,8 +56,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateTotalResistance
-    path: src/CircuitCalculations.cs
+    path: ../src/CircuitCalculations.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double CalculateTotalResistance(double[] resistances, bool isSeries)
@@ -88,8 +92,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePower
-    path: src/CircuitCalculations.cs
+    path: ../src/CircuitCalculations.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double CalculatePower(double voltage, double current)
@@ -122,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateEnergy
-    path: src/CircuitCalculations.cs
+    path: ../src/CircuitCalculations.cs
     startLine: 38
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double CalculateEnergy(double power, double time)

@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TypedOhmsLawCalculator
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Provides strongly-typed Ohm's Law calculations using units to prevent errors
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateVoltage
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates voltage using Ohm's Law (V = I × R)
   example: []
@@ -95,8 +99,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCurrent
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates current using Ohm's Law (I = V / R)
   example: []
@@ -131,8 +137,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateResistance
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates resistance using Ohm's Law (R = V / I)
   example: []
@@ -167,8 +175,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePower
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 55
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates power using P = V × I
   example: []
@@ -203,8 +213,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePower
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates power using P = V² / R
   example: []
@@ -239,8 +251,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePower
-    path: src/Units/TypedOhmsLawCalculator.cs
+    path: ../src/Units/TypedOhmsLawCalculator.cs
     startLine: 80
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Calculates power using P = I² × R
   example: []

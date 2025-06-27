@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LEDResistorCalculator
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 80
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Template for LED current limiting resistor
   example: []
@@ -55,8 +57,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCurrentLimitingResistor
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 82
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double CalculateCurrentLimitingResistor(double supplyVoltage, double ledVoltage, double ledCurrent)
@@ -91,8 +95,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateCode
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static string GenerateCode(double supplyVoltage, double ledVoltage, double ledCurrent)

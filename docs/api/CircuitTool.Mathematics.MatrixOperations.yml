@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MatrixOperations
-    path: src/Math/MatrixOperations.cs
+    path: ../src/Math/MatrixOperations.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Provides matrix operations for circuit analysis, particularly for nodal analysis
   example: []
@@ -55,8 +57,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CreateNodalAdmittanceMatrix
-    path: src/Math/MatrixOperations.cs
+    path: ../src/Math/MatrixOperations.cs
     startLine: 305
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Creates a nodal admittance matrix for circuit analysis
   example: []
@@ -97,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SolveNodalAnalysis
-    path: src/Math/MatrixOperations.cs
+    path: ../src/Math/MatrixOperations.cs
     startLine: 338
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Solves a nodal analysis problem
   example: []

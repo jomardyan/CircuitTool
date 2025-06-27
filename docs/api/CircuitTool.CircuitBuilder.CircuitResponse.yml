@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CircuitResponse
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 388
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Represents the response of a circuit to an input signal
   example: []
@@ -56,8 +58,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InputVoltage
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 390
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public ACVoltage InputVoltage { get; }
@@ -83,8 +87,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Current
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 391
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public ACCurrent Current { get; }
@@ -110,8 +116,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalImpedance
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 392
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public Impedance TotalImpedance { get; }
@@ -137,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Power
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 393
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public ComplexPower Power { get; }
@@ -164,8 +174,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Frequency
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 394
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public double Frequency { get; }
@@ -191,8 +203,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 396
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public CircuitResponse(ACVoltage inputVoltage, ACCurrent current, Impedance totalImpedance, ComplexPower power, double frequency)
@@ -229,8 +243,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 406
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Returns the fully qualified type name of this instance.
   example: []

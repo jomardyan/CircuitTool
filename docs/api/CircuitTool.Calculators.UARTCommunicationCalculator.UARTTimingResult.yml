@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UARTTimingResult
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: UART timing analysis results
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BitTime
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double BitTime { get; set; }
@@ -86,8 +90,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CharacterTime
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double CharacterTime { get; set; }
@@ -113,8 +119,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxDataRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double MaxDataRate { get; set; }
@@ -140,8 +148,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EfficiencyPercent
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 31
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double EfficiencyPercent { get; set; }
@@ -167,8 +177,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalBitsPerFrame
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double TotalBitsPerFrame { get; set; }
@@ -194,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InterCharacterGap
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double InterCharacterGap { get; set; }

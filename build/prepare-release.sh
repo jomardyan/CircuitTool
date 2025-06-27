@@ -442,8 +442,8 @@ fi
 # Step 5: Build documentation
 print_color "📚 Step 5: Building documentation..." "$YELLOW"
 if command -v docfx &> /dev/null; then
-    docfx metadata
-    docfx build
+    docfx metadata config/docfx.json
+    docfx build config/docfx.json
     print_color "✅ Documentation built successfully" "$GREEN"
 else
     print_color "⚠️  DocFX not found, skipping documentation build" "$YELLOW"

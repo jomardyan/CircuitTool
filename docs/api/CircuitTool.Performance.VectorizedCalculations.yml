@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VectorizedCalculations
-    path: src/Performance/VectorizedCalculations.cs
+    path: ../src/Performance/VectorizedCalculations.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Provides performance-optimized calculations using SIMD operations
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ParallelResistanceVectorized
-    path: src/Performance/VectorizedCalculations.cs
+    path: ../src/Performance/VectorizedCalculations.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Calculates multiple parallel resistances using SIMD operations
   example: []
@@ -93,8 +97,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RMSVectorized
-    path: src/Performance/VectorizedCalculations.cs
+    path: ../src/Performance/VectorizedCalculations.cs
     startLine: 58
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Calculates RMS values for multiple signals using SIMD operations
   example: []
@@ -129,8 +135,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ImpedanceMagnitudesVectorized
-    path: src/Performance/VectorizedCalculations.cs
+    path: ../src/Performance/VectorizedCalculations.cs
     startLine: 111
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Vectorized impedance magnitude calculation for multiple AC circuits
   example: []
@@ -168,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RealPowerVectorized
-    path: src/Performance/VectorizedCalculations.cs
+    path: ../src/Performance/VectorizedCalculations.cs
     startLine: 159
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Vectorized power calculation for multiple circuits
   example: []

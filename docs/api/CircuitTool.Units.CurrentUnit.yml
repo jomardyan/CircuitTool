@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentUnit
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents current measurement units
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Nanoamperes
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Nanoamperes (nA)
   example: []
@@ -74,8 +78,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Microamperes
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Microamperes (μA)
   example: []
@@ -100,8 +106,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Milliamperes
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Milliamperes (mA)
   example: []
@@ -126,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Amperes
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Amperes (A)
   example: []
@@ -152,8 +162,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kiloamperes
-    path: src/Units/CurrentUnit.cs
+    path: ../src/Units/CurrentUnit.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Kiloamperes (kA)
   example: []

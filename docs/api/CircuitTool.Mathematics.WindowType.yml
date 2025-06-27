@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WindowType
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Window function types for spectral analysis
   example: []
@@ -47,8 +49,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Rectangular
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   syntax:
     content: Rectangular = 0
@@ -71,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Hanning
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 12
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   syntax:
     content: Hanning = 1
@@ -95,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Hamming
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   syntax:
     content: Hamming = 2
@@ -119,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Blackman
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 14
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   syntax:
     content: Blackman = 3

@@ -29,8 +29,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FilterCalculator
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for electronic filter design and analysis.
   example: []
@@ -64,8 +66,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCLowPassCutoffFrequency
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the cutoff frequency of an RC low-pass filter using fc = 1 / (2πRC).
   example: []
@@ -103,8 +107,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCHighPassCutoffFrequency
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the cutoff frequency of an RC high-pass filter using fc = 1 / (2πRC).
   example: []
@@ -142,8 +148,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RLLowPassCutoffFrequency
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the cutoff frequency of an RL low-pass filter using fc = R / (2πL).
   example: []
@@ -181,8 +189,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RLHighPassCutoffFrequency
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 57
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the cutoff frequency of an RL high-pass filter using fc = R / (2πL).
   example: []
@@ -220,8 +230,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GainInDecibels
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 71
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the gain of a filter in decibels using Gain(dB) = 20 × log10(Vout/Vin).
   example: []
@@ -259,8 +271,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCLowPassPhaseShift
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 88
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the phase shift of an RC low-pass filter using φ = -arctan(2πfRC).
   example: []
@@ -301,8 +315,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCHighPassPhaseShift
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the phase shift of an RC high-pass filter using φ = arctan(1/(2πfRC)).
   example: []
@@ -343,8 +359,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCLowPassMagnitudeResponse
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 117
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the magnitude response of an RC low-pass filter using |H(f)| = 1 / √(1 + (f/fc)²).
   example: []
@@ -382,8 +400,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCHighPassMagnitudeResponse
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 132
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the magnitude response of an RC high-pass filter using |H(f)| = (f/fc) / √(1 + (f/fc)²).
   example: []
@@ -421,8 +441,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiredCapacitanceForCutoff
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 147
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the required capacitance for a desired RC filter cutoff frequency.
   example: []
@@ -460,8 +482,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequiredResistanceForCutoff
-    path: src/Calculators/FilterCalculator.cs
+    path: ../src/Calculators/FilterCalculator.cs
     startLine: 161
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the required resistance for a desired RC filter cutoff frequency.
   example: []

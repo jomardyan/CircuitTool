@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CircuitSerialization
-    path: src/Serialization/CircuitSerialization.cs
+    path: ../src/Serialization/CircuitSerialization.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Serialization
   summary: Provides JSON serialization support for circuit configurations
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToJson
-    path: src/Serialization/CircuitSerialization.cs
+    path: ../src/Serialization/CircuitSerialization.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Serialization
   summary: Serializes a circuit to JSON format
   example: []
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FromJson
-    path: src/Serialization/CircuitSerialization.cs
+    path: ../src/Serialization/CircuitSerialization.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Serialization
   summary: Deserializes a circuit from JSON format
   example: []
@@ -126,8 +132,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToXml
-    path: src/Serialization/CircuitSerialization.cs
+    path: ../src/Serialization/CircuitSerialization.cs
     startLine: 116
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Serialization
   summary: Serializes a circuit to XML format
   example: []
@@ -159,8 +167,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FromXml
-    path: src/Serialization/CircuitSerialization.cs
+    path: ../src/Serialization/CircuitSerialization.cs
     startLine: 150
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Serialization
   summary: Deserializes a circuit from XML format
   example: []

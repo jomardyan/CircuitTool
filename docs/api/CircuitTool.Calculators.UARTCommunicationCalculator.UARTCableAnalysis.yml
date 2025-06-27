@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UARTCableAnalysis
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 50
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Cable length analysis for UART
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxRecommendedLength
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double MaxRecommendedLength { get; set; }
@@ -84,8 +88,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SignalRiseTime
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 53
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double SignalRiseTime { get; set; }
@@ -111,8 +117,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxBaudRate
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 54
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double MaxBaudRate { get; set; }
@@ -138,8 +146,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Recommendations
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 55
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public List<string> Recommendations { get; set; }

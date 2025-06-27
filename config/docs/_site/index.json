@@ -1,0 +1,7 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "⚙️ Configuration Files | CircuitTool - Electrical Engineering Library",
+    "summary": "⚙️ Configuration Files This folder contains configuration files for various tools and build processes. \uD83D\uDCC2 Files \uD83D\uDCDA docfx.json DocFX configuration for generating documentation: API documentation settings Template configuration Build and metadata options Site structure and navigation \uD83D\uDCE6 nuget.config NuGet package source configuration: Package source URLs Authentication settings Package download configurations \uD83D\uDD27 Usage These configuration files are automatically used by the build scripts: Documentation generation: ./build/generate-docs.sh uses docfx.json Package building: Build scripts reference nuget.config for package sources Release process: ./build/prepare-release.sh coordinates all configurations \uD83D\uDEE0️ Customization To customize the build process: Edit docfx.json to modify documentation generation Edit nuget.config to add custom package sources Run ./build/generate-docs.sh to regenerate documentation Run ./build/prepare-release.sh to test the full pipeline \uD83D\uDCC1 Related Folders build/ - Build and deployment scripts docs/ - Documentation source files assets/ - Images and resources"
+  }
+}

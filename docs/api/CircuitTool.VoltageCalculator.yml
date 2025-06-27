@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageCalculator
-    path: src/Calculators/VoltageCalculator.cs
+    path: ../src/Calculators/VoltageCalculator.cs
     startLine: 4
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static class VoltageCalculator
@@ -53,8 +55,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDrop
-    path: src/Calculators/VoltageCalculator.cs
+    path: ../src/Calculators/VoltageCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltageDrop(double current, double resistance)
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDivider
-    path: src/Calculators/VoltageCalculator.cs
+    path: ../src/Calculators/VoltageCalculator.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltageDivider(double vin, double r1, double r2)

@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerUnit
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents power measurement units
   example: []
@@ -50,8 +52,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Nanowatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Nanowatts (nW)
   example: []
@@ -76,8 +80,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Microwatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Microwatts (μW)
   example: []
@@ -102,8 +108,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Milliwatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Milliwatts (mW)
   example: []
@@ -128,8 +136,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Watts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Watts (W)
   example: []
@@ -154,8 +164,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kilowatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Kilowatts (kW)
   example: []
@@ -180,8 +192,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Megawatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 21
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Megawatts (MW)
   example: []
@@ -206,8 +220,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Gigawatts
-    path: src/Units/PowerUnit.cs
+    path: ../src/Units/PowerUnit.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gigawatts (GW)
   example: []

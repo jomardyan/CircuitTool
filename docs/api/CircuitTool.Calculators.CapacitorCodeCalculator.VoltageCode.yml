@@ -43,8 +43,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageCode
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Capacitor voltage rating codes
   example: []
@@ -68,8 +70,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Z
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Z = 0
@@ -92,8 +96,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: A
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: A = 10
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: B
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 31
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: B = 15
@@ -140,8 +148,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: C
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: C = 25
@@ -164,8 +174,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: D
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: D = 35
@@ -188,8 +200,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 34
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: E = 50
@@ -212,8 +226,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: F
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 35
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: F = 63
@@ -236,8 +252,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: G
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 36
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: G = 100
@@ -260,8 +278,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: H
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 37
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: H = 160
@@ -284,8 +304,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: J
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 38
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: J = 250
@@ -308,8 +330,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: K
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 39
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: K = 350
@@ -332,8 +356,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: L
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: L = 500
@@ -356,8 +382,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: M
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: M = 630
@@ -380,8 +408,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: N
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 42
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: N = 1000
@@ -404,8 +434,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: P
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: P = 1600
@@ -428,8 +460,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Q
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 44
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Q = 2500
@@ -452,8 +486,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: R
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 45
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: R = 3500
@@ -476,8 +512,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: S
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 46
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: S = 5000
@@ -500,8 +538,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: T
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: T = 6300
@@ -524,8 +564,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: U
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 48
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: U = 10000
@@ -548,8 +590,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: V
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: V = 16000
@@ -572,8 +616,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: W
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 50
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: W = 25000
@@ -596,8 +642,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X = 35000
@@ -620,8 +668,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Y
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Y = 50000
@@ -644,8 +694,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ZZ
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 53
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: ZZ = 63000

@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SensorType
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 14
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Common sensor types and their characteristics
   example: []
@@ -51,8 +53,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Thermistor
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Thermistor = 0
@@ -75,8 +79,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RTD
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: RTD = 1
@@ -99,8 +105,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Thermocouple
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Thermocouple = 2
@@ -123,8 +131,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StrainGauge
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: StrainGauge = 3
@@ -147,8 +157,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Photoresistor
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 20
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Photoresistor = 4
@@ -171,8 +183,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HallEffect
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 21
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: HallEffect = 5
@@ -195,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Accelerometer
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 22
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Accelerometer = 6
@@ -219,8 +235,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Gyroscope
-    path: src/Hardware/SensorInterfaceCalculator.cs
+    path: ../src/Hardware/SensorInterfaceCalculator.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Gyroscope = 7

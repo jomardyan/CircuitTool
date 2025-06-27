@@ -44,8 +44,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIOPin
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 14
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: GPIO pin mapping for different Raspberry Pi models
   example: []
@@ -69,8 +71,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO2
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO2 = 2
@@ -93,8 +97,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO3
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO3 = 3
@@ -117,8 +123,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO4
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO4 = 4
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO5
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO5 = 5
@@ -165,8 +175,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO6
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO6 = 6
@@ -189,8 +201,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO7
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO7 = 7
@@ -213,8 +227,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO8
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO8 = 8
@@ -237,8 +253,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO9
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO9 = 9
@@ -261,8 +279,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO10
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO10 = 10
@@ -285,8 +305,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO11
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO11 = 11
@@ -309,8 +331,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO12
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO12 = 12
@@ -333,8 +357,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO13
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO13 = 13
@@ -357,8 +383,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO14
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO14 = 14
@@ -381,8 +409,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO15
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO15 = 15
@@ -405,8 +435,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO16
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO16 = 16
@@ -429,8 +461,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO17
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO17 = 17
@@ -453,8 +487,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO18
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO18 = 18
@@ -477,8 +513,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO19
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO19 = 19
@@ -501,8 +539,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO20
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO20 = 20
@@ -525,8 +565,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO21
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO21 = 21
@@ -549,8 +591,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO22
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO22 = 22
@@ -573,8 +617,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO23
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO23 = 23
@@ -597,8 +643,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO24
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO24 = 24
@@ -621,8 +669,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO25
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO25 = 25
@@ -645,8 +695,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO26
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO26 = 26
@@ -669,8 +721,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GPIO27
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: GPIO27 = 27

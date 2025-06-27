@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  commentId: T:CircuitTool.Tests.Serialization.CircuitSerializationTests
+  id: CircuitSerializationTests
+  parent: CircuitTool.Tests.Serialization
+  children:
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  langs:
+  - csharp
+  - vb
+  name: CircuitSerializationTests
+  nameWithType: CircuitSerializationTests
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  type: Class
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CircuitSerializationTests
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 8
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class CircuitSerializationTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class CircuitSerializationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp
+  id: SetUp
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: CircuitSerializationTests.SetUp()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SetUp
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 14
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void SetUp()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub SetUp()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown
+  id: TearDown
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: CircuitSerializationTests.TearDown()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TearDown
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 27
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [TearDown]
+
+      public void TearDown()
+    content.vb: >-
+      <TearDown>
+
+      Public Sub TearDown()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown*
+  attributes:
+  - type: NUnit.Framework.TearDownAttribute
+    ctor: NUnit.Framework.TearDownAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+  id: ToJson_ValidCircuit_ReturnsValidJson
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ToJson_ValidCircuit_ReturnsValidJson()
+  nameWithType: CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToJson_ValidCircuit_ReturnsValidJson
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 36
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToJson_ValidCircuit_ReturnsValidJson()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToJson_ValidCircuit_ReturnsValidJson()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+  id: ToJson_NullCircuit_ThrowsArgumentNullException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ToJson_NullCircuit_ThrowsArgumentNullException()
+  nameWithType: CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToJson_NullCircuit_ThrowsArgumentNullException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 55
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToJson_NullCircuit_ThrowsArgumentNullException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToJson_NullCircuit_ThrowsArgumentNullException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+  id: FromJson_ValidJson_ReturnsCircuit
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromJson_ValidJson_ReturnsCircuit()
+  nameWithType: CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromJson_ValidJson_ReturnsCircuit
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 62
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromJson_ValidJson_ReturnsCircuit()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromJson_ValidJson_ReturnsCircuit()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+  id: FromJson_EmptyString_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromJson_EmptyString_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromJson_EmptyString_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 95
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromJson_EmptyString_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromJson_EmptyString_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+  id: FromJson_NullString_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromJson_NullString_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromJson_NullString_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 102
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromJson_NullString_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromJson_NullString_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+  id: FromJson_InvalidJson_ThrowsFormatException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromJson_InvalidJson_ThrowsFormatException()
+  nameWithType: CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromJson_InvalidJson_ThrowsFormatException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 109
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromJson_InvalidJson_ThrowsFormatException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromJson_InvalidJson_ThrowsFormatException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+  id: ToXml_ValidCircuit_ReturnsValidXml
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ToXml_ValidCircuit_ReturnsValidXml()
+  nameWithType: CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToXml_ValidCircuit_ReturnsValidXml
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 119
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToXml_ValidCircuit_ReturnsValidXml()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToXml_ValidCircuit_ReturnsValidXml()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+  id: ToXml_NullCircuit_ThrowsArgumentNullException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ToXml_NullCircuit_ThrowsArgumentNullException()
+  nameWithType: CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToXml_NullCircuit_ThrowsArgumentNullException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 139
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToXml_NullCircuit_ThrowsArgumentNullException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToXml_NullCircuit_ThrowsArgumentNullException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+  id: FromXml_ValidXml_ReturnsCircuit
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromXml_ValidXml_ReturnsCircuit()
+  nameWithType: CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromXml_ValidXml_ReturnsCircuit
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 146
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromXml_ValidXml_ReturnsCircuit()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromXml_ValidXml_ReturnsCircuit()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+  id: FromXml_EmptyString_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromXml_EmptyString_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromXml_EmptyString_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 166
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromXml_EmptyString_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromXml_EmptyString_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+  id: FromXml_NullString_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: FromXml_NullString_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FromXml_NullString_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 173
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void FromXml_NullString_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FromXml_NullString_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  id: JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  nameWithType: CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 180
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+    content.vb: >-
+      <Test>
+
+      Public Sub JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  id: XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  nameWithType: CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 194
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+    content.vb: >-
+      <Test>
+
+      Public Sub XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+  id: ExportToFile_JsonFormat_CreatesFile
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportToFile_JsonFormat_CreatesFile()
+  nameWithType: CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportToFile_JsonFormat_CreatesFile
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 206
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportToFile_JsonFormat_CreatesFile()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportToFile_JsonFormat_CreatesFile()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+  id: ExportToFile_XmlFormat_CreatesFile
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportToFile_XmlFormat_CreatesFile()
+  nameWithType: CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportToFile_XmlFormat_CreatesFile
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 219
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportToFile_XmlFormat_CreatesFile()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportToFile_XmlFormat_CreatesFile()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+  id: ExportToFile_NullCircuit_ThrowsArgumentNullException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportToFile_NullCircuit_ThrowsArgumentNullException()
+  nameWithType: CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportToFile_NullCircuit_ThrowsArgumentNullException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 232
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportToFile_NullCircuit_ThrowsArgumentNullException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportToFile_NullCircuit_ThrowsArgumentNullException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+  id: ExportToFile_EmptyFilePath_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportToFile_EmptyFilePath_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportToFile_EmptyFilePath_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 240
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportToFile_EmptyFilePath_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportToFile_EmptyFilePath_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+  id: ExportToFile_NullFilePath_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportToFile_NullFilePath_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportToFile_NullFilePath_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 248
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportToFile_NullFilePath_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportToFile_NullFilePath_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+  id: ImportFromFile_JsonFormat_ReturnsCircuit
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ImportFromFile_JsonFormat_ReturnsCircuit()
+  nameWithType: CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImportFromFile_JsonFormat_ReturnsCircuit
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 256
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImportFromFile_JsonFormat_ReturnsCircuit()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImportFromFile_JsonFormat_ReturnsCircuit()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+  id: ImportFromFile_XmlFormat_ReturnsCircuit
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ImportFromFile_XmlFormat_ReturnsCircuit()
+  nameWithType: CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImportFromFile_XmlFormat_ReturnsCircuit
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 270
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImportFromFile_XmlFormat_ReturnsCircuit()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImportFromFile_XmlFormat_ReturnsCircuit()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  id: ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ImportFromFile_NonExistentFile_ThrowsFileNotFoundException()
+  nameWithType: CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 284
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImportFromFile_NonExistentFile_ThrowsFileNotFoundException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImportFromFile_NonExistentFile_ThrowsFileNotFoundException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  id: ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ImportFromFile_EmptyFilePath_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImportFromFile_EmptyFilePath_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 295
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImportFromFile_EmptyFilePath_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImportFromFile_EmptyFilePath_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+  id: ImportFromFile_NullFilePath_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ImportFromFile_NullFilePath_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImportFromFile_NullFilePath_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 303
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImportFromFile_NullFilePath_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImportFromFile_NullFilePath_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+  id: ExportFormat_InvalidFormat_ThrowsArgumentException
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExportFormat_InvalidFormat_ThrowsArgumentException()
+  nameWithType: CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExportFormat_InvalidFormat_ThrowsArgumentException
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 311
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExportFormat_InvalidFormat_ThrowsArgumentException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExportFormat_InvalidFormat_ThrowsArgumentException()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+  id: ExtractValue_ValidKeyValue_ReturnsValue
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: ExtractValue_ValidKeyValue_ReturnsValue()
+  nameWithType: CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ExtractValue_ValidKeyValue_ReturnsValue
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 319
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void ExtractValue_ValidKeyValue_ReturnsValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ExtractValue_ValidKeyValue_ReturnsValue()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  id: CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitSerialization_MinimalCircuit_SerializesCorrectly()
+  nameWithType: CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CircuitSerialization_MinimalCircuit_SerializesCorrectly
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 329
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void CircuitSerialization_MinimalCircuit_SerializesCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub CircuitSerialization_MinimalCircuit_SerializesCorrectly()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  id: CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization()
+  nameWithType: CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 348
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization()
+    content.vb: >-
+      <Test>
+
+      Public Sub CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  commentId: M:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  id: CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  parent: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitSerialization_LargeCircuit_HandlesMultipleComponents()
+  nameWithType: CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents()
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents()
+  type: Method
+  source:
+    remote:
+      path: tests/Serialization/CircuitSerializationTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+    path: ../tests/Serialization/CircuitSerializationTests.cs
+    startLine: 366
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Serialization
+  syntax:
+    content: >-
+      [Test]
+
+      public void CircuitSerialization_LargeCircuit_HandlesMultipleComponents()
+    content.vb: >-
+      <Test>
+
+      Public Sub CircuitSerialization_LargeCircuit_HandlesMultipleComponents()
+  overload: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests.Serialization
+  commentId: N:CircuitTool.Tests.Serialization
+  href: CircuitTool.html
+  name: CircuitTool.Tests.Serialization
+  nameWithType: CircuitTool.Tests.Serialization
+  fullName: CircuitTool.Tests.Serialization
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  - name: .
+  - uid: CircuitTool.Tests.Serialization
+    name: Serialization
+    href: CircuitTool.Tests.Serialization.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  - name: .
+  - uid: CircuitTool.Tests.Serialization
+    name: Serialization
+    href: CircuitTool.Tests.Serialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_SetUp
+  name: SetUp
+  nameWithType: CircuitSerializationTests.SetUp
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.SetUp
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_TearDown
+  name: TearDown
+  nameWithType: CircuitSerializationTests.TearDown
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.TearDown
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ToJson_ValidCircuit_ReturnsValidJson
+  name: ToJson_ValidCircuit_ReturnsValidJson
+  nameWithType: CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_ValidCircuit_ReturnsValidJson
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ToJson_NullCircuit_ThrowsArgumentNullException
+  name: ToJson_NullCircuit_ThrowsArgumentNullException
+  nameWithType: CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToJson_NullCircuit_ThrowsArgumentNullException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromJson_ValidJson_ReturnsCircuit
+  name: FromJson_ValidJson_ReturnsCircuit
+  nameWithType: CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_ValidJson_ReturnsCircuit
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromJson_EmptyString_ThrowsArgumentException
+  name: FromJson_EmptyString_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_EmptyString_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromJson_NullString_ThrowsArgumentException
+  name: FromJson_NullString_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_NullString_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromJson_InvalidJson_ThrowsFormatException
+  name: FromJson_InvalidJson_ThrowsFormatException
+  nameWithType: CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromJson_InvalidJson_ThrowsFormatException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ToXml_ValidCircuit_ReturnsValidXml
+  name: ToXml_ValidCircuit_ReturnsValidXml
+  nameWithType: CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_ValidCircuit_ReturnsValidXml
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ToXml_NullCircuit_ThrowsArgumentNullException
+  name: ToXml_NullCircuit_ThrowsArgumentNullException
+  nameWithType: CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ToXml_NullCircuit_ThrowsArgumentNullException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromXml_ValidXml_ReturnsCircuit
+  name: FromXml_ValidXml_ReturnsCircuit
+  nameWithType: CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_ValidXml_ReturnsCircuit
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromXml_EmptyString_ThrowsArgumentException
+  name: FromXml_EmptyString_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_EmptyString_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_FromXml_NullString_ThrowsArgumentException
+  name: FromXml_NullString_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.FromXml_NullString_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  name: JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  nameWithType: CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.JsonRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  name: XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  nameWithType: CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.XmlRoundTrip_SerializeAndDeserialize_PreservesBasicStructure
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportToFile_JsonFormat_CreatesFile
+  name: ExportToFile_JsonFormat_CreatesFile
+  nameWithType: CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_JsonFormat_CreatesFile
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportToFile_XmlFormat_CreatesFile
+  name: ExportToFile_XmlFormat_CreatesFile
+  nameWithType: CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_XmlFormat_CreatesFile
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportToFile_NullCircuit_ThrowsArgumentNullException
+  name: ExportToFile_NullCircuit_ThrowsArgumentNullException
+  nameWithType: CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullCircuit_ThrowsArgumentNullException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportToFile_EmptyFilePath_ThrowsArgumentException
+  name: ExportToFile_EmptyFilePath_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_EmptyFilePath_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportToFile_NullFilePath_ThrowsArgumentException
+  name: ExportToFile_NullFilePath_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportToFile_NullFilePath_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ImportFromFile_JsonFormat_ReturnsCircuit
+  name: ImportFromFile_JsonFormat_ReturnsCircuit
+  nameWithType: CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_JsonFormat_ReturnsCircuit
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ImportFromFile_XmlFormat_ReturnsCircuit
+  name: ImportFromFile_XmlFormat_ReturnsCircuit
+  nameWithType: CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_XmlFormat_ReturnsCircuit
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  name: ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  nameWithType: CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NonExistentFile_ThrowsFileNotFoundException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  name: ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_EmptyFilePath_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ImportFromFile_NullFilePath_ThrowsArgumentException
+  name: ImportFromFile_NullFilePath_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ImportFromFile_NullFilePath_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExportFormat_InvalidFormat_ThrowsArgumentException
+  name: ExportFormat_InvalidFormat_ThrowsArgumentException
+  nameWithType: CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExportFormat_InvalidFormat_ThrowsArgumentException
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_ExtractValue_ValidKeyValue_ReturnsValue
+  name: ExtractValue_ValidKeyValue_ReturnsValue
+  nameWithType: CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.ExtractValue_ValidKeyValue_ReturnsValue
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  name: CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  nameWithType: CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_MinimalCircuit_SerializesCorrectly
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  name: CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  nameWithType: CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_ComponentWithTolerance_IncludesToleranceInSerialization
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents*
+  commentId: Overload:CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html#CircuitTool_Tests_Serialization_CircuitSerializationTests_CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  name: CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  nameWithType: CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests.CircuitSerialization_LargeCircuit_HandlesMultipleComponents

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MatrixOperationsTests | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MatrixOperationsTests | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_Tests_Mathematics_MatrixOperationsTests.md&amp;value=---%0Auid%3A%20CircuitTool.Tests.Mathematics.MatrixOperationsTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests">
+
+
+
+  <h1 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests" class="text-break">
+Class MatrixOperationsTests  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a>.<a class="xref" href="CircuitTool.Tests.html">Tests</a>.<a class="xref" href="CircuitTool.Tests.Mathematics.html">Mathematics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CircuitTool.Tests.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestFixture]
+public class MatrixOperationsTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MatrixOperationsTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_InvalidDimensions_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_InvalidDimensions_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_InvalidDimensions_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_InvalidDimensions_ThrowsException">
+  ComplexMatrix_Constructor_InvalidDimensions_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ComplexMatrix_Constructor_InvalidDimensions_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_NullArray_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_NullArray_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_NullArray_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_NullArray_ThrowsException">
+  ComplexMatrix_Constructor_NullArray_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ComplexMatrix_Constructor_NullArray_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix">
+  ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ComplexMatrix_Constructor_ValidDimensions_CreatesMatrix()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix">
+  ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ComplexMatrix_Constructor_WithArray_CreatesCorrectMatrix()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_IndexerAccess_WorksCorrectly_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_IndexerAccess_WorksCorrectly*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ComplexMatrix_IndexerAccess_WorksCorrectly" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ComplexMatrix_IndexerAccess_WorksCorrectly">
+  ComplexMatrix_IndexerAccess_WorksCorrectly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ComplexMatrix_IndexerAccess_WorksCorrectly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException">
+  CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void CreateNodalAdmittanceMatrix_MismatchedArrays_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix">
+  CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void CreateNodalAdmittanceMatrix_SimpleCircuit_ReturnsCorrectMatrix()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_2x2Matrix_ReturnsCorrectValue_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_2x2Matrix_ReturnsCorrectValue*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_2x2Matrix_ReturnsCorrectValue" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_2x2Matrix_ReturnsCorrectValue">
+  Determinant_2x2Matrix_ReturnsCorrectValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void Determinant_2x2Matrix_ReturnsCorrectValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_3x3Matrix_ReturnsCorrectValue_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_3x3Matrix_ReturnsCorrectValue*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_3x3Matrix_ReturnsCorrectValue" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_3x3Matrix_ReturnsCorrectValue">
+  Determinant_3x3Matrix_ReturnsCorrectValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void Determinant_3x3Matrix_ReturnsCorrectValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_NonSquareMatrix_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_NonSquareMatrix_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Determinant_NonSquareMatrix_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Determinant_NonSquareMatrix_ThrowsException">
+  Determinant_NonSquareMatrix_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void Determinant_NonSquareMatrix_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Identity_CreatesCorrectIdentityMatrix_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Identity_CreatesCorrectIdentityMatrix*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Identity_CreatesCorrectIdentityMatrix" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Identity_CreatesCorrectIdentityMatrix">
+  Identity_CreatesCorrectIdentityMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void Identity_CreatesCorrectIdentityMatrix()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixAddition_IncompatibleDimensions_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixAddition_IncompatibleDimensions_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixAddition_IncompatibleDimensions_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixAddition_IncompatibleDimensions_ThrowsException">
+  MatrixAddition_IncompatibleDimensions_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MatrixAddition_IncompatibleDimensions_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixAddition_ValidMatrices_ReturnsCorrectResult_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixAddition_ValidMatrices_ReturnsCorrectResult*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixAddition_ValidMatrices_ReturnsCorrectResult" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixAddition_ValidMatrices_ReturnsCorrectResult">
+  MatrixAddition_ValidMatrices_ReturnsCorrectResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MatrixAddition_ValidMatrices_ReturnsCorrectResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixMultiplication_IncompatibleDimensions_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixMultiplication_IncompatibleDimensions_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixMultiplication_IncompatibleDimensions_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixMultiplication_IncompatibleDimensions_ThrowsException">
+  MatrixMultiplication_IncompatibleDimensions_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MatrixMultiplication_IncompatibleDimensions_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixMultiplication_ValidMatrices_ReturnsCorrectResult_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixMultiplication_ValidMatrices_ReturnsCorrectResult*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixMultiplication_ValidMatrices_ReturnsCorrectResult" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixMultiplication_ValidMatrices_ReturnsCorrectResult">
+  MatrixMultiplication_ValidMatrices_ReturnsCorrectResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MatrixMultiplication_ValidMatrices_ReturnsCorrectResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixSubtraction_ValidMatrices_ReturnsCorrectResult_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixSubtraction_ValidMatrices_ReturnsCorrectResult*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_MatrixSubtraction_ValidMatrices_ReturnsCorrectResult" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.MatrixSubtraction_ValidMatrices_ReturnsCorrectResult">
+  MatrixSubtraction_ValidMatrices_ReturnsCorrectResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MatrixSubtraction_ValidMatrices_ReturnsCorrectResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ScalarMultiplication_ReturnsCorrectResult_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ScalarMultiplication_ReturnsCorrectResult*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_ScalarMultiplication_ReturnsCorrectResult" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.ScalarMultiplication_ReturnsCorrectResult">
+  ScalarMultiplication_ReturnsCorrectResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ScalarMultiplication_ReturnsCorrectResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution">
+  SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SolveLinearSystem_ComplexSystem_ReturnsCorrectSolution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_MismatchedDimensions_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_MismatchedDimensions_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_MismatchedDimensions_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_MismatchedDimensions_ThrowsException">
+  SolveLinearSystem_MismatchedDimensions_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SolveLinearSystem_MismatchedDimensions_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_NonSquareMatrix_ThrowsException_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_NonSquareMatrix_ThrowsException*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_NonSquareMatrix_ThrowsException" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_NonSquareMatrix_ThrowsException">
+  SolveLinearSystem_NonSquareMatrix_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SolveLinearSystem_NonSquareMatrix_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution">
+  SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SolveLinearSystem_SimpleSystem_ReturnsCorrectSolution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveNodalAnalysis_ReturnsCorrectVoltages_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveNodalAnalysis_ReturnsCorrectVoltages*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_SolveNodalAnalysis_ReturnsCorrectVoltages" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.SolveNodalAnalysis_ReturnsCorrectVoltages">
+  SolveNodalAnalysis_ReturnsCorrectVoltages()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SolveNodalAnalysis_ReturnsCorrectVoltages()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Transpose_ReturnsCorrectResult_" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Transpose_ReturnsCorrectResult*"></a>
+
+  <h3 id="CircuitTool_Tests_Mathematics_MatrixOperationsTests_Transpose_ReturnsCorrectResult" data-uid="CircuitTool.Tests.Mathematics.MatrixOperationsTests.Transpose_ReturnsCorrectResult">
+  Transpose_ReturnsCorrectResult()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void Transpose_ReturnsCorrectResult()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/tests/Mathematics/MatrixOperationsTests.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

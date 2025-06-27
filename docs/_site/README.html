@@ -10,8 +10,8 @@
       <link rel="icon" href="icon.png">
       <link rel="stylesheet" href="public/docfx.min.css">
       <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="">
       
       <meta name="docfx:rel" content="">
       
@@ -73,8 +73,30 @@
         <article data-uid="">
 <h1 id="-circuittool">🔌 CircuitTool</h1>
 
-<p><a href="https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml"><img src="https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.svg" alt="Build Status"></a>
-<a href="https://www.nuget.org/packages/CircuitTool"><img src="https://img.shields.io/nuget/v/CircuitTool" alt="NuGet Version"></a>
+<p>[![Build Status](https://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml/badge.s| 🔧 <strong>Hardware Guides</strong> | Platform-specific tutorials | <a href="docs/technology-guides/">Hardware Docs</a> |
+| 📋 <strong>Examples</strong> | Real-world usage examples | <a href="docs/examples/">Examples</a> |
+| 🎓 <strong>Tutorials</strong> | Learning materials | <a href="docs/tutorials/">Tutorials</a> |</p>
+<h2 id="-project-structure">📁 Project Structure</h2>
+<p>CircuitTool is organized into logical folders for easy navigation and maintenance:</p>
+<pre><code>📦 CircuitTool/
+├── 🏗️ build/          # Build and deployment scripts
+├── ⚙️ config/         # Configuration files (DocFX, NuGet)
+├── 🎨 assets/         # Visual assets (icons, images)  
+├── 📚 docs/           # Documentation source files
+├── 💾 src/            # Library source code
+├── 🧪 tests/          # Unit tests
+├── 🖥️ CircuitTool.CLI/ # Command-line interface
+└── 📁 packages/       # Generated NuGet packages
+</code></pre>
+<p><strong>Quick Commands:</strong></p>
+<ul>
+<li><strong>Build &amp; Release</strong>: <code>./build/prepare-release.sh</code></li>
+<li><strong>Run CLI</strong>: <code>./build/run-cli.sh</code></li>
+<li><strong>Generate Docs</strong>: <code>./build/generate-docs.sh</code></li>
+</ul>
+<p>For detailed information, see <a href="PROJECT_STRUCTURE.html">PROJECT_STRUCTURE.md</a>.</p>
+<h3 id="-interactive-clihttpsgithubcomjomardyancircuittoolactionsworkflowsdotnetyml">💻 Interactive CLIhttps://github.com/jomardyan/CircuitTool/actions/workflows/dotnet.yml)</h3>
+<p><a href="https://www.nuget.org/packages/CircuitTool"><img src="https://img.shields.io/nuget/v/CircuitTool" alt="NuGet Version"></a>
 <a href="https://www.nuget.org/packages/CircuitTool"><img src="https://img.shields.io/nuget/dt/CircuitTool" alt="NuGet Downloads"></a>
 <a href="https://github.com/jomardyan/CircuitTool/releases"><img src="https://img.shields.io/github/v/release/jomardyan/CircuitTool" alt="GitHub Release"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></p>
@@ -200,7 +222,7 @@ var powerEfficiency = PowerCalculator.Efficiency(inputPower: 100, outputPower: 8
 <tr>
 <td>🏗️ <strong>Architecture Guide</strong></td>
 <td>Project structure and modules</td>
-<td><a href="PROJECT_CODE_MAP.html">Code Map</a></td>
+<td><a href="PROJECT_CODE_MAP.md">Code Map</a></td>
 </tr>
 <tr>
 <td>🔧 <strong>Hardware Guides</strong></td>
@@ -339,7 +361,7 @@ var uart = UARTCommunicationCalculator.CalculateTiming(
 <li><strong>Cross-Platform</strong>: Consistent behavior across all supported frameworks</li>
 <li><strong>Documentation</strong>: Comprehensive XML docs and examples</li>
 </ul>
-<p>For detailed architecture information, see the <a href="PROJECT_CODE_MAP.html">Project Code Map</a>.</p>
+<p>For detailed architecture information, see the <a href="PROJECT_CODE_MAP.md">Project Code Map</a>.</p>
 <h2 id="-common-use-cases">🎯 Common Use Cases</h2>
 <h3 id="electronics-design-1">Electronics Design</h3>
 <ul>
@@ -439,7 +461,7 @@ dotnet add package CircuitTool --source https://nuget.pkg.github.com/jomardyan/i
 <h2 id="-support--community">🆘 Support &amp; Community</h2>
 <h3 id="get-help">Get Help</h3>
 <ul>
-<li><strong>📚 Documentation</strong>: Check <a href="DOCUMENTATION.html">DOCUMENTATION.md</a> and <a href="articles/getting-started.md">Getting Started</a></li>
+<li><strong>📚 Documentation</strong>: Check <a href="DOCUMENTATION.md">DOCUMENTATION.md</a> and <a href="articles/getting-started.md">Getting Started</a></li>
 <li><strong>🐛 Issues</strong>: Report bugs or request features on <a href="https://github.com/jomardyan/CircuitTool/issues">GitHub Issues</a></li>
 <li><strong>💬 Discussions</strong>: Join community discussions on <a href="https://github.com/jomardyan/CircuitTool/discussions">GitHub Discussions</a></li>
 </ul>

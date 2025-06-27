@@ -22,10 +22,12 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SerialHandshake
-    path: src/Hardware/ComPortTools.cs
-    startLine: 104
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 70
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
-  summary: Serial port handshake options (compatibility for older frameworks)
+  summary: Serial port handshake options
   example: []
   syntax:
     content: public enum ComPortTools.SerialHandshake
@@ -47,8 +49,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: None
-    path: src/Hardware/ComPortTools.cs
-    startLine: 106
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 72
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: None = 0
@@ -71,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: XOnXOff
-    path: src/Hardware/ComPortTools.cs
-    startLine: 107
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 73
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: XOnXOff = 1
@@ -95,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequestToSend
-    path: src/Hardware/ComPortTools.cs
-    startLine: 108
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 74
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: RequestToSend = 2
@@ -119,8 +127,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RequestToSendXOnXOff
-    path: src/Hardware/ComPortTools.cs
-    startLine: 109
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 75
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: RequestToSendXOnXOff = 3

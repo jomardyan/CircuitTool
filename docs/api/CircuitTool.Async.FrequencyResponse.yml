@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrequencyResponse
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 212
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Results from frequency response analysis
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 214
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public FrequencyResponse(double[] frequencies, Complex[] responses)
@@ -89,8 +93,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Frequencies
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 223
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] Frequencies { get; }
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Responses
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 224
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public Complex[] Responses { get; }
@@ -143,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Magnitudes
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 226
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] Magnitudes { get; }
@@ -170,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Phases
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 227
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] Phases { get; }
@@ -197,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PhasesInDegrees
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 228
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public double[] PhasesInDegrees { get; }
@@ -224,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetMagnitudePeak
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 230
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   syntax:
     content: public (double frequency, double magnitude) GetMagnitudePeak()
@@ -569,12 +585,12 @@ references:
   parent: System
   definition: System.ValueTuple`2
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: (double referenceResistor, double biasVoltage)
-  nameWithType: (double referenceResistor, double biasVoltage)
-  fullName: (double referenceResistor, double biasVoltage)
-  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
-  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
-  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  name: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType: (double NoiseMarginHigh, double NoiseMarginLow)
+  fullName: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  fullName.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  name.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
   spec.csharp:
   - name: (
   - uid: System.Double
@@ -582,9 +598,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: ','
   - name: " "
   - uid: System.Double
@@ -592,15 +608,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: " "
   - name: As
   - name: " "
@@ -610,9 +626,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: " "
   - name: As
   - name: " "

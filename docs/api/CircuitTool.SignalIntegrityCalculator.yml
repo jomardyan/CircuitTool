@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SignalIntegrityCalculator
-    path: src/Analysis/SignalIntegrityCalculator.cs
+    path: ../src/Analysis/SignalIntegrityCalculator.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for signal integrity analysis
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MicrostripImpedance
-    path: src/Analysis/SignalIntegrityCalculator.cs
+    path: ../src/Analysis/SignalIntegrityCalculator.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the characteristic impedance of a microstrip transmission line
   example: []
@@ -99,8 +103,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PropagationDelay
-    path: src/Analysis/SignalIntegrityCalculator.cs
+    path: ../src/Analysis/SignalIntegrityCalculator.cs
     startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the propagation delay of a transmission line
   example: []
@@ -138,8 +144,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CrosstalkCoupling
-    path: src/Analysis/SignalIntegrityCalculator.cs
+    path: ../src/Analysis/SignalIntegrityCalculator.cs
     startLine: 64
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates crosstalk coupling coefficient between parallel traces
   example: []
@@ -180,8 +188,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RiseTimeDegradation
-    path: src/Analysis/SignalIntegrityCalculator.cs
+    path: ../src/Analysis/SignalIntegrityCalculator.cs
     startLine: 84
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the rise time degradation due to transmission line effects
   example: []

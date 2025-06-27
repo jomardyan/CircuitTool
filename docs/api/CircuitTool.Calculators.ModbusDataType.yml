@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModbusDataType
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 277
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public enum ModbusDataType
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Int16
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 279
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Int16 = 0
@@ -72,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UInt16
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 280
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: UInt16 = 1
@@ -96,8 +102,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Int32
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 281
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Int32 = 2
@@ -120,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UInt32
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 282
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: UInt32 = 3
@@ -144,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Float32
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 283
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Float32 = 4
@@ -168,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Float64
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 284
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Float64 = 5
@@ -192,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: String
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 285
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: String = 6

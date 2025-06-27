@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RippleCurrentResult
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 372
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculate capacitor ripple current handling
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RMSCurrent
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 374
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double RMSCurrent { get; set; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerLoss
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 375
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double PowerLoss { get; set; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TemperatureRise
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 376
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TemperatureRise { get; set; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MaxAllowableCurrent
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 377
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double MaxAllowableCurrent { get; set; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SafetyMargin
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 378
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double SafetyMargin { get; set; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WithinRating
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 379
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool WithinRating { get; set; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Recommendations
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 380
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<string> Recommendations { get; set; }

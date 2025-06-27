@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RFCalculator
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for RF (Radio Frequency) and microwave circuit design.
   remarks: >-
@@ -72,8 +74,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Wavelength
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates wavelength from frequency using λ = c/f.
   example:
@@ -109,8 +113,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Frequency
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates frequency from wavelength using f = c/λ.
   example: []
@@ -145,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VSWR
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 55
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates VSWR (Voltage Standing Wave Ratio) from reflection coefficient.
   example:
@@ -182,8 +190,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ReflectionCoefficient
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates reflection coefficient from VSWR.
   example: []
@@ -218,8 +228,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ReturnLoss
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 82
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates return loss from VSWR in dB.
   example:
@@ -255,8 +267,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PathLoss
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates free space path loss using Friis formula.
   example:
@@ -295,8 +309,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SkinDepth
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 113
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates skin depth for a conductor at given frequency.
   example: []
@@ -337,8 +353,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CharacteristicImpedance
-    path: src/Calculators/RFCalculator.cs
+    path: ../src/Calculators/RFCalculator.cs
     startLine: 127
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates characteristic impedance of a transmission line.
   example: []

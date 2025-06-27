@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModulationType
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 20
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Modulation types for BER calculations.
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BPSK
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 22
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: BPSK = 0
@@ -72,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QPSK
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: QPSK = 1
@@ -96,8 +102,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QAM16
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 24
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: QAM16 = 2
@@ -120,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QAM64
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 25
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: QAM64 = 3
@@ -144,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QAM256
-    path: src/Calculators/WirelessCalculator.cs
+    path: ../src/Calculators/WirelessCalculator.cs
     startLine: 26
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: QAM256 = 4

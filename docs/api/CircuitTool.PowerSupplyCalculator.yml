@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerSupplyCalculator
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations and utilities for power supply design and analysis
   example: []
@@ -63,8 +65,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateLinearRegulator
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates linear regulator heat dissipation and efficiency
   example: []
@@ -105,8 +109,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBuckInductor
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates buck converter inductor value
   example: []
@@ -153,8 +159,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBuckCapacitor
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates buck converter output capacitor
   example: []
@@ -198,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBoostInductor
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 85
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates boost converter inductor value
   example: []
@@ -246,8 +256,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateFlybackTurnsRatio
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 104
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates flyback transformer turns ratio
   example: []
@@ -294,8 +306,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EstimateEfficiency
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 119
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates power supply efficiency at different loads
   example: []
@@ -339,8 +353,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCurrentSenseResistor
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 158
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates current sense resistor value
   example: []
@@ -381,8 +397,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateEMIFilter
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 177
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates EMI filter components for switching power supply
   example: []
@@ -423,8 +441,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateHoldupTime
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 208
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates holdup time for power supply
   example: []
@@ -471,8 +491,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateDesignChecklist
-    path: src/Hardware/PowerSupplyCalculator.cs
+    path: ../src/Hardware/PowerSupplyCalculator.cs
     startLine: 224
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates power supply design checklist
   example: []
@@ -762,12 +784,12 @@ references:
   parent: System
   definition: System.ValueTuple`2
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: (double referenceResistor, double biasVoltage)
-  nameWithType: (double referenceResistor, double biasVoltage)
-  fullName: (double referenceResistor, double biasVoltage)
-  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
-  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
-  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  name: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType: (double NoiseMarginHigh, double NoiseMarginLow)
+  fullName: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  fullName.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  name.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
   spec.csharp:
   - name: (
   - uid: System.Double
@@ -775,9 +797,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: ','
   - name: " "
   - uid: System.Double
@@ -785,15 +807,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: " "
   - name: As
   - name: " "
@@ -803,9 +825,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: " "
   - name: As
   - name: " "

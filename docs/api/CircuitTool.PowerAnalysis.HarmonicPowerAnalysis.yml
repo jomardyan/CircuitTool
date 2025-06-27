@@ -31,8 +31,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HarmonicPowerAnalysis
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 417
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Harmonic power analysis results
   example: []
@@ -62,8 +64,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FundamentalPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 419
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public Complex FundamentalPower { get; }
@@ -89,8 +93,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalHarmonicPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 420
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public Complex TotalHarmonicPower { get; }
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DistortionPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 421
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public Complex DistortionPower { get; }
@@ -143,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HarmonicPowers
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 422
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public Complex[] HarmonicPowers { get; }
@@ -170,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageTHD
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 423
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageTHD { get; }
@@ -197,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentTHD
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 424
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double CurrentTHD { get; }
@@ -224,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TruePowerFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 425
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double TruePowerFactor { get; }
@@ -251,8 +267,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DisplacementPowerFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 426
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double DisplacementPowerFactor { get; }
@@ -278,8 +296,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DistortionFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 427
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double DistortionFactor { get; }
@@ -305,8 +325,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 429
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public HarmonicPowerAnalysis(Complex fundamentalPower, Complex totalHarmonicPower, Complex distortionPower, Complex[] harmonicPowers, double voltageTHD, double currentTHD, double truePowerFactor, double displacementPowerFactor, double distortionFactor)
@@ -351,8 +373,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageTHDPercent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 444
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageTHDPercent { get; }
@@ -378,8 +402,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentTHDPercent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 445
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double CurrentTHDPercent { get; }
@@ -405,8 +431,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 447
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Returns the fully qualified type name of this instance.
   example: []

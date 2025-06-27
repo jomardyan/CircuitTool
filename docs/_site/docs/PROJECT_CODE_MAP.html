@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CircuitTool - Project Architecture &amp; Code Map | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CircuitTool - Project Architecture &amp; Code Map | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../icon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/docs/PROJECT_CODE_MAP.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="circuittool---project-architecture--code-map">CircuitTool - Project Architecture &amp; Code Map</h1>
+
+<blockquote>
+<p><strong>Comprehensive overview of the CircuitTool library structure and organization</strong></p>
+</blockquote>
+<h2 id="-project-overview">📊 Project Overview</h2>
+<p><strong>CircuitTool</strong> is a modern, high-performance C# library for electrical engineering and electronics calculations, designed for embedded systems development, hardware design, and educational purposes.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repository</strong></td>
+<td><a href="https://github.com/jomardyan/CircuitTool">github.com/jomardyan/CircuitTool</a></td>
+</tr>
+<tr>
+<td><strong>License</strong></td>
+<td>MIT License</td>
+</tr>
+<tr>
+<td><strong>Current Version</strong></td>
+<td>2.1.0</td>
+</tr>
+<tr>
+<td><strong>Target Frameworks</strong></td>
+<td>.NET 4.5, 4.6.2, 4.8.1, 6.0, 8.0, Core 3.1, Standard 2.0/2.1</td>
+</tr>
+<tr>
+<td><strong>Package Type</strong></td>
+<td>Library + Interactive CLI</td>
+</tr>
+<tr>
+<td><strong>Primary Language</strong></td>
+<td>C# 12.0 with nullable reference types</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-solution-structure">🏗️ Solution Structure</h2>
+<pre><code>CircuitTool/
+├── 📄 CircuitTool.sln                   # Main solution file
+├── 📄 CircuitTool.CLI.sln               # CLI solution file  
+├── � src/                              # 📚 Core library source code
+├── � CircuitTool.CLI/                  # 💻 Interactive CLI application
+├── � tests/                            # 🧪 Unit tests (344 test cases)
+├── 📁 docs/                             # 📖 Documentation website
+├── � articles/                         # 📝 Tutorials and guides
+├── 📁 .github/                          # 🔄 CI/CD workflows
+├── � README.md                         # 📋 Project overview
+├── � DOCUMENTATION.md                  # 📚 Complete API docs
+├── 📄 PROJECT_CODE_MAP.md               # 🗺️ This file
+└── � LICENSE                           # ⚖️ MIT License
+</code></pre>
+<h2 id="-core-library-architecture">🧩 Core Library Architecture</h2>
+<h3 id="-src---main-source-directory">📁 <code>/src/</code> - Main Source Directory</h3>
+<p>The core library is organized into focused modules for maximum usability and maintainability:</p>
+<pre><code>src/
+├── 📄 ACTypes.cs                        # AC circuit type definitions
+├── 📄 CircuitBuilder.cs                 # Circuit construction utilities  
+├── 📄 CircuitCalculations.cs            # Core calculation methods
+├── 📄 Utilities.cs                      # Cross-cutting utility functions
+├── 📁 Calculators/                      # 🧮 Calculation modules (23 classes)
+├── 📁 Hardware/                         # 🔧 Platform-specific tools (10 classes)
+├── 📁 Analysis/                         # 📊 Advanced analysis (5 classes)
+├── 📁 Performance/                      # ⚡ Optimization features (6 classes)
+├── 📁 Documentation/                    # 📚 Examples &amp; tutorials (4 classes)
+├── 📁 Math/                             # 🔢 Mathematical operations (2 classes)
+├── 📁 Serialization/                    # 💾 Data persistence (1 class)
+├── 📁 Units/                            # 📏 Unit system (3 classes)
+├── 📁 Electromagnetics/                 # 📡 RF &amp; EMC tools
+├── 📁 PowerElectronics/                 # 🔋 Power system analysis
+└── 📁 Utilities/                        # 🔧 Helper functions
+</code></pre>
+<p>├── 📁 Math/                           # Mathematical utilities (2 files)
+├── 📁 Serialization/                  # Import/export functionality (1 file)
+└── 📁 Units/                          # Unit system management (3 files)</p>
+<pre><code>
+## 🧮 Calculators Module (23 Classes)
+
+### Core Electrical Calculations
+- **`OhmsLawCalculator.cs`** - Fundamental V=IR calculations
+- **`PowerCalculator.cs`** - Power calculations (P=VI, P=I²R)
+- **`VoltageCalculator.cs`** - Voltage analysis and calculations
+- **`ResistorCalculator.cs`** - Resistor networks, parallel/series
+- **`CapacitorCalculator.cs`** - Capacitance calculations and analysis
+- **`InductorCalculator.cs`** - Inductance calculations and analysis
+
+### Advanced Circuit Analysis
+- **`ACCircuitCalculator.cs`** - AC circuit analysis and impedance
+- **`FilterCalculator.cs`** - Filter design (low-pass, high-pass, band-pass)
+- **`TransformerCalculator.cs`** - Transformer calculations and design
+- **`PowerFactorCalculator.cs`** - Power factor correction calculations
+- **`AdvancedCalculators.cs`** - Complex circuit analysis
+
+### Specialized Applications
+- **`LEDCalculator.cs`** - LED current limiting and power calculations
+- **`AntennaCalculator.cs`** - Antenna design and analysis
+- **`BeginnerCalculators.cs`** - Simplified calculations for learning
+- **`PhysicsCircuitCalculators.cs`** - Physics-based circuit modeling
+
+### System-Level Calculations
+- **`EnergyCalculator.cs`** - Energy consumption and efficiency
+- **`EnergyConsumptionCalculator.cs`** - Power usage analysis
+- **`ElectricityBillCalculator.cs`** - Cost analysis and billing
+- **`VoltageDropCalculator.cs`** - Voltage drop in conductors
+- **`VoltageDividerCalculator.cs`** - Voltage divider networks
+- **`WattsVoltsAmpsOhmsCalculator.cs`** - Multi-parameter calculations
+
+### Utilities
+- **`UnitConverter.cs`** - Unit conversion between systems
+- **`ComponentCalculator.cs`** - General component calculations
+
+## 🔧 Hardware Module (10 Classes)
+
+### Platform-Specific Tools
+- **`ArduinoTools.cs`** - Arduino-specific calculations and utilities
+- **`ESP32Tools.cs`** - ESP32 development and configuration tools
+- **`RaspberryPiTools.cs`** - Raspberry Pi GPIO and hardware tools
+
+### Communication &amp; Protocols
+- **`ComPortTools.cs`** - COM port management and serial communication
+- **`CommunicationProtocolTools.cs`** - I2C, SPI, UART protocol analysis
+- **`HardwareDebuggingTools.cs`** - Hardware troubleshooting and diagnostics
+
+### Hardware Design
+- **`MotorControlCalculator.cs`** - Motor control system design
+- **`SensorInterfaceCalculator.cs`** - Sensor interface and calibration
+- **`PCBDesignCalculator.cs`** - PCB layout and design calculations
+- **`PowerSupplyCalculator.cs`** - Power supply design and analysis
+
+## 📊 Analysis Module (5 Classes)
+
+### Power &amp; Thermal Analysis
+- **`AdvancedPowerAnalysis.cs`** - Complex power system analysis
+- **`ThermalCalculator.cs`** - Thermal management and heat dissipation
+
+### Signal &amp; EMC Analysis
+- **`SignalIntegrityCalculator.cs`** - Signal quality and integrity analysis
+- **`EMCCalculator.cs`** - Electromagnetic compatibility calculations
+- **`ToleranceAnalysis.cs`** - Component tolerance and variation analysis
+
+## ⚡ Performance Module (6 Classes)
+
+### Optimization &amp; Caching
+- **`Performance.cs`** - Performance monitoring and metrics
+- **`PerformanceMonitor.cs`** - Real-time performance tracking
+- **`CalculationCache.cs`** - Calculation result caching system
+- **`VectorizedCalculations.cs`** - SIMD and vectorized operations
+
+### Bulk Operations
+- **`BulkOperations.cs`** - Batch processing for large datasets
+- **`AsyncCalculations.cs`** - Asynchronous calculation support
+
+## 📚 Documentation Module (4 Classes)
+
+### Educational Resources
+- **`DocumentationExamples.cs`** - Code examples and tutorials
+- **`InteractiveTutorials.cs`** - Step-by-step learning modules
+- **`UseCaseTemplates.cs`** - Common use case templates
+- **`Examples.cs`** - Practical application examples
+
+## 🔢 Math Module (2 Classes)
+
+### Advanced Mathematics
+- **`MatrixOperations.cs`** - Matrix calculations for circuit analysis
+- **`FourierTransform.cs`** - FFT and frequency domain analysis
+
+## 💾 Serialization Module (1 Class)
+
+### Data Management
+- **`CircuitSerialization.cs`** - Circuit data import/export functionality
+
+## 📏 Units Module (3 Classes)
+
+### Unit Management
+- **Unit system classes** - Comprehensive unit conversion and management
+
+## 🧪 Tests Module (30+ Test Classes)
+
+### Comprehensive Test Coverage
+</code></pre>
+<p>tests/
+├── Calculator Tests (15+ files)        # Unit tests for all calculators
+├── Hardware Tests (5+ files)           # Hardware module tests
+├── Advanced Features Tests (5+ files)  # Complex functionality tests
+├── Performance Tests (3+ files)        # Performance and optimization tests
+└── Documentation Tests (2+ files)      # Example and tutorial tests</p>
+<pre><code>
+## 📦 Dependencies &amp; Packages
+
+### NuGet Package References
+```xml
+&lt;!-- Core Dependencies --&gt;
+&lt;PackageReference Include=&quot;System.IO.Ports&quot; Version=&quot;8.0.0&quot; /&gt; &lt;!-- COM port support --&gt;
+&lt;PackageReference Include=&quot;System.Text.Json&quot; Version=&quot;8.0.5&quot; /&gt; &lt;!-- JSON serialization --&gt;
+&lt;PackageReference Include=&quot;System.Numerics.Vectors&quot; Version=&quot;4.5.0&quot; /&gt; &lt;!-- Vectorization --&gt;
+&lt;PackageReference Include=&quot;System.ValueTuple&quot; Version=&quot;4.5.0&quot; /&gt; &lt;!-- Tuple support --&gt;
+&lt;PackageReference Include=&quot;Microsoft.Bcl.Async&quot; Version=&quot;1.0.168&quot; /&gt; &lt;!-- Async support --&gt;
+
+&lt;!-- Development Tools --&gt;
+&lt;PackageReference Include=&quot;Microsoft.SourceLink.GitHub&quot; Version=&quot;8.0.0&quot; /&gt; &lt;!-- Source linking --&gt;
+</code></pre>
+<h3 id="framework-compatibility-matrix">Framework Compatibility Matrix</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>.NET 4.5</th>
+<th>.NET 4.6.2</th>
+<th>.NET 6.0+</th>
+<th>.NET Standard 2.0+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core Calculators</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Hardware Tools</td>
+<td>⚠️ Limited</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>COM Port Tools</td>
+<td>⚠️ Limited</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Performance Features</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Analysis Tools</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-inter-module-dependencies">🔗 Inter-Module Dependencies</h2>
+<h3 id="dependency-flow">Dependency Flow</h3>
+<pre><code>┌─────────────────┐    ┌─────────────────┐
+│   Calculators   │────│      Units      │
+│   (23 classes)  │    │   (3 classes)   │
+└─────────────────┘    └─────────────────┘
+         │                       │
+         ▼                       ▼
+┌─────────────────┐    ┌─────────────────┐
+│    Hardware     │────│      Math       │
+│   (10 classes)  │    │   (2 classes)   │
+└─────────────────┘    └─────────────────┘
+         │                       │
+         ▼                       ▼
+┌─────────────────┐    ┌─────────────────┐
+│    Analysis     │────│   Performance   │
+│   (5 classes)   │    │   (6 classes)   │
+└─────────────────┘    └─────────────────┘
+         │                       │
+         ▼                       ▼
+┌─────────────────┐    ┌─────────────────┐
+│ Documentation   │────│ Serialization   │
+│   (4 classes)   │    │   (1 class)     │
+└─────────────────┘    └─────────────────┘
+</code></pre>
+<h3 id="core-shared-components">Core Shared Components</h3>
+<ul>
+<li><strong><code>UnitConverter</code></strong> - Used by all calculation modules</li>
+<li><strong><code>Utilities</code></strong> - Common helper functions across modules</li>
+<li><strong><code>CircuitCalculations</code></strong> - Base calculation methods</li>
+<li><strong><code>Performance</code></strong> - Optimization used throughout</li>
+</ul>
+<h2 id="-key-features-by-module">🚀 Key Features by Module</h2>
+<h3 id="-calculators">🧮 Calculators</h3>
+<ul>
+<li><strong>Basic</strong>: Ohm's Law, Power, Voltage, Current calculations</li>
+<li><strong>Components</strong>: Resistors, Capacitors, Inductors, Transformers</li>
+<li><strong>AC Analysis</strong>: Impedance, Phase, Frequency response</li>
+<li><strong>Specialized</strong>: LEDs, Antennas, Filters, Power Factor</li>
+</ul>
+<h3 id="-hardware">🔧 Hardware</h3>
+<ul>
+<li><strong>Platforms</strong>: Arduino, ESP32, Raspberry Pi support</li>
+<li><strong>Communication</strong>: I2C, SPI, UART, COM port tools</li>
+<li><strong>Design</strong>: PCB layout, Power supplies, Motor control</li>
+<li><strong>Debug</strong>: Hardware troubleshooting, Diagnostics</li>
+</ul>
+<h3 id="-analysis">📊 Analysis</h3>
+<ul>
+<li><strong>Power</strong>: Advanced power analysis and optimization</li>
+<li><strong>Signal</strong>: Signal integrity and EMC compliance</li>
+<li><strong>Thermal</strong>: Heat management and thermal analysis</li>
+<li><strong>Tolerance</strong>: Component variation analysis</li>
+</ul>
+<h3 id="-performance">⚡ Performance</h3>
+<ul>
+<li><strong>Optimization</strong>: Vectorized calculations, Caching</li>
+<li><strong>Monitoring</strong>: Real-time performance tracking</li>
+<li><strong>Async</strong>: Asynchronous calculation support</li>
+<li><strong>Bulk</strong>: Large dataset processing</li>
+</ul>
+<h2 id="-usage-patterns">🎯 Usage Patterns</h2>
+<h3 id="typical-usage-flow">Typical Usage Flow</h3>
+<ol>
+<li><strong>Import</strong> CircuitTool namespace</li>
+<li><strong>Configure</strong> units and parameters</li>
+<li><strong>Calculate</strong> using appropriate module</li>
+<li><strong>Analyze</strong> results with analysis tools</li>
+<li><strong>Generate</strong> code or documentation</li>
+<li><strong>Export</strong> results via serialization</li>
+</ol>
+<h3 id="example-integration-points">Example Integration Points</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Basic calculation
+var voltage = OhmsLawCalculator.CalculateVoltage(current: 2.0, resistance: 100);
+
+// Hardware-specific
+var gpioCode = ArduinoTools.GenerateGPIOCode(pin: 13, mode: &quot;OUTPUT&quot;);
+
+// Protocol analysis
+var i2cSettings = CommunicationProtocolTools.CalculateI2CPullUpResistors(config);
+
+// Performance monitoring
+using (var monitor = new PerformanceMonitor())
+{
+    // Calculations with monitoring
+}
+</code></pre>
+<h2 id="-project-evolution">📈 Project Evolution</h2>
+<h3 id="recent-enhancements">Recent Enhancements</h3>
+<ul>
+<li>✅ <strong>Code Reorganization</strong> - Modular structure with logical grouping</li>
+<li>✅ <strong>Hardware Tools</strong> - Comprehensive embedded systems support</li>
+<li>✅ <strong>COM Port Tools</strong> - Complete serial communication framework</li>
+<li>✅ <strong>Protocol Analysis</strong> - I2C, SPI, UART optimization tools</li>
+<li>✅ <strong>Debug Tools</strong> - Hardware troubleshooting and diagnostics</li>
+</ul>
+<h3 id="technical-achievements">Technical Achievements</h3>
+<ul>
+<li><strong>54 Classes</strong> across 8 logical modules</li>
+<li><strong>30+ Test Classes</strong> with comprehensive coverage</li>
+<li><strong>Cross-Framework</strong> compatibility (.NET 4.5 - 8.0)</li>
+<li><strong>Performance Optimized</strong> with vectorization and caching</li>
+<li><strong>Industry Standards</strong> compliance (IPC, IEEE)</li>
+</ul>
+<p>This code map provides a complete overview of the CircuitTool project architecture, showing how all components work together to provide a comprehensive electrical engineering calculation library.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/docs/PROJECT_CODE_MAP.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

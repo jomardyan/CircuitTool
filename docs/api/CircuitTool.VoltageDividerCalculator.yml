@@ -19,8 +19,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDividerCalculator
-    path: src/Calculators/VoltageDividerCalculator.cs
+    path: ../src/Calculators/VoltageDividerCalculator.cs
     startLine: 4
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static class VoltageDividerCalculator
@@ -52,8 +54,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Calculate
-    path: src/Calculators/VoltageDividerCalculator.cs
+    path: ../src/Calculators/VoltageDividerCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double Calculate(double vin, double r1, double r2)

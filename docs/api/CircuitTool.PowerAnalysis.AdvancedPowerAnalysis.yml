@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AdvancedPowerAnalysis
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Advanced power analysis including three-phase systems and power quality
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateThreePhasePower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Calculates three-phase power values
   example: []
@@ -105,8 +109,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBalancedThreePhasePower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Calculates balanced three-phase power from line values
   example: []
@@ -150,8 +156,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeHarmonicPower
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Analyzes harmonic content and calculates power quality metrics
   example: []
@@ -195,8 +203,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzePowerQuality
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 146
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Calculates power quality indices
   example: []

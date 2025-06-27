@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToleranceAnalysis
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 10
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Provides tolerance and error analysis for electrical circuits
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WorstCaseAnalysis
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Performs worst-case analysis for circuit parameters
   example: []
@@ -99,8 +103,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SensitivityAnalysis
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Calculates sensitivity of output to each component
   example: []
@@ -141,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StatisticalAnalysis
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 89
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Calculates statistical analysis using component tolerances
   example: []
@@ -183,8 +191,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DesignCentering
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 120
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Performs design centering to minimize sensitivity
   example: []

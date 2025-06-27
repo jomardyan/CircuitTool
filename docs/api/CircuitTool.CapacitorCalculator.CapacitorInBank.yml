@@ -27,8 +27,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorInBank
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 244
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Individual capacitor in a bank
   example: []
@@ -62,8 +64,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Capacitance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 246
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Capacitance { get; set; }
@@ -89,8 +93,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRating
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 247
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double VoltageRating { get; set; }
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ActualVoltage
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 248
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ActualVoltage { get; set; }
@@ -143,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Charge
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 249
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Charge { get; set; }
@@ -170,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Energy
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 250
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Energy { get; set; }
@@ -197,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESR
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 251
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ESR { get; set; }
@@ -224,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Position
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 252
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string Position { get; set; }
@@ -251,8 +267,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDeratingPercent
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 253
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double VoltageDeratingPercent { get; set; }
@@ -278,8 +296,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WithinSafeOperatingArea
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 254
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool WithinSafeOperatingArea { get; set; }

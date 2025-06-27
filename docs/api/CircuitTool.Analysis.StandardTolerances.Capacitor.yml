@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Capacitor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 347
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Standard capacitor tolerances
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: C0G_5Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 349
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double C0G_5Percent = 0.05
@@ -84,8 +88,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: C0G_10Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 350
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double C0G_10Percent = 0.1
@@ -109,8 +115,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X7R_10Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 351
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double X7R_10Percent = 0.1
@@ -134,8 +142,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X7R_20Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 352
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double X7R_20Percent = 0.2
@@ -159,8 +169,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Electrolytic_20Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 353
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Electrolytic_20Percent = 0.2
@@ -184,8 +196,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Electrolytic_Minus20Plus80
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 354
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double Electrolytic_Minus20Plus80 = 0.5

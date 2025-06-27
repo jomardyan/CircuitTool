@@ -15,7 +15,22 @@ items:
   nameWithType: CircuitTool.Mathematics
   fullName: CircuitTool.Mathematics
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
+- uid: CircuitTool.Mathematics.WindowType
+  commentId: T:CircuitTool.Mathematics.WindowType
+  parent: CircuitTool.Mathematics
+  href: CircuitTool.Mathematics.WindowType.html
+  name: WindowType
+  nameWithType: WindowType
+  fullName: CircuitTool.Mathematics.WindowType
+- uid: CircuitTool.Mathematics.FourierTransform
+  commentId: T:CircuitTool.Mathematics.FourierTransform
+  href: CircuitTool.Mathematics.FourierTransform.html
+  name: FourierTransform
+  nameWithType: FourierTransform
+  fullName: CircuitTool.Mathematics.FourierTransform
 - uid: CircuitTool.Mathematics.MatrixOperations
   commentId: T:CircuitTool.Mathematics.MatrixOperations
   href: CircuitTool.Mathematics.MatrixOperations.html
@@ -45,19 +60,6 @@ references:
   - uid: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix
     name: ComplexMatrix
     href: CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html
-- uid: CircuitTool.Mathematics.WindowType
-  commentId: T:CircuitTool.Mathematics.WindowType
-  parent: CircuitTool.Mathematics
-  href: CircuitTool.Mathematics.WindowType.html
-  name: WindowType
-  nameWithType: WindowType
-  fullName: CircuitTool.Mathematics.WindowType
-- uid: CircuitTool.Mathematics.FourierTransform
-  commentId: T:CircuitTool.Mathematics.FourierTransform
-  href: CircuitTool.Mathematics.FourierTransform.html
-  name: FourierTransform
-  nameWithType: FourierTransform
-  fullName: CircuitTool.Mathematics.FourierTransform
 - uid: CircuitTool.Mathematics
   commentId: N:CircuitTool.Mathematics
   href: CircuitTool.html

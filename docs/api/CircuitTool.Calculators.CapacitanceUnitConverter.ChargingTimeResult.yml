@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ChargingTimeResult
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 181
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate capacitor charging time to reach a percentage of final voltage
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TimeToPercentage
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 183
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double TimeToPercentage { get; set; }
@@ -85,8 +89,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TimeConstant
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 184
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double TimeConstant { get; set; }
@@ -112,8 +118,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageAtTime
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 185
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double VoltageAtTime { get; set; }
@@ -139,8 +147,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ChargeAtTime
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 186
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double ChargeAtTime { get; set; }
@@ -166,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentAtTime
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 187
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double CurrentAtTime { get; set; }

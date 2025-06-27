@@ -27,8 +27,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TempCoeffCode
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Temperature coefficient codes
   example: []
@@ -52,8 +54,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: C0G
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: C0G = 0
@@ -76,8 +80,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NP0
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 62
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: NP0 = 1
@@ -100,8 +106,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X7R
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X7R = 2
@@ -124,8 +132,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X5R
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 64
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X5R = 3
@@ -148,8 +158,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Z5U
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 65
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Z5U = 4
@@ -172,8 +184,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Y5V
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Y5V = 5
@@ -196,8 +210,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X8R
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X8R = 6
@@ -220,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X6S
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 68
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X6S = 7
@@ -244,8 +262,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: X7S
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: X7S = 8

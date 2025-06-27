@@ -27,8 +27,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SignalProcessingCalculator
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for signal processing applications.
   remarks: >-
@@ -71,8 +73,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SNR
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates Signal-to-Noise Ratio (SNR) in dB.
   example:
@@ -111,8 +115,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SINAD
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates Signal-to-Noise and Distortion Ratio (SINAD) in dB.
   example: []
@@ -150,8 +156,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: THD
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 56
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates Total Harmonic Distortion (THD) as a percentage.
   example:
@@ -190,8 +198,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DynamicRange
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 75
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the dynamic range in dB.
   example: []
@@ -229,8 +239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ENOB
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 87
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the effective number of bits (ENOB) for an ADC.
   example: []
@@ -265,8 +277,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NoiseBandwidth
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 101
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates noise bandwidth for a given filter.
   example:
@@ -305,8 +319,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SettlingTime
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 114
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the settling time for a step response.
   example: []
@@ -344,8 +360,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: JohnsonNoise
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 128
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the Johnson noise voltage for a resistor.
   example: []
@@ -386,8 +404,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SlewRate
-    path: src/Calculators/SignalProcessingCalculator.cs
+    path: ../src/Calculators/SignalProcessingCalculator.cs
     startLine: 142
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the slew rate required for a given frequency and amplitude.
   example: []

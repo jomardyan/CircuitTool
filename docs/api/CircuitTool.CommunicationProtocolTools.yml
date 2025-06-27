@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CommunicationProtocolTools
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides tools and calculators for various hardware communication protocols
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateI2CPullUpResistors
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates optimal I2C pull-up resistor values
   example: []
@@ -93,8 +97,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateI2CTiming
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates I2C bus timing parameters
   example: []
@@ -126,8 +132,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateMaxSPIFrequency
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 142
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates maximum SPI clock frequency based on cable length and capacitance
   example: []
@@ -159,8 +167,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateUARTBitErrorRate
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates UART bit error rate based on clock accuracy
   example: []
@@ -198,8 +208,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateI2CScannerCode
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 190
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates I2C device scanning code for Arduino
   example: []
@@ -237,8 +249,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateSPITestCode
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 289
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates SPI communication test code for Arduino
   example: []
@@ -276,8 +290,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateProtocolComparison
-    path: src/Hardware/CommunicationProtocolTools.cs
+    path: ../src/Hardware/CommunicationProtocolTools.cs
     startLine: 388
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates protocol comparison report
   example: []

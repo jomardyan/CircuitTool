@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BulkOperations
-    path: src/Performance/BulkOperations.cs
+    path: ../src/Performance/BulkOperations.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Provides memory-efficient bulk operations for circuit calculations
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BulkParallelResistance
-    path: src/Performance/BulkOperations.cs
+    path: ../src/Performance/BulkOperations.cs
     startLine: 18
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Performs bulk parallel resistance calculations with minimal allocations
   example: []
@@ -93,8 +97,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BulkFrequencyResponse
-    path: src/Performance/BulkOperations.cs
+    path: ../src/Performance/BulkOperations.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Calculates frequency response for multiple circuits efficiently
   example: []
@@ -132,8 +138,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BulkPowerCalculation
-    path: src/Performance/BulkOperations.cs
+    path: ../src/Performance/BulkOperations.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Efficient batch processing of power calculations
   example: []
@@ -174,8 +182,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StreamingCalculation
-    path: src/Performance/BulkOperations.cs
+    path: ../src/Performance/BulkOperations.cs
     startLine: 134
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Memory-efficient streaming calculation for large datasets
   example: []

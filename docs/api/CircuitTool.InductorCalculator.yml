@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductorCalculator
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for inductor circuits and characteristics.
   example: []
@@ -61,8 +63,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductiveReactance
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates inductive reactance using the formula XL = 2πfL.
   example: []
@@ -100,8 +104,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyStored
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the energy stored in an inductor using the formula E = 0.5 × L × I².
   example: []
@@ -139,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TimeConstant
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the time constant for an RL circuit using the formula τ = L / R.
   example: []
@@ -178,8 +186,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SeriesInductance
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 56
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates total inductance for inductors in series using the formula Ltotal = L1 + L2 + ...
   example: []
@@ -214,8 +224,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ParallelInductance
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 76
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates total inductance for inductors in parallel using the formula 1/Ltotal = 1/L1 + 1/L2 + ...
   example: []
@@ -250,8 +262,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentBuildup
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the current buildup in an inductor at time t using I(t) = Ifinal × (1 - e^(-t/τ)).
   example: []
@@ -292,8 +306,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentDecay
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 115
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the current decay in an inductor at time t using I(t) = Iinitial × e^(-t/τ).
   example: []
@@ -334,8 +350,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResonantFrequency
-    path: src/Calculators/InductorCalculator.cs
+    path: ../src/Calculators/InductorCalculator.cs
     startLine: 131
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the resonant frequency of an LC circuit using f = 1 / (2π√(LC)).
   example: []

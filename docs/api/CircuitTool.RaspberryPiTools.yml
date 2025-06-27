@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RaspberryPiTools
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations and utilities for Raspberry Pi projects
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateLEDResistor
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 39
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates current limiting resistor for LED connected to GPIO pin
   example: []
@@ -101,8 +105,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateMotorPWM
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 54
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates PWM settings for motor speed control
   example: []
@@ -143,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePullResistor
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 70
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates pull-up/pull-down resistor value for GPIO inputs
   example: []
@@ -185,8 +193,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePowerConsumption
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 81
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates power consumption for Raspberry Pi project
   example: []
@@ -224,8 +234,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateI2CScanCode
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates I2C address scanning code
   example: []
@@ -253,8 +265,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateMaxSPIFrequency
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 138
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates SPI clock frequency limits
   example: []

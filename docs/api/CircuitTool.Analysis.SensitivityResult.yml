@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SensitivityResult
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 233
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Results from sensitivity analysis
   example: []
@@ -54,8 +56,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NominalValue
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 235
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double NominalValue { get; }
@@ -81,8 +85,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Sensitivities
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 236
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public double[] Sensitivities { get; }
@@ -108,8 +114,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 238
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public SensitivityResult(double nominalValue, double[] sensitivities)
@@ -140,8 +148,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MostSensitiveComponent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 247
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Gets the index of the component with highest sensitivity
   example: []
@@ -169,8 +179,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 268
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Returns the fully qualified type name of this instance.
   example: []

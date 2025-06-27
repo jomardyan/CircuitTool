@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsVoltsAmpsOhmsCalculator
-    path: src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
+    path: ../src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides quick conversions between watts, volts, amps, and ohms.
   remarks: >-
@@ -68,8 +70,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Watts
-    path: src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
+    path: ../src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
     startLine: 24
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates power in watts from volts and amps: <code>W = V × A</code>.'
   example: []
@@ -107,8 +111,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Volts
-    path: src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
+    path: ../src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
     startLine: 32
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates voltage from watts and amps: <code>V = W / A</code>.'
   example: []
@@ -146,8 +152,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Amps
-    path: src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
+    path: ../src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
     startLine: 40
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates current from watts and volts: <code>A = W / V</code>.'
   example: []
@@ -185,8 +193,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Ohms
-    path: src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
+    path: ../src/Calculators/WattsVoltsAmpsOhmsCalculator.cs
     startLine: 48
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: 'Calculates resistance from volts and amps: <code>R = V / A</code>.'
   example: []

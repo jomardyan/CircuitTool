@@ -5,6 +5,11 @@
 
 set -e
 
+# Ensure we're in the project root directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_ROOT"
+
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -131,7 +136,7 @@ build_documentation() {
     
     # Build the project first to generate XML documentation
     echo -e "${BLUE}Building CircuitTool project...${NC}"
-    dotnet build --configuration Release
+    dotnet build CircuitTool.sln --configuration Release
     
     if [ $? -ne 0 ]; then
         echo -e "${RED}✗ Project build failed${NC}"

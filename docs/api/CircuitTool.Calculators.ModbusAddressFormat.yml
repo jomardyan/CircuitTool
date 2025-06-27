@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModbusAddressFormat
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 270
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public enum ModbusAddressFormat
@@ -44,8 +46,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Wire
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 272
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Wire = 0
@@ -68,8 +72,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Protocol
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 273
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Protocol = 1
@@ -92,8 +98,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Schneider
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 274
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Schneider = 2

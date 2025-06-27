@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PWMConfig
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 25
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: PWM configuration settings
   example: []
@@ -53,8 +55,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Frequency
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Frequency { readonly get; set; }
@@ -80,8 +84,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DutyCycle
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double DutyCycle { readonly get; set; }
@@ -107,8 +113,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Voltage { readonly get; set; }

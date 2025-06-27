@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDividerDesign
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Template for designing a voltage divider
   example: []
@@ -55,8 +57,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DesignVoltageDivider
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static (double R1, double R2) DesignVoltageDivider(double inputVoltage, double outputVoltage, double totalCurrent = 0.001)
@@ -91,8 +95,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateCode
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static string GenerateCode(double inputVoltage, double outputVoltage)
@@ -374,12 +380,12 @@ references:
   parent: System
   definition: System.ValueTuple`2
   href: https://learn.microsoft.com/dotnet/api/system.double
-  name: (double referenceResistor, double biasVoltage)
-  nameWithType: (double referenceResistor, double biasVoltage)
-  fullName: (double referenceResistor, double biasVoltage)
-  nameWithType.vb: (referenceResistor As Double, biasVoltage As Double)
-  fullName.vb: (referenceResistor As Double, biasVoltage As Double)
-  name.vb: (referenceResistor As Double, biasVoltage As Double)
+  name: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType: (double NoiseMarginHigh, double NoiseMarginLow)
+  fullName: (double NoiseMarginHigh, double NoiseMarginLow)
+  nameWithType.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  fullName.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
+  name.vb: (NoiseMarginHigh As Double, NoiseMarginLow As Double)
   spec.csharp:
   - name: (
   - uid: System.Double
@@ -387,9 +393,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: ','
   - name: " "
   - uid: System.Double
@@ -397,15 +403,15 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: )
   spec.vb:
   - name: (
-  - uid: System.ValueTuple{System.Double,System.Double}.referenceResistor
-    name: referenceResistor
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.referenceresistor
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginHigh
+    name: NoiseMarginHigh
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh
   - name: " "
   - name: As
   - name: " "
@@ -415,9 +421,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.double
   - name: ','
   - name: " "
-  - uid: System.ValueTuple{System.Double,System.Double}.biasVoltage
-    name: biasVoltage
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.biasvoltage
+  - uid: System.ValueTuple{System.Double,System.Double}.NoiseMarginLow
+    name: NoiseMarginLow
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow
   - name: " "
   - name: As
   - name: " "

@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AsyncCalculations
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 12
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Provides asynchronous versions of complex electrical calculations
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MonteCarloAnalysisAsync
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Performs Monte Carlo analysis of circuit with component tolerances asynchronously
   example: []
@@ -105,8 +109,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrequencySweepAsync
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Performs frequency sweep analysis asynchronously
   example: []
@@ -153,8 +159,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HarmonicAnalysisAsync
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Performs harmonic analysis asynchronously
   example: []
@@ -198,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ThermalAnalysisAsync
-    path: src/Performance/AsyncCalculations.cs
+    path: ../src/Performance/AsyncCalculations.cs
     startLine: 131
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Async
   summary: Performs thermal analysis with iterative calculations asynchronously
   example: []

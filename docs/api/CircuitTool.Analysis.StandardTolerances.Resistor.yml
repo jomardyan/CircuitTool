@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistor
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 335
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   summary: Standard resistor tolerances
   example: []
@@ -58,8 +60,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E96_1Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 337
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double E96_1Percent = 0.01
@@ -83,8 +87,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E48_2Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 338
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double E48_2Percent = 0.02
@@ -108,8 +114,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E24_5Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 339
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double E24_5Percent = 0.05
@@ -133,8 +141,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E12_10Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 340
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double E12_10Percent = 0.1
@@ -158,8 +168,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: E6_20Percent
-    path: src/Analysis/ToleranceAnalysis.cs
+    path: ../src/Analysis/ToleranceAnalysis.cs
     startLine: 341
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Analysis
   syntax:
     content: public const double E6_20Percent = 0.2

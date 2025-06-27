@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorImpedanceResult
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 213
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate capacitor impedance at frequency
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Frequency
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 215
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Frequency { get; set; }
@@ -86,8 +90,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Reactance
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 216
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Reactance { get; set; }
@@ -113,8 +119,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESR
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 217
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double ESR { get; set; }
@@ -140,8 +148,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Impedance
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 218
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Impedance { get; set; }
@@ -167,8 +177,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Phase
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 219
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double Phase { get; set; }
@@ -194,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QualityFactor
-    path: src/Calculators/CapacitorCodeCalculator.cs
+    path: ../src/Calculators/CapacitorCodeCalculator.cs
     startLine: 220
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double QualityFactor { get; set; }

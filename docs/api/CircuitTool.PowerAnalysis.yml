@@ -17,6 +17,8 @@ items:
   nameWithType: CircuitTool.PowerAnalysis
   fullName: CircuitTool.PowerAnalysis
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.PowerAnalysis.AdvancedPowerAnalysis
   commentId: T:CircuitTool.PowerAnalysis.AdvancedPowerAnalysis

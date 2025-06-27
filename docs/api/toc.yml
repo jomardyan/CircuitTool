@@ -566,6 +566,140 @@ items:
   - uid: CircuitTool.Serialization.ExportFormat
     name: ExportFormat
     type: Enum
+- uid: CircuitTool.Tests
+  name: CircuitTool.Tests
+  type: Namespace
+  items:
+  - uid: CircuitTool.Tests.ACCircuitCalculatorTests
+    name: ACCircuitCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.AdditionalCalculatorsTests
+    name: AdditionalCalculatorsTests
+    type: Class
+  - uid: CircuitTool.Tests.ArduinoToolsTests
+    name: ArduinoToolsTests
+    type: Class
+  - uid: CircuitTool.Tests.BeginnerCalculatorsTests
+    name: BeginnerCalculatorsTests
+    type: Class
+  - uid: CircuitTool.Tests.CapacitorCalculatorTests
+    name: CapacitorCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.CircuitCalculationsTests
+    name: CircuitCalculationsTests
+    type: Class
+  - uid: CircuitTool.Tests.DocumentationExamplesTests
+    name: DocumentationExamplesTests
+    type: Class
+  - uid: CircuitTool.Tests.ESP32ToolsTests
+    name: ESP32ToolsTests
+    type: Class
+  - uid: CircuitTool.Tests.EnergyCalculatorTests
+    name: EnergyCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.FilterCalculatorTests
+    name: FilterCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.InductorCalculatorTests
+    name: InductorCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.LEDCalculatorTests
+    name: LEDCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    type: Class
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+    name: MathematicalExtensionsTests.ComplexMatrixTests
+    type: Class
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+    name: MathematicalExtensionsTests.FourierTransformTests
+    type: Class
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+    name: MathematicalExtensionsTests.NodalAnalysisTests
+    type: Class
+  - uid: CircuitTool.Tests.NoiseCalculatorTests
+    name: NoiseCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.OhmsLawCalculatorTests
+    name: OhmsLawCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.OpAmpCalculatorTests
+    name: OpAmpCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    type: Class
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+    name: PerformanceOptimizationsTests.BulkOperationsTests
+    type: Class
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+    name: PerformanceOptimizationsTests.CalculationCacheTests
+    type: Class
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+    name: PerformanceOptimizationsTests.PerformanceMonitorTests
+    type: Class
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+    name: PerformanceOptimizationsTests.VectorizedCalculationsTests
+    type: Class
+  - uid: CircuitTool.Tests.RFCalculatorTests
+    name: RFCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.ResistorCalculatorTests
+    name: ResistorCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.TransformerCalculatorTests
+    name: TransformerCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.UseCaseTemplatesTests
+    name: UseCaseTemplatesTests
+    type: Class
+  - uid: CircuitTool.Tests.VoltageCalculatorTests
+    name: VoltageCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.VoltageDividerCalculatorTests
+    name: VoltageDividerCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.VoltageDropCalculatorTests
+    name: VoltageDropCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests
+    name: WattsVoltsAmpsOhmsCalculatorTests
+    type: Class
+- uid: CircuitTool.Tests.Mathematics
+  name: CircuitTool.Tests.Mathematics
+  type: Namespace
+  items:
+  - uid: CircuitTool.Tests.Mathematics.FourierTransformTests
+    name: FourierTransformTests
+    type: Class
+  - uid: CircuitTool.Tests.Mathematics.MatrixOperationsTests
+    name: MatrixOperationsTests
+    type: Class
+- uid: CircuitTool.Tests.Performance
+  name: CircuitTool.Tests.Performance
+  type: Namespace
+  items:
+  - uid: CircuitTool.Tests.Performance.VectorizedCalculationsTests
+    name: VectorizedCalculationsTests
+    type: Class
+- uid: CircuitTool.Tests.Serialization
+  name: CircuitTool.Tests.Serialization
+  type: Namespace
+  items:
+  - uid: CircuitTool.Tests.Serialization.CircuitSerializationTests
+    name: CircuitSerializationTests
+    type: Class
+- uid: CircuitTool.Tests.Units
+  name: CircuitTool.Tests.Units
+  type: Namespace
+  items:
+  - uid: CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests
+    name: TypedOhmsLawCalculatorTests
+    type: Class
+  - uid: CircuitTool.Tests.Units.VoltageTests
+    name: VoltageTests
+    type: Class
 - uid: CircuitTool.Units
   name: CircuitTool.Units
   type: Namespace

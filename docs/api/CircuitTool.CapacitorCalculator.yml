@@ -29,8 +29,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorCalculator
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.
   remarks: >-
@@ -81,8 +83,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitiveReactance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 34
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates capacitive reactance using the formula Xc = 1 / (2πfC).
   example:
@@ -121,8 +125,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyStored
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 50
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the energy stored in a capacitor using the formula E = 0.5 × C × V².
   example:
@@ -161,8 +167,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TimeConstant
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 66
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the time constant for an RC circuit using the formula τ = R × C.
   example:
@@ -201,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SeriesCapacitance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 81
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates total capacitance for capacitors in series using the formula 1/Ctotal = 1/C1 + 1/C2 + ...
   example:
@@ -238,8 +248,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ParallelCapacitance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates total capacitance for capacitors in parallel using the formula Ctotal = C1 + C2 + ...
   example:
@@ -275,8 +287,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ChargingVoltage
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 127
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the charging voltage of a capacitor at time t using V(t) = Vsource × (1 - e^(-t/τ)).
   example:
@@ -318,8 +332,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DischargingVoltage
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 146
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the discharging voltage of a capacitor at time t using V(t) = Vinitial × e^(-t/τ).
   example:
@@ -361,8 +377,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateChargeAndEnergy
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 175
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Enhanced charge and energy calculator with physical properties
   example: []
@@ -403,8 +421,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeSeriesCapacitorBank
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 260
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze series capacitor bank
   example: []
@@ -443,8 +463,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeParallelCapacitorBank
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 320
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze parallel capacitor bank
   example: []
@@ -483,8 +505,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeRippleCurrent
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 386
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Analyze capacitor ripple current capability
   example: []

@@ -16,6 +16,8 @@ items:
   nameWithType: CircuitTool.Async
   fullName: CircuitTool.Async
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
 - uid: CircuitTool.Async.AsyncCalculations
   commentId: T:CircuitTool.Async.AsyncCalculations

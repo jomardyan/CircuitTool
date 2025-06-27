@@ -46,157 +46,130 @@ items:
   nameWithType: CircuitTool.Calculators
   fullName: CircuitTool.Calculators
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator
-  nameWithType: ResistorColorCodeCalculator
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter
+  nameWithType: CapacitanceUnitConverter
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.ResistorColor
-  nameWithType: ResistorColorCodeCalculator.ResistorColor
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitanceUnit
+  nameWithType: CapacitanceUnitConverter.CapacitanceUnit
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
   spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
-    name: ResistorColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    name: CapacitanceUnit
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
   spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
-    name: ResistorColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+    name: CapacitanceUnit
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.ToleranceColor
-  nameWithType: ResistorColorCodeCalculator.ToleranceColor
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitanceConversionResult
+  nameWithType: CapacitanceUnitConverter.CapacitanceConversionResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
   spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
-    name: ToleranceColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    name: CapacitanceConversionResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
   spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
-    name: ToleranceColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.html
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+    name: CapacitanceConversionResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.TempCoeffColor
-  nameWithType: ResistorColorCodeCalculator.TempCoeffColor
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  nameWithType: CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
   spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
-    name: TempCoeffColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    name: CapacitorEnergyChargeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
   spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
-    name: TempCoeffColor
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+    name: CapacitorEnergyChargeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.ResistorColorResult
-  nameWithType: ResistorColorCodeCalculator.ResistorColorResult
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.ChargingTimeResult
+  nameWithType: CapacitanceUnitConverter.ChargingTimeResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
   spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
-    name: ResistorColorResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    name: ChargingTimeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
   spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
-    name: ResistorColorResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+    name: ChargingTimeResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
+- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.StandardResistorResult
-  nameWithType: ResistorColorCodeCalculator.StandardResistorResult
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  name: CapacitanceUnitConverter.ESRAnalysisResult
+  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult
+  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
   spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
-    name: StandardResistorResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    name: ESRAnalysisResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html
   spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
+    name: CapacitanceUnitConverter
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
   - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
-    name: StandardResistorResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
-- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
-  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
-  parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  name: ResistorColorCodeCalculator.PowerRatingResult
-  nameWithType: ResistorColorCodeCalculator.PowerRatingResult
-  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
-  spec.csharp:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
-    name: PowerRatingResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html
-  spec.vb:
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
-    name: ResistorColorCodeCalculator
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
-  - name: .
-  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
-    name: PowerRatingResult
-    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html
-- uid: CircuitTool.Calculators.ComponentCalculator
-  commentId: T:CircuitTool.Calculators.ComponentCalculator
-  href: CircuitTool.Calculators.ComponentCalculator.html
-  name: ComponentCalculator
-  nameWithType: ComponentCalculator
-  fullName: CircuitTool.Calculators.ComponentCalculator
+  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+    name: ESRAnalysisResult
+    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html
 - uid: CircuitTool.Calculators.CapacitorCodeCalculator
   commentId: T:CircuitTool.Calculators.CapacitorCodeCalculator
   href: CircuitTool.Calculators.CapacitorCodeCalculator.html
@@ -341,127 +314,189 @@ references:
   - uid: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult
     name: CapacitorImpedanceResult
     href: CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.html
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter
-  nameWithType: CapacitanceUnitConverter
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
+- uid: CircuitTool.Calculators.ComponentCalculator
+  commentId: T:CircuitTool.Calculators.ComponentCalculator
+  href: CircuitTool.Calculators.ComponentCalculator.html
+  name: ComponentCalculator
+  nameWithType: ComponentCalculator
+  fullName: CircuitTool.Calculators.ComponentCalculator
+- uid: CircuitTool.Calculators.ModbusCommunicationCalculator
+  commentId: T:CircuitTool.Calculators.ModbusCommunicationCalculator
+  href: CircuitTool.Calculators.ModbusCommunicationCalculator.html
+  name: ModbusCommunicationCalculator
+  nameWithType: ModbusCommunicationCalculator
+  fullName: CircuitTool.Calculators.ModbusCommunicationCalculator
+- uid: CircuitTool.Calculators.ModbusAddressFormat
+  commentId: T:CircuitTool.Calculators.ModbusAddressFormat
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter.CapacitanceUnit
-  nameWithType: CapacitanceUnitConverter.CapacitanceUnit
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
-  spec.csharp:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
-    name: CapacitanceUnit
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
-  spec.vb:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit
-    name: CapacitanceUnit
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
+  href: CircuitTool.Calculators.ModbusAddressFormat.html
+  name: ModbusAddressFormat
+  nameWithType: ModbusAddressFormat
+  fullName: CircuitTool.Calculators.ModbusAddressFormat
+- uid: CircuitTool.Calculators.ModbusDataType
+  commentId: T:CircuitTool.Calculators.ModbusDataType
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter.CapacitanceConversionResult
-  nameWithType: CapacitanceUnitConverter.CapacitanceConversionResult
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
-  spec.csharp:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
-    name: CapacitanceConversionResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
-  spec.vb:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult
-    name: CapacitanceConversionResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
+  href: CircuitTool.Calculators.ModbusDataType.html
+  name: ModbusDataType
+  nameWithType: ModbusDataType
+  fullName: CircuitTool.Calculators.ModbusDataType
+- uid: CircuitTool.Calculators.ModbusDevice
+  commentId: T:CircuitTool.Calculators.ModbusDevice
+  href: CircuitTool.Calculators.ModbusDevice.html
+  name: ModbusDevice
+  nameWithType: ModbusDevice
+  fullName: CircuitTool.Calculators.ModbusDevice
+- uid: CircuitTool.Calculators.ModbusNetworkAnalysis
+  commentId: T:CircuitTool.Calculators.ModbusNetworkAnalysis
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter.CapacitorEnergyChargeResult
-  nameWithType: CapacitanceUnitConverter.CapacitorEnergyChargeResult
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
-  spec.csharp:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
-    name: CapacitorEnergyChargeResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
-  spec.vb:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult
-    name: CapacitorEnergyChargeResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html
+  name: ModbusNetworkAnalysis
+  nameWithType: ModbusNetworkAnalysis
+  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator
+  nameWithType: ResistorColorCodeCalculator
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter.ChargingTimeResult
-  nameWithType: CapacitanceUnitConverter.ChargingTimeResult
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ResistorColor
+  nameWithType: ResistorColorCodeCalculator.ResistorColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
   spec.csharp:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
   - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
-    name: ChargingTimeResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
   spec.vb:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
   - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult
-    name: ChargingTimeResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html
-- uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
-  commentId: T:CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor
+    name: ResistorColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
   parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.CapacitanceUnitConverter.html
-  name: CapacitanceUnitConverter.ESRAnalysisResult
-  nameWithType: CapacitanceUnitConverter.ESRAnalysisResult
-  fullName: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ToleranceColor
+  nameWithType: ResistorColorCodeCalculator.ToleranceColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
   spec.csharp:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
   - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
-    name: ESRAnalysisResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+    name: ToleranceColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.html
   spec.vb:
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter
-    name: CapacitanceUnitConverter
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
   - name: .
-  - uid: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult
-    name: ESRAnalysisResult
-    href: CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor
+    name: ToleranceColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.TempCoeffColor
+  nameWithType: ResistorColorCodeCalculator.TempCoeffColor
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+    name: TempCoeffColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor
+    name: TempCoeffColor
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.ResistorColorResult
+  nameWithType: ResistorColorCodeCalculator.ResistorColorResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    name: ResistorColorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult
+    name: ResistorColorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.StandardResistorResult
+  nameWithType: ResistorColorCodeCalculator.StandardResistorResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    name: StandardResistorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult
+    name: StandardResistorResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html
+- uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  commentId: T:CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  parent: CircuitTool.Calculators
+  href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  name: ResistorColorCodeCalculator.PowerRatingResult
+  nameWithType: ResistorColorCodeCalculator.PowerRatingResult
+  fullName: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+  spec.csharp:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    name: PowerRatingResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html
+  spec.vb:
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator
+    name: ResistorColorCodeCalculator
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.html
+  - name: .
+  - uid: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult
+    name: PowerRatingResult
+    href: CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html
 - uid: CircuitTool.Calculators.UARTCommunicationCalculator
   commentId: T:CircuitTool.Calculators.UARTCommunicationCalculator
   href: CircuitTool.Calculators.UARTCommunicationCalculator.html
@@ -652,39 +687,6 @@ references:
   - uid: CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis
     name: UARTErrorAnalysis
     href: CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.html
-- uid: CircuitTool.Calculators.ModbusCommunicationCalculator
-  commentId: T:CircuitTool.Calculators.ModbusCommunicationCalculator
-  href: CircuitTool.Calculators.ModbusCommunicationCalculator.html
-  name: ModbusCommunicationCalculator
-  nameWithType: ModbusCommunicationCalculator
-  fullName: CircuitTool.Calculators.ModbusCommunicationCalculator
-- uid: CircuitTool.Calculators.ModbusAddressFormat
-  commentId: T:CircuitTool.Calculators.ModbusAddressFormat
-  parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ModbusAddressFormat.html
-  name: ModbusAddressFormat
-  nameWithType: ModbusAddressFormat
-  fullName: CircuitTool.Calculators.ModbusAddressFormat
-- uid: CircuitTool.Calculators.ModbusDataType
-  commentId: T:CircuitTool.Calculators.ModbusDataType
-  parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ModbusDataType.html
-  name: ModbusDataType
-  nameWithType: ModbusDataType
-  fullName: CircuitTool.Calculators.ModbusDataType
-- uid: CircuitTool.Calculators.ModbusDevice
-  commentId: T:CircuitTool.Calculators.ModbusDevice
-  href: CircuitTool.Calculators.ModbusDevice.html
-  name: ModbusDevice
-  nameWithType: ModbusDevice
-  fullName: CircuitTool.Calculators.ModbusDevice
-- uid: CircuitTool.Calculators.ModbusNetworkAnalysis
-  commentId: T:CircuitTool.Calculators.ModbusNetworkAnalysis
-  parent: CircuitTool.Calculators
-  href: CircuitTool.Calculators.ModbusNetworkAnalysis.html
-  name: ModbusNetworkAnalysis
-  nameWithType: ModbusNetworkAnalysis
-  fullName: CircuitTool.Calculators.ModbusNetworkAnalysis
 - uid: CircuitTool.Calculators
   commentId: N:CircuitTool.Calculators
   href: CircuitTool.html

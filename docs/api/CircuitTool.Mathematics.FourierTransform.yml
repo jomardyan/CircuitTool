@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FourierTransform
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 20
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Provides basic Fourier transform utilities for circuit analysis
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DFT
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Computes the Discrete Fourier Transform (DFT) of a complex signal
   example: []
@@ -96,8 +100,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: IDFT
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 57
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Computes the Inverse Discrete Fourier Transform (IDFT)
   example: []
@@ -132,8 +138,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DFT
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 82
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Computes the DFT of a real-valued signal
   example: []
@@ -168,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerSpectralDensity
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 102
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Computes power spectral density from a signal
   example: []
@@ -204,8 +214,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ExtractHarmonics
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 123
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Extracts harmonic content from a periodic signal
   example: []
@@ -249,8 +261,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateTHD
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 160
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Calculates Total Harmonic Distortion (THD) from harmonic content
   example: []
@@ -285,8 +299,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ApplyWindow
-    path: src/Math/FourierTransform.cs
+    path: ../src/Math/FourierTransform.cs
     startLine: 182
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Mathematics
   summary: Applies a window function to reduce spectral leakage
   example: []

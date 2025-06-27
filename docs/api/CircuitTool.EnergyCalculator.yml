@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyCalculator
-    path: src/Calculators/EnergyCalculator.cs
+    path: ../src/Calculators/EnergyCalculator.cs
     startLine: 4
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static class EnergyCalculator
@@ -54,8 +56,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Joules
-    path: src/Calculators/EnergyCalculator.cs
+    path: ../src/Calculators/EnergyCalculator.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double Joules(double power, double timeSeconds)
@@ -88,8 +92,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWh
-    path: src/Calculators/EnergyCalculator.cs
+    path: ../src/Calculators/EnergyCalculator.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWh(double watts, double hours)
@@ -122,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyCost
-    path: src/Calculators/EnergyCalculator.cs
+    path: ../src/Calculators/EnergyCalculator.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double EnergyCost(double kWh, double ratePerKWh)

@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorColorCodeCalculator
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculator for resistor color code encoding and decoding
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Decode4Band
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 81
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Decode 4-band resistor color code
   example: []
@@ -97,8 +101,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Decode5Band
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 116
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Decode 5-band resistor color code
   example: []
@@ -136,8 +142,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Decode6Band
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 152
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Decode 6-band resistor color code (includes temperature coefficient)
   example: []
@@ -177,8 +185,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EncodeToColorCode
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 167
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Encode resistance value to 4-band color code
   example: []
@@ -213,8 +223,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EncodeToColorCode5Band
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 205
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Encode resistance value to 5-band color code for higher precision
   example: []
@@ -249,8 +261,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FindNearestStandardValue
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 259
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Find nearest standard resistor value
   example: []
@@ -285,8 +299,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculatePowerRating
-    path: src/Calculators/ResistorColorCodeCalculator.cs
+    path: ../src/Calculators/ResistorColorCodeCalculator.cs
     startLine: 299
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate required power rating for resistor
   example: []

@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RaspberryPiModel
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 156
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Raspberry Pi model enumeration
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Pi4B
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 158
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Pi4B = 0
@@ -72,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Pi3B
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 159
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Pi3B = 1
@@ -96,8 +102,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PiZero2W
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 160
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: PiZero2W = 2
@@ -120,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PiZero
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 161
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: PiZero = 3
@@ -144,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Pi400
-    path: src/Hardware/RaspberryPiTools.cs
+    path: ../src/Hardware/RaspberryPiTools.cs
     startLine: 162
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Pi400 = 4

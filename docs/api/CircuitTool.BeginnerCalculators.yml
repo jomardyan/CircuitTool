@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BeginnerCalculators
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Popular calculators for electronics beginners
   example: []
@@ -61,8 +63,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: BatteryLifeCalculator
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates battery life for simple circuits
   example: []
@@ -100,8 +104,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WireGaugeCalculator
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates wire gauge (AWG) needed for a given current
   example: []
@@ -139,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InductorTurnsCalculator
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the number of turns for a basic inductor
   example: []
@@ -184,8 +192,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCTimeConstantCapacitor
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 77
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates capacitor value for RC time constant
   example: []
@@ -223,8 +233,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RCOscillatorFrequency
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates frequency for RC oscillator circuit
   example: []
@@ -262,8 +274,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerRatioToDecibels
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates decibel (dB) from power ratio
   example: []
@@ -298,8 +312,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRatioToDecibels
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 115
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates decibel (dB) from voltage ratio
   example: []
@@ -334,8 +350,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TransformerTurnsRatio
-    path: src/Calculators/BeginnerCalculators.cs
+    path: ../src/Calculators/BeginnerCalculators.cs
     startLine: 128
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates transformer turns ratio
   example: []

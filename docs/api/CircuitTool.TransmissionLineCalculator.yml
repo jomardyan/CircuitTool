@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TransmissionLineCalculator
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for transmission line analysis and design.
   remarks: >-
@@ -72,8 +74,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CharacteristicImpedance
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates characteristic impedance of a transmission line.
   example:
@@ -112,8 +116,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PropagationVelocity
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 44
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates propagation velocity in a transmission line.
   example:
@@ -152,8 +158,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PropagationDelay
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates propagation delay for a transmission line.
   example:
@@ -195,8 +203,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CoaxialImpedance
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 76
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates coaxial cable characteristic impedance.
   example: []
@@ -237,8 +247,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MicrostripImpedance
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 93
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates microstrip characteristic impedance (simple formula).
   example: []
@@ -279,8 +291,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: StriplineImpedance
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 124
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates stripline characteristic impedance.
   example: []
@@ -321,8 +335,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ReflectionCoefficient
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 151
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates reflection coefficient at a load.
   example: []
@@ -360,8 +376,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: InputImpedance
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates input impedance of a transmission line.
   example: []
@@ -402,8 +420,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ElectricalLength
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 185
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates electrical length from physical length.
   example: []
@@ -444,8 +464,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TransmissionLoss
-    path: src/Calculators/TransmissionLineCalculator.cs
+    path: ../src/Calculators/TransmissionLineCalculator.cs
     startLine: 201
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates losses in a transmission line.
   example: []

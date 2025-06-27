@@ -26,8 +26,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorAnalysis
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 95
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Individual resistor analysis in a network
   example: []
@@ -61,8 +63,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Resistance
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 97
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Resistance { get; set; }
@@ -88,8 +92,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Voltage { get; set; }
@@ -115,8 +121,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Current
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Current { get; set; }
@@ -142,8 +150,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Power
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Power { get; set; }
@@ -169,8 +179,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerRating
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 101
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double PowerRating { get; set; }
@@ -196,8 +208,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SafetyMargin
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 102
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double SafetyMargin { get; set; }
@@ -223,8 +237,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Position
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string Position { get; set; }
@@ -250,8 +266,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WithinSafeOperatingArea
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 104
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public bool WithinSafeOperatingArea { get; set; }

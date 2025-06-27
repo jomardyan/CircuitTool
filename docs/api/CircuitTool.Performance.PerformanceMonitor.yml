@@ -22,8 +22,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PerformanceMonitor
-    path: src/Performance/PerformanceMonitor.cs
+    path: ../src/Performance/PerformanceMonitor.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Performance monitoring and optimization utilities
   example: []
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MeasureOperation
-    path: src/Performance/PerformanceMonitor.cs
+    path: ../src/Performance/PerformanceMonitor.cs
     startLine: 22
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Measures and records execution time for a function
   example: []
@@ -99,8 +103,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetStats
-    path: src/Performance/PerformanceMonitor.cs
+    path: ../src/Performance/PerformanceMonitor.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Gets performance statistics for an operation
   example: []
@@ -135,8 +141,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetAllStats
-    path: src/Performance/PerformanceMonitor.cs
+    path: ../src/Performance/PerformanceMonitor.cs
     startLine: 54
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Gets all performance statistics
   example: []
@@ -164,8 +172,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ClearStats
-    path: src/Performance/PerformanceMonitor.cs
+    path: ../src/Performance/PerformanceMonitor.cs
     startLine: 70
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Performance
   summary: Clears all performance metrics
   example: []

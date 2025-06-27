@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistanceUnit
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents resistance measurement units
   example: []
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Milliohms
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Milliohms (mΩ)
   example: []
@@ -74,8 +78,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Ohms
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Ohms (Ω)
   example: []
@@ -100,8 +106,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kiloohms
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Kiloohms (kΩ)
   example: []
@@ -126,8 +134,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Megaohms
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Megaohms (MΩ)
   example: []
@@ -152,8 +162,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Gigaohms
-    path: src/Units/ResistanceUnit.cs
+    path: ../src/Units/ResistanceUnit.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gigaohms (GΩ)
   example: []

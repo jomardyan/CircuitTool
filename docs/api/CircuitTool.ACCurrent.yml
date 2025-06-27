@@ -39,8 +39,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ACCurrent
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 93
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Represents an AC current with magnitude and phase
   example: []
@@ -70,8 +72,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 102
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Creates a new AC current from magnitude and phase
   example: []
@@ -106,8 +110,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 111
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Creates a new AC current from a complex number
   example: []
@@ -139,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Magnitude
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 119
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the RMS magnitude in amperes
   example: []
@@ -168,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Phase
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 124
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the phase angle in radians
   example: []
@@ -197,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PhaseDegrees
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 129
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the phase angle in degrees
   example: []
@@ -226,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Real
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 134
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the real component
   example: []
@@ -255,8 +269,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Imaginary
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 139
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the imaginary component
   example: []
@@ -284,8 +300,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Complex
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 144
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the complex number representation
   example: []
@@ -313,8 +331,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Peak
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 149
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets the peak current (magnitude * √2)
   example: []
@@ -342,8 +362,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Addition
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 151
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static ACCurrent operator +(ACCurrent left, ACCurrent right)
@@ -376,8 +398,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Subtraction
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 152
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static ACCurrent operator -(ACCurrent left, ACCurrent right)
@@ -410,8 +434,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Multiply
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 153
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static ACCurrent operator *(ACCurrent current, Complex scalar)
@@ -444,8 +470,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Multiply
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 154
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static ACCurrent operator *(Complex scalar, ACCurrent current)
@@ -478,8 +506,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Division
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 155
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static ACCurrent operator /(ACCurrent current, Complex scalar)
@@ -512,8 +542,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Equality
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 157
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static bool operator ==(ACCurrent left, ACCurrent right)
@@ -546,8 +578,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Inequality
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 158
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static bool operator !=(ACCurrent left, ACCurrent right)
@@ -580,8 +614,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 160
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Indicates whether the current object is equal to another object of the same type.
   example: []
@@ -615,8 +651,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 161
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Indicates whether this instance and a specified object are equal.
   example: []
@@ -652,8 +690,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetHashCode
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 162
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Returns the hash code for this instance.
   example: []
@@ -682,8 +722,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 164
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Returns the fully qualified type name of this instance.
   example: []
@@ -712,8 +754,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/ACTypes.cs
+    path: ../src/ACTypes.cs
     startLine: 165
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string ToString(string format)

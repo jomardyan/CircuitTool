@@ -5,7 +5,7 @@
   },
   "projects": {
     "/workspaces/CircuitTool/CircuitTool.csproj": {
-      "version": "2.1.0",
+      "version": "2.2.2",
       "restore": {
         "projectUniqueName": "/workspaces/CircuitTool/CircuitTool.csproj",
         "projectName": "CircuitTool",
@@ -15,7 +15,6 @@
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -385,7 +384,6 @@
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/workspaces/CircuitTool/nuget.config",
           "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [

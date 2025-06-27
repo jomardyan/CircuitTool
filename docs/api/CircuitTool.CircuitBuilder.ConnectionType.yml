@@ -20,8 +20,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConnectionType
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Represents how components are connected
   example: []
@@ -45,8 +47,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Series
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: Series = 0
@@ -69,8 +73,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Parallel
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: Parallel = 1

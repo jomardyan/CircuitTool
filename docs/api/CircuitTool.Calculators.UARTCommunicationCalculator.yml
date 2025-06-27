@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UARTCommunicationCalculator
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculator for UART communication parameters and timing analysis
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateUARTTiming
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 84
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate UART timing parameters
   example: []
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeUARTBuffer
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 132
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Analyze UART buffer requirements
   example: []
@@ -130,8 +136,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeCableLength
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 163
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Analyze cable length constraints for UART
   example: []
@@ -170,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeUARTErrors
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 240
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Analyze UART error rates
   example: []
@@ -210,8 +220,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateUARTRecommendations
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 297
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Generate UART configuration recommendations
   example: []
@@ -250,8 +262,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OptimizeUARTConfiguration
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 360
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate optimal UART configuration for given requirements
   example: []

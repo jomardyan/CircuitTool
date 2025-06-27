@@ -52,8 +52,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UnitConverter
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 4
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static class UnitConverter
@@ -85,8 +87,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmpsToKW
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 7
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double AmpsToKW(double amps, double volts, double powerFactor = 1)
@@ -121,8 +125,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmpsToKVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 9
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double AmpsToKVA(double amps, double volts)
@@ -155,8 +161,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmpsToVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 11
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double AmpsToVA(double amps, double volts)
@@ -189,8 +197,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmpsToVolts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 13
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double AmpsToVolts(double watts, double amps)
@@ -223,8 +233,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AmpsToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double AmpsToWatts(double amps, double volts)
@@ -257,8 +269,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KVAToAmps
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KVAToAmps(double kVA, double volts)
@@ -291,8 +305,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KVAToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 19
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KVAToWatts(double kVA, double powerFactor = 1)
@@ -325,8 +341,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KVAToKW
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 21
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KVAToKW(double kVA, double powerFactor = 1)
@@ -359,8 +377,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KVAToVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 23
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KVAToVA(double kVA)
@@ -391,8 +411,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWToAmps
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 25
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWToAmps(double kW, double volts, double powerFactor = 1)
@@ -427,8 +449,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWToVolts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWToVolts(double kW, double amps, double powerFactor = 1)
@@ -463,8 +487,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWToKWh
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 29
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWToKWh(double kW, double hours)
@@ -497,8 +523,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWToVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 31
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWToVA(double kW, double powerFactor = 1)
@@ -531,8 +559,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWToKVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWToKVA(double kW, double powerFactor = 1)
@@ -565,8 +595,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWhToKW
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 35
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWhToKW(double kWh, double hours)
@@ -599,8 +631,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: KWhToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 37
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double KWhToWatts(double kWh, double hours)
@@ -633,8 +667,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VAToAmps
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 39
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VAToAmps(double va, double volts)
@@ -667,8 +703,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VAToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 41
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VAToWatts(double va, double powerFactor = 1)
@@ -701,8 +739,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VAToKW
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 43
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VAToKW(double va, double powerFactor = 1)
@@ -735,8 +775,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VAToKVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 45
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VAToKVA(double va)
@@ -767,8 +809,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltsToAmps
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltsToAmps(double watts, double volts)
@@ -801,8 +845,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltsToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltsToWatts(double volts, double amps)
@@ -835,8 +881,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltsToKW
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltsToKW(double volts, double amps, double powerFactor = 1)
@@ -871,8 +919,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltsToJoules
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 53
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltsToJoules(double volts, double coulombs)
@@ -905,8 +955,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltsToEV
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 55
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double VoltsToEV(double volts)
@@ -937,8 +989,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToAmps
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 57
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToAmps(double watts, double volts)
@@ -971,8 +1025,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToJoules
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 59
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToJoules(double watts, double seconds)
@@ -1005,8 +1061,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToKWh
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToKWh(double watts, double hours)
@@ -1039,8 +1097,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToVolts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 63
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToVolts(double watts, double amps)
@@ -1073,8 +1133,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 65
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToVA(double watts, double powerFactor = 1)
@@ -1107,8 +1169,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: WattsToKVA
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 67
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double WattsToKVA(double watts, double powerFactor = 1)
@@ -1141,8 +1205,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EVToVolts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double EVToVolts(double eV)
@@ -1173,8 +1239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: JoulesToWatts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 71
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double JoulesToWatts(double joules, double seconds)
@@ -1207,8 +1275,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: JoulesToVolts
-    path: src/Calculators/UnitConverter.cs
+    path: ../src/Calculators/UnitConverter.cs
     startLine: 73
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public static double JoulesToVolts(double joules, double coulombs)

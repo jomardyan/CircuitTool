@@ -18,8 +18,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: UseCaseTemplates
-    path: src/Documentation/UseCaseTemplates.cs
+    path: ../src/Documentation/UseCaseTemplates.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Common use case templates for quick implementation
   example: []

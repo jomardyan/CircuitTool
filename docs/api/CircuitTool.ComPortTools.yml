@@ -30,8 +30,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ComPortTools
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides comprehensive COM port utilities for hardware communication and monitoring
   example: []
@@ -65,8 +67,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CommonBaudRates
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 21
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Common baud rates for serial communication
   example: []
@@ -92,8 +96,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ArduinoBaudRates
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 30
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Arduino standard baud rates
   example: []
@@ -119,8 +125,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESP32BaudRates
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 38
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: ESP32 standard baud rates
   example: []
@@ -146,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetAvailablePorts
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 145
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Gets all available COM ports with detailed information
   example: []
@@ -175,8 +185,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TestPortAvailability
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 230
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Tests if a port is available and responsive
   example: []
@@ -217,8 +229,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AutoDetectBaudRate
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 296
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Auto-detects the correct baud rate for a device
   example: []
@@ -259,8 +273,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: MonitorPort
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 352
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Monitors a COM port and logs data
   example: []
@@ -301,8 +317,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TestATCommands
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 427
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Sends AT commands to test modem/ESP devices
   example: []
@@ -340,8 +358,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateArduinoSerialCode
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 509
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates Arduino serial monitor code
   example: []
@@ -379,8 +399,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateESP32SerialCode
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 593
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates ESP32 serial communication code
   example: []
@@ -418,8 +440,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateBufferSizes
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 688
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates optimal buffer sizes for serial communication
   example: []
@@ -460,8 +484,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GenerateDiagnosticReport
-    path: src/Hardware/ComPortTools.cs
+    path: ../src/Hardware/ComPortTools.cs
     startLine: 733
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Generates COM port diagnostic report
   example: []

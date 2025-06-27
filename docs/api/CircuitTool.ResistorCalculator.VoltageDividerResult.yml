@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageDividerResult
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 321
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculate voltage divider with load analysis
   example: []
@@ -63,8 +65,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OutputVoltageNoLoad
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 323
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double OutputVoltageNoLoad { get; set; }
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: OutputVoltageWithLoad
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 324
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double OutputVoltageWithLoad { get; set; }
@@ -117,8 +123,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LoadingError
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 325
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double LoadingError { get; set; }
@@ -144,8 +152,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LoadingErrorPercent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 326
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double LoadingErrorPercent { get; set; }
@@ -171,8 +181,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DividerCurrent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 327
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double DividerCurrent { get; set; }
@@ -198,8 +210,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: LoadCurrent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 328
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double LoadCurrent { get; set; }
@@ -225,8 +239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalCurrent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 329
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalCurrent { get; set; }
@@ -252,8 +268,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerConsumption
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 330
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double PowerConsumption { get; set; }
@@ -279,8 +297,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Efficiency
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 331
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Efficiency { get; set; }
@@ -306,8 +326,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Recommendations
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 332
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<string> Recommendations { get; set; }

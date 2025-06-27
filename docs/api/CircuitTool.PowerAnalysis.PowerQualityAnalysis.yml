@@ -32,8 +32,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerQualityAnalysis
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 454
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Power quality analysis results
   example: []
@@ -63,8 +65,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRMS
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 456
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageRMS { get; }
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentRMS
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 457
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double CurrentRMS { get; }
@@ -117,8 +123,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRegulation
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 458
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageRegulation { get; }
@@ -144,8 +152,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageCrestFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 459
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageCrestFactor { get; }
@@ -171,8 +181,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CurrentCrestFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 460
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double CurrentCrestFactor { get; }
@@ -198,8 +210,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageFormFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 461
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageFormFactor { get; }
@@ -225,8 +239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PowerFactor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 462
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double PowerFactor { get; }
@@ -252,8 +268,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrequencyDeviation
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 463
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double FrequencyDeviation { get; }
@@ -279,8 +297,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageUnbalance
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 464
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageUnbalance { get; }
@@ -306,8 +326,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 466
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public PowerQualityAnalysis(double voltageRMS, double currentRMS, double voltageRegulation, double voltageCrestFactor, double currentCrestFactor, double voltageFormFactor, double powerFactor, double frequencyDeviation, double voltageUnbalance)
@@ -352,8 +374,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageRegulationPercent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 481
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageRegulationPercent { get; }
@@ -379,8 +403,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrequencyDeviationPercent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 482
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double FrequencyDeviationPercent { get; }
@@ -406,8 +432,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: VoltageUnbalancePercent
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 483
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   syntax:
     content: public double VoltageUnbalancePercent { get; }
@@ -433,8 +461,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Analysis/AdvancedPowerAnalysis.cs
+    path: ../src/Analysis/AdvancedPowerAnalysis.cs
     startLine: 485
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.PowerAnalysis
   summary: Returns the fully qualified type name of this instance.
   example: []

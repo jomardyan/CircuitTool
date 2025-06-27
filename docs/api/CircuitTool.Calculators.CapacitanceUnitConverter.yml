@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitanceUnitConverter
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Comprehensive calculator for capacitance unit conversions and related calculations
   example: []
@@ -63,8 +65,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConvertCapacitance
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Convert capacitance between units
   example: []
@@ -101,8 +105,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetBestUnit
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 79
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Get the best unit for displaying a capacitance value
   example: []
@@ -135,8 +141,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCharge
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 104
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: 'Calculate charge stored in capacitor: Q = C × V'
   example: []
@@ -171,8 +179,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateEnergy
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 112
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: 'Calculate energy stored in capacitor: E = 0.5 × C × V²'
   example: []
@@ -207,8 +217,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateVoltage
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 120
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: 'Calculate voltage from charge and capacitance: V = Q / C'
   example: []
@@ -243,8 +255,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateCapacitance
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 131
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: 'Calculate capacitance from charge and voltage: C = Q / V'
   example: []
@@ -279,8 +293,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeCapacitor
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 142
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Comprehensive capacitor energy and charge analysis
   example: []
@@ -319,8 +335,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateChargingTime
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 193
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate RC charging characteristics
   example: []
@@ -361,8 +379,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateDischargeTime
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 226
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Calculate capacitor discharge characteristics
   example: []
@@ -403,8 +423,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AnalyzeESR
-    path: src/Calculators/CapacitanceUnitConverter.cs
+    path: ../src/Calculators/CapacitanceUnitConverter.cs
     startLine: 271
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   summary: Analyze ESR effects on capacitor performance
   example: []

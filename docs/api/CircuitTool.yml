@@ -106,13 +106,9 @@ items:
   nameWithType: CircuitTool
   fullName: CircuitTool
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
-- uid: CircuitTool.CircuitCalculations
-  commentId: T:CircuitTool.CircuitCalculations
-  href: CircuitTool.CircuitCalculations.html
-  name: CircuitCalculations
-  nameWithType: CircuitCalculations
-  fullName: CircuitTool.CircuitCalculations
 - uid: CircuitTool.ACVoltage
   commentId: T:CircuitTool.ACVoltage
   parent: CircuitTool
@@ -141,759 +137,24 @@ references:
   name: Admittance
   nameWithType: Admittance
   fullName: CircuitTool.Admittance
-- uid: CircuitTool.ThermalCalculator
-  commentId: T:CircuitTool.ThermalCalculator
-  href: CircuitTool.ThermalCalculator.html
-  name: ThermalCalculator
-  nameWithType: ThermalCalculator
-  fullName: CircuitTool.ThermalCalculator
-- uid: CircuitTool.SignalIntegrityCalculator
-  commentId: T:CircuitTool.SignalIntegrityCalculator
-  href: CircuitTool.SignalIntegrityCalculator.html
-  name: SignalIntegrityCalculator
-  nameWithType: SignalIntegrityCalculator
-  fullName: CircuitTool.SignalIntegrityCalculator
 - uid: CircuitTool.EMCCalculator
   commentId: T:CircuitTool.EMCCalculator
   href: CircuitTool.EMCCalculator.html
   name: EMCCalculator
   nameWithType: EMCCalculator
   fullName: CircuitTool.EMCCalculator
-- uid: CircuitTool.SensorInterfaceCalculator
-  commentId: T:CircuitTool.SensorInterfaceCalculator
-  href: CircuitTool.SensorInterfaceCalculator.html
-  name: SensorInterfaceCalculator
-  nameWithType: SensorInterfaceCalculator
-  fullName: CircuitTool.SensorInterfaceCalculator
-- uid: CircuitTool.SensorInterfaceCalculator.SensorType
-  commentId: T:CircuitTool.SensorInterfaceCalculator.SensorType
-  parent: CircuitTool
-  href: CircuitTool.SensorInterfaceCalculator.html
-  name: SensorInterfaceCalculator.SensorType
-  nameWithType: SensorInterfaceCalculator.SensorType
-  fullName: CircuitTool.SensorInterfaceCalculator.SensorType
-  spec.csharp:
-  - uid: CircuitTool.SensorInterfaceCalculator
-    name: SensorInterfaceCalculator
-    href: CircuitTool.SensorInterfaceCalculator.html
-  - name: .
-  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
-    name: SensorType
-    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
-  spec.vb:
-  - uid: CircuitTool.SensorInterfaceCalculator
-    name: SensorInterfaceCalculator
-    href: CircuitTool.SensorInterfaceCalculator.html
-  - name: .
-  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
-    name: SensorType
-    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
-- uid: CircuitTool.ArduinoTools
-  commentId: T:CircuitTool.ArduinoTools
-  href: CircuitTool.ArduinoTools.html
-  name: ArduinoTools
-  nameWithType: ArduinoTools
-  fullName: CircuitTool.ArduinoTools
-- uid: CircuitTool.ComPortTools
-  commentId: T:CircuitTool.ComPortTools
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools
-  nameWithType: ComPortTools
-  fullName: CircuitTool.ComPortTools
-- uid: CircuitTool.ComPortTools.SerialParity
-  commentId: T:CircuitTool.ComPortTools.SerialParity
-  parent: CircuitTool
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools.SerialParity
-  nameWithType: ComPortTools.SerialParity
-  fullName: CircuitTool.ComPortTools.SerialParity
-  spec.csharp:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialParity
-    name: SerialParity
-    href: CircuitTool.ComPortTools.SerialParity.html
-  spec.vb:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialParity
-    name: SerialParity
-    href: CircuitTool.ComPortTools.SerialParity.html
-- uid: CircuitTool.ComPortTools.SerialStopBits
-  commentId: T:CircuitTool.ComPortTools.SerialStopBits
-  parent: CircuitTool
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools.SerialStopBits
-  nameWithType: ComPortTools.SerialStopBits
-  fullName: CircuitTool.ComPortTools.SerialStopBits
-  spec.csharp:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialStopBits
-    name: SerialStopBits
-    href: CircuitTool.ComPortTools.SerialStopBits.html
-  spec.vb:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialStopBits
-    name: SerialStopBits
-    href: CircuitTool.ComPortTools.SerialStopBits.html
-- uid: CircuitTool.ComPortTools.SerialHandshake
-  commentId: T:CircuitTool.ComPortTools.SerialHandshake
-  parent: CircuitTool
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools.SerialHandshake
-  nameWithType: ComPortTools.SerialHandshake
-  fullName: CircuitTool.ComPortTools.SerialHandshake
-  spec.csharp:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialHandshake
-    name: SerialHandshake
-    href: CircuitTool.ComPortTools.SerialHandshake.html
-  spec.vb:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialHandshake
-    name: SerialHandshake
-    href: CircuitTool.ComPortTools.SerialHandshake.html
-- uid: CircuitTool.ComPortTools.SerialConfig
-  commentId: T:CircuitTool.ComPortTools.SerialConfig
-  parent: CircuitTool
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools.SerialConfig
-  nameWithType: ComPortTools.SerialConfig
-  fullName: CircuitTool.ComPortTools.SerialConfig
-  spec.csharp:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialConfig
-    name: SerialConfig
-    href: CircuitTool.ComPortTools.SerialConfig.html
-  spec.vb:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialConfig
-    name: SerialConfig
-    href: CircuitTool.ComPortTools.SerialConfig.html
-- uid: CircuitTool.ComPortTools.SerialPortInfo
-  commentId: T:CircuitTool.ComPortTools.SerialPortInfo
-  href: CircuitTool.ComPortTools.html
-  name: ComPortTools.SerialPortInfo
-  nameWithType: ComPortTools.SerialPortInfo
-  fullName: CircuitTool.ComPortTools.SerialPortInfo
-  spec.csharp:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialPortInfo
-    name: SerialPortInfo
-    href: CircuitTool.ComPortTools.SerialPortInfo.html
-  spec.vb:
-  - uid: CircuitTool.ComPortTools
-    name: ComPortTools
-    href: CircuitTool.ComPortTools.html
-  - name: .
-  - uid: CircuitTool.ComPortTools.SerialPortInfo
-    name: SerialPortInfo
-    href: CircuitTool.ComPortTools.SerialPortInfo.html
-- uid: CircuitTool.CommunicationProtocolTools
-  commentId: T:CircuitTool.CommunicationProtocolTools
-  href: CircuitTool.CommunicationProtocolTools.html
-  name: CommunicationProtocolTools
-  nameWithType: CommunicationProtocolTools
-  fullName: CircuitTool.CommunicationProtocolTools
-- uid: CircuitTool.CommunicationProtocolTools.I2CConfig
-  commentId: T:CircuitTool.CommunicationProtocolTools.I2CConfig
-  parent: CircuitTool
-  href: CircuitTool.CommunicationProtocolTools.html
-  name: CommunicationProtocolTools.I2CConfig
-  nameWithType: CommunicationProtocolTools.I2CConfig
-  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig
-  spec.csharp:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
-    name: I2CConfig
-    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
-  spec.vb:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
-    name: I2CConfig
-    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
-- uid: CircuitTool.CommunicationProtocolTools.SPIConfig
-  commentId: T:CircuitTool.CommunicationProtocolTools.SPIConfig
-  parent: CircuitTool
-  href: CircuitTool.CommunicationProtocolTools.html
-  name: CommunicationProtocolTools.SPIConfig
-  nameWithType: CommunicationProtocolTools.SPIConfig
-  fullName: CircuitTool.CommunicationProtocolTools.SPIConfig
-  spec.csharp:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
-    name: SPIConfig
-    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
-  spec.vb:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
-    name: SPIConfig
-    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
-- uid: CircuitTool.CommunicationProtocolTools.SPIMode
-  commentId: T:CircuitTool.CommunicationProtocolTools.SPIMode
-  parent: CircuitTool
-  href: CircuitTool.CommunicationProtocolTools.html
-  name: CommunicationProtocolTools.SPIMode
-  nameWithType: CommunicationProtocolTools.SPIMode
-  fullName: CircuitTool.CommunicationProtocolTools.SPIMode
-  spec.csharp:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.SPIMode
-    name: SPIMode
-    href: CircuitTool.CommunicationProtocolTools.SPIMode.html
-  spec.vb:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.SPIMode
-    name: SPIMode
-    href: CircuitTool.CommunicationProtocolTools.SPIMode.html
-- uid: CircuitTool.CommunicationProtocolTools.UARTConfig
-  commentId: T:CircuitTool.CommunicationProtocolTools.UARTConfig
-  parent: CircuitTool
-  href: CircuitTool.CommunicationProtocolTools.html
-  name: CommunicationProtocolTools.UARTConfig
-  nameWithType: CommunicationProtocolTools.UARTConfig
-  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig
-  spec.csharp:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
-    name: UARTConfig
-    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
-  spec.vb:
-  - uid: CircuitTool.CommunicationProtocolTools
-    name: CommunicationProtocolTools
-    href: CircuitTool.CommunicationProtocolTools.html
-  - name: .
-  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
-    name: UARTConfig
-    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
-- uid: CircuitTool.ESP32Tools
-  commentId: T:CircuitTool.ESP32Tools
-  href: CircuitTool.ESP32Tools.html
-  name: ESP32Tools
-  nameWithType: ESP32Tools
-  fullName: CircuitTool.ESP32Tools
-- uid: CircuitTool.WiFiMode
-  commentId: T:CircuitTool.WiFiMode
-  parent: CircuitTool
-  href: CircuitTool.WiFiMode.html
-  name: WiFiMode
-  nameWithType: WiFiMode
-  fullName: CircuitTool.WiFiMode
-- uid: CircuitTool.MotorControlCalculator
-  commentId: T:CircuitTool.MotorControlCalculator
-  href: CircuitTool.MotorControlCalculator.html
-  name: MotorControlCalculator
-  nameWithType: MotorControlCalculator
-  fullName: CircuitTool.MotorControlCalculator
-- uid: CircuitTool.MotorControlCalculator.MotorType
-  commentId: T:CircuitTool.MotorControlCalculator.MotorType
-  parent: CircuitTool
-  href: CircuitTool.MotorControlCalculator.html
-  name: MotorControlCalculator.MotorType
-  nameWithType: MotorControlCalculator.MotorType
-  fullName: CircuitTool.MotorControlCalculator.MotorType
-  spec.csharp:
-  - uid: CircuitTool.MotorControlCalculator
-    name: MotorControlCalculator
-    href: CircuitTool.MotorControlCalculator.html
-  - name: .
-  - uid: CircuitTool.MotorControlCalculator.MotorType
-    name: MotorType
-    href: CircuitTool.MotorControlCalculator.MotorType.html
-  spec.vb:
-  - uid: CircuitTool.MotorControlCalculator
-    name: MotorControlCalculator
-    href: CircuitTool.MotorControlCalculator.html
-  - name: .
-  - uid: CircuitTool.MotorControlCalculator.MotorType
-    name: MotorType
-    href: CircuitTool.MotorControlCalculator.MotorType.html
-- uid: CircuitTool.PowerSupplyCalculator
-  commentId: T:CircuitTool.PowerSupplyCalculator
-  href: CircuitTool.PowerSupplyCalculator.html
-  name: PowerSupplyCalculator
-  nameWithType: PowerSupplyCalculator
-  fullName: CircuitTool.PowerSupplyCalculator
-- uid: CircuitTool.PowerSupplyCalculator.PSUTopology
-  commentId: T:CircuitTool.PowerSupplyCalculator.PSUTopology
-  parent: CircuitTool
-  href: CircuitTool.PowerSupplyCalculator.html
-  name: PowerSupplyCalculator.PSUTopology
-  nameWithType: PowerSupplyCalculator.PSUTopology
-  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology
-  spec.csharp:
-  - uid: CircuitTool.PowerSupplyCalculator
-    name: PowerSupplyCalculator
-    href: CircuitTool.PowerSupplyCalculator.html
-  - name: .
-  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
-    name: PSUTopology
-    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html
-  spec.vb:
-  - uid: CircuitTool.PowerSupplyCalculator
-    name: PowerSupplyCalculator
-    href: CircuitTool.PowerSupplyCalculator.html
-  - name: .
-  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
-    name: PSUTopology
-    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html
-- uid: CircuitTool.RaspberryPiTools
-  commentId: T:CircuitTool.RaspberryPiTools
-  href: CircuitTool.RaspberryPiTools.html
-  name: RaspberryPiTools
-  nameWithType: RaspberryPiTools
-  fullName: CircuitTool.RaspberryPiTools
-- uid: CircuitTool.RaspberryPiTools.GPIOPin
-  commentId: T:CircuitTool.RaspberryPiTools.GPIOPin
-  parent: CircuitTool
-  href: CircuitTool.RaspberryPiTools.html
-  name: RaspberryPiTools.GPIOPin
-  nameWithType: RaspberryPiTools.GPIOPin
-  fullName: CircuitTool.RaspberryPiTools.GPIOPin
-  spec.csharp:
-  - uid: CircuitTool.RaspberryPiTools
-    name: RaspberryPiTools
-    href: CircuitTool.RaspberryPiTools.html
-  - name: .
-  - uid: CircuitTool.RaspberryPiTools.GPIOPin
-    name: GPIOPin
-    href: CircuitTool.RaspberryPiTools.GPIOPin.html
-  spec.vb:
-  - uid: CircuitTool.RaspberryPiTools
-    name: RaspberryPiTools
-    href: CircuitTool.RaspberryPiTools.html
-  - name: .
-  - uid: CircuitTool.RaspberryPiTools.GPIOPin
-    name: GPIOPin
-    href: CircuitTool.RaspberryPiTools.GPIOPin.html
-- uid: CircuitTool.RaspberryPiTools.PWMConfig
-  commentId: T:CircuitTool.RaspberryPiTools.PWMConfig
-  href: CircuitTool.RaspberryPiTools.html
-  name: RaspberryPiTools.PWMConfig
-  nameWithType: RaspberryPiTools.PWMConfig
-  fullName: CircuitTool.RaspberryPiTools.PWMConfig
-  spec.csharp:
-  - uid: CircuitTool.RaspberryPiTools
-    name: RaspberryPiTools
-    href: CircuitTool.RaspberryPiTools.html
-  - name: .
-  - uid: CircuitTool.RaspberryPiTools.PWMConfig
-    name: PWMConfig
-    href: CircuitTool.RaspberryPiTools.PWMConfig.html
-  spec.vb:
-  - uid: CircuitTool.RaspberryPiTools
-    name: RaspberryPiTools
-    href: CircuitTool.RaspberryPiTools.html
-  - name: .
-  - uid: CircuitTool.RaspberryPiTools.PWMConfig
-    name: PWMConfig
-    href: CircuitTool.RaspberryPiTools.PWMConfig.html
-- uid: CircuitTool.RaspberryPiModel
-  commentId: T:CircuitTool.RaspberryPiModel
-  parent: CircuitTool
-  href: CircuitTool.RaspberryPiModel.html
-  name: RaspberryPiModel
-  nameWithType: RaspberryPiModel
-  fullName: CircuitTool.RaspberryPiModel
-- uid: CircuitTool.HardwareDebuggingTools
-  commentId: T:CircuitTool.HardwareDebuggingTools
-  href: CircuitTool.HardwareDebuggingTools.html
-  name: HardwareDebuggingTools
-  nameWithType: HardwareDebuggingTools
-  fullName: CircuitTool.HardwareDebuggingTools
-- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
-  commentId: T:CircuitTool.HardwareDebuggingTools.ProblemCategory
-  parent: CircuitTool
-  href: CircuitTool.HardwareDebuggingTools.html
-  name: HardwareDebuggingTools.ProblemCategory
-  nameWithType: HardwareDebuggingTools.ProblemCategory
-  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory
-  spec.csharp:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
-    name: ProblemCategory
-    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html
-  spec.vb:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
-    name: ProblemCategory
-    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html
-- uid: CircuitTool.HardwareDebuggingTools.DebugResult
-  commentId: T:CircuitTool.HardwareDebuggingTools.DebugResult
-  href: CircuitTool.HardwareDebuggingTools.html
-  name: HardwareDebuggingTools.DebugResult
-  nameWithType: HardwareDebuggingTools.DebugResult
-  fullName: CircuitTool.HardwareDebuggingTools.DebugResult
-  spec.csharp:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.DebugResult
-    name: DebugResult
-    href: CircuitTool.HardwareDebuggingTools.DebugResult.html
-  spec.vb:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.DebugResult
-    name: DebugResult
-    href: CircuitTool.HardwareDebuggingTools.DebugResult.html
-- uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
-  commentId: T:CircuitTool.HardwareDebuggingTools.HardwareConfig
-  parent: CircuitTool
-  href: CircuitTool.HardwareDebuggingTools.html
-  name: HardwareDebuggingTools.HardwareConfig
-  nameWithType: HardwareDebuggingTools.HardwareConfig
-  fullName: CircuitTool.HardwareDebuggingTools.HardwareConfig
-  spec.csharp:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
-    name: HardwareConfig
-    href: CircuitTool.HardwareDebuggingTools.HardwareConfig.html
-  spec.vb:
-  - uid: CircuitTool.HardwareDebuggingTools
-    name: HardwareDebuggingTools
-    href: CircuitTool.HardwareDebuggingTools.html
-  - name: .
-  - uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
-    name: HardwareConfig
-    href: CircuitTool.HardwareDebuggingTools.HardwareConfig.html
-- uid: CircuitTool.PCBDesignCalculator
-  commentId: T:CircuitTool.PCBDesignCalculator
-  href: CircuitTool.PCBDesignCalculator.html
-  name: PCBDesignCalculator
-  nameWithType: PCBDesignCalculator
-  fullName: CircuitTool.PCBDesignCalculator
-- uid: CircuitTool.PCBDesignCalculator.PCBStackup
-  commentId: T:CircuitTool.PCBDesignCalculator.PCBStackup
-  parent: CircuitTool
-  href: CircuitTool.PCBDesignCalculator.html
-  name: PCBDesignCalculator.PCBStackup
-  nameWithType: PCBDesignCalculator.PCBStackup
-  fullName: CircuitTool.PCBDesignCalculator.PCBStackup
-  spec.csharp:
-  - uid: CircuitTool.PCBDesignCalculator
-    name: PCBDesignCalculator
-    href: CircuitTool.PCBDesignCalculator.html
-  - name: .
-  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
-    name: PCBStackup
-    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
-  spec.vb:
-  - uid: CircuitTool.PCBDesignCalculator
-    name: PCBDesignCalculator
-    href: CircuitTool.PCBDesignCalculator.html
-  - name: .
-  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
-    name: PCBStackup
-    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
-- uid: CircuitTool.UseCaseTemplates
-  commentId: T:CircuitTool.UseCaseTemplates
-  href: CircuitTool.UseCaseTemplates.html
-  name: UseCaseTemplates
-  nameWithType: UseCaseTemplates
-  fullName: CircuitTool.UseCaseTemplates
-- uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
-  commentId: T:CircuitTool.UseCaseTemplates.VoltageDividerDesign
-  href: CircuitTool.UseCaseTemplates.html
-  name: UseCaseTemplates.VoltageDividerDesign
-  nameWithType: UseCaseTemplates.VoltageDividerDesign
-  fullName: CircuitTool.UseCaseTemplates.VoltageDividerDesign
-  spec.csharp:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
-    name: VoltageDividerDesign
-    href: CircuitTool.UseCaseTemplates.VoltageDividerDesign.html
-  spec.vb:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
-    name: VoltageDividerDesign
-    href: CircuitTool.UseCaseTemplates.VoltageDividerDesign.html
-- uid: CircuitTool.UseCaseTemplates.FilterDesign
-  commentId: T:CircuitTool.UseCaseTemplates.FilterDesign
-  href: CircuitTool.UseCaseTemplates.html
-  name: UseCaseTemplates.FilterDesign
-  nameWithType: UseCaseTemplates.FilterDesign
-  fullName: CircuitTool.UseCaseTemplates.FilterDesign
-  spec.csharp:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.FilterDesign
-    name: FilterDesign
-    href: CircuitTool.UseCaseTemplates.FilterDesign.html
-  spec.vb:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.FilterDesign
-    name: FilterDesign
-    href: CircuitTool.UseCaseTemplates.FilterDesign.html
-- uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
-  commentId: T:CircuitTool.UseCaseTemplates.LEDResistorCalculator
-  href: CircuitTool.UseCaseTemplates.html
-  name: UseCaseTemplates.LEDResistorCalculator
-  nameWithType: UseCaseTemplates.LEDResistorCalculator
-  fullName: CircuitTool.UseCaseTemplates.LEDResistorCalculator
-  spec.csharp:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
-    name: LEDResistorCalculator
-    href: CircuitTool.UseCaseTemplates.LEDResistorCalculator.html
-  spec.vb:
-  - uid: CircuitTool.UseCaseTemplates
-    name: UseCaseTemplates
-    href: CircuitTool.UseCaseTemplates.html
-  - name: .
-  - uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
-    name: LEDResistorCalculator
-    href: CircuitTool.UseCaseTemplates.LEDResistorCalculator.html
-- uid: CircuitTool.DocumentationExamples
-  commentId: T:CircuitTool.DocumentationExamples
-  href: CircuitTool.DocumentationExamples.html
-  name: DocumentationExamples
-  nameWithType: DocumentationExamples
-  fullName: CircuitTool.DocumentationExamples
-- uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
-  commentId: T:CircuitTool.DocumentationExamples.BasicOhmsLaw
-  href: CircuitTool.DocumentationExamples.html
-  name: DocumentationExamples.BasicOhmsLaw
-  nameWithType: DocumentationExamples.BasicOhmsLaw
-  fullName: CircuitTool.DocumentationExamples.BasicOhmsLaw
-  spec.csharp:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
-    name: BasicOhmsLaw
-    href: CircuitTool.DocumentationExamples.BasicOhmsLaw.html
-  spec.vb:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
-    name: BasicOhmsLaw
-    href: CircuitTool.DocumentationExamples.BasicOhmsLaw.html
-- uid: CircuitTool.DocumentationExamples.CircuitBuilding
-  commentId: T:CircuitTool.DocumentationExamples.CircuitBuilding
-  href: CircuitTool.DocumentationExamples.html
-  name: DocumentationExamples.CircuitBuilding
-  nameWithType: DocumentationExamples.CircuitBuilding
-  fullName: CircuitTool.DocumentationExamples.CircuitBuilding
-  spec.csharp:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.CircuitBuilding
-    name: CircuitBuilding
-    href: CircuitTool.DocumentationExamples.CircuitBuilding.html
-  spec.vb:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.CircuitBuilding
-    name: CircuitBuilding
-    href: CircuitTool.DocumentationExamples.CircuitBuilding.html
-- uid: CircuitTool.DocumentationExamples.ACAnalysis
-  commentId: T:CircuitTool.DocumentationExamples.ACAnalysis
-  href: CircuitTool.DocumentationExamples.html
-  name: DocumentationExamples.ACAnalysis
-  nameWithType: DocumentationExamples.ACAnalysis
-  fullName: CircuitTool.DocumentationExamples.ACAnalysis
-  spec.csharp:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.ACAnalysis
-    name: ACAnalysis
-    href: CircuitTool.DocumentationExamples.ACAnalysis.html
-  spec.vb:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.ACAnalysis
-    name: ACAnalysis
-    href: CircuitTool.DocumentationExamples.ACAnalysis.html
-- uid: CircuitTool.DocumentationExamples.EnergyCalculations
-  commentId: T:CircuitTool.DocumentationExamples.EnergyCalculations
-  href: CircuitTool.DocumentationExamples.html
-  name: DocumentationExamples.EnergyCalculations
-  nameWithType: DocumentationExamples.EnergyCalculations
-  fullName: CircuitTool.DocumentationExamples.EnergyCalculations
-  spec.csharp:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.EnergyCalculations
-    name: EnergyCalculations
-    href: CircuitTool.DocumentationExamples.EnergyCalculations.html
-  spec.vb:
-  - uid: CircuitTool.DocumentationExamples
-    name: DocumentationExamples
-    href: CircuitTool.DocumentationExamples.html
-  - name: .
-  - uid: CircuitTool.DocumentationExamples.EnergyCalculations
-    name: EnergyCalculations
-    href: CircuitTool.DocumentationExamples.EnergyCalculations.html
-- uid: CircuitTool.InteractiveTutorials
-  commentId: T:CircuitTool.InteractiveTutorials
-  href: CircuitTool.InteractiveTutorials.html
-  name: InteractiveTutorials
-  nameWithType: InteractiveTutorials
-  fullName: CircuitTool.InteractiveTutorials
-- uid: CircuitTool.DigitalCalculator
-  commentId: T:CircuitTool.DigitalCalculator
-  href: CircuitTool.DigitalCalculator.html
-  name: DigitalCalculator
-  nameWithType: DigitalCalculator
-  fullName: CircuitTool.DigitalCalculator
-- uid: CircuitTool.EMICalculator
-  commentId: T:CircuitTool.EMICalculator
-  href: CircuitTool.EMICalculator.html
-  name: EMICalculator
-  nameWithType: EMICalculator
-  fullName: CircuitTool.EMICalculator
-- uid: CircuitTool.EnergyCalculator
-  commentId: T:CircuitTool.EnergyCalculator
-  href: CircuitTool.EnergyCalculator.html
-  name: EnergyCalculator
-  nameWithType: EnergyCalculator
-  fullName: CircuitTool.EnergyCalculator
-- uid: CircuitTool.VoltageCalculator
-  commentId: T:CircuitTool.VoltageCalculator
-  href: CircuitTool.VoltageCalculator.html
-  name: VoltageCalculator
-  nameWithType: VoltageCalculator
-  fullName: CircuitTool.VoltageCalculator
-- uid: CircuitTool.PhysicsCircuitCalculators
-  commentId: T:CircuitTool.PhysicsCircuitCalculators
-  href: CircuitTool.PhysicsCircuitCalculators.html
-  name: PhysicsCircuitCalculators
-  nameWithType: PhysicsCircuitCalculators
-  fullName: CircuitTool.PhysicsCircuitCalculators
-- uid: CircuitTool.OpAmpCalculator
-  commentId: T:CircuitTool.OpAmpCalculator
-  href: CircuitTool.OpAmpCalculator.html
-  name: OpAmpCalculator
-  nameWithType: OpAmpCalculator
-  fullName: CircuitTool.OpAmpCalculator
-- uid: CircuitTool.VoltageDividerCalculator
-  commentId: T:CircuitTool.VoltageDividerCalculator
-  href: CircuitTool.VoltageDividerCalculator.html
-  name: VoltageDividerCalculator
-  nameWithType: VoltageDividerCalculator
-  fullName: CircuitTool.VoltageDividerCalculator
-- uid: CircuitTool.VoltageDropCalculator
-  commentId: T:CircuitTool.VoltageDropCalculator
-  href: CircuitTool.VoltageDropCalculator.html
-  name: VoltageDropCalculator
-  nameWithType: VoltageDropCalculator
-  fullName: CircuitTool.VoltageDropCalculator
-- uid: CircuitTool.FilterCalculator
-  commentId: T:CircuitTool.FilterCalculator
-  href: CircuitTool.FilterCalculator.html
-  name: FilterCalculator
-  nameWithType: FilterCalculator
-  fullName: CircuitTool.FilterCalculator
-- uid: CircuitTool.UnitConverter
-  commentId: T:CircuitTool.UnitConverter
-  href: CircuitTool.UnitConverter.html
-  name: UnitConverter
-  nameWithType: UnitConverter
-  fullName: CircuitTool.UnitConverter
-- uid: CircuitTool.NoiseCalculator
-  commentId: T:CircuitTool.NoiseCalculator
-  href: CircuitTool.NoiseCalculator.html
-  name: NoiseCalculator
-  nameWithType: NoiseCalculator
-  fullName: CircuitTool.NoiseCalculator
-- uid: CircuitTool.TransformerCalculator
-  commentId: T:CircuitTool.TransformerCalculator
-  href: CircuitTool.TransformerCalculator.html
-  name: TransformerCalculator
-  nameWithType: TransformerCalculator
-  fullName: CircuitTool.TransformerCalculator
-- uid: CircuitTool.OhmsLawCalculator
-  commentId: T:CircuitTool.OhmsLawCalculator
-  href: CircuitTool.OhmsLawCalculator.html
-  name: OhmsLawCalculator
-  nameWithType: OhmsLawCalculator
-  fullName: CircuitTool.OhmsLawCalculator
+- uid: CircuitTool.SignalIntegrityCalculator
+  commentId: T:CircuitTool.SignalIntegrityCalculator
+  href: CircuitTool.SignalIntegrityCalculator.html
+  name: SignalIntegrityCalculator
+  nameWithType: SignalIntegrityCalculator
+  fullName: CircuitTool.SignalIntegrityCalculator
+- uid: CircuitTool.ThermalCalculator
+  commentId: T:CircuitTool.ThermalCalculator
+  href: CircuitTool.ThermalCalculator.html
+  name: ThermalCalculator
+  nameWithType: ThermalCalculator
+  fullName: CircuitTool.ThermalCalculator
 - uid: CircuitTool.ACCircuitCalculator
   commentId: T:CircuitTool.ACCircuitCalculator
   href: CircuitTool.ACCircuitCalculator.html
@@ -906,36 +167,313 @@ references:
   name: AntennaCalculator
   nameWithType: AntennaCalculator
   fullName: CircuitTool.AntennaCalculator
-- uid: CircuitTool.OptoelectronicsCalculator
-  commentId: T:CircuitTool.OptoelectronicsCalculator
-  href: CircuitTool.OptoelectronicsCalculator.html
-  name: OptoelectronicsCalculator
-  nameWithType: OptoelectronicsCalculator
-  fullName: CircuitTool.OptoelectronicsCalculator
+- uid: CircuitTool.BeginnerCalculators
+  commentId: T:CircuitTool.BeginnerCalculators
+  href: CircuitTool.BeginnerCalculators.html
+  name: BeginnerCalculators
+  nameWithType: BeginnerCalculators
+  fullName: CircuitTool.BeginnerCalculators
+- uid: CircuitTool.CapacitorCalculator
+  commentId: T:CircuitTool.CapacitorCalculator
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator
+  nameWithType: CapacitorCalculator
+  fullName: CircuitTool.CapacitorCalculator
+- uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.CapacitorChargeEnergyResult
+  nameWithType: CapacitorCalculator.CapacitorChargeEnergyResult
+  fullName: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    name: CapacitorChargeEnergyResult
+    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+    name: CapacitorChargeEnergyResult
+    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
+- uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorBankResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.CapacitorBankResult
+  nameWithType: CapacitorCalculator.CapacitorBankResult
+  fullName: CircuitTool.CapacitorCalculator.CapacitorBankResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    name: CapacitorBankResult
+    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
+    name: CapacitorBankResult
+    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
+- uid: CircuitTool.CapacitorCalculator.CapacitorInBank
+  commentId: T:CircuitTool.CapacitorCalculator.CapacitorInBank
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.CapacitorInBank
+  nameWithType: CapacitorCalculator.CapacitorInBank
+  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorInBank
+    name: CapacitorInBank
+    href: CircuitTool.CapacitorCalculator.CapacitorInBank.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.CapacitorInBank
+    name: CapacitorInBank
+    href: CircuitTool.CapacitorCalculator.CapacitorInBank.html
+- uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+  commentId: T:CircuitTool.CapacitorCalculator.RippleCurrentResult
+  parent: CircuitTool
+  href: CircuitTool.CapacitorCalculator.html
+  name: CapacitorCalculator.RippleCurrentResult
+  nameWithType: CapacitorCalculator.RippleCurrentResult
+  fullName: CircuitTool.CapacitorCalculator.RippleCurrentResult
+  spec.csharp:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    name: RippleCurrentResult
+    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html
+  spec.vb:
+  - uid: CircuitTool.CapacitorCalculator
+    name: CapacitorCalculator
+    href: CircuitTool.CapacitorCalculator.html
+  - name: .
+  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
+    name: RippleCurrentResult
+    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html
+- uid: CircuitTool.DigitalCalculator
+  commentId: T:CircuitTool.DigitalCalculator
+  href: CircuitTool.DigitalCalculator.html
+  name: DigitalCalculator
+  nameWithType: DigitalCalculator
+  fullName: CircuitTool.DigitalCalculator
+- uid: CircuitTool.ElectricityBillCalculator
+  commentId: T:CircuitTool.ElectricityBillCalculator
+  href: CircuitTool.ElectricityBillCalculator.html
+  name: ElectricityBillCalculator
+  nameWithType: ElectricityBillCalculator
+  fullName: CircuitTool.ElectricityBillCalculator
+- uid: CircuitTool.EMICalculator
+  commentId: T:CircuitTool.EMICalculator
+  href: CircuitTool.EMICalculator.html
+  name: EMICalculator
+  nameWithType: EMICalculator
+  fullName: CircuitTool.EMICalculator
+- uid: CircuitTool.EnergyCalculator
+  commentId: T:CircuitTool.EnergyCalculator
+  href: CircuitTool.EnergyCalculator.html
+  name: EnergyCalculator
+  nameWithType: EnergyCalculator
+  fullName: CircuitTool.EnergyCalculator
+- uid: CircuitTool.EnergyConsumptionCalculator
+  commentId: T:CircuitTool.EnergyConsumptionCalculator
+  href: CircuitTool.EnergyConsumptionCalculator.html
+  name: EnergyConsumptionCalculator
+  nameWithType: EnergyConsumptionCalculator
+  fullName: CircuitTool.EnergyConsumptionCalculator
+- uid: CircuitTool.FilterCalculator
+  commentId: T:CircuitTool.FilterCalculator
+  href: CircuitTool.FilterCalculator.html
+  name: FilterCalculator
+  nameWithType: FilterCalculator
+  fullName: CircuitTool.FilterCalculator
 - uid: CircuitTool.InductorCalculator
   commentId: T:CircuitTool.InductorCalculator
   href: CircuitTool.InductorCalculator.html
   name: InductorCalculator
   nameWithType: InductorCalculator
   fullName: CircuitTool.InductorCalculator
+- uid: CircuitTool.LEDCalculator
+  commentId: T:CircuitTool.LEDCalculator
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator
+  nameWithType: LEDCalculator
+  fullName: CircuitTool.LEDCalculator
+- uid: CircuitTool.LEDCalculator.LEDArrayResult
+  commentId: T:CircuitTool.LEDCalculator.LEDArrayResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDArrayResult
+  nameWithType: LEDCalculator.LEDArrayResult
+  fullName: CircuitTool.LEDCalculator.LEDArrayResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDArrayResult
+    name: LEDArrayResult
+    href: CircuitTool.LEDCalculator.LEDArrayResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDArrayResult
+    name: LEDArrayResult
+    href: CircuitTool.LEDCalculator.LEDArrayResult.html
+- uid: CircuitTool.LEDCalculator.LEDSpec
+  commentId: T:CircuitTool.LEDCalculator.LEDSpec
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDSpec
+  nameWithType: LEDCalculator.LEDSpec
+  fullName: CircuitTool.LEDCalculator.LEDSpec
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDSpec
+    name: LEDSpec
+    href: CircuitTool.LEDCalculator.LEDSpec.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDSpec
+    name: LEDSpec
+    href: CircuitTool.LEDCalculator.LEDSpec.html
+- uid: CircuitTool.LEDCalculator.LEDThermalResult
+  commentId: T:CircuitTool.LEDCalculator.LEDThermalResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDThermalResult
+  nameWithType: LEDCalculator.LEDThermalResult
+  fullName: CircuitTool.LEDCalculator.LEDThermalResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDThermalResult
+    name: LEDThermalResult
+    href: CircuitTool.LEDCalculator.LEDThermalResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDThermalResult
+    name: LEDThermalResult
+    href: CircuitTool.LEDCalculator.LEDThermalResult.html
+- uid: CircuitTool.LEDCalculator.CommonLEDs
+  commentId: T:CircuitTool.LEDCalculator.CommonLEDs
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.CommonLEDs
+  nameWithType: LEDCalculator.CommonLEDs
+  fullName: CircuitTool.LEDCalculator.CommonLEDs
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.CommonLEDs
+    name: CommonLEDs
+    href: CircuitTool.LEDCalculator.CommonLEDs.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.CommonLEDs
+    name: CommonLEDs
+    href: CircuitTool.LEDCalculator.CommonLEDs.html
+- uid: CircuitTool.LEDCalculator.LEDStripResult
+  commentId: T:CircuitTool.LEDCalculator.LEDStripResult
+  parent: CircuitTool
+  href: CircuitTool.LEDCalculator.html
+  name: LEDCalculator.LEDStripResult
+  nameWithType: LEDCalculator.LEDStripResult
+  fullName: CircuitTool.LEDCalculator.LEDStripResult
+  spec.csharp:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDStripResult
+    name: LEDStripResult
+    href: CircuitTool.LEDCalculator.LEDStripResult.html
+  spec.vb:
+  - uid: CircuitTool.LEDCalculator
+    name: LEDCalculator
+    href: CircuitTool.LEDCalculator.html
+  - name: .
+  - uid: CircuitTool.LEDCalculator.LEDStripResult
+    name: LEDStripResult
+    href: CircuitTool.LEDCalculator.LEDStripResult.html
+- uid: CircuitTool.NoiseCalculator
+  commentId: T:CircuitTool.NoiseCalculator
+  href: CircuitTool.NoiseCalculator.html
+  name: NoiseCalculator
+  nameWithType: NoiseCalculator
+  fullName: CircuitTool.NoiseCalculator
+- uid: CircuitTool.OhmsLawCalculator
+  commentId: T:CircuitTool.OhmsLawCalculator
+  href: CircuitTool.OhmsLawCalculator.html
+  name: OhmsLawCalculator
+  nameWithType: OhmsLawCalculator
+  fullName: CircuitTool.OhmsLawCalculator
+- uid: CircuitTool.OpAmpCalculator
+  commentId: T:CircuitTool.OpAmpCalculator
+  href: CircuitTool.OpAmpCalculator.html
+  name: OpAmpCalculator
+  nameWithType: OpAmpCalculator
+  fullName: CircuitTool.OpAmpCalculator
+- uid: CircuitTool.OptoelectronicsCalculator
+  commentId: T:CircuitTool.OptoelectronicsCalculator
+  href: CircuitTool.OptoelectronicsCalculator.html
+  name: OptoelectronicsCalculator
+  nameWithType: OptoelectronicsCalculator
+  fullName: CircuitTool.OptoelectronicsCalculator
+- uid: CircuitTool.PhysicsCircuitCalculators
+  commentId: T:CircuitTool.PhysicsCircuitCalculators
+  href: CircuitTool.PhysicsCircuitCalculators.html
+  name: PhysicsCircuitCalculators
+  nameWithType: PhysicsCircuitCalculators
+  fullName: CircuitTool.PhysicsCircuitCalculators
+- uid: CircuitTool.PowerCalculator
+  commentId: T:CircuitTool.PowerCalculator
+  href: CircuitTool.PowerCalculator.html
+  name: PowerCalculator
+  nameWithType: PowerCalculator
+  fullName: CircuitTool.PowerCalculator
 - uid: CircuitTool.PowerFactorCalculator
   commentId: T:CircuitTool.PowerFactorCalculator
   href: CircuitTool.PowerFactorCalculator.html
   name: PowerFactorCalculator
   nameWithType: PowerFactorCalculator
   fullName: CircuitTool.PowerFactorCalculator
-- uid: CircuitTool.WattsVoltsAmpsOhmsCalculator
-  commentId: T:CircuitTool.WattsVoltsAmpsOhmsCalculator
-  href: CircuitTool.WattsVoltsAmpsOhmsCalculator.html
-  name: WattsVoltsAmpsOhmsCalculator
-  nameWithType: WattsVoltsAmpsOhmsCalculator
-  fullName: CircuitTool.WattsVoltsAmpsOhmsCalculator
-- uid: CircuitTool.RFCalculator
-  commentId: T:CircuitTool.RFCalculator
-  href: CircuitTool.RFCalculator.html
-  name: RFCalculator
-  nameWithType: RFCalculator
-  fullName: CircuitTool.RFCalculator
 - uid: CircuitTool.ResistorCalculator
   commentId: T:CircuitTool.ResistorCalculator
   href: CircuitTool.ResistorCalculator.html
@@ -1116,6 +654,60 @@ references:
   - uid: CircuitTool.ResistorCalculator.VoltageDividerResult
     name: VoltageDividerResult
     href: CircuitTool.ResistorCalculator.VoltageDividerResult.html
+- uid: CircuitTool.RFCalculator
+  commentId: T:CircuitTool.RFCalculator
+  href: CircuitTool.RFCalculator.html
+  name: RFCalculator
+  nameWithType: RFCalculator
+  fullName: CircuitTool.RFCalculator
+- uid: CircuitTool.SignalProcessingCalculator
+  commentId: T:CircuitTool.SignalProcessingCalculator
+  href: CircuitTool.SignalProcessingCalculator.html
+  name: SignalProcessingCalculator
+  nameWithType: SignalProcessingCalculator
+  fullName: CircuitTool.SignalProcessingCalculator
+- uid: CircuitTool.TransformerCalculator
+  commentId: T:CircuitTool.TransformerCalculator
+  href: CircuitTool.TransformerCalculator.html
+  name: TransformerCalculator
+  nameWithType: TransformerCalculator
+  fullName: CircuitTool.TransformerCalculator
+- uid: CircuitTool.TransmissionLineCalculator
+  commentId: T:CircuitTool.TransmissionLineCalculator
+  href: CircuitTool.TransmissionLineCalculator.html
+  name: TransmissionLineCalculator
+  nameWithType: TransmissionLineCalculator
+  fullName: CircuitTool.TransmissionLineCalculator
+- uid: CircuitTool.UnitConverter
+  commentId: T:CircuitTool.UnitConverter
+  href: CircuitTool.UnitConverter.html
+  name: UnitConverter
+  nameWithType: UnitConverter
+  fullName: CircuitTool.UnitConverter
+- uid: CircuitTool.VoltageCalculator
+  commentId: T:CircuitTool.VoltageCalculator
+  href: CircuitTool.VoltageCalculator.html
+  name: VoltageCalculator
+  nameWithType: VoltageCalculator
+  fullName: CircuitTool.VoltageCalculator
+- uid: CircuitTool.VoltageDividerCalculator
+  commentId: T:CircuitTool.VoltageDividerCalculator
+  href: CircuitTool.VoltageDividerCalculator.html
+  name: VoltageDividerCalculator
+  nameWithType: VoltageDividerCalculator
+  fullName: CircuitTool.VoltageDividerCalculator
+- uid: CircuitTool.VoltageDropCalculator
+  commentId: T:CircuitTool.VoltageDropCalculator
+  href: CircuitTool.VoltageDropCalculator.html
+  name: VoltageDropCalculator
+  nameWithType: VoltageDropCalculator
+  fullName: CircuitTool.VoltageDropCalculator
+- uid: CircuitTool.WattsVoltsAmpsOhmsCalculator
+  commentId: T:CircuitTool.WattsVoltsAmpsOhmsCalculator
+  href: CircuitTool.WattsVoltsAmpsOhmsCalculator.html
+  name: WattsVoltsAmpsOhmsCalculator
+  nameWithType: WattsVoltsAmpsOhmsCalculator
+  fullName: CircuitTool.WattsVoltsAmpsOhmsCalculator
 - uid: CircuitTool.WirelessCalculator
   commentId: T:CircuitTool.WirelessCalculator
   href: CircuitTool.WirelessCalculator.html
@@ -1145,259 +737,669 @@ references:
   - uid: CircuitTool.WirelessCalculator.ModulationType
     name: ModulationType
     href: CircuitTool.WirelessCalculator.ModulationType.html
-- uid: CircuitTool.LEDCalculator
-  commentId: T:CircuitTool.LEDCalculator
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator
-  nameWithType: LEDCalculator
-  fullName: CircuitTool.LEDCalculator
-- uid: CircuitTool.LEDCalculator.LEDArrayResult
-  commentId: T:CircuitTool.LEDCalculator.LEDArrayResult
+- uid: CircuitTool.CircuitCalculations
+  commentId: T:CircuitTool.CircuitCalculations
+  href: CircuitTool.CircuitCalculations.html
+  name: CircuitCalculations
+  nameWithType: CircuitCalculations
+  fullName: CircuitTool.CircuitCalculations
+- uid: CircuitTool.DocumentationExamples
+  commentId: T:CircuitTool.DocumentationExamples
+  href: CircuitTool.DocumentationExamples.html
+  name: DocumentationExamples
+  nameWithType: DocumentationExamples
+  fullName: CircuitTool.DocumentationExamples
+- uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
+  commentId: T:CircuitTool.DocumentationExamples.BasicOhmsLaw
+  href: CircuitTool.DocumentationExamples.html
+  name: DocumentationExamples.BasicOhmsLaw
+  nameWithType: DocumentationExamples.BasicOhmsLaw
+  fullName: CircuitTool.DocumentationExamples.BasicOhmsLaw
+  spec.csharp:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
+    name: BasicOhmsLaw
+    href: CircuitTool.DocumentationExamples.BasicOhmsLaw.html
+  spec.vb:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.BasicOhmsLaw
+    name: BasicOhmsLaw
+    href: CircuitTool.DocumentationExamples.BasicOhmsLaw.html
+- uid: CircuitTool.DocumentationExamples.CircuitBuilding
+  commentId: T:CircuitTool.DocumentationExamples.CircuitBuilding
+  href: CircuitTool.DocumentationExamples.html
+  name: DocumentationExamples.CircuitBuilding
+  nameWithType: DocumentationExamples.CircuitBuilding
+  fullName: CircuitTool.DocumentationExamples.CircuitBuilding
+  spec.csharp:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.CircuitBuilding
+    name: CircuitBuilding
+    href: CircuitTool.DocumentationExamples.CircuitBuilding.html
+  spec.vb:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.CircuitBuilding
+    name: CircuitBuilding
+    href: CircuitTool.DocumentationExamples.CircuitBuilding.html
+- uid: CircuitTool.DocumentationExamples.ACAnalysis
+  commentId: T:CircuitTool.DocumentationExamples.ACAnalysis
+  href: CircuitTool.DocumentationExamples.html
+  name: DocumentationExamples.ACAnalysis
+  nameWithType: DocumentationExamples.ACAnalysis
+  fullName: CircuitTool.DocumentationExamples.ACAnalysis
+  spec.csharp:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.ACAnalysis
+    name: ACAnalysis
+    href: CircuitTool.DocumentationExamples.ACAnalysis.html
+  spec.vb:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.ACAnalysis
+    name: ACAnalysis
+    href: CircuitTool.DocumentationExamples.ACAnalysis.html
+- uid: CircuitTool.DocumentationExamples.EnergyCalculations
+  commentId: T:CircuitTool.DocumentationExamples.EnergyCalculations
+  href: CircuitTool.DocumentationExamples.html
+  name: DocumentationExamples.EnergyCalculations
+  nameWithType: DocumentationExamples.EnergyCalculations
+  fullName: CircuitTool.DocumentationExamples.EnergyCalculations
+  spec.csharp:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.EnergyCalculations
+    name: EnergyCalculations
+    href: CircuitTool.DocumentationExamples.EnergyCalculations.html
+  spec.vb:
+  - uid: CircuitTool.DocumentationExamples
+    name: DocumentationExamples
+    href: CircuitTool.DocumentationExamples.html
+  - name: .
+  - uid: CircuitTool.DocumentationExamples.EnergyCalculations
+    name: EnergyCalculations
+    href: CircuitTool.DocumentationExamples.EnergyCalculations.html
+- uid: CircuitTool.InteractiveTutorials
+  commentId: T:CircuitTool.InteractiveTutorials
+  href: CircuitTool.InteractiveTutorials.html
+  name: InteractiveTutorials
+  nameWithType: InteractiveTutorials
+  fullName: CircuitTool.InteractiveTutorials
+- uid: CircuitTool.UseCaseTemplates
+  commentId: T:CircuitTool.UseCaseTemplates
+  href: CircuitTool.UseCaseTemplates.html
+  name: UseCaseTemplates
+  nameWithType: UseCaseTemplates
+  fullName: CircuitTool.UseCaseTemplates
+- uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
+  commentId: T:CircuitTool.UseCaseTemplates.VoltageDividerDesign
+  href: CircuitTool.UseCaseTemplates.html
+  name: UseCaseTemplates.VoltageDividerDesign
+  nameWithType: UseCaseTemplates.VoltageDividerDesign
+  fullName: CircuitTool.UseCaseTemplates.VoltageDividerDesign
+  spec.csharp:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
+    name: VoltageDividerDesign
+    href: CircuitTool.UseCaseTemplates.VoltageDividerDesign.html
+  spec.vb:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.VoltageDividerDesign
+    name: VoltageDividerDesign
+    href: CircuitTool.UseCaseTemplates.VoltageDividerDesign.html
+- uid: CircuitTool.UseCaseTemplates.FilterDesign
+  commentId: T:CircuitTool.UseCaseTemplates.FilterDesign
+  href: CircuitTool.UseCaseTemplates.html
+  name: UseCaseTemplates.FilterDesign
+  nameWithType: UseCaseTemplates.FilterDesign
+  fullName: CircuitTool.UseCaseTemplates.FilterDesign
+  spec.csharp:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.FilterDesign
+    name: FilterDesign
+    href: CircuitTool.UseCaseTemplates.FilterDesign.html
+  spec.vb:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.FilterDesign
+    name: FilterDesign
+    href: CircuitTool.UseCaseTemplates.FilterDesign.html
+- uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
+  commentId: T:CircuitTool.UseCaseTemplates.LEDResistorCalculator
+  href: CircuitTool.UseCaseTemplates.html
+  name: UseCaseTemplates.LEDResistorCalculator
+  nameWithType: UseCaseTemplates.LEDResistorCalculator
+  fullName: CircuitTool.UseCaseTemplates.LEDResistorCalculator
+  spec.csharp:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
+    name: LEDResistorCalculator
+    href: CircuitTool.UseCaseTemplates.LEDResistorCalculator.html
+  spec.vb:
+  - uid: CircuitTool.UseCaseTemplates
+    name: UseCaseTemplates
+    href: CircuitTool.UseCaseTemplates.html
+  - name: .
+  - uid: CircuitTool.UseCaseTemplates.LEDResistorCalculator
+    name: LEDResistorCalculator
+    href: CircuitTool.UseCaseTemplates.LEDResistorCalculator.html
+- uid: CircuitTool.ArduinoTools
+  commentId: T:CircuitTool.ArduinoTools
+  href: CircuitTool.ArduinoTools.html
+  name: ArduinoTools
+  nameWithType: ArduinoTools
+  fullName: CircuitTool.ArduinoTools
+- uid: CircuitTool.CommunicationProtocolTools
+  commentId: T:CircuitTool.CommunicationProtocolTools
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools
+  nameWithType: CommunicationProtocolTools
+  fullName: CircuitTool.CommunicationProtocolTools
+- uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.I2CConfig
   parent: CircuitTool
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator.LEDArrayResult
-  nameWithType: LEDCalculator.LEDArrayResult
-  fullName: CircuitTool.LEDCalculator.LEDArrayResult
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.I2CConfig
+  nameWithType: CommunicationProtocolTools.I2CConfig
+  fullName: CircuitTool.CommunicationProtocolTools.I2CConfig
   spec.csharp:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDArrayResult
-    name: LEDArrayResult
-    href: CircuitTool.LEDCalculator.LEDArrayResult.html
+  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+    name: I2CConfig
+    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
   spec.vb:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDArrayResult
-    name: LEDArrayResult
-    href: CircuitTool.LEDCalculator.LEDArrayResult.html
-- uid: CircuitTool.LEDCalculator.LEDSpec
-  commentId: T:CircuitTool.LEDCalculator.LEDSpec
+  - uid: CircuitTool.CommunicationProtocolTools.I2CConfig
+    name: I2CConfig
+    href: CircuitTool.CommunicationProtocolTools.I2CConfig.html
+- uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.SPIConfig
   parent: CircuitTool
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator.LEDSpec
-  nameWithType: LEDCalculator.LEDSpec
-  fullName: CircuitTool.LEDCalculator.LEDSpec
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.SPIConfig
+  nameWithType: CommunicationProtocolTools.SPIConfig
+  fullName: CircuitTool.CommunicationProtocolTools.SPIConfig
   spec.csharp:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDSpec
-    name: LEDSpec
-    href: CircuitTool.LEDCalculator.LEDSpec.html
+  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+    name: SPIConfig
+    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
   spec.vb:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDSpec
-    name: LEDSpec
-    href: CircuitTool.LEDCalculator.LEDSpec.html
-- uid: CircuitTool.LEDCalculator.LEDThermalResult
-  commentId: T:CircuitTool.LEDCalculator.LEDThermalResult
+  - uid: CircuitTool.CommunicationProtocolTools.SPIConfig
+    name: SPIConfig
+    href: CircuitTool.CommunicationProtocolTools.SPIConfig.html
+- uid: CircuitTool.CommunicationProtocolTools.SPIMode
+  commentId: T:CircuitTool.CommunicationProtocolTools.SPIMode
   parent: CircuitTool
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator.LEDThermalResult
-  nameWithType: LEDCalculator.LEDThermalResult
-  fullName: CircuitTool.LEDCalculator.LEDThermalResult
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.SPIMode
+  nameWithType: CommunicationProtocolTools.SPIMode
+  fullName: CircuitTool.CommunicationProtocolTools.SPIMode
   spec.csharp:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDThermalResult
-    name: LEDThermalResult
-    href: CircuitTool.LEDCalculator.LEDThermalResult.html
+  - uid: CircuitTool.CommunicationProtocolTools.SPIMode
+    name: SPIMode
+    href: CircuitTool.CommunicationProtocolTools.SPIMode.html
   spec.vb:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDThermalResult
-    name: LEDThermalResult
-    href: CircuitTool.LEDCalculator.LEDThermalResult.html
-- uid: CircuitTool.LEDCalculator.CommonLEDs
-  commentId: T:CircuitTool.LEDCalculator.CommonLEDs
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator.CommonLEDs
-  nameWithType: LEDCalculator.CommonLEDs
-  fullName: CircuitTool.LEDCalculator.CommonLEDs
-  spec.csharp:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
-  - name: .
-  - uid: CircuitTool.LEDCalculator.CommonLEDs
-    name: CommonLEDs
-    href: CircuitTool.LEDCalculator.CommonLEDs.html
-  spec.vb:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
-  - name: .
-  - uid: CircuitTool.LEDCalculator.CommonLEDs
-    name: CommonLEDs
-    href: CircuitTool.LEDCalculator.CommonLEDs.html
-- uid: CircuitTool.LEDCalculator.LEDStripResult
-  commentId: T:CircuitTool.LEDCalculator.LEDStripResult
+  - uid: CircuitTool.CommunicationProtocolTools.SPIMode
+    name: SPIMode
+    href: CircuitTool.CommunicationProtocolTools.SPIMode.html
+- uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+  commentId: T:CircuitTool.CommunicationProtocolTools.UARTConfig
   parent: CircuitTool
-  href: CircuitTool.LEDCalculator.html
-  name: LEDCalculator.LEDStripResult
-  nameWithType: LEDCalculator.LEDStripResult
-  fullName: CircuitTool.LEDCalculator.LEDStripResult
+  href: CircuitTool.CommunicationProtocolTools.html
+  name: CommunicationProtocolTools.UARTConfig
+  nameWithType: CommunicationProtocolTools.UARTConfig
+  fullName: CircuitTool.CommunicationProtocolTools.UARTConfig
   spec.csharp:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDStripResult
-    name: LEDStripResult
-    href: CircuitTool.LEDCalculator.LEDStripResult.html
+  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+    name: UARTConfig
+    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
   spec.vb:
-  - uid: CircuitTool.LEDCalculator
-    name: LEDCalculator
-    href: CircuitTool.LEDCalculator.html
+  - uid: CircuitTool.CommunicationProtocolTools
+    name: CommunicationProtocolTools
+    href: CircuitTool.CommunicationProtocolTools.html
   - name: .
-  - uid: CircuitTool.LEDCalculator.LEDStripResult
-    name: LEDStripResult
-    href: CircuitTool.LEDCalculator.LEDStripResult.html
-- uid: CircuitTool.EnergyConsumptionCalculator
-  commentId: T:CircuitTool.EnergyConsumptionCalculator
-  href: CircuitTool.EnergyConsumptionCalculator.html
-  name: EnergyConsumptionCalculator
-  nameWithType: EnergyConsumptionCalculator
-  fullName: CircuitTool.EnergyConsumptionCalculator
-- uid: CircuitTool.CapacitorCalculator
-  commentId: T:CircuitTool.CapacitorCalculator
-  href: CircuitTool.CapacitorCalculator.html
-  name: CapacitorCalculator
-  nameWithType: CapacitorCalculator
-  fullName: CircuitTool.CapacitorCalculator
-- uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
-  commentId: T:CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  - uid: CircuitTool.CommunicationProtocolTools.UARTConfig
+    name: UARTConfig
+    href: CircuitTool.CommunicationProtocolTools.UARTConfig.html
+- uid: CircuitTool.ComPortTools
+  commentId: T:CircuitTool.ComPortTools
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools
+  nameWithType: ComPortTools
+  fullName: CircuitTool.ComPortTools
+- uid: CircuitTool.ComPortTools.SerialParity
+  commentId: T:CircuitTool.ComPortTools.SerialParity
   parent: CircuitTool
-  href: CircuitTool.CapacitorCalculator.html
-  name: CapacitorCalculator.CapacitorChargeEnergyResult
-  nameWithType: CapacitorCalculator.CapacitorChargeEnergyResult
-  fullName: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialParity
+  nameWithType: ComPortTools.SerialParity
+  fullName: CircuitTool.ComPortTools.SerialParity
   spec.csharp:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
-    name: CapacitorChargeEnergyResult
-    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
   spec.vb:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult
-    name: CapacitorChargeEnergyResult
-    href: CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html
-- uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
-  commentId: T:CircuitTool.CapacitorCalculator.CapacitorBankResult
+  - uid: CircuitTool.ComPortTools.SerialParity
+    name: SerialParity
+    href: CircuitTool.ComPortTools.SerialParity.html
+- uid: CircuitTool.ComPortTools.SerialStopBits
+  commentId: T:CircuitTool.ComPortTools.SerialStopBits
   parent: CircuitTool
-  href: CircuitTool.CapacitorCalculator.html
-  name: CapacitorCalculator.CapacitorBankResult
-  nameWithType: CapacitorCalculator.CapacitorBankResult
-  fullName: CircuitTool.CapacitorCalculator.CapacitorBankResult
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialStopBits
+  nameWithType: ComPortTools.SerialStopBits
+  fullName: CircuitTool.ComPortTools.SerialStopBits
   spec.csharp:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
-    name: CapacitorBankResult
-    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html
   spec.vb:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorBankResult
-    name: CapacitorBankResult
-    href: CircuitTool.CapacitorCalculator.CapacitorBankResult.html
-- uid: CircuitTool.CapacitorCalculator.CapacitorInBank
-  commentId: T:CircuitTool.CapacitorCalculator.CapacitorInBank
-  href: CircuitTool.CapacitorCalculator.html
-  name: CapacitorCalculator.CapacitorInBank
-  nameWithType: CapacitorCalculator.CapacitorInBank
-  fullName: CircuitTool.CapacitorCalculator.CapacitorInBank
-  spec.csharp:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
-  - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorInBank
-    name: CapacitorInBank
-    href: CircuitTool.CapacitorCalculator.CapacitorInBank.html
-  spec.vb:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
-  - name: .
-  - uid: CircuitTool.CapacitorCalculator.CapacitorInBank
-    name: CapacitorInBank
-    href: CircuitTool.CapacitorCalculator.CapacitorInBank.html
-- uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
-  commentId: T:CircuitTool.CapacitorCalculator.RippleCurrentResult
+  - uid: CircuitTool.ComPortTools.SerialStopBits
+    name: SerialStopBits
+    href: CircuitTool.ComPortTools.SerialStopBits.html
+- uid: CircuitTool.ComPortTools.SerialHandshake
+  commentId: T:CircuitTool.ComPortTools.SerialHandshake
   parent: CircuitTool
-  href: CircuitTool.CapacitorCalculator.html
-  name: CapacitorCalculator.RippleCurrentResult
-  nameWithType: CapacitorCalculator.RippleCurrentResult
-  fullName: CircuitTool.CapacitorCalculator.RippleCurrentResult
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialHandshake
+  nameWithType: ComPortTools.SerialHandshake
+  fullName: CircuitTool.ComPortTools.SerialHandshake
   spec.csharp:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
-    name: RippleCurrentResult
-    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html
   spec.vb:
-  - uid: CircuitTool.CapacitorCalculator
-    name: CapacitorCalculator
-    href: CircuitTool.CapacitorCalculator.html
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
   - name: .
-  - uid: CircuitTool.CapacitorCalculator.RippleCurrentResult
-    name: RippleCurrentResult
-    href: CircuitTool.CapacitorCalculator.RippleCurrentResult.html
-- uid: CircuitTool.ElectricityBillCalculator
-  commentId: T:CircuitTool.ElectricityBillCalculator
-  href: CircuitTool.ElectricityBillCalculator.html
-  name: ElectricityBillCalculator
-  nameWithType: ElectricityBillCalculator
-  fullName: CircuitTool.ElectricityBillCalculator
-- uid: CircuitTool.TransmissionLineCalculator
-  commentId: T:CircuitTool.TransmissionLineCalculator
-  href: CircuitTool.TransmissionLineCalculator.html
-  name: TransmissionLineCalculator
-  nameWithType: TransmissionLineCalculator
-  fullName: CircuitTool.TransmissionLineCalculator
-- uid: CircuitTool.SignalProcessingCalculator
-  commentId: T:CircuitTool.SignalProcessingCalculator
-  href: CircuitTool.SignalProcessingCalculator.html
-  name: SignalProcessingCalculator
-  nameWithType: SignalProcessingCalculator
-  fullName: CircuitTool.SignalProcessingCalculator
-- uid: CircuitTool.BeginnerCalculators
-  commentId: T:CircuitTool.BeginnerCalculators
-  href: CircuitTool.BeginnerCalculators.html
-  name: BeginnerCalculators
-  nameWithType: BeginnerCalculators
-  fullName: CircuitTool.BeginnerCalculators
-- uid: CircuitTool.PowerCalculator
-  commentId: T:CircuitTool.PowerCalculator
-  href: CircuitTool.PowerCalculator.html
-  name: PowerCalculator
-  nameWithType: PowerCalculator
-  fullName: CircuitTool.PowerCalculator
+  - uid: CircuitTool.ComPortTools.SerialHandshake
+    name: SerialHandshake
+    href: CircuitTool.ComPortTools.SerialHandshake.html
+- uid: CircuitTool.ComPortTools.SerialConfig
+  commentId: T:CircuitTool.ComPortTools.SerialConfig
+  parent: CircuitTool
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialConfig
+  nameWithType: ComPortTools.SerialConfig
+  fullName: CircuitTool.ComPortTools.SerialConfig
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialConfig
+    name: SerialConfig
+    href: CircuitTool.ComPortTools.SerialConfig.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialConfig
+    name: SerialConfig
+    href: CircuitTool.ComPortTools.SerialConfig.html
+- uid: CircuitTool.ComPortTools.SerialPortInfo
+  commentId: T:CircuitTool.ComPortTools.SerialPortInfo
+  href: CircuitTool.ComPortTools.html
+  name: ComPortTools.SerialPortInfo
+  nameWithType: ComPortTools.SerialPortInfo
+  fullName: CircuitTool.ComPortTools.SerialPortInfo
+  spec.csharp:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialPortInfo
+    name: SerialPortInfo
+    href: CircuitTool.ComPortTools.SerialPortInfo.html
+  spec.vb:
+  - uid: CircuitTool.ComPortTools
+    name: ComPortTools
+    href: CircuitTool.ComPortTools.html
+  - name: .
+  - uid: CircuitTool.ComPortTools.SerialPortInfo
+    name: SerialPortInfo
+    href: CircuitTool.ComPortTools.SerialPortInfo.html
+- uid: CircuitTool.ESP32Tools
+  commentId: T:CircuitTool.ESP32Tools
+  href: CircuitTool.ESP32Tools.html
+  name: ESP32Tools
+  nameWithType: ESP32Tools
+  fullName: CircuitTool.ESP32Tools
+- uid: CircuitTool.WiFiMode
+  commentId: T:CircuitTool.WiFiMode
+  parent: CircuitTool
+  href: CircuitTool.WiFiMode.html
+  name: WiFiMode
+  nameWithType: WiFiMode
+  fullName: CircuitTool.WiFiMode
+- uid: CircuitTool.HardwareDebuggingTools
+  commentId: T:CircuitTool.HardwareDebuggingTools
+  href: CircuitTool.HardwareDebuggingTools.html
+  name: HardwareDebuggingTools
+  nameWithType: HardwareDebuggingTools
+  fullName: CircuitTool.HardwareDebuggingTools
+- uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  commentId: T:CircuitTool.HardwareDebuggingTools.ProblemCategory
+  parent: CircuitTool
+  href: CircuitTool.HardwareDebuggingTools.html
+  name: HardwareDebuggingTools.ProblemCategory
+  nameWithType: HardwareDebuggingTools.ProblemCategory
+  fullName: CircuitTool.HardwareDebuggingTools.ProblemCategory
+  spec.csharp:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+    name: ProblemCategory
+    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html
+  spec.vb:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.ProblemCategory
+    name: ProblemCategory
+    href: CircuitTool.HardwareDebuggingTools.ProblemCategory.html
+- uid: CircuitTool.HardwareDebuggingTools.DebugResult
+  commentId: T:CircuitTool.HardwareDebuggingTools.DebugResult
+  href: CircuitTool.HardwareDebuggingTools.html
+  name: HardwareDebuggingTools.DebugResult
+  nameWithType: HardwareDebuggingTools.DebugResult
+  fullName: CircuitTool.HardwareDebuggingTools.DebugResult
+  spec.csharp:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.DebugResult
+    name: DebugResult
+    href: CircuitTool.HardwareDebuggingTools.DebugResult.html
+  spec.vb:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.DebugResult
+    name: DebugResult
+    href: CircuitTool.HardwareDebuggingTools.DebugResult.html
+- uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
+  commentId: T:CircuitTool.HardwareDebuggingTools.HardwareConfig
+  parent: CircuitTool
+  href: CircuitTool.HardwareDebuggingTools.html
+  name: HardwareDebuggingTools.HardwareConfig
+  nameWithType: HardwareDebuggingTools.HardwareConfig
+  fullName: CircuitTool.HardwareDebuggingTools.HardwareConfig
+  spec.csharp:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
+    name: HardwareConfig
+    href: CircuitTool.HardwareDebuggingTools.HardwareConfig.html
+  spec.vb:
+  - uid: CircuitTool.HardwareDebuggingTools
+    name: HardwareDebuggingTools
+    href: CircuitTool.HardwareDebuggingTools.html
+  - name: .
+  - uid: CircuitTool.HardwareDebuggingTools.HardwareConfig
+    name: HardwareConfig
+    href: CircuitTool.HardwareDebuggingTools.HardwareConfig.html
+- uid: CircuitTool.MotorControlCalculator
+  commentId: T:CircuitTool.MotorControlCalculator
+  href: CircuitTool.MotorControlCalculator.html
+  name: MotorControlCalculator
+  nameWithType: MotorControlCalculator
+  fullName: CircuitTool.MotorControlCalculator
+- uid: CircuitTool.MotorControlCalculator.MotorType
+  commentId: T:CircuitTool.MotorControlCalculator.MotorType
+  parent: CircuitTool
+  href: CircuitTool.MotorControlCalculator.html
+  name: MotorControlCalculator.MotorType
+  nameWithType: MotorControlCalculator.MotorType
+  fullName: CircuitTool.MotorControlCalculator.MotorType
+  spec.csharp:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html
+  spec.vb:
+  - uid: CircuitTool.MotorControlCalculator
+    name: MotorControlCalculator
+    href: CircuitTool.MotorControlCalculator.html
+  - name: .
+  - uid: CircuitTool.MotorControlCalculator.MotorType
+    name: MotorType
+    href: CircuitTool.MotorControlCalculator.MotorType.html
+- uid: CircuitTool.PCBDesignCalculator
+  commentId: T:CircuitTool.PCBDesignCalculator
+  href: CircuitTool.PCBDesignCalculator.html
+  name: PCBDesignCalculator
+  nameWithType: PCBDesignCalculator
+  fullName: CircuitTool.PCBDesignCalculator
+- uid: CircuitTool.PCBDesignCalculator.PCBStackup
+  commentId: T:CircuitTool.PCBDesignCalculator.PCBStackup
+  parent: CircuitTool
+  href: CircuitTool.PCBDesignCalculator.html
+  name: PCBDesignCalculator.PCBStackup
+  nameWithType: PCBDesignCalculator.PCBStackup
+  fullName: CircuitTool.PCBDesignCalculator.PCBStackup
+  spec.csharp:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
+  spec.vb:
+  - uid: CircuitTool.PCBDesignCalculator
+    name: PCBDesignCalculator
+    href: CircuitTool.PCBDesignCalculator.html
+  - name: .
+  - uid: CircuitTool.PCBDesignCalculator.PCBStackup
+    name: PCBStackup
+    href: CircuitTool.PCBDesignCalculator.PCBStackup.html
+- uid: CircuitTool.PowerSupplyCalculator
+  commentId: T:CircuitTool.PowerSupplyCalculator
+  href: CircuitTool.PowerSupplyCalculator.html
+  name: PowerSupplyCalculator
+  nameWithType: PowerSupplyCalculator
+  fullName: CircuitTool.PowerSupplyCalculator
+- uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+  commentId: T:CircuitTool.PowerSupplyCalculator.PSUTopology
+  parent: CircuitTool
+  href: CircuitTool.PowerSupplyCalculator.html
+  name: PowerSupplyCalculator.PSUTopology
+  nameWithType: PowerSupplyCalculator.PSUTopology
+  fullName: CircuitTool.PowerSupplyCalculator.PSUTopology
+  spec.csharp:
+  - uid: CircuitTool.PowerSupplyCalculator
+    name: PowerSupplyCalculator
+    href: CircuitTool.PowerSupplyCalculator.html
+  - name: .
+  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+    name: PSUTopology
+    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html
+  spec.vb:
+  - uid: CircuitTool.PowerSupplyCalculator
+    name: PowerSupplyCalculator
+    href: CircuitTool.PowerSupplyCalculator.html
+  - name: .
+  - uid: CircuitTool.PowerSupplyCalculator.PSUTopology
+    name: PSUTopology
+    href: CircuitTool.PowerSupplyCalculator.PSUTopology.html
+- uid: CircuitTool.RaspberryPiTools
+  commentId: T:CircuitTool.RaspberryPiTools
+  href: CircuitTool.RaspberryPiTools.html
+  name: RaspberryPiTools
+  nameWithType: RaspberryPiTools
+  fullName: CircuitTool.RaspberryPiTools
+- uid: CircuitTool.RaspberryPiTools.GPIOPin
+  commentId: T:CircuitTool.RaspberryPiTools.GPIOPin
+  parent: CircuitTool
+  href: CircuitTool.RaspberryPiTools.html
+  name: RaspberryPiTools.GPIOPin
+  nameWithType: RaspberryPiTools.GPIOPin
+  fullName: CircuitTool.RaspberryPiTools.GPIOPin
+  spec.csharp:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.GPIOPin
+    name: GPIOPin
+    href: CircuitTool.RaspberryPiTools.GPIOPin.html
+  spec.vb:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.GPIOPin
+    name: GPIOPin
+    href: CircuitTool.RaspberryPiTools.GPIOPin.html
+- uid: CircuitTool.RaspberryPiTools.PWMConfig
+  commentId: T:CircuitTool.RaspberryPiTools.PWMConfig
+  href: CircuitTool.RaspberryPiTools.html
+  name: RaspberryPiTools.PWMConfig
+  nameWithType: RaspberryPiTools.PWMConfig
+  fullName: CircuitTool.RaspberryPiTools.PWMConfig
+  spec.csharp:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.PWMConfig
+    name: PWMConfig
+    href: CircuitTool.RaspberryPiTools.PWMConfig.html
+  spec.vb:
+  - uid: CircuitTool.RaspberryPiTools
+    name: RaspberryPiTools
+    href: CircuitTool.RaspberryPiTools.html
+  - name: .
+  - uid: CircuitTool.RaspberryPiTools.PWMConfig
+    name: PWMConfig
+    href: CircuitTool.RaspberryPiTools.PWMConfig.html
+- uid: CircuitTool.RaspberryPiModel
+  commentId: T:CircuitTool.RaspberryPiModel
+  parent: CircuitTool
+  href: CircuitTool.RaspberryPiModel.html
+  name: RaspberryPiModel
+  nameWithType: RaspberryPiModel
+  fullName: CircuitTool.RaspberryPiModel
+- uid: CircuitTool.SensorInterfaceCalculator
+  commentId: T:CircuitTool.SensorInterfaceCalculator
+  href: CircuitTool.SensorInterfaceCalculator.html
+  name: SensorInterfaceCalculator
+  nameWithType: SensorInterfaceCalculator
+  fullName: CircuitTool.SensorInterfaceCalculator
+- uid: CircuitTool.SensorInterfaceCalculator.SensorType
+  commentId: T:CircuitTool.SensorInterfaceCalculator.SensorType
+  parent: CircuitTool
+  href: CircuitTool.SensorInterfaceCalculator.html
+  name: SensorInterfaceCalculator.SensorType
+  nameWithType: SensorInterfaceCalculator.SensorType
+  fullName: CircuitTool.SensorInterfaceCalculator.SensorType
+  spec.csharp:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
+  spec.vb:
+  - uid: CircuitTool.SensorInterfaceCalculator
+    name: SensorInterfaceCalculator
+    href: CircuitTool.SensorInterfaceCalculator.html
+  - name: .
+  - uid: CircuitTool.SensorInterfaceCalculator.SensorType
+    name: SensorType
+    href: CircuitTool.SensorInterfaceCalculator.SensorType.html
 - uid: CircuitTool
   commentId: N:CircuitTool
   href: CircuitTool.html

@@ -28,8 +28,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorChargeEnergyResult
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 158
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Comprehensive capacitor charge and energy analysis
   example: []
@@ -63,8 +65,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Capacitance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 160
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Capacitance { get; set; }
@@ -90,8 +94,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 161
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Voltage { get; set; }
@@ -117,8 +123,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Charge
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 162
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Charge { get; set; }
@@ -144,8 +152,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Energy
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 163
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double Energy { get; set; }
@@ -171,8 +181,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyWattHours
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 164
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double EnergyWattHours { get; set; }
@@ -198,8 +210,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EnergyDensity
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 165
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double EnergyDensity { get; set; }
@@ -225,8 +239,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SpecificEnergy
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 166
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double SpecificEnergy { get; set; }
@@ -252,8 +268,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ChargeDensity
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 167
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ChargeDensity { get; set; }
@@ -279,8 +297,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ElectricField
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 168
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ElectricField { get; set; }
@@ -306,8 +326,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SafetyNotes
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 169
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<string> SafetyNotes { get; set; }

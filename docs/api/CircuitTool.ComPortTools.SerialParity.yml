@@ -23,10 +23,12 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SerialParity
-    path: src/Hardware/ComPortTools.cs
-    startLine: 81
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
-  summary: Serial port parity options (compatibility for older frameworks)
+  summary: Serial port parity options
   example: []
   syntax:
     content: public enum ComPortTools.SerialParity
@@ -48,8 +50,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: None
-    path: src/Hardware/ComPortTools.cs
-    startLine: 83
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: None = 0
@@ -72,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Odd
-    path: src/Hardware/ComPortTools.cs
-    startLine: 84
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 50
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Odd = 1
@@ -96,8 +102,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Even
-    path: src/Hardware/ComPortTools.cs
-    startLine: 85
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 51
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Even = 2
@@ -120,8 +128,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Mark
-    path: src/Hardware/ComPortTools.cs
-    startLine: 86
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Mark = 3
@@ -144,8 +154,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Space
-    path: src/Hardware/ComPortTools.cs
-    startLine: 87
+    path: ../src/Hardware/ComPortTools.cs
+    startLine: 53
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: Space = 4

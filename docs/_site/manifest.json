@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/workspaces/CircuitTool",
+  "source_base_path": "/workspaces/CircuitTool/config",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -12,17 +12,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "AUTOMATED_RELEASE_ENHANCEMENT_SUMMARY.md",
-      "output": {
-        ".html": {
-          "relative_path": "AUTOMATED_RELEASE_ENHANCEMENT_SUMMARY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "CHANGELOG.md",
+      "source_relative_path": "../CHANGELOG.md",
       "output": {
         ".html": {
           "relative_path": "CHANGELOG.html"
@@ -32,37 +22,17 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "DOCUMENTATION.md",
+      "source_relative_path": "../PROJECT_STRUCTURE.md",
       "output": {
         ".html": {
-          "relative_path": "DOCUMENTATION.html"
+          "relative_path": "PROJECT_STRUCTURE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "GITHUB_RELEASE_TEMPLATE.md",
-      "output": {
-        ".html": {
-          "relative_path": "GITHUB_RELEASE_TEMPLATE.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "PROJECT_CODE_MAP.md",
-      "output": {
-        ".html": {
-          "relative_path": "PROJECT_CODE_MAP.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
+      "source_relative_path": "../README.md",
       "output": {
         ".html": {
           "relative_path": "README.html"
@@ -71,8 +41,38 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "../docs/DOCUMENTATION.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/DOCUMENTATION.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../docs/GITHUB_RELEASE_TEMPLATE.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/GITHUB_RELEASE_TEMPLATE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../docs/PROJECT_CODE_MAP.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PROJECT_CODE_MAP.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ACCircuitCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ACCircuitCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ACCircuitCalculator.html"
@@ -82,11 +82,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ACCircuitCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ACCircuitCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for AC circuit analysis and characteristics.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ACCircuitCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for AC circuit analysis and characteristics.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ACCurrent.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ACCurrent.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ACCurrent.html"
@@ -96,11 +96,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ACCurrent",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ACCurrent.yml\" sourcestartlinenumber=\"1\">Represents an AC current with magnitude and phase</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ACCurrent.yml\" sourcestartlinenumber=\"1\">Represents an AC current with magnitude and phase</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ACVoltage.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ACVoltage.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ACVoltage.html"
@@ -110,11 +110,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ACVoltage",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ACVoltage.yml\" sourcestartlinenumber=\"1\">Represents an AC voltage with magnitude and phase</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ACVoltage.yml\" sourcestartlinenumber=\"1\">Represents an AC voltage with magnitude and phase</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Admittance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Admittance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Admittance.html"
@@ -124,11 +124,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Admittance",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Admittance.yml\" sourcestartlinenumber=\"1\">Represents complex admittance for AC circuit analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Admittance.yml\" sourcestartlinenumber=\"1\">Represents complex admittance for AC circuit analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.DesignCenteringResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.DesignCenteringResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.DesignCenteringResult.html"
@@ -138,11 +138,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.DesignCenteringResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.DesignCenteringResult.yml\" sourcestartlinenumber=\"1\">Results from design centering optimization</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.DesignCenteringResult.yml\" sourcestartlinenumber=\"1\">Results from design centering optimization</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.SensitivityResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.SensitivityResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.SensitivityResult.html"
@@ -152,11 +152,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.SensitivityResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.SensitivityResult.yml\" sourcestartlinenumber=\"1\">Results from sensitivity analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.SensitivityResult.yml\" sourcestartlinenumber=\"1\">Results from sensitivity analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Capacitor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.StandardTolerances.Capacitor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Capacitor.html"
@@ -166,11 +166,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.StandardTolerances.Capacitor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.StandardTolerances.Capacitor.yml\" sourcestartlinenumber=\"1\">Standard capacitor tolerances</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.StandardTolerances.Capacitor.yml\" sourcestartlinenumber=\"1\">Standard capacitor tolerances</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Inductor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.StandardTolerances.Inductor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Inductor.html"
@@ -180,11 +180,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.StandardTolerances.Inductor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.StandardTolerances.Inductor.yml\" sourcestartlinenumber=\"1\">Standard inductor tolerances</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.StandardTolerances.Inductor.yml\" sourcestartlinenumber=\"1\">Standard inductor tolerances</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Resistor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.StandardTolerances.Resistor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.Resistor.html"
@@ -194,11 +194,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.StandardTolerances.Resistor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.StandardTolerances.Resistor.yml\" sourcestartlinenumber=\"1\">Standard resistor tolerances</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.StandardTolerances.Resistor.yml\" sourcestartlinenumber=\"1\">Standard resistor tolerances</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.StandardTolerances.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.StandardTolerances.html"
@@ -208,11 +208,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.StandardTolerances",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.StandardTolerances.yml\" sourcestartlinenumber=\"1\">Component tolerance standards for common component types</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.StandardTolerances.yml\" sourcestartlinenumber=\"1\">Component tolerance standards for common component types</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.StatisticalResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.StatisticalResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.StatisticalResult.html"
@@ -222,11 +222,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.StatisticalResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.StatisticalResult.yml\" sourcestartlinenumber=\"1\">Results from statistical analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.StatisticalResult.yml\" sourcestartlinenumber=\"1\">Results from statistical analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.ToleranceAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.ToleranceAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.ToleranceAnalysis.html"
@@ -236,11 +236,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.ToleranceAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.ToleranceAnalysis.yml\" sourcestartlinenumber=\"1\">Provides tolerance and error analysis for electrical circuits</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.ToleranceAnalysis.yml\" sourcestartlinenumber=\"1\">Provides tolerance and error analysis for electrical circuits</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.WorstCaseResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.WorstCaseResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.WorstCaseResult.html"
@@ -250,11 +250,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Analysis.WorstCaseResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Analysis.WorstCaseResult.yml\" sourcestartlinenumber=\"1\">Results from worst-case analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Analysis.WorstCaseResult.yml\" sourcestartlinenumber=\"1\">Results from worst-case analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Analysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Analysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Analysis.html"
@@ -268,7 +268,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.AntennaCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.AntennaCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.AntennaCalculator.html"
@@ -278,11 +278,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.AntennaCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.AntennaCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for antenna design and analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.AntennaCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for antenna design and analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ArduinoTools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ArduinoTools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ArduinoTools.html"
@@ -292,11 +292,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ArduinoTools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ArduinoTools.yml\" sourcestartlinenumber=\"1\">Provides Arduino-specific calculations and utilities</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ArduinoTools.yml\" sourcestartlinenumber=\"1\">Provides Arduino-specific calculations and utilities</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.AsyncCalculations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.AsyncCalculations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.AsyncCalculations.html"
@@ -306,11 +306,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Async.AsyncCalculations",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Async.AsyncCalculations.yml\" sourcestartlinenumber=\"1\">Provides asynchronous versions of complex electrical calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Async.AsyncCalculations.yml\" sourcestartlinenumber=\"1\">Provides asynchronous versions of complex electrical calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.FrequencyResponse.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.FrequencyResponse.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.FrequencyResponse.html"
@@ -320,11 +320,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Async.FrequencyResponse",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Async.FrequencyResponse.yml\" sourcestartlinenumber=\"1\">Results from frequency response analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Async.FrequencyResponse.yml\" sourcestartlinenumber=\"1\">Results from frequency response analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.HarmonicAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.HarmonicAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.HarmonicAnalysis.html"
@@ -334,11 +334,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Async.HarmonicAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Async.HarmonicAnalysis.yml\" sourcestartlinenumber=\"1\">Results from harmonic analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Async.HarmonicAnalysis.yml\" sourcestartlinenumber=\"1\">Results from harmonic analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.MonteCarloResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.MonteCarloResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.MonteCarloResult.html"
@@ -348,11 +348,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Async.MonteCarloResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Async.MonteCarloResult.yml\" sourcestartlinenumber=\"1\">Results from Monte Carlo analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Async.MonteCarloResult.yml\" sourcestartlinenumber=\"1\">Results from Monte Carlo analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.ThermalResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.ThermalResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.ThermalResult.html"
@@ -362,11 +362,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Async.ThermalResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Async.ThermalResult.yml\" sourcestartlinenumber=\"1\">Results from thermal analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Async.ThermalResult.yml\" sourcestartlinenumber=\"1\">Results from thermal analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Async.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Async.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Async.html"
@@ -380,7 +380,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.BeginnerCalculators.yml",
+      "source_relative_path": "../docs/api/CircuitTool.BeginnerCalculators.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.BeginnerCalculators.html"
@@ -390,11 +390,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.BeginnerCalculators",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.BeginnerCalculators.yml\" sourcestartlinenumber=\"1\">Popular calculators for electronics beginners</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.BeginnerCalculators.yml\" sourcestartlinenumber=\"1\">Popular calculators for electronics beginners</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.html"
@@ -404,11 +404,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.yml\" sourcestartlinenumber=\"1\">Capacitance conversion result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceConversionResult.yml\" sourcestartlinenumber=\"1\">Capacitance conversion result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.html"
@@ -418,11 +418,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.yml\" sourcestartlinenumber=\"1\">Capacitance units enumeration</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitanceUnit.yml\" sourcestartlinenumber=\"1\">Capacitance units enumeration</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.html"
@@ -432,11 +432,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.yml\" sourcestartlinenumber=\"1\">Energy and charge calculation result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.CapacitorEnergyChargeResult.yml\" sourcestartlinenumber=\"1\">Energy and charge calculation result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.html"
@@ -446,11 +446,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor charging time to reach a percentage of final voltage</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ChargingTimeResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor charging time to reach a percentage of final voltage</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.html"
@@ -460,11 +460,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.yml\" sourcestartlinenumber=\"1\">Calculate equivalent series resistance (ESR) effects</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.ESRAnalysisResult.yml\" sourcestartlinenumber=\"1\">Calculate equivalent series resistance (ESR) effects</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.html"
@@ -474,11 +474,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitanceUnitConverter",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.yml\" sourcestartlinenumber=\"1\">Comprehensive calculator for capacitance unit conversions and related calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitanceUnitConverter.yml\" sourcestartlinenumber=\"1\">Comprehensive calculator for capacitance unit conversions and related calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult.html"
@@ -488,11 +488,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult.yml\" sourcestartlinenumber=\"1\">Capacitor code decode result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeResult.yml\" sourcestartlinenumber=\"1\">Capacitor code decode result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.html"
@@ -502,11 +502,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.yml\" sourcestartlinenumber=\"1\">Capacitor code types</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorCodeType.yml\" sourcestartlinenumber=\"1\">Capacitor code types</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult.html"
@@ -516,11 +516,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult.yml\" sourcestartlinenumber=\"1\">Encode capacitance value to standard codes</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorEncodingResult.yml\" sourcestartlinenumber=\"1\">Encode capacitance value to standard codes</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.html"
@@ -530,11 +530,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor impedance at frequency</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.CapacitorImpedanceResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor impedance at frequency</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode.html"
@@ -544,11 +544,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode.yml\" sourcestartlinenumber=\"1\">Temperature coefficient codes</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.TempCoeffCode.yml\" sourcestartlinenumber=\"1\">Temperature coefficient codes</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.html"
@@ -558,11 +558,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.yml\" sourcestartlinenumber=\"1\">Capacitor voltage rating codes</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.VoltageCode.yml\" sourcestartlinenumber=\"1\">Capacitor voltage rating codes</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.html"
@@ -572,11 +572,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.CapacitorCodeCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for decoding and encoding capacitor codes (ceramic, electrolytic, tantalum)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.CapacitorCodeCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for decoding and encoding capacitor codes (ceramic, electrolytic, tantalum)</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ComponentCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ComponentCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ComponentCalculator.html"
@@ -586,11 +586,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ComponentCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ComponentCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for resistors, capacitors, and inductors.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ComponentCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for resistors, capacitors, and inductors.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ModbusAddressFormat.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ModbusAddressFormat.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ModbusAddressFormat.html"
@@ -604,7 +604,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ModbusCommunicationCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ModbusCommunicationCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ModbusCommunicationCalculator.html"
@@ -614,11 +614,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ModbusCommunicationCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ModbusCommunicationCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for Modbus communication parameters and frame analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ModbusCommunicationCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for Modbus communication parameters and frame analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ModbusDataType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ModbusDataType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ModbusDataType.html"
@@ -632,7 +632,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ModbusDevice.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ModbusDevice.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ModbusDevice.html"
@@ -646,7 +646,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ModbusNetworkAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ModbusNetworkAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ModbusNetworkAnalysis.html"
@@ -660,7 +660,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.html"
@@ -670,11 +670,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.yml\" sourcestartlinenumber=\"1\">Calculate power rating required for resistor</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.PowerRatingResult.yml\" sourcestartlinenumber=\"1\">Calculate power rating required for resistor</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.html"
@@ -684,11 +684,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.yml\" sourcestartlinenumber=\"1\">Resistor color bands</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColor.yml\" sourcestartlinenumber=\"1\">Resistor color bands</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.html"
@@ -698,11 +698,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.yml\" sourcestartlinenumber=\"1\">Result of resistor color code calculation</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ResistorColorResult.yml\" sourcestartlinenumber=\"1\">Result of resistor color code calculation</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.html"
@@ -712,11 +712,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.yml\" sourcestartlinenumber=\"1\">Get nearest standard resistor value (E12, E24, E96 series)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.StandardResistorResult.yml\" sourcestartlinenumber=\"1\">Get nearest standard resistor value (E12, E24, E96 series)</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.html"
@@ -726,11 +726,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.yml\" sourcestartlinenumber=\"1\">Temperature coefficient colors</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.TempCoeffColor.yml\" sourcestartlinenumber=\"1\">Temperature coefficient colors</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.html"
@@ -740,11 +740,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.yml\" sourcestartlinenumber=\"1\">Resistor tolerance values</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.ToleranceColor.yml\" sourcestartlinenumber=\"1\">Resistor tolerance values</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.html"
@@ -754,11 +754,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.ResistorColorCodeCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for resistor color code encoding and decoding</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.ResistorColorCodeCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for resistor color code encoding and decoding</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.FlowControlType.html"
@@ -772,7 +772,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.ParityType.html"
@@ -786,7 +786,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.StopBitsType.html"
@@ -800,7 +800,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis.html"
@@ -810,11 +810,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis.yml\" sourcestartlinenumber=\"1\">UART buffer analysis results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTBufferAnalysis.yml\" sourcestartlinenumber=\"1\">UART buffer analysis results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis.html"
@@ -824,11 +824,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis.yml\" sourcestartlinenumber=\"1\">Cable length analysis for UART</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTCableAnalysis.yml\" sourcestartlinenumber=\"1\">Cable length analysis for UART</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig.html"
@@ -838,11 +838,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig.yml\" sourcestartlinenumber=\"1\">Configuration for UART communication</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTConfig.yml\" sourcestartlinenumber=\"1\">Configuration for UART communication</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.html"
@@ -852,11 +852,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.yml\" sourcestartlinenumber=\"1\">Calculate UART error probability</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTErrorAnalysis.yml\" sourcestartlinenumber=\"1\">Calculate UART error probability</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult.html"
@@ -866,11 +866,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult.yml\" sourcestartlinenumber=\"1\">UART timing analysis results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.UARTTimingResult.yml\" sourcestartlinenumber=\"1\">UART timing analysis results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.html"
@@ -880,11 +880,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Calculators.UARTCommunicationCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for UART communication parameters and timing analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Calculators.UARTCommunicationCalculator.yml\" sourcestartlinenumber=\"1\">Calculator for UART communication parameters and timing analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Calculators.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Calculators.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Calculators.html"
@@ -898,7 +898,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorBankResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CapacitorCalculator.CapacitorBankResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorBankResult.html"
@@ -908,11 +908,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CapacitorCalculator.CapacitorBankResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CapacitorCalculator.CapacitorBankResult.yml\" sourcestartlinenumber=\"1\">Capacitor bank analysis for series and parallel combinations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CapacitorCalculator.CapacitorBankResult.yml\" sourcestartlinenumber=\"1\">Capacitor bank analysis for series and parallel combinations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.html"
@@ -922,11 +922,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.yml\" sourcestartlinenumber=\"1\">Comprehensive capacitor charge and energy analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CapacitorCalculator.CapacitorChargeEnergyResult.yml\" sourcestartlinenumber=\"1\">Comprehensive capacitor charge and energy analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorInBank.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CapacitorCalculator.CapacitorInBank.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CapacitorCalculator.CapacitorInBank.html"
@@ -936,11 +936,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CapacitorCalculator.CapacitorInBank",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CapacitorCalculator.CapacitorInBank.yml\" sourcestartlinenumber=\"1\">Individual capacitor in a bank</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CapacitorCalculator.CapacitorInBank.yml\" sourcestartlinenumber=\"1\">Individual capacitor in a bank</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CapacitorCalculator.RippleCurrentResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CapacitorCalculator.RippleCurrentResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CapacitorCalculator.RippleCurrentResult.html"
@@ -950,11 +950,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CapacitorCalculator.RippleCurrentResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CapacitorCalculator.RippleCurrentResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor ripple current handling</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CapacitorCalculator.RippleCurrentResult.yml\" sourcestartlinenumber=\"1\">Calculate capacitor ripple current handling</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CapacitorCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CapacitorCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CapacitorCalculator.html"
@@ -964,11 +964,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CapacitorCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CapacitorCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CapacitorCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for capacitor circuit calculations, including reactance, energy, time constants, and more.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.Capacitor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.Capacitor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.Capacitor.html"
@@ -978,11 +978,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.Capacitor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.Capacitor.yml\" sourcestartlinenumber=\"1\">Represents a capacitor component</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.Capacitor.yml\" sourcestartlinenumber=\"1\">Represents a capacitor component</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.Circuit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.Circuit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.Circuit.html"
@@ -992,11 +992,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.Circuit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.Circuit.yml\" sourcestartlinenumber=\"1\">Represents a complete circuit with analysis capabilities</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.Circuit.yml\" sourcestartlinenumber=\"1\">Represents a complete circuit with analysis capabilities</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.CircuitBuilder.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.CircuitBuilder.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.CircuitBuilder.html"
@@ -1006,11 +1006,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.CircuitBuilder",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.CircuitBuilder.yml\" sourcestartlinenumber=\"1\">Fluent API for building circuits</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.CircuitBuilder.yml\" sourcestartlinenumber=\"1\">Fluent API for building circuits</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.CircuitResponse.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.CircuitResponse.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.CircuitResponse.html"
@@ -1020,11 +1020,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.CircuitResponse",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.CircuitResponse.yml\" sourcestartlinenumber=\"1\">Represents the response of a circuit to an input signal</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.CircuitResponse.yml\" sourcestartlinenumber=\"1\">Represents the response of a circuit to an input signal</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.ComplexPower.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.ComplexPower.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.ComplexPower.html"
@@ -1034,11 +1034,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.ComplexPower",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.ComplexPower.yml\" sourcestartlinenumber=\"1\">Represents complex power (apparent, real, and reactive power)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.ComplexPower.yml\" sourcestartlinenumber=\"1\">Represents complex power (apparent, real, and reactive power)</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.Component.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.Component.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.Component.html"
@@ -1048,11 +1048,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.Component",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.Component.yml\" sourcestartlinenumber=\"1\">Represents a circuit component</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.Component.yml\" sourcestartlinenumber=\"1\">Represents a circuit component</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.ComponentConnection.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.ComponentConnection.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.ComponentConnection.html"
@@ -1062,11 +1062,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.ComponentConnection",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.ComponentConnection.yml\" sourcestartlinenumber=\"1\">Represents a connection between components</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.ComponentConnection.yml\" sourcestartlinenumber=\"1\">Represents a connection between components</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.ConnectionType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.ConnectionType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.ConnectionType.html"
@@ -1076,11 +1076,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.ConnectionType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.ConnectionType.yml\" sourcestartlinenumber=\"1\">Represents how components are connected</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.ConnectionType.yml\" sourcestartlinenumber=\"1\">Represents how components are connected</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.Inductor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.Inductor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.Inductor.html"
@@ -1090,11 +1090,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.Inductor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.Inductor.yml\" sourcestartlinenumber=\"1\">Represents an inductor component</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.Inductor.yml\" sourcestartlinenumber=\"1\">Represents an inductor component</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.Resistor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.Resistor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.Resistor.html"
@@ -1104,11 +1104,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CircuitBuilder.Resistor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CircuitBuilder.Resistor.yml\" sourcestartlinenumber=\"1\">Represents a resistor component</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CircuitBuilder.Resistor.yml\" sourcestartlinenumber=\"1\">Represents a resistor component</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitBuilder.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitBuilder.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitBuilder.html"
@@ -1122,7 +1122,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CircuitCalculations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CircuitCalculations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CircuitCalculations.html"
@@ -1136,7 +1136,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.SerialConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.SerialConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.SerialConfig.html"
@@ -1146,11 +1146,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools.SerialConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.SerialConfig.yml\" sourcestartlinenumber=\"1\">Serial port configuration</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.SerialConfig.yml\" sourcestartlinenumber=\"1\">Serial port configuration</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.SerialHandshake.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.SerialHandshake.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.SerialHandshake.html"
@@ -1160,11 +1160,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools.SerialHandshake",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.SerialHandshake.yml\" sourcestartlinenumber=\"1\">Serial port handshake options (compatibility for older frameworks)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.SerialHandshake.yml\" sourcestartlinenumber=\"1\">Serial port handshake options</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.SerialParity.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.SerialParity.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.SerialParity.html"
@@ -1174,11 +1174,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools.SerialParity",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.SerialParity.yml\" sourcestartlinenumber=\"1\">Serial port parity options (compatibility for older frameworks)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.SerialParity.yml\" sourcestartlinenumber=\"1\">Serial port parity options</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.SerialPortInfo.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.SerialPortInfo.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.SerialPortInfo.html"
@@ -1188,11 +1188,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools.SerialPortInfo",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.SerialPortInfo.yml\" sourcestartlinenumber=\"1\">Serial port information</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.SerialPortInfo.yml\" sourcestartlinenumber=\"1\">Serial port information</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.SerialStopBits.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.SerialStopBits.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.SerialStopBits.html"
@@ -1202,11 +1202,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools.SerialStopBits",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.SerialStopBits.yml\" sourcestartlinenumber=\"1\">Serial port stop bits options (compatibility for older frameworks)</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.SerialStopBits.yml\" sourcestartlinenumber=\"1\">Serial port stop bits options</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ComPortTools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ComPortTools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ComPortTools.html"
@@ -1216,11 +1216,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ComPortTools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ComPortTools.yml\" sourcestartlinenumber=\"1\">Provides comprehensive COM port utilities for hardware communication and monitoring</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ComPortTools.yml\" sourcestartlinenumber=\"1\">Provides comprehensive COM port utilities for hardware communication and monitoring</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.I2CConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CommunicationProtocolTools.I2CConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.I2CConfig.html"
@@ -1230,11 +1230,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CommunicationProtocolTools.I2CConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CommunicationProtocolTools.I2CConfig.yml\" sourcestartlinenumber=\"1\">I2C communication parameters</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CommunicationProtocolTools.I2CConfig.yml\" sourcestartlinenumber=\"1\">I2C communication parameters</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.SPIConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CommunicationProtocolTools.SPIConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.SPIConfig.html"
@@ -1244,11 +1244,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CommunicationProtocolTools.SPIConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CommunicationProtocolTools.SPIConfig.yml\" sourcestartlinenumber=\"1\">SPI communication parameters</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CommunicationProtocolTools.SPIConfig.yml\" sourcestartlinenumber=\"1\">SPI communication parameters</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.SPIMode.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CommunicationProtocolTools.SPIMode.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.SPIMode.html"
@@ -1258,11 +1258,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CommunicationProtocolTools.SPIMode",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CommunicationProtocolTools.SPIMode.yml\" sourcestartlinenumber=\"1\">SPI communication modes</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CommunicationProtocolTools.SPIMode.yml\" sourcestartlinenumber=\"1\">SPI communication modes</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.UARTConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CommunicationProtocolTools.UARTConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.UARTConfig.html"
@@ -1272,11 +1272,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CommunicationProtocolTools.UARTConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CommunicationProtocolTools.UARTConfig.yml\" sourcestartlinenumber=\"1\">UART communication parameters</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CommunicationProtocolTools.UARTConfig.yml\" sourcestartlinenumber=\"1\">UART communication parameters</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.CommunicationProtocolTools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.CommunicationProtocolTools.html"
@@ -1286,11 +1286,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.CommunicationProtocolTools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.CommunicationProtocolTools.yml\" sourcestartlinenumber=\"1\">Provides tools and calculators for various hardware communication protocols</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.CommunicationProtocolTools.yml\" sourcestartlinenumber=\"1\">Provides tools and calculators for various hardware communication protocols</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DigitalCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DigitalCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DigitalCalculator.html"
@@ -1300,11 +1300,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DigitalCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DigitalCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for digital circuit design and analysis.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DigitalCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for digital circuit design and analysis.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DocumentationExamples.ACAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DocumentationExamples.ACAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DocumentationExamples.ACAnalysis.html"
@@ -1314,11 +1314,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DocumentationExamples.ACAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DocumentationExamples.ACAnalysis.yml\" sourcestartlinenumber=\"1\">AC circuit analysis example</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DocumentationExamples.ACAnalysis.yml\" sourcestartlinenumber=\"1\">AC circuit analysis example</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DocumentationExamples.BasicOhmsLaw.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DocumentationExamples.BasicOhmsLaw.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DocumentationExamples.BasicOhmsLaw.html"
@@ -1328,11 +1328,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DocumentationExamples.BasicOhmsLaw",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DocumentationExamples.BasicOhmsLaw.yml\" sourcestartlinenumber=\"1\">Basic Ohm's Law calculations example</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DocumentationExamples.BasicOhmsLaw.yml\" sourcestartlinenumber=\"1\">Basic Ohm's Law calculations example</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DocumentationExamples.CircuitBuilding.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DocumentationExamples.CircuitBuilding.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DocumentationExamples.CircuitBuilding.html"
@@ -1342,11 +1342,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DocumentationExamples.CircuitBuilding",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DocumentationExamples.CircuitBuilding.yml\" sourcestartlinenumber=\"1\">Circuit building example using basic calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DocumentationExamples.CircuitBuilding.yml\" sourcestartlinenumber=\"1\">Circuit building example using basic calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DocumentationExamples.EnergyCalculations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DocumentationExamples.EnergyCalculations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DocumentationExamples.EnergyCalculations.html"
@@ -1356,11 +1356,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DocumentationExamples.EnergyCalculations",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DocumentationExamples.EnergyCalculations.yml\" sourcestartlinenumber=\"1\">Energy calculation example</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DocumentationExamples.EnergyCalculations.yml\" sourcestartlinenumber=\"1\">Energy calculation example</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.DocumentationExamples.yml",
+      "source_relative_path": "../docs/api/CircuitTool.DocumentationExamples.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.DocumentationExamples.html"
@@ -1370,11 +1370,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.DocumentationExamples",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.DocumentationExamples.yml\" sourcestartlinenumber=\"1\">Interactive documentation examples demonstrating common use cases</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.DocumentationExamples.yml\" sourcestartlinenumber=\"1\">Interactive documentation examples demonstrating common use cases</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.EMCCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.EMCCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.EMCCalculator.html"
@@ -1384,11 +1384,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.EMCCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.EMCCalculator.yml\" sourcestartlinenumber=\"1\">Provides electromagnetic compatibility (EMC) calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.EMCCalculator.yml\" sourcestartlinenumber=\"1\">Provides electromagnetic compatibility (EMC) calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.EMICalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.EMICalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.EMICalculator.html"
@@ -1398,11 +1398,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.EMICalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.EMICalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for Electromagnetic Interference (EMI) and Electromagnetic Compatibility (EMC) analysis.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.EMICalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for Electromagnetic Interference (EMI) and Electromagnetic Compatibility (EMC) analysis.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ESP32Tools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ESP32Tools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ESP32Tools.html"
@@ -1412,11 +1412,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ESP32Tools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ESP32Tools.yml\" sourcestartlinenumber=\"1\">Provides ESP32-specific calculations and utilities</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ESP32Tools.yml\" sourcestartlinenumber=\"1\">Provides ESP32-specific calculations and utilities</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ElectricityBillCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ElectricityBillCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ElectricityBillCalculator.html"
@@ -1426,11 +1426,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ElectricityBillCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ElectricityBillCalculator.yml\" sourcestartlinenumber=\"1\">Provides a simple method to calculate electricity bills.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ElectricityBillCalculator.yml\" sourcestartlinenumber=\"1\">Provides a simple method to calculate electricity bills.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Electromagnetics.ElectromagneticsCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Electromagnetics.ElectromagneticsCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Electromagnetics.ElectromagneticsCalculator.html"
@@ -1440,11 +1440,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Electromagnetics.ElectromagneticsCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Electromagnetics.ElectromagneticsCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for electromagnetic field analysis and antenna design.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Electromagnetics.ElectromagneticsCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for electromagnetic field analysis and antenna design.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Electromagnetics.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Electromagnetics.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Electromagnetics.html"
@@ -1458,7 +1458,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.EnergyCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.EnergyCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.EnergyCalculator.html"
@@ -1472,7 +1472,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.EnergyConsumptionCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.EnergyConsumptionCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.EnergyConsumptionCalculator.html"
@@ -1486,7 +1486,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.FilterCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.FilterCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.FilterCalculator.html"
@@ -1496,11 +1496,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.FilterCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.FilterCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for electronic filter design and analysis.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.FilterCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for electronic filter design and analysis.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.DebugResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.HardwareDebuggingTools.DebugResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.DebugResult.html"
@@ -1510,11 +1510,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.HardwareDebuggingTools.DebugResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.HardwareDebuggingTools.DebugResult.yml\" sourcestartlinenumber=\"1\">Debugging test result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.HardwareDebuggingTools.DebugResult.yml\" sourcestartlinenumber=\"1\">Debugging test result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.HardwareConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.HardwareDebuggingTools.HardwareConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.HardwareConfig.html"
@@ -1524,11 +1524,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.HardwareDebuggingTools.HardwareConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.HardwareDebuggingTools.HardwareConfig.yml\" sourcestartlinenumber=\"1\">Hardware configuration for debugging</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.HardwareDebuggingTools.HardwareConfig.yml\" sourcestartlinenumber=\"1\">Hardware configuration for debugging</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.ProblemCategory.yml",
+      "source_relative_path": "../docs/api/CircuitTool.HardwareDebuggingTools.ProblemCategory.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.ProblemCategory.html"
@@ -1538,11 +1538,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.HardwareDebuggingTools.ProblemCategory",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.HardwareDebuggingTools.ProblemCategory.yml\" sourcestartlinenumber=\"1\">Common hardware problem categories</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.HardwareDebuggingTools.ProblemCategory.yml\" sourcestartlinenumber=\"1\">Common hardware problem categories</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.HardwareDebuggingTools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.HardwareDebuggingTools.html"
@@ -1552,11 +1552,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.HardwareDebuggingTools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.HardwareDebuggingTools.yml\" sourcestartlinenumber=\"1\">Provides hardware debugging and troubleshooting tools for embedded systems</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.HardwareDebuggingTools.yml\" sourcestartlinenumber=\"1\">Provides hardware debugging and troubleshooting tools for embedded systems</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Impedance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Impedance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Impedance.html"
@@ -1566,11 +1566,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Impedance",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Impedance.yml\" sourcestartlinenumber=\"1\">Represents complex impedance for AC circuit analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Impedance.yml\" sourcestartlinenumber=\"1\">Represents complex impedance for AC circuit analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.InductorCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.InductorCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.InductorCalculator.html"
@@ -1580,11 +1580,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.InductorCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.InductorCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for inductor circuits and characteristics.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.InductorCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for inductor circuits and characteristics.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.InteractiveTutorials.yml",
+      "source_relative_path": "../docs/api/CircuitTool.InteractiveTutorials.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.InteractiveTutorials.html"
@@ -1594,11 +1594,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.InteractiveTutorials",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.InteractiveTutorials.yml\" sourcestartlinenumber=\"1\">Interactive tutorial system</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.InteractiveTutorials.yml\" sourcestartlinenumber=\"1\">Interactive tutorial system</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.CommonLEDs.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.CommonLEDs.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.CommonLEDs.html"
@@ -1608,11 +1608,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator.CommonLEDs",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.CommonLEDs.yml\" sourcestartlinenumber=\"1\">Common LED specifications database</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.CommonLEDs.yml\" sourcestartlinenumber=\"1\">Common LED specifications database</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.LEDArrayResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.LEDArrayResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.LEDArrayResult.html"
@@ -1622,11 +1622,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator.LEDArrayResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.LEDArrayResult.yml\" sourcestartlinenumber=\"1\">LED array configuration result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.LEDArrayResult.yml\" sourcestartlinenumber=\"1\">LED array configuration result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.LEDSpec.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.LEDSpec.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.LEDSpec.html"
@@ -1636,11 +1636,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator.LEDSpec",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.LEDSpec.yml\" sourcestartlinenumber=\"1\">LED specifications for calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.LEDSpec.yml\" sourcestartlinenumber=\"1\">LED specifications for calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.LEDStripResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.LEDStripResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.LEDStripResult.html"
@@ -1650,11 +1650,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator.LEDStripResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.LEDStripResult.yml\" sourcestartlinenumber=\"1\">Calculate LED strip resistor values</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.LEDStripResult.yml\" sourcestartlinenumber=\"1\">Calculate LED strip resistor values</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.LEDThermalResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.LEDThermalResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.LEDThermalResult.html"
@@ -1664,11 +1664,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator.LEDThermalResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.LEDThermalResult.yml\" sourcestartlinenumber=\"1\">LED thermal analysis result</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.LEDThermalResult.yml\" sourcestartlinenumber=\"1\">LED thermal analysis result</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.LEDCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.LEDCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.LEDCalculator.html"
@@ -1678,11 +1678,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.LEDCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.LEDCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for LED circuit calculations, including resistor values, power, and brightness.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.LEDCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for LED circuit calculations, including resistor values, power, and brightness.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Mathematics.FourierTransform.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Mathematics.FourierTransform.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Mathematics.FourierTransform.html"
@@ -1692,11 +1692,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Mathematics.FourierTransform",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Mathematics.FourierTransform.yml\" sourcestartlinenumber=\"1\">Provides basic Fourier transform utilities for circuit analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Mathematics.FourierTransform.yml\" sourcestartlinenumber=\"1\">Provides basic Fourier transform utilities for circuit analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.html"
@@ -1706,11 +1706,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Mathematics.MatrixOperations.ComplexMatrix",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.yml\" sourcestartlinenumber=\"1\">Represents a complex matrix for AC circuit analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Mathematics.MatrixOperations.ComplexMatrix.yml\" sourcestartlinenumber=\"1\">Represents a complex matrix for AC circuit analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Mathematics.MatrixOperations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Mathematics.MatrixOperations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Mathematics.MatrixOperations.html"
@@ -1720,11 +1720,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Mathematics.MatrixOperations",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Mathematics.MatrixOperations.yml\" sourcestartlinenumber=\"1\">Provides matrix operations for circuit analysis, particularly for nodal analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Mathematics.MatrixOperations.yml\" sourcestartlinenumber=\"1\">Provides matrix operations for circuit analysis, particularly for nodal analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Mathematics.WindowType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Mathematics.WindowType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Mathematics.WindowType.html"
@@ -1734,11 +1734,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Mathematics.WindowType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Mathematics.WindowType.yml\" sourcestartlinenumber=\"1\">Window function types for spectral analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Mathematics.WindowType.yml\" sourcestartlinenumber=\"1\">Window function types for spectral analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Mathematics.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Mathematics.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Mathematics.html"
@@ -1752,7 +1752,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.MotorControlCalculator.MotorType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.MotorControlCalculator.MotorType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.MotorControlCalculator.MotorType.html"
@@ -1762,11 +1762,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.MotorControlCalculator.MotorType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.MotorControlCalculator.MotorType.yml\" sourcestartlinenumber=\"1\">Motor types for different calculation methods</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.MotorControlCalculator.MotorType.yml\" sourcestartlinenumber=\"1\">Motor types for different calculation methods</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.MotorControlCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.MotorControlCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.MotorControlCalculator.html"
@@ -1776,11 +1776,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.MotorControlCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.MotorControlCalculator.yml\" sourcestartlinenumber=\"1\">Provides specialized calculations for DC motor control and analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.MotorControlCalculator.yml\" sourcestartlinenumber=\"1\">Provides specialized calculations for DC motor control and analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.NoiseCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.NoiseCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.NoiseCalculator.html"
@@ -1790,11 +1790,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.NoiseCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.NoiseCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for noise analysis in electronic circuits.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.NoiseCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for noise analysis in electronic circuits.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.OhmsLawCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.OhmsLawCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.OhmsLawCalculator.html"
@@ -1804,11 +1804,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.OhmsLawCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.OhmsLawCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for Ohm's Law (V = I × R).</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.OhmsLawCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for Ohm's Law (V = I × R).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.OpAmpCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.OpAmpCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.OpAmpCalculator.html"
@@ -1818,11 +1818,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.OpAmpCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.OpAmpCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for operational amplifier circuits and characteristics.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.OpAmpCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for operational amplifier circuits and characteristics.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.OptoelectronicsCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.OptoelectronicsCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.OptoelectronicsCalculator.html"
@@ -1832,11 +1832,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.OptoelectronicsCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.OptoelectronicsCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for optoelectronic components and fiber optic systems.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.OptoelectronicsCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for optoelectronic components and fiber optic systems.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PCBDesignCalculator.PCBStackup.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PCBDesignCalculator.PCBStackup.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PCBDesignCalculator.PCBStackup.html"
@@ -1846,11 +1846,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PCBDesignCalculator.PCBStackup",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PCBDesignCalculator.PCBStackup.yml\" sourcestartlinenumber=\"1\">PCB layer stackup types</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PCBDesignCalculator.PCBStackup.yml\" sourcestartlinenumber=\"1\">PCB layer stackup types</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PCBDesignCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PCBDesignCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PCBDesignCalculator.html"
@@ -1860,11 +1860,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PCBDesignCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PCBDesignCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for PCB design and layout</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PCBDesignCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for PCB design and layout</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Performance.BulkOperations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Performance.BulkOperations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Performance.BulkOperations.html"
@@ -1874,11 +1874,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Performance.BulkOperations",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Performance.BulkOperations.yml\" sourcestartlinenumber=\"1\">Provides memory-efficient bulk operations for circuit calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Performance.BulkOperations.yml\" sourcestartlinenumber=\"1\">Provides memory-efficient bulk operations for circuit calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Performance.CalculationCache.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Performance.CalculationCache.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Performance.CalculationCache.html"
@@ -1888,11 +1888,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Performance.CalculationCache",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Performance.CalculationCache.yml\" sourcestartlinenumber=\"1\">Provides caching for expensive electrical calculations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Performance.CalculationCache.yml\" sourcestartlinenumber=\"1\">Provides caching for expensive electrical calculations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Performance.PerformanceMonitor.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Performance.PerformanceMonitor.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Performance.PerformanceMonitor.html"
@@ -1902,11 +1902,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Performance.PerformanceMonitor",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Performance.PerformanceMonitor.yml\" sourcestartlinenumber=\"1\">Performance monitoring and optimization utilities</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Performance.PerformanceMonitor.yml\" sourcestartlinenumber=\"1\">Performance monitoring and optimization utilities</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Performance.VectorizedCalculations.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Performance.VectorizedCalculations.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Performance.VectorizedCalculations.html"
@@ -1916,11 +1916,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Performance.VectorizedCalculations",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Performance.VectorizedCalculations.yml\" sourcestartlinenumber=\"1\">Provides performance-optimized calculations using SIMD operations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Performance.VectorizedCalculations.yml\" sourcestartlinenumber=\"1\">Provides performance-optimized calculations using SIMD operations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Performance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Performance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Performance.html"
@@ -1934,7 +1934,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PhysicsCircuitCalculators.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PhysicsCircuitCalculators.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PhysicsCircuitCalculators.html"
@@ -1944,11 +1944,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PhysicsCircuitCalculators",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PhysicsCircuitCalculators.yml\" sourcestartlinenumber=\"1\">Provides additional calculators for electrical engineering and physics, including impedance, resonance, Q factor, and more.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PhysicsCircuitCalculators.yml\" sourcestartlinenumber=\"1\">Provides additional calculators for electrical engineering and physics, including impedance, resonance, Q factor, and more.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.html"
@@ -1958,11 +1958,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.AdvancedPowerAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.yml\" sourcestartlinenumber=\"1\">Advanced power analysis including three-phase systems and power quality</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.AdvancedPowerAnalysis.yml\" sourcestartlinenumber=\"1\">Advanced power analysis including three-phase systems and power quality</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.BalancedThreePhasePower.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.BalancedThreePhasePower.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.BalancedThreePhasePower.html"
@@ -1972,11 +1972,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.BalancedThreePhasePower",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.BalancedThreePhasePower.yml\" sourcestartlinenumber=\"1\">Balanced three-phase power results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.BalancedThreePhasePower.yml\" sourcestartlinenumber=\"1\">Balanced three-phase power results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.html"
@@ -1986,11 +1986,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.HarmonicPowerAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.yml\" sourcestartlinenumber=\"1\">Harmonic power analysis results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.HarmonicPowerAnalysis.yml\" sourcestartlinenumber=\"1\">Harmonic power analysis results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.PowerQualityAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.PowerQualityAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.PowerQualityAnalysis.html"
@@ -2000,11 +2000,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.PowerQualityAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.PowerQualityAnalysis.yml\" sourcestartlinenumber=\"1\">Power quality analysis results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.PowerQualityAnalysis.yml\" sourcestartlinenumber=\"1\">Power quality analysis results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.SequenceComponents.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.SequenceComponents.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.SequenceComponents.html"
@@ -2014,11 +2014,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.SequenceComponents",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.SequenceComponents.yml\" sourcestartlinenumber=\"1\">Sequence components for three-phase analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.SequenceComponents.yml\" sourcestartlinenumber=\"1\">Sequence components for three-phase analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.ThreePhasePower.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.ThreePhasePower.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.ThreePhasePower.html"
@@ -2028,11 +2028,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerAnalysis.ThreePhasePower",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerAnalysis.ThreePhasePower.yml\" sourcestartlinenumber=\"1\">Three-phase power analysis results</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerAnalysis.ThreePhasePower.yml\" sourcestartlinenumber=\"1\">Three-phase power analysis results</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerAnalysis.html"
@@ -2046,7 +2046,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerCalculator.html"
@@ -2056,11 +2056,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for common electrical power calculations.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerCalculator.yml\" sourcestartlinenumber=\"1\">Provides easy-to-use methods for common electrical power calculations.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerElectronics.MotorDriveCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerElectronics.MotorDriveCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerElectronics.MotorDriveCalculator.html"
@@ -2070,11 +2070,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerElectronics.MotorDriveCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerElectronics.MotorDriveCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for motor drive and control systems.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerElectronics.MotorDriveCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for motor drive and control systems.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerElectronics.SMPSCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerElectronics.SMPSCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerElectronics.SMPSCalculator.html"
@@ -2084,11 +2084,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerElectronics.SMPSCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerElectronics.SMPSCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for switching mode power supplies (SMPS) design.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerElectronics.SMPSCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for switching mode power supplies (SMPS) design.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerElectronics.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerElectronics.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerElectronics.html"
@@ -2102,7 +2102,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerFactorCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerFactorCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerFactorCalculator.html"
@@ -2116,7 +2116,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerSupplyCalculator.PSUTopology.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerSupplyCalculator.PSUTopology.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerSupplyCalculator.PSUTopology.html"
@@ -2126,11 +2126,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerSupplyCalculator.PSUTopology",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerSupplyCalculator.PSUTopology.yml\" sourcestartlinenumber=\"1\">Power supply topology types</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerSupplyCalculator.PSUTopology.yml\" sourcestartlinenumber=\"1\">Power supply topology types</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.PowerSupplyCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.PowerSupplyCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.PowerSupplyCalculator.html"
@@ -2140,11 +2140,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.PowerSupplyCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.PowerSupplyCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for power supply design and analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.PowerSupplyCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for power supply design and analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.RFCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.RFCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.RFCalculator.html"
@@ -2154,11 +2154,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.RFCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.RFCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for RF (Radio Frequency) and microwave circuit design.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.RFCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for RF (Radio Frequency) and microwave circuit design.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.RaspberryPiModel.yml",
+      "source_relative_path": "../docs/api/CircuitTool.RaspberryPiModel.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.RaspberryPiModel.html"
@@ -2168,11 +2168,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.RaspberryPiModel",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.RaspberryPiModel.yml\" sourcestartlinenumber=\"1\">Raspberry Pi model enumeration</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.RaspberryPiModel.yml\" sourcestartlinenumber=\"1\">Raspberry Pi model enumeration</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.RaspberryPiTools.GPIOPin.yml",
+      "source_relative_path": "../docs/api/CircuitTool.RaspberryPiTools.GPIOPin.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.RaspberryPiTools.GPIOPin.html"
@@ -2182,11 +2182,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.RaspberryPiTools.GPIOPin",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.RaspberryPiTools.GPIOPin.yml\" sourcestartlinenumber=\"1\">GPIO pin mapping for different Raspberry Pi models</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.RaspberryPiTools.GPIOPin.yml\" sourcestartlinenumber=\"1\">GPIO pin mapping for different Raspberry Pi models</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.RaspberryPiTools.PWMConfig.yml",
+      "source_relative_path": "../docs/api/CircuitTool.RaspberryPiTools.PWMConfig.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.RaspberryPiTools.PWMConfig.html"
@@ -2196,11 +2196,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.RaspberryPiTools.PWMConfig",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.RaspberryPiTools.PWMConfig.yml\" sourcestartlinenumber=\"1\">PWM configuration settings</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.RaspberryPiTools.PWMConfig.yml\" sourcestartlinenumber=\"1\">PWM configuration settings</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.RaspberryPiTools.yml",
+      "source_relative_path": "../docs/api/CircuitTool.RaspberryPiTools.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.RaspberryPiTools.html"
@@ -2210,11 +2210,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.RaspberryPiTools",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.RaspberryPiTools.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for Raspberry Pi projects</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.RaspberryPiTools.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for Raspberry Pi projects</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorAnalysis.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorAnalysis.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorAnalysis.html"
@@ -2224,11 +2224,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator.ResistorAnalysis",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.ResistorAnalysis.yml\" sourcestartlinenumber=\"1\">Individual resistor analysis in a network</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.ResistorAnalysis.yml\" sourcestartlinenumber=\"1\">Individual resistor analysis in a network</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorCombinationResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorCombinationResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorCombinationResult.html"
@@ -2238,11 +2238,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator.ResistorCombinationResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.ResistorCombinationResult.yml\" sourcestartlinenumber=\"1\">Find resistor combinations to achieve target resistance</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.ResistorCombinationResult.yml\" sourcestartlinenumber=\"1\">Find resistor combinations to achieve target resistance</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ConnectionType.html"
@@ -2256,7 +2256,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ResistorGroup.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ResistorGroup.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.ResistorGroup.html"
@@ -2270,7 +2270,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.html"
@@ -2280,11 +2280,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator.ResistorNetwork",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.yml\" sourcestartlinenumber=\"1\">Complex resistor network configuration</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.ResistorNetwork.yml\" sourcestartlinenumber=\"1\">Complex resistor network configuration</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetworkResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.ResistorNetworkResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.ResistorNetworkResult.html"
@@ -2294,11 +2294,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator.ResistorNetworkResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.ResistorNetworkResult.yml\" sourcestartlinenumber=\"1\">Result of series/parallel resistor network analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.ResistorNetworkResult.yml\" sourcestartlinenumber=\"1\">Result of series/parallel resistor network analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.VoltageDividerResult.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.VoltageDividerResult.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.VoltageDividerResult.html"
@@ -2308,11 +2308,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator.VoltageDividerResult",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.VoltageDividerResult.yml\" sourcestartlinenumber=\"1\">Calculate voltage divider with load analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.VoltageDividerResult.yml\" sourcestartlinenumber=\"1\">Calculate voltage divider with load analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ResistorCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.ResistorCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ResistorCalculator.html"
@@ -2322,11 +2322,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ResistorCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ResistorCalculator.yml\" sourcestartlinenumber=\"1\">Provides methods for resistor calculations, including Ohm's Law, series, and parallel combinations.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ResistorCalculator.yml\" sourcestartlinenumber=\"1\">Provides methods for resistor calculations, including Ohm's Law, series, and parallel combinations.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.SensorInterfaceCalculator.SensorType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.SensorInterfaceCalculator.SensorType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.SensorInterfaceCalculator.SensorType.html"
@@ -2336,11 +2336,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.SensorInterfaceCalculator.SensorType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.SensorInterfaceCalculator.SensorType.yml\" sourcestartlinenumber=\"1\">Common sensor types and their characteristics</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.SensorInterfaceCalculator.SensorType.yml\" sourcestartlinenumber=\"1\">Common sensor types and their characteristics</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.SensorInterfaceCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.SensorInterfaceCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.SensorInterfaceCalculator.html"
@@ -2350,11 +2350,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.SensorInterfaceCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.SensorInterfaceCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for sensor interfacing and signal conditioning</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.SensorInterfaceCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations and utilities for sensor interfacing and signal conditioning</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Serialization.CircuitImportExport.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Serialization.CircuitImportExport.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Serialization.CircuitImportExport.html"
@@ -2364,11 +2364,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Serialization.CircuitImportExport",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Serialization.CircuitImportExport.yml\" sourcestartlinenumber=\"1\">Extensions for circuit import/export functionality</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Serialization.CircuitImportExport.yml\" sourcestartlinenumber=\"1\">Extensions for circuit import/export functionality</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Serialization.CircuitSerialization.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Serialization.CircuitSerialization.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Serialization.CircuitSerialization.html"
@@ -2378,11 +2378,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Serialization.CircuitSerialization",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Serialization.CircuitSerialization.yml\" sourcestartlinenumber=\"1\">Provides JSON serialization support for circuit configurations</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Serialization.CircuitSerialization.yml\" sourcestartlinenumber=\"1\">Provides JSON serialization support for circuit configurations</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Serialization.ExportFormat.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Serialization.ExportFormat.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Serialization.ExportFormat.html"
@@ -2392,11 +2392,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Serialization.ExportFormat",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Serialization.ExportFormat.yml\" sourcestartlinenumber=\"1\">Export/Import format options</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Serialization.ExportFormat.yml\" sourcestartlinenumber=\"1\">Export/Import format options</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Serialization.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Serialization.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Serialization.html"
@@ -2410,7 +2410,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.SignalIntegrityCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.SignalIntegrityCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.SignalIntegrityCalculator.html"
@@ -2420,11 +2420,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.SignalIntegrityCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.SignalIntegrityCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for signal integrity analysis</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.SignalIntegrityCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for signal integrity analysis</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.SignalProcessingCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.SignalProcessingCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.SignalProcessingCalculator.html"
@@ -2434,11 +2434,613 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.SignalProcessingCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.SignalProcessingCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for signal processing applications.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.SignalProcessingCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for signal processing applications.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.ThermalCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.ACCircuitCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.ACCircuitCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.ACCircuitCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.AdditionalCalculatorsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.AdditionalCalculatorsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.AdditionalCalculatorsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.ArduinoToolsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.ArduinoToolsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.ArduinoToolsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.BeginnerCalculatorsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.BeginnerCalculatorsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.BeginnerCalculatorsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.CapacitorCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.CapacitorCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.CapacitorCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.CircuitCalculationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.CircuitCalculationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.CircuitCalculationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.DocumentationExamplesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.DocumentationExamplesTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.DocumentationExamplesTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.ESP32ToolsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.ESP32ToolsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.ESP32ToolsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.EnergyCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.EnergyCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.EnergyCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.FilterCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.FilterCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.FilterCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.InductorCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.InductorCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.InductorCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.LEDCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.LEDCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.LEDCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.MathematicalExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.MathematicalExtensionsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.MathematicalExtensionsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Mathematics.FourierTransformTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Mathematics.FourierTransformTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Mathematics.FourierTransformTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Mathematics.MatrixOperationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Mathematics.MatrixOperationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Mathematics.MatrixOperationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Mathematics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Mathematics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Mathematics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.NoiseCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.NoiseCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.NoiseCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.OhmsLawCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.OhmsLawCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.OhmsLawCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.OpAmpCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.OpAmpCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.OpAmpCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Performance.VectorizedCalculationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Performance.VectorizedCalculationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Performance.VectorizedCalculationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Performance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Performance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Performance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.PerformanceOptimizationsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.PerformanceOptimizationsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.RFCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.RFCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.RFCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.ResistorCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.ResistorCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.ResistorCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Serialization.CircuitSerializationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Serialization.CircuitSerializationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Serialization.CircuitSerializationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Serialization.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Serialization",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.TransformerCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.TransformerCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.TransformerCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Units.VoltageTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Units.VoltageTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Units.VoltageTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.Units.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.Units.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.Units",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.UseCaseTemplatesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.UseCaseTemplatesTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.UseCaseTemplatesTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.VoltageCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.VoltageCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.VoltageCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.VoltageDividerCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.VoltageDividerCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.VoltageDividerCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.VoltageDropCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.VoltageDropCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.VoltageDropCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/CircuitTool.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CircuitTool.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../docs/api/CircuitTool.ThermalCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.ThermalCalculator.html"
@@ -2448,11 +3050,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.ThermalCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.ThermalCalculator.yml\" sourcestartlinenumber=\"1\">Provides thermal analysis calculations for electronic components</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.ThermalCalculator.yml\" sourcestartlinenumber=\"1\">Provides thermal analysis calculations for electronic components</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.TransformerCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.TransformerCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.TransformerCalculator.html"
@@ -2462,11 +3064,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.TransformerCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.TransformerCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for transformer design and characteristics.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.TransformerCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for transformer design and characteristics.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.TransmissionLineCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.TransmissionLineCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.TransmissionLineCalculator.html"
@@ -2476,11 +3078,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.TransmissionLineCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.TransmissionLineCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for transmission line analysis and design.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.TransmissionLineCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for transmission line analysis and design.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.UnitConverter.yml",
+      "source_relative_path": "../docs/api/CircuitTool.UnitConverter.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.UnitConverter.html"
@@ -2494,7 +3096,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Capacitance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Capacitance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Capacitance.html"
@@ -2504,11 +3106,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Capacitance",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Capacitance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed capacitance measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Capacitance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed capacitance measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.CapacitanceUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.CapacitanceUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.CapacitanceUnit.html"
@@ -2518,11 +3120,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.CapacitanceUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.CapacitanceUnit.yml\" sourcestartlinenumber=\"1\">Represents capacitance measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.CapacitanceUnit.yml\" sourcestartlinenumber=\"1\">Represents capacitance measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Current.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Current.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Current.html"
@@ -2532,11 +3134,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Current",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Current.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed current measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Current.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed current measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.CurrentUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.CurrentUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.CurrentUnit.html"
@@ -2546,11 +3148,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.CurrentUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.CurrentUnit.yml\" sourcestartlinenumber=\"1\">Represents current measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.CurrentUnit.yml\" sourcestartlinenumber=\"1\">Represents current measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Frequency.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Frequency.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Frequency.html"
@@ -2560,11 +3162,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Frequency",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Frequency.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed frequency measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Frequency.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed frequency measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.FrequencyUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.FrequencyUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.FrequencyUnit.html"
@@ -2574,11 +3176,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.FrequencyUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.FrequencyUnit.yml\" sourcestartlinenumber=\"1\">Represents frequency measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.FrequencyUnit.yml\" sourcestartlinenumber=\"1\">Represents frequency measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Inductance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Inductance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Inductance.html"
@@ -2588,11 +3190,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Inductance",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Inductance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed inductance measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Inductance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed inductance measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.InductanceUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.InductanceUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.InductanceUnit.html"
@@ -2602,11 +3204,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.InductanceUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.InductanceUnit.yml\" sourcestartlinenumber=\"1\">Represents inductance measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.InductanceUnit.yml\" sourcestartlinenumber=\"1\">Represents inductance measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Power.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Power.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Power.html"
@@ -2616,11 +3218,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Power",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Power.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed power measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Power.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed power measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.PowerUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.PowerUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.PowerUnit.html"
@@ -2630,11 +3232,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.PowerUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.PowerUnit.yml\" sourcestartlinenumber=\"1\">Represents power measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.PowerUnit.yml\" sourcestartlinenumber=\"1\">Represents power measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Resistance.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Resistance.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Resistance.html"
@@ -2644,11 +3246,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Resistance",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Resistance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed resistance measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Resistance.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed resistance measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.ResistanceUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.ResistanceUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.ResistanceUnit.html"
@@ -2658,11 +3260,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.ResistanceUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.ResistanceUnit.yml\" sourcestartlinenumber=\"1\">Represents resistance measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.ResistanceUnit.yml\" sourcestartlinenumber=\"1\">Represents resistance measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.TypedOhmsLawCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.TypedOhmsLawCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.TypedOhmsLawCalculator.html"
@@ -2672,11 +3274,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.TypedOhmsLawCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.TypedOhmsLawCalculator.yml\" sourcestartlinenumber=\"1\">Provides strongly-typed Ohm's Law calculations using units to prevent errors</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.TypedOhmsLawCalculator.yml\" sourcestartlinenumber=\"1\">Provides strongly-typed Ohm's Law calculations using units to prevent errors</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.Voltage.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.Voltage.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.Voltage.html"
@@ -2686,11 +3288,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.Voltage",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.Voltage.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed voltage measurement with automatic unit conversion</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.Voltage.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed voltage measurement with automatic unit conversion</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.VoltageUnit.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.VoltageUnit.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.VoltageUnit.html"
@@ -2700,11 +3302,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.Units.VoltageUnit",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.Units.VoltageUnit.yml\" sourcestartlinenumber=\"1\">Represents voltage measurement units</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.Units.VoltageUnit.yml\" sourcestartlinenumber=\"1\">Represents voltage measurement units</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.Units.yml",
+      "source_relative_path": "../docs/api/CircuitTool.Units.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.Units.html"
@@ -2718,7 +3320,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.UseCaseTemplates.FilterDesign.yml",
+      "source_relative_path": "../docs/api/CircuitTool.UseCaseTemplates.FilterDesign.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.UseCaseTemplates.FilterDesign.html"
@@ -2728,11 +3330,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.UseCaseTemplates.FilterDesign",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.UseCaseTemplates.FilterDesign.yml\" sourcestartlinenumber=\"1\">Template for RC filter design</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.UseCaseTemplates.FilterDesign.yml\" sourcestartlinenumber=\"1\">Template for RC filter design</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.UseCaseTemplates.LEDResistorCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.UseCaseTemplates.LEDResistorCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.UseCaseTemplates.LEDResistorCalculator.html"
@@ -2742,11 +3344,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.UseCaseTemplates.LEDResistorCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.UseCaseTemplates.LEDResistorCalculator.yml\" sourcestartlinenumber=\"1\">Template for LED current limiting resistor</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.UseCaseTemplates.LEDResistorCalculator.yml\" sourcestartlinenumber=\"1\">Template for LED current limiting resistor</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.UseCaseTemplates.VoltageDividerDesign.yml",
+      "source_relative_path": "../docs/api/CircuitTool.UseCaseTemplates.VoltageDividerDesign.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.UseCaseTemplates.VoltageDividerDesign.html"
@@ -2756,11 +3358,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.UseCaseTemplates.VoltageDividerDesign",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.UseCaseTemplates.VoltageDividerDesign.yml\" sourcestartlinenumber=\"1\">Template for designing a voltage divider</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.UseCaseTemplates.VoltageDividerDesign.yml\" sourcestartlinenumber=\"1\">Template for designing a voltage divider</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.UseCaseTemplates.yml",
+      "source_relative_path": "../docs/api/CircuitTool.UseCaseTemplates.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.UseCaseTemplates.html"
@@ -2770,11 +3372,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.UseCaseTemplates",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.UseCaseTemplates.yml\" sourcestartlinenumber=\"1\">Common use case templates for quick implementation</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.UseCaseTemplates.yml\" sourcestartlinenumber=\"1\">Common use case templates for quick implementation</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.VoltageCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.VoltageCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.VoltageCalculator.html"
@@ -2788,7 +3390,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.VoltageDividerCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.VoltageDividerCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.VoltageDividerCalculator.html"
@@ -2802,7 +3404,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.VoltageDropCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.VoltageDropCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.VoltageDropCalculator.html"
@@ -2816,7 +3418,7 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.WattsVoltsAmpsOhmsCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.WattsVoltsAmpsOhmsCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.WattsVoltsAmpsOhmsCalculator.html"
@@ -2826,11 +3428,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.WattsVoltsAmpsOhmsCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.WattsVoltsAmpsOhmsCalculator.yml\" sourcestartlinenumber=\"1\">Provides quick conversions between watts, volts, amps, and ohms.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.WattsVoltsAmpsOhmsCalculator.yml\" sourcestartlinenumber=\"1\">Provides quick conversions between watts, volts, amps, and ohms.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.WiFiMode.yml",
+      "source_relative_path": "../docs/api/CircuitTool.WiFiMode.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.WiFiMode.html"
@@ -2840,11 +3442,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.WiFiMode",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.WiFiMode.yml\" sourcestartlinenumber=\"1\">ESP32 WiFi operation modes</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.WiFiMode.yml\" sourcestartlinenumber=\"1\">ESP32 WiFi operation modes</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.WirelessCalculator.ModulationType.yml",
+      "source_relative_path": "../docs/api/CircuitTool.WirelessCalculator.ModulationType.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.WirelessCalculator.ModulationType.html"
@@ -2854,11 +3456,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.WirelessCalculator.ModulationType",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.WirelessCalculator.ModulationType.yml\" sourcestartlinenumber=\"1\">Modulation types for BER calculations.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.WirelessCalculator.ModulationType.yml\" sourcestartlinenumber=\"1\">Modulation types for BER calculations.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.WirelessCalculator.yml",
+      "source_relative_path": "../docs/api/CircuitTool.WirelessCalculator.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.WirelessCalculator.html"
@@ -2868,11 +3470,11 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "CircuitTool.WirelessCalculator",
-      "Summary": "<p sourcefile=\"docs/api/CircuitTool.WirelessCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for wireless communication systems and protocols.</p>\n"
+      "Summary": "<p sourcefile=\"../docs/api/CircuitTool.WirelessCalculator.yml\" sourcestartlinenumber=\"1\">Provides calculations for wireless communication systems and protocols.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/CircuitTool.yml",
+      "source_relative_path": "../docs/api/CircuitTool.yml",
       "output": {
         ".html": {
           "relative_path": "docs/api/CircuitTool.html"
@@ -2886,7 +3488,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/api/toc.yml",
+      "source_relative_path": "../docs/api/toc.yml",
       "output": {
         ".json": {
           "relative_path": "docs/api/toc.json"
@@ -2899,7 +3501,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/examples/index-new.md",
+      "source_relative_path": "../docs/examples/index-new.md",
       "output": {
         ".html": {
           "relative_path": "docs/examples/index-new.html"
@@ -2909,7 +3511,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/examples/index.md",
+      "source_relative_path": "../docs/examples/index.md",
       "output": {
         ".html": {
           "relative_path": "docs/examples/index.html"
@@ -2919,7 +3521,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/examples/toc.yml",
+      "source_relative_path": "../docs/examples/toc.yml",
       "output": {
         ".json": {
           "relative_path": "docs/examples/toc.json"
@@ -2932,7 +3534,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/index.md",
+      "source_relative_path": "../docs/index.md",
       "output": {
         ".html": {
           "relative_path": "docs/index.html"
@@ -2942,7 +3544,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/1wire-protocol.md",
+      "source_relative_path": "../docs/technology-guides/1wire-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/1wire-protocol.html"
@@ -2952,7 +3554,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/arduino-modbus-protocol.md",
+      "source_relative_path": "../docs/technology-guides/arduino-modbus-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/arduino-modbus-protocol.html"
@@ -2962,7 +3564,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/bluetooth-low-energy.md",
+      "source_relative_path": "../docs/technology-guides/bluetooth-low-energy.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/bluetooth-low-energy.html"
@@ -2972,7 +3574,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/can-bus-protocol.md",
+      "source_relative_path": "../docs/technology-guides/can-bus-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/can-bus-protocol.html"
@@ -2982,7 +3584,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/gps-nmea-protocol.md",
+      "source_relative_path": "../docs/technology-guides/gps-nmea-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/gps-nmea-protocol.html"
@@ -2992,7 +3594,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/i2c-protocol.md",
+      "source_relative_path": "../docs/technology-guides/i2c-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/i2c-protocol.html"
@@ -3002,7 +3604,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/index.md",
+      "source_relative_path": "../docs/technology-guides/index.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/index.html"
@@ -3012,7 +3614,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/lora-lpwan-guide.md",
+      "source_relative_path": "../docs/technology-guides/lora-lpwan-guide.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/lora-lpwan-guide.html"
@@ -3022,7 +3624,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/lpwan-technologies.md",
+      "source_relative_path": "../docs/technology-guides/lpwan-technologies.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/lpwan-technologies.html"
@@ -3032,7 +3634,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/spi-protocol.md",
+      "source_relative_path": "../docs/technology-guides/spi-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/spi-protocol.html"
@@ -3042,7 +3644,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/technology-guides/toc.yml",
+      "source_relative_path": "../docs/technology-guides/toc.yml",
       "output": {
         ".json": {
           "relative_path": "docs/technology-guides/toc.json"
@@ -3055,7 +3657,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/technology-guides/uart-protocol.md",
+      "source_relative_path": "../docs/technology-guides/uart-protocol.md",
       "output": {
         ".html": {
           "relative_path": "docs/technology-guides/uart-protocol.html"
@@ -3065,7 +3667,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
+      "source_relative_path": "../docs/toc.yml",
       "output": {
         ".json": {
           "relative_path": "docs/toc.json"
@@ -3078,7 +3680,7 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/tutorials/index.md",
+      "source_relative_path": "../docs/tutorials/index.md",
       "output": {
         ".html": {
           "relative_path": "docs/tutorials/index.html"
@@ -3088,46 +3690,13 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/tutorials/toc.yml",
+      "source_relative_path": "../docs/tutorials/toc.yml",
       "output": {
         ".json": {
           "relative_path": "docs/tutorials/toc.json"
         },
         ".html": {
           "relative_path": "docs/tutorials/toc.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "icon.png",
-      "output": {
-        "resource": {
-          "relative_path": "icon.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
-      "output": {
-        ".html": {
-          "relative_path": "index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
-        ".html": {
-          "relative_path": "toc.html"
         }
       },
       "version": ""

@@ -42,8 +42,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Inductance
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 25
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents a strongly-typed inductance measurement with automatic unit conversion
   example: []
@@ -74,8 +76,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 34
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Creates a new inductance measurement
   example: []
@@ -110,8 +114,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Henries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 42
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the inductance value in henries
   example: []
@@ -139,8 +145,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Nanohenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 47
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the inductance value in nanohenries
   example: []
@@ -168,8 +176,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Microhenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 52
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the inductance value in microhenries
   example: []
@@ -197,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Millihenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 57
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the inductance value in millihenries
   example: []
@@ -226,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kilohenries
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 62
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the inductance value in kilohenries
   example: []
@@ -255,8 +269,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ConvertTo
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 77
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public double ConvertTo(InductanceUnit unit)
@@ -284,8 +300,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Addition
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Inductance operator +(Inductance left, Inductance right)
@@ -318,8 +336,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Subtraction
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 91
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Inductance operator -(Inductance left, Inductance right)
@@ -352,8 +372,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Multiply
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 92
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Inductance operator *(Inductance inductance, double scalar)
@@ -386,8 +408,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Multiply
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 93
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Inductance operator *(double scalar, Inductance inductance)
@@ -420,8 +444,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Division
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 94
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Inductance operator /(Inductance inductance, double scalar)
@@ -454,8 +480,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Equality
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator ==(Inductance left, Inductance right)
@@ -488,8 +516,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Inequality
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 97
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator !=(Inductance left, Inductance right)
@@ -522,8 +552,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_LessThan
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator <(Inductance left, Inductance right)
@@ -556,8 +588,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_GreaterThan
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator >(Inductance left, Inductance right)
@@ -590,8 +624,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_LessThanOrEqual
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator <=(Inductance left, Inductance right)
@@ -624,8 +660,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_GreaterThanOrEqual
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 101
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator >=(Inductance left, Inductance right)
@@ -658,8 +696,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 103
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Indicates whether the current object is equal to another object of the same type.
   example: []
@@ -693,8 +733,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 104
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Indicates whether this instance and a specified object are equal.
   example: []
@@ -730,8 +772,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetHashCode
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 105
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Returns the hash code for this instance.
   example: []
@@ -760,8 +804,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CompareTo
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 106
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   example: []
@@ -798,8 +844,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 108
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Returns the fully qualified type name of this instance.
   example: []
@@ -828,8 +876,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Units/InductanceUnit.cs
+    path: ../src/Units/InductanceUnit.cs
     startLine: 109
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public string ToString(InductanceUnit unit)

@@ -23,8 +23,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Component
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 12
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Represents a circuit component
   example: []
@@ -62,8 +64,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Id
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 14
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public string Id { get; }
@@ -89,8 +93,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Name
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 15
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: public string Name { get; set; }
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 17
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   syntax:
     content: protected Component(string id, string name)
@@ -148,8 +156,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetImpedance
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 28
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Gets the impedance of this component at the specified frequency
   example: []
@@ -184,8 +194,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Tolerance
-    path: src/CircuitBuilder.cs
+    path: ../src/CircuitBuilder.cs
     startLine: 33
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.CircuitBuilder
   summary: Gets component tolerance for Monte Carlo analysis
   example: []

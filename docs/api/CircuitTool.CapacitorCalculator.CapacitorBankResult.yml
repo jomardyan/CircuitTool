@@ -27,8 +27,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CapacitorBankResult
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 228
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Capacitor bank analysis for series and parallel combinations
   example: []
@@ -62,8 +64,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalCapacitance
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 230
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalCapacitance { get; set; }
@@ -89,8 +93,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalVoltageRating
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 231
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalVoltageRating { get; set; }
@@ -116,8 +122,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalEnergy
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 232
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalEnergy { get; set; }
@@ -143,8 +151,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalCharge
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 233
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalCharge { get; set; }
@@ -170,8 +180,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Configuration
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 234
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string Configuration { get; set; }
@@ -197,8 +209,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: IndividualCapacitors
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 235
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<CapacitorCalculator.CapacitorInBank> IndividualCapacitors { get; set; }
@@ -224,8 +238,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: RippleCurrent
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 236
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double RippleCurrent { get; set; }
@@ -251,8 +267,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ESR
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 237
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double ESR { get; set; }
@@ -278,8 +296,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DesignNotes
-    path: src/Calculators/CapacitorCalculator.cs
+    path: ../src/Calculators/CapacitorCalculator.cs
     startLine: 238
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<string> DesignNotes { get; set; }

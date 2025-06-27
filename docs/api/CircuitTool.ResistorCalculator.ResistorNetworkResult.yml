@@ -25,8 +25,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResistorNetworkResult
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 81
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Result of series/parallel resistor network analysis
   example: []
@@ -60,8 +62,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalResistance
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 83
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalResistance { get; set; }
@@ -87,8 +91,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalPower
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 84
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalPower { get; set; }
@@ -114,8 +120,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalCurrent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 85
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalCurrent { get; set; }
@@ -141,8 +149,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: TotalVoltage
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 86
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double TotalVoltage { get; set; }
@@ -168,8 +178,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: IndividualResistors
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 87
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public List<ResistorCalculator.ResistorAnalysis> IndividualResistors { get; set; }
@@ -195,8 +207,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: NetworkConfiguration
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 88
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public string NetworkConfiguration { get; set; }
@@ -222,8 +236,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EfficiencyPercent
-    path: src/Calculators/ResistorCalculator.cs
+    path: ../src/Calculators/ResistorCalculator.cs
     startLine: 89
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   syntax:
     content: public double EfficiencyPercent { get; set; }

@@ -3,17 +3,13 @@
     {
       "src": [
         {
+          "src": "../",
           "files": [
-            "src/**/*.cs"
-          ],
-          "exclude": [
-            "**/bin/**",
-            "**/obj/**",
-            "**/Properties/AssemblyInfo.cs"
+            "CircuitTool.sln"
           ]
         }
       ],
-      "dest": "docs/api",
+      "dest": "../docs/api",
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
@@ -29,12 +25,14 @@
   "build": {
     "content": [
       {
+        "src": "../",
         "files": [
           "docs/api/**.yml",
           "docs/api/index.md"
         ]
       },
       {
+        "src": "../",
         "files": [
           "docs/**.md",
           "docs/**/toc.yml",
@@ -48,6 +46,7 @@
         ]
       },
       {
+        "src": "../",
         "files": [
           "articles/**.md",
           "articles/**/toc.yml"
@@ -56,6 +55,7 @@
     ],
     "resource": [
       {
+        "src": "../",
         "files": [
           "docs/images/**",
           "images/**",
@@ -66,7 +66,7 @@
         ]
       }
     ],
-    "output": "docs/_site",
+    "output": "../docs/_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [

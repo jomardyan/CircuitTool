@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ModbusDevice
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 288
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public class ModbusDevice
@@ -57,8 +59,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: SlaveId
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 290
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public int SlaveId { get; set; }
@@ -84,8 +88,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FrameLength
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 291
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public int FrameLength { get; set; }
@@ -111,8 +117,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DataBytes
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 292
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public int DataBytes { get; set; }
@@ -138,8 +146,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: PollRate
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 293
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double PollRate { get; set; }
@@ -165,8 +175,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ResponseTime
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 294
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public double ResponseTime { get; set; }
@@ -192,8 +204,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Name
-    path: src/Calculators/ModbusCommunicationCalculator.cs
+    path: ../src/Calculators/ModbusCommunicationCalculator.cs
     startLine: 295
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public string Name { get; set; }

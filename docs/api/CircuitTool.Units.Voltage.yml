@@ -41,8 +41,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Voltage
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 27
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Represents a strongly-typed voltage measurement with automatic unit conversion
   example: []
@@ -73,8 +75,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: .ctor
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 36
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Creates a new voltage measurement
   example: []
@@ -109,8 +113,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Volts
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 44
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the voltage value in volts
   example: []
@@ -138,8 +144,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Millivolts
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the voltage value in millivolts
   example: []
@@ -167,8 +175,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Kilovolts
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 54
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the voltage value in kilovolts
   example: []
@@ -196,8 +206,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetValue
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 61
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Gets the voltage value in the specified unit
   example: []
@@ -229,8 +241,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Addition
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 90
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Voltage operator +(Voltage left, Voltage right)
@@ -263,8 +277,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Subtraction
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 91
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Voltage operator -(Voltage left, Voltage right)
@@ -297,8 +313,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Multiply
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 92
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Voltage operator *(Voltage voltage, double multiplier)
@@ -331,8 +349,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Division
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 93
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static Voltage operator /(Voltage voltage, double divisor)
@@ -365,8 +385,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Equality
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 96
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator ==(Voltage left, Voltage right)
@@ -399,8 +421,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Inequality
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 97
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator !=(Voltage left, Voltage right)
@@ -433,8 +457,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_LessThan
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 98
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator <(Voltage left, Voltage right)
@@ -467,8 +493,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_GreaterThan
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 99
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator >(Voltage left, Voltage right)
@@ -501,8 +529,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_LessThanOrEqual
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 100
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator <=(Voltage left, Voltage right)
@@ -535,8 +565,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_GreaterThanOrEqual
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 101
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static bool operator >=(Voltage left, Voltage right)
@@ -569,8 +601,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Implicit
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 104
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static implicit operator Voltage(double volts)
@@ -601,8 +635,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: op_Implicit
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 105
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public static implicit operator double(Voltage voltage)
@@ -633,8 +669,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 107
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Indicates whether the current object is equal to another object of the same type.
   example: []
@@ -668,8 +706,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Equals
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 108
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Indicates whether this instance and a specified object are equal.
   example: []
@@ -705,8 +745,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: GetHashCode
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 109
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Returns the hash code for this instance.
   example: []
@@ -735,8 +777,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CompareTo
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 110
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   example: []
@@ -773,8 +817,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 112
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   summary: Returns the fully qualified type name of this instance.
   example: []
@@ -803,8 +849,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: ToString
-    path: src/Units/VoltageUnit.cs
+    path: ../src/Units/VoltageUnit.cs
     startLine: 113
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Units
   syntax:
     content: public string ToString(VoltageUnit unit)

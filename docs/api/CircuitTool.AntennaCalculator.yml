@@ -24,8 +24,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AntennaCalculator
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 8
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Provides calculations for antenna design and analysis
   example: []
@@ -59,8 +61,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: QuarterWaveLength
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 16
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the physical length of a quarter-wave antenna
   example: []
@@ -98,8 +102,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: HalfWaveLength
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 38
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the physical length of a half-wave antenna
   example: []
@@ -137,8 +143,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: DipoleImpedance
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 49
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the characteristic impedance of a dipole antenna
   example: []
@@ -176,8 +184,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: AntennaGain
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 69
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates antenna gain in dB for a given directivity and efficiency
   example: []
@@ -215,8 +225,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: CalculateVSWR
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 82
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the VSWR (Voltage Standing Wave Ratio) from reflection coefficient
   example: []
@@ -251,8 +263,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: EffectiveRadiatedPower
-    path: src/Calculators/AntennaCalculator.cs
+    path: ../src/Calculators/AntennaCalculator.cs
     startLine: 97
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool
   summary: Calculates the effective radiated power (ERP)
   example: []

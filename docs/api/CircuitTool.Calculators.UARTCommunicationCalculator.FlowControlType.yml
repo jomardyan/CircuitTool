@@ -21,8 +21,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: FlowControlType
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 74
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: public enum UARTCommunicationCalculator.FlowControlType
@@ -44,8 +46,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: None
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 76
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: None = 0
@@ -68,8 +72,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Hardware
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 77
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Hardware = 1
@@ -92,8 +98,10 @@ items:
       branch: main
       repo: https://github.com/jomardyan/CircuitTool
     id: Software
-    path: src/Calculators/UARTCommunicationCalculator.cs
+    path: ../src/Calculators/UARTCommunicationCalculator.cs
     startLine: 78
+  assemblies:
+  - CircuitTool
   namespace: CircuitTool.Calculators
   syntax:
     content: Software = 2

@@ -13,16 +13,18 @@ items:
   nameWithType: CircuitTool.PowerElectronics
   fullName: CircuitTool.PowerElectronics
   type: Namespace
+  assemblies:
+  - CircuitTool
 references:
-- uid: CircuitTool.PowerElectronics.SMPSCalculator
-  commentId: T:CircuitTool.PowerElectronics.SMPSCalculator
-  href: CircuitTool.PowerElectronics.SMPSCalculator.html
-  name: SMPSCalculator
-  nameWithType: SMPSCalculator
-  fullName: CircuitTool.PowerElectronics.SMPSCalculator
 - uid: CircuitTool.PowerElectronics.MotorDriveCalculator
   commentId: T:CircuitTool.PowerElectronics.MotorDriveCalculator
   href: CircuitTool.PowerElectronics.MotorDriveCalculator.html
   name: MotorDriveCalculator
   nameWithType: MotorDriveCalculator
   fullName: CircuitTool.PowerElectronics.MotorDriveCalculator
+- uid: CircuitTool.PowerElectronics.SMPSCalculator
+  commentId: T:CircuitTool.PowerElectronics.SMPSCalculator
+  href: CircuitTool.PowerElectronics.SMPSCalculator.html
+  name: SMPSCalculator
+  nameWithType: SMPSCalculator
+  fullName: CircuitTool.PowerElectronics.SMPSCalculator

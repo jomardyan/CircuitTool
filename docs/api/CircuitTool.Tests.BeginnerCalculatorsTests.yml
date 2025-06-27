@@ -1,0 +1,523 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests
+  commentId: T:CircuitTool.Tests.BeginnerCalculatorsTests
+  id: BeginnerCalculatorsTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  - CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  - CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  - CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  - CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  langs:
+  - csharp
+  - vb
+  name: BeginnerCalculatorsTests
+  nameWithType: BeginnerCalculatorsTests
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests
+  type: Class
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BeginnerCalculatorsTests
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class BeginnerCalculatorsTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class BeginnerCalculatorsTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  commentId: M:CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  id: BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  parent: CircuitTool.Tests.BeginnerCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours()
+  nameWithType: BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours()
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours()
+  type: Method
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours()
+    content.vb: >-
+      <Test>
+
+      Public Sub BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours()
+  overload: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  commentId: M:CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  id: WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  parent: CircuitTool.Tests.BeginnerCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge()
+  nameWithType: BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge()
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge()
+  type: Method
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 23
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge()
+    content.vb: >-
+      <Test>
+
+      Public Sub WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge()
+  overload: CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  commentId: M:CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  id: PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  parent: CircuitTool.Tests.BeginnerCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB()
+  nameWithType: BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB()
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB()
+  type: Method
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 36
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB()
+    content.vb: >-
+      <Test>
+
+      Public Sub PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB()
+  overload: CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  commentId: M:CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  id: RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  parent: CircuitTool.Tests.BeginnerCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance()
+  nameWithType: BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance()
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance()
+  type: Method
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 49
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance()
+    content.vb: >-
+      <Test>
+
+      Public Sub RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance()
+  overload: CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  commentId: M:CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  id: BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  parent: CircuitTool.Tests.BeginnerCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: BatteryLifeCalculator_InvalidCurrent_ThrowsException()
+  nameWithType: BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException()
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/BeginnerCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: BatteryLifeCalculator_InvalidCurrent_ThrowsException
+    path: ../tests/BeginnerCalculatorsTests.cs
+    startLine: 63
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void BatteryLifeCalculator_InvalidCurrent_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub BatteryLifeCalculator_InvalidCurrent_ThrowsException()
+  overload: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours*
+  commentId: Overload:CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html#CircuitTool_Tests_BeginnerCalculatorsTests_BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  name: BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  nameWithType: BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_ValidInputs_ReturnsCorrectHours
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge*
+  commentId: Overload:CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html#CircuitTool_Tests_BeginnerCalculatorsTests_WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  name: WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  nameWithType: BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.WireGaugeCalculator_LowCurrent_ReturnsCorrectGauge
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB*
+  commentId: Overload:CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html#CircuitTool_Tests_BeginnerCalculatorsTests_PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  name: PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  nameWithType: BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.PowerRatioToDecibels_ValidRatio_ReturnsCorrectDB
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance*
+  commentId: Overload:CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html#CircuitTool_Tests_BeginnerCalculatorsTests_RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  name: RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  nameWithType: BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.RCTimeConstantCapacitor_ValidInputs_ReturnsCorrectCapacitance
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html#CircuitTool_Tests_BeginnerCalculatorsTests_BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  name: BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  nameWithType: BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests.BatteryLifeCalculator_InvalidCurrent_ThrowsException
