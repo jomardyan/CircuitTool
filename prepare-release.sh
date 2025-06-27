@@ -26,10 +26,12 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo "=============================================="
     echo ""
     echo "This script prepares everything needed for a GitHub release and optionally creates it automatically."
-    echo "It will automatically commit any uncommitted changes before proceeding with the release."
+    echo "It will automatically increment version numbers and commit any uncommitted changes before proceeding with the release."
     echo ""
     echo "Usage:"
-    echo "  ./prepare-release.sh                    # Full release with auto GitHub creation"
+    echo "  ./prepare-release.sh                    # Full release with auto GitHub creation (patch increment)"
+    echo "  VERSION_INCREMENT=minor ./prepare-release.sh    # Increment minor version"
+    echo "  VERSION_INCREMENT=major ./prepare-release.sh    # Increment major version"
     echo "  AUTO_CREATE_RELEASE=false ./prepare-release.sh  # Build only, no GitHub release"
     echo "  PRERELEASE=true ./prepare-release.sh    # Create as pre-release"
     echo "  GITHUB_REPO=\"user/repo\" ./prepare-release.sh    # Use different repository"
@@ -37,13 +39,17 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo "  SKIP_TESTS=true ./prepare-release.sh    # Skip test execution (for debug builds)"
     echo ""
     echo "Environment Variables:"
-    echo "  AUTO_CREATE_RELEASE  - Create GitHub release automatically (default: true)"
+    echo "  VERSION_INCREMENT   - Version increment type: patch, minor, major (default: patch)"
+    echo "  AUTO_CREATE_RELEASE - Create GitHub release automatically (default: true)"
     echo "  GITHUB_REPO         - GitHub repository (default: jomardyan/CircuitTool)"
     echo "  PRERELEASE          - Mark as pre-release (default: false)"
     echo "  DRY_RUN            - Simulate without creating release (default: false)"
     echo "  SKIP_TESTS         - Skip test execution (default: false)"
     echo ""
     echo "Automatic Operations:"
+    echo "  - Reads current version numbers from project files"
+    echo "  - Increments version numbers (patch by default, configurable)"
+    echo "  - Updates all project files with new version numbers"
     echo "  - Commits any uncommitted changes with release message"
     echo "  - Builds and tests the entire solution"
     echo "  - Generates documentation with DocFX"
@@ -67,10 +73,145 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Version information
-VERSION="2.2.0"
-CLI_VERSION="1.1.0"
-RELEASE_DATE="2025-06-27"
+# Function to extract version from csproj file
+get_version_from_csproj() {
+    local csproj_file="$1"
+    grep '<Version>' "$csproj_file" | sed 's/.*<Version>\(.*\)<\/Version>.*/\1/' | head -n1
+}
+
+# Function to increment version (semantic versioning)
+increment_version() {
+    local version="$1"
+    local increment_type="${2:-patch}"  # patch, minor, or major
+    
+    local major minor patch
+    IFS='.' read -r major minor patch <<< "$version"
+    
+    case "$increment_type" in
+        "major")
+            major=$((major + 1))
+            minor=0
+            patch=0
+            ;;
+        "minor")
+            minor=$((minor + 1))
+            patch=0
+            ;;
+        "patch"|*)
+            patch=$((patch + 1))
+            ;;
+    esac
+    
+    echo "$major.$minor.$patch"
+}
+
+# Function to update version in csproj file
+update_version_in_csproj() {
+    local csproj_file="$1"
+    local new_version="$2"
+    
+    if [ "$DRY_RUN" = true ]; then
+        print_color "🔍 DRY RUN: Would update $csproj_file to version $new_version" "$YELLOW"
+        return 0
+    fi
+    
+    # Create backup
+    cp "$csproj_file" "$csproj_file.backup"
+    
+    # Update version
+    if sed -i "s|<Version>.*</Version>|<Version>$new_version</Version>|g" "$csproj_file"; then
+        print_color "✅ Updated $csproj_file to version $new_version" "$GREEN"
+        return 0
+    else
+        print_color "❌ Failed to update $csproj_file" "$RED"
+        # Restore backup
+        mv "$csproj_file.backup" "$csproj_file"
+        return 1
+    fi
+}
+
+# Function to update AssemblyInfo.cs version
+update_assembly_version() {
+    local assembly_file="$1"
+    local new_version="$2"
+    
+    if [ "$DRY_RUN" = true ]; then
+        print_color "🔍 DRY RUN: Would update $assembly_file to version $new_version" "$YELLOW"
+        return 0
+    fi
+    
+    if [ -f "$assembly_file" ]; then
+        # Create backup
+        cp "$assembly_file" "$assembly_file.backup"
+        
+        # Update AssemblyVersion and AssemblyFileVersion
+        sed -i "s/\[assembly: AssemblyVersion(\".*\")\]/[assembly: AssemblyVersion(\"$new_version\")]/g" "$assembly_file"
+        sed -i "s/\[assembly: AssemblyFileVersion(\".*\")\]/[assembly: AssemblyFileVersion(\"$new_version\")]/g" "$assembly_file"
+        
+        print_color "✅ Updated $assembly_file to version $new_version" "$GREEN"
+    fi
+}
+
+# Function to read current versions from project files
+read_current_versions() {
+    CURRENT_VERSION=$(get_version_from_csproj "CircuitTool.csproj")
+    CURRENT_CLI_VERSION=$(get_version_from_csproj "CircuitTool.CLI/CircuitTool.CLI.csproj")
+    
+    if [ -z "$CURRENT_VERSION" ] || [ -z "$CURRENT_CLI_VERSION" ]; then
+        print_color "❌ Failed to read current versions from project files" "$RED"
+        exit 1
+    fi
+    
+    print_color "📋 Current versions:" "$BLUE"
+    print_color "   Library: $CURRENT_VERSION" "$NC"
+    print_color "   CLI: $CURRENT_CLI_VERSION" "$NC"
+}
+
+# Function to calculate new versions
+calculate_new_versions() {
+    local increment_type="${VERSION_INCREMENT:-patch}"
+    
+    NEW_VERSION=$(increment_version "$CURRENT_VERSION" "$increment_type")
+    NEW_CLI_VERSION=$(increment_version "$CURRENT_CLI_VERSION" "$increment_type")
+    
+    print_color "🆕 New versions:" "$BLUE"
+    print_color "   Library: $CURRENT_VERSION → $NEW_VERSION" "$GREEN"
+    print_color "   CLI: $CURRENT_CLI_VERSION → $NEW_CLI_VERSION" "$GREEN"
+    
+    # Set global variables for backwards compatibility
+    VERSION="$NEW_VERSION"
+    CLI_VERSION="$NEW_CLI_VERSION"
+}
+
+# Function to update all version files
+update_all_versions() {
+    print_color "📝 Updating version numbers in project files..." "$YELLOW"
+    
+    # Update main library version
+    if ! update_version_in_csproj "CircuitTool.csproj" "$NEW_VERSION"; then
+        return 1
+    fi
+    
+    # Update CLI version
+    if ! update_version_in_csproj "CircuitTool.CLI/CircuitTool.CLI.csproj" "$NEW_CLI_VERSION"; then
+        return 1
+    fi
+    
+    # Update AssemblyInfo.cs if it exists
+    if [ -f "Properties/AssemblyInfo.cs" ]; then
+        update_assembly_version "Properties/AssemblyInfo.cs" "$NEW_VERSION"
+    fi
+    
+    print_color "✅ All version numbers updated successfully" "$GREEN"
+    return 0
+}
+
+# Version information - these will be auto-incremented
+CURRENT_VERSION=""
+CURRENT_CLI_VERSION=""
+NEW_VERSION=""
+NEW_CLI_VERSION=""
+RELEASE_DATE=$(date +%Y-%m-%d)
 
 # Release options
 AUTO_CREATE_RELEASE=${AUTO_CREATE_RELEASE:-true}
@@ -172,7 +313,43 @@ commit_all_changes() {
     fi
 }
 
-print_color "🚀 CircuitTool Release Preparation v${VERSION}" "$BLUE"
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+# Step -1: Read current versions from project files
+print_color "� Reading current version numbers..." "$YELLOW"
+read_current_versions
+
+# Step 0: Calculate and set new versions
+print_color "🔢 Calculating new version numbers..." "$YELLOW"
+calculate_new_versions
+
+# Confirm version increment unless in dry run
+if [ "$DRY_RUN" != true ]; then
+    print_color "" "$NC"
+    print_color "🔄 Version Update Confirmation:" "$BLUE"
+    print_color "   Library: $CURRENT_VERSION → $NEW_VERSION" "$NC"
+    print_color "   CLI: $CURRENT_CLI_VERSION → $NEW_CLI_VERSION" "$NC"
+    print_color "   Increment type: ${VERSION_INCREMENT:-patch}" "$NC"
+    print_color "" "$NC"
+    
+    read -p "Proceed with version increment? (Y/n): " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Nn]$ ]]; then
+        print_color "❌ Release cancelled by user" "$YELLOW"
+        exit 0
+    fi
+fi
+
+# Step 1: Update version numbers in all project files
+print_color "📝 Step 1: Updating version numbers..." "$YELLOW"
+if ! update_all_versions; then
+    print_color "❌ Failed to update version numbers. Aborting release." "$RED"
+    exit 1
+fi
+
+print_color "�🚀 CircuitTool Release Preparation v${NEW_VERSION}" "$BLUE"
 print_color "================================================" "$BLUE"
 
 # Check if dry run mode
@@ -200,23 +377,24 @@ if check_tag_exists "v${VERSION}"; then
     fi
 fi
 
-# Step 0: Commit any uncommitted changes
-print_color "📝 Step 0: Checking for uncommitted changes..." "$YELLOW"
+# Step 2: Commit any uncommitted changes (including version updates)
+print_color "📝 Step 2: Checking for uncommitted changes..." "$YELLOW"
 if check_uncommitted_changes; then
     print_color "🔍 Found uncommitted changes" "$BLUE"
     
     # Create a comprehensive commit message
-    commit_message="Release v${VERSION} - Documentation Excellence
+    commit_message="Release v${NEW_VERSION} - Automated Version Increment
 
+- Auto-incremented version numbers: Library v${NEW_VERSION}, CLI v${NEW_CLI_VERSION}
 - Complete documentation refactoring and enhancement
-- Updated version numbers to v${VERSION}
 - Enhanced CI/CD and release automation
 - Professional documentation with DocFX integration
 - Comprehensive learning materials and examples
 
-Version: v${VERSION}
-CLI Version: v${CLI_VERSION}
-Release Date: ${RELEASE_DATE}"
+Version: v${NEW_VERSION}
+CLI Version: v${NEW_CLI_VERSION}
+Release Date: ${RELEASE_DATE}
+Increment Type: ${VERSION_INCREMENT:-patch}"
     
     if ! commit_all_changes "$commit_message"; then
         print_color "❌ Failed to commit changes. Cannot proceed with release." "$RED"
@@ -226,8 +404,8 @@ else
     print_color "✅ No uncommitted changes found" "$GREEN"
 fi
 
-# Step 1: Clean and build the project
-print_color "📦 Step 1: Building project..." "$YELLOW"
+# Step 3: Clean and build the project
+print_color "📦 Step 3: Building project..." "$YELLOW"
 dotnet clean CircuitTool.sln
 dotnet restore CircuitTool.sln
 dotnet build CircuitTool.sln --configuration Release --verbosity minimal
@@ -239,11 +417,11 @@ else
     exit 1
 fi
 
-# Step 2: Run tests
+# Step 4: Run tests
 if [ "$SKIP_TESTS" = true ]; then
-    print_color "⏭️  Step 2: Skipping tests (SKIP_TESTS=true)..." "$YELLOW"
+    print_color "⏭️  Step 4: Skipping tests (SKIP_TESTS=true)..." "$YELLOW"
 else
-    print_color "🧪 Step 2: Running tests..." "$YELLOW"
+    print_color "🧪 Step 4: Running tests..." "$YELLOW"
     dotnet test CircuitTool.sln --configuration Release --verbosity minimal --no-build
 
     if [ $? -eq 0 ]; then
@@ -254,8 +432,8 @@ else
     fi
 fi
 
-# Step 3: Build documentation
-print_color "📚 Step 3: Building documentation..." "$YELLOW"
+# Step 5: Build documentation
+print_color "📚 Step 5: Building documentation..." "$YELLOW"
 if command -v docfx &> /dev/null; then
     docfx metadata
     docfx build
@@ -264,8 +442,8 @@ else
     print_color "⚠️  DocFX not found, skipping documentation build" "$YELLOW"
 fi
 
-# Step 4: Create NuGet package
-print_color "📦 Step 4: Creating NuGet package..." "$YELLOW"
+# Step 6: Create NuGet package
+print_color "📦 Step 6: Creating NuGet package..." "$YELLOW"
 dotnet pack CircuitTool.csproj --configuration Release --no-build --output ./packages
 
 if [ $? -eq 0 ]; then
@@ -275,8 +453,8 @@ else
     exit 1
 fi
 
-# Step 5: Build CLI
-print_color "🖥️  Step 5: Building CLI..." "$YELLOW"
+# Step 7: Build CLI
+print_color "🖥️  Step 7: Building CLI..." "$YELLOW"
 cd CircuitTool.CLI
 dotnet build --configuration Release --verbosity minimal
 dotnet publish --configuration Release --output ../publish/cli --verbosity minimal
@@ -289,50 +467,55 @@ else
     exit 1
 fi
 
-# Step 6: Create release artifacts
-print_color "📁 Step 6: Creating release artifacts..." "$YELLOW"
+# Step 8: Create release artifacts
+print_color "📁 Step 8: Creating release artifacts..." "$YELLOW"
 
 # Create release directory
-mkdir -p release/v${VERSION}
+mkdir -p release/v${NEW_VERSION}
 
 # Copy main artifacts
-cp packages/*.nupkg release/v${VERSION}/
-cp packages/*.snupkg release/v${VERSION}/ 2>/dev/null || true
+cp packages/*.nupkg release/v${NEW_VERSION}/
+cp packages/*.snupkg release/v${NEW_VERSION}/ 2>/dev/null || true
 
 # Copy documentation
 if [ -d "docs/_site" ]; then
-    cp -r docs/_site release/v${VERSION}/documentation
+    cp -r docs/_site release/v${NEW_VERSION}/documentation
 fi
 
 # Copy CLI
 if [ -d "publish/cli" ]; then
-    cp -r publish/cli release/v${VERSION}/
+    cp -r publish/cli release/v${NEW_VERSION}/
 fi
 
 # Copy important files
-cp README.md release/v${VERSION}/
-cp CHANGELOG.md release/v${VERSION}/
-cp LICENSE release/v${VERSION}/
-cp PROJECT_CODE_MAP.md release/v${VERSION}/
-cp DOCUMENTATION.md release/v${VERSION}/
+cp README.md release/v${NEW_VERSION}/
+cp CHANGELOG.md release/v${NEW_VERSION}/
+cp LICENSE release/v${NEW_VERSION}/
+cp PROJECT_CODE_MAP.md release/v${NEW_VERSION}/
+cp DOCUMENTATION.md release/v${NEW_VERSION}/
 
 print_color "✅ Release artifacts created" "$GREEN"
 
-# Step 7: Generate release notes
-print_color "📝 Step 7: Generating release notes..." "$YELLOW"
+# Step 9: Generate release notes
+print_color "📝 Step 9: Generating release notes..." "$YELLOW"
 
-cat > release/v${VERSION}/RELEASE_NOTES.md << EOF
-# CircuitTool v${VERSION} - Documentation Excellence Release
+cat > release/v${NEW_VERSION}/RELEASE_NOTES.md << EOF
+# CircuitTool v${NEW_VERSION} - Automated Release
 
 **Release Date**: ${RELEASE_DATE}
 
-## 🎉 Major Documentation Overhaul
+## 🎉 Automated Version Release
 
-This release represents a comprehensive refactoring of all documentation and project structure, bringing CircuitTool to production-ready standards with professional documentation.
+This release was created using our automated release system with version auto-increment.
 
 ## ✨ What's New
 
-### 📚 Complete Documentation Refactoring
+### 🔢 Version Updates
+- **Library Version**: ${CURRENT_VERSION} → ${NEW_VERSION}
+- **CLI Version**: ${CURRENT_CLI_VERSION} → ${NEW_CLI_VERSION}
+- **Increment Type**: ${VERSION_INCREMENT:-patch}
+
+### 📚 Complete Documentation Excellence
 - **Professional documentation** with consistent structure and modern design
 - **DocFX integration** with auto-generated API documentation
 - **Emoji-based navigation** for improved user experience
@@ -346,45 +529,46 @@ This release represents a comprehensive refactoring of all documentation and pro
 - **Structured tutorials** and real-world examples
 
 ### 🔧 Technical Improvements
-- **98% clean builds** (reduced warnings from 205+ to 203)
+- **Automated version management** with semantic versioning
+- **Enhanced CI/CD pipeline** with automated releases
 - **Modern DocFX templates** with responsive design
 - **Enhanced cross-referencing** between documentation sections
 - **Production-ready documentation site**
 
 ## 📦 Package Information
 
-- **CircuitTool Library**: v${VERSION}
-- **CircuitTool CLI**: v${CLI_VERSION}
+- **CircuitTool Library**: v${NEW_VERSION}
+- **CircuitTool CLI**: v${NEW_CLI_VERSION}
 - **Target Frameworks**: .NET Framework 4.5+, .NET Core 3.1+, .NET 6.0+, .NET 8.0+, .NET Standard 2.0+
 
 ## 🚀 Installation
 
 ### NuGet Package Manager
 \`\`\`bash
-dotnet add package CircuitTool --version ${VERSION}
+dotnet add package CircuitTool --version ${NEW_VERSION}
 \`\`\`
 
 ### Package Manager Console
 \`\`\`powershell
-Install-Package CircuitTool -Version ${VERSION}
+Install-Package CircuitTool -Version ${NEW_VERSION}
 \`\`\`
 
 ## 📖 Documentation
 
-- **[Complete Documentation](https://github.com/jomardyan/CircuitTool/tree/v${VERSION}/docs)**
-- **[API Reference](https://github.com/jomardyan/CircuitTool/tree/v${VERSION}/docs/api)**
-- **[Getting Started Guide](https://github.com/jomardyan/CircuitTool/blob/v${VERSION}/articles/getting-started.md)**
-- **[Technology Guides](https://github.com/jomardyan/CircuitTool/tree/v${VERSION}/docs/technology-guides)**
+- **[Complete Documentation](https://github.com/jomardyan/CircuitTool/tree/v${NEW_VERSION}/docs)**
+- **[API Reference](https://github.com/jomardyan/CircuitTool/tree/v${NEW_VERSION}/docs/api)**
+- **[Getting Started Guide](https://github.com/jomardyan/CircuitTool/blob/v${NEW_VERSION}/articles/getting-started.md)**
+- **[Technology Guides](https://github.com/jomardyan/CircuitTool/tree/v${NEW_VERSION}/docs/technology-guides)**
 
 ## 🔧 Breaking Changes
 
-**None** - This release is fully backward compatible with v2.1.0.
+**None** - This release maintains backward compatibility.
 
 ## 🎯 Upgrade Path
 
-Upgrading from v2.1.0 to v${VERSION}:
-1. Update your package reference to v${VERSION}
-2. Enjoy the enhanced documentation and examples
+Upgrading from v${CURRENT_VERSION} to v${NEW_VERSION}:
+1. Update your package reference to v${NEW_VERSION}
+2. Enjoy the enhanced features and documentation
 3. Explore new learning materials and guides
 
 ## 📋 Full Changelog
@@ -398,23 +582,23 @@ EOF
 
 print_color "✅ Release notes generated" "$GREEN"
 
-# Step 8: Create release summary
-print_color "📊 Step 8: Creating release summary..." "$YELLOW"
+# Step 10: Create release summary
+print_color "📊 Step 10: Creating release summary..." "$YELLOW"
 
 print_color "" "$NC"
 print_color "🎉 RELEASE PREPARATION COMPLETE!" "$GREEN"
 print_color "=================================" "$GREEN"
 print_color "" "$NC"
 print_color "📋 Release Summary:" "$BLUE"
-print_color "  Version: v${VERSION}" "$NC"
-print_color "  CLI Version: v${CLI_VERSION}" "$NC"
+print_color "  Version: v${NEW_VERSION}" "$NC"
+print_color "  CLI Version: v${NEW_CLI_VERSION}" "$NC"
 print_color "  Release Date: ${RELEASE_DATE}" "$NC"
 print_color "  Build Status: ✅ SUCCESS" "$GREEN"
 print_color "  Tests Status: ✅ PASSED" "$GREEN"
 print_color "  Packages: ✅ CREATED" "$GREEN"
 print_color "" "$NC"
 print_color "📁 Release Artifacts:" "$BLUE"
-find release/v${VERSION} -type f | sed 's/^/  /'
+find release/v${NEW_VERSION} -type f | sed 's/^/  /'
 print_color "" "$NC"
 print_color "🚀 Next Steps:" "$BLUE"
 if [ "$DRY_RUN" = true ]; then
@@ -422,39 +606,39 @@ if [ "$DRY_RUN" = true ]; then
     print_color "  🔄 Run without DRY_RUN=true to create actual release" "$NC"
 elif [ "$AUTO_CREATE_RELEASE" = true ] && check_github_cli && check_github_auth && validate_github_repo "${GITHUB_REPO}"; then
     print_color "  ✅ GitHub release created automatically!" "$GREEN"
-    print_color "  🌐 View release: https://github.com/${GITHUB_REPO}/releases/tag/v${VERSION}" "$NC"
+    print_color "  🌐 View release: https://github.com/${GITHUB_REPO}/releases/tag/v${NEW_VERSION}" "$NC"
     print_color "  📦 Optional: Publish to NuGet.org" "$NC"
     print_color "" "$NC"
     print_color "📦 NuGet Publish Command (optional):" "$BLUE"
-    print_color "  dotnet nuget push ./packages/CircuitTool.${VERSION}.nupkg \\" "$NC"
+    print_color "  dotnet nuget push ./packages/CircuitTool.${NEW_VERSION}.nupkg \\" "$NC"
     print_color "    --api-key YOUR_NUGET_API_KEY \\" "$NC"
     print_color "    --source https://api.nuget.org/v3/index.json" "$NC"
 else
-    print_color "  1. Review release artifacts in ./release/v${VERSION}/" "$NC"
-    print_color "  2. Test the NuGet package locally: ./release/v${VERSION}/test-package.sh" "$NC"
-    print_color "  3. Create GitHub release with tag v${VERSION}" "$NC"
+    print_color "  1. Review release artifacts in ./release/v${NEW_VERSION}/" "$NC"
+    print_color "  2. Test the NuGet package locally: ./release/v${NEW_VERSION}/test-package.sh" "$NC"
+    print_color "  3. Create GitHub release with tag v${NEW_VERSION}" "$NC"
     print_color "  4. Upload release artifacts" "$NC"
     print_color "  5. Publish to NuGet.org (optional)" "$NC"
     print_color "" "$NC"
     print_color "📦 Manual GitHub Release Commands:" "$BLUE"
     print_color "  # Using GitHub CLI:" "$NC"
-    print_color "  git tag -a v${VERSION} -m \"CircuitTool v${VERSION} - Documentation Excellence Release\"" "$NC"
-    print_color "  git push origin v${VERSION}" "$NC"
-    print_color "  gh release create v${VERSION} ./release/v${VERSION}/*.nupkg ./release/v${VERSION}/*.md \\" "$NC"
-    print_color "    --title \"CircuitTool v${VERSION} - Documentation Excellence\" \\" "$NC"
-    print_color "    --notes-file ./release/v${VERSION}/RELEASE_NOTES.md \\" "$NC"
+    print_color "  git tag -a v${NEW_VERSION} -m \"CircuitTool v${NEW_VERSION} - Automated Release\"" "$NC"
+    print_color "  git push origin v${NEW_VERSION}" "$NC"
+    print_color "  gh release create v${NEW_VERSION} ./release/v${NEW_VERSION}/*.nupkg ./release/v${NEW_VERSION}/*.md \\" "$NC"
+    print_color "    --title \"CircuitTool v${NEW_VERSION} - Automated Release\" \\" "$NC"
+    print_color "    --notes-file ./release/v${NEW_VERSION}/RELEASE_NOTES.md \\" "$NC"
     print_color "    --repo ${GITHUB_REPO}" "$NC"
     print_color "" "$NC"
     print_color "  # Or via Web Interface:" "$NC"
     print_color "  https://github.com/${GITHUB_REPO}/releases/new" "$NC"
-    print_color "    - Tag: v${VERSION}" "$NC"
-    print_color "    - Title: CircuitTool v${VERSION} - Documentation Excellence" "$NC"
-    print_color "    - Upload files from ./release/v${VERSION}/" "$NC"
+    print_color "    - Tag: v${NEW_VERSION}" "$NC"
+    print_color "    - Title: CircuitTool v${NEW_VERSION} - Automated Release" "$NC"
+    print_color "    - Upload files from ./release/v${NEW_VERSION}/" "$NC"
 fi
 print_color "" "$NC"
 
 # Create a quick test script
-cat > release/v${VERSION}/test-package.sh << 'EOF'
+cat > release/v${NEW_VERSION}/test-package.sh << 'EOF'
 #!/bin/bash
 # Quick test script for the NuGet package
 
@@ -469,14 +653,14 @@ dotnet new console -n CircuitToolTest
 cd CircuitToolTest
 
 # Add the local package
-dotnet add package CircuitTool --source ../../ --version 2.2.0
+dotnet add package CircuitTool --source ../../ --version 2.3.0
 
 # Create a simple test
 cat > Program.cs << 'EOL'
 using CircuitTool;
 using CircuitTool.Calculators;
 
-Console.WriteLine("CircuitTool v2.2.0 Test");
+Console.WriteLine("CircuitTool v2.3.0 Test");
 Console.WriteLine("======================");
 
 // Test basic Ohm's Law calculation
@@ -500,14 +684,14 @@ rm -rf temp-test
 echo "✅ Package test completed!"
 EOF
 
-chmod +x release/v${VERSION}/test-package.sh
+chmod +x release/v${NEW_VERSION}/test-package.sh
 
-print_color "✅ Test script created: ./release/v${VERSION}/test-package.sh" "$GREEN"
+print_color "✅ Test script created: ./release/v${NEW_VERSION}/test-package.sh" "$GREEN"
 print_color "" "$NC"
 
-# Step 9: Create GitHub Release (if enabled and not dry run)
+# Step 11: Create GitHub Release (if enabled and not dry run)
 if [ "$AUTO_CREATE_RELEASE" = true ] && [ "$DRY_RUN" != true ]; then
-    print_color "🚀 Step 9: Creating GitHub release..." "$YELLOW"
+    print_color "🚀 Step 11: Creating GitHub release..." "$YELLOW"
     
     # Check if GitHub CLI is available
     if ! check_github_cli; then
