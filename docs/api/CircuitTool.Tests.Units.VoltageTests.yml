@@ -1,0 +1,918 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Units.VoltageTests
+  commentId: T:CircuitTool.Tests.Units.VoltageTests
+  id: VoltageTests
+  parent: CircuitTool.Tests.Units
+  children:
+  - CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+  - CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+  - CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+  - CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+  - CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+  - CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+  - CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+  - CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+  - CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+  - CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly
+  - CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+  - CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+  - CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+  - CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+  langs:
+  - csharp
+  - vb
+  name: VoltageTests
+  nameWithType: VoltageTests
+  fullName: CircuitTool.Tests.Units.VoltageTests
+  type: Class
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: VoltageTests
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class VoltageTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class VoltageTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+  id: Constructor_ValidValue_CreatesCorrectVoltage
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ValidValue_CreatesCorrectVoltage()
+  nameWithType: VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Constructor_ValidValue_CreatesCorrectVoltage
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Constructor_ValidValue_CreatesCorrectVoltage()
+    content.vb: >-
+      <Test>
+
+      Public Sub Constructor_ValidValue_CreatesCorrectVoltage()
+  overload: CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+  id: Constructor_Kilovolts_ConvertsCorrectly
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_Kilovolts_ConvertsCorrectly()
+  nameWithType: VoltageTests.Constructor_Kilovolts_ConvertsCorrectly()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Constructor_Kilovolts_ConvertsCorrectly
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 19
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Constructor_Kilovolts_ConvertsCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub Constructor_Kilovolts_ConvertsCorrectly()
+  overload: CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+  id: Constructor_Millivolts_ConvertsCorrectly
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_Millivolts_ConvertsCorrectly()
+  nameWithType: VoltageTests.Constructor_Millivolts_ConvertsCorrectly()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Constructor_Millivolts_ConvertsCorrectly
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 30
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Constructor_Millivolts_ConvertsCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub Constructor_Millivolts_ConvertsCorrectly()
+  overload: CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+  id: GetValue_DifferentUnits_ReturnsCorrectValues
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: GetValue_DifferentUnits_ReturnsCorrectValues()
+  nameWithType: VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues()
+  fullName: CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: GetValue_DifferentUnits_ReturnsCorrectValues
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 41
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void GetValue_DifferentUnits_ReturnsCorrectValues()
+    content.vb: >-
+      <Test>
+
+      Public Sub GetValue_DifferentUnits_ReturnsCorrectValues()
+  overload: CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+  id: Addition_TwoVoltages_ReturnsCorrectSum
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Addition_TwoVoltages_ReturnsCorrectSum()
+  nameWithType: VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Addition_TwoVoltages_ReturnsCorrectSum
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 53
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Addition_TwoVoltages_ReturnsCorrectSum()
+    content.vb: >-
+      <Test>
+
+      Public Sub Addition_TwoVoltages_ReturnsCorrectSum()
+  overload: CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+  id: Subtraction_TwoVoltages_ReturnsCorrectDifference
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Subtraction_TwoVoltages_ReturnsCorrectDifference()
+  nameWithType: VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Subtraction_TwoVoltages_ReturnsCorrectDifference
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 67
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Subtraction_TwoVoltages_ReturnsCorrectDifference()
+    content.vb: >-
+      <Test>
+
+      Public Sub Subtraction_TwoVoltages_ReturnsCorrectDifference()
+  overload: CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+  id: Multiplication_VoltageByScalar_ReturnsCorrectResult
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Multiplication_VoltageByScalar_ReturnsCorrectResult()
+  nameWithType: VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Multiplication_VoltageByScalar_ReturnsCorrectResult
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 81
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Multiplication_VoltageByScalar_ReturnsCorrectResult()
+    content.vb: >-
+      <Test>
+
+      Public Sub Multiplication_VoltageByScalar_ReturnsCorrectResult()
+  overload: CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+  id: Division_VoltageByScalar_ReturnsCorrectResult
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Division_VoltageByScalar_ReturnsCorrectResult()
+  nameWithType: VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Division_VoltageByScalar_ReturnsCorrectResult
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 94
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Division_VoltageByScalar_ReturnsCorrectResult()
+    content.vb: >-
+      <Test>
+
+      Public Sub Division_VoltageByScalar_ReturnsCorrectResult()
+  overload: CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+  id: Comparison_EqualVoltages_ReturnsTrue
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Comparison_EqualVoltages_ReturnsTrue()
+  nameWithType: VoltageTests.Comparison_EqualVoltages_ReturnsTrue()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Comparison_EqualVoltages_ReturnsTrue
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 107
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Comparison_EqualVoltages_ReturnsTrue()
+    content.vb: >-
+      <Test>
+
+      Public Sub Comparison_EqualVoltages_ReturnsTrue()
+  overload: CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+  id: Comparison_DifferentVoltages_WorksCorrectly
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: Comparison_DifferentVoltages_WorksCorrectly()
+  nameWithType: VoltageTests.Comparison_DifferentVoltages_WorksCorrectly()
+  fullName: CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Comparison_DifferentVoltages_WorksCorrectly
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 119
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void Comparison_DifferentVoltages_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub Comparison_DifferentVoltages_WorksCorrectly()
+  overload: CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+  id: ToString_DefaultFormat_ReturnsCorrectString
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: ToString_DefaultFormat_ReturnsCorrectString()
+  nameWithType: VoltageTests.ToString_DefaultFormat_ReturnsCorrectString()
+  fullName: CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString_DefaultFormat_ReturnsCorrectString
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 132
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToString_DefaultFormat_ReturnsCorrectString()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToString_DefaultFormat_ReturnsCorrectString()
+  overload: CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+  id: ToString_SpecificUnit_ReturnsCorrectString
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: ToString_SpecificUnit_ReturnsCorrectString()
+  nameWithType: VoltageTests.ToString_SpecificUnit_ReturnsCorrectString()
+  fullName: CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ToString_SpecificUnit_ReturnsCorrectString
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 145
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void ToString_SpecificUnit_ReturnsCorrectString()
+    content.vb: >-
+      <Test>
+
+      Public Sub ToString_SpecificUnit_ReturnsCorrectString()
+  overload: CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+  id: ImplicitConversion_FromDouble_WorksCorrectly
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: ImplicitConversion_FromDouble_WorksCorrectly()
+  nameWithType: VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly()
+  fullName: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImplicitConversion_FromDouble_WorksCorrectly
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 158
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImplicitConversion_FromDouble_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImplicitConversion_FromDouble_WorksCorrectly()
+  overload: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly
+  commentId: M:CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly
+  id: ImplicitConversion_ToDouble_WorksCorrectly
+  parent: CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: ImplicitConversion_ToDouble_WorksCorrectly()
+  nameWithType: VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly()
+  fullName: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/Units/VoltageTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImplicitConversion_ToDouble_WorksCorrectly
+    path: ../tests/Units/VoltageTests.cs
+    startLine: 168
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests.Units
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImplicitConversion_ToDouble_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImplicitConversion_ToDouble_WorksCorrectly()
+  overload: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests.Units
+  commentId: N:CircuitTool.Tests.Units
+  href: CircuitTool.html
+  name: CircuitTool.Tests.Units
+  nameWithType: CircuitTool.Tests.Units
+  fullName: CircuitTool.Tests.Units
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  - name: .
+  - uid: CircuitTool.Tests.Units
+    name: Units
+    href: CircuitTool.Tests.Units.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  - name: .
+  - uid: CircuitTool.Tests.Units
+    name: Units
+    href: CircuitTool.Tests.Units.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Constructor_ValidValue_CreatesCorrectVoltage
+  name: Constructor_ValidValue_CreatesCorrectVoltage
+  nameWithType: VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_ValidValue_CreatesCorrectVoltage
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Constructor_Kilovolts_ConvertsCorrectly
+  name: Constructor_Kilovolts_ConvertsCorrectly
+  nameWithType: VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_Kilovolts_ConvertsCorrectly
+- uid: CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Constructor_Millivolts_ConvertsCorrectly
+  name: Constructor_Millivolts_ConvertsCorrectly
+  nameWithType: VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+  fullName: CircuitTool.Tests.Units.VoltageTests.Constructor_Millivolts_ConvertsCorrectly
+- uid: CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_GetValue_DifferentUnits_ReturnsCorrectValues
+  name: GetValue_DifferentUnits_ReturnsCorrectValues
+  nameWithType: VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+  fullName: CircuitTool.Tests.Units.VoltageTests.GetValue_DifferentUnits_ReturnsCorrectValues
+- uid: CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Addition_TwoVoltages_ReturnsCorrectSum
+  name: Addition_TwoVoltages_ReturnsCorrectSum
+  nameWithType: VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+  fullName: CircuitTool.Tests.Units.VoltageTests.Addition_TwoVoltages_ReturnsCorrectSum
+- uid: CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Subtraction_TwoVoltages_ReturnsCorrectDifference
+  name: Subtraction_TwoVoltages_ReturnsCorrectDifference
+  nameWithType: VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+  fullName: CircuitTool.Tests.Units.VoltageTests.Subtraction_TwoVoltages_ReturnsCorrectDifference
+- uid: CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Multiplication_VoltageByScalar_ReturnsCorrectResult
+  name: Multiplication_VoltageByScalar_ReturnsCorrectResult
+  nameWithType: VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+  fullName: CircuitTool.Tests.Units.VoltageTests.Multiplication_VoltageByScalar_ReturnsCorrectResult
+- uid: CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Division_VoltageByScalar_ReturnsCorrectResult
+  name: Division_VoltageByScalar_ReturnsCorrectResult
+  nameWithType: VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+  fullName: CircuitTool.Tests.Units.VoltageTests.Division_VoltageByScalar_ReturnsCorrectResult
+- uid: CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Comparison_EqualVoltages_ReturnsTrue
+  name: Comparison_EqualVoltages_ReturnsTrue
+  nameWithType: VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+  fullName: CircuitTool.Tests.Units.VoltageTests.Comparison_EqualVoltages_ReturnsTrue
+- uid: CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_Comparison_DifferentVoltages_WorksCorrectly
+  name: Comparison_DifferentVoltages_WorksCorrectly
+  nameWithType: VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+  fullName: CircuitTool.Tests.Units.VoltageTests.Comparison_DifferentVoltages_WorksCorrectly
+- uid: CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_ToString_DefaultFormat_ReturnsCorrectString
+  name: ToString_DefaultFormat_ReturnsCorrectString
+  nameWithType: VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+  fullName: CircuitTool.Tests.Units.VoltageTests.ToString_DefaultFormat_ReturnsCorrectString
+- uid: CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_ToString_SpecificUnit_ReturnsCorrectString
+  name: ToString_SpecificUnit_ReturnsCorrectString
+  nameWithType: VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+  fullName: CircuitTool.Tests.Units.VoltageTests.ToString_SpecificUnit_ReturnsCorrectString
+- uid: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_ImplicitConversion_FromDouble_WorksCorrectly
+  name: ImplicitConversion_FromDouble_WorksCorrectly
+  nameWithType: VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+  fullName: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_FromDouble_WorksCorrectly
+- uid: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly
+  href: CircuitTool.Tests.Units.VoltageTests.html#CircuitTool_Tests_Units_VoltageTests_ImplicitConversion_ToDouble_WorksCorrectly
+  name: ImplicitConversion_ToDouble_WorksCorrectly
+  nameWithType: VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly
+  fullName: CircuitTool.Tests.Units.VoltageTests.ImplicitConversion_ToDouble_WorksCorrectly

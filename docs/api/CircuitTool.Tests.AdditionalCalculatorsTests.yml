@@ -1,0 +1,1426 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests
+  commentId: T:CircuitTool.Tests.AdditionalCalculatorsTests
+  id: AdditionalCalculatorsTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  - CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  - CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  - CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+  - CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  - CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  - CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  langs:
+  - csharp
+  - vb
+  name: AdditionalCalculatorsTests
+  nameWithType: AdditionalCalculatorsTests
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests
+  type: Class
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AdditionalCalculatorsTests
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 5
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class AdditionalCalculatorsTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class AdditionalCalculatorsTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  id: AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 10
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  id: AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_HalfWaveLength_ReturnsCorrectLength()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 21
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_HalfWaveLength_ReturnsCorrectLength()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_HalfWaveLength_ReturnsCorrectLength()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  id: AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_DipoleImpedance_ReturnsReasonableValue()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 31
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_DipoleImpedance_ReturnsReasonableValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_DipoleImpedance_ReturnsReasonableValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  id: AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_AntennaGain_ReturnsCorrectGain()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_AntennaGain_ReturnsCorrectGain
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 42
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_AntennaGain_ReturnsCorrectGain()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_AntennaGain_ReturnsCorrectGain()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+  id: AntennaCalculator_VSWR_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_VSWR_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_VSWR_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 53
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_VSWR_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_VSWR_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  id: AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 63
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+  id: AntennaCalculator_InvalidInputs_ThrowsException
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AntennaCalculator_InvalidInputs_ThrowsException()
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AntennaCalculator_InvalidInputs_ThrowsException
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 75
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AntennaCalculator_InvalidInputs_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub AntennaCalculator_InvalidInputs_ThrowsException()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  id: SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 87
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  id: SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay()
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 100
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay()
+    content.vb: >-
+      <Test>
+
+      Public Sub SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  id: SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue()
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 112
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  id: SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 125
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  id: SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: SignalIntegrityCalculator_InvalidInputs_ThrowsException()
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SignalIntegrityCalculator_InvalidInputs_ThrowsException
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 138
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SignalIntegrityCalculator_InvalidInputs_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub SignalIntegrityCalculator_InvalidInputs_ThrowsException()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  id: ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp()
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 149
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp()
+    content.vb: >-
+      <Test>
+
+      Public Sub ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  id: ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 162
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  id: ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 177
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  id: ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue()
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 189
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+  id: ThermalCalculator_InvalidInputs_ThrowsException
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: ThermalCalculator_InvalidInputs_ThrowsException()
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ThermalCalculator_InvalidInputs_ThrowsException
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 203
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ThermalCalculator_InvalidInputs_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ThermalCalculator_InvalidInputs_ThrowsException()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  id: EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 214
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  id: EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 227
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  id: EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 240
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+  id: EMCCalculator_LoopInductance_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_LoopInductance_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_LoopInductance_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 259
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_LoopInductance_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_LoopInductance_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  id: EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 271
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+  id: EMCCalculator_InvalidInputs_ThrowsException
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: EMCCalculator_InvalidInputs_ThrowsException()
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EMCCalculator_InvalidInputs_ThrowsException
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 284
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EMCCalculator_InvalidInputs_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub EMCCalculator_InvalidInputs_ThrowsException()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  id: AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly()
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 296
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  id: AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly()
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 323
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  commentId: M:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  id: AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  parent: CircuitTool.Tests.AdditionalCalculatorsTests
+  langs:
+  - csharp
+  - vb
+  name: AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly()
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly()
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: tests/AdditionalCalculatorsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+    path: ../tests/AdditionalCalculatorsTests.cs
+    startLine: 348
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly()
+    content.vb: >-
+      <Test>
+
+      Public Sub AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly()
+  overload: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  name: AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_QuarterWaveLength_ReturnsCorrectLength
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  name: AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_HalfWaveLength_ReturnsCorrectLength
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  name: AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_DipoleImpedance_ReturnsReasonableValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  name: AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_AntennaGain_ReturnsCorrectGain
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_VSWR_ReturnsCorrectValue
+  name: AntennaCalculator_VSWR_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_VSWR_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  name: AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_EffectiveRadiatedPower_ReturnsCorrectPower
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AntennaCalculator_InvalidInputs_ThrowsException
+  name: AntennaCalculator_InvalidInputs_ThrowsException
+  nameWithType: AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AntennaCalculator_InvalidInputs_ThrowsException
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  name: SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_MicrostripImpedance_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  name: SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_PropagationDelay_ReturnsCorrectDelay
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  name: SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_CrosstalkCoupling_ReturnsReasonableValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  name: SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_RiseTimeDegradation_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  name: SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  nameWithType: AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.SignalIntegrityCalculator_InvalidInputs_ThrowsException
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  name: ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_JunctionTemperature_ReturnsCorrectTemp
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  name: ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_RequiredHeatSinkThermalResistance_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  name: ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ThermalTimeConstant_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  name: ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_ConvectiveHeatTransfer_ReturnsReasonableValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_ThermalCalculator_InvalidInputs_ThrowsException
+  name: ThermalCalculator_InvalidInputs_ThrowsException
+  nameWithType: AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.ThermalCalculator_InvalidInputs_ThrowsException
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  name: EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ElectricFieldStrength_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  name: EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_ShieldingEffectiveness_ReturnsReasonableValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  name: EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_FCCClassBLimit_ReturnsCorrectLimits
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_LoopInductance_ReturnsCorrectValue
+  name: EMCCalculator_LoopInductance_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_LoopInductance_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  name: EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_CommonModeChokeImpedance_ReturnsCorrectValue
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_EMCCalculator_InvalidInputs_ThrowsException
+  name: EMCCalculator_InvalidInputs_ThrowsException
+  nameWithType: AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.EMCCalculator_InvalidInputs_ThrowsException
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  name: AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_AntennaDesignWorkflow_WorksCorrectly
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  name: AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_ThermalDesignWorkflow_WorksCorrectly
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly*
+  commentId: Overload:CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html#CircuitTool_Tests_AdditionalCalculatorsTests_AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  name: AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  nameWithType: AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests.AdditionalCalculators_EMCComplianceWorkflow_WorksCorrectly

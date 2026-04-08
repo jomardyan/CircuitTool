@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PowerSupplyCalculator | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PowerSupplyCalculator | CircuitTool - Electrical Engineering Library ">
+      
+      <meta name="description" content="Provides calculations and utilities for power supply design and analysis">
+      <link rel="icon" href="../../icon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/new/main/apiSpec/new?filename=CircuitTool_PowerSupplyCalculator.md&amp;value=---%0Auid%3A%20CircuitTool.PowerSupplyCalculator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CircuitTool.PowerSupplyCalculator">
+
+
+
+  <h1 id="CircuitTool_PowerSupplyCalculator" data-uid="CircuitTool.PowerSupplyCalculator" class="text-break">
+Class PowerSupplyCalculator  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CircuitTool.html">CircuitTool</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>CircuitTool.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides calculations and utilities for power supply design and analysis</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PowerSupplyCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PowerSupplyCalculator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateBoostInductor_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBoostInductor*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateBoostInductor_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBoostInductor(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  CalculateBoostInductor(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates boost converter inductor value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateBoostInductor(double inputVoltage, double outputVoltage, double outputCurrent, double switchingFrequency, double currentRipple = 0.2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage</p>
+</dd>
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz</p>
+</dd>
+    <dt><code>currentRipple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Acceptable current ripple (0.1 = 10%)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required inductor value in henries</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateBuckCapacitor_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBuckCapacitor*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateBuckCapacitor_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBuckCapacitor(System.Double,System.Double,System.Double,System.Double)">
+  CalculateBuckCapacitor(double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates buck converter output capacitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateBuckCapacitor(double outputCurrent, double switchingFrequency, double voltageRipple, double currentRipple = 0.2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz</p>
+</dd>
+    <dt><code>voltageRipple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Acceptable voltage ripple in volts</p>
+</dd>
+    <dt><code>currentRipple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Inductor current ripple (0.1 = 10%)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required capacitance in farads</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateBuckInductor_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBuckInductor*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateBuckInductor_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateBuckInductor(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  CalculateBuckInductor(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates buck converter inductor value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateBuckInductor(double inputVoltage, double outputVoltage, double outputCurrent, double switchingFrequency, double currentRipple = 0.2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage</p>
+</dd>
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current</p>
+</dd>
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz</p>
+</dd>
+    <dt><code>currentRipple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Acceptable current ripple (0.1 = 10%)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Required inductor value in henries</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateCurrentSenseResistor_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateCurrentSenseResistor*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateCurrentSenseResistor_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateCurrentSenseResistor(System.Double,System.Double,System.Double)">
+  CalculateCurrentSenseResistor(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates current sense resistor value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double resistance, double powerRating) CalculateCurrentSenseResistor(double maxCurrent, double senseVoltage = 0.1, double tolerance = 0.01)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum current to sense</p>
+</dd>
+    <dt><code>senseVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Desired sense voltage (typically 0.1-0.5V)</p>
+</dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Resistor tolerance (0.01 = 1%)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh">NoiseMarginHigh</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow">NoiseMarginLow</a>)</dt>
+    <dd><p>Sense resistor value and power rating</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateEMIFilter_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateEMIFilter*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateEMIFilter_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateEMIFilter(System.Double,System.Double,System.Double)">
+  CalculateEMIFilter(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates EMI filter components for switching power supply</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double commonModeInductor, double differentialModeInductor, double commonModeCapacitor, double differentialModeCapacitor) CalculateEMIFilter(double switchingFrequency, double inputCurrent, double cableLength = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>switchingFrequency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Switching frequency in Hz</p>
+</dd>
+    <dt><code>inputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input current</p>
+</dd>
+    <dt><code>cableLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input cable length in meters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.setuptime">setupTime</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.holdtime">holdTime</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.risetime">riseTime</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double-.falltime">fallTime</a>)</dt>
+    <dd><p>Common mode and differential mode filter values</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateFlybackTurnsRatio_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateFlybackTurnsRatio*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateFlybackTurnsRatio_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateFlybackTurnsRatio(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  CalculateFlybackTurnsRatio(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates flyback transformer turns ratio</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateFlybackTurnsRatio(double inputVoltageMin, double inputVoltageMax, double outputVoltage, double forwardVoltageOutput = 0.7, double maxDutyCycle = 0.45)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltageMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum input voltage</p>
+</dd>
+    <dt><code>inputVoltageMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum input voltage</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage</p>
+</dd>
+    <dt><code>forwardVoltageOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output diode forward voltage</p>
+</dd>
+    <dt><code>maxDutyCycle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Maximum duty cycle (typically 0.45)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Primary to secondary turns ratio</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateHoldupTime_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateHoldupTime*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateHoldupTime_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateHoldupTime(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  CalculateHoldupTime(double, double, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates holdup time for power supply</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CalculateHoldupTime(double inputCapacitance, double nominalVoltage, double minimumVoltage, double outputPower, double efficiency = 0.85)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputCapacitance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input capacitance in farads</p>
+</dd>
+    <dt><code>nominalVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Nominal input voltage</p>
+</dd>
+    <dt><code>minimumVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Minimum operating voltage</p>
+</dd>
+    <dt><code>outputPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output power in watts</p>
+</dd>
+    <dt><code>efficiency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Power supply efficiency (0-1)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Holdup time in seconds</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_CalculateLinearRegulator_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateLinearRegulator*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_CalculateLinearRegulator_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.CalculateLinearRegulator(System.Double,System.Double,System.Double)">
+  CalculateLinearRegulator(double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates linear regulator heat dissipation and efficiency</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (double powerDissipation, double efficiency) CalculateLinearRegulator(double inputVoltage, double outputVoltage, double outputCurrent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage</p>
+</dd>
+    <dt><code>outputCurrent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output current</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginhigh">NoiseMarginHigh</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.noisemarginlow">NoiseMarginLow</a>)</dt>
+    <dd><p>Power dissipation and efficiency</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_EstimateEfficiency_" data-uid="CircuitTool.PowerSupplyCalculator.EstimateEfficiency*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_EstimateEfficiency_CircuitTool_PowerSupplyCalculator_PSUTopology_System_Double_System_Double_System_Double_" data-uid="CircuitTool.PowerSupplyCalculator.EstimateEfficiency(CircuitTool.PowerSupplyCalculator.PSUTopology,System.Double,System.Double,System.Double)">
+  EstimateEfficiency(PSUTopology, double, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates power supply efficiency at different loads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double EstimateEfficiency(PowerSupplyCalculator.PSUTopology topology, double inputVoltage, double outputVoltage, double loadPercentage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topology</code> <a class="xref" href="CircuitTool.PowerSupplyCalculator.html">PowerSupplyCalculator</a>.<a class="xref" href="CircuitTool.PowerSupplyCalculator.PSUTopology.html">PSUTopology</a></dt>
+    <dd><p>Power supply topology</p>
+</dd>
+    <dt><code>inputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input voltage</p>
+</dd>
+    <dt><code>outputVoltage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output voltage</p>
+</dd>
+    <dt><code>loadPercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Load as percentage of maximum (0-1)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Estimated efficiency</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CircuitTool_PowerSupplyCalculator_GenerateDesignChecklist_" data-uid="CircuitTool.PowerSupplyCalculator.GenerateDesignChecklist*"></a>
+
+  <h3 id="CircuitTool_PowerSupplyCalculator_GenerateDesignChecklist_CircuitTool_PowerSupplyCalculator_PSUTopology_System_Double_System_Boolean_" data-uid="CircuitTool.PowerSupplyCalculator.GenerateDesignChecklist(CircuitTool.PowerSupplyCalculator.PSUTopology,System.Double,System.Boolean)">
+  GenerateDesignChecklist(PSUTopology, double, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates power supply design checklist</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GenerateDesignChecklist(PowerSupplyCalculator.PSUTopology topology, double outputPower, bool isIsolated = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>topology</code> <a class="xref" href="CircuitTool.PowerSupplyCalculator.html">PowerSupplyCalculator</a>.<a class="xref" href="CircuitTool.PowerSupplyCalculator.PSUTopology.html">PSUTopology</a></dt>
+    <dd><p>Power supply topology</p>
+</dd>
+    <dt><code>outputPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output power in watts</p>
+</dd>
+    <dt><code>isIsolated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether isolation is required</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Design checklist</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/src/Hardware/PowerSupplyCalculator.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1125 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.InductorCalculatorTests
+  commentId: T:CircuitTool.Tests.InductorCalculatorTests
+  id: InductorCalculatorTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+  - CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  - CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+  - CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+  - CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+  - CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+  langs:
+  - csharp
+  - vb
+  name: InductorCalculatorTests
+  nameWithType: InductorCalculatorTests
+  fullName: CircuitTool.Tests.InductorCalculatorTests
+  type: Class
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductorCalculatorTests
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class InductorCalculatorTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class InductorCalculatorTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+  id: InductiveReactance_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: InductiveReactance_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductiveReactance_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void InductiveReactance_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub InductiveReactance_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+  id: InductiveReactance_ZeroFrequency_ReturnsZero
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: InductiveReactance_ZeroFrequency_ReturnsZero()
+  nameWithType: InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductiveReactance_ZeroFrequency_ReturnsZero
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 24
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void InductiveReactance_ZeroFrequency_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub InductiveReactance_ZeroFrequency_ReturnsZero()
+  overload: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+  id: InductiveReactance_NegativeInductance_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: InductiveReactance_NegativeInductance_ThrowsException()
+  nameWithType: InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: InductiveReactance_NegativeInductance_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 34
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void InductiveReactance_NegativeInductance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub InductiveReactance_NegativeInductance_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  id: EnergyStored_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 41
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EnergyStored_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EnergyStored_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+  id: EnergyStored_ZeroCurrent_ReturnsZero
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored_ZeroCurrent_ReturnsZero()
+  nameWithType: InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored_ZeroCurrent_ReturnsZero
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 56
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EnergyStored_ZeroCurrent_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub EnergyStored_ZeroCurrent_ReturnsZero()
+  overload: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  id: TimeConstant_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: TimeConstant_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TimeConstant_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 66
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TimeConstant_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub TimeConstant_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+  id: TimeConstant_ZeroResistance_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: TimeConstant_ZeroResistance_ThrowsException()
+  nameWithType: InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TimeConstant_ZeroResistance_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 80
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TimeConstant_ZeroResistance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub TimeConstant_ZeroResistance_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+  id: SeriesInductance_TwoInductors_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesInductance_TwoInductors_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesInductance_TwoInductors_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 87
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesInductance_TwoInductors_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesInductance_TwoInductors_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+  id: SeriesInductance_NullArray_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesInductance_NullArray_ThrowsException()
+  nameWithType: InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesInductance_NullArray_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 100
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesInductance_NullArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesInductance_NullArray_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+  id: SeriesInductance_EmptyArray_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesInductance_EmptyArray_ThrowsException()
+  nameWithType: InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesInductance_EmptyArray_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 107
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesInductance_EmptyArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesInductance_EmptyArray_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+  id: ParallelInductance_TwoInductors_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ParallelInductance_TwoInductors_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelInductance_TwoInductors_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 114
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ParallelInductance_TwoInductors_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ParallelInductance_TwoInductors_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+  id: ParallelInductance_NullArray_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ParallelInductance_NullArray_ThrowsException()
+  nameWithType: InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelInductance_NullArray_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 128
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ParallelInductance_NullArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ParallelInductance_NullArray_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  id: CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CurrentBuildup_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentBuildup_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 135
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CurrentBuildup_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub CurrentBuildup_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+  id: CurrentBuildup_ZeroTime_ReturnsZero
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CurrentBuildup_ZeroTime_ReturnsZero()
+  nameWithType: InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentBuildup_ZeroTime_ReturnsZero
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 152
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CurrentBuildup_ZeroTime_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub CurrentBuildup_ZeroTime_ReturnsZero()
+  overload: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+  id: CurrentDecay_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CurrentDecay_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentDecay_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 162
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CurrentDecay_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub CurrentDecay_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  id: CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CurrentDecay_ZeroTime_ReturnsInitialCurrent()
+  nameWithType: InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CurrentDecay_ZeroTime_ReturnsInitialCurrent
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 179
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CurrentDecay_ZeroTime_ReturnsInitialCurrent()
+    content.vb: >-
+      <Test>
+
+      Public Sub CurrentDecay_ZeroTime_ReturnsInitialCurrent()
+  overload: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  id: ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ResonantFrequency_ValidInputs_ReturnsCorrectValue()
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResonantFrequency_ValidInputs_ReturnsCorrectValue
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 189
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ResonantFrequency_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ResonantFrequency_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+  id: ResonantFrequency_ZeroInductance_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ResonantFrequency_ZeroInductance_ThrowsException()
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResonantFrequency_ZeroInductance_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 204
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ResonantFrequency_ZeroInductance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ResonantFrequency_ZeroInductance_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException
+  commentId: M:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException
+  id: ResonantFrequency_ZeroCapacitance_ThrowsException
+  parent: CircuitTool.Tests.InductorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ResonantFrequency_ZeroCapacitance_ThrowsException()
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException()
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/InductorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ResonantFrequency_ZeroCapacitance_ThrowsException
+    path: ../tests/InductorCalculatorTests.cs
+    startLine: 211
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ResonantFrequency_ZeroCapacitance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ResonantFrequency_ZeroCapacitance_ThrowsException()
+  overload: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_InductiveReactance_ValidInputs_ReturnsCorrectValue
+  name: InductiveReactance_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_InductiveReactance_ZeroFrequency_ReturnsZero
+  name: InductiveReactance_ZeroFrequency_ReturnsZero
+  nameWithType: InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_ZeroFrequency_ReturnsZero
+- uid: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_InductiveReactance_NegativeInductance_ThrowsException
+  name: InductiveReactance_NegativeInductance_ThrowsException
+  nameWithType: InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.InductiveReactance_NegativeInductance_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_EnergyStored_ValidInputs_ReturnsCorrectValue
+  name: EnergyStored_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_EnergyStored_ZeroCurrent_ReturnsZero
+  name: EnergyStored_ZeroCurrent_ReturnsZero
+  nameWithType: InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+  fullName: CircuitTool.Tests.InductorCalculatorTests.EnergyStored_ZeroCurrent_ReturnsZero
+- uid: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_TimeConstant_ValidInputs_ReturnsCorrectValue
+  name: TimeConstant_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_TimeConstant_ZeroResistance_ThrowsException
+  name: TimeConstant_ZeroResistance_ThrowsException
+  nameWithType: InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.TimeConstant_ZeroResistance_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_SeriesInductance_TwoInductors_ReturnsCorrectValue
+  name: SeriesInductance_TwoInductors_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_TwoInductors_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_SeriesInductance_NullArray_ThrowsException
+  name: SeriesInductance_NullArray_ThrowsException
+  nameWithType: InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_NullArray_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_SeriesInductance_EmptyArray_ThrowsException
+  name: SeriesInductance_EmptyArray_ThrowsException
+  nameWithType: InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.SeriesInductance_EmptyArray_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_ParallelInductance_TwoInductors_ReturnsCorrectValue
+  name: ParallelInductance_TwoInductors_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_TwoInductors_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_ParallelInductance_NullArray_ThrowsException
+  name: ParallelInductance_NullArray_ThrowsException
+  nameWithType: InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ParallelInductance_NullArray_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  name: CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_CurrentBuildup_ZeroTime_ReturnsZero
+  name: CurrentBuildup_ZeroTime_ReturnsZero
+  nameWithType: InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentBuildup_ZeroTime_ReturnsZero
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_CurrentDecay_ValidInputs_ReturnsCorrectValue
+  name: CurrentDecay_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  name: CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  nameWithType: InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+  fullName: CircuitTool.Tests.InductorCalculatorTests.CurrentDecay_ZeroTime_ReturnsInitialCurrent
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  name: ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_ResonantFrequency_ZeroInductance_ThrowsException
+  name: ResonantFrequency_ZeroInductance_ThrowsException
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroInductance_ThrowsException
+- uid: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException
+  href: CircuitTool.Tests.InductorCalculatorTests.html#CircuitTool_Tests_InductorCalculatorTests_ResonantFrequency_ZeroCapacitance_ThrowsException
+  name: ResonantFrequency_ZeroCapacitance_ThrowsException
+  nameWithType: InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException
+  fullName: CircuitTool.Tests.InductorCalculatorTests.ResonantFrequency_ZeroCapacitance_ThrowsException

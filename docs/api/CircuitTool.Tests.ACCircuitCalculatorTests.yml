@@ -1,0 +1,1297 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests
+  commentId: T:CircuitTool.Tests.ACCircuitCalculatorTests
+  id: ACCircuitCalculatorTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  - CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+  - CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+  langs:
+  - csharp
+  - vb
+  name: ACCircuitCalculatorTests
+  nameWithType: ACCircuitCalculatorTests
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests
+  type: Class
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ACCircuitCalculatorTests
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class ACCircuitCalculatorTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class ACCircuitCalculatorTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  id: ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance()
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  id: ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 24
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  id: ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 40
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+  id: ImpedanceMagnitude_NegativeResistance_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ImpedanceMagnitude_NegativeResistance_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ImpedanceMagnitude_NegativeResistance_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 56
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ImpedanceMagnitude_NegativeResistance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ImpedanceMagnitude_NegativeResistance_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+  id: PhaseAngle_ResistiveCircuit_ReturnsZero
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PhaseAngle_ResistiveCircuit_ReturnsZero()
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseAngle_ResistiveCircuit_ReturnsZero
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 63
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PhaseAngle_ResistiveCircuit_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub PhaseAngle_ResistiveCircuit_ReturnsZero()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  id: PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PhaseAngle_InductiveCircuit_ReturnsPositiveAngle()
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 78
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PhaseAngle_InductiveCircuit_ReturnsPositiveAngle()
+    content.vb: >-
+      <Test>
+
+      Public Sub PhaseAngle_InductiveCircuit_ReturnsPositiveAngle()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  id: PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle()
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 94
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle()
+    content.vb: >-
+      <Test>
+
+      Public Sub PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+  id: PhaseAngle_PurelyInductive_Returns90Degrees
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PhaseAngle_PurelyInductive_Returns90Degrees()
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PhaseAngle_PurelyInductive_Returns90Degrees
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 110
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PhaseAngle_PurelyInductive_Returns90Degrees()
+    content.vb: >-
+      <Test>
+
+      Public Sub PhaseAngle_PurelyInductive_Returns90Degrees()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+  id: PowerFactor_ResistiveCircuit_ReturnsOne
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor_ResistiveCircuit_ReturnsOne()
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor_ResistiveCircuit_ReturnsOne
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 125
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PowerFactor_ResistiveCircuit_ReturnsOne()
+    content.vb: >-
+      <Test>
+
+      Public Sub PowerFactor_ResistiveCircuit_ReturnsOne()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+  id: PowerFactor_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor_ValidInputs_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor_ValidInputs_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 139
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PowerFactor_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub PowerFactor_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+  id: PowerFactor_ZeroImpedance_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PowerFactor_ZeroImpedance_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PowerFactor_ZeroImpedance_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 153
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PowerFactor_ZeroImpedance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub PowerFactor_ZeroImpedance_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+  id: PeakToRMS_ValidInput_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PeakToRMS_ValidInput_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToRMS_ValidInput_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 160
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PeakToRMS_ValidInput_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub PeakToRMS_ValidInput_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+  id: RMSToPeak_ValidInput_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: RMSToPeak_ValidInput_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: RMSToPeak_ValidInput_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 174
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void RMSToPeak_ValidInput_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub RMSToPeak_ValidInput_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+  id: PeakToAverage_ValidInput_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PeakToAverage_ValidInput_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToAverage_ValidInput_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 188
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PeakToAverage_ValidInput_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub PeakToAverage_ValidInput_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  id: PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: PeakToPeakToPeak_ValidInput_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 202
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void PeakToPeakToPeak_ValidInput_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub PeakToPeakToPeak_ValidInput_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  id: FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: FormFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 215
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void FormFactor_SinusoidalWaveform_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub FormFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+  id: FormFactor_ZeroAverage_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: FormFactor_ZeroAverage_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: FormFactor_ZeroAverage_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 230
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void FormFactor_ZeroAverage_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub FormFactor_ZeroAverage_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  id: CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CrestFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 237
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CrestFactor_SinusoidalWaveform_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub CrestFactor_SinusoidalWaveform_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+  id: CrestFactor_ZeroRMS_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CrestFactor_ZeroRMS_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CrestFactor_ZeroRMS_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 252
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CrestFactor_ZeroRMS_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub CrestFactor_ZeroRMS_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+  id: QualityFactor_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: QualityFactor_ValidInputs_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QualityFactor_ValidInputs_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 259
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void QualityFactor_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub QualityFactor_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+  id: QualityFactor_ZeroResistance_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: QualityFactor_ZeroResistance_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: QualityFactor_ZeroResistance_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 273
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void QualityFactor_ZeroResistance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub QualityFactor_ZeroResistance_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+  id: Bandwidth_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Bandwidth_ValidInputs_ReturnsCorrectValue()
+  nameWithType: ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Bandwidth_ValidInputs_ReturnsCorrectValue
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 280
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Bandwidth_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub Bandwidth_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException
+  commentId: M:CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException
+  id: Bandwidth_ZeroQualityFactor_ThrowsException
+  parent: CircuitTool.Tests.ACCircuitCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Bandwidth_ZeroQualityFactor_ThrowsException()
+  nameWithType: ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException()
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ACCircuitCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: Bandwidth_ZeroQualityFactor_ThrowsException
+    path: ../tests/ACCircuitCalculatorTests.cs
+    startLine: 294
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Bandwidth_ZeroQualityFactor_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub Bandwidth_ZeroQualityFactor_ThrowsException()
+  overload: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  name: ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_ResistiveCircuit_ReturnsResistance
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  name: ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRLCircuit_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  name: ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_SeriesRCCircuit_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_ImpedanceMagnitude_NegativeResistance_ThrowsException
+  name: ImpedanceMagnitude_NegativeResistance_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.ImpedanceMagnitude_NegativeResistance_ThrowsException
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PhaseAngle_ResistiveCircuit_ReturnsZero
+  name: PhaseAngle_ResistiveCircuit_ReturnsZero
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_ResistiveCircuit_ReturnsZero
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  name: PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_InductiveCircuit_ReturnsPositiveAngle
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  name: PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_CapacitiveCircuit_ReturnsNegativeAngle
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PhaseAngle_PurelyInductive_Returns90Degrees
+  name: PhaseAngle_PurelyInductive_Returns90Degrees
+  nameWithType: ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PhaseAngle_PurelyInductive_Returns90Degrees
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PowerFactor_ResistiveCircuit_ReturnsOne
+  name: PowerFactor_ResistiveCircuit_ReturnsOne
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ResistiveCircuit_ReturnsOne
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PowerFactor_ValidInputs_ReturnsCorrectValue
+  name: PowerFactor_ValidInputs_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PowerFactor_ZeroImpedance_ThrowsException
+  name: PowerFactor_ZeroImpedance_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PowerFactor_ZeroImpedance_ThrowsException
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PeakToRMS_ValidInput_ReturnsCorrectValue
+  name: PeakToRMS_ValidInput_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToRMS_ValidInput_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_RMSToPeak_ValidInput_ReturnsCorrectValue
+  name: RMSToPeak_ValidInput_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.RMSToPeak_ValidInput_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PeakToAverage_ValidInput_ReturnsCorrectValue
+  name: PeakToAverage_ValidInput_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToAverage_ValidInput_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  name: PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.PeakToPeakToPeak_ValidInput_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  name: FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_SinusoidalWaveform_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_FormFactor_ZeroAverage_ThrowsException
+  name: FormFactor_ZeroAverage_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.FormFactor_ZeroAverage_ThrowsException
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  name: CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_SinusoidalWaveform_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_CrestFactor_ZeroRMS_ThrowsException
+  name: CrestFactor_ZeroRMS_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.CrestFactor_ZeroRMS_ThrowsException
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_QualityFactor_ValidInputs_ReturnsCorrectValue
+  name: QualityFactor_ValidInputs_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_QualityFactor_ZeroResistance_ThrowsException
+  name: QualityFactor_ZeroResistance_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.QualityFactor_ZeroResistance_ThrowsException
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_Bandwidth_ValidInputs_ReturnsCorrectValue
+  name: Bandwidth_ValidInputs_ReturnsCorrectValue
+  nameWithType: ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html#CircuitTool_Tests_ACCircuitCalculatorTests_Bandwidth_ZeroQualityFactor_ThrowsException
+  name: Bandwidth_ZeroQualityFactor_ThrowsException
+  nameWithType: ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests.Bandwidth_ZeroQualityFactor_ThrowsException

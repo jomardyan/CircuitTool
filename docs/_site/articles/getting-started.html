@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started with CircuitTool | CircuitTool - Electrical Engineering Library </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started with CircuitTool | CircuitTool - Electrical Engineering Library ">
+      
+      
+      <link rel="icon" href="../icon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/jomardyan/CircuitTool/blob/main/articles/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../icon.png" alt="CircuitTool">
+            CircuitTool
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started-with-circuittool">Getting Started with CircuitTool</h1>
+
+<blockquote>
+<p><strong>Your complete guide to electrical engineering calculations in C#</strong></p>
+</blockquote>
+<p>This comprehensive guide will help you get started with CircuitTool, from installation to advanced usage scenarios. Whether you're a student learning electronics or an experienced engineer, this guide provides the foundation you need.</p>
+<h2 id="-what-youll-learn">🎯 What You'll Learn</h2>
+<p>By the end of this guide, you'll be able to:</p>
+<ul>
+<li>✅ Install and configure CircuitTool in your projects</li>
+<li>✅ Perform basic electrical calculations (Ohm's Law, Power)</li>
+<li>✅ Design components (LEDs, resistors, filters)</li>
+<li>✅ Analyze AC circuits (impedance, reactance, resonance)</li>
+<li>✅ Integrate with hardware platforms (Arduino, ESP32)</li>
+<li>✅ Use advanced features (vectorization, caching)</li>
+</ul>
+<h2 id="-installation--setup">📦 Installation &amp; Setup</h2>
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+<li><strong>.NET Framework</strong> 4.5+ OR <strong>.NET Core</strong> 3.1+ OR <strong>.NET</strong> 6.0+</li>
+<li><strong>Visual Studio</strong> 2019+ or <strong>VS Code</strong> (recommended)</li>
+<li><strong>NuGet Package Manager</strong> (included with Visual Studio)</li>
+</ul>
+<h3 id="installation-methods">Installation Methods</h3>
+<h4 id="option-1-nuget-package-manager-recommended">Option 1: NuGet Package Manager (Recommended)</h4>
+<pre><code class="lang-bash"># Using .NET CLI
+dotnet add package CircuitTool
+
+# Using Package Manager Console in Visual Studio
+Install-Package CircuitTool
+</code></pre>
+<h4 id="option-2-manual-packagereference">Option 2: Manual PackageReference</h4>
+<p>Add this to your <code>.csproj</code> file:</p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;CircuitTool&quot; Version=&quot;2.1.0&quot; /&gt;
+</code></pre>
+<h4 id="option-3-visual-studio-gui">Option 3: Visual Studio GUI</h4>
+<ol>
+<li>Right-click your project → <strong>Manage NuGet Packages</strong></li>
+<li>Search for &quot;CircuitTool&quot;</li>
+<li>Click <strong>Install</strong></li>
+</ol>
+<h3 id="verify-installation">Verify Installation</h3>
+<p>Create a simple test to verify everything is working:</p>
+<pre><code class="lang-csharp">using System;
+using CircuitTool;
+
+class Program
+{
+    static void Main()
+    {
+        // Simple test calculation
+        double voltage = OhmsLawCalculator.Voltage(current: 1.0, resistance: 100.0);
+        Console.WriteLine($&quot;Test successful! Voltage: {voltage}V&quot;);
+        // Expected output: &quot;Test successful! Voltage: 100V&quot;
+    }
+}
+</code></pre>
+<hr>
+<h2 id="-fundamental-calculations">🧮 Fundamental Calculations</h2>
+<h3 id="1-ohms-law--power-calculations">1. Ohm's Law &amp; Power Calculations</h3>
+<p>Ohm's Law is the foundation of electrical engineering. CircuitTool makes these calculations simple and reliable:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// 🔋 Calculate voltage (V = I × R)
+double voltage = OhmsLawCalculator.Voltage(current: 0.5, resistance: 220);
+Console.WriteLine($&quot;Voltage: {voltage}V&quot;); // Output: 110V
+
+// ⚡ Calculate current (I = V / R)  
+double current = OhmsLawCalculator.Current(voltage: 12, resistance: 1000);
+Console.WriteLine($&quot;Current: {current}A&quot;); // Output: 0.012A
+
+// 🔧 Calculate resistance (R = V / I)
+double resistance = OhmsLawCalculator.Resistance(voltage: 5, current: 0.02);
+Console.WriteLine($&quot;Resistance: {resistance}Ω&quot;); // Output: 250Ω
+
+// 🔥 Calculate power (P = V × I)
+double power = PowerCalculator.Power(voltage: 12, current: 2);
+Console.WriteLine($&quot;Power: {power}W&quot;); // Output: 24W
+
+// Alternative power calculations
+double powerIR = PowerCalculator.PowerFromCurrentResistance(current: 2, resistance: 6);
+double powerVR = PowerCalculator.PowerFromVoltageResistance(voltage: 12, resistance: 6);
+Console.WriteLine($&quot;P = I²R: {powerIR}W, P = V²/R: {powerVR}W&quot;); // Both = 24W
+</code></pre>
+<h3 id="2-real-world-circuit-analysis">2. Real-World Circuit Analysis</h3>
+<p>Let's solve a practical problem: designing a simple LED circuit.</p>
+<pre><code class="lang-csharp">// 💡 Problem: Power a 20mA LED (2.1V forward voltage) from a 5V supply
+var ledCircuit = LEDCalculator.CalculateResistorValue(
+    supplyVoltage: 5.0,    // Arduino 5V output
+    ledVoltage: 2.1,       // Red LED forward voltage
+    ledCurrent: 0.02       // 20mA for good brightness
+);
+
+Console.WriteLine($&quot;Required resistor: {ledCircuit}Ω&quot;);
+// Output: 145Ω (use 150Ω standard value)
+
+// Calculate actual current with 150Ω resistor
+double actualCurrent = OhmsLawCalculator.Current(
+    voltage: 5.0 - 2.1,    // Voltage across resistor
+    resistance: 150
+);
+Console.WriteLine($&quot;Actual LED current: {actualCurrent * 1000:F1}mA&quot;);
+// Output: 19.3mA (within safe range)
+</code></pre>
+<hr>
+<h3 id="2-led-current-limiting-calculations">2. LED Current Limiting Calculations</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate current limiting resistor for LED
+var ledResult = LEDCalculator.CalculateCurrentLimitingResistor(
+    supplyVoltage: 5.0,
+    ledVoltage: 2.1,
+    ledCurrent: 0.02  // 20mA
+);
+
+Console.WriteLine($&quot;Resistor value: {ledResult.resistance}Ω&quot;);
+Console.WriteLine($&quot;Power dissipation: {ledResult.powerDissipation}W&quot;);
+Console.WriteLine($&quot;Recommended resistor: {ledResult.recommendedStandardValue}Ω&quot;);
+</code></pre>
+<h3 id="3-resistor-network-calculations">3. Resistor Network Calculations</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Series resistance
+double[] seriesResistors = { 100, 220, 470 };
+double totalSeries = ResistorCalculator.CalculateSeriesResistance(seriesResistors);
+Console.WriteLine($&quot;Total series resistance: {totalSeries}Ω&quot;); // Output: 790Ω
+
+// Parallel resistance
+double[] parallelResistors = { 1000, 2200, 4700 };
+double totalParallel = ResistorCalculator.CalculateParallelResistance(parallelResistors);
+Console.WriteLine($&quot;Total parallel resistance: {totalParallel:F1}Ω&quot;);
+</code></pre>
+<h3 id="4-voltage-divider-calculations">4. Voltage Divider Calculations</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate output voltage of voltage divider
+double outputVoltage = VoltageDividerCalculator.CalculateOutputVoltage(
+    inputVoltage: 12.0,
+    r1: 1000,  // Upper resistor
+    r2: 2000   // Lower resistor
+);
+Console.WriteLine($&quot;Output voltage: {outputVoltage}V&quot;); // Output: 8V
+
+// Calculate resistor values for desired output
+var dividerResult = VoltageDividerCalculator.CalculateResistorValues(
+    inputVoltage: 5.0,
+    outputVoltage: 3.3,
+    currentLoad: 0.001  // 1mA load
+);
+Console.WriteLine($&quot;R1: {dividerResult.r1}Ω, R2: {dividerResult.r2}Ω&quot;);
+</code></pre>
+<h2 id="hardware-platform-support">Hardware Platform Support</h2>
+<h3 id="arduino-development">Arduino Development</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Generate Arduino GPIO code
+string gpioCode = ArduinoTools.GenerateGPIOCode(
+    pin: 13,
+    mode: &quot;OUTPUT&quot;
+);
+Console.WriteLine(gpioCode);
+
+// Calculate PWM values
+var pwmResult = ArduinoTools.CalculatePWMValues(
+    dutyCycle: 0.75,  // 75%
+    frequency: 1000   // 1kHz
+);
+Console.WriteLine($&quot;PWM value: {pwmResult.pwmValue}&quot;);
+
+// Generate LED control code
+string ledCode = ArduinoTools.GenerateLEDCode(
+    pin: 9,
+    brightness: 128,  // 50% brightness
+    usePWM: true
+);
+</code></pre>
+<h3 id="esp32-development">ESP32 Development</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate WiFi power consumption
+var wifiPower = ESP32Tools.CalculateWiFiPowerConsumption(
+    mode: &quot;STA&quot;,
+    transmitPower: 20,  // 20dBm
+    dutyCycle: 0.1      // 10% active
+);
+Console.WriteLine($&quot;Average power: {wifiPower.averagePower}mW&quot;);
+
+// Generate ESP32 GPIO code
+string esp32Code = ESP32Tools.GenerateGPIOCode(
+    pin: 2,
+    mode: &quot;OUTPUT&quot;,
+    pullMode: &quot;NONE&quot;
+);
+</code></pre>
+<h3 id="com-port-communication">COM Port Communication</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Discover available COM ports
+var availablePorts = ComPortTools.GetAvailablePorts();
+foreach (var port in availablePorts)
+{
+    Console.WriteLine($&quot;{port.PortName}: {port.DeviceType} - {port.Description}&quot;);
+}
+
+// Auto-detect baud rate
+string portName = &quot;COM3&quot;;
+int detectedBaudRate = ComPortTools.AutoDetectBaudRate(
+    portName, 
+    ComPortTools.ArduinoBaudRates
+);
+Console.WriteLine($&quot;Detected baud rate: {detectedBaudRate}&quot;);
+
+// Monitor COM port
+var config = new ComPortTools.SerialConfig
+{
+    PortName = &quot;COM3&quot;,
+    BaudRate = 115200,
+    Parity = ComPortTools.SerialParity.None
+};
+
+string monitorLog = ComPortTools.MonitorPort(config, durationSeconds: 10);
+Console.WriteLine(monitorLog);
+</code></pre>
+<h2 id="advanced-features">Advanced Features</h2>
+<h3 id="power-analysis">Power Analysis</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate power supply efficiency
+var efficiency = PowerCalculator.CalculateEfficiency(
+    inputPower: 100,
+    outputPower: 85
+);
+Console.WriteLine($&quot;Efficiency: {efficiency:P1}&quot;); // Output: 85.0%
+
+// Battery life calculation
+var batteryLife = EnergyCalculator.CalculateBatteryLife(
+    batteryCapacity: 2500,  // mAh
+    averageCurrent: 150,    // mA
+    efficiencyFactor: 0.85
+);
+Console.WriteLine($&quot;Battery life: {batteryLife:F1} hours&quot;);
+</code></pre>
+<h3 id="signal-analysis">Signal Analysis</h3>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Calculate filter cutoff frequency
+double cutoffFreq = FilterCalculator.CalculateLowPassCutoff(
+    resistance: 1000,     // 1kΩ
+    capacitance: 0.000001 // 1µF
+);
+Console.WriteLine($&quot;Cutoff frequency: {cutoffFreq:F1} Hz&quot;);
+
+// Signal integrity analysis
+var signalResult = SignalIntegrityCalculator.AnalyzeSignalPath(
+    traceLength: 0.1,      // 10cm
+    frequency: 100000000,  // 100MHz
+    impedance: 50          // 50Ω
+);
+Console.WriteLine($&quot;Signal delay: {signalResult.propagationDelay}ns&quot;);
+</code></pre>
+<h2 id="unit-conversions">Unit Conversions</h2>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Convert between units
+double milliamps = UnitConverter.ConvertCurrent(2.5, &quot;A&quot;, &quot;mA&quot;);
+Console.WriteLine($&quot;2.5A = {milliamps}mA&quot;); // Output: 2500mA
+
+double kilovolts = UnitConverter.ConvertVoltage(3300, &quot;mV&quot;, &quot;kV&quot;);
+Console.WriteLine($&quot;3300mV = {kilovolts}kV&quot;); // Output: 0.0033kV
+
+double microfarads = UnitConverter.ConvertCapacitance(0.000001, &quot;F&quot;, &quot;µF&quot;);
+Console.WriteLine($&quot;0.000001F = {microfarads}µF&quot;); // Output: 1µF
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<p>CircuitTool includes comprehensive error handling:</p>
+<pre><code class="lang-csharp">try
+{
+    // This will throw an exception for invalid values
+    double result = OhmsLawCalculator.CalculateVoltage(
+        current: -1,  // Negative current
+        resistance: 0 // Zero resistance
+    );
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($&quot;Invalid input: {ex.Message}&quot;);
+}
+</code></pre>
+<h2 id="performance-optimization">Performance Optimization</h2>
+<p>For high-performance scenarios, use the vectorized operations:</p>
+<pre><code class="lang-csharp">using CircuitTool;
+
+// Vectorized calculations for multiple values
+double[] currents = { 0.1, 0.2, 0.3, 0.4, 0.5 };
+double[] resistances = { 100, 200, 300, 400, 500 };
+
+double[] voltages = VectorizedCalculations.CalculateVoltagesVector(
+    currents, 
+    resistances
+);
+
+foreach (var voltage in voltages)
+{
+    Console.WriteLine($&quot;Voltage: {voltage}V&quot;);
+}
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li>Explore the <a href="../api/">API Reference</a> for complete method documentation</li>
+<li>Check out more <a href="examples.md">examples and tutorials</a></li>
+<li>Learn about <a href="advanced-features.md">advanced features</a></li>
+<li>Read about <a href="hardware-integration.md">hardware integration</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/jomardyan/CircuitTool/blob/main/articles/getting-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

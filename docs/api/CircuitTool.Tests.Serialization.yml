@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Serialization
+  commentId: N:CircuitTool.Tests.Serialization
+  id: CircuitTool.Tests.Serialization
+  children:
+  - CircuitTool.Tests.Serialization.CircuitSerializationTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Tests.Serialization
+  nameWithType: CircuitTool.Tests.Serialization
+  fullName: CircuitTool.Tests.Serialization
+  type: Namespace
+  assemblies:
+  - CircuitTool.Tests
+references:
+- uid: CircuitTool.Tests.Serialization.CircuitSerializationTests
+  commentId: T:CircuitTool.Tests.Serialization.CircuitSerializationTests
+  href: CircuitTool.Tests.Serialization.CircuitSerializationTests.html
+  name: CircuitSerializationTests
+  nameWithType: CircuitSerializationTests
+  fullName: CircuitTool.Tests.Serialization.CircuitSerializationTests

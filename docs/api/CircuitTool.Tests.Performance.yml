@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Performance
+  commentId: N:CircuitTool.Tests.Performance
+  id: CircuitTool.Tests.Performance
+  children:
+  - CircuitTool.Tests.Performance.VectorizedCalculationsTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Tests.Performance
+  nameWithType: CircuitTool.Tests.Performance
+  fullName: CircuitTool.Tests.Performance
+  type: Namespace
+  assemblies:
+  - CircuitTool.Tests
+references:
+- uid: CircuitTool.Tests.Performance.VectorizedCalculationsTests
+  commentId: T:CircuitTool.Tests.Performance.VectorizedCalculationsTests
+  href: CircuitTool.Tests.Performance.VectorizedCalculationsTests.html
+  name: VectorizedCalculationsTests
+  nameWithType: VectorizedCalculationsTests
+  fullName: CircuitTool.Tests.Performance.VectorizedCalculationsTests

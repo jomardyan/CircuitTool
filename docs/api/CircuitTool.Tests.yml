@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  id: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.ACCircuitCalculatorTests
+  - CircuitTool.Tests.AdditionalCalculatorsTests
+  - CircuitTool.Tests.ArduinoToolsTests
+  - CircuitTool.Tests.BeginnerCalculatorsTests
+  - CircuitTool.Tests.CapacitorCalculatorTests
+  - CircuitTool.Tests.CircuitCalculationsTests
+  - CircuitTool.Tests.DocumentationExamplesTests
+  - CircuitTool.Tests.ESP32ToolsTests
+  - CircuitTool.Tests.EnergyCalculatorTests
+  - CircuitTool.Tests.FilterCalculatorTests
+  - CircuitTool.Tests.InductorCalculatorTests
+  - CircuitTool.Tests.LEDCalculatorTests
+  - CircuitTool.Tests.MathematicalExtensionsTests
+  - CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+  - CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+  - CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+  - CircuitTool.Tests.NoiseCalculatorTests
+  - CircuitTool.Tests.OhmsLawCalculatorTests
+  - CircuitTool.Tests.OpAmpCalculatorTests
+  - CircuitTool.Tests.PerformanceOptimizationsTests
+  - CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+  - CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+  - CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+  - CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+  - CircuitTool.Tests.RFCalculatorTests
+  - CircuitTool.Tests.ResistorCalculatorTests
+  - CircuitTool.Tests.TransformerCalculatorTests
+  - CircuitTool.Tests.UseCaseTemplatesTests
+  - CircuitTool.Tests.VoltageCalculatorTests
+  - CircuitTool.Tests.VoltageDividerCalculatorTests
+  - CircuitTool.Tests.VoltageDropCalculatorTests
+  - CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  type: Namespace
+  assemblies:
+  - CircuitTool.Tests
+references:
+- uid: CircuitTool.Tests.ACCircuitCalculatorTests
+  commentId: T:CircuitTool.Tests.ACCircuitCalculatorTests
+  href: CircuitTool.Tests.ACCircuitCalculatorTests.html
+  name: ACCircuitCalculatorTests
+  nameWithType: ACCircuitCalculatorTests
+  fullName: CircuitTool.Tests.ACCircuitCalculatorTests
+- uid: CircuitTool.Tests.AdditionalCalculatorsTests
+  commentId: T:CircuitTool.Tests.AdditionalCalculatorsTests
+  href: CircuitTool.Tests.AdditionalCalculatorsTests.html
+  name: AdditionalCalculatorsTests
+  nameWithType: AdditionalCalculatorsTests
+  fullName: CircuitTool.Tests.AdditionalCalculatorsTests
+- uid: CircuitTool.Tests.ArduinoToolsTests
+  commentId: T:CircuitTool.Tests.ArduinoToolsTests
+  href: CircuitTool.Tests.ArduinoToolsTests.html
+  name: ArduinoToolsTests
+  nameWithType: ArduinoToolsTests
+  fullName: CircuitTool.Tests.ArduinoToolsTests
+- uid: CircuitTool.Tests.BeginnerCalculatorsTests
+  commentId: T:CircuitTool.Tests.BeginnerCalculatorsTests
+  href: CircuitTool.Tests.BeginnerCalculatorsTests.html
+  name: BeginnerCalculatorsTests
+  nameWithType: BeginnerCalculatorsTests
+  fullName: CircuitTool.Tests.BeginnerCalculatorsTests
+- uid: CircuitTool.Tests.CapacitorCalculatorTests
+  commentId: T:CircuitTool.Tests.CapacitorCalculatorTests
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html
+  name: CapacitorCalculatorTests
+  nameWithType: CapacitorCalculatorTests
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests
+- uid: CircuitTool.Tests.CircuitCalculationsTests
+  commentId: T:CircuitTool.Tests.CircuitCalculationsTests
+  href: CircuitTool.Tests.CircuitCalculationsTests.html
+  name: CircuitCalculationsTests
+  nameWithType: CircuitCalculationsTests
+  fullName: CircuitTool.Tests.CircuitCalculationsTests
+- uid: CircuitTool.Tests.DocumentationExamplesTests
+  commentId: T:CircuitTool.Tests.DocumentationExamplesTests
+  href: CircuitTool.Tests.DocumentationExamplesTests.html
+  name: DocumentationExamplesTests
+  nameWithType: DocumentationExamplesTests
+  fullName: CircuitTool.Tests.DocumentationExamplesTests
+- uid: CircuitTool.Tests.UseCaseTemplatesTests
+  commentId: T:CircuitTool.Tests.UseCaseTemplatesTests
+  href: CircuitTool.Tests.UseCaseTemplatesTests.html
+  name: UseCaseTemplatesTests
+  nameWithType: UseCaseTemplatesTests
+  fullName: CircuitTool.Tests.UseCaseTemplatesTests
+- uid: CircuitTool.Tests.EnergyCalculatorTests
+  commentId: T:CircuitTool.Tests.EnergyCalculatorTests
+  href: CircuitTool.Tests.EnergyCalculatorTests.html
+  name: EnergyCalculatorTests
+  nameWithType: EnergyCalculatorTests
+  fullName: CircuitTool.Tests.EnergyCalculatorTests
+- uid: CircuitTool.Tests.ESP32ToolsTests
+  commentId: T:CircuitTool.Tests.ESP32ToolsTests
+  href: CircuitTool.Tests.ESP32ToolsTests.html
+  name: ESP32ToolsTests
+  nameWithType: ESP32ToolsTests
+  fullName: CircuitTool.Tests.ESP32ToolsTests
+- uid: CircuitTool.Tests.FilterCalculatorTests
+  commentId: T:CircuitTool.Tests.FilterCalculatorTests
+  href: CircuitTool.Tests.FilterCalculatorTests.html
+  name: FilterCalculatorTests
+  nameWithType: FilterCalculatorTests
+  fullName: CircuitTool.Tests.FilterCalculatorTests
+- uid: CircuitTool.Tests.InductorCalculatorTests
+  commentId: T:CircuitTool.Tests.InductorCalculatorTests
+  href: CircuitTool.Tests.InductorCalculatorTests.html
+  name: InductorCalculatorTests
+  nameWithType: InductorCalculatorTests
+  fullName: CircuitTool.Tests.InductorCalculatorTests
+- uid: CircuitTool.Tests.LEDCalculatorTests
+  commentId: T:CircuitTool.Tests.LEDCalculatorTests
+  href: CircuitTool.Tests.LEDCalculatorTests.html
+  name: LEDCalculatorTests
+  nameWithType: LEDCalculatorTests
+  fullName: CircuitTool.Tests.LEDCalculatorTests
+- uid: CircuitTool.Tests.MathematicalExtensionsTests
+  commentId: T:CircuitTool.Tests.MathematicalExtensionsTests
+  href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  name: MathematicalExtensionsTests
+  nameWithType: MathematicalExtensionsTests
+  fullName: CircuitTool.Tests.MathematicalExtensionsTests
+- uid: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+  commentId: T:CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+  href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  name: MathematicalExtensionsTests.ComplexMatrixTests
+  nameWithType: MathematicalExtensionsTests.ComplexMatrixTests
+  fullName: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+    name: ComplexMatrixTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests
+    name: ComplexMatrixTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.ComplexMatrixTests.html
+- uid: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+  commentId: T:CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+  href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  name: MathematicalExtensionsTests.NodalAnalysisTests
+  nameWithType: MathematicalExtensionsTests.NodalAnalysisTests
+  fullName: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+    name: NodalAnalysisTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests
+    name: NodalAnalysisTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.NodalAnalysisTests.html
+- uid: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+  commentId: T:CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+  href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  name: MathematicalExtensionsTests.FourierTransformTests
+  nameWithType: MathematicalExtensionsTests.FourierTransformTests
+  fullName: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+    name: FourierTransformTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests
+    name: MathematicalExtensionsTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests
+    name: FourierTransformTests
+    href: CircuitTool.Tests.MathematicalExtensionsTests.FourierTransformTests.html
+- uid: CircuitTool.Tests.NoiseCalculatorTests
+  commentId: T:CircuitTool.Tests.NoiseCalculatorTests
+  href: CircuitTool.Tests.NoiseCalculatorTests.html
+  name: NoiseCalculatorTests
+  nameWithType: NoiseCalculatorTests
+  fullName: CircuitTool.Tests.NoiseCalculatorTests
+- uid: CircuitTool.Tests.OhmsLawCalculatorTests
+  commentId: T:CircuitTool.Tests.OhmsLawCalculatorTests
+  href: CircuitTool.Tests.OhmsLawCalculatorTests.html
+  name: OhmsLawCalculatorTests
+  nameWithType: OhmsLawCalculatorTests
+  fullName: CircuitTool.Tests.OhmsLawCalculatorTests
+- uid: CircuitTool.Tests.OpAmpCalculatorTests
+  commentId: T:CircuitTool.Tests.OpAmpCalculatorTests
+  href: CircuitTool.Tests.OpAmpCalculatorTests.html
+  name: OpAmpCalculatorTests
+  nameWithType: OpAmpCalculatorTests
+  fullName: CircuitTool.Tests.OpAmpCalculatorTests
+- uid: CircuitTool.Tests.PerformanceOptimizationsTests
+  commentId: T:CircuitTool.Tests.PerformanceOptimizationsTests
+  href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  name: PerformanceOptimizationsTests
+  nameWithType: PerformanceOptimizationsTests
+  fullName: CircuitTool.Tests.PerformanceOptimizationsTests
+- uid: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+  commentId: T:CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+  href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  name: PerformanceOptimizationsTests.VectorizedCalculationsTests
+  nameWithType: PerformanceOptimizationsTests.VectorizedCalculationsTests
+  fullName: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+    name: VectorizedCalculationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests
+    name: VectorizedCalculationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.VectorizedCalculationsTests.html
+- uid: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+  commentId: T:CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+  href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  name: PerformanceOptimizationsTests.CalculationCacheTests
+  nameWithType: PerformanceOptimizationsTests.CalculationCacheTests
+  fullName: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+    name: CalculationCacheTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests
+    name: CalculationCacheTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.CalculationCacheTests.html
+- uid: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+  commentId: T:CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+  href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  name: PerformanceOptimizationsTests.BulkOperationsTests
+  nameWithType: PerformanceOptimizationsTests.BulkOperationsTests
+  fullName: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+    name: BulkOperationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests
+    name: BulkOperationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.BulkOperationsTests.html
+- uid: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+  commentId: T:CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+  href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  name: PerformanceOptimizationsTests.PerformanceMonitorTests
+  nameWithType: PerformanceOptimizationsTests.PerformanceMonitorTests
+  fullName: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+  spec.csharp:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+    name: PerformanceMonitorTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests.html
+  spec.vb:
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests
+    name: PerformanceOptimizationsTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.html
+  - name: .
+  - uid: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests
+    name: PerformanceMonitorTests
+    href: CircuitTool.Tests.PerformanceOptimizationsTests.PerformanceMonitorTests.html
+- uid: CircuitTool.Tests.ResistorCalculatorTests
+  commentId: T:CircuitTool.Tests.ResistorCalculatorTests
+  href: CircuitTool.Tests.ResistorCalculatorTests.html
+  name: ResistorCalculatorTests
+  nameWithType: ResistorCalculatorTests
+  fullName: CircuitTool.Tests.ResistorCalculatorTests
+- uid: CircuitTool.Tests.RFCalculatorTests
+  commentId: T:CircuitTool.Tests.RFCalculatorTests
+  href: CircuitTool.Tests.RFCalculatorTests.html
+  name: RFCalculatorTests
+  nameWithType: RFCalculatorTests
+  fullName: CircuitTool.Tests.RFCalculatorTests
+- uid: CircuitTool.Tests.TransformerCalculatorTests
+  commentId: T:CircuitTool.Tests.TransformerCalculatorTests
+  href: CircuitTool.Tests.TransformerCalculatorTests.html
+  name: TransformerCalculatorTests
+  nameWithType: TransformerCalculatorTests
+  fullName: CircuitTool.Tests.TransformerCalculatorTests
+- uid: CircuitTool.Tests.VoltageCalculatorTests
+  commentId: T:CircuitTool.Tests.VoltageCalculatorTests
+  href: CircuitTool.Tests.VoltageCalculatorTests.html
+  name: VoltageCalculatorTests
+  nameWithType: VoltageCalculatorTests
+  fullName: CircuitTool.Tests.VoltageCalculatorTests
+- uid: CircuitTool.Tests.VoltageDividerCalculatorTests
+  commentId: T:CircuitTool.Tests.VoltageDividerCalculatorTests
+  href: CircuitTool.Tests.VoltageDividerCalculatorTests.html
+  name: VoltageDividerCalculatorTests
+  nameWithType: VoltageDividerCalculatorTests
+  fullName: CircuitTool.Tests.VoltageDividerCalculatorTests
+- uid: CircuitTool.Tests.VoltageDropCalculatorTests
+  commentId: T:CircuitTool.Tests.VoltageDropCalculatorTests
+  href: CircuitTool.Tests.VoltageDropCalculatorTests.html
+  name: VoltageDropCalculatorTests
+  nameWithType: VoltageDropCalculatorTests
+  fullName: CircuitTool.Tests.VoltageDropCalculatorTests
+- uid: CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests
+  commentId: T:CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests
+  href: CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests.html
+  name: WattsVoltsAmpsOhmsCalculatorTests
+  nameWithType: WattsVoltsAmpsOhmsCalculatorTests
+  fullName: CircuitTool.Tests.WattsVoltsAmpsOhmsCalculatorTests

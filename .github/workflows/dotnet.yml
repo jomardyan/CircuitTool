@@ -1,0 +1,81 @@
+# This workflow will build and test a .NET project on every push and pull request
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET Build and Test
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+
+jobs:
+  build-and-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          6.0.x
+          8.0.x
+
+    - name: Restore dependencies for main library
+      run: dotnet restore CircuitTool.sln
+
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
+
+    - name: Build main library
+      run: dotnet build CircuitTool.sln --configuration Release --no-restore
+
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test CircuitTool.CLI.sln --configuration Release --no-build --verbosity normal --logger trx --results-directory TestResults/
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results-${{ matrix.os }}
+        path: TestResults/
+        retention-days: 30
+
+  code-quality:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
+
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
+
+    - name: Run code analysis
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --verbosity normal /p:RunCodeAnalysis=true

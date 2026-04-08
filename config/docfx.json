@@ -1,0 +1,104 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "CircuitTool.sln"
+          ]
+        }
+      ],
+      "dest": "../docs/api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened",
+      "memberLayout": "samePage",
+      "allowCompilationErrors": true,
+      "properties": {
+        "TargetFramework": "net8.0"
+      }
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "src": "../",
+        "files": [
+          "docs/api/**.yml",
+          "docs/api/index.md"
+        ]
+      },
+      {
+        "src": "../",
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "docs/_site/**"
+        ]
+      },
+      {
+        "src": "../",
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "src": "../",
+        "files": [
+          "docs/images/**",
+          "images/**",
+          "*.png",
+          "*.jpg",
+          "*.gif",
+          "*.svg"
+        ]
+      }
+    ],
+    "output": "../docs/_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern"
+    ],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "_appTitle": "CircuitTool - Electrical Engineering Library",
+      "_appName": "CircuitTool",
+      "_appFooter": "CircuitTool - Comprehensive C# library for electrical engineering calculations | <a href='https://github.com/jomardyan/CircuitTool'>GitHub</a>",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_gitContribute": {
+        "repo": "https://github.com/jomardyan/CircuitTool",
+        "branch": "main"
+      },
+      "_gitUrlPattern": "github",
+      "pdf": false,
+      "_appLogoPath": "icon.png",
+      "_appFaviconPath": "icon.png"
+    },
+    "fileMetadata": {
+      "_tocTitle": {
+        "articles/**.md": "Articles",
+        "docs/tutorials/**.md": "Tutorials", 
+        "docs/examples/**.md": "Examples",
+        "docs/technology-guides/**.md": "Hardware Guides"
+      }
+    }
+  }
+}

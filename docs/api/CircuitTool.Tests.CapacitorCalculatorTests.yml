@@ -1,0 +1,996 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.CapacitorCalculatorTests
+  commentId: T:CircuitTool.Tests.CapacitorCalculatorTests
+  id: CapacitorCalculatorTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+  - CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  - CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+  - CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+  - CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  - CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  langs:
+  - csharp
+  - vb
+  name: CapacitorCalculatorTests
+  nameWithType: CapacitorCalculatorTests
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests
+  type: Class
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitorCalculatorTests
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class CapacitorCalculatorTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class CapacitorCalculatorTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  id: CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CapacitiveReactance_ValidInputs_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CapacitiveReactance_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub CapacitiveReactance_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+  id: CapacitiveReactance_ZeroFrequency_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CapacitiveReactance_ZeroFrequency_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitiveReactance_ZeroFrequency_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 24
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CapacitiveReactance_ZeroFrequency_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub CapacitiveReactance_ZeroFrequency_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+  id: CapacitiveReactance_ZeroCapacitance_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CapacitiveReactance_ZeroCapacitance_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CapacitiveReactance_ZeroCapacitance_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 31
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CapacitiveReactance_ZeroCapacitance_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub CapacitiveReactance_ZeroCapacitance_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  id: EnergyStored_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored_ValidInputs_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored_ValidInputs_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 38
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EnergyStored_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub EnergyStored_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+  id: EnergyStored_ZeroVoltage_ReturnsZero
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: EnergyStored_ZeroVoltage_ReturnsZero()
+  nameWithType: CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: EnergyStored_ZeroVoltage_ReturnsZero
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 53
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void EnergyStored_ZeroVoltage_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub EnergyStored_ZeroVoltage_ReturnsZero()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  id: TimeConstant_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: TimeConstant_ValidInputs_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: TimeConstant_ValidInputs_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 63
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TimeConstant_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub TimeConstant_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  id: SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 77
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+  id: SeriesCapacitance_NullArray_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesCapacitance_NullArray_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesCapacitance_NullArray_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 92
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesCapacitance_NullArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesCapacitance_NullArray_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+  id: SeriesCapacitance_EmptyArray_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: SeriesCapacitance_EmptyArray_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: SeriesCapacitance_EmptyArray_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 99
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void SeriesCapacitance_EmptyArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub SeriesCapacitance_EmptyArray_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  id: ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 106
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+  id: ParallelCapacitance_NullArray_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ParallelCapacitance_NullArray_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ParallelCapacitance_NullArray_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 119
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ParallelCapacitance_NullArray_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub ParallelCapacitance_NullArray_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  id: ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ChargingVoltage_ValidInputs_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ChargingVoltage_ValidInputs_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 126
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ChargingVoltage_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub ChargingVoltage_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+  id: ChargingVoltage_ZeroTime_ReturnsZero
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: ChargingVoltage_ZeroTime_ReturnsZero()
+  nameWithType: CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ChargingVoltage_ZeroTime_ReturnsZero
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 143
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void ChargingVoltage_ZeroTime_ReturnsZero()
+    content.vb: >-
+      <Test>
+
+      Public Sub ChargingVoltage_ZeroTime_ReturnsZero()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  id: DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: DischargingVoltage_ValidInputs_ReturnsCorrectValue()
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DischargingVoltage_ValidInputs_ReturnsCorrectValue
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 153
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void DischargingVoltage_ValidInputs_ReturnsCorrectValue()
+    content.vb: >-
+      <Test>
+
+      Public Sub DischargingVoltage_ValidInputs_ReturnsCorrectValue()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  id: DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: DischargingVoltage_ZeroTime_ReturnsInitialVoltage()
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 170
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void DischargingVoltage_ZeroTime_ReturnsInitialVoltage()
+    content.vb: >-
+      <Test>
+
+      Public Sub DischargingVoltage_ZeroTime_ReturnsInitialVoltage()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException
+  commentId: M:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException
+  id: DischargingVoltage_NegativeTime_ThrowsException
+  parent: CircuitTool.Tests.CapacitorCalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: DischargingVoltage_NegativeTime_ThrowsException()
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException()
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/CapacitorCalculatorTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: DischargingVoltage_NegativeTime_ThrowsException
+    path: ../tests/CapacitorCalculatorTests.cs
+    startLine: 180
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void DischargingVoltage_NegativeTime_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub DischargingVoltage_NegativeTime_ThrowsException()
+  overload: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  name: CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_CapacitiveReactance_ZeroFrequency_ThrowsException
+  name: CapacitiveReactance_ZeroFrequency_ThrowsException
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroFrequency_ThrowsException
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_CapacitiveReactance_ZeroCapacitance_ThrowsException
+  name: CapacitiveReactance_ZeroCapacitance_ThrowsException
+  nameWithType: CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.CapacitiveReactance_ZeroCapacitance_ThrowsException
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_EnergyStored_ValidInputs_ReturnsCorrectValue
+  name: EnergyStored_ValidInputs_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_EnergyStored_ZeroVoltage_ReturnsZero
+  name: EnergyStored_ZeroVoltage_ReturnsZero
+  nameWithType: CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.EnergyStored_ZeroVoltage_ReturnsZero
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_TimeConstant_ValidInputs_ReturnsCorrectValue
+  name: TimeConstant_ValidInputs_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.TimeConstant_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  name: SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_TwoCapacitors_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_SeriesCapacitance_NullArray_ThrowsException
+  name: SeriesCapacitance_NullArray_ThrowsException
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_NullArray_ThrowsException
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_SeriesCapacitance_EmptyArray_ThrowsException
+  name: SeriesCapacitance_EmptyArray_ThrowsException
+  nameWithType: CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.SeriesCapacitance_EmptyArray_ThrowsException
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  name: ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_TwoCapacitors_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_ParallelCapacitance_NullArray_ThrowsException
+  name: ParallelCapacitance_NullArray_ThrowsException
+  nameWithType: CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ParallelCapacitance_NullArray_ThrowsException
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  name: ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_ChargingVoltage_ZeroTime_ReturnsZero
+  name: ChargingVoltage_ZeroTime_ReturnsZero
+  nameWithType: CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.ChargingVoltage_ZeroTime_ReturnsZero
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  name: DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ValidInputs_ReturnsCorrectValue
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  name: DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_ZeroTime_ReturnsInitialVoltage
+- uid: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException
+  href: CircuitTool.Tests.CapacitorCalculatorTests.html#CircuitTool_Tests_CapacitorCalculatorTests_DischargingVoltage_NegativeTime_ThrowsException
+  name: DischargingVoltage_NegativeTime_ThrowsException
+  nameWithType: CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException
+  fullName: CircuitTool.Tests.CapacitorCalculatorTests.DischargingVoltage_NegativeTime_ThrowsException

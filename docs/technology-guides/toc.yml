@@ -1,0 +1,28 @@
+- name: 📡 Technology Guides Overview
+  href: index.md
+- name: 🔌 Communication Protocols
+  items:
+    - name: I2C Protocol
+      href: i2c-protocol.md
+    - name: SPI Protocol
+      href: spi-protocol.md
+    - name: UART Protocol
+      href: uart-protocol.md
+    - name: CAN Bus Protocol
+      href: can-bus-protocol.md
+    - name: Modbus Protocol
+      href: arduino-modbus-protocol.md
+    - name: 1-Wire Protocol
+      href: 1wire-protocol.md
+- name: 📡 Wireless Technologies
+  items:
+    - name: Bluetooth Low Energy
+      href: bluetooth-low-energy.md
+    - name: LoRa LPWAN
+      href: lora-lpwan-guide.md
+    - name: LPWAN Technologies
+      href: lpwan-technologies.md
+- name: 🛰️ Navigation & Positioning
+  items:
+    - name: GPS/NMEA Protocol
+      href: gps-nmea-protocol.md

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Mathematics
+  commentId: N:CircuitTool.Tests.Mathematics
+  id: CircuitTool.Tests.Mathematics
+  children:
+  - CircuitTool.Tests.Mathematics.FourierTransformTests
+  - CircuitTool.Tests.Mathematics.MatrixOperationsTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Tests.Mathematics
+  nameWithType: CircuitTool.Tests.Mathematics
+  fullName: CircuitTool.Tests.Mathematics
+  type: Namespace
+  assemblies:
+  - CircuitTool.Tests
+references:
+- uid: CircuitTool.Tests.Mathematics.FourierTransformTests
+  commentId: T:CircuitTool.Tests.Mathematics.FourierTransformTests
+  href: CircuitTool.Tests.Mathematics.FourierTransformTests.html
+  name: FourierTransformTests
+  nameWithType: FourierTransformTests
+  fullName: CircuitTool.Tests.Mathematics.FourierTransformTests
+- uid: CircuitTool.Tests.Mathematics.MatrixOperationsTests
+  commentId: T:CircuitTool.Tests.Mathematics.MatrixOperationsTests
+  href: CircuitTool.Tests.Mathematics.MatrixOperationsTests.html
+  name: MatrixOperationsTests
+  nameWithType: MatrixOperationsTests
+  fullName: CircuitTool.Tests.Mathematics.MatrixOperationsTests

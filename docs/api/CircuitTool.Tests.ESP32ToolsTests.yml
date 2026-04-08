@@ -1,0 +1,480 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.ESP32ToolsTests
+  commentId: T:CircuitTool.Tests.ESP32ToolsTests
+  id: ESP32ToolsTests
+  parent: CircuitTool.Tests
+  children:
+  - CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException
+  - CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  - CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  - CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  langs:
+  - csharp
+  - vb
+  name: ESP32ToolsTests
+  nameWithType: ESP32ToolsTests
+  fullName: CircuitTool.Tests.ESP32ToolsTests
+  type: Class
+  source:
+    remote:
+      path: tests/ESP32ToolsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: ESP32ToolsTests
+    path: ../tests/ESP32ToolsTests.cs
+    startLine: 6
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class ESP32ToolsTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class ESP32ToolsTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  commentId: M:CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  id: AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  parent: CircuitTool.Tests.ESP32ToolsTests
+  langs:
+  - csharp
+  - vb
+  name: AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
+  nameWithType: ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
+  fullName: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
+  type: Method
+  source:
+    remote:
+      path: tests/ESP32ToolsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+    path: ../tests/ESP32ToolsTests.cs
+    startLine: 9
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
+    content.vb: >-
+      <Test>
+
+      Public Sub AnalogToVoltage_ValidReading_ReturnsCorrectVoltage()
+  overload: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  commentId: M:CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  id: CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  parent: CircuitTool.Tests.ESP32ToolsTests
+  langs:
+  - csharp
+  - vb
+  name: CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
+  nameWithType: ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
+  fullName: CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
+  type: Method
+  source:
+    remote:
+      path: tests/ESP32ToolsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+    path: ../tests/ESP32ToolsTests.cs
+    startLine: 23
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
+    content.vb: >-
+      <Test>
+
+      Public Sub CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent()
+  overload: CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  commentId: M:CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  id: CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  parent: CircuitTool.Tests.ESP32ToolsTests
+  langs:
+  - csharp
+  - vb
+  name: CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
+  nameWithType: ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
+  fullName: CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
+  type: Method
+  source:
+    remote:
+      path: tests/ESP32ToolsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+    path: ../tests/ESP32ToolsTests.cs
+    startLine: 33
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
+    content.vb: >-
+      <Test>
+
+      Public Sub CalculateBatteryLife_ValidInputs_ReturnsCorrectHours()
+  overload: CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException
+  commentId: M:CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException
+  id: AnalogToVoltage_InvalidReading_ThrowsException
+  parent: CircuitTool.Tests.ESP32ToolsTests
+  langs:
+  - csharp
+  - vb
+  name: AnalogToVoltage_InvalidReading_ThrowsException()
+  nameWithType: ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException()
+  fullName: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: tests/ESP32ToolsTests.cs
+      branch: main
+      repo: https://github.com/jomardyan/CircuitTool
+    id: AnalogToVoltage_InvalidReading_ThrowsException
+    path: ../tests/ESP32ToolsTests.cs
+    startLine: 48
+  assemblies:
+  - CircuitTool.Tests
+  namespace: CircuitTool.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void AnalogToVoltage_InvalidReading_ThrowsException()
+    content.vb: >-
+      <Test>
+
+      Public Sub AnalogToVoltage_InvalidReading_ThrowsException()
+  overload: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: CircuitTool.Tests
+  commentId: N:CircuitTool.Tests
+  href: CircuitTool.html
+  name: CircuitTool.Tests
+  nameWithType: CircuitTool.Tests
+  fullName: CircuitTool.Tests
+  spec.csharp:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+  spec.vb:
+  - uid: CircuitTool
+    name: CircuitTool
+    href: CircuitTool.html
+  - name: .
+  - uid: CircuitTool.Tests
+    name: Tests
+    href: CircuitTool.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage*
+  commentId: Overload:CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  href: CircuitTool.Tests.ESP32ToolsTests.html#CircuitTool_Tests_ESP32ToolsTests_AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  name: AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  nameWithType: ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+  fullName: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_ValidReading_ReturnsCorrectVoltage
+- uid: CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent*
+  commentId: Overload:CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  href: CircuitTool.Tests.ESP32ToolsTests.html#CircuitTool_Tests_ESP32ToolsTests_CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  name: CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  nameWithType: ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+  fullName: CircuitTool.Tests.ESP32ToolsTests.CalculateWiFiPowerConsumption_ActiveMode_ReturnsCorrectCurrent
+- uid: CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours*
+  commentId: Overload:CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  href: CircuitTool.Tests.ESP32ToolsTests.html#CircuitTool_Tests_ESP32ToolsTests_CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  name: CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  nameWithType: ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+  fullName: CircuitTool.Tests.ESP32ToolsTests.CalculateBatteryLife_ValidInputs_ReturnsCorrectHours
+- uid: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException*
+  commentId: Overload:CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException
+  href: CircuitTool.Tests.ESP32ToolsTests.html#CircuitTool_Tests_ESP32ToolsTests_AnalogToVoltage_InvalidReading_ThrowsException
+  name: AnalogToVoltage_InvalidReading_ThrowsException
+  nameWithType: ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException
+  fullName: CircuitTool.Tests.ESP32ToolsTests.AnalogToVoltage_InvalidReading_ThrowsException

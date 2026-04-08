@@ -1,0 +1,143 @@
+name: Build and Publish NuGet Package
+
+on:
+  push:
+    branches: [ "main" ]
+    tags:
+      - 'v*'
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      publish_nuget:
+        description: 'Publish to NuGet.org'
+        required: true
+        default: false
+        type: boolean
+      publish_github:
+        description: 'Publish to GitHub Packages'
+        required: true
+        default: true
+        type: boolean
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  NuGetDirectory: ${{ github.workspace}}/nuget
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Get all history to allow automatic versioning using MinVer
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          6.0.x
+          8.0.x
+
+    - name: Restore dependencies for main library
+      run: dotnet restore CircuitTool.sln
+
+    - name: Restore dependencies for CLI
+      run: dotnet restore CircuitTool.CLI.sln
+
+    - name: Build main library
+      run: dotnet build CircuitTool.sln --configuration Release --no-restore
+
+    - name: Build CLI
+      run: dotnet build CircuitTool.CLI.sln --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test CircuitTool.CLI.sln --configuration Release --no-build --verbosity normal
+
+    - name: Pack main library
+      run: dotnet pack CircuitTool.sln --configuration Release --no-build --output ${{ env.NuGetDirectory }}
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: nuget-packages
+        path: ${{ env.NuGetDirectory }}/*.nupkg
+        if-no-files-found: error
+
+  validate-nuget:
+    runs-on: ubuntu-latest
+    needs: [ build-and-test ]
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: nuget-packages
+          path: ${{ env.NuGetDirectory }}
+
+      - name: Install nuget validator
+        run: dotnet tool update Meziantou.Framework.NuGetPackageValidation.Tool --global
+
+      - name: Validate package
+        run: meziantou.validate-nuget-package (Get-ChildItem "${{ env.NuGetDirectory }}/*.nupkg")
+        shell: pwsh
+
+  publish-github:
+    runs-on: ubuntu-latest
+    needs: [ validate-nuget ]
+    if: github.event_name == 'release' || github.ref_type == 'tag' || (github.event_name == 'workflow_dispatch' && inputs.publish_github == true)
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: nuget-packages
+        path: ${{ env.NuGetDirectory }}
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Publish to GitHub Packages
+      run: |
+        dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+        dotnet nuget push "${{ env.NuGetDirectory }}/*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
+
+  publish-nuget:
+    runs-on: ubuntu-latest
+    needs: [ validate-nuget ]
+    if: github.event_name == 'release' || github.ref_type == 'tag' || (github.event_name == 'workflow_dispatch' && inputs.publish_nuget == true)
+    environment: production
+
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: nuget-packages
+        path: ${{ env.NuGetDirectory }}
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Publish to NuGet.org
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      run: |
+        if [ -z "$NUGET_API_KEY" ]; then
+          echo "Error: NUGET_API_KEY secret is not set"
+          exit 1
+        fi
+        dotnet nuget push "${{ env.NuGetDirectory }}/*.nupkg" --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate

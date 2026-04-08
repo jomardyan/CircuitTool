@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: CircuitTool.Tests.Units
+  commentId: N:CircuitTool.Tests.Units
+  id: CircuitTool.Tests.Units
+  children:
+  - CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests
+  - CircuitTool.Tests.Units.VoltageTests
+  langs:
+  - csharp
+  - vb
+  name: CircuitTool.Tests.Units
+  nameWithType: CircuitTool.Tests.Units
+  fullName: CircuitTool.Tests.Units
+  type: Namespace
+  assemblies:
+  - CircuitTool.Tests
+references:
+- uid: CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests
+  commentId: T:CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests
+  href: CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests.html
+  name: TypedOhmsLawCalculatorTests
+  nameWithType: TypedOhmsLawCalculatorTests
+  fullName: CircuitTool.Tests.Units.TypedOhmsLawCalculatorTests
+- uid: CircuitTool.Tests.Units.VoltageTests
+  commentId: T:CircuitTool.Tests.Units.VoltageTests
+  href: CircuitTool.Tests.Units.VoltageTests.html
+  name: VoltageTests
+  nameWithType: VoltageTests
+  fullName: CircuitTool.Tests.Units.VoltageTests
